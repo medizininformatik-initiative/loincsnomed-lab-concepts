@@ -1,0 +1,122 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-7310",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-7310",
+  "version": "1.0",
+  "name": "ECLComponentProperty7310",
+  "title": "ECL Component+Property: Lymphozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=56972008 AND Property=118550005 for LOINC 731-0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "105870-0",
+            "display": "LOINC 105870-0"
+          },
+          {
+            "code": "107036-6",
+            "display": "LOINC 107036-6"
+          },
+          {
+            "code": "107042-4",
+            "display": "LOINC 107042-4"
+          },
+          {
+            "code": "107155-4",
+            "display": "LOINC 107155-4"
+          },
+          {
+            "code": "14106-9",
+            "display": "LOINC 14106-9"
+          },
+          {
+            "code": "20585-6",
+            "display": "LOINC 20585-6"
+          },
+          {
+            "code": "26474-7",
+            "display": "LOINC 26474-7"
+          },
+          {
+            "code": "26475-4",
+            "display": "LOINC 26475-4"
+          },
+          {
+            "code": "26476-2",
+            "display": "LOINC 26476-2"
+          },
+          {
+            "code": "30364-4",
+            "display": "LOINC 30364-4"
+          },
+          {
+            "code": "32697-5",
+            "display": "LOINC 32697-5"
+          },
+          {
+            "code": "35049-6",
+            "display": "LOINC 35049-6"
+          },
+          {
+            "code": "35097-5",
+            "display": "LOINC 35097-5"
+          },
+          {
+            "code": "35098-3",
+            "display": "LOINC 35098-3"
+          },
+          {
+            "code": "51627-8",
+            "display": "LOINC 51627-8"
+          },
+          {
+            "code": "66140-5",
+            "display": "LOINC 66140-5"
+          },
+          {
+            "code": "6744-7",
+            "display": "LOINC 6744-7"
+          },
+          {
+            "code": "67827-6",
+            "display": "LOINC 67827-6"
+          },
+          {
+            "code": "67833-4",
+            "display": "LOINC 67833-4"
+          },
+          {
+            "code": "68404-3",
+            "display": "LOINC 68404-3"
+          },
+          {
+            "code": "68405-0",
+            "display": "LOINC 68405-0"
+          },
+          {
+            "code": "68407-6",
+            "display": "LOINC 68407-6"
+          },
+          {
+            "code": "731-0",
+            "display": "LOINC 731-0"
+          },
+          {
+            "code": "732-8",
+            "display": "LOINC 732-8"
+          },
+          {
+            "code": "74401-1",
+            "display": "LOINC 74401-1"
+          }
+        ]
+      }
+    ]
+  }
+}

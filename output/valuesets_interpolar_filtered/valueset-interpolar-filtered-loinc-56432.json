@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-56432",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-56432",
+  "version": "1.0",
+  "name": "InterpolarFiltered56432",
+  "title": "Interpolar LOINC (Filtered): Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 5643-2. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 13",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14336-2",
+            "display": "Ethanol [Mass/volume] in Serum or Plasma by Gas chromatography"
+          },
+          {
+            "code": "14719-9",
+            "display": "Ethanol [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15120-9",
+            "display": "Ethanol [Moles/volume] in Blood"
+          },
+          {
+            "code": "22745-4",
+            "display": "Ethanol [Moles/volume] in Urine"
+          },
+          {
+            "code": "35240-1",
+            "display": "Ethanol [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35664-2",
+            "display": "Ethanol [Mass/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "46983-3",
+            "display": "Ethanol [Mass/volume] in Urine by Confirmatory method"
+          },
+          {
+            "code": "48342-0",
+            "display": "Ethanol+Methanol+Isopropyl alcohol+Acetone [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "5640-8",
+            "display": "Ethanol [Mass/volume] in Blood"
+          },
+          {
+            "code": "5643-2",
+            "display": "Ethanol [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "5645-7",
+            "display": "Ethanol [Mass/volume] in Urine"
+          },
+          {
+            "code": "56478-1",
+            "display": "Ethanol [Mass/volume] in Blood by Gas chromatography"
+          },
+          {
+            "code": "74859-0",
+            "display": "Ethanol [Mass/volume] in Blood Estimated from serum or plasma level"
+          }
+        ]
+      }
+    ]
+  }
+}

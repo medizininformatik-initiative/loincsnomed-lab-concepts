@@ -1,0 +1,102 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-149799",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-149799",
+  "version": "1.0",
+  "name": "ECLComponent149799",
+  "title": "ECL Component-Based: aPTT in thrombozytenarmem Plasma mit Gerinnungstest",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 14979-9 (SNOMED 497241010000106)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13058-3",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --2nd specimen"
+          },
+          {
+            "code": "13059-1",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --3rd specimen"
+          },
+          {
+            "code": "13060-9",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --4th specimen"
+          },
+          {
+            "code": "14979-9",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "40099-4",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --2 hours pre XXX challenge"
+          },
+          {
+            "code": "40100-0",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --baseline"
+          },
+          {
+            "code": "40101-8",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --30 minutes post XXX challenge"
+          },
+          {
+            "code": "40102-6",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --1 hour post XXX challenge"
+          },
+          {
+            "code": "40103-4",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --1.5 hours post XXX challenge"
+          },
+          {
+            "code": "40104-2",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --2 hours post XXX challenge"
+          },
+          {
+            "code": "40105-9",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --3 hours post XXX challenge"
+          },
+          {
+            "code": "40106-7",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --4 hours post XXX challenge"
+          },
+          {
+            "code": "40107-5",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --6 hours post XXX challenge"
+          },
+          {
+            "code": "40108-3",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --8 hours post XXX challenge"
+          },
+          {
+            "code": "40109-1",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --12 hours post XXX challenge"
+          },
+          {
+            "code": "40110-9",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --1 day post XXX challenge"
+          },
+          {
+            "code": "40111-7",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --18 hours post XXX challenge"
+          },
+          {
+            "code": "43734-3",
+            "display": "aPTT in Platelet poor plasma by Coagulation 1:1 saline"
+          },
+          {
+            "code": "48590-4",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --after addition of APC"
+          },
+          {
+            "code": "52123-7",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay --post heparin neutralization"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-20008",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-20008",
+  "version": "1.0",
+  "name": "ECLComponent20008",
+  "title": "ECL Component-Based: Calcium [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 2000-8 (SNOMED 189431010000109)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "12180-6",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "1381-3",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --10 minutes post 2.4 mg/kg calcium short IV"
+          },
+          {
+            "code": "1382-1",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --5 minutes post 2.4 mg/kg calcium short IV"
+          },
+          {
+            "code": "1383-9",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --pre 2.4 mg/kg calcium short IV"
+          },
+          {
+            "code": "13959-2",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma by calculation"
+          },
+          {
+            "code": "16512-6",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge"
+          },
+          {
+            "code": "16513-4",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge"
+          },
+          {
+            "code": "16514-2",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge"
+          },
+          {
+            "code": "16515-9",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge"
+          },
+          {
+            "code": "16516-7",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge"
+          },
+          {
+            "code": "16517-5",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge"
+          },
+          {
+            "code": "16519-1",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge"
+          },
+          {
+            "code": "16523-3",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --5 minutes post XXX challenge"
+          },
+          {
+            "code": "16524-1",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --6 hours post XXX challenge"
+          },
+          {
+            "code": "18281-6",
+            "display": "Calcium [Moles/volume] corrected for total protein in Serum or Plasma"
+          },
+          {
+            "code": "19072-8",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Serum or Plasma"
+          },
+          {
+            "code": "1995-0",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2000-8",
+            "display": "Calcium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "29265-6",
+            "display": "Calcium [Moles/volume] corrected for albumin in Serum or Plasma"
+          },
+          {
+            "code": "40223-0",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --pre XXX challenge"
+          },
+          {
+            "code": "40224-8",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --45 minutes pre XXX challenge"
+          },
+          {
+            "code": "40225-5",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --15 minutes pre XXX challenge"
+          },
+          {
+            "code": "40226-3",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --baseline"
+          },
+          {
+            "code": "40227-1",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --30 minutes post XXX challenge"
+          },
+          {
+            "code": "40228-9",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --45 minutes post XXX challenge"
+          },
+          {
+            "code": "40229-7",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --1 hour post XXX challenge"
+          },
+          {
+            "code": "40230-5",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --1.5 hours post XXX challenge"
+          },
+          {
+            "code": "40231-3",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --2 hours post XXX challenge"
+          },
+          {
+            "code": "40232-1",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --2.5 hours post XXX challenge"
+          },
+          {
+            "code": "40233-9",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --3 hours post XXX challenge"
+          },
+          {
+            "code": "40234-7",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --4 hours post XXX challenge"
+          },
+          {
+            "code": "40235-4",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --5 hours post XXX challenge"
+          },
+          {
+            "code": "40236-2",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --6.5 hours post XXX challenge"
+          },
+          {
+            "code": "40237-0",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --7.5 hours post XXX challenge"
+          },
+          {
+            "code": "40238-8",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --8 hours post XXX challenge"
+          },
+          {
+            "code": "40239-6",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --12 hours post XXX challenge"
+          },
+          {
+            "code": "40240-4",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --13 hours post XXX challenge"
+          },
+          {
+            "code": "40241-2",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --14 hours post XXX challenge"
+          },
+          {
+            "code": "40242-0",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --16 hours post XXX challenge"
+          },
+          {
+            "code": "40243-8",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --20 hours post XXX challenge"
+          },
+          {
+            "code": "40244-6",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --1 day post XXX challenge"
+          },
+          {
+            "code": "40245-3",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --36 hours post XXX challenge"
+          },
+          {
+            "code": "40246-1",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --2 days post XXX challenge"
+          },
+          {
+            "code": "40247-9",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --3 days post XXX challenge"
+          },
+          {
+            "code": "59148-7",
+            "display": "Calcium [Moles/volume] in Serum or Plasma --post dialysis"
+          }
+        ]
+      }
+    ]
+  }
+}

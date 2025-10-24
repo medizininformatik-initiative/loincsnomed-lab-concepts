@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-115584",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-115584",
+  "version": "1.0",
+  "name": "ECLComponent115584",
+  "title": "ECL Component-Based: pH von Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 11558-4 (SNOMED 260991010000106)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "106982-2",
+            "display": "pH of Arterial cord blood by calculation adjusted to eucapnic level"
+          },
+          {
+            "code": "11558-4",
+            "display": "pH of Blood"
+          },
+          {
+            "code": "14873-4",
+            "display": "pH of Cord blood"
+          },
+          {
+            "code": "19213-8",
+            "display": "pH of Mixed venous blood"
+          },
+          {
+            "code": "2744-1",
+            "display": "pH of Arterial blood"
+          },
+          {
+            "code": "2745-8",
+            "display": "pH of Capillary blood"
+          },
+          {
+            "code": "2746-6",
+            "display": "pH of Venous blood"
+          },
+          {
+            "code": "2753-2",
+            "display": "pH of Serum or Plasma"
+          },
+          {
+            "code": "28646-8",
+            "display": "pH of Arterial cord blood"
+          },
+          {
+            "code": "28647-6",
+            "display": "pH of Venous cord blood"
+          },
+          {
+            "code": "33254-4",
+            "display": "pH of Arterial blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "39485-8",
+            "display": "pH of Capillary blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "39486-6",
+            "display": "pH of Venous blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "47720-8",
+            "display": "pH of Cord blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "49698-4",
+            "display": "pH of Arterial cord blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "49699-2",
+            "display": "pH of Venous cord blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "49701-6",
+            "display": "pH of Blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "50980-2",
+            "display": "pH of Mixed venous blood adjusted to patient's actual temperature"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Custom ECL queries for Nitrite in Urine (LOINC 32710-6)",
+  "queries": [
+    {
+      "id": "refined_query_v2_quant",
+      "name": "Refined Query V2 Quantitative (Measurement Properties)",
+      "description": "Uses Component = Nitrite salt AND Property = Measurement property (universal parent of quantitative types) for quantitative nitrite measurements. This captures substance concentration, molar concentration, and other quantitative measurements in urine.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|"
+    },
+    {
+      "id": "refined_query_v2_qual",
+      "name": "Refined Query V2 Qualitative (Presence Properties)",
+      "description": "Uses Component = Nitrite salt AND Property = Presence (705057003) for qualitative nitrite detection. This captures presence/absence tests commonly used in urinalysis dipstick tests.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|"
+    }
+  ]
+}

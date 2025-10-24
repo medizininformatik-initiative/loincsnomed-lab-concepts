@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-671511",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-671511",
+  "version": "1.0",
+  "name": "ECLComponent671511",
+  "title": "ECL Fixed Component: Troponin T.kardial [Masse/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=102684000 for LOINC 67151-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "101915-7",
+            "display": "Troponin T.cardiac [Mass/volume] in 6 hour Serum or Plasma"
+          },
+          {
+            "code": "106734-7",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum, Plasma or Blood by Rapid immunoassay"
+          },
+          {
+            "code": "110288-8",
+            "display": "Troponin T.cardiac [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "33204-9",
+            "display": "Troponin T.cardiac [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "48425-3",
+            "display": "Troponin T.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "48426-1",
+            "display": "Troponin T.cardiac [Presence] in Blood"
+          },
+          {
+            "code": "6597-9",
+            "display": "Troponin T.cardiac [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "6598-7",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "67151-1",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          }
+        ]
+      }
+    ]
+  }
+}

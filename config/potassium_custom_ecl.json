@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for Potassium",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Universal Measurement Property)",
+      "description": "Uses Component = Potassium electrolyte AND Property = Measurement property (universal parent of all quantitative measurement types like substance concentration, molar concentration, etc.). This captures all quantitative potassium measurements in blood.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|"
+    }
+  ]
+}

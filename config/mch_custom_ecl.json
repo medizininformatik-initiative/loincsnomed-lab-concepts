@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for MCH - Mean Corpuscular Hemoglobin (LOINC 28539-5)",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Entitic Mass Property)",
+      "description": "Uses Component = Hemoglobin AND Property = Entitic mass (118535001) AND Direct site = Erythrocyte specimen. Note: Entitic mass is NOT covered by the universal Measurement property, so this query specifically targets the Entitic mass property for MCH measurements.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|"
+    }
+  ]
+}

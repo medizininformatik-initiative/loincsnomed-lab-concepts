@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-163626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-163626",
+  "version": "1.0",
+  "name": "ECLComponentProperty163626",
+  "title": "ECL Component+Property: Ammoniak [Mol/Volumen] in Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=43953005 AND Property=118556004 for LOINC 16362-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "15149-8",
+            "display": "LOINC 15149-8"
+          },
+          {
+            "code": "16362-6",
+            "display": "LOINC 16362-6"
+          },
+          {
+            "code": "1839-0",
+            "display": "LOINC 1839-0"
+          },
+          {
+            "code": "1840-8",
+            "display": "LOINC 1840-8"
+          },
+          {
+            "code": "1841-6",
+            "display": "LOINC 1841-6"
+          },
+          {
+            "code": "1842-4",
+            "display": "LOINC 1842-4"
+          },
+          {
+            "code": "25850-9",
+            "display": "LOINC 25850-9"
+          },
+          {
+            "code": "53081-6",
+            "display": "LOINC 53081-6"
+          },
+          {
+            "code": "53500-5",
+            "display": "LOINC 53500-5"
+          },
+          {
+            "code": "93684-9",
+            "display": "LOINC 93684-9"
+          }
+        ]
+      }
+    ]
+  }
+}

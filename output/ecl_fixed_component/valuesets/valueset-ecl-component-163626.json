@@ -1,0 +1,122 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-163626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-163626",
+  "version": "1.0",
+  "name": "ECLComponent163626",
+  "title": "ECL Fixed Component: Ammoniak [Mol/Volumen] in Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=43953005 for LOINC 16362-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "109600-7",
+            "display": "Ammonia [Measurement] in Plasma"
+          },
+          {
+            "code": "111078-2",
+            "display": "Ammonia [Measurement] in Urine"
+          },
+          {
+            "code": "15149-8",
+            "display": "Ammonia [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "16362-6",
+            "display": "Ammonia [Moles/volume] in Plasma"
+          },
+          {
+            "code": "16363-4",
+            "display": "Ammonia [Moles/mass] in Tissue"
+          },
+          {
+            "code": "1839-0",
+            "display": "Ammonia [Moles/volume] in Blood"
+          },
+          {
+            "code": "1840-8",
+            "display": "Ammonia [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "1841-6",
+            "display": "Ammonia [Moles/volume] in Serum"
+          },
+          {
+            "code": "1842-4",
+            "display": "Ammonia [Moles/volume] in Urine"
+          },
+          {
+            "code": "20682-1",
+            "display": "Ammonia [Mass/volume] in Urine"
+          },
+          {
+            "code": "20683-9",
+            "display": "Ammonia [Mass/volume] in Ingesta"
+          },
+          {
+            "code": "20684-7",
+            "display": "Ammonia [Mass/volume] in Serum"
+          },
+          {
+            "code": "22763-7",
+            "display": "Ammonia [Mass/volume] in Plasma"
+          },
+          {
+            "code": "23656-2",
+            "display": "Ammonia [Mass/volume] in Specimen"
+          },
+          {
+            "code": "25850-9",
+            "display": "Ammonia [Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "25851-7",
+            "display": "Ammonia/Creatinine [Molar ratio] in 24 hour Urine"
+          },
+          {
+            "code": "27039-7",
+            "display": "Ammonia [Mass/volume] in 24 hour Urine"
+          },
+          {
+            "code": "32664-5",
+            "display": "Ammonia [Mass/volume] in Blood"
+          },
+          {
+            "code": "35254-2",
+            "display": "Ammonia [Mass or Moles/volume] in Plasma"
+          },
+          {
+            "code": "38589-8",
+            "display": "Ammonia [Mass/volume] in Air"
+          },
+          {
+            "code": "53081-6",
+            "display": "Ammonia [Moles/volume] in Dialysis fluid"
+          },
+          {
+            "code": "53500-5",
+            "display": "Ammonia [Moles/volume] in Water"
+          },
+          {
+            "code": "54349-6",
+            "display": "Ammonia [Mass/volume] in Dialysis fluid"
+          },
+          {
+            "code": "93684-9",
+            "display": "Ammonia [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "97753-8",
+            "display": "Ammonia [Moles/mass] in Stool"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ECL Decision Dashboard: potassium</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .check {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .primary {
+            background-color: #fff3cd;
+            font-weight: bold;
+        }
+        .interpolar {
+            background-color: #d1ecf1;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stat-card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .stat-card h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .specimen-list {
+            list-style: none;
+            padding: 0;
+        }
+        .specimen-list li {
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+        }
+        .ecl-query {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+        .attributes {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .good { color: #27ae60; font-weight: bold; }
+        .medium { color: #f39c12; font-weight: bold; }
+        .poor { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ECL Decision Dashboard: POTASSIUM</h1>
+        <p>Primary LOINC: <strong>6298-4</strong> - Potassium [Moles/volume] in Blood</p>
+        <p>Generated: 2025-10-17 08:55:40</p>
+    </div>
+
+    <div class="section">
+        <h2>SNOMED Concept & Attributes</h2>
+        <div class="attributes">
+            <p><strong>Primary Observable Entity:</strong> 195421010000109 - Substance concentration of potassium electrolyte in blood at point in time (observable entity)</p>
+            <hr>
+            <p><strong>Component:</strong> 304048005 - Potassium electrolyte (substance)</p>
+            <p><strong>Property:</strong> 118556004 - Substance concentration (property) (qualifier value)</p>
+            <p><strong>Direct site:</strong> 119297000 - Blood specimen (specimen)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>ECL Experiment Statistics</h2>
+        <div class="stat-grid">
+
+            <div class="stat-card">
+                <h4>Precoord Descendants</h4>
+                <p>Codes: <span class="stat-value">13</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">7.7%</span></p>
+                <p>F1: 0.143</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component</h4>
+                <p>Codes: <span class="stat-value">57</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">1.8%</span></p>
+                <p>F1: 0.034</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Component Descendants</h4>
+                <p>Codes: <span class="stat-value">57</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">1.8%</span></p>
+                <p>F1: 0.034</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component Property</h4>
+                <p>Codes: <span class="stat-value">37</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">2.7%</span></p>
+                <p>F1: 0.053</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component System</h4>
+                <p>Codes: <span class="stat-value">17</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">5.9%</span></p>
+                <p>F1: 0.111</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Refined Query V1</h4>
+                <p>Codes: <span class="stat-value">17</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">5.9%</span></p>
+                <p>F1: 0.111</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Refined Query V2</h4>
+                <p>Codes: <span class="stat-value">17</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">5.9%</span></p>
+                <p>F1: 0.111</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Specimen Types Found</h2>
+        <ul class="specimen-list">
+            <li><strong>122592007</strong> - Acellular blood (serum or plasma) specimen (specimen)</li>
+            <li><strong>119373006</strong> - Amniotic fluid specimen (specimen)</li>
+            <li><strong>122552005</strong> - Arterial blood specimen (specimen)</li>
+            <li><strong>119297000</strong> - Blood specimen (specimen)</li>
+            <li><strong>309051001</strong> - Body fluid specimen (specimen)</li>
+            <li><strong>122554006</strong> - Capillary blood specimen (specimen)</li>
+            <li><strong>258450006</strong> - Cerebrospinal fluid specimen (specimen)</li>
+            <li><strong>258454002</strong> - Dialysate specimen (specimen)</li>
+            <li><strong>119351004</strong> - Erythrocyte specimen (specimen)</li>
+            <li><strong>258459007</strong> - Gastric fluid specimen (specimen)</li>
+            <li><strong>119326000</strong> - Hair specimen (specimen)</li>
+            <li><strong>119298005</strong> - Mixed venous blood specimen (specimen)</li>
+            <li><strong>119328004</strong> - Mother's milk specimen (specimen)</li>
+            <li><strong>168140004</strong> - Peritoneal dialysate specimen (specimen)</li>
+            <li><strong>168139001</strong> - Peritoneal fluid specimen (specimen)</li>
+            <li><strong>788707000</strong> - Plasma specimen or serum specimen or whole blood specimen (specimen)</li>
+            <li><strong>119342007</strong> - Saliva specimen (specimen)</li>
+            <li><strong>123038009</strong> - Specimen (specimen)</li>
+            <li><strong>119339001</strong> - Stool specimen (specimen)</li>
+            <li><strong>122569007</strong> - Sweat specimen (specimen)</li>
+            <li><strong>119332005</strong> - Synovial fluid specimen (specimen)</li>
+            <li><strong>119376003</strong> - Tissue specimen (specimen)</li>
+            <li><strong>122575003</strong> - Urine specimen (specimen)</li>
+            <li><strong>122555007</strong> - Venous blood specimen (specimen)</li>
+            <li><strong>258438000</strong> - Vitreous humor specimen (specimen)</li>
+            <li><strong>119318008</strong> - Water specimen (specimen)</li>
+
+        </ul>
+        <p><em>Consider excluding specimen types that are not relevant for this analysis (e.g., cord blood, plasma, urine).</em></p>
+    </div>
+
+    <div class="section">
+        <h2>ECL Query Details</h2>
+
+        <h3>Precoord Descendants</h3>
+        
+        <div class="ecl-query"><< 195421010000109 |Substance concentration of potassium electrolyte in blood at point in time (observable entity)|</div>
+        <p>Results: 13 SNOMED concepts, 13 LOINC codes</p>
+
+        <h3>Ecl Fixed Component</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 304048005 |Potassium electrolyte (substance)|</div>
+        <p>Results: 57 SNOMED concepts, 57 LOINC codes</p>
+
+        <h3>Ecl Component Descendants</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = << 304048005 |Potassium electrolyte (substance)|</div>
+        <p>Results: 57 SNOMED concepts, 57 LOINC codes</p>
+
+        <h3>Ecl Fixed Component Property</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 304048005 |Potassium electrolyte (substance)|, 370130000 |Property| = 118556004 |Substance concentration (property) (qualifier value)|</div>
+        <p>Results: 37 SNOMED concepts, 37 LOINC codes</p>
+
+        <h3>Ecl Fixed Component System</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 304048005 |Potassium electrolyte (substance)|, 704327008 |Direct site| = << 119297000 |Blood specimen (specimen)|</div>
+        <p>Results: 17 SNOMED concepts, 17 LOINC codes</p>
+
+        <h3>Refined Query V1</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| :
+    246093002 |Component| = 304048005 |Potassium electrolyte (substance)|,
+    370130000 |Property| = << 685451010000100 |Measurement property (qualifier value)|,
+    704327008 |Direct site| = << 119297000 |Blood specimen (specimen)|</div>
+        <p>Results: 17 SNOMED concepts, 17 LOINC codes</p>
+
+        <h3>Refined Query V2</h3>
+        <p><em>Uses Component = Potassium electrolyte AND Property = Measurement property (universal parent of all quantitative measurement types like substance concentration, molar concentration, etc.). This captures all quantitative potassium measurements in blood.</em></p>
+        <div class="ecl-query"><< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|</div>
+        <p>Results: 17 SNOMED concepts, 17 LOINC codes</p>
+
+    </div>
+
+    <div class="section">
+        <h2>LOINC Code Comparison Matrix</h2>
+        <p>This table shows which LOINC codes were found by each ECL experiment.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>LOINC</th>
+                    <th>Display Name</th>
+                    <th>Interpolar</th>
+                    <th>MII300</th>
+                    <th>Precoord Descendants</th>
+                    <th>Ecl Fixed Component</th>
+                    <th>Ecl Component Descendants</th>
+                    <th>Ecl Fixed Component Property</th>
+                    <th>Ecl Fixed Component System</th>
+                    <th>Refined Query V1</th>
+                    <th>Refined Query V2</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="">
+                    <td>12812-4</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma --2nd specimen</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>12813-2</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma --3rd specimen</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>2823-3</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>29349-8</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma --post dialysis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>32713-0</td>
+                    <td>Potassium [Moles/volume] in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>39789-3</td>
+                    <td>Potassium [Moles/volume] in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>39790-1</td>
+                    <td>Potassium [Moles/volume] in Capillary blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>41656-0</td>
+                    <td>Potassium [Moles/volume] in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>51618-7</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma --pre dialysis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="primary">
+                    <td>6298-4</td>
+                    <td>Potassium [Moles/volume] in Blood</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>77142-8</td>
+                    <td>Potassium [Moles/volume] in Serum, Plasma or Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>93998-3</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma --1 hour post dose vasopressin</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>94007-2</td>
+                    <td>Potassium [Moles/volume] in Serum or Plasma --2 hours post dose vasopressin</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>108797-2</td>
+                    <td>Potassium [Measurement] in Serum or Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>22760-3</td>
+                    <td>Potassium [Mass/volume] in Serum or Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>42569-4</td>
+                    <td>Potassium [Mass or Moles/volume] in Serum or Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>75940-7</td>
+                    <td>Potassium [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>12814-0</td>
+                    <td>Potassium [Moles/volume] in Vitreous fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>14172-1</td>
+                    <td>Potassium [Moles/volume] in Synovial fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>15202-5</td>
+                    <td>Potassium [Moles/volume] in Stool</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>17795-6</td>
+                    <td>Potassium [Moles/volume] in Hyperal solution</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>21476-7</td>
+                    <td>Potassium [Moles/volume] in 24 hour Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2819-1</td>
+                    <td>Potassium [Moles/volume] in Cerebral spinal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2820-9</td>
+                    <td>Potassium [Moles/volume] in Dialysis fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2821-7</td>
+                    <td>Potassium [Moles/volume] in Body fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2822-5</td>
+                    <td>Potassium [Moles/volume] in Gastric fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2824-1</td>
+                    <td>Potassium [Moles/volume] in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2825-8</td>
+                    <td>Potassium [Moles/volume] in Saliva (oral fluid)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2827-4</td>
+                    <td>Potassium [Moles/volume] in Sweat</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2828-2</td>
+                    <td>Potassium [Moles/volume] in Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30549-0</td>
+                    <td>Potassium [Moles/volume] in Total parental nutrition</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32336-0</td>
+                    <td>Potassium [Moles/volume] in Specimen</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>35677-4</td>
+                    <td>Potassium [Moles/volume] in Urine collected for unspecified duration</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>39785-1</td>
+                    <td>Potassium [Moles/volume] in Peritoneal dialysis fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>49788-3</td>
+                    <td>Potassium [Moles/volume] in Amniotic fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>49789-1</td>
+                    <td>Potassium [Moles/volume] in Peritoneal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>57355-0</td>
+                    <td>Potassium [Moles/volume] in 12 hour Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>57379-0</td>
+                    <td>Potassium [Moles/volume] in 2 hour Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>59162-8</td>
+                    <td>Potassium [Moles/volume] in 24 hour Stool</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>60218-5</td>
+                    <td>Potassium [Moles/volume] in Mother's milk</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>94841-4</td>
+                    <td>Potassium [Moles/volume] in Urine from Fetus</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>111266-3</td>
+                    <td>Potassium [Measurement] in Stool</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>111459-4</td>
+                    <td>Potassium [Measurement] in Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>11148-4</td>
+                    <td>Potassium/Creatinine [Mass Ratio] in Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>13798-4</td>
+                    <td>Potassium/Creatinine [Mass Ratio] in 24 hour Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>25506-7</td>
+                    <td>Potassium [Moles/mass] in Stool</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>27441-5</td>
+                    <td>Potassium [Moles/mass] in 24 hour Stool</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32550-6</td>
+                    <td>Potassium [Molar amount] in Urine collected for unspecified duration</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>33949-9</td>
+                    <td>Potassium/Creatinine [Molar ratio] in Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>43222-9</td>
+                    <td>Potassium/Creatinine [Ratio] in Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>50902-6</td>
+                    <td>Potassium [Moles/mass] in Hair</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>56143-1</td>
+                    <td>Potassium/Creatinine [Molar ratio] in 24 hour Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>56971-5</td>
+                    <td>Potassium/Creatinine [Ratio] in 24 hour Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>59733-6</td>
+                    <td>Potassium [Mass/mass] in Tissue</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>79710-0</td>
+                    <td>Potassium [Mass/mass] in Hair</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>82722-0</td>
+                    <td>Potassium [Mass/volume] in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>9482-1</td>
+                    <td>Potassium [Mass/volume] in Water</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Decision Guidance</h2>
+        <h3>Key Questions:</h3>
+        <ol>
+            <li><strong>Specimen Exclusions:</strong> Which specimen types should be excluded? (Review "Specimen Types Found" section)</li>
+            <li><strong>Component Strategy:</strong> Fixed component or descendants? (Compare Exp 2 vs Exp 3)</li>
+            <li><strong>Recall Priority:</strong> Do you need high recall (capture all relevant codes) or high precision (only exact matches)?</li>
+            <li><strong>Interpolar Alignment:</strong> Should results align closely with Interpolar reference?</li>
+        </ol>
+
+        <h3>Experiment Guide:</h3>
+        <ul>
+            <li><strong>Exp 0 (Pre-coordinated Descendants):</strong> All descendants of the primary observable entity itself (e.g., all child concepts under "Creatinine in serum" - THIS is the true pre-coordinated hierarchy)</li>
+            <li><strong>Exp 1 (Fixed Component):</strong> Observable entities with EXACTLY this component (no subcomponents)</li>
+            <li><strong>Exp 2 (Component Descendants):</strong> Observable entities with this component OR its descendants (includes subcomponents like HbA1c for Hemoglobin)</li>
+            <li><strong>Exp 3 (Fixed Component + Property):</strong> Adds specific property constraint (e.g., substance concentration)</li>
+            <li><strong>Exp 4 (Fixed Component + System):</strong> Adds specimen/system constraint (e.g., blood specimen)</li>
+            <li><strong>Exp 5 (Refined Query V1):</strong> Component + Universal Measurement Property (all quantitative types) + System - Most comprehensive</li>
+        </ul>
+
+        <h3>Why Start with Exp 0?</h3>
+        <p><strong>Exp 0</strong> queries the pre-coordinated hierarchy (e.g., << "Substance concentration of creatinine in serum" concept), capturing all child observable entities in that hierarchy. This is your baseline to compare against post-coordinated approaches (Exp 1-5).</p>
+    </div>
+</body>
+</html>

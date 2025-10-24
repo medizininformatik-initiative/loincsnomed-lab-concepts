@@ -1,0 +1,118 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-115576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-115576",
+  "version": "1.0",
+  "name": "ECLComponentProperty115576",
+  "title": "ECL Component+Property: Kohlenstoffdioxid [Partialdruck] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=31811003 AND Property=118585005 for LOINC 11557-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11557-6",
+            "display": "LOINC 11557-6"
+          },
+          {
+            "code": "14003-8",
+            "display": "LOINC 14003-8"
+          },
+          {
+            "code": "19212-0",
+            "display": "LOINC 19212-0"
+          },
+          {
+            "code": "2018-0",
+            "display": "LOINC 2018-0"
+          },
+          {
+            "code": "2019-8",
+            "display": "LOINC 2019-8"
+          },
+          {
+            "code": "2020-6",
+            "display": "LOINC 2020-6"
+          },
+          {
+            "code": "2021-4",
+            "display": "LOINC 2021-4"
+          },
+          {
+            "code": "2022-2",
+            "display": "LOINC 2022-2"
+          },
+          {
+            "code": "2023-0",
+            "display": "LOINC 2023-0"
+          },
+          {
+            "code": "28644-3",
+            "display": "LOINC 28644-3"
+          },
+          {
+            "code": "28645-0",
+            "display": "LOINC 28645-0"
+          },
+          {
+            "code": "32306-3",
+            "display": "LOINC 32306-3"
+          },
+          {
+            "code": "32771-8",
+            "display": "LOINC 32771-8"
+          },
+          {
+            "code": "34705-4",
+            "display": "LOINC 34705-4"
+          },
+          {
+            "code": "40619-9",
+            "display": "LOINC 40619-9"
+          },
+          {
+            "code": "40620-7",
+            "display": "LOINC 40620-7"
+          },
+          {
+            "code": "47599-6",
+            "display": "LOINC 47599-6"
+          },
+          {
+            "code": "49694-3",
+            "display": "LOINC 49694-3"
+          },
+          {
+            "code": "49695-0",
+            "display": "LOINC 49695-0"
+          },
+          {
+            "code": "50981-0",
+            "display": "LOINC 50981-0"
+          },
+          {
+            "code": "53458-6",
+            "display": "LOINC 53458-6"
+          },
+          {
+            "code": "59165-1",
+            "display": "LOINC 59165-1"
+          },
+          {
+            "code": "97538-3",
+            "display": "LOINC 97538-3"
+          },
+          {
+            "code": "97539-1",
+            "display": "LOINC 97539-1"
+          }
+        ]
+      }
+    ]
+  }
+}

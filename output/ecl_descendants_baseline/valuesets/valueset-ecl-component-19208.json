@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-19208",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-19208",
+  "version": "1.0",
+  "name": "ECLComponent19208",
+  "title": "ECL Component-Based: Aspartat-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 1920-8 (SNOMED 274161010000103)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "1920-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30239-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
+          },
+          {
+            "code": "48136-6",
+            "display": "Aspartate aminotransferase.macromolecular [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "88112-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
+          }
+        ]
+      }
+    ]
+  }
+}

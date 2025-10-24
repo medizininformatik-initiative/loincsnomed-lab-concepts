@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-265157",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-265157",
+  "version": "3.6",
+  "name": "InterpolarLOINC265157",
+  "title": "Interpolar LOINC Group: Thrombozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 26515-7 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26515-7",
+            "display": "Platelets [#/volume] in Blood"
+          },
+          {
+            "code": "49497-1",
+            "display": "Platelets [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "5907-1",
+            "display": "Deprecated Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "74464-9",
+            "display": "Platelets [#/volume] in Capillary blood by Manual count"
+          },
+          {
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "778-1",
+            "display": "Platelets [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "97995-5",
+            "display": "Platelets [#/volume] in Blood by Automated count.optical"
+          }
+        ]
+      }
+    ]
+  }
+}

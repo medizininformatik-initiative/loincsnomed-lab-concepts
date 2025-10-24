@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-17426",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-17426",
+  "version": "1.0",
+  "name": "ECLComponentSystem17426",
+  "title": "ECL Component+System: Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=56935002 AND System=122592007 for LOINC 1742-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "110094-0",
+            "display": "LOINC 110094-0"
+          },
+          {
+            "code": "16325-3",
+            "display": "LOINC 16325-3"
+          },
+          {
+            "code": "1742-6",
+            "display": "LOINC 1742-6"
+          },
+          {
+            "code": "1743-4",
+            "display": "LOINC 1743-4"
+          },
+          {
+            "code": "1744-2",
+            "display": "LOINC 1744-2"
+          },
+          {
+            "code": "44785-4",
+            "display": "LOINC 44785-4"
+          }
+        ]
+      }
+    ]
+  }
+}

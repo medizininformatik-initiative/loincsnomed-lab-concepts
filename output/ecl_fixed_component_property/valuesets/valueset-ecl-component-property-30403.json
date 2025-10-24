@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-30403",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-30403",
+  "version": "1.0",
+  "name": "ECLComponentProperty30403",
+  "title": "ECL Component+Property: Triacylglycerid-Lipase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=72993008 AND Property=118524006 for LOINC 3040-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "107559-7",
+            "display": "LOINC 107559-7"
+          },
+          {
+            "code": "107946-6",
+            "display": "LOINC 107946-6"
+          },
+          {
+            "code": "10888-6",
+            "display": "LOINC 10888-6"
+          },
+          {
+            "code": "15212-4",
+            "display": "LOINC 15212-4"
+          },
+          {
+            "code": "25992-9",
+            "display": "LOINC 25992-9"
+          },
+          {
+            "code": "3039-5",
+            "display": "LOINC 3039-5"
+          },
+          {
+            "code": "3040-3",
+            "display": "LOINC 3040-3"
+          },
+          {
+            "code": "32722-1",
+            "display": "LOINC 32722-1"
+          },
+          {
+            "code": "35313-6",
+            "display": "LOINC 35313-6"
+          },
+          {
+            "code": "35314-4",
+            "display": "LOINC 35314-4"
+          },
+          {
+            "code": "35315-1",
+            "display": "LOINC 35315-1"
+          },
+          {
+            "code": "35316-9",
+            "display": "LOINC 35316-9"
+          },
+          {
+            "code": "35364-9",
+            "display": "LOINC 35364-9"
+          },
+          {
+            "code": "47418-9",
+            "display": "LOINC 47418-9"
+          },
+          {
+            "code": "55934-4",
+            "display": "LOINC 55934-4"
+          },
+          {
+            "code": "88712-5",
+            "display": "LOINC 88712-5"
+          }
+        ]
+      }
+    ]
+  }
+}

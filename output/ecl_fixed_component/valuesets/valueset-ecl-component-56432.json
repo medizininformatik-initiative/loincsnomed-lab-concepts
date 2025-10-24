@@ -1,0 +1,182 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-56432",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-56432",
+  "version": "1.0",
+  "name": "ECLComponent56432",
+  "title": "ECL Fixed Component: Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=419442005 for LOINC 5643-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10367-1",
+            "display": "Ethanol [Mass/volume] in Gastric fluid"
+          },
+          {
+            "code": "104133-4",
+            "display": "Ethanol [Presence] in Exhaled gas"
+          },
+          {
+            "code": "109641-1",
+            "display": "Ethanol [Measurement] in Saliva (oral fluid)"
+          },
+          {
+            "code": "109844-1",
+            "display": "Ethanol [Measurement] in Gastric fluid"
+          },
+          {
+            "code": "110886-9",
+            "display": "Ethanol [Measurement] in Blood"
+          },
+          {
+            "code": "111062-6",
+            "display": "Ethanol [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "111208-5",
+            "display": "Ethanol [Measurement] in Urine"
+          },
+          {
+            "code": "12465-1",
+            "display": "Ethanol [Mass/volume] in Vitreous fluid"
+          },
+          {
+            "code": "14336-2",
+            "display": "Ethanol [Mass/volume] in Serum or Plasma by Gas chromatography"
+          },
+          {
+            "code": "14719-9",
+            "display": "Ethanol [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15120-9",
+            "display": "Ethanol [Moles/volume] in Blood"
+          },
+          {
+            "code": "15402-1",
+            "display": "Ethanol [Presence] in Meconium"
+          },
+          {
+            "code": "16842-7",
+            "display": "Ethanol [Mass/volume] in Unknown substance"
+          },
+          {
+            "code": "16843-5",
+            "display": "Ethanol [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "20470-1",
+            "display": "Ethanol [Presence] in Serum or Plasma by Screen method"
+          },
+          {
+            "code": "22745-4",
+            "display": "Ethanol [Moles/volume] in Urine"
+          },
+          {
+            "code": "23861-8",
+            "display": "Ethanol [Mass/mass] in Tissue"
+          },
+          {
+            "code": "32070-5",
+            "display": "Ethanol [Moles/volume] in Specimen"
+          },
+          {
+            "code": "34180-0",
+            "display": "Ethanol [Presence] in Urine by Confirmatory method"
+          },
+          {
+            "code": "34882-1",
+            "display": "Ethanol [Mass/volume] in Saliva (oral fluid)"
+          },
+          {
+            "code": "35240-1",
+            "display": "Ethanol [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35664-2",
+            "display": "Ethanol [Mass/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "40530-8",
+            "display": "Ethanol [Presence] in Gastric fluid"
+          },
+          {
+            "code": "42242-8",
+            "display": "Ethanol [Presence] in Urine by Screen method"
+          },
+          {
+            "code": "46983-3",
+            "display": "Ethanol [Mass/volume] in Urine by Confirmatory method"
+          },
+          {
+            "code": "47107-8",
+            "display": "Ethanol [Moles/volume] in Gastric fluid"
+          },
+          {
+            "code": "50343-3",
+            "display": "Ethanol [Presence] in Saliva (oral fluid) by Screen method"
+          },
+          {
+            "code": "5639-0",
+            "display": "Ethanol [Presence] in Blood"
+          },
+          {
+            "code": "5640-8",
+            "display": "Ethanol [Mass/volume] in Blood"
+          },
+          {
+            "code": "5641-6",
+            "display": "Ethanol [Mass/volume] in Exhaled gas"
+          },
+          {
+            "code": "5642-4",
+            "display": "Ethanol [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "5643-2",
+            "display": "Ethanol [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "5644-0",
+            "display": "Ethanol [Presence] in Urine"
+          },
+          {
+            "code": "5645-7",
+            "display": "Ethanol [Mass/volume] in Urine"
+          },
+          {
+            "code": "56478-1",
+            "display": "Ethanol [Mass/volume] in Blood by Gas chromatography"
+          },
+          {
+            "code": "58356-7",
+            "display": "Ethanol/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "61066-7",
+            "display": "Ethanol [Presence] in Specimen by Screen method"
+          },
+          {
+            "code": "61095-6",
+            "display": "Ethanol [Presence] in Gastric fluid by Screen method"
+          },
+          {
+            "code": "74673-5",
+            "display": "Ethanol [Presence] in Saliva (oral fluid) by Confirmatory method"
+          },
+          {
+            "code": "74859-0",
+            "display": "Ethanol [Mass/volume] in Blood Estimated from serum or plasma level"
+          }
+        ]
+      }
+    ]
+  }
+}

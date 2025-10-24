@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-20982",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-20982",
+  "version": "1.0",
+  "name": "ECLComponentDescendants20982",
+  "title": "ECL Component Descendants: Cholinesterase [Enzymaktivität/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<18004003 for LOINC 2098-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11154-2",
+            "display": "LOINC 11154-2"
+          },
+          {
+            "code": "20758-9",
+            "display": "LOINC 20758-9"
+          },
+          {
+            "code": "2097-4",
+            "display": "LOINC 2097-4"
+          },
+          {
+            "code": "2098-2",
+            "display": "LOINC 2098-2"
+          },
+          {
+            "code": "2099-0",
+            "display": "LOINC 2099-0"
+          },
+          {
+            "code": "34711-2",
+            "display": "LOINC 34711-2"
+          },
+          {
+            "code": "39354-6",
+            "display": "LOINC 39354-6"
+          },
+          {
+            "code": "49231-4",
+            "display": "LOINC 49231-4"
+          },
+          {
+            "code": "49851-9",
+            "display": "LOINC 49851-9"
+          },
+          {
+            "code": "77367-1",
+            "display": "LOINC 77367-1"
+          },
+          {
+            "code": "89363-6",
+            "display": "LOINC 89363-6"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-211987",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-211987",
+  "version": "1.0",
+  "name": "ECLComponentProperty211987",
+  "title": "ECL Component+Property: Choriongonadotropin [Einheiten/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=40940006 AND Property=118569000 for LOINC 21198-7",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14041-8",
+            "display": "LOINC 14041-8"
+          },
+          {
+            "code": "19174-2",
+            "display": "LOINC 19174-2"
+          },
+          {
+            "code": "20415-6",
+            "display": "LOINC 20415-6"
+          },
+          {
+            "code": "21198-7",
+            "display": "LOINC 21198-7"
+          },
+          {
+            "code": "29154-2",
+            "display": "LOINC 29154-2"
+          },
+          {
+            "code": "66762-6",
+            "display": "LOINC 66762-6"
+          },
+          {
+            "code": "66763-4",
+            "display": "LOINC 66763-4"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-163626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-163626",
+  "version": "3.6",
+  "name": "InterpolarLOINC163626",
+  "title": "Interpolar LOINC Group: Ammoniak [Mol/Volumen] in Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 16362-6 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16362-6",
+            "display": "Ammonia [Moles/volume] in Plasma"
+          },
+          {
+            "code": "1839-0",
+            "display": "Ammonia [Moles/volume] in Blood"
+          },
+          {
+            "code": "22763-7",
+            "display": "Ammonia [Mass/volume] in Plasma"
+          },
+          {
+            "code": "32664-5",
+            "display": "Ammonia [Mass/volume] in Blood"
+          },
+          {
+            "code": "35254-2",
+            "display": "Ammonia [Mass or Moles/volume] in Plasma"
+          },
+          {
+            "code": "93684-9",
+            "display": "Ammonia [Moles/volume] in Arterial blood"
+          }
+        ]
+      }
+    ]
+  }
+}

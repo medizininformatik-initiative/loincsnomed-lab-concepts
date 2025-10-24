@@ -1,0 +1,106 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-146316",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-146316",
+  "version": "3.6",
+  "name": "InterpolarLOINC146316",
+  "title": "Interpolar LOINC Group: Bilirubin.gesamt [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 14631-6 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14631-6",
+            "display": "Bilirubin.total [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1975-2",
+            "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1977-8",
+            "display": "Bilirubin.total [Presence] in Urine"
+          },
+          {
+            "code": "1978-6",
+            "display": "Bilirubin.total [Mass/volume] in Urine"
+          },
+          {
+            "code": "20505-4",
+            "display": "Bilirubin.total [Mass/volume] in Urine by Test strip"
+          },
+          {
+            "code": "35194-0",
+            "display": "Bilirubin.total [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "41016-7",
+            "display": "Bilirubin.total [Moles/volume] in Urine by Test strip"
+          },
+          {
+            "code": "42719-5",
+            "display": "Bilirubin.total [Mass/volume] in Blood"
+          },
+          {
+            "code": "50551-1",
+            "display": "Bilirubin.total [Presence] in Urine by Automated test strip"
+          },
+          {
+            "code": "53327-3",
+            "display": "Bilirubin.total [Mass/volume] in Urine by Automated test strip"
+          },
+          {
+            "code": "54363-7",
+            "display": "Bilirubin.total [Moles/volume] in Blood"
+          },
+          {
+            "code": "5770-3",
+            "display": "Bilirubin.total [Presence] in Urine by Test strip"
+          },
+          {
+            "code": "58450-8",
+            "display": "Bilirubin [Presence] in Urine by Confirmatory method"
+          },
+          {
+            "code": "59827-6",
+            "display": "Bilirubin.total [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "59828-4",
+            "display": "Bilirubin.total [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "68367-2",
+            "display": "Bilirubin.total [Moles/volume] in Urine by Automated test strip"
+          },
+          {
+            "code": "70199-5",
+            "display": "Bilirubin.total [Moles/volume] in Urine"
+          },
+          {
+            "code": "77137-8",
+            "display": "Bilirubin.total [Moles/volume] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "89871-8",
+            "display": "Bilirubin.total [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "89872-6",
+            "display": "Bilirubin.total [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "97770-2",
+            "display": "Bilirubin.total [Moles/volume] in Capillary blood"
+          }
+        ]
+      }
+    ]
+  }
+}

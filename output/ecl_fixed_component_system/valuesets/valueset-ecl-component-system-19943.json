@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-19943",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-19943",
+  "version": "1.0",
+  "name": "ECLComponentSystem19943",
+  "title": "ECL Component+System: Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=259295006 AND System=119297000 for LOINC 1994-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "109564-5",
+            "display": "LOINC 109564-5"
+          },
+          {
+            "code": "1994-3",
+            "display": "LOINC 1994-3"
+          },
+          {
+            "code": "38230-9",
+            "display": "LOINC 38230-9"
+          },
+          {
+            "code": "47596-2",
+            "display": "LOINC 47596-2"
+          },
+          {
+            "code": "47598-8",
+            "display": "LOINC 47598-8"
+          },
+          {
+            "code": "49936-8",
+            "display": "LOINC 49936-8"
+          }
+        ]
+      }
+    ]
+  }
+}

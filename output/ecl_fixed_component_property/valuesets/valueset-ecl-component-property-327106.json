@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-327106",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-327106",
+  "version": "1.0",
+  "name": "ECLComponentProperty327106",
+  "title": "ECL Component+Property: Nitrit [Nachweis] in Urin",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=31528005 AND Property=705057003 for LOINC 32710-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "32710-6",
+            "display": "LOINC 32710-6"
+          },
+          {
+            "code": "50558-6",
+            "display": "LOINC 50558-6"
+          },
+          {
+            "code": "5802-4",
+            "display": "LOINC 5802-4"
+          }
+        ]
+      }
+    ]
+  }
+}

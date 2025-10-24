@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-143347",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-143347",
+  "version": "1.0",
+  "name": "InterpolarFiltered143347",
+  "title": "Interpolar LOINC (Filtered): Lithium [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 14334-7. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 9",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14334-7",
+            "display": "Lithium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "25461-5",
+            "display": "Lithium, [Moles/volume] in Blood"
+          },
+          {
+            "code": "25463-1",
+            "display": "Lithium [Moles/volume] in Urine"
+          },
+          {
+            "code": "34331-9",
+            "display": "Lithium/Creatinine [Molar ratio] in Urine"
+          },
+          {
+            "code": "3719-2",
+            "display": "Lithium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3721-8",
+            "display": "Lithium [Mass/volume] in Urine"
+          },
+          {
+            "code": "3723-4",
+            "display": "Lithium [Mass/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "74806-1",
+            "display": "Lithium [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "80970-7",
+            "display": "Lithium free [Moles/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

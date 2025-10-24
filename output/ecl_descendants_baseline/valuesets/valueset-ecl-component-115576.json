@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-115576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-115576",
+  "version": "1.0",
+  "name": "ECLComponent115576",
+  "title": "ECL Component-Based: Kohlenstoffdioxid [Partialdruck] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 11557-6 (SNOMED 174721010000106)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11557-6",
+            "display": "Carbon dioxide [Partial pressure] in Blood"
+          },
+          {
+            "code": "14003-8",
+            "display": "Carbon dioxide [Partial pressure] in Cord blood"
+          },
+          {
+            "code": "19212-0",
+            "display": "Carbon dioxide [Partial pressure] in Mixed venous blood"
+          },
+          {
+            "code": "2019-8",
+            "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+          },
+          {
+            "code": "2020-6",
+            "display": "Carbon dioxide [Partial pressure] in Capillary blood"
+          },
+          {
+            "code": "2021-4",
+            "display": "Carbon dioxide [Partial pressure] in Venous blood"
+          },
+          {
+            "code": "28644-3",
+            "display": "Carbon dioxide [Partial pressure] in Arterial cord blood"
+          },
+          {
+            "code": "28645-0",
+            "display": "Carbon dioxide [Partial pressure] in Venous cord blood"
+          },
+          {
+            "code": "32771-8",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+          },
+          {
+            "code": "34705-4",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Blood"
+          },
+          {
+            "code": "40619-9",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Venous blood"
+          },
+          {
+            "code": "40620-7",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Capillary blood"
+          },
+          {
+            "code": "47599-6",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Cord blood"
+          },
+          {
+            "code": "49694-3",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial cord blood"
+          },
+          {
+            "code": "49695-0",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Venous cord blood"
+          },
+          {
+            "code": "50981-0",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Mixed venous blood"
+          }
+        ]
+      }
+    ]
+  }
+}

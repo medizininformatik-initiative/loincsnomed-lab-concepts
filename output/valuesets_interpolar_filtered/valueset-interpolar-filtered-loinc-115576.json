@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-115576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-115576",
+  "version": "1.0",
+  "name": "InterpolarFiltered115576",
+  "title": "Interpolar LOINC (Filtered): Kohlenstoffdioxid [Partialdruck] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 11557-6. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 14",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11557-6",
+            "display": "Carbon dioxide [Partial pressure] in Blood"
+          },
+          {
+            "code": "19212-0",
+            "display": "Carbon dioxide [Partial pressure] in Mixed venous blood"
+          },
+          {
+            "code": "2019-8",
+            "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+          },
+          {
+            "code": "2020-6",
+            "display": "Carbon dioxide [Partial pressure] in Capillary blood"
+          },
+          {
+            "code": "2021-4",
+            "display": "Carbon dioxide [Partial pressure] in Venous blood"
+          },
+          {
+            "code": "32771-8",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+          },
+          {
+            "code": "34705-4",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Blood"
+          },
+          {
+            "code": "40619-9",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Venous blood"
+          },
+          {
+            "code": "40620-7",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Capillary blood"
+          },
+          {
+            "code": "49694-3",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial cord blood"
+          },
+          {
+            "code": "49695-0",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Venous cord blood"
+          },
+          {
+            "code": "50981-0",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Mixed venous blood"
+          },
+          {
+            "code": "97538-3",
+            "display": "Carbon dioxide [Partial pressure] in Central venous blood"
+          },
+          {
+            "code": "97539-1",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Central venous blood"
+          }
+        ]
+      }
+    ]
+  }
+}

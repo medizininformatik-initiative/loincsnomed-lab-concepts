@@ -1,0 +1,162 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-20750",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-20750",
+  "version": "1.0",
+  "name": "ECLComponentProperty20750",
+  "title": "ECL Component+Property: Chloride [Moles/volume] in Mixed venous blood",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=304052005 AND Property=118556004 for LOINC 2075-0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100745-9",
+            "display": "LOINC 100745-9"
+          },
+          {
+            "code": "12530-2",
+            "display": "LOINC 12530-2"
+          },
+          {
+            "code": "12898-3",
+            "display": "LOINC 12898-3"
+          },
+          {
+            "code": "15158-9",
+            "display": "LOINC 15158-9"
+          },
+          {
+            "code": "2068-5",
+            "display": "LOINC 2068-5"
+          },
+          {
+            "code": "2069-3",
+            "display": "LOINC 2069-3"
+          },
+          {
+            "code": "2070-1",
+            "display": "LOINC 2070-1"
+          },
+          {
+            "code": "2071-9",
+            "display": "LOINC 2071-9"
+          },
+          {
+            "code": "2072-7",
+            "display": "LOINC 2072-7"
+          },
+          {
+            "code": "2073-5",
+            "display": "LOINC 2073-5"
+          },
+          {
+            "code": "2074-3",
+            "display": "LOINC 2074-3"
+          },
+          {
+            "code": "2075-0",
+            "display": "LOINC 2075-0"
+          },
+          {
+            "code": "2077-6",
+            "display": "LOINC 2077-6"
+          },
+          {
+            "code": "2078-4",
+            "display": "LOINC 2078-4"
+          },
+          {
+            "code": "21194-6",
+            "display": "LOINC 21194-6"
+          },
+          {
+            "code": "32307-1",
+            "display": "LOINC 32307-1"
+          },
+          {
+            "code": "33366-6",
+            "display": "LOINC 33366-6"
+          },
+          {
+            "code": "35676-6",
+            "display": "LOINC 35676-6"
+          },
+          {
+            "code": "39467-6",
+            "display": "LOINC 39467-6"
+          },
+          {
+            "code": "41649-5",
+            "display": "LOINC 41649-5"
+          },
+          {
+            "code": "41650-3",
+            "display": "LOINC 41650-3"
+          },
+          {
+            "code": "51590-8",
+            "display": "LOINC 51590-8"
+          },
+          {
+            "code": "53099-8",
+            "display": "LOINC 53099-8"
+          },
+          {
+            "code": "53627-6",
+            "display": "LOINC 53627-6"
+          },
+          {
+            "code": "54369-4",
+            "display": "LOINC 54369-4"
+          },
+          {
+            "code": "55837-9",
+            "display": "LOINC 55837-9"
+          },
+          {
+            "code": "56448-4",
+            "display": "LOINC 56448-4"
+          },
+          {
+            "code": "57340-2",
+            "display": "LOINC 57340-2"
+          },
+          {
+            "code": "57341-0",
+            "display": "LOINC 57341-0"
+          },
+          {
+            "code": "59178-4",
+            "display": "LOINC 59178-4"
+          },
+          {
+            "code": "60217-7",
+            "display": "LOINC 60217-7"
+          },
+          {
+            "code": "77138-6",
+            "display": "LOINC 77138-6"
+          },
+          {
+            "code": "94000-7",
+            "display": "LOINC 94000-7"
+          },
+          {
+            "code": "94009-8",
+            "display": "LOINC 94009-8"
+          },
+          {
+            "code": "94840-6",
+            "display": "LOINC 94840-6"
+          }
+        ]
+      }
+    ]
+  }
+}

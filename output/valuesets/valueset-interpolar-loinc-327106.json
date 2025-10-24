@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-327106",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-327106",
+  "version": "3.6",
+  "name": "InterpolarLOINC327106",
+  "title": "Interpolar LOINC Group: Nitrit [Nachweis] in Urin",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 32710-6 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "32710-6",
+            "display": "Nitrite [Presence] in Urine"
+          },
+          {
+            "code": "50558-6",
+            "display": "Nitrite [Presence] in Urine by Automated test strip"
+          },
+          {
+            "code": "5802-4",
+            "display": "Nitrite [Presence] in Urine by Test strip"
+          }
+        ]
+      }
+    ]
+  }
+}

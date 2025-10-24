@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for Hemoglobin (LOINC 59260-0)",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Excl. Ratio & Plasma)",
+      "description": "Same as V1 but excludes: (1) Ratio properties (e.g., Hemoglobin/Hemoglobin.total ratios) and (2) Plasma specimens. This focuses on absolute measurements in blood.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 704327008 |Direct site (attribute)| != << 119361006 |Plasma specimen (specimen)|"
+    }
+  ]
+}

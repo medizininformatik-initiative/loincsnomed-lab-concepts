@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-20008",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-20008",
+  "version": "3.6",
+  "name": "InterpolarLOINC20008",
+  "title": "Interpolar LOINC Group: Calcium [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 2000-8 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "17861-6",
+            "display": "Calcium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1996-8",
+            "display": "Calcium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2000-8",
+            "display": "Calcium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35246-8",
+            "display": "Calcium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "42593-4",
+            "display": "Calcium [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "42857-3",
+            "display": "Calcium [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "49765-1",
+            "display": "Calcium [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

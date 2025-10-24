@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-20008",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-20008",
+  "version": "1.0",
+  "name": "InterpolarFiltered20008",
+  "title": "Interpolar LOINC (Filtered): Calcium [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 2000-8. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 14",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13444-5",
+            "display": "Calcium/Albumin [Mass Ratio] in Serum or Plasma"
+          },
+          {
+            "code": "17861-6",
+            "display": "Calcium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "18281-6",
+            "display": "Calcium [Moles/volume] corrected for total protein in Serum or Plasma"
+          },
+          {
+            "code": "1996-8",
+            "display": "Calcium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2000-8",
+            "display": "Calcium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "29265-6",
+            "display": "Calcium [Moles/volume] corrected for albumin in Serum or Plasma"
+          },
+          {
+            "code": "34907-6",
+            "display": "Calcium [Mass/volume] corrected for total protein in Serum or Plasma"
+          },
+          {
+            "code": "35246-8",
+            "display": "Calcium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35258-3",
+            "display": "Calcium [Mass or Moles/volume] corrected for total protein in Serum or Plasma"
+          },
+          {
+            "code": "42593-4",
+            "display": "Calcium [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "42857-3",
+            "display": "Calcium [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "46099-8",
+            "display": "Calcium [Mass/volume] corrected for albumin in Serum or Plasma"
+          },
+          {
+            "code": "47597-0",
+            "display": "Calcium [Moles/volume] corrected for total protein in Blood"
+          },
+          {
+            "code": "49765-1",
+            "display": "Calcium [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

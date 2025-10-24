@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-592600",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-592600",
+  "version": "1.0",
+  "name": "InterpolarFiltered592600",
+  "title": "Interpolar LOINC (Filtered): Hämoglobin [Masse/Volumen] in arteriellem Blut mit Oximetrie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 59260-0. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 18",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14775-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood by Oximetry"
+          },
+          {
+            "code": "20509-6",
+            "display": "Hemoglobin [Mass/volume] in Blood by calculation"
+          },
+          {
+            "code": "30313-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "30350-3",
+            "display": "Hemoglobin [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "30351-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood"
+          },
+          {
+            "code": "30352-9",
+            "display": "Hemoglobin [Mass/volume] in Capillary blood"
+          },
+          {
+            "code": "42243-6",
+            "display": "Deprecated Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "48725-6",
+            "display": "Hemoglobin [Mass/volume] in Blood --pre therapeutic phlebotomy"
+          },
+          {
+            "code": "55782-7",
+            "display": "Hemoglobin [Mass/volume] in Blood by Oximetry"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hemoglobin [Moles/volume] in Blood"
+          },
+          {
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "75928-2",
+            "display": "Hemoglobin [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "76768-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry"
+          },
+          {
+            "code": "76769-9",
+            "display": "Hemoglobin [Mass/volume] in Venous blood by Oximetry"
+          },
+          {
+            "code": "93846-4",
+            "display": "Hemoglobin [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "97550-8",
+            "display": "Hemoglobin [Mass/volume] in Central venous blood by calculation"
+          },
+          {
+            "code": "97555-7",
+            "display": "Hemoglobin [Mass/volume] in Central venous blood by Oximetry"
+          },
+          {
+            "code": "97556-5",
+            "display": "Hemoglobin [Mass/volume] in Capillary blood by Oximetry"
+          }
+        ]
+      }
+    ]
+  }
+}

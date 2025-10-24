@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-7518",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-7518",
+  "version": "1.0",
+  "name": "InterpolarFiltered7518",
+  "title": "Interpolar LOINC (Filtered): Neutrophile [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 751-8. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26499-4",
+            "display": "Neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "30451-9",
+            "display": "Segmented neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "751-8",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "752-6",
+            "display": "Deprecated Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "753-4",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "768-2",
+            "display": "Segmented neutrophils [#/volume] in Blood by Manual count"
+          }
+        ]
+      }
+    ]
+  }
+}

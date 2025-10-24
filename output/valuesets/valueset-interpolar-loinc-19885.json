@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-19885",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-19885",
+  "version": "3.6",
+  "name": "InterpolarLOINC19885",
+  "title": "Interpolar LOINC Group: C-reaktives Protein [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 1988-5 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "1988-5",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30522-7",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "48421-2",
+            "display": "C reactive protein [Mass/volume] in Capillary blood"
+          },
+          {
+            "code": "71426-1",
+            "display": "C reactive protein [Mass/volume] in Blood by High sensitivity method"
+          },
+          {
+            "code": "76485-2",
+            "display": "C reactive protein [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76486-0",
+            "display": "C reactive protein [Moles/volume] in Serum or Plasma by High sensitivity method"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-19943",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-19943",
+  "version": "3.6",
+  "name": "InterpolarLOINC19943",
+  "title": "Interpolar LOINC Group: Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 1994-3 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "12180-6",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "13959-2",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma by calculation"
+          },
+          {
+            "code": "17863-2",
+            "display": "Calcium.ionized [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "17864-0",
+            "display": "Calcium.ionized [Mass/volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "19072-8",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Serum or Plasma"
+          },
+          {
+            "code": "1994-3",
+            "display": "Calcium.ionized [Moles/volume] in Blood"
+          },
+          {
+            "code": "1995-0",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "34581-9",
+            "display": "Calcium.ionized [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "38230-9",
+            "display": "Calcium.ionized [Mass/volume] in Blood"
+          },
+          {
+            "code": "41644-6",
+            "display": "Calcium.ionized [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "41645-3",
+            "display": "Calcium.ionized [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "41646-1",
+            "display": "Calcium.ionized [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "42567-8",
+            "display": "Calcium.ionized [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "47596-2",
+            "display": "Calcium.ionized [Moles/volume] in Blood by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "47598-8",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Blood"
+          },
+          {
+            "code": "50838-2",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Body fluid"
+          },
+          {
+            "code": "53138-4",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Arterial blood"
+          },
+          {
+            "code": "53139-2",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Capillary blood"
+          },
+          {
+            "code": "53140-0",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Venous blood"
+          },
+          {
+            "code": "57333-7",
+            "display": "Calcium.ionized [Mass/volume] adjusted to pH 7.4 in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "59470-5",
+            "display": "Calcium.ionized [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "59471-3",
+            "display": "Calcium.ionized [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "59472-1",
+            "display": "Calcium.ionized [Mass/volume] adjusted to pH 7.4 in Arterial blood by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "59473-9",
+            "display": "Calcium.ionized [Mass/volume] adjusted to pH 7.4 in Venous blood by Ion-selective membrane electrode (ISE)"
+          }
+        ]
+      }
+    ]
+  }
+}

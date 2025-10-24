@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ECL Decision Dashboard: hba1c</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .check {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .primary {
+            background-color: #fff3cd;
+            font-weight: bold;
+        }
+        .interpolar {
+            background-color: #d1ecf1;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stat-card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .stat-card h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .specimen-list {
+            list-style: none;
+            padding: 0;
+        }
+        .specimen-list li {
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+        }
+        .ecl-query {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+        .attributes {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .good { color: #27ae60; font-weight: bold; }
+        .medium { color: #f39c12; font-weight: bold; }
+        .poor { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ECL Decision Dashboard: HBA1C</h1>
+        <p>Primary LOINC: <strong>4548-4</strong> - Hemoglobin A1c/Hemoglobin.total in Blood</p>
+        <p>Generated: 2025-10-23 19:50:47</p>
+    </div>
+
+    <div class="section">
+        <h2>SNOMED Concept & Attributes</h2>
+        <div class="attributes">
+            <p><strong>Primary Observable Entity:</strong> 558301010000102 - Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity)</p>
+            <hr>
+            <p><strong>Component:</strong> 733830002 - Glycated hemoglobin-A1c (substance)</p>
+            <p><strong>Property:</strong> 118542001 - Mass fraction (property) (qualifier value)</p>
+            <p><strong>Direct site:</strong> 119297000 - Blood specimen (specimen)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>ECL Experiment Statistics</h2>
+        <div class="stat-grid">
+
+            <div class="stat-card">
+                <h4>Precoord Descendants</h4>
+                <p>Codes: <span class="stat-value">1</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component</h4>
+                <p>Codes: <span class="stat-value">8</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Component Descendants</h4>
+                <p>Codes: <span class="stat-value">8</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component Property</h4>
+                <p>Codes: <span class="stat-value">6</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component System</h4>
+                <p>Codes: <span class="stat-value">8</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Refined Query V1</h4>
+                <p>Codes: <span class="stat-value">8</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Specimen Types Found</h2>
+        <ul class="specimen-list">
+            <li><strong>119297000</strong> - Blood specimen (specimen)</li>
+            <li><strong>440500007</strong> - Dried blood spot specimen (specimen)</li>
+
+        </ul>
+        <p><em>Consider excluding specimen types that are not relevant for this analysis (e.g., cord blood, plasma, urine).</em></p>
+    </div>
+
+    <div class="section">
+        <h2>ECL Query Details</h2>
+
+        <h3>Precoord Descendants</h3>
+        
+        <div class="ecl-query"><< 558301010000102 |Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity)|</div>
+        <p>Results: 1 SNOMED concepts, 1 LOINC codes</p>
+
+        <h3>Ecl Fixed Component</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 733830002 |Glycated hemoglobin-A1c (substance)|</div>
+        <p>Results: 10 SNOMED concepts, 8 LOINC codes</p>
+
+        <h3>Ecl Component Descendants</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = << 733830002 |Glycated hemoglobin-A1c (substance)|</div>
+        <p>Results: 10 SNOMED concepts, 8 LOINC codes</p>
+
+        <h3>Ecl Fixed Component Property</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 733830002 |Glycated hemoglobin-A1c (substance)|, 370130000 |Property| = 118542001 |Mass fraction (property) (qualifier value)|</div>
+        <p>Results: 6 SNOMED concepts, 6 LOINC codes</p>
+
+        <h3>Ecl Fixed Component System</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 733830002 |Glycated hemoglobin-A1c (substance)|, 704327008 |Direct site| = << 119297000 |Blood specimen (specimen)|</div>
+        <p>Results: 8 SNOMED concepts, 8 LOINC codes</p>
+
+        <h3>Refined Query V1</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| :
+    246093002 |Component| = 733830002 |Glycated hemoglobin-A1c (substance)|,
+    370130000 |Property| = << 685451010000100 |Measurement property (qualifier value)|,
+    704327008 |Direct site| = << 119297000 |Blood specimen (specimen)|</div>
+        <p>Results: 8 SNOMED concepts, 8 LOINC codes</p>
+
+    </div>
+
+    <div class="section">
+        <h2>LOINC Code Comparison Matrix</h2>
+        <p>This table shows which LOINC codes were found by each ECL experiment.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>LOINC</th>
+                    <th>Display Name</th>
+                    <th>Interpolar</th>
+                    <th>MII300</th>
+                    <th>Precoord Descendants</th>
+                    <th>Ecl Fixed Component</th>
+                    <th>Ecl Component Descendants</th>
+                    <th>Ecl Fixed Component Property</th>
+                    <th>Ecl Fixed Component System</th>
+                    <th>Refined Query V1</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="primary">
+                    <td>4548-4</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>17855-8</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by calculation</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>17856-6</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>4549-2</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>62388-4</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by JDS/JSCC protocol</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>96595-4</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in DBS</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>41995-2</td>
+                    <td>Hemoglobin A1c [Mass/volume] in Blood</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>59261-8</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Decision Guidance</h2>
+        <h3>Key Questions:</h3>
+        <ol>
+            <li><strong>Specimen Exclusions:</strong> Which specimen types should be excluded? (Review "Specimen Types Found" section)</li>
+            <li><strong>Component Strategy:</strong> Fixed component or descendants? (Compare Exp 2 vs Exp 3)</li>
+            <li><strong>Recall Priority:</strong> Do you need high recall (capture all relevant codes) or high precision (only exact matches)?</li>
+            <li><strong>Interpolar Alignment:</strong> Should results align closely with Interpolar reference?</li>
+        </ol>
+
+        <h3>Experiment Guide:</h3>
+        <ul>
+            <li><strong>Exp 0 (Pre-coordinated Descendants):</strong> All descendants of the primary observable entity itself (e.g., all child concepts under "Creatinine in serum" - THIS is the true pre-coordinated hierarchy)</li>
+            <li><strong>Exp 1 (Fixed Component):</strong> Observable entities with EXACTLY this component (no subcomponents)</li>
+            <li><strong>Exp 2 (Component Descendants):</strong> Observable entities with this component OR its descendants (includes subcomponents like HbA1c for Hemoglobin)</li>
+            <li><strong>Exp 3 (Fixed Component + Property):</strong> Adds specific property constraint (e.g., substance concentration)</li>
+            <li><strong>Exp 4 (Fixed Component + System):</strong> Adds specimen/system constraint (e.g., blood specimen)</li>
+            <li><strong>Exp 5 (Refined Query V1):</strong> Component + Universal Measurement Property (all quantitative types) + System - Most comprehensive</li>
+        </ul>
+
+        <h3>Why Start with Exp 0?</h3>
+        <p><strong>Exp 0</strong> queries the pre-coordinated hierarchy (e.g., << "Substance concentration of creatinine in serum" concept), capturing all child observable entities in that hierarchy. This is your baseline to compare against post-coordinated approaches (Exp 1-5).</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-19943",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-19943",
+  "version": "1.0",
+  "name": "ECLComponentProperty19943",
+  "title": "ECL Component+Property: Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=259295006 AND Property=118556004 for LOINC 1994-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "12180-6",
+            "display": "LOINC 12180-6"
+          },
+          {
+            "code": "13959-2",
+            "display": "LOINC 13959-2"
+          },
+          {
+            "code": "16512-6",
+            "display": "LOINC 16512-6"
+          },
+          {
+            "code": "16513-4",
+            "display": "LOINC 16513-4"
+          },
+          {
+            "code": "16514-2",
+            "display": "LOINC 16514-2"
+          },
+          {
+            "code": "16515-9",
+            "display": "LOINC 16515-9"
+          },
+          {
+            "code": "16516-7",
+            "display": "LOINC 16516-7"
+          },
+          {
+            "code": "16517-5",
+            "display": "LOINC 16517-5"
+          },
+          {
+            "code": "19072-8",
+            "display": "LOINC 19072-8"
+          },
+          {
+            "code": "1994-3",
+            "display": "LOINC 1994-3"
+          },
+          {
+            "code": "1995-0",
+            "display": "LOINC 1995-0"
+          },
+          {
+            "code": "34581-9",
+            "display": "LOINC 34581-9"
+          },
+          {
+            "code": "41644-6",
+            "display": "LOINC 41644-6"
+          },
+          {
+            "code": "41645-3",
+            "display": "LOINC 41645-3"
+          },
+          {
+            "code": "41646-1",
+            "display": "LOINC 41646-1"
+          },
+          {
+            "code": "46093-1",
+            "display": "LOINC 46093-1"
+          },
+          {
+            "code": "47596-2",
+            "display": "LOINC 47596-2"
+          },
+          {
+            "code": "47598-8",
+            "display": "LOINC 47598-8"
+          },
+          {
+            "code": "50837-4",
+            "display": "LOINC 50837-4"
+          },
+          {
+            "code": "50838-2",
+            "display": "LOINC 50838-2"
+          },
+          {
+            "code": "53087-3",
+            "display": "LOINC 53087-3"
+          },
+          {
+            "code": "53088-1",
+            "display": "LOINC 53088-1"
+          },
+          {
+            "code": "53138-4",
+            "display": "LOINC 53138-4"
+          },
+          {
+            "code": "53139-2",
+            "display": "LOINC 53139-2"
+          },
+          {
+            "code": "53140-0",
+            "display": "LOINC 53140-0"
+          },
+          {
+            "code": "54366-0",
+            "display": "LOINC 54366-0"
+          },
+          {
+            "code": "54367-8",
+            "display": "LOINC 54367-8"
+          },
+          {
+            "code": "83064-6",
+            "display": "LOINC 83064-6"
+          }
+        ]
+      }
+    ]
+  }
+}

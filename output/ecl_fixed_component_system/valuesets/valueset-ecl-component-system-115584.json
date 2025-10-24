@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-115584",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-115584",
+  "version": "1.0",
+  "name": "ECLComponentSystem115584",
+  "title": "ECL Component+System: pH von Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=89177007 AND System=119297000 for LOINC 11558-4",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11558-4",
+            "display": "LOINC 11558-4"
+          },
+          {
+            "code": "49701-6",
+            "display": "LOINC 49701-6"
+          },
+          {
+            "code": "50863-0",
+            "display": "LOINC 50863-0"
+          }
+        ]
+      }
+    ]
+  }
+}

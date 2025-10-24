@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-146852",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-146852",
+  "version": "1.0",
+  "name": "InterpolarFiltered146852",
+  "title": "Interpolar LOINC (Filtered): Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 14685-2. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 5",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14685-2",
+            "display": "Cobalamin (Vitamin B12) [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15039-1",
+            "display": "Deprecated Cobalamin [Molecules/volume] in Serum"
+          },
+          {
+            "code": "16695-9",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Blood"
+          },
+          {
+            "code": "2132-9",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35201-3",
+            "display": "Cobalamin (Vitamin B12) [Mass or Moles/volume] in Serum"
+          }
+        ]
+      }
+    ]
+  }
+}

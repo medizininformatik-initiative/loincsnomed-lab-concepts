@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-35592",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-35592",
+  "version": "3.6",
+  "name": "InterpolarLOINC35592",
+  "title": "Interpolar LOINC Group: Digitoxin [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 3559-2 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "15104-3",
+            "display": "Digitoxin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3559-2",
+            "display": "Digitoxin [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-7518",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-7518",
+  "version": "1.0",
+  "name": "ECLComponentSystem7518",
+  "title": "ECL Component+System: Neutrophile [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=127913001 AND System=119297000 for LOINC 751-8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "23761-0",
+            "display": "LOINC 23761-0"
+          },
+          {
+            "code": "26499-4",
+            "display": "LOINC 26499-4"
+          },
+          {
+            "code": "26511-6",
+            "display": "LOINC 26511-6"
+          },
+          {
+            "code": "751-8",
+            "display": "LOINC 751-8"
+          },
+          {
+            "code": "753-4",
+            "display": "LOINC 753-4"
+          },
+          {
+            "code": "770-8",
+            "display": "LOINC 770-8"
+          }
+        ]
+      }
+    ]
+  }
+}

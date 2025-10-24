@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-337626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-337626",
+  "version": "1.0",
+  "name": "InterpolarFiltered337626",
+  "title": "Interpolar LOINC (Filtered): Natriuretisches Peptid B [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 33762-6. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 9",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "30934-4",
+            "display": "Natriuretic peptide B [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33762-6",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33763-4",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35257-5",
+            "display": "Natriuretic peptide B [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "42637-9",
+            "display": "Natriuretic peptide B [Mass/volume] in Blood"
+          },
+          {
+            "code": "47092-2",
+            "display": "Natriuretic peptide B [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "71425-3",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Blood by Immunoassay"
+          },
+          {
+            "code": "83107-3",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "83108-1",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Moles/volume] in Serum or Plasma by Immunoassay"
+          }
+        ]
+      }
+    ]
+  }
+}

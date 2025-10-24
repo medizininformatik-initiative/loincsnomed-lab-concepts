@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-143347",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-143347",
+  "version": "1.0",
+  "name": "ECLComponentSystem143347",
+  "title": "ECL Component+System: Lithium [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=720377006 AND System=122592007 for LOINC 14334-7",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108824-4",
+            "display": "LOINC 108824-4"
+          },
+          {
+            "code": "14334-7",
+            "display": "LOINC 14334-7"
+          },
+          {
+            "code": "3719-2",
+            "display": "LOINC 3719-2"
+          },
+          {
+            "code": "3720-0",
+            "display": "LOINC 3720-0"
+          },
+          {
+            "code": "3723-4",
+            "display": "LOINC 3723-4"
+          },
+          {
+            "code": "74806-1",
+            "display": "LOINC 74806-1"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-149278",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-149278",
+  "version": "1.0",
+  "name": "ECLComponentDescendants149278",
+  "title": "ECL Component Descendants: Triglycerid [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<85600001 for LOINC 14927-8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108346-8",
+            "display": "LOINC 108346-8"
+          },
+          {
+            "code": "111065-9",
+            "display": "LOINC 111065-9"
+          },
+          {
+            "code": "12228-3",
+            "display": "LOINC 12228-3"
+          },
+          {
+            "code": "12951-0",
+            "display": "LOINC 12951-0"
+          },
+          {
+            "code": "14445-1",
+            "display": "LOINC 14445-1"
+          },
+          {
+            "code": "14446-9",
+            "display": "LOINC 14446-9"
+          },
+          {
+            "code": "14447-7",
+            "display": "LOINC 14447-7"
+          },
+          {
+            "code": "14448-5",
+            "display": "LOINC 14448-5"
+          },
+          {
+            "code": "14449-3",
+            "display": "LOINC 14449-3"
+          },
+          {
+            "code": "14450-1",
+            "display": "LOINC 14450-1"
+          },
+          {
+            "code": "14927-8",
+            "display": "LOINC 14927-8"
+          },
+          {
+            "code": "1644-4",
+            "display": "LOINC 1644-4"
+          },
+          {
+            "code": "22731-4",
+            "display": "LOINC 22731-4"
+          },
+          {
+            "code": "2571-8",
+            "display": "LOINC 2571-8"
+          },
+          {
+            "code": "28554-4",
+            "display": "LOINC 28554-4"
+          },
+          {
+            "code": "29766-3",
+            "display": "LOINC 29766-3"
+          },
+          {
+            "code": "3043-7",
+            "display": "LOINC 3043-7"
+          },
+          {
+            "code": "3048-6",
+            "display": "LOINC 3048-6"
+          },
+          {
+            "code": "30524-3",
+            "display": "LOINC 30524-3"
+          },
+          {
+            "code": "35217-9",
+            "display": "LOINC 35217-9"
+          },
+          {
+            "code": "39801-6",
+            "display": "LOINC 39801-6"
+          },
+          {
+            "code": "44733-4",
+            "display": "LOINC 44733-4"
+          },
+          {
+            "code": "47210-0",
+            "display": "LOINC 47210-0"
+          },
+          {
+            "code": "51605-4",
+            "display": "LOINC 51605-4"
+          },
+          {
+            "code": "53526-0",
+            "display": "LOINC 53526-0"
+          },
+          {
+            "code": "55607-6",
+            "display": "LOINC 55607-6"
+          },
+          {
+            "code": "59036-4",
+            "display": "LOINC 59036-4"
+          },
+          {
+            "code": "59572-8",
+            "display": "LOINC 59572-8"
+          },
+          {
+            "code": "66769-1",
+            "display": "LOINC 66769-1"
+          },
+          {
+            "code": "69947-0",
+            "display": "LOINC 69947-0"
+          },
+          {
+            "code": "70218-3",
+            "display": "LOINC 70218-3"
+          },
+          {
+            "code": "77360-6",
+            "display": "LOINC 77360-6"
+          },
+          {
+            "code": "94865-3",
+            "display": "LOINC 94865-3"
+          },
+          {
+            "code": "9619-8",
+            "display": "LOINC 9619-8"
+          },
+          {
+            "code": "96598-8",
+            "display": "LOINC 96598-8"
+          }
+        ]
+      }
+    ]
+  }
+}

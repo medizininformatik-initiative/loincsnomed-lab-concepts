@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-26922",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-26922",
+  "version": "1.0",
+  "name": "ECLComponent26922",
+  "title": "ECL Component-Based: Osmolalität von Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 2692-2 (SNOMED 519211010000109)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "18182-6",
+            "display": "Osmolality of Serum or Plasma by calculated by sum of electrolytes"
+          },
+          {
+            "code": "2692-2",
+            "display": "Osmolality of Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

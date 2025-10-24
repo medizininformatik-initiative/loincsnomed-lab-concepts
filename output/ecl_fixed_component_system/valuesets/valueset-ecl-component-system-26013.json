@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-26013",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-26013",
+  "version": "1.0",
+  "name": "ECLComponentSystem26013",
+  "title": "ECL Component+System: Deprecated Magnesium [Molecules/volume] in Serum or Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=72717003 AND System=122592007 for LOINC 2601-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108834-3",
+            "display": "LOINC 108834-3"
+          },
+          {
+            "code": "19123-9",
+            "display": "LOINC 19123-9"
+          },
+          {
+            "code": "2601-3",
+            "display": "LOINC 2601-3"
+          },
+          {
+            "code": "35249-2",
+            "display": "LOINC 35249-2"
+          },
+          {
+            "code": "55937-7",
+            "display": "LOINC 55937-7"
+          },
+          {
+            "code": "65362-6",
+            "display": "LOINC 65362-6"
+          }
+        ]
+      }
+    ]
+  }
+}

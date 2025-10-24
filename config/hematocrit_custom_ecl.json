@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for Hematocrit (LOINC 20570-8)",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Property-Specific: Volume Fraction)",
+      "description": "Uses Component = Erythrocyte AND Property = Volume fraction (118586006) to separate Hematocrit from RBC count (which uses Number concentration). This prevents cross-contamination between measurements that share the same Component.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Volume fraction (property) (qualifier value)|"
+    }
+  ]
+}

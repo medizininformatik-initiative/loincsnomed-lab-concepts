@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-17426",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-17426",
+  "version": "1.0",
+  "name": "ECLComponent17426",
+  "title": "ECL Fixed Component: Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=56935002 for LOINC 1742-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "110094-0",
+            "display": "Alanine aminotransferase [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "16324-6",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Red Blood Cells"
+          },
+          {
+            "code": "16325-3",
+            "display": "Alanine aminotransferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma"
+          },
+          {
+            "code": "1741-8",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Amniotic fluid"
+          },
+          {
+            "code": "1742-6",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1743-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
+          },
+          {
+            "code": "1744-2",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
+          },
+          {
+            "code": "25302-1",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Body fluid"
+          },
+          {
+            "code": "44785-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma by No addition of P-5'-P"
+          },
+          {
+            "code": "50168-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Dialysis fluid"
+          },
+          {
+            "code": "54491-6",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "54492-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Pleural fluid"
+          },
+          {
+            "code": "76625-3",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "77144-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "96586-3",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in DBS"
+          }
+        ]
+      }
+    ]
+  }
+}

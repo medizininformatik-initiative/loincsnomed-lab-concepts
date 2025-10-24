@@ -1,0 +1,1219 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mii-top-300-loinc",
+  "url": "http://example.org/fhir/ValueSet/mii-top-300-loinc",
+  "version": "2018-08-08",
+  "name": "MIITop300LOINC",
+  "title": "MII Top 300 LOINC Codes",
+  "status": "active",
+  "description": "Top 300 most important LOINC codes for German healthcare as defined by MII (Medizininformatik Initiative)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10378-8",
+            "display": "Polychromasia [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "10381-2",
+            "display": "Target cells [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "10501-5",
+            "display": "Lutropin [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "11031-2",
+            "display": "Lymphocytes/Leukocytes in Body fluid"
+          },
+          {
+            "code": "11054-4",
+            "display": "Cholesterol in LDL/Cholesterol in HDL [Mass Ratio] in Serum or Plasma"
+          },
+          {
+            "code": "11090-8",
+            "display": "Smith extractable nuclear Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "11154-2",
+            "display": "Cholinesterase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "11253-2",
+            "display": "Tacrolimus [Mass/volume] in Blood"
+          },
+          {
+            "code": "11555-0",
+            "display": "Base excess in Blood by calculation"
+          },
+          {
+            "code": "11556-8",
+            "display": "Oxygen [Partial pressure] in Blood"
+          },
+          {
+            "code": "11557-6",
+            "display": "Carbon dioxide [Partial pressure] in Blood"
+          },
+          {
+            "code": "11558-4",
+            "display": "pH of Blood"
+          },
+          {
+            "code": "11572-5",
+            "display": "Rheumatoid factor [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "13046-8",
+            "display": "Variant lymphocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "13047-6",
+            "display": "Plasma cells/Leukocytes in Blood"
+          },
+          {
+            "code": "13362-9",
+            "display": "Collection duration of Urine"
+          },
+          {
+            "code": "13539-2",
+            "display": "Phosphate [Moles/volume] in Urine"
+          },
+          {
+            "code": "13590-5",
+            "display": "Activated protein C resistance [Time Ratio] in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "13950-1",
+            "display": "Hepatitis A virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "13955-0",
+            "display": "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "13965-9",
+            "display": "Homocysteine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "13967-5",
+            "display": "Sex hormone binding globulin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "13978-2",
+            "display": "Alpha 1 globulin/Protein.total in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "13981-6",
+            "display": "Alpha 2 globulin/Protein.total in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "13982-4",
+            "display": "Beta globulin/Protein.total in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "13983-2",
+            "display": "Gamma globulin/Protein.total in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "14196-0",
+            "display": "Reticulocytes [#/volume] in Blood"
+          },
+          {
+            "code": "14586-2",
+            "display": "Aldosterone [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14629-0",
+            "display": "Bilirubin.direct [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14630-8",
+            "display": "Bilirubin.indirect [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14635-7",
+            "display": "25-hydroxyvitamin D3 [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14646-4",
+            "display": "Cholesterol in HDL [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14647-2",
+            "display": "Cholesterol [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14674-6",
+            "display": "Corticotropin [Moles/volume] in Plasma"
+          },
+          {
+            "code": "14675-3",
+            "display": "Cortisol [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14683-7",
+            "display": "Creatinine [Moles/volume] in Urine"
+          },
+          {
+            "code": "14685-2",
+            "display": "Cobalamin (Vitamin B12) [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14688-6",
+            "display": "Dehydroepiandrosterone sulfate (DHEA-S) [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14715-7",
+            "display": "Estradiol (E2) [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14723-1",
+            "display": "Ferritin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14744-7",
+            "display": "Glucose [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "14798-3",
+            "display": "Iron [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14836-1",
+            "display": "Methotrexate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14866-8",
+            "display": "Parathyrin.intact [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14877-5",
+            "display": "Phenytoin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14890-8",
+            "display": "Progesterone [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14913-8",
+            "display": "Testosterone [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14914-6",
+            "display": "Testosterone Free [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14918-7",
+            "display": "Thyroglobulin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14920-3",
+            "display": "Thyroxine (T4) free [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14928-6",
+            "display": "Triiodothyronine (T3) Free [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14933-6",
+            "display": "Urate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14946-8",
+            "display": "Valproate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14955-9",
+            "display": "Zinc [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15060-7",
+            "display": "Enolase.neuron specific [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15067-2",
+            "display": "Follitropin [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          },
+          {
+            "code": "15076-3",
+            "display": "Glucose [Moles/volume] in Urine"
+          },
+          {
+            "code": "15081-3",
+            "display": "Prolactin [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15084-7",
+            "display": "Osteocalcin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15103-5",
+            "display": "cycloSPORINE [Moles/volume] in Serum"
+          },
+          {
+            "code": "15104-3",
+            "display": "Digitoxin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15111-8",
+            "display": "Tricyclic antidepressants [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15120-9",
+            "display": "Ethanol [Moles/volume] in Blood"
+          },
+          {
+            "code": "15212-4",
+            "display": "Lipase [Enzymatic activity/volume] in Body fluid"
+          },
+          {
+            "code": "16135-6",
+            "display": "Beta 2 glycoprotein 1 IgG Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "1711-1",
+            "display": "Acid phosphatase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "17316-1",
+            "display": "Myeloperoxidase Ab [Presence] in Serum"
+          },
+          {
+            "code": "1747-5",
+            "display": "Albumin [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "1754-1",
+            "display": "Albumin [Mass/volume] in Urine"
+          },
+          {
+            "code": "1783-0",
+            "display": "Alkaline phosphatase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "1839-0",
+            "display": "Ammonia [Moles/volume] in Blood"
+          },
+          {
+            "code": "1857-2",
+            "display": "Angiotensin converting enzyme [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "19113-0",
+            "display": "IgE [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19167-6",
+            "display": "Carcinoembryonic Ag [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19197-3",
+            "display": "Prostate specific Ag [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1920-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19203-9",
+            "display": "Prostate Specific Ag Free [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19230-2",
+            "display": "Bicarbonate [Moles/volume] standard in Arterial blood"
+          },
+          {
+            "code": "19235-1",
+            "display": "Base excess standard in Arterial blood by calculation"
+          },
+          {
+            "code": "1959-6",
+            "display": "Bicarbonate [Moles/volume] in Blood"
+          },
+          {
+            "code": "1977-8",
+            "display": "Bilirubin.total [Presence] in Urine"
+          },
+          {
+            "code": "1988-5",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1994-3",
+            "display": "Calcium.ionized [Moles/volume] in Blood"
+          },
+          {
+            "code": "1996-8",
+            "display": "Calcium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2004-0",
+            "display": "Calcium [Moles/volume] in Urine"
+          },
+          {
+            "code": "20392-7",
+            "display": "Sample icteric [Presence] of Serum or Plasma Qualitative"
+          },
+          {
+            "code": "20393-5",
+            "display": "Sample hemolyzed [Presence] of Serum or Plasma Qualitative"
+          },
+          {
+            "code": "20394-3",
+            "display": "Sample lipemic [Presence] of Serum or Plasma Qualitative"
+          },
+          {
+            "code": "20447-9",
+            "display": "HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+          },
+          {
+            "code": "20483-4",
+            "display": "Mitochondria Ab [Titer] in Serum"
+          },
+          {
+            "code": "20563-3",
+            "display": "Carboxyhemoglobin/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "20564-1",
+            "display": "Oxygen saturation in Blood"
+          },
+          {
+            "code": "20570-8",
+            "display": "Hematocrit [Volume Fraction] of Blood by calculation"
+          },
+          {
+            "code": "2069-3",
+            "display": "Chloride [Moles/volume] in Blood"
+          },
+          {
+            "code": "2106-3",
+            "display": "Choriogonadotropin [Presence] in Urine"
+          },
+          {
+            "code": "21198-7",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2157-6",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2164-2",
+            "display": "Creatinine renal clearance in 24 hour Urine and Serum or Plasma"
+          },
+          {
+            "code": "22674-6",
+            "display": "Transferrin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "22700-9",
+            "display": "Urea [Moles/volume] in Urine"
+          },
+          {
+            "code": "22747-0",
+            "display": "Gentamicin [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "22748-8",
+            "display": "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2324-2",
+            "display": "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2349-9",
+            "display": "Glucose [Presence] in Urine"
+          },
+          {
+            "code": "2367-1",
+            "display": "Glutamate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "24108-3",
+            "display": "Cancer Ag 19-9 [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "24471-5",
+            "display": "Platelet function (closure time) collagen+EPINEPHrine induced [Time] in Blood"
+          },
+          {
+            "code": "24519-1",
+            "display": "Phosphate [Moles/volume] in Blood"
+          },
+          {
+            "code": "2457-0",
+            "display": "IgA [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2469-5",
+            "display": "IgG subclass 4 [Mass/volume] in Serum"
+          },
+          {
+            "code": "2471-1",
+            "display": "IgM [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2502-3",
+            "display": "Iron saturation [Mass Fraction] in Serum or Plasma"
+          },
+          {
+            "code": "2520-5",
+            "display": "Lactate [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2529-6",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid"
+          },
+          {
+            "code": "2532-0",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "25386-4",
+            "display": "Creatinine [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "25415-1",
+            "display": "Folate [Moles/volume] in Blood"
+          },
+          {
+            "code": "25433-4",
+            "display": "Free Hemoglobin [Moles/volume] in Plasma"
+          },
+          {
+            "code": "25458-1",
+            "display": "lamoTRIgine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "25461-5",
+            "display": "Lithium, [Moles/volume] in Blood"
+          },
+          {
+            "code": "25700-6",
+            "display": "Immunofixation for Serum or Plasma"
+          },
+          {
+            "code": "2593-2",
+            "display": "Magnesium [Moles/volume] in Blood"
+          },
+          {
+            "code": "26054-7",
+            "display": "Mitochondria M2 Ab [Presence] in Serum"
+          },
+          {
+            "code": "2614-6",
+            "display": "Methemoglobin/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "26446-5",
+            "display": "Blasts/Leukocytes in Blood"
+          },
+          {
+            "code": "26450-7",
+            "display": "Eosinophils/Leukocytes in Blood"
+          },
+          {
+            "code": "26452-3",
+            "display": "Eosinophils/Leukocytes in Body fluid"
+          },
+          {
+            "code": "26453-1",
+            "display": "Erythrocytes [#/volume] in Blood"
+          },
+          {
+            "code": "26454-9",
+            "display": "Erythrocytes [#/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "26455-6",
+            "display": "Erythrocytes [#/volume] in Body fluid"
+          },
+          {
+            "code": "26464-8",
+            "display": "Leukocytes [#/volume] in Blood"
+          },
+          {
+            "code": "26465-5",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "26466-3",
+            "display": "Leukocytes [#/volume] in Body fluid"
+          },
+          {
+            "code": "26478-8",
+            "display": "Lymphocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "26485-3",
+            "display": "Monocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "26486-1",
+            "display": "Monocytes/Leukocytes in Cerebral spinal fluid"
+          },
+          {
+            "code": "26493-7",
+            "display": "Mononuclear cells/Leukocytes in Body fluid"
+          },
+          {
+            "code": "26498-6",
+            "display": "Myelocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "26505-8",
+            "display": "Segmented neutrophils/Leukocytes in Blood"
+          },
+          {
+            "code": "26508-2",
+            "display": "Band form neutrophils/Leukocytes in Blood"
+          },
+          {
+            "code": "26511-6",
+            "display": "Neutrophils/Leukocytes in Blood"
+          },
+          {
+            "code": "26515-7",
+            "display": "Platelets [#/volume] in Blood"
+          },
+          {
+            "code": "26881-3",
+            "display": "Interleukin 6 [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2692-2",
+            "display": "Osmolality of Serum or Plasma"
+          },
+          {
+            "code": "2695-5",
+            "display": "Osmolality of Urine"
+          },
+          {
+            "code": "27416-7",
+            "display": "SCL-70 extractable nuclear Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "2756-5",
+            "display": "pH of Urine"
+          },
+          {
+            "code": "27811-9",
+            "display": "Antithrombin actual/normal in Platelet poor plasma by Chromogenic method"
+          },
+          {
+            "code": "27821-8",
+            "display": "Protein S Free Ag actual/normal in Platelet poor plasma by Immunoassay"
+          },
+          {
+            "code": "28539-5",
+            "display": "MCH [Entitic mass]"
+          },
+          {
+            "code": "28541-1",
+            "display": "Metamyelocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "28542-9",
+            "display": "Platelet [Entitic mean volume] in Blood"
+          },
+          {
+            "code": "28543-7",
+            "display": "Basophils/Leukocytes in Body fluid"
+          },
+          {
+            "code": "2880-3",
+            "display": "Protein [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2881-1",
+            "display": "Protein [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "2885-2",
+            "display": "Protein [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2887-8",
+            "display": "Protein [Presence] in Urine"
+          },
+          {
+            "code": "2888-6",
+            "display": "Protein [Mass/volume] in Urine"
+          },
+          {
+            "code": "2890-2",
+            "display": "Protein/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "2947-0",
+            "display": "Sodium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2955-3",
+            "display": "Sodium [Moles/volume] in Urine"
+          },
+          {
+            "code": "2965-2",
+            "display": "Specific gravity of Urine"
+          },
+          {
+            "code": "29760-6",
+            "display": "Bilirubin.conjugated [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "29775-4",
+            "display": "Insulin-like growth factor-I [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "29953-7",
+            "display": "Nuclear Ab [Titer] in Serum"
+          },
+          {
+            "code": "3015-5",
+            "display": "Thyrotropin [Units/volume] in Blood"
+          },
+          {
+            "code": "30180-4",
+            "display": "Basophils/Leukocytes in Blood"
+          },
+          {
+            "code": "30325-5",
+            "display": "Cytomegalovirus IgM Ab [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "30384-2",
+            "display": "Deprecated Erythrocyte distribution width [Entitic volume]"
+          },
+          {
+            "code": "30385-9",
+            "display": "Erythrocyte [DistWidth] in Blood"
+          },
+          {
+            "code": "30391-7",
+            "display": "Erythrocytes [#/volume] in Urine"
+          },
+          {
+            "code": "30395-8",
+            "display": "Granulocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "3040-3",
+            "display": "Lipase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30400-6",
+            "display": "Hypochromia [Presence] in Blood"
+          },
+          {
+            "code": "30405-5",
+            "display": "Leukocytes [#/volume] in Urine"
+          },
+          {
+            "code": "30413-9",
+            "display": "Abnormal lymphocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "30428-7",
+            "display": "MCV [Entitic mean volume] in Red Blood Cells"
+          },
+          {
+            "code": "31012-8",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "31017-7",
+            "display": "Tissue transglutaminase IgA Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "3150-0",
+            "display": "Inhaled oxygen concentration"
+          },
+          {
+            "code": "31562-2",
+            "display": "PM-SCL extractable nuclear Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "3173-2",
+            "display": "aPTT in Blood by Coagulation assay"
+          },
+          {
+            "code": "32052-3",
+            "display": "Benzodiazepines [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3209-4",
+            "display": "Coagulation factor VIII activity actual/normal in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "32207-3",
+            "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+          },
+          {
+            "code": "32350-1",
+            "display": "Basophils+Eosinophils+Monocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "3243-3",
+            "display": "Thrombin time"
+          },
+          {
+            "code": "3255-7",
+            "display": "Fibrinogen [Mass/volume] in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "32554-8",
+            "display": "Thiamine [Moles/volume] in Blood"
+          },
+          {
+            "code": "32673-6",
+            "display": "Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "32693-4",
+            "display": "Lactate [Moles/volume] in Blood"
+          },
+          {
+            "code": "32708-0",
+            "display": "Neutrophil cytoplasmic Ab.classic [Titer] in Serum"
+          },
+          {
+            "code": "32710-6",
+            "display": "Nitrite [Presence] in Urine"
+          },
+          {
+            "code": "32732-0",
+            "display": "Beta 1 globulin/Protein.total in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "32733-8",
+            "display": "Beta 2 globulin/Protein.total in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "32787-4",
+            "display": "Neutrophil cytoplasmic Ab.perinuclear [Titer] in Serum"
+          },
+          {
+            "code": "33052-2",
+            "display": "Leukocytes [Presence] in Urine"
+          },
+          {
+            "code": "33218-9",
+            "display": "Bacteria [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "33219-7",
+            "display": "Epithelial cells.squamous [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "33342-7",
+            "display": "Epithelial cells [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "33509-1",
+            "display": "Hemoglobin [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "33763-4",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33863-2",
+            "display": "Cystatin C [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33903-6",
+            "display": "Ketones [Presence] in Urine"
+          },
+          {
+            "code": "33944-0",
+            "display": "Lambda light chains.free [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33959-8",
+            "display": "Procalcitonin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33990-3",
+            "display": "Normoblasts/Leukocytes in Blood"
+          },
+          {
+            "code": "34714-6",
+            "display": "INR in Blood by Coagulation assay"
+          },
+          {
+            "code": "34917-5",
+            "display": "Plasma cell precursor/Leukocytes in Blood"
+          },
+          {
+            "code": "34920-9",
+            "display": "Lymphocytes Immunoblastic/Leukocytes in Blood"
+          },
+          {
+            "code": "34927-4",
+            "display": "Urobilinogen [Moles/volume] in Urine"
+          },
+          {
+            "code": "34939-9",
+            "display": "Tumor necrosis factor.alpha [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "34992-8",
+            "display": "Smudge cells/Leukocytes in Blood"
+          },
+          {
+            "code": "35706-1",
+            "display": "Albumin/Protein.total in Serum or Plasma"
+          },
+          {
+            "code": "36916-5",
+            "display": "Kappa light chains.free [Mass/volume] in Serum"
+          },
+          {
+            "code": "38518-7",
+            "display": "Immature granulocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "38892-6",
+            "display": "Anisocytosis [Presence] in Blood"
+          },
+          {
+            "code": "39797-6",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "42757-5",
+            "display": "Troponin I.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "43171-8",
+            "display": "Interleukin 2 receptor [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "43583-4",
+            "display": "Lipoprotein a [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "4477-6",
+            "display": "Complement C1 esterase inhibitor [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "4485-9",
+            "display": "Complement C3 [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "4548-4",
+            "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "46419-8",
+            "display": "Erythrocytes [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "46702-7",
+            "display": "Leukocytes [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "4679-7",
+            "display": "Reticulocytes/Erythrocytes in Blood"
+          },
+          {
+            "code": "47092-2",
+            "display": "Natriuretic peptide B [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "47275-3",
+            "display": "S100 calcium binding protein B [Mass/volume] in Serum"
+          },
+          {
+            "code": "48065-7",
+            "display": "Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma"
+          },
+          {
+            "code": "48066-5",
+            "display": "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
+          },
+          {
+            "code": "48347-9",
+            "display": "levETIRAcetam [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "48386-7",
+            "display": "Platelets Large/Platelets in Blood by Automated count"
+          },
+          {
+            "code": "48425-3",
+            "display": "Troponin T.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "49136-5",
+            "display": "Creatine kinase.MB/Creatine kinase.total [Ratio] in Serum or Plasma"
+          },
+          {
+            "code": "49779-2",
+            "display": "Ketones [Mass/volume] in Urine"
+          },
+          {
+            "code": "50176-7",
+            "display": "Alpha-2-Macroglobulin/Protein.total in Serum or Plasma"
+          },
+          {
+            "code": "5130-0",
+            "display": "DNA double strand Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "51633-6",
+            "display": "Platelets reticulated/Platelets in Blood"
+          },
+          {
+            "code": "5185-4",
+            "display": "Hepatitis B virus core IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "52770-5",
+            "display": "Clot formation.extrinsic coagulation system activated [Time] in Blood by Rotational TEG"
+          },
+          {
+            "code": "52773-9",
+            "display": "Clotting time.extrinsic coagulation system activated of Blood by Rotational TEG"
+          },
+          {
+            "code": "52780-4",
+            "display": "Maximum clot firmness.extrinsic coagulation system activated.platelets inhibited [Length] in Blood by Rotational TEG"
+          },
+          {
+            "code": "52781-2",
+            "display": "Maximum clot firmness.intrinsic coagulation system activated [Length] in Blood by Rotational TEG"
+          },
+          {
+            "code": "52783-8",
+            "display": "Maximum clot firmness.extrinsic coagulation system activated [Length] in Blood by Rotational TEG"
+          },
+          {
+            "code": "52958-6",
+            "display": "Methadone [Moles/volume] in Urine"
+          },
+          {
+            "code": "53027-9",
+            "display": "Cyclic citrullinated peptide Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "53294-5",
+            "display": "Epithelial cells.non-squamous [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "5370-2",
+            "display": "Streptolysin O Ab [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "53813-2",
+            "display": "Platelet aggregation ADP induced [Units/volume] in Blood"
+          },
+          {
+            "code": "5385-0",
+            "display": "Thyrotropin receptor Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "54218-3",
+            "display": "CD3+CD4+ (T4 helper) cells/CD3+CD8+ (T8 suppressor cells) cells [# Ratio] in Blood"
+          },
+          {
+            "code": "54347-0",
+            "display": "Albumin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "54363-7",
+            "display": "Bilirubin.total [Moles/volume] in Blood"
+          },
+          {
+            "code": "56887-3",
+            "display": "Myoglobin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "56888-1",
+            "display": "HIV 1+2 Ab+HIV1 p24 Ag [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "5894-1",
+            "display": "Prothrombin time (PT) actual/Normal"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hemoglobin [Moles/volume] in Blood"
+          },
+          {
+            "code": "59261-8",
+            "display": "Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood"
+          },
+          {
+            "code": "59467-1",
+            "display": "MCHC [Entitic Moles/volume] in Red Blood Cells"
+          },
+          {
+            "code": "5964-2",
+            "display": "Prothrombin time (PT) in Blood by Coagulation assay"
+          },
+          {
+            "code": "59826-8",
+            "display": "Creatinine [Moles/volume] in Blood"
+          },
+          {
+            "code": "6298-4",
+            "display": "Potassium [Moles/volume] in Blood"
+          },
+          {
+            "code": "63557-3",
+            "display": "Hepatitis B virus surface Ag [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "66483-9",
+            "display": "Heparin unfractionated [Units/volume] in Platelet poor plasma"
+          },
+          {
+            "code": "66746-9",
+            "display": "Specimen type"
+          },
+          {
+            "code": "69405-9",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by based on 1.73 sq M"
+          },
+          {
+            "code": "70199-5",
+            "display": "Bilirubin.total [Moles/volume] in Urine"
+          },
+          {
+            "code": "70209-2",
+            "display": "Haptoglobin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "70218-3",
+            "display": "Triglyceride [Moles/volume] in Blood"
+          },
+          {
+            "code": "72160-5",
+            "display": "Holo-transcobalamin II [Moles/volume] in Serum"
+          },
+          {
+            "code": "725-2",
+            "display": "Hemoglobin [Presence] in Urine"
+          },
+          {
+            "code": "72903-8",
+            "display": "Urea [Moles/volume] in Blood"
+          },
+          {
+            "code": "74442-5",
+            "display": "Pyridoxal phosphate [Moles/volume] in Blood"
+          },
+          {
+            "code": "76480-3",
+            "display": "Albumin [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "76484-5",
+            "display": "Beta-2-Microglobulin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76485-2",
+            "display": "C reactive protein [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76487-8",
+            "display": "IgA [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76489-4",
+            "display": "IgG [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "76490-2",
+            "display": "IgG [Moles/volume] in Urine"
+          },
+          {
+            "code": "76491-0",
+            "display": "IgM [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76496-9",
+            "display": "Complement C4 [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76625-3",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "76630-3",
+            "display": "Amylase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "76633-7",
+            "display": "Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD) in Blood"
+          },
+          {
+            "code": "77163-4",
+            "display": "Alpha-1-Microglobulin [Moles/volume] in Urine"
+          },
+          {
+            "code": "77177-4",
+            "display": "IgG [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "779-9",
+            "display": "Poikilocytosis [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "7852-7",
+            "display": "Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "7918-6",
+            "display": "HIV 1+2 Ab [Presence] in Serum"
+          },
+          {
+            "code": "800-3",
+            "display": "Schistocytes [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "8076-2",
+            "display": "Jo-1 extractable nuclear Ab [Presence] in Serum"
+          },
+          {
+            "code": "8098-6",
+            "display": "Thyroglobulin Ab [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "8099-4",
+            "display": "Thyroperoxidase Ab [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "8101-8",
+            "display": "CD3+CD8+ (T8 suppressor) cells/cells in Blood"
+          },
+          {
+            "code": "8112-5",
+            "display": "CD3-CD16+CD56+ (Natural killer) cells/cells in Blood"
+          },
+          {
+            "code": "8123-2",
+            "display": "CD3+CD4+ (T4 helper) cells/cells in Blood"
+          },
+          {
+            "code": "8124-0",
+            "display": "CD3 cells/cells in Blood"
+          },
+          {
+            "code": "9318-7",
+            "display": "Albumin/Creatinine [Mass Ratio] in Urine"
+          }
+        ]
+      }
+    ]
+  }
+}

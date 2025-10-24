@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-7310",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-7310",
+  "version": "3.6",
+  "name": "InterpolarLOINC7310",
+  "title": "Interpolar LOINC Group: Lymphozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 731-0 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26474-7",
+            "display": "Lymphocytes [#/volume] in Blood"
+          },
+          {
+            "code": "30364-4",
+            "display": "Lymphocytes [#/volume] in Blood by Flow cytometry (FC)"
+          },
+          {
+            "code": "731-0",
+            "display": "Lymphocytes [#/volume] in Blood by Automated count"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-337626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-337626",
+  "version": "3.6",
+  "name": "InterpolarLOINC337626",
+  "title": "Interpolar LOINC Group: Natriuretisches Peptid.B Prohormon N-Terminal [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 33762-6 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "33762-6",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33763-4",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35257-5",
+            "display": "Natriuretic peptide B [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "42637-9",
+            "display": "Natriuretic peptide B [Mass/volume] in Blood"
+          },
+          {
+            "code": "47092-2",
+            "display": "Natriuretic peptide B [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "71425-3",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Blood by Immunoassay"
+          },
+          {
+            "code": "83107-3",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "83108-1",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Moles/volume] in Serum or Plasma by Immunoassay"
+          }
+        ]
+      }
+    ]
+  }
+}

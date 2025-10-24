@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-56432",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-56432",
+  "version": "1.0",
+  "name": "ECLComponentSystem56432",
+  "title": "ECL Component+System: Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=419442005 AND System=122592007 for LOINC 5643-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "111062-6",
+            "display": "LOINC 111062-6"
+          },
+          {
+            "code": "14336-2",
+            "display": "LOINC 14336-2"
+          },
+          {
+            "code": "14719-9",
+            "display": "LOINC 14719-9"
+          },
+          {
+            "code": "20470-1",
+            "display": "LOINC 20470-1"
+          },
+          {
+            "code": "35240-1",
+            "display": "LOINC 35240-1"
+          },
+          {
+            "code": "5642-4",
+            "display": "LOINC 5642-4"
+          },
+          {
+            "code": "5643-2",
+            "display": "LOINC 5643-2"
+          }
+        ]
+      }
+    ]
+  }
+}

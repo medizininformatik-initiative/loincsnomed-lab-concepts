@@ -1,0 +1,130 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#000">
+    Precision vs Recall: Venn Diagram
+  </text>
+
+  <!-- Left Circle - Interpolar Reference (Ground Truth) -->
+  <circle cx="280" cy="280" r="150" fill="#ADD8E6" fill-opacity="0.5" stroke="#0066CC" stroke-width="3"/>
+
+  <!-- Right Circle - ECL Query Results -->
+  <circle cx="420" cy="280" r="150" fill="#90EE90" fill-opacity="0.5" stroke="#00AA00" stroke-width="3"/>
+
+  <!-- Labels for circles -->
+  <text x="200" y="150" font-size="16" font-weight="bold" fill="#0066CC" text-anchor="middle">
+    Ground Truth
+  </text>
+  <text x="200" y="170" font-size="14" fill="#0066CC" text-anchor="middle">
+    (Interpolar)
+  </text>
+
+  <text x="500" y="150" font-size="16" font-weight="bold" fill="#00AA00" text-anchor="middle">
+    ECL Query
+  </text>
+  <text x="500" y="170" font-size="14" fill="#00AA00" text-anchor="middle">
+    Results
+  </text>
+
+  <!-- FN Region (Left only) -->
+  <text x="200" y="275" font-size="18" font-weight="bold" fill="#CC0000" text-anchor="middle">
+    FN
+  </text>
+  <text x="200" y="295" font-size="16" fill="#CC0000" text-anchor="middle">
+    4 codes
+  </text>
+  <text x="200" y="315" font-size="12" fill="#333" text-anchor="middle">
+    Missed by ECL
+  </text>
+
+  <!-- TP Region (Intersection) -->
+  <text x="350" y="270" font-size="18" font-weight="bold" fill="#006600" text-anchor="middle">
+    TP
+  </text>
+  <text x="350" y="290" font-size="16" fill="#006600" text-anchor="middle">
+    15 codes
+  </text>
+  <text x="350" y="310" font-size="12" fill="#333" text-anchor="middle">
+    Correct
+  </text>
+  <text x="350" y="325" font-size="12" fill="#333" text-anchor="middle">
+    matches
+  </text>
+
+  <!-- FP Region (Right only) -->
+  <text x="500" y="275" font-size="18" font-weight="bold" fill="#CC8800" text-anchor="middle">
+    FP
+  </text>
+  <text x="500" y="295" font-size="16" fill="#CC8800" text-anchor="middle">
+    11 codes
+  </text>
+  <text x="500" y="315" font-size="12" fill="#333" text-anchor="middle">
+    Extra findings
+  </text>
+
+  <!-- Formulas Box -->
+  <rect x="50" y="450" width="340" height="130" fill="#F5F5F5" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="220" y="475" font-size="14" font-weight="bold" text-anchor="middle">
+    Recall (Completeness)
+  </text>
+  <text x="220" y="495" font-size="13" text-anchor="middle">
+    = TP / (TP + FN) = 15 / 19 = 78.9%
+  </text>
+  <text x="220" y="515" font-size="11" fill="#555" text-anchor="middle">
+    "How many relevant codes did we find?"
+  </text>
+
+  <line x1="60" y1="525" x2="380" y2="525" stroke="#AAA" stroke-width="1"/>
+
+  <text x="220" y="545" font-size="14" font-weight="bold" text-anchor="middle">
+    Precision (Accuracy)
+  </text>
+  <text x="220" y="565" font-size="13" text-anchor="middle">
+    = TP / (TP + FP) = 15 / 26 = 57.7%
+  </text>
+  <text x="220" y="582" font-size="11" fill="#555" text-anchor="middle">
+    "How many found codes are relevant?"
+  </text>
+
+  <!-- F1 Score Box -->
+  <rect x="410" y="450" width="340" height="130" fill="#F5F5F5" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="580" y="475" font-size="14" font-weight="bold" text-anchor="middle">
+    F1 Score (Balance)
+  </text>
+  <text x="580" y="495" font-size="13" text-anchor="middle">
+    = 2 × (P × R) / (P + R)
+  </text>
+  <text x="580" y="515" font-size="16" font-weight="bold" fill="#0066CC" text-anchor="middle">
+    66.7%
+  </text>
+  <text x="580" y="535" font-size="11" fill="#555" text-anchor="middle">
+    Harmonic mean of precision
+  </text>
+  <text x="580" y="550" font-size="11" fill="#555" text-anchor="middle">
+    and recall - balances both
+  </text>
+  <text x="580" y="565" font-size="11" fill="#555" text-anchor="middle">
+    completeness and accuracy
+  </text>
+
+  <!-- Legend arrows -->
+  <line x1="150" y1="280" x2="230" y2="280" stroke="#0066CC" stroke-width="2" marker-end="url(#arrowblue)"/>
+  <text x="120" y="285" font-size="12" fill="#0066CC" text-anchor="end">19 codes</text>
+
+  <line x1="550" y1="280" x2="470" y2="280" stroke="#00AA00" stroke-width="2" marker-end="url(#arrowgreen)"/>
+  <text x="580" y="285" font-size="12" fill="#00AA00" text-anchor="start">26 codes</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0066CC"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00AA00"/>
+    </marker>
+  </defs>
+
+  <!-- Example note -->
+  <text x="400" y="50" font-size="12" fill="#666" text-anchor="middle">
+    Example: Hemoglobin ECL Query (with cord blood exclusion)
+  </text>
+</svg>

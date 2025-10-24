@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-105353",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-105353",
+  "version": "1.0",
+  "name": "ECLComponent105353",
+  "title": "ECL Component-Based: Digoxin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 10535-3 (SNOMED 191571010000106)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10535-3",
+            "display": "Digoxin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "83093-5",
+            "display": "Digoxin [Mass/volume] in Serum or Plasma by Immunoassay"
+          }
+        ]
+      }
+    ]
+  }
+}

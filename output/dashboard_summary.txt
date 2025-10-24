@@ -1,0 +1,170 @@
+================================================================================
+DASHBOARD SUMMARY - ECL REFINED QUERY V2 RESULTS
+================================================================================
+
+Parameter                      LOINC        Query Type                               Config File                             
+--------------------------------------------------------------------------------------------------------------------------
+Hemoglobin                     59260-0      Refined Query V2 (Excl. Ratio & Pla...   config/hemoglobin_custom_ecl.json       
+Erythrocytes                   26453-1      Refined Query V2 (Property-Specific...   config/erythrocytes_custom_ecl.json     
+Leukocytes                     26464-8      Refined Query V2 (Property-Specific...   config/leukocytes_custom_ecl.json       
+Platelets                      26515-7      Config not found                         config/platelets_custom_ecl.json        
+Hematocrit                     20570-8      Refined Query V2 (Property-Specific...   config/hematocrit_custom_ecl.json       
+MCV                            787-2        Refined Query V2 (Pre-coordinated P...   config/mcv_custom_ecl.json              
+MCH                            28539-5      Refined Query V2 (Entitic Mass Prop...   config/mch_custom_ecl.json              
+MCHC                           786-4        Refined Query V2 (Pre-coordinated P...   config/mchc_custom_ecl.json             
+Methemoglobin (Quant)          2614-6       Refined Query V2 Quantitative (Meas...   config/methemoglobin_custom_ecl.json    
+Methemoglobin (Ratio)          2614-6       Refined Query V2 Ratio (Ratio Prope...   config/methemoglobin_custom_ecl.json    
+Potassium                      6298-4       Refined Query V2 (Universal Measure...   config/potassium_custom_ecl.json        
+Nitrite Urine (Quant)          32710-6      Refined Query V2 Quantitative (Meas...   config/nitrite_urine_custom_ecl.json    
+Nitrite Urine (Qual)           32710-6      Refined Query V2 Qualitative (Prese...   config/nitrite_urine_custom_ecl.json    
+
+================================================================================
+DETAILED QUERY INFORMATION
+================================================================================
+
+
+================================================================================
+Hemoglobin (LOINC 59260-0)
+================================================================================
+
+Query: Refined Query V2 (Excl. Ratio & Plasma)
+
+Description: Same as V1 but excludes: (1) Ratio properties (e.g., Hemoglobin/Hemoglobin.total ratios) and (2) Plasma specimens. This focuses on absolute measurements in blood.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 704327008 |Direct site (attribute)| != << 119361006 |Plasma specimen (specimen)|
+
+================================================================================
+Erythrocytes (LOINC 26453-1)
+================================================================================
+
+Query: Refined Query V2 (Property-Specific: Number Concentration)
+
+Description: Uses Component = Erythrocyte AND Property = Number concentration (118550005) to separate RBC count from Hematocrit (which uses Volume fraction). This prevents cross-contamination between measurements that share the same Component.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|
+
+================================================================================
+Leukocytes (LOINC 26464-8)
+================================================================================
+
+Query: Refined Query V2 (Property-Specific: Number Concentration)
+
+Description: Uses Component = Leukocyte AND Property = Number concentration (118550005) to exclude ratio-based measurements. This ensures only absolute leukocyte counts are included, not relative percentages or ratios.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|
+
+================================================================================
+Platelets (LOINC 26515-7)
+================================================================================
+
+[!] Config file not found: config/platelets_custom_ecl.json
+
+================================================================================
+Hematocrit (LOINC 20570-8)
+================================================================================
+
+Query: Refined Query V2 (Property-Specific: Volume Fraction)
+
+Description: Uses Component = Erythrocyte AND Property = Volume fraction (118586006) to separate Hematocrit from RBC count (which uses Number concentration). This prevents cross-contamination between measurements that share the same Component.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Volume fraction (property) (qualifier value)|
+
+================================================================================
+MCV (LOINC 787-2)
+================================================================================
+
+Query: Refined Query V2 (Pre-coordinated Parent Descendants)
+
+Description: MCV has no Component attribute - uses 'Inheres in' relationship with Erythrocyte (41898006). Parent concept 525321010000100 has 2 descendants: 787-2 (automated) and 30428-7 (generic). Post-coordinated ECL cannot capture this relationship, so we use pre-coordinated hierarchy query.
+
+[!] SPECIAL NOTE: SPECIAL CASE: MCV uses 'Inheres in' relationship (704319004), NOT Component attribute. Post-coordinated queries (Exp 1-5) will fail. Use Pre-coordinated Descendants (Exp 0) approach only.
+
+ECL Query:
+<< 525321010000100 |Mean cell volume (observable entity)|
+
+================================================================================
+MCH (LOINC 28539-5)
+================================================================================
+
+Query: Refined Query V2 (Entitic Mass Property)
+
+Description: Uses Component = Hemoglobin AND Property = Entitic mass (118535001) AND Direct site = Erythrocyte specimen. Note: Entitic mass is NOT covered by the universal Measurement property, so this query specifically targets the Entitic mass property for MCH measurements.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|
+
+================================================================================
+MCHC (LOINC 786-4)
+================================================================================
+
+Query: Refined Query V2 (Pre-coordinated Parent Descendants)
+
+Description: MCHC has no Component attribute - uses 'Inheres in' relationship with Hemoglobin (38082009). Parent concept 521371010000101 has 2 descendants: 786-4 (automated) and 28540-3 (generic). Direct site is Erythrocyte specimen (119351004). Post-coordinated ECL cannot capture this relationship, so we use pre-coordinated hierarchy query.
+
+[!] SPECIAL NOTE: SPECIAL CASE: MCHC uses 'Inheres in' relationship (704319004), NOT Component attribute. Post-coordinated queries (Exp 1-5) will fail. Use Pre-coordinated Descendants (Exp 0) approach only.
+
+ECL Query:
+<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|
+
+================================================================================
+Methemoglobin (Quant) (LOINC 2614-6)
+================================================================================
+
+Query: Refined Query V2 Quantitative (Measurement Properties)
+
+Description: Uses Component = Methemoglobin (with descendants to capture variants like cyanmethemoglobin) AND Property = Measurement property (universal parent) for quantitative measurements. Excludes ratio-based measurements like Methemoglobin/Hemoglobin ratios.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|
+
+================================================================================
+Methemoglobin (Ratio) (LOINC 2614-6)
+================================================================================
+
+Query: Refined Query V2 Ratio (Ratio Properties)
+
+Description: Uses Component = Methemoglobin (with descendants) AND Property = Ratio for ratio-based measurements. This captures Methemoglobin/Hemoglobin.total ratios and similar relative measurements.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|
+
+================================================================================
+Potassium (LOINC 6298-4)
+================================================================================
+
+Query: Refined Query V2 (Universal Measurement Property)
+
+Description: Uses Component = Potassium electrolyte AND Property = Measurement property (universal parent of all quantitative measurement types like substance concentration, molar concentration, etc.). This captures all quantitative potassium measurements in blood.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|
+
+================================================================================
+Nitrite Urine (Quant) (LOINC 32710-6)
+================================================================================
+
+Query: Refined Query V2 Quantitative (Measurement Properties)
+
+Description: Uses Component = Nitrite salt AND Property = Measurement property (universal parent of quantitative types) for quantitative nitrite measurements. This captures substance concentration, molar concentration, and other quantitative measurements in urine.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|
+
+================================================================================
+Nitrite Urine (Qual) (LOINC 32710-6)
+================================================================================
+
+Query: Refined Query V2 Qualitative (Presence Properties)
+
+Description: Uses Component = Nitrite salt AND Property = Presence (705057003) for qualitative nitrite detection. This captures presence/absence tests commonly used in urinalysis dipstick tests.
+
+ECL Query:
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|
+
+================================================================================
+SUMMARY COMPLETE
+================================================================================

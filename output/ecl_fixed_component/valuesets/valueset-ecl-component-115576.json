@@ -1,0 +1,246 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-115576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-115576",
+  "version": "1.0",
+  "name": "ECLComponent115576",
+  "title": "ECL Fixed Component: Kohlenstoffdioxid [Partialdruck] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=31811003 for LOINC 11557-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11211-0",
+            "display": "Carbon dioxide, total [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "11557-6",
+            "display": "Carbon dioxide [Partial pressure] in Blood"
+          },
+          {
+            "code": "13538-4",
+            "display": "Carbon dioxide, total [Moles/volume] in Urine"
+          },
+          {
+            "code": "13540-0",
+            "display": "Carbon dioxide, total [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "14003-8",
+            "display": "Carbon dioxide [Partial pressure] in Cord blood"
+          },
+          {
+            "code": "14040-0",
+            "display": "Carbon dioxide, total [Moles/volume] in Stool"
+          },
+          {
+            "code": "14640-7",
+            "display": "Carbon dioxide, total [Moles/volume] in Dialysis fluid"
+          },
+          {
+            "code": "16551-4",
+            "display": "Carbon dioxide, total [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "19212-0",
+            "display": "Carbon dioxide [Partial pressure] in Mixed venous blood"
+          },
+          {
+            "code": "19223-7",
+            "display": "Carbon dioxide, total [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "2018-0",
+            "display": "Carbon dioxide [Partial pressure] in Amniotic fluid"
+          },
+          {
+            "code": "2019-8",
+            "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+          },
+          {
+            "code": "2020-6",
+            "display": "Carbon dioxide [Partial pressure] in Capillary blood"
+          },
+          {
+            "code": "2021-4",
+            "display": "Carbon dioxide [Partial pressure] in Venous blood"
+          },
+          {
+            "code": "2022-2",
+            "display": "Carbon dioxide [Partial pressure] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2023-0",
+            "display": "Carbon dioxide [Partial pressure] in Body fluid"
+          },
+          {
+            "code": "2026-3",
+            "display": "Carbon dioxide, total [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "2027-1",
+            "display": "Carbon dioxide, total [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "2028-9",
+            "display": "Carbon dioxide, total [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "20565-8",
+            "display": "Carbon dioxide, total [Moles/volume] in Blood"
+          },
+          {
+            "code": "28644-3",
+            "display": "Carbon dioxide [Partial pressure] in Arterial cord blood"
+          },
+          {
+            "code": "28645-0",
+            "display": "Carbon dioxide [Partial pressure] in Venous cord blood"
+          },
+          {
+            "code": "29891-9",
+            "display": "Helicobacter pylori [Presence] in Stomach by urea breath test"
+          },
+          {
+            "code": "29892-7",
+            "display": "Helicobacter pylori [Quantitative] in Stomach by urea breath test"
+          },
+          {
+            "code": "32306-3",
+            "display": "Carbon dioxide [Partial pressure] in Urine"
+          },
+          {
+            "code": "32771-8",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+          },
+          {
+            "code": "34520-7",
+            "display": "Carbon dioxide, total [Moles/volume] in Cord blood"
+          },
+          {
+            "code": "34705-4",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Blood"
+          },
+          {
+            "code": "34728-6",
+            "display": "Carbon dioxide, total [Moles/volume] in Blood by calculation"
+          },
+          {
+            "code": "35685-7",
+            "display": "Carbon dioxide [Moles/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "38253-1",
+            "display": "Carbon dioxide, total [Moles/volume] in Specimen"
+          },
+          {
+            "code": "39464-3",
+            "display": "Carbon dioxide, total [Moles/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "39465-0",
+            "display": "Carbon dioxide, total [Moles/volume] in Venous cord blood"
+          },
+          {
+            "code": "39466-8",
+            "display": "Carbon dioxide, total [Moles/volume] in Arterial cord blood"
+          },
+          {
+            "code": "40619-9",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Venous blood"
+          },
+          {
+            "code": "40620-7",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Capillary blood"
+          },
+          {
+            "code": "41647-9",
+            "display": "Carbon dioxide, total [Moles/volume] in Arterial blood by calculation"
+          },
+          {
+            "code": "47599-6",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Cord blood"
+          },
+          {
+            "code": "48391-7",
+            "display": "Carbon dioxide, total [Moles/volume] in Venous blood by calculation"
+          },
+          {
+            "code": "49694-3",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial cord blood"
+          },
+          {
+            "code": "49695-0",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Venous cord blood"
+          },
+          {
+            "code": "50981-0",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Mixed venous blood"
+          },
+          {
+            "code": "51781-3",
+            "display": "Carbon dioxide, total [Moles/volume] in Capillary blood by calculation"
+          },
+          {
+            "code": "53089-9",
+            "display": "Carbon dioxide, total [Moles/volume] in Nonbiological fluid by calculation"
+          },
+          {
+            "code": "53090-7",
+            "display": "Carbon dioxide, total [Moles/volume] in Nonbiological fluid"
+          },
+          {
+            "code": "53458-6",
+            "display": "Carbon dioxide [Partial pressure] in Nonbiological fluid"
+          },
+          {
+            "code": "57920-1",
+            "display": "Carbon dioxide, total [Moles/volume] in Mixed venous blood by calculation"
+          },
+          {
+            "code": "57921-9",
+            "display": "Carbon dioxide, total [Moles/volume] in Arterial cord blood by calculation"
+          },
+          {
+            "code": "57922-7",
+            "display": "Carbon dioxide, total [Moles/volume] in Serum or Plasma by calculation"
+          },
+          {
+            "code": "57923-5",
+            "display": "Carbon dioxide, total [Moles/volume] in Venous cord blood by calculation"
+          },
+          {
+            "code": "59165-1",
+            "display": "Carbon dioxide [Partial pressure] in Dialysis fluid"
+          },
+          {
+            "code": "74684-2",
+            "display": "Carbon dioxide, total [Moles/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "77143-6",
+            "display": "Carbon dioxide, total [Moles/volume] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "97538-3",
+            "display": "Carbon dioxide [Partial pressure] in Central venous blood"
+          },
+          {
+            "code": "97539-1",
+            "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Central venous blood"
+          },
+          {
+            "code": "97545-8",
+            "display": "Carbon dioxide, total [Moles/volume] in Central venous blood"
+          }
+        ]
+      }
+    ]
+  }
+}

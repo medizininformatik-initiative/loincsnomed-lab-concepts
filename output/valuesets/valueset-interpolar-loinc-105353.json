@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-105353",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-105353",
+  "version": "3.6",
+  "name": "InterpolarLOINC105353",
+  "title": "Interpolar LOINC Group: Digoxin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 10535-3 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10535-3",
+            "display": "Digoxin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14698-5",
+            "display": "Digoxin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35244-3",
+            "display": "Digoxin [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "83093-5",
+            "display": "Digoxin [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "83094-3",
+            "display": "Digoxin [Moles/volume] in Serum or Plasma by Immunoassay"
+          }
+        ]
+      }
+    ]
+  }
+}

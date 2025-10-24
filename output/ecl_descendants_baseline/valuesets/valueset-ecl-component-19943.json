@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-19943",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-19943",
+  "version": "1.0",
+  "name": "ECLComponent19943",
+  "title": "ECL Component-Based: Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 1994-3 (SNOMED 205021010000103)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "12180-6",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "13959-2",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma by calculation"
+          },
+          {
+            "code": "16512-6",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge"
+          },
+          {
+            "code": "16513-4",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge"
+          },
+          {
+            "code": "16514-2",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge"
+          },
+          {
+            "code": "16515-9",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge"
+          },
+          {
+            "code": "16516-7",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge"
+          },
+          {
+            "code": "16517-5",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge"
+          },
+          {
+            "code": "19072-8",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Serum or Plasma"
+          },
+          {
+            "code": "1994-3",
+            "display": "Calcium.ionized [Moles/volume] in Blood"
+          },
+          {
+            "code": "1995-0",
+            "display": "Calcium.ionized [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "34581-9",
+            "display": "Calcium.ionized [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "41644-6",
+            "display": "Calcium.ionized [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "41645-3",
+            "display": "Calcium.ionized [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "41646-1",
+            "display": "Calcium.ionized [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "47596-2",
+            "display": "Calcium.ionized [Moles/volume] in Blood by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "47598-8",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Blood"
+          },
+          {
+            "code": "53138-4",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Arterial blood"
+          },
+          {
+            "code": "53139-2",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Capillary blood"
+          },
+          {
+            "code": "53140-0",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Venous blood"
+          },
+          {
+            "code": "54366-0",
+            "display": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Cord blood"
+          },
+          {
+            "code": "54367-8",
+            "display": "Calcium.ionized [Moles/volume] in Cord blood"
+          }
+        ]
+      }
+    ]
+  }
+}

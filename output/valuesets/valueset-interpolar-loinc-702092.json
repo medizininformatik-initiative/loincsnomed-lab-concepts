@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-702092",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-702092",
+  "version": "3.6",
+  "name": "InterpolarLOINC702092",
+  "title": "Interpolar LOINC Group: Haptoglobin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 70209-2 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "4542-7",
+            "display": "Haptoglobin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "4543-5",
+            "display": "Haptoglobin [Mass/volume] in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "46127-7",
+            "display": "Haptoglobin [Mass/volume] in Serum or Plasma by Nephelometry"
+          },
+          {
+            "code": "55453-5",
+            "display": "Deprecated Haptoglobin in Serum or Plasma"
+          },
+          {
+            "code": "70209-2",
+            "display": "Haptoglobin [Moles/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

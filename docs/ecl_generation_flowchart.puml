@@ -1,0 +1,74 @@
+@startuml ecl_generation_flowchart
+skinparam backgroundColor white
+skinparam defaultFontSize 10
+
+title ECL Expression Generation - Hemoglobin Example
+
+start
+
+:Input LOINC 59260-0;
+
+:Get SNOMED Concept 168331010000106;
+
+:Extract Attributes:
+Component 38082009 Hemoglobin
+Property 118539007 Mass concentration
+Direct site 119297000 Blood specimen;
+
+note right
+  These 3 attributes are used
+  to build post-coordinated ECL
+end note
+
+partition "Generate 6 ECL Experiments" {
+
+:Exp 0 Pre-coordinated Descendants
+descendantsOf 168331010000106
+Result 28 LOINC codes;
+
+:Exp 1 Fixed Component
+Component = 38082009
+Result 103 LOINC codes;
+
+:Exp 2 Component Descendants
+Component = descendantsOf 38082009
+Result 131 LOINC codes;
+
+:Exp 3 Component + Property
+Comp = 38082009 and Prop = 118539007
+Result 26 LOINC codes;
+
+:Exp 4 Component + System
+Comp = 38082009 and Site = 119297000
+Result 62 LOINC codes;
+
+:Exp 5 Refined Base
+Comp + Measurement Prop + Site
+Result 62 LOINC codes;
+
+}
+
+:Execute all ECL queries on OntoServer;
+
+:Map SNOMED concepts to LOINC codes;
+
+:Load Interpolar reference 19 comparable codes;
+
+:Calculate Metrics;
+
+note right
+  Example Exp 0:
+  Recall 78.9%
+  Precision 57.7%
+  F1 66.7%
+end note
+
+:Fetch LOINC display names;
+
+:Generate HTML Dashboard;
+
+:Save to output/decision_dashboards/;
+
+stop
+
+@enduml

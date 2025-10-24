@@ -1,0 +1,644 @@
+{
+  "total_primary_codes": 47,
+  "total_secondary_codes": 356,
+  "primary_codes": {
+    "1742-6": {
+      "name": "Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "1742-6",
+        "1743-4",
+        "1744-2",
+        "76625-3",
+        "77144-4"
+      ]
+    },
+    "1751-7": {
+      "name": "Albumin [Mass/volume] in Serum or Plasma by Nephelometry",
+      "secondary_count": 10,
+      "secondary_codes": [
+        "101198-0",
+        "1751-7",
+        "2862-1",
+        "54347-0",
+        "61151-7",
+        "61152-5",
+        "62234-0",
+        "62235-7",
+        "76631-1",
+        "77148-5"
+      ]
+    },
+    "1920-8": {
+      "name": "Aspartat-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "secondary_count": 3,
+      "secondary_codes": [
+        "1920-8",
+        "30239-8",
+        "88112-8"
+      ]
+    },
+    "14631-6": {
+      "name": "Bilirubin.gesamt [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 21,
+      "secondary_codes": [
+        "14631-6",
+        "1975-2",
+        "1977-8",
+        "1978-6",
+        "20505-4",
+        "35194-0",
+        "41016-7",
+        "42719-5",
+        "50551-1",
+        "53327-3",
+        "54363-7",
+        "5770-3",
+        "58450-8",
+        "59827-6",
+        "59828-4",
+        "68367-2",
+        "70199-5",
+        "77137-8",
+        "89871-8",
+        "89872-6",
+        "97770-2"
+      ]
+    },
+    "1988-5": {
+      "name": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 6,
+      "secondary_codes": [
+        "1988-5",
+        "30522-7",
+        "48421-2",
+        "71426-1",
+        "76485-2",
+        "76486-0"
+      ]
+    },
+    "14979-9": {
+      "name": "aPTT in thrombozytenarmem Plasma mit Gerinnungstest",
+      "secondary_count": 7,
+      "secondary_codes": [
+        "14979-9",
+        "15362-7",
+        "3173-2",
+        "34571-0",
+        "52751-5",
+        "53570-8",
+        "5898-2"
+      ]
+    },
+    "6301-6": {
+      "name": "International Normalized Ratio (INR) in Blut mit Gerinnungstest",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "34714-6",
+        "38875-1",
+        "46418-0",
+        "5895-7",
+        "6301-6"
+      ]
+    },
+    "2157-6": {
+      "name": "Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "secondary_count": 2,
+      "secondary_codes": [
+        "2157-6",
+        "50756-6"
+      ]
+    },
+    "14682-9": {
+      "name": "Creatinine [Moles/volume] in Venous blood",
+      "secondary_count": 9,
+      "secondary_codes": [
+        "101475-2",
+        "14682-9",
+        "21232-4",
+        "2160-0",
+        "35203-9",
+        "38483-4",
+        "59826-8",
+        "72271-0",
+        "77140-2"
+      ]
+    },
+    "62238-1": {
+      "name": "Creatinine renal clearance/1.73 sq M.predicted among females by Cockcroft-Gault formula, BSA formula",
+      "secondary_count": 20,
+      "secondary_codes": [
+        "33914-3",
+        "35591-7",
+        "35592-5",
+        "48642-3",
+        "48643-1",
+        "50044-7",
+        "50210-4",
+        "50380-5",
+        "50381-3",
+        "62238-1",
+        "69405-9",
+        "70969-1",
+        "76633-7",
+        "77147-7",
+        "88293-6",
+        "88294-4",
+        "94677-2",
+        "97952-6",
+        "98979-8",
+        "98980-6"
+      ]
+    },
+    "14749-6": {
+      "name": "Glucose [Moles/volume] in Mixed venous blood",
+      "secondary_count": 22,
+      "secondary_codes": [
+        "100746-7",
+        "14743-9",
+        "14749-6",
+        "15074-8",
+        "2339-0",
+        "2340-8",
+        "2341-6",
+        "2345-7",
+        "32016-8",
+        "35211-2",
+        "39480-9",
+        "39481-7",
+        "41651-1",
+        "41652-9",
+        "41653-7",
+        "51596-5",
+        "6777-7",
+        "72516-8",
+        "74774-1",
+        "76629-5",
+        "77135-2",
+        "77145-1"
+      ]
+    },
+    "59260-0": {
+      "name": "Hämoglobin [Masse/Volumen] in arteriellem Blut mit Oximetrie",
+      "secondary_count": 18,
+      "secondary_codes": [
+        "14775-1",
+        "20509-6",
+        "30313-1",
+        "30350-3",
+        "30351-1",
+        "30352-9",
+        "42243-6",
+        "48725-6",
+        "55782-7",
+        "59260-0",
+        "718-7",
+        "75928-2",
+        "76768-1",
+        "76769-9",
+        "93846-4",
+        "97550-8",
+        "97555-7",
+        "97556-5"
+      ]
+    },
+    "6690-2": {
+      "name": "Leukozyten [#/Volumen] in Blut",
+      "secondary_count": 4,
+      "secondary_codes": [
+        "26464-8",
+        "49498-9",
+        "6690-2",
+        "804-5"
+      ]
+    },
+    "751-8": {
+      "name": "Neutrophile [#/Volumen] in Blut",
+      "secondary_count": 4,
+      "secondary_codes": [
+        "26499-4",
+        "751-8",
+        "752-6",
+        "753-4"
+      ]
+    },
+    "26515-7": {
+      "name": "Thrombozyten [#/Volumen] in Blut",
+      "secondary_count": 7,
+      "secondary_codes": [
+        "26515-7",
+        "49497-1",
+        "5907-1",
+        "74464-9",
+        "777-3",
+        "778-1",
+        "97995-5"
+      ]
+    },
+    "2823-3": {
+      "name": "Kalium [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 10,
+      "secondary_codes": [
+        "22760-3",
+        "2823-3",
+        "32713-0",
+        "39789-3",
+        "39790-1",
+        "41656-0",
+        "42569-4",
+        "6298-4",
+        "75940-7",
+        "77142-8"
+      ]
+    },
+    "2951-2": {
+      "name": "Natrium [Mol/Volumen] in Blut",
+      "secondary_count": 8,
+      "secondary_codes": [
+        "2947-0",
+        "2951-2",
+        "32717-1",
+        "39791-9",
+        "39792-7",
+        "41657-8",
+        "42570-2",
+        "77139-4"
+      ]
+    },
+    "16362-6": {
+      "name": "Ammoniak [Mol/Volumen] in Plasma",
+      "secondary_count": 6,
+      "secondary_codes": [
+        "16362-6",
+        "1839-0",
+        "22763-7",
+        "32664-5",
+        "35254-2",
+        "93684-9"
+      ]
+    },
+    "2000-8": {
+      "name": "Calcium [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 7,
+      "secondary_codes": [
+        "17861-6",
+        "1996-8",
+        "2000-8",
+        "35246-8",
+        "42593-4",
+        "42857-3",
+        "49765-1"
+      ]
+    },
+    "1994-3": {
+      "name": "Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE)",
+      "secondary_count": 24,
+      "secondary_codes": [
+        "12180-6",
+        "13959-2",
+        "17863-2",
+        "17864-0",
+        "19072-8",
+        "1994-3",
+        "1995-0",
+        "34581-9",
+        "38230-9",
+        "41644-6",
+        "41645-3",
+        "41646-1",
+        "42567-8",
+        "47596-2",
+        "47598-8",
+        "50838-2",
+        "53138-4",
+        "53139-2",
+        "53140-0",
+        "57333-7",
+        "59470-5",
+        "59471-3",
+        "59472-1",
+        "59473-9"
+      ]
+    },
+    "11557-6": {
+      "name": "Kohlenstoffdioxid [Partialdruck] in Blut",
+      "secondary_count": 14,
+      "secondary_codes": [
+        "11557-6",
+        "19212-0",
+        "2019-8",
+        "2020-6",
+        "2021-4",
+        "32771-8",
+        "34705-4",
+        "40619-9",
+        "40620-7",
+        "49694-3",
+        "49695-0",
+        "50981-0",
+        "97538-3",
+        "97539-1"
+      ]
+    },
+    "2075-0": {
+      "name": "Chloride [Moles/volume] in Mixed venous blood",
+      "secondary_count": 8,
+      "secondary_codes": [
+        "100745-9",
+        "2069-3",
+        "2075-0",
+        "35676-6",
+        "41649-5",
+        "41650-3",
+        "51590-8",
+        "77138-6"
+      ]
+    },
+    "21198-7": {
+      "name": "Choriongonadotropin [Einheiten/Volumen] in Serum oder Plasma",
+      "secondary_count": 9,
+      "secondary_codes": [
+        "19080-1",
+        "20415-6",
+        "2111-3",
+        "2118-8",
+        "2119-6",
+        "21198-7",
+        "34670-0",
+        "55869-2",
+        "83086-9"
+      ]
+    },
+    "14685-2": {
+      "name": "Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "14685-2",
+        "15039-1",
+        "16695-9",
+        "2132-9",
+        "35201-3"
+      ]
+    },
+    "3559-2": {
+      "name": "Digitoxin [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 2,
+      "secondary_codes": [
+        "15104-3",
+        "3559-2"
+      ]
+    },
+    "10535-3": {
+      "name": "Digoxin [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "10535-3",
+        "14698-5",
+        "35244-3",
+        "83093-5",
+        "83094-3"
+      ]
+    },
+    "5643-2": {
+      "name": "Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie",
+      "secondary_count": 9,
+      "secondary_codes": [
+        "14336-2",
+        "14719-9",
+        "15120-9",
+        "35240-1",
+        "48342-0",
+        "5640-8",
+        "5643-2",
+        "56478-1",
+        "74859-0"
+      ]
+    },
+    "14334-7": {
+      "name": "Lithium [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 6,
+      "secondary_codes": [
+        "14334-7",
+        "25461-5",
+        "3719-2",
+        "3723-4",
+        "74806-1",
+        "80970-7"
+      ]
+    },
+    "2601-3": {
+      "name": "Deprecated Magnesium [Molecules/volume] in Serum or Plasma",
+      "secondary_count": 10,
+      "secondary_codes": [
+        "11554-3",
+        "19123-9",
+        "21377-7",
+        "2593-2",
+        "2600-5",
+        "2601-3",
+        "32698-3",
+        "35249-2",
+        "73572-0",
+        "73573-8"
+      ]
+    },
+    "33762-6": {
+      "name": "Natriuretisches Peptid.B Prohormon N-Terminal [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 8,
+      "secondary_codes": [
+        "33762-6",
+        "33763-4",
+        "35257-5",
+        "42637-9",
+        "47092-2",
+        "71425-3",
+        "83107-3",
+        "83108-1"
+      ]
+    },
+    "11558-4": {
+      "name": "pH von Blut",
+      "secondary_count": 11,
+      "secondary_codes": [
+        "11558-4",
+        "19213-8",
+        "2744-1",
+        "2745-8",
+        "2746-6",
+        "33254-4",
+        "39486-6",
+        "49701-6",
+        "50980-2",
+        "97536-7",
+        "97537-5"
+      ]
+    },
+    "14879-1": {
+      "name": "Phosphat [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 6,
+      "secondary_codes": [
+        "14879-1",
+        "20941-1",
+        "24519-1",
+        "2774-8",
+        "2777-1",
+        "35221-1"
+      ]
+    },
+    "3016-3": {
+      "name": "Thyreotropin [Einheiten/Volumen] in Serum oder Plasma mit Nachweisgrenze <= 0,05 mIU/L",
+      "secondary_count": 7,
+      "secondary_codes": [
+        "11579-0",
+        "11580-8",
+        "14297-6",
+        "20452-9",
+        "27975-2",
+        "3015-5",
+        "3016-3"
+      ]
+    },
+    "10839-9": {
+      "name": "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "10839-9",
+        "16255-2",
+        "42757-5",
+        "49563-0",
+        "89579-7"
+      ]
+    },
+    "67151-1": {
+      "name": "Troponin T.kardial [Masse/Volumen] in Blut",
+      "secondary_count": 4,
+      "secondary_codes": [
+        "48425-3",
+        "6597-9",
+        "6598-7",
+        "67151-1"
+      ]
+    },
+    "70209-2": {
+      "name": "Haptoglobin [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "4542-7",
+        "4543-5",
+        "46127-7",
+        "55453-5",
+        "70209-2"
+      ]
+    },
+    "2098-2": {
+      "name": "Cholinesterase [Enzymaktivität/Volumen] in Blut",
+      "secondary_count": 3,
+      "secondary_codes": [
+        "11154-2",
+        "2098-2",
+        "9509-1"
+      ]
+    },
+    "3040-3": {
+      "name": "Triacylglycerid-Lipase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "secondary_count": 1,
+      "secondary_codes": [
+        "3040-3"
+      ]
+    },
+    "2614-6": {
+      "name": "Methämoglobin/Hämoglobin.gesamt in Blut",
+      "secondary_count": 12,
+      "secondary_codes": [
+        "2614-6",
+        "2615-3",
+        "2616-1",
+        "2617-9",
+        "2618-7",
+        "41607-3",
+        "71879-1",
+        "71880-9",
+        "71881-7",
+        "71882-5",
+        "71883-3",
+        "97554-0"
+      ]
+    },
+    "56040-9": {
+      "name": "Methämoglobin [Masse/Volumen] in Blut",
+      "secondary_count": 2,
+      "secondary_codes": [
+        "15082-1",
+        "56040-9"
+      ]
+    },
+    "2692-2": {
+      "name": "Osmolalität von Serum oder Plasma",
+      "secondary_count": 1,
+      "secondary_codes": [
+        "2692-2"
+      ]
+    },
+    "18182-6": {
+      "name": "Osmolalität von Serum oder Plasma, berechnet",
+      "secondary_count": 1,
+      "secondary_codes": [
+        "18182-6"
+      ]
+    },
+    "731-0": {
+      "name": "Lymphozyten [#/Volumen] in Blut",
+      "secondary_count": 3,
+      "secondary_codes": [
+        "26474-7",
+        "30364-4",
+        "731-0"
+      ]
+    },
+    "32710-6": {
+      "name": "Nitrit [Nachweis] in Urin",
+      "secondary_count": 3,
+      "secondary_codes": [
+        "32710-6",
+        "50558-6",
+        "5802-4"
+      ]
+    },
+    "14933-6": {
+      "name": "Harnsäure [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 4,
+      "secondary_codes": [
+        "14933-6",
+        "3084-1",
+        "35232-8",
+        "98981-4"
+      ]
+    },
+    "14927-8": {
+      "name": "Triglycerid [Mol/Volumen] in Serum oder Plasma",
+      "secondary_count": 5,
+      "secondary_codes": [
+        "14927-8",
+        "2571-8",
+        "3043-7",
+        "3049-4",
+        "35217-9"
+      ]
+    },
+    "20578-1": {
+      "name": "Vancomycin [Masse/Volumen] in Serum oder Plasma",
+      "secondary_count": 9,
+      "secondary_codes": [
+        "20578-1",
+        "31012-8",
+        "39796-8",
+        "39797-6",
+        "4090-7",
+        "4091-5",
+        "4092-3",
+        "59381-4",
+        "97657-1"
+      ]
+    }
+  }
+}

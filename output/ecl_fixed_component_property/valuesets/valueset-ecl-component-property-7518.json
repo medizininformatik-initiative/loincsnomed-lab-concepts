@@ -1,0 +1,146 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-7518",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-7518",
+  "version": "1.0",
+  "name": "ECLComponentProperty7518",
+  "title": "ECL Component+Property: Neutrophile [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=127913001 AND Property=118550005 for LOINC 751-8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100850-7",
+            "display": "LOINC 100850-7"
+          },
+          {
+            "code": "17359-1",
+            "display": "LOINC 17359-1"
+          },
+          {
+            "code": "26499-4",
+            "display": "LOINC 26499-4"
+          },
+          {
+            "code": "26500-9",
+            "display": "LOINC 26500-9"
+          },
+          {
+            "code": "26501-7",
+            "display": "LOINC 26501-7"
+          },
+          {
+            "code": "26502-5",
+            "display": "LOINC 26502-5"
+          },
+          {
+            "code": "26503-3",
+            "display": "LOINC 26503-3"
+          },
+          {
+            "code": "26504-1",
+            "display": "LOINC 26504-1"
+          },
+          {
+            "code": "30448-5",
+            "display": "LOINC 30448-5"
+          },
+          {
+            "code": "32709-8",
+            "display": "LOINC 32709-8"
+          },
+          {
+            "code": "40566-2",
+            "display": "LOINC 40566-2"
+          },
+          {
+            "code": "5906-3",
+            "display": "LOINC 5906-3"
+          },
+          {
+            "code": "66139-7",
+            "display": "LOINC 66139-7"
+          },
+          {
+            "code": "67826-8",
+            "display": "LOINC 67826-8"
+          },
+          {
+            "code": "67832-6",
+            "display": "LOINC 67832-6"
+          },
+          {
+            "code": "68425-8",
+            "display": "LOINC 68425-8"
+          },
+          {
+            "code": "68427-4",
+            "display": "LOINC 68427-4"
+          },
+          {
+            "code": "72347-8",
+            "display": "LOINC 72347-8"
+          },
+          {
+            "code": "74398-9",
+            "display": "LOINC 74398-9"
+          },
+          {
+            "code": "751-8",
+            "display": "LOINC 751-8"
+          },
+          {
+            "code": "753-4",
+            "display": "LOINC 753-4"
+          },
+          {
+            "code": "754-2",
+            "display": "LOINC 754-2"
+          },
+          {
+            "code": "755-9",
+            "display": "LOINC 755-9"
+          },
+          {
+            "code": "756-7",
+            "display": "LOINC 756-7"
+          },
+          {
+            "code": "757-5",
+            "display": "LOINC 757-5"
+          },
+          {
+            "code": "758-3",
+            "display": "LOINC 758-3"
+          },
+          {
+            "code": "759-1",
+            "display": "LOINC 759-1"
+          },
+          {
+            "code": "760-9",
+            "display": "LOINC 760-9"
+          },
+          {
+            "code": "761-7",
+            "display": "LOINC 761-7"
+          },
+          {
+            "code": "762-5",
+            "display": "LOINC 762-5"
+          },
+          {
+            "code": "85369-7",
+            "display": "LOINC 85369-7"
+          }
+        ]
+      }
+    ]
+  }
+}

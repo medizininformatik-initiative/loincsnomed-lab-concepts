@@ -1,0 +1,246 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-26013",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-26013",
+  "version": "1.0",
+  "name": "ECLComponent26013",
+  "title": "ECL Fixed Component: Deprecated Magnesium [Molecules/volume] in Serum or Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=72717003 for LOINC 2601-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10880-3",
+            "display": "Magnesium [Mass/mass] in Stool"
+          },
+          {
+            "code": "108834-3",
+            "display": "Magnesium [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "109594-2",
+            "display": "Magnesium [Measurement] in Blood"
+          },
+          {
+            "code": "109630-4",
+            "display": "Magnesium [Measurement] in Red Blood Cells"
+          },
+          {
+            "code": "111386-9",
+            "display": "Magnesium [Measurement] in Stool"
+          },
+          {
+            "code": "111465-1",
+            "display": "Magnesium [Measurement] in Urine"
+          },
+          {
+            "code": "13474-2",
+            "display": "Magnesium/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "14824-7",
+            "display": "Magnesium [Presence] in Stone"
+          },
+          {
+            "code": "16172-9",
+            "display": "Magnesium [Mass/mass] in Hair"
+          },
+          {
+            "code": "17235-3",
+            "display": "Magnesium [Moles/volume] in Leukocytes"
+          },
+          {
+            "code": "17236-1",
+            "display": "Magnesium [Moles/volume] in Stool"
+          },
+          {
+            "code": "17237-9",
+            "display": "Magnesium [Moles/mass] in Hair"
+          },
+          {
+            "code": "19123-9",
+            "display": "Magnesium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19124-7",
+            "display": "Magnesium [Mass/volume] in Urine"
+          },
+          {
+            "code": "20872-8",
+            "display": "Magnesium [Mass/volume] in Ocular fluid"
+          },
+          {
+            "code": "21377-7",
+            "display": "Magnesium [Mass/volume] in Blood"
+          },
+          {
+            "code": "23891-5",
+            "display": "Magnesium [Moles/volume] in 24 hour Stool"
+          },
+          {
+            "code": "2593-2",
+            "display": "Magnesium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2594-0",
+            "display": "Magnesium [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2595-7",
+            "display": "Magnesium [Moles/volume] in Dialysis fluid"
+          },
+          {
+            "code": "25954-9",
+            "display": "Magnesium [Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "2596-5",
+            "display": "Magnesium [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "2597-3",
+            "display": "Magnesium [Moles/volume] in Red Blood Cells"
+          },
+          {
+            "code": "2598-1",
+            "display": "Magnesium [Moles/volume] in Urine"
+          },
+          {
+            "code": "2601-3",
+            "display": "Magnesium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "26708-8",
+            "display": "Magnesium [Moles/mass] in Stool"
+          },
+          {
+            "code": "26746-8",
+            "display": "Magnesium [Mass/volume] in Red Blood Cells"
+          },
+          {
+            "code": "27122-1",
+            "display": "Magnesium [Mass/mass] in Red Blood Cells"
+          },
+          {
+            "code": "27210-4",
+            "display": "Magnesium [Presence] in Blood"
+          },
+          {
+            "code": "27255-9",
+            "display": "Magnesium [Moles/mass] in 24 hour Stool"
+          },
+          {
+            "code": "29364-7",
+            "display": "Magnesium [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "29365-4",
+            "display": "Magnesium [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "29911-5",
+            "display": "Magnesium [Mass/volume] in Stool"
+          },
+          {
+            "code": "30536-7",
+            "display": "Magnesium [Mass/volume] in Total parental nutrition"
+          },
+          {
+            "code": "30922-9",
+            "display": "Magnesium [Mass/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "32024-2",
+            "display": "Magnesium [Mass/volume] in 24 hour Urine"
+          },
+          {
+            "code": "32329-5",
+            "display": "Magnesium [Moles/volume] in Specimen"
+          },
+          {
+            "code": "33950-7",
+            "display": "Magnesium/Creatinine [Molar ratio] in Urine"
+          },
+          {
+            "code": "35249-2",
+            "display": "Magnesium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35250-0",
+            "display": "Magnesium [Mass or Moles/volume] in Urine"
+          },
+          {
+            "code": "35252-6",
+            "display": "Magnesium [Mass or Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "42616-3",
+            "display": "Magnesium [Mass/volume] in Dialysis fluid"
+          },
+          {
+            "code": "44336-6",
+            "display": "Magnesium/Creatinine [Mass Ratio] in 24 hour Urine"
+          },
+          {
+            "code": "49007-8",
+            "display": "Magnesium [Moles/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "50873-9",
+            "display": "Magnesium/Creatinine [Molar ratio] in 24 hour Urine"
+          },
+          {
+            "code": "52911-5",
+            "display": "Magnesium [Moles/mass] in Tissue"
+          },
+          {
+            "code": "54919-6",
+            "display": "Magnesium [Mass/volume] in Semen"
+          },
+          {
+            "code": "55937-7",
+            "display": "Magnesium [Moles/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "55938-5",
+            "display": "Magnesium [Moles/volume] in Total parental nutrition"
+          },
+          {
+            "code": "56956-6",
+            "display": "Magnesium/Creatinine [Ratio] in Urine"
+          },
+          {
+            "code": "57367-5",
+            "display": "Magnesium [Mass/volume] in 12 hour Urine"
+          },
+          {
+            "code": "57998-7",
+            "display": "Magnesium [Mass/volume] in Nonbiological fluid"
+          },
+          {
+            "code": "65362-6",
+            "display": "Magnesium [Moles/volume] corrected for albumin in Serum or Plasma"
+          },
+          {
+            "code": "74696-6",
+            "display": "Magnesium [Moles/volume] in 12 hour Urine"
+          },
+          {
+            "code": "94256-5",
+            "display": "Magnesium [Mass/volume] in Sweat"
+          },
+          {
+            "code": "9478-9",
+            "display": "Magnesium [Mass/volume] in Water"
+          }
+        ]
+      }
+    ]
+  }
+}

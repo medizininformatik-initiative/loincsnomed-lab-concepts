@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-56432",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-56432",
+  "version": "1.0",
+  "name": "ECLComponentProperty56432",
+  "title": "ECL Component+Property: Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=419442005 AND Property=118539007 for LOINC 5643-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10367-1",
+            "display": "LOINC 10367-1"
+          },
+          {
+            "code": "12465-1",
+            "display": "LOINC 12465-1"
+          },
+          {
+            "code": "14336-2",
+            "display": "LOINC 14336-2"
+          },
+          {
+            "code": "16842-7",
+            "display": "LOINC 16842-7"
+          },
+          {
+            "code": "16843-5",
+            "display": "LOINC 16843-5"
+          },
+          {
+            "code": "34882-1",
+            "display": "LOINC 34882-1"
+          },
+          {
+            "code": "35664-2",
+            "display": "LOINC 35664-2"
+          },
+          {
+            "code": "46983-3",
+            "display": "LOINC 46983-3"
+          },
+          {
+            "code": "5640-8",
+            "display": "LOINC 5640-8"
+          },
+          {
+            "code": "5641-6",
+            "display": "LOINC 5641-6"
+          },
+          {
+            "code": "5643-2",
+            "display": "LOINC 5643-2"
+          },
+          {
+            "code": "5645-7",
+            "display": "LOINC 5645-7"
+          },
+          {
+            "code": "56478-1",
+            "display": "LOINC 56478-1"
+          },
+          {
+            "code": "74859-0",
+            "display": "LOINC 74859-0"
+          }
+        ]
+      }
+    ]
+  }
+}

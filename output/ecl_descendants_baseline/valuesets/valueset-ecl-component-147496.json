@@ -1,0 +1,950 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-147496",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-147496",
+  "version": "1.0",
+  "name": "ECLComponent147496",
+  "title": "ECL Component-Based: Glucose [Moles/volume] in Mixed venous blood",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 14749-6 (SNOMED 211551010000101)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14749-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14751-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post 50 g lactose PO"
+          },
+          {
+            "code": "14752-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post dose glucose"
+          },
+          {
+            "code": "14753-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post 100 g glucose PO"
+          },
+          {
+            "code": "14754-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post 50 g glucose PO"
+          },
+          {
+            "code": "14755-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post 50 g lactose PO"
+          },
+          {
+            "code": "14756-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post dose glucose"
+          },
+          {
+            "code": "14757-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post 100 g glucose PO"
+          },
+          {
+            "code": "14758-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post 50 g lactose PO"
+          },
+          {
+            "code": "14759-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post dose glucose"
+          },
+          {
+            "code": "14761-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post meal"
+          },
+          {
+            "code": "14762-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post 50 g lactose PO"
+          },
+          {
+            "code": "14763-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post dose glucose"
+          },
+          {
+            "code": "14764-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post 100 g glucose PO"
+          },
+          {
+            "code": "14765-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post dose glucose"
+          },
+          {
+            "code": "14766-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 hours post dose glucose"
+          },
+          {
+            "code": "14767-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 hours post dose glucose"
+          },
+          {
+            "code": "14768-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --baseline"
+          },
+          {
+            "code": "14769-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre 12 hour fast"
+          },
+          {
+            "code": "14771-0",
+            "display": "Fasting glucose [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14995-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post 75 g glucose PO"
+          },
+          {
+            "code": "14996-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre 75 g glucose PO"
+          },
+          {
+            "code": "25663-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post dose glucose"
+          },
+          {
+            "code": "25665-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post XXX challenge"
+          },
+          {
+            "code": "25666-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post dose glucose"
+          },
+          {
+            "code": "25668-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post XXX challenge"
+          },
+          {
+            "code": "25669-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3.5 hours post dose glucose"
+          },
+          {
+            "code": "25671-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post XXX challenge"
+          },
+          {
+            "code": "25672-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4.5 hours post dose glucose"
+          },
+          {
+            "code": "25673-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post dose glucose"
+          },
+          {
+            "code": "25674-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post XXX challenge"
+          },
+          {
+            "code": "25676-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5.5 hours post dose glucose"
+          },
+          {
+            "code": "25677-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --6 hours post dose glucose"
+          },
+          {
+            "code": "25679-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post XXX challenge"
+          },
+          {
+            "code": "25680-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre 50 g glucose PO"
+          },
+          {
+            "code": "30251-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.6 hours post dose glucose"
+          },
+          {
+            "code": "30252-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3.3 hours post dose glucose"
+          },
+          {
+            "code": "30253-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3.6 hours post dose glucose"
+          },
+          {
+            "code": "30263-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 minutes post dose glucose"
+          },
+          {
+            "code": "30264-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --40 minutes post dose glucose"
+          },
+          {
+            "code": "30265-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.3 hours post dose glucose"
+          },
+          {
+            "code": "30266-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.6 hours post dose glucose"
+          },
+          {
+            "code": "30267-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.3 hours post dose glucose"
+          },
+          {
+            "code": "32319-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post 75 g glucose PO"
+          },
+          {
+            "code": "32320-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post 75 g glucose PO"
+          },
+          {
+            "code": "32321-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 hours post 75 g glucose PO"
+          },
+          {
+            "code": "32322-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 hours post 75 g glucose PO"
+          },
+          {
+            "code": "32359-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10 minutes post dose glucose"
+          },
+          {
+            "code": "34056-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre or post dose arginine"
+          },
+          {
+            "code": "34057-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre or post dose cloNIDine"
+          },
+          {
+            "code": "34058-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre or post dose glucagon"
+          },
+          {
+            "code": "34059-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre or post dose glucose"
+          },
+          {
+            "code": "34060-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre or post dose insulin"
+          },
+          {
+            "code": "40148-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre XXX challenge"
+          },
+          {
+            "code": "40149-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes pre XXX challenge"
+          },
+          {
+            "code": "40150-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes pre XXX challenge"
+          },
+          {
+            "code": "40151-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10 minutes pre XXX challenge"
+          },
+          {
+            "code": "40152-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 minutes pre XXX challenge"
+          },
+          {
+            "code": "40153-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 minutes post XXX challenge"
+          },
+          {
+            "code": "40154-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge"
+          },
+          {
+            "code": "40155-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post XXX challenge"
+          },
+          {
+            "code": "40156-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge"
+          },
+          {
+            "code": "40157-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --40 minutes post XXX challenge"
+          },
+          {
+            "code": "40158-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --50 minutes post XXX challenge"
+          },
+          {
+            "code": "40159-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --70 minutes post XXX challenge"
+          },
+          {
+            "code": "40160-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --75 minutes post XXX challenge"
+          },
+          {
+            "code": "40161-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post XXX challenge"
+          },
+          {
+            "code": "40162-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post XXX challenge"
+          },
+          {
+            "code": "40163-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 hours post XXX challenge"
+          },
+          {
+            "code": "40164-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 hours post XXX challenge"
+          },
+          {
+            "code": "40165-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --6 hours post XXX challenge"
+          },
+          {
+            "code": "40166-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --6.5 hours post XXX challenge"
+          },
+          {
+            "code": "40167-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --7 hours post XXX challenge"
+          },
+          {
+            "code": "40168-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --7.5 hours post XXX challenge"
+          },
+          {
+            "code": "40169-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8 hours post XXX challenge"
+          },
+          {
+            "code": "40170-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8.5 hours post XXX challenge"
+          },
+          {
+            "code": "40171-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --9 hours post XXX challenge"
+          },
+          {
+            "code": "40172-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --9.5 hours post XXX challenge"
+          },
+          {
+            "code": "40173-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10 hours post XXX challenge"
+          },
+          {
+            "code": "40174-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10.75 hours post XXX challenge"
+          },
+          {
+            "code": "40175-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --11.5 hours post XXX challenge"
+          },
+          {
+            "code": "40176-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --12 hours post XXX challenge"
+          },
+          {
+            "code": "40177-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --12.5 hours post XXX challenge"
+          },
+          {
+            "code": "40178-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --13 hours post XXX challenge"
+          },
+          {
+            "code": "40179-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --13.5 hours post XXX challenge"
+          },
+          {
+            "code": "40180-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --14 hours post XXX challenge"
+          },
+          {
+            "code": "40181-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15.5 hours post XXX challenge"
+          },
+          {
+            "code": "40182-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --16 hours post XXX challenge"
+          },
+          {
+            "code": "40183-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --17.5 hours post XXX challenge"
+          },
+          {
+            "code": "40184-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --18 hours post XXX challenge"
+          },
+          {
+            "code": "40185-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --18.5 hours post XXX challenge"
+          },
+          {
+            "code": "40186-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --19.5 hours post XXX challenge"
+          },
+          {
+            "code": "40187-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 hours post XXX challenge"
+          },
+          {
+            "code": "40188-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20.5 hours post XXX challenge"
+          },
+          {
+            "code": "40189-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --21.5 hours post XXX challenge"
+          },
+          {
+            "code": "40190-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --22 hours post XXX challenge"
+          },
+          {
+            "code": "40191-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --23.5 hours post XXX challenge"
+          },
+          {
+            "code": "40192-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 day post XXX challenge"
+          },
+          {
+            "code": "40193-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre-meal"
+          },
+          {
+            "code": "40194-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 minutes pre XXX challenge"
+          },
+          {
+            "code": "40195-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --13 minutes pre XXX challenge"
+          },
+          {
+            "code": "40196-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8 minutes pre XXX challenge"
+          },
+          {
+            "code": "40197-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 minutes pre XXX challenge"
+          },
+          {
+            "code": "40198-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 minutes post XXX challenge"
+          },
+          {
+            "code": "40199-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 minutes post XXX challenge"
+          },
+          {
+            "code": "40200-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 minutes post XXX challenge"
+          },
+          {
+            "code": "40201-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --6 minutes post XXX challenge"
+          },
+          {
+            "code": "40202-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8 minutes post XXX challenge"
+          },
+          {
+            "code": "40203-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --9 minutes post XXX challenge"
+          },
+          {
+            "code": "40204-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --12 minutes post XXX challenge"
+          },
+          {
+            "code": "40205-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --14 minutes post XXX challenge"
+          },
+          {
+            "code": "40206-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --16 minutes post XXX challenge"
+          },
+          {
+            "code": "40207-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --19 minutes post XXX challenge"
+          },
+          {
+            "code": "40208-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --22 minutes post XXX challenge"
+          },
+          {
+            "code": "40209-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --25 minutes post XXX challenge"
+          },
+          {
+            "code": "40210-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --27 minutes post XXX challenge"
+          },
+          {
+            "code": "40211-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3.5 hours post XXX challenge"
+          },
+          {
+            "code": "40212-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4.5 hours post XXX challenge"
+          },
+          {
+            "code": "40213-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5.5 hours post XXX challenge"
+          },
+          {
+            "code": "40214-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --25 hours post XXX challenge"
+          },
+          {
+            "code": "40215-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --26 hours post XXX challenge"
+          },
+          {
+            "code": "40216-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --27 hours post XXX challenge"
+          },
+          {
+            "code": "40217-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --28 hours post XXX challenge"
+          },
+          {
+            "code": "40218-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --29 hours post XXX challenge"
+          },
+          {
+            "code": "40219-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 hours post XXX challenge"
+          },
+          {
+            "code": "40220-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --31 hour post XXX challenge"
+          },
+          {
+            "code": "40221-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --36 hours post XXX challenge"
+          },
+          {
+            "code": "40222-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 days post XXX challenge"
+          },
+          {
+            "code": "40276-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post dose lactose PO"
+          },
+          {
+            "code": "40277-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post dose lactose PO"
+          },
+          {
+            "code": "40278-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post dose lactose PO"
+          },
+          {
+            "code": "40279-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post dose lactose PO"
+          },
+          {
+            "code": "40280-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post dose lactose PO"
+          },
+          {
+            "code": "40285-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --75 minutes post dose glucose"
+          },
+          {
+            "code": "40286-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --105 minutes post dose glucose"
+          },
+          {
+            "code": "40287-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post meal"
+          },
+          {
+            "code": "40318-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose triple bolus"
+          },
+          {
+            "code": "40319-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post dose triple bolus"
+          },
+          {
+            "code": "40320-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post dose triple bolus"
+          },
+          {
+            "code": "40321-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post dose triple bolus"
+          },
+          {
+            "code": "40322-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post dose triple bolus"
+          },
+          {
+            "code": "40323-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post dose triple bolus"
+          },
+          {
+            "code": "40324-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post dose triple bolus"
+          },
+          {
+            "code": "44919-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post meal"
+          },
+          {
+            "code": "45052-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --12 AM specimen"
+          },
+          {
+            "code": "45053-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8 AM specimen"
+          },
+          {
+            "code": "45054-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --12 PM specimen"
+          },
+          {
+            "code": "45055-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 PM specimen"
+          },
+          {
+            "code": "45056-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8 PM specimen"
+          },
+          {
+            "code": "45298-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post 50 g lactose PO"
+          },
+          {
+            "code": "45299-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post dose lactose PO"
+          },
+          {
+            "code": "47622-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose glucose"
+          },
+          {
+            "code": "47859-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 minutes post dose glucose"
+          },
+          {
+            "code": "48109-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes pre dose glucose"
+          },
+          {
+            "code": "51426-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre or post XXX challenge"
+          },
+          {
+            "code": "51597-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post 75 g glucose PO"
+          },
+          {
+            "code": "53093-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --post XXX challenge"
+          },
+          {
+            "code": "53094-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --post meal"
+          },
+          {
+            "code": "53474-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 AM specimen"
+          },
+          {
+            "code": "53475-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose betaxolol"
+          },
+          {
+            "code": "53476-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post dose betaxolol"
+          },
+          {
+            "code": "53480-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post dose betaxolol"
+          },
+          {
+            "code": "53481-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes pre dose betaxolol"
+          },
+          {
+            "code": "53482-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post dose betaxolol"
+          },
+          {
+            "code": "53483-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post dose betaxolol"
+          },
+          {
+            "code": "53484-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes pre dose betaxolol"
+          },
+          {
+            "code": "53485-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post dose betaxolol"
+          },
+          {
+            "code": "53486-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post dose betaxolol"
+          },
+          {
+            "code": "53487-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post dose betaxolol"
+          },
+          {
+            "code": "54248-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10 minutes pre dose glucagon"
+          },
+          {
+            "code": "54249-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post dose glucagon"
+          },
+          {
+            "code": "54250-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes pre dose glucagon"
+          },
+          {
+            "code": "54251-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 minutes post dose glucagon"
+          },
+          {
+            "code": "54252-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 minutes post dose glucagon"
+          },
+          {
+            "code": "54253-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4 minutes post dose glucagon"
+          },
+          {
+            "code": "54254-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5 minutes pre dose glucagon"
+          },
+          {
+            "code": "54255-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --6 minutes post dose glucagon"
+          },
+          {
+            "code": "54256-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8 minutes post dose glucagon"
+          },
+          {
+            "code": "54257-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose insulin IV"
+          },
+          {
+            "code": "54258-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post dose insulin IV"
+          },
+          {
+            "code": "54259-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post dose insulin IV"
+          },
+          {
+            "code": "54260-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post dose insulin IV"
+          },
+          {
+            "code": "54261-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes pre dose insulin IV"
+          },
+          {
+            "code": "54262-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours pre dose insulin IV"
+          },
+          {
+            "code": "54263-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post dose insulin IV"
+          },
+          {
+            "code": "54264-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post dose insulin IV"
+          },
+          {
+            "code": "54265-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post dose insulin IV"
+          },
+          {
+            "code": "54266-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.3 hours post dose insulin IV"
+          },
+          {
+            "code": "54267-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post dose insulin IV"
+          },
+          {
+            "code": "54268-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54269-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2 hour post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54270-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hour post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54271-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54272-0",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes pre dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54273-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 hours post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54274-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --30 minutes post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54275-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54276-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1 hour post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54277-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hour post dose ornithine alpha-ketoglutarate"
+          },
+          {
+            "code": "54392-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1st specimen post XXX challenge"
+          },
+          {
+            "code": "54393-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10th specimen post XXX challenge"
+          },
+          {
+            "code": "54394-2",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --11th specimen post XXX challenge"
+          },
+          {
+            "code": "54395-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --12th specimen post XXX challenge"
+          },
+          {
+            "code": "54396-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge"
+          },
+          {
+            "code": "54397-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge"
+          },
+          {
+            "code": "54398-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge"
+          },
+          {
+            "code": "54399-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge"
+          },
+          {
+            "code": "54400-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose glucagon"
+          },
+          {
+            "code": "54401-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --10 minutes post dose glucagon"
+          },
+          {
+            "code": "54495-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "54496-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge"
+          },
+          {
+            "code": "54497-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge"
+          },
+          {
+            "code": "54498-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge"
+          },
+          {
+            "code": "54499-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge"
+          },
+          {
+            "code": "55351-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post 75 g glucose PO"
+          },
+          {
+            "code": "55352-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post 75 g glucose PO"
+          },
+          {
+            "code": "55381-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post 75 g glucose PO"
+          },
+          {
+            "code": "59157-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre dose lactose PO"
+          },
+          {
+            "code": "59812-8",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --11 AM specimen"
+          },
+          {
+            "code": "59814-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --7 AM specimen"
+          },
+          {
+            "code": "59815-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --3 PM specimen"
+          },
+          {
+            "code": "69941-3",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 minutes post dose lactose PO"
+          },
+          {
+            "code": "69942-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --40 minutes post dose lactose PO"
+          },
+          {
+            "code": "69943-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --20 minutes post 50 g lactose PO"
+          },
+          {
+            "code": "69944-7",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --40 minutes post 50 g lactose PO"
+          },
+          {
+            "code": "70208-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --pre 100 g glucose PO"
+          },
+          {
+            "code": "72895-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --2.5 hours post dose lactose PO"
+          },
+          {
+            "code": "72896-4",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post dose lactose PO"
+          },
+          {
+            "code": "74084-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --15 minutes post 50 g lactose PO"
+          },
+          {
+            "code": "75405-1",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post dose triple bolus"
+          },
+          {
+            "code": "75637-9",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --45 minutes post 50 g lactose PO"
+          },
+          {
+            "code": "77681-5",
+            "display": "Glucose [Moles/volume] in Serum or Plasma --11 hour post XXX challenge"
+          }
+        ]
+      }
+    ]
+  }
+}

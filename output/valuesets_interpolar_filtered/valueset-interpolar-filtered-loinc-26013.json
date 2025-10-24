@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-26013",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-26013",
+  "version": "1.0",
+  "name": "InterpolarFiltered26013",
+  "title": "Interpolar LOINC (Filtered): Deprecated Magnesium [Molecules/volume] in Serum or Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 2601-3. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 11",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11554-3",
+            "display": "Deprecated Magnesium [Molecules/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19123-9",
+            "display": "Magnesium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "21377-7",
+            "display": "Magnesium [Mass/volume] in Blood"
+          },
+          {
+            "code": "2593-2",
+            "display": "Magnesium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2600-5",
+            "display": "Magnesium Ionized [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2601-3",
+            "display": "Magnesium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "32698-3",
+            "display": "Magnesium Ionized [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35249-2",
+            "display": "Magnesium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "65362-6",
+            "display": "Magnesium [Moles/volume] corrected for albumin in Serum or Plasma"
+          },
+          {
+            "code": "73572-0",
+            "display": "Magnesium Ionized [Moles/volume] in Blood by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "73573-8",
+            "display": "Magnesium Ionized [Moles/volume] adjusted to pH 7.4 in Blood by Ion-selective membrane electrode (ISE)"
+          }
+        ]
+      }
+    ]
+  }
+}

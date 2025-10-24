@@ -1,0 +1,102 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-211987",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-211987",
+  "version": "1.0",
+  "name": "ECLComponent211987",
+  "title": "ECL Fixed Component: Choriongonadotropin [Einheiten/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=40940006 for LOINC 21198-7",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "110413-2",
+            "display": "Choriogonadotropin.beta subunit [Measurement] in Urine"
+          },
+          {
+            "code": "110663-2",
+            "display": "Choriogonadotropin.beta subunit [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "14041-8",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "19174-2",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Amniotic fluid"
+          },
+          {
+            "code": "19175-9",
+            "display": "Choriogonadotropin.beta subunit [Moles/volume] in Amniotic fluid"
+          },
+          {
+            "code": "20415-6",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma by Immunoassay (EIA) 3rd IS"
+          },
+          {
+            "code": "2110-5",
+            "display": "Choriogonadotropin.beta subunit [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "2111-3",
+            "display": "Choriogonadotropin.beta subunit [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2112-1",
+            "display": "Choriogonadotropin.beta subunit [Presence] in Urine"
+          },
+          {
+            "code": "2114-7",
+            "display": "Choriogonadotropin.beta subunit [Moles/volume] in Urine"
+          },
+          {
+            "code": "21198-7",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "23840-2",
+            "display": "Choriogonadotropin.beta subunit [Multiple of the median] unadjusted in Serum or Plasma"
+          },
+          {
+            "code": "23841-0",
+            "display": "Choriogonadotropin.beta subunit [Multiple of the median] adjusted in Serum or Plasma"
+          },
+          {
+            "code": "29154-2",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Body fluid"
+          },
+          {
+            "code": "43799-6",
+            "display": "Choriogonadotropin.beta subunit [Presence] in Specimen"
+          },
+          {
+            "code": "43800-2",
+            "display": "Choriogonadotropin.beta subunit [Presence] in Cerebral spinal fluid"
+          },
+          {
+            "code": "55868-4",
+            "display": "Choriogonadotropin.beta subunit [Multiple of the median] in Serum or Plasma"
+          },
+          {
+            "code": "55869-2",
+            "display": "Choriogonadotropin.beta subunit [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "66762-6",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Pleural fluid"
+          },
+          {
+            "code": "66763-4",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Peritoneal fluid"
+          }
+        ]
+      }
+    ]
+  }
+}

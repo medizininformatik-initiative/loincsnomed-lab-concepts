@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-163626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-163626",
+  "version": "1.0",
+  "name": "InterpolarFiltered163626",
+  "title": "Interpolar LOINC (Filtered): Ammoniak [Mol/Volumen] in Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 16362-6. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16362-6",
+            "display": "Ammonia [Moles/volume] in Plasma"
+          },
+          {
+            "code": "1839-0",
+            "display": "Ammonia [Moles/volume] in Blood"
+          },
+          {
+            "code": "1841-6",
+            "display": "Ammonia [Moles/volume] in Serum"
+          },
+          {
+            "code": "20684-7",
+            "display": "Ammonia [Mass/volume] in Serum"
+          },
+          {
+            "code": "22763-7",
+            "display": "Ammonia [Mass/volume] in Plasma"
+          },
+          {
+            "code": "32664-5",
+            "display": "Ammonia [Mass/volume] in Blood"
+          },
+          {
+            "code": "35254-2",
+            "display": "Ammonia [Mass or Moles/volume] in Plasma"
+          },
+          {
+            "code": "93684-9",
+            "display": "Ammonia [Moles/volume] in Arterial blood"
+          }
+        ]
+      }
+    ]
+  }
+}

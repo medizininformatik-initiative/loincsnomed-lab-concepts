@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-622381",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-622381",
+  "version": "1.0",
+  "name": "ECLComponent622381",
+  "title": "ECL Component-Based: Creatinine renal clearance/1.73 sq M.predicted among females by Cockcroft-Gault formula, BSA formula",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 62238-1 (SNOMED 602541010000107)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "62238-1",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)/1.73 sq M"
+          }
+        ]
+      }
+    ]
+  }
+}

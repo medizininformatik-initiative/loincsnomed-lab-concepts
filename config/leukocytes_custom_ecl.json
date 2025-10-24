@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for Leukocytes/WBC Count (LOINC 26464-8)",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Property-Specific: Number Concentration)",
+      "description": "Uses Component = Leukocyte AND Property = Number concentration (118550005) to exclude ratio-based measurements. This ensures only absolute leukocyte counts are included, not relative percentages or ratios.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|"
+    }
+  ]
+}

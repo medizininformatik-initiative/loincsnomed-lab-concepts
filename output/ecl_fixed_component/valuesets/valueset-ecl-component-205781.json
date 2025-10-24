@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-205781",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-205781",
+  "version": "1.0",
+  "name": "ECLComponent205781",
+  "title": "ECL Fixed Component: Vancomycin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=372735009 for LOINC 20578-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13586-3",
+            "display": "Vancomycin [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "13587-1",
+            "display": "Vancomycin [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "20578-1",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "31012-8",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "39092-2",
+            "display": "Vancomycin [Mass/volume] in Cerebral spinal fluid --peak"
+          },
+          {
+            "code": "39796-8",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma --peak"
+          },
+          {
+            "code": "39797-6",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "4090-7",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --peak"
+          },
+          {
+            "code": "4091-5",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --random"
+          },
+          {
+            "code": "4092-3",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "4459-4",
+            "display": "Vancomycin [Mass] of Dose"
+          },
+          {
+            "code": "50938-0",
+            "display": "Vancomycin [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "526-4",
+            "display": "Vancomycin [Susceptibility] by Serum bactericidal titer"
+          },
+          {
+            "code": "59381-4",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "97657-1",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --2 hours post dose"
+          }
+        ]
+      }
+    ]
+  }
+}

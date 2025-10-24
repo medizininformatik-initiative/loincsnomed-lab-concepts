@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-7310",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-7310",
+  "version": "1.0",
+  "name": "ECLComponentSystem7310",
+  "title": "ECL Component+System: Lymphozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=56972008 AND System=119297000 for LOINC 731-0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26474-7",
+            "display": "LOINC 26474-7"
+          },
+          {
+            "code": "26478-8",
+            "display": "LOINC 26478-8"
+          },
+          {
+            "code": "30364-4",
+            "display": "LOINC 30364-4"
+          },
+          {
+            "code": "30365-1",
+            "display": "LOINC 30365-1"
+          },
+          {
+            "code": "731-0",
+            "display": "LOINC 731-0"
+          },
+          {
+            "code": "732-8",
+            "display": "LOINC 732-8"
+          },
+          {
+            "code": "736-9",
+            "display": "LOINC 736-9"
+          },
+          {
+            "code": "737-7",
+            "display": "LOINC 737-7"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-66902",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-66902",
+  "version": "1.0",
+  "name": "ECLComponent66902",
+  "title": "ECL Fixed Component: Leukozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=52501007 for LOINC 6690-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100849-9",
+            "display": "Leukocytes [#/volume] in Amniotic fluid by Manual count"
+          },
+          {
+            "code": "104646-5",
+            "display": "Leukocytes [#/area] in Urine by Computer assisted method"
+          },
+          {
+            "code": "105104-4",
+            "display": "Leukocytes [#/area] in Urine sediment"
+          },
+          {
+            "code": "105105-1",
+            "display": "Leukocytes [Presence] in Urine sediment"
+          },
+          {
+            "code": "10579-1",
+            "display": "Leukocytes [#/volume] in Semen"
+          },
+          {
+            "code": "105921-1",
+            "display": "Leukocytes [#/volume] in Urethra by Wet preparation"
+          },
+          {
+            "code": "107011-9",
+            "display": "Leukocytes [Presence] in Urethra by Wet preparation"
+          },
+          {
+            "code": "107465-7",
+            "display": "Leukocytes [Presence] in Pus by Light microscopy"
+          },
+          {
+            "code": "107469-9",
+            "display": "Leukocytes [Presence] in Aspirate by Light microscopy"
+          },
+          {
+            "code": "107472-3",
+            "display": "Leukocytes [Presence] in Tissue by Light microscopy"
+          },
+          {
+            "code": "107475-6",
+            "display": "Leukocytes [Presence] in Wound deep by Light microscopy"
+          },
+          {
+            "code": "107476-4",
+            "display": "Leukocytes [Presence] in Wound shallow by Light microscopy"
+          },
+          {
+            "code": "107483-0",
+            "display": "Leukocytes [Presence] in Pericardial fluid by Light microscopy"
+          },
+          {
+            "code": "107497-0",
+            "display": "Leukocytes [Presence] in Bronchial specimen by Light microscopy"
+          },
+          {
+            "code": "110644-2",
+            "display": "Leukocytes [Measurement] in Stool"
+          },
+          {
+            "code": "111204-4",
+            "display": "Leukocytes [Measurement] in Urine sediment"
+          },
+          {
+            "code": "12224-2",
+            "display": "Leukocytes [#/area] in Nose by Microscopy high power field"
+          },
+          {
+            "code": "12225-9",
+            "display": "Leukocytes [#/area] in Sputum by Microscopy high power field"
+          },
+          {
+            "code": "12226-7",
+            "display": "Leukocytes [Presence] in Vaginal fluid by Wet preparation"
+          },
+          {
+            "code": "12227-5",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood"
+          },
+          {
+            "code": "13349-6",
+            "display": "Leukocytes [#/volume] in Stool by Manual count"
+          },
+          {
+            "code": "13351-2",
+            "display": "Leukocytes other [#/volume] in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "13523-6",
+            "display": "Leukocytes other/Leukocytes in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "13524-4",
+            "display": "Leukocytes other/Leukocytes in Body fluid by Manual count"
+          },
+          {
+            "code": "13655-6",
+            "display": "Leukocytes [Presence] in Stool by Light microscopy"
+          },
+          {
+            "code": "14105-1",
+            "display": "Leukocytes [Presence] in Nose by Light microscopy"
+          },
+          {
+            "code": "14328-9",
+            "display": "Leukocytes [Presence] in Sputum by Light microscopy"
+          },
+          {
+            "code": "14373-5",
+            "display": "Leukocytes [#/volume] in Gastric fluid by Manual count"
+          },
+          {
+            "code": "14810-6",
+            "display": "Leukocytes [#/volume] in Bronchial specimen by Manual count"
+          },
+          {
+            "code": "14811-4",
+            "display": "Leukocytes [#/volume] in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "14857-7",
+            "display": "Leukocytes other/Leukocytes in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "14858-5",
+            "display": "Leukocytes other/Leukocytes in Pleural fluid by Manual count"
+          },
+          {
+            "code": "14859-3",
+            "display": "Leukocytes other/Leukocytes in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "14860-1",
+            "display": "Leukocytes other/Leukocytes in Synovial fluid by Manual count"
+          },
+          {
+            "code": "20408-1",
+            "display": "Leukocytes [#/volume] in Urine by Test strip"
+          },
+          {
+            "code": "20455-2",
+            "display": "Leukocytes [Presence] in Urine sediment by Light microscopy"
+          },
+          {
+            "code": "20584-9",
+            "display": "Leukocytes [#/volume] in Specimen by Automated count"
+          },
+          {
+            "code": "24122-4",
+            "display": "Leukocytes [#/volume] in Urine by Manual count"
+          },
+          {
+            "code": "26464-8",
+            "display": "Leukocytes [#/volume] in Blood"
+          },
+          {
+            "code": "26465-5",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "26466-3",
+            "display": "Leukocytes [#/volume] in Body fluid"
+          },
+          {
+            "code": "26467-1",
+            "display": "Leukocytes [#/volume] in Pleural fluid"
+          },
+          {
+            "code": "26468-9",
+            "display": "Leukocytes [#/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "26469-7",
+            "display": "Leukocytes [#/volume] in Synovial fluid"
+          },
+          {
+            "code": "26470-5",
+            "display": "Leukocytes other [#/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "26471-3",
+            "display": "Leukocytes other/Leukocytes in Blood"
+          },
+          {
+            "code": "26472-1",
+            "display": "Leukocytes other/Leukocytes in Cerebral spinal fluid"
+          },
+          {
+            "code": "26473-9",
+            "display": "Leukocytes other/Leukocytes in Body fluid"
+          },
+          {
+            "code": "30401-4",
+            "display": "Leukocytes [#/volume] in Bronchial specimen"
+          },
+          {
+            "code": "30402-2",
+            "display": "Leukocytes [#/volume] in Gastric fluid"
+          },
+          {
+            "code": "30403-0",
+            "display": "Leukocytes [#/volume] in Pericardial fluid"
+          },
+          {
+            "code": "30404-8",
+            "display": "Leukocytes [#/volume] in Stool"
+          },
+          {
+            "code": "30405-5",
+            "display": "Leukocytes [#/volume] in Urine"
+          },
+          {
+            "code": "30406-3",
+            "display": "Leukocytes other [#/volume] in Blood"
+          },
+          {
+            "code": "30407-1",
+            "display": "Leukocytes other/Leukocytes in Pericardial fluid"
+          },
+          {
+            "code": "30408-9",
+            "display": "Leukocytes other/Leukocytes in Pleural fluid"
+          },
+          {
+            "code": "30409-7",
+            "display": "Leukocytes other/Leukocytes in Peritoneal fluid"
+          },
+          {
+            "code": "30410-5",
+            "display": "Leukocytes other/Leukocytes in Synovial fluid"
+          },
+          {
+            "code": "32142-2",
+            "display": "Leukocytes [Presence] in Synovial fluid by Light microscopy"
+          },
+          {
+            "code": "32761-9",
+            "display": "Leukocytes [Presence] in Specimen by Wet preparation"
+          },
+          {
+            "code": "32808-8",
+            "display": "Leukocytes other/Leukocytes in Bronchial specimen"
+          },
+          {
+            "code": "32825-2",
+            "display": "Leukocytes [Presence] in Semen"
+          },
+          {
+            "code": "33028-2",
+            "display": "Leukocytes [#/volume] in Blood from Blood product unit"
+          },
+          {
+            "code": "33052-2",
+            "display": "Leukocytes [Presence] in Urine"
+          },
+          {
+            "code": "33256-9",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood by Automated count"
+          },
+          {
+            "code": "33765-9",
+            "display": "Leukocytes [#/volume] in Blood Product unit.platelet pheresis by Automated count"
+          },
+          {
+            "code": "34445-7",
+            "display": "Leukocytes [Presence] in Body fluid"
+          },
+          {
+            "code": "34469-7",
+            "display": "Leukocytes [Presence] in Bile fluid by Light microscopy"
+          },
+          {
+            "code": "35051-2",
+            "display": "Leukocytes other [#/volume] in Body fluid"
+          },
+          {
+            "code": "35052-0",
+            "display": "Leukocytes other [#/volume] in Pleural fluid"
+          },
+          {
+            "code": "35053-8",
+            "display": "Leukocytes other [#/volume] in Synovial fluid"
+          },
+          {
+            "code": "35054-6",
+            "display": "Leukocytes other [#/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "40533-2",
+            "display": "Leukocytes [#/volume] in Peritoneal dialysis fluid by Manual count"
+          },
+          {
+            "code": "40535-7",
+            "display": "Leukocytes other/Leukocytes in Peritoneal dialysis fluid by Manual count"
+          },
+          {
+            "code": "40543-1",
+            "display": "Leukocytes other/Leukocytes in Bronchial specimen by Manual count"
+          },
+          {
+            "code": "40646-2",
+            "display": "Leukocytes other/Leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "42327-7",
+            "display": "Leukocytes [Presence] in Stool by Methylene blue stain"
+          },
+          {
+            "code": "44092-5",
+            "display": "Leukocytes [#/area] in Vaginal fluid by Wet preparation"
+          },
+          {
+            "code": "45383-7",
+            "display": "Leukocytes [#/area] in Urine sediment by Microscopy low power field"
+          },
+          {
+            "code": "46088-1",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid --2nd tube"
+          },
+          {
+            "code": "46089-9",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid --3rd tube"
+          },
+          {
+            "code": "46090-7",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid --4th tube"
+          },
+          {
+            "code": "46702-7",
+            "display": "Leukocytes [#/area] in Urine sediment by Automated count"
+          },
+          {
+            "code": "47281-1",
+            "display": "Leukocytes [#/volume] in Cord blood"
+          },
+          {
+            "code": "48034-3",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebral spinal fluid"
+          },
+          {
+            "code": "48052-5",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Body fluid"
+          },
+          {
+            "code": "48973-2",
+            "display": "Leukocytes [Presence] in Stool by Methylene blue stain --2nd specimen"
+          },
+          {
+            "code": "49224-9",
+            "display": "Leukocytes [#/area] in Semen by Microscopy high power field"
+          },
+          {
+            "code": "49498-9",
+            "display": "Leukocytes [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "49928-5",
+            "display": "Leukocytes [#/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "51383-8",
+            "display": "Leukocytes other [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "51487-7",
+            "display": "Leukocytes [#/volume] in Urine by Automated count"
+          },
+          {
+            "code": "51770-6",
+            "display": "Leukocytes [#/area] in Stool by Microscopy high power field"
+          },
+          {
+            "code": "53225-9",
+            "display": "Leukocytes [#/area] in Specimen by Wet preparation"
+          },
+          {
+            "code": "53226-7",
+            "display": "Leukocytes [#/area] in Urethra by Wet preparation"
+          },
+          {
+            "code": "53227-5",
+            "display": "Leukocytes [#/area] in Cervix by Wet preparation"
+          },
+          {
+            "code": "53316-6",
+            "display": "Leukocytes [Presence] in Urine by Automated"
+          },
+          {
+            "code": "53518-7",
+            "display": "Leukocytes [#/volume] in Dialysis fluid"
+          },
+          {
+            "code": "53964-3",
+            "display": "Leukocytes [Presence] in Urine by Visual"
+          },
+          {
+            "code": "55784-3",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Bone marrow"
+          },
+          {
+            "code": "57845-0",
+            "display": "Leukocytes [#/volume] in Body fluid by Automated count"
+          },
+          {
+            "code": "57846-8",
+            "display": "Leukocytes [#/volume] in Pericardial fluid by Automated count"
+          },
+          {
+            "code": "57847-6",
+            "display": "Leukocytes [#/volume] in Dialysis fluid by Manual count"
+          },
+          {
+            "code": "5821-4",
+            "display": "Leukocytes [#/area] in Urine sediment by Microscopy high power field"
+          },
+          {
+            "code": "58805-3",
+            "display": "Leukocytes [#/volume] in Urine by Automated test strip"
+          },
+          {
+            "code": "61182-2",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood from Fetus"
+          },
+          {
+            "code": "62239-9",
+            "display": "Leukocytes [#/volume] in Blood from Fetus by Automated count"
+          },
+          {
+            "code": "62251-4",
+            "display": "Leukocytes [#/volume] in Pleural fluid from Fetus by Automated count"
+          },
+          {
+            "code": "63555-7",
+            "display": "Leukocytes [#/volume] by Microscopy high power field in Urine sediment collected for unspecified duration"
+          },
+          {
+            "code": "66145-4",
+            "display": "Leukocytes other [#/volume] in Blood from Fetus by Manual count"
+          },
+          {
+            "code": "66768-3",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood"
+          },
+          {
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "6743-9",
+            "display": "Leukocytes [#/volume] in Body fluid by Manual count"
+          },
+          {
+            "code": "67830-0",
+            "display": "Leukocytes other [#/volume] in Pericardial fluid"
+          },
+          {
+            "code": "67836-7",
+            "display": "Leukocytes other [#/volume] in Pleural fluid from Fetus"
+          },
+          {
+            "code": "68368-0",
+            "display": "Leukocytes [#/volume] in Dialysis fluid by Automated count"
+          },
+          {
+            "code": "68428-2",
+            "display": "Leukocytes other [#/volume] in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "68429-0",
+            "display": "Leukocytes other [#/volume] in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "68430-8",
+            "display": "Leukocytes other [#/volume] in Pleural fluid by Manual count"
+          },
+          {
+            "code": "68431-6",
+            "display": "Leukocytes other [#/volume] in Synovial fluid by Manual count"
+          },
+          {
+            "code": "68432-4",
+            "display": "Leukocytes other/Leukocytes in Vitreous fluid by Manual count"
+          },
+          {
+            "code": "68433-2",
+            "display": "Leukocytes other [#/volume] in Vitreous fluid by Manual count"
+          },
+          {
+            "code": "68434-0",
+            "display": "Leukocytes [#/volume] in Vitreous fluid by Automated count"
+          },
+          {
+            "code": "70126-8",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Pleural fluid"
+          },
+          {
+            "code": "72163-9",
+            "display": "Leukocytes [Presence] in Specimen by Gram stain"
+          },
+          {
+            "code": "72348-6",
+            "display": "Leukocytes [#/volume] in Prostatic fluid by Manual count"
+          },
+          {
+            "code": "729-4",
+            "display": "Leukocytes other [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "730-2",
+            "display": "Leukocytes other/Leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "76674-1",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid --1st tube"
+          },
+          {
+            "code": "804-5",
+            "display": "Leukocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "805-2",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid by Automated count"
+          },
+          {
+            "code": "806-0",
+            "display": "Leukocytes [#/volume] in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "807-8",
+            "display": "Leukocytes [#/volume] in Pleural fluid by Automated count"
+          },
+          {
+            "code": "808-6",
+            "display": "Leukocytes [#/volume] in Pleural fluid by Manual count"
+          },
+          {
+            "code": "809-4",
+            "display": "Leukocytes [#/volume] in Peritoneal fluid by Automated count"
+          },
+          {
+            "code": "810-2",
+            "display": "Leukocytes [#/volume] in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "811-0",
+            "display": "Leukocytes [#/volume] in Semen by Automated count"
+          },
+          {
+            "code": "812-8",
+            "display": "Leukocytes [#/volume] in Semen by Manual count"
+          },
+          {
+            "code": "813-6",
+            "display": "Leukocytes [#/volume] in Synovial fluid by Automated count"
+          },
+          {
+            "code": "814-4",
+            "display": "Leukocytes [#/volume] in Synovial fluid by Manual count"
+          },
+          {
+            "code": "82587-7",
+            "display": "Leukocytes [#/volume] in Bone marrow by Automated count"
+          },
+          {
+            "code": "88114-4",
+            "display": "Leukocytes [Presence] in Cerebral spinal fluid by Gram stain"
+          },
+          {
+            "code": "88343-9",
+            "display": "Leukocytes [Presence] in Ear by Light microscopy"
+          },
+          {
+            "code": "92635-2",
+            "display": "Leukocytes [#/volume] in Buffy Coat"
+          },
+          {
+            "code": "95218-4",
+            "display": "Leukocytes [#/volume] in Stem cell product"
+          },
+          {
+            "code": "96712-5",
+            "display": "Leukocytes [#/area] in Body fluid by Light microscopy"
+          },
+          {
+            "code": "96718-2",
+            "display": "Leukocytes [#/area] in Prostatic fluid by Light microscopy"
+          },
+          {
+            "code": "98020-1",
+            "display": "Leukocytes [#/volume] in Lower respiratory specimen by Manual count"
+          },
+          {
+            "code": "99051-5",
+            "display": "Leukocytes [#/volume] in Bronchoalveolar lavage by Manual count"
+          },
+          {
+            "code": "99775-9",
+            "display": "Leukocytes [#/volume] in Peritoneal dialysis fluid by Automated count"
+          },
+          {
+            "code": "99776-7",
+            "display": "Leukocytes [#/volume] in Bronchoalveolar lavage by Automated count"
+          },
+          {
+            "code": "99928-4",
+            "display": "Leukocytes [Presence] in Body fluid by Automated"
+          },
+          {
+            "code": "99929-2",
+            "display": "Leukocytes [#/area] in Body fluid by Automated count"
+          }
+        ]
+      }
+    ]
+  }
+}

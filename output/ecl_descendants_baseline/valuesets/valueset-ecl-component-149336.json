@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-149336",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-149336",
+  "version": "1.0",
+  "name": "ECLComponent149336",
+  "title": "ECL Component-Based: Harnsäure [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 14933-6 (SNOMED 163261010000104)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14933-6",
+            "display": "Urate [Moles/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

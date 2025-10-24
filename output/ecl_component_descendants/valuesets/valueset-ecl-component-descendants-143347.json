@@ -1,0 +1,114 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-143347",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-143347",
+  "version": "1.0",
+  "name": "ECLComponentDescendants143347",
+  "title": "ECL Component Descendants: Lithium [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<720377006 for LOINC 14334-7",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "101751-6",
+            "display": "LOINC 101751-6"
+          },
+          {
+            "code": "108824-4",
+            "display": "LOINC 108824-4"
+          },
+          {
+            "code": "110374-6",
+            "display": "LOINC 110374-6"
+          },
+          {
+            "code": "14334-7",
+            "display": "LOINC 14334-7"
+          },
+          {
+            "code": "17086-0",
+            "display": "LOINC 17086-0"
+          },
+          {
+            "code": "18238-6",
+            "display": "LOINC 18238-6"
+          },
+          {
+            "code": "25461-5",
+            "display": "LOINC 25461-5"
+          },
+          {
+            "code": "25462-3",
+            "display": "LOINC 25462-3"
+          },
+          {
+            "code": "25463-1",
+            "display": "LOINC 25463-1"
+          },
+          {
+            "code": "34330-1",
+            "display": "LOINC 34330-1"
+          },
+          {
+            "code": "34331-9",
+            "display": "LOINC 34331-9"
+          },
+          {
+            "code": "3718-4",
+            "display": "LOINC 3718-4"
+          },
+          {
+            "code": "3719-2",
+            "display": "LOINC 3719-2"
+          },
+          {
+            "code": "3720-0",
+            "display": "LOINC 3720-0"
+          },
+          {
+            "code": "3721-8",
+            "display": "LOINC 3721-8"
+          },
+          {
+            "code": "3723-4",
+            "display": "LOINC 3723-4"
+          },
+          {
+            "code": "4300-0",
+            "display": "LOINC 4300-0"
+          },
+          {
+            "code": "43176-7",
+            "display": "LOINC 43176-7"
+          },
+          {
+            "code": "50872-1",
+            "display": "LOINC 50872-1"
+          },
+          {
+            "code": "56032-6",
+            "display": "LOINC 56032-6"
+          },
+          {
+            "code": "74806-1",
+            "display": "LOINC 74806-1"
+          },
+          {
+            "code": "9358-3",
+            "display": "LOINC 9358-3"
+          },
+          {
+            "code": "9815-2",
+            "display": "LOINC 9815-2"
+          }
+        ]
+      }
+    ]
+  }
+}

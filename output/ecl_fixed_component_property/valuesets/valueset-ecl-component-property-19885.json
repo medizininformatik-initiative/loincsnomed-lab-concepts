@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-19885",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-19885",
+  "version": "1.0",
+  "name": "ECLComponentProperty19885",
+  "title": "ECL Component+Property: C-reaktives Protein [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=61425002 AND Property=118539007 for LOINC 1988-5",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "105126-7",
+            "display": "LOINC 105126-7"
+          },
+          {
+            "code": "106736-2",
+            "display": "LOINC 106736-2"
+          },
+          {
+            "code": "16503-5",
+            "display": "LOINC 16503-5"
+          },
+          {
+            "code": "1988-5",
+            "display": "LOINC 1988-5"
+          },
+          {
+            "code": "30522-7",
+            "display": "LOINC 30522-7"
+          },
+          {
+            "code": "45062-7",
+            "display": "LOINC 45062-7"
+          },
+          {
+            "code": "48421-2",
+            "display": "LOINC 48421-2"
+          },
+          {
+            "code": "59182-6",
+            "display": "LOINC 59182-6"
+          },
+          {
+            "code": "71426-1",
+            "display": "LOINC 71426-1"
+          }
+        ]
+      }
+    ]
+  }
+}

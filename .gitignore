@@ -1,0 +1,40 @@
+# Environment and secrets
+.env
+*.p12
+*.pem
+*.key
+
+# Proprietary terminology files (SNOMED, LOINC distributions)
+input/
+**/sct2_*.txt
+**/Loinc.csv
+**/LoincTable/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyd
+
+# Dependencies
+node_modules/
+node_modules~
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local development
+*.local

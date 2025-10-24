@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-20982",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-20982",
+  "version": "1.0",
+  "name": "ECLComponentProperty20982",
+  "title": "ECL Component+Property: Cholinesterase [Enzymaktivität/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=18004003 AND Property=118524006 for LOINC 2098-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11154-2",
+            "display": "LOINC 11154-2"
+          },
+          {
+            "code": "2097-4",
+            "display": "LOINC 2097-4"
+          },
+          {
+            "code": "2098-2",
+            "display": "LOINC 2098-2"
+          },
+          {
+            "code": "2099-0",
+            "display": "LOINC 2099-0"
+          },
+          {
+            "code": "49851-9",
+            "display": "LOINC 49851-9"
+          },
+          {
+            "code": "77367-1",
+            "display": "LOINC 77367-1"
+          },
+          {
+            "code": "89363-6",
+            "display": "LOINC 89363-6"
+          }
+        ]
+      }
+    ]
+  }
+}

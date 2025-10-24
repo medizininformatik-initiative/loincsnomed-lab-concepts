@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-66902",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-66902",
+  "version": "3.6",
+  "name": "InterpolarLOINC66902",
+  "title": "Interpolar LOINC Group: Leukozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 6690-2 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26464-8",
+            "display": "Leukocytes [#/volume] in Blood"
+          },
+          {
+            "code": "49498-9",
+            "display": "Leukocytes [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "804-5",
+            "display": "Leukocytes [#/volume] in Blood by Manual count"
+          }
+        ]
+      }
+    ]
+  }
+}

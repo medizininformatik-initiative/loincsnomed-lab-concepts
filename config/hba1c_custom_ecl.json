@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for Hemoglobin A1c (LOINC 4548-4)",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Mass Fraction Property)",
+      "description": "Uses Component = Glycated hemoglobin-A1c AND Property = Mass fraction (captures HbA1c/Hemoglobin.total ratio measurements in blood). This is the standard approach for HbA1c measurements.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, << 370130000 |Property (attribute)| = << 118542001 |Mass fraction (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|"
+    }
+  ]
+}

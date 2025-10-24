@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-149278",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-149278",
+  "version": "1.0",
+  "name": "InterpolarFiltered149278",
+  "title": "Interpolar LOINC (Filtered): Triglycerid [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 14927-8. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14927-8",
+            "display": "Triglyceride [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2571-8",
+            "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3043-7",
+            "display": "Triglyceride [Mass/volume] in Blood"
+          },
+          {
+            "code": "3049-4",
+            "display": "Deprecated Triglyceride [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30570-6",
+            "display": "Triglyceride [Percentile]"
+          },
+          {
+            "code": "35217-9",
+            "display": "Triglyceride [Mass or Moles/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

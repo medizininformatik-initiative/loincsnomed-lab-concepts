@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-115584",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-115584",
+  "version": "3.6",
+  "name": "InterpolarLOINC115584",
+  "title": "Interpolar LOINC Group: pH von Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 11558-4 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11558-4",
+            "display": "pH of Blood"
+          },
+          {
+            "code": "19213-8",
+            "display": "pH of Mixed venous blood"
+          },
+          {
+            "code": "2744-1",
+            "display": "pH of Arterial blood"
+          },
+          {
+            "code": "2745-8",
+            "display": "pH of Capillary blood"
+          },
+          {
+            "code": "2746-6",
+            "display": "pH of Venous blood"
+          },
+          {
+            "code": "33254-4",
+            "display": "pH of Arterial blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "39486-6",
+            "display": "pH of Venous blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "49701-6",
+            "display": "pH of Blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "50980-2",
+            "display": "pH of Mixed venous blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "97536-7",
+            "display": "pH of Central venous blood"
+          },
+          {
+            "code": "97537-5",
+            "display": "pH of Central venous blood adjusted to patient's actual temperature"
+          }
+        ]
+      }
+    ]
+  }
+}

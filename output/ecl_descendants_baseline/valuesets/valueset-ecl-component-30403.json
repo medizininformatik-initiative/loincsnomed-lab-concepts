@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-30403",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-30403",
+  "version": "1.0",
+  "name": "ECLComponent30403",
+  "title": "ECL Component-Based: Triacylglycerid-Lipase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 3040-3 (SNOMED 57081010000105)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "104263-9",
+            "display": "Galactosylceramidase [Enzymatic activity/volume] in Serum by LC/MS/MS"
+          },
+          {
+            "code": "2572-6",
+            "display": "Lipoprotein lipase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3040-3",
+            "display": "Lipase [Enzymatic activity/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

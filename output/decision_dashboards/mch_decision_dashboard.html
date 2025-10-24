@@ -1,0 +1,4014 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ECL Decision Dashboard: mch</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .check {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .primary {
+            background-color: #fff3cd;
+            font-weight: bold;
+        }
+        .interpolar {
+            background-color: #d1ecf1;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stat-card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .stat-card h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .specimen-list {
+            list-style: none;
+            padding: 0;
+        }
+        .specimen-list li {
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+        }
+        .ecl-query {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+        .attributes {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .good { color: #27ae60; font-weight: bold; }
+        .medium { color: #f39c12; font-weight: bold; }
+        .poor { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ECL Decision Dashboard: MCH</h1>
+        <p>Primary LOINC: <strong>28539-5</strong> - MCH [Entitic mass]</p>
+        <p>Generated: 2025-10-17 12:01:38</p>
+    </div>
+
+    <div class="section">
+        <h2>SNOMED Concept & Attributes</h2>
+        <div class="attributes">
+            <p><strong>Primary Observable Entity:</strong> 521361010000106 - Entitic mass of hemoglobin in erythrocyte at point in time (observable entity)</p>
+            <hr>
+            <p><strong>Component:</strong> 38082009 - Hemoglobin (substance)</p>
+            <p><strong>Property:</strong> 118535001 - Entitic mass (property) (qualifier value)</p>
+            <p><strong>Direct site:</strong> 119351004 - Erythrocyte specimen (specimen)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>ECL Experiment Statistics</h2>
+        <div class="stat-grid">
+
+            <div class="stat-card">
+                <h4>Precoord Descendants</h4>
+                <p>Codes: <span class="stat-value">2</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component</h4>
+                <p>Codes: <span class="stat-value">60</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Component Descendants</h4>
+                <p>Codes: <span class="stat-value">264</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component Property</h4>
+                <p>Codes: <span class="stat-value">6</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Ecl Fixed Component System</h4>
+                <p>Codes: <span class="stat-value">3</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Refined Query V1</h4>
+                <p>Codes: <span class="stat-value">0</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Refined Query V2</h4>
+                <p>Codes: <span class="stat-value">2</span></p>
+                <p>Recall: <span class="poor">0.0%</span></p>
+                <p>Precision: <span class="poor">0.0%</span></p>
+                <p>F1: 0.000</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Specimen Types Found</h2>
+        <ul class="specimen-list">
+            <li><strong>119373006</strong> - Amniotic fluid specimen (specimen)</li>
+            <li><strong>122552005</strong> - Arterial blood specimen (specimen)</li>
+            <li><strong>703430008</strong> - Arterial cord blood specimen (specimen)</li>
+            <li><strong>119297000</strong> - Blood specimen (specimen)</li>
+            <li><strong>309051001</strong> - Body fluid specimen (specimen)</li>
+            <li><strong>122554006</strong> - Capillary blood specimen (specimen)</li>
+            <li><strong>258450006</strong> - Cerebrospinal fluid specimen (specimen)</li>
+            <li><strong>122556008</strong> - Cord blood specimen (specimen)</li>
+            <li><strong>440500007</strong> - Dried blood spot specimen (specimen)</li>
+            <li><strong>119351004</strong> - Erythrocyte specimen (specimen)</li>
+            <li><strong>258459007</strong> - Gastric fluid specimen (specimen)</li>
+            <li><strong>119340004</strong> - Meconium specimen (specimen)</li>
+            <li><strong>119298005</strong> - Mixed venous blood specimen (specimen)</li>
+            <li><strong>122571007</strong> - Pericardial fluid specimen (specimen)</li>
+            <li><strong>168139001</strong> - Peritoneal fluid specimen (specimen)</li>
+            <li><strong>119361006</strong> - Plasma specimen (specimen)</li>
+            <li><strong>418564007</strong> - Pleural fluid specimen (specimen)</li>
+            <li><strong>123038009</strong> - Specimen (specimen)</li>
+            <li><strong>119339001</strong> - Stool specimen (specimen)</li>
+            <li><strong>119332005</strong> - Synovial fluid specimen (specimen)</li>
+            <li><strong>122575003</strong> - Urine specimen (specimen)</li>
+            <li><strong>122555007</strong> - Venous blood specimen (specimen)</li>
+            <li><strong>703431007</strong> - Venous cord blood specimen (specimen)</li>
+            <li><strong>122572000</strong> - Vomitus specimen (specimen)</li>
+
+        </ul>
+        <p><em>Consider excluding specimen types that are not relevant for this analysis (e.g., cord blood, plasma, urine).</em></p>
+    </div>
+
+    <div class="section">
+        <h2>ECL Query Details</h2>
+
+        <h3>Precoord Descendants</h3>
+        
+        <div class="ecl-query"><< 521361010000106 |Entitic mass of hemoglobin in erythrocyte at point in time (observable entity)|</div>
+        <p>Results: 2 SNOMED concepts, 2 LOINC codes</p>
+
+        <h3>Ecl Fixed Component</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 38082009 |Hemoglobin (substance)|</div>
+        <p>Results: 60 SNOMED concepts, 60 LOINC codes</p>
+
+        <h3>Ecl Component Descendants</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = << 38082009 |Hemoglobin (substance)|</div>
+        <p>Results: 267 SNOMED concepts, 264 LOINC codes</p>
+
+        <h3>Ecl Fixed Component Property</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 38082009 |Hemoglobin (substance)|, 370130000 |Property| = 118535001 |Entitic mass (property) (qualifier value)|</div>
+        <p>Results: 6 SNOMED concepts, 6 LOINC codes</p>
+
+        <h3>Ecl Fixed Component System</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| : 246093002 |Component| = 38082009 |Hemoglobin (substance)|, 704327008 |Direct site| = << 119351004 |Erythrocyte specimen (specimen)|</div>
+        <p>Results: 3 SNOMED concepts, 3 LOINC codes</p>
+
+        <h3>Refined Query V1</h3>
+        
+        <div class="ecl-query"><< 363787002 |Observable entity| :
+    246093002 |Component| = 38082009 |Hemoglobin (substance)|,
+    370130000 |Property| = << 685451010000100 |Measurement property (qualifier value)|,
+    704327008 |Direct site| = << 119351004 |Erythrocyte specimen (specimen)|</div>
+        <p>Results: 0 SNOMED concepts, 0 LOINC codes</p>
+
+        <h3>Refined Query V2</h3>
+        <p><em>Uses Component = Hemoglobin AND Property = Entitic mass (118535001) AND Direct site = Erythrocyte specimen. Note: Entitic mass is NOT covered by the universal Measurement property, so this query specifically targets the Entitic mass property for MCH measurements.</em></p>
+        <div class="ecl-query"><< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|</div>
+        <p>Results: 2 SNOMED concepts, 2 LOINC codes</p>
+
+    </div>
+
+    <div class="section">
+        <h2>LOINC Code Comparison Matrix</h2>
+        <p>This table shows which LOINC codes were found by each ECL experiment.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>LOINC</th>
+                    <th>Display Name</th>
+                    <th>Interpolar</th>
+                    <th>MII300</th>
+                    <th>Precoord Descendants</th>
+                    <th>Ecl Fixed Component</th>
+                    <th>Ecl Component Descendants</th>
+                    <th>Ecl Fixed Component Property</th>
+                    <th>Ecl Fixed Component System</th>
+                    <th>Refined Query V1</th>
+                    <th>Refined Query V2</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="primary">
+                    <td>28539-5</td>
+                    <td>MCH [Entitic mass]</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>785-6</td>
+                    <td>MCH [Entitic mass] by Automated count</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                </tr>
+
+                <tr class="">
+                    <td>42810-2</td>
+                    <td>Hemoglobin [Entitic mass] in Reticulocytes</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>47278-7</td>
+                    <td>MCH [Entitic mass] in Cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>59468-9</td>
+                    <td>MCH [Entitic substance]</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>62243-1</td>
+                    <td>MCH [Entitic mass] in Fetus by Automated count</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>71694-4</td>
+                    <td>Hemoglobin [Entitic mass] in Reticulocytes by Automated count</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>103750-6</td>
+                    <td>Hemoglobin [Moles/volume] in Venous cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>105040-0</td>
+                    <td>Hemoglobin [Mass/volume] in Mixed venous blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>105274-5</td>
+                    <td>Hemoglobin [Mass/volume] in Venous blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>105300-8</td>
+                    <td>Hemoglobin [Moles/volume] in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>109484-6</td>
+                    <td>Hemoglobin [Measurement] in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>109886-2</td>
+                    <td>Hemoglobin [Measurement] in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>109887-0</td>
+                    <td>Hemoglobin [Measurement] in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>110885-1</td>
+                    <td>Hemoglobin [Measurement] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>14775-1</td>
+                    <td>Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>20509-6</td>
+                    <td>Hemoglobin [Mass/volume] in Blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30313-1</td>
+                    <td>Hemoglobin [Mass/volume] in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30350-3</td>
+                    <td>Hemoglobin [Mass/volume] in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30351-1</td>
+                    <td>Hemoglobin [Mass/volume] in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30352-9</td>
+                    <td>Hemoglobin [Mass/volume] in Capillary blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30353-7</td>
+                    <td>Hemoglobin [Mass/volume] in Venous cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30354-5</td>
+                    <td>Hemoglobin [Mass/volume] in Arterial cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32017-6</td>
+                    <td>Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>33025-8</td>
+                    <td>Hemoglobin [Mass/volume] in Venous cord blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>33026-6</td>
+                    <td>Hemoglobin [Mass/volume] in Arterial cord blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>33509-1</td>
+                    <td>Hemoglobin [Mass/volume] in Body fluid</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>33517-4</td>
+                    <td>Hemoglobin [Presence] in Body fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>34618-9</td>
+                    <td>Hemoglobin [Presence] in Specimen</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>35183-3</td>
+                    <td>Hemoglobin [Mass or Moles/volume] in Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40719-7</td>
+                    <td>Hemoglobin [Mass/volume] in Cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>42248-5</td>
+                    <td>Hemoglobin.other/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>48035-0</td>
+                    <td>Hemoglobin [Presence] in Cerebral spinal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>48343-8</td>
+                    <td>Hemoglobin.other/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>48725-6</td>
+                    <td>Hemoglobin [Mass/volume] in Blood --pre therapeutic phlebotomy</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>49137-3</td>
+                    <td>Hemoglobin [Mass/volume] in Urine by Test strip</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>50559-4</td>
+                    <td>Hemoglobin [Mass/volume] in Urine by Automated test strip</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54289-4</td>
+                    <td>Hemoglobin [Mass/volume] in Blood from Blood product unit</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>55782-7</td>
+                    <td>Hemoglobin [Mass/volume] in Blood by Oximetry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>57751-0</td>
+                    <td>Hemoglobin [Presence] in Urine by Automated test strip</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>5794-3</td>
+                    <td>Hemoglobin [Presence] in Urine by Test strip</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>59260-0</td>
+                    <td>Hemoglobin [Moles/volume] in Blood</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>61180-6</td>
+                    <td>Hemoglobin [Mass/volume] in Blood from Fetus</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>69950-4</td>
+                    <td>Hemoglobin [Mass/volume] in Pericardial fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>717-9</td>
+                    <td>Hemoglobin [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>718-7</td>
+                    <td>Hemoglobin [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>719-5</td>
+                    <td>Hemoglobin [Mass/volume] in Cerebral spinal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>722-9</td>
+                    <td>Hemoglobin [Mass/volume] in Pleural fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>723-7</td>
+                    <td>Hemoglobin [Mass/volume] in Peritoneal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>724-5</td>
+                    <td>Hemoglobin [Mass/volume] in Synovial fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>725-2</td>
+                    <td>Hemoglobin [Presence] in Urine</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>726-0</td>
+                    <td>Hemoglobin [Mass/volume] in Urine</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>73895-5</td>
+                    <td>Hemoglobin [Entitic substance] in Reticulocytes by Automated count</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>75928-2</td>
+                    <td>Hemoglobin [Moles/volume] in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>76768-1</td>
+                    <td>Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>76769-9</td>
+                    <td>Hemoglobin [Mass/volume] in Venous blood by Oximetry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>93846-4</td>
+                    <td>Hemoglobin [Moles/volume] in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97550-8</td>
+                    <td>Hemoglobin [Mass/volume] in Central venous blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97555-7</td>
+                    <td>Hemoglobin [Mass/volume] in Central venous blood by Oximetry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97556-5</td>
+                    <td>Hemoglobin [Mass/volume] in Capillary blood by Oximetry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>10346-5</td>
+                    <td>Hemoglobin A [Units/volume] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>109575-1</td>
+                    <td>Hemoglobin H [Measurement] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>109592-6</td>
+                    <td>Methemoglobin [Measurement] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>110938-8</td>
+                    <td>Hemoglobin F [Measurement] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>11559-2</td>
+                    <td>Fractional oxyhemoglobin in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>15082-1</td>
+                    <td>Methemoglobin [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>17855-8</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by calculation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>17856-6</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>17871-5</td>
+                    <td>Hemoglobin H [Presence] in Blood by Heat denaturation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>18277-4</td>
+                    <td>Hemoglobin F [Presence] in Gastric fluid by Apt-Downey method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>18278-2</td>
+                    <td>Hemoglobin F [Presence] in Meconium by Apt-Downey method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>18291-5</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Blood from Newborn</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>19225-2</td>
+                    <td>Deoxyhemoglobin/Hemoglobin.total in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>19226-0</td>
+                    <td>Deoxyhemoglobin/Hemoglobin.total in Capillary blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>19227-8</td>
+                    <td>Deoxyhemoglobin/Hemoglobin.total in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>19228-6</td>
+                    <td>Deoxyhemoglobin/Hemoglobin.total in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2030-5</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2031-3</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Capillary blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2032-1</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>20563-3</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>20572-4</td>
+                    <td>Hemoglobin A/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2613-8</td>
+                    <td>Methemoglobin [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2614-6</td>
+                    <td>Methemoglobin/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2615-3</td>
+                    <td>Methemoglobin/Hemoglobin.total in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2616-1</td>
+                    <td>Methemoglobin/Hemoglobin.total in Capillary blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2617-9</td>
+                    <td>Methemoglobin/Hemoglobin.total in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2618-7</td>
+                    <td>Methemoglobin/Hemoglobin.total in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2619-5</td>
+                    <td>Methemoglobin [Presence] in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2714-4</td>
+                    <td>Fractional oxyhemoglobin in Arterial blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2715-1</td>
+                    <td>Fractional oxyhemoglobin in Capillary blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2716-9</td>
+                    <td>Fractional oxyhemoglobin in Venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>2717-7</td>
+                    <td>Fractional oxyhemoglobin in Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>27345-8</td>
+                    <td>Hemoglobin A2 [Presence] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>28006-5</td>
+                    <td>Hemoglobin F [Presence] in Vomitus</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>28067-7</td>
+                    <td>Hemoglobin F [Presence] in Amniotic fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>28559-3</td>
+                    <td>Hemoglobin A2 [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30074-9</td>
+                    <td>Hemoglobin F [Presence] in Specimen</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30369-3</td>
+                    <td>Fractional oxyhemoglobin in Venous cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>30370-1</td>
+                    <td>Fractional oxyhemoglobin in Arterial cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>31156-3</td>
+                    <td>Hemoglobin Barts/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>31157-1</td>
+                    <td>Carboxyhemoglobin [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32140-6</td>
+                    <td>Hemoglobin F [Presence] in Blood by Kleihauer-Betke method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32160-4</td>
+                    <td>Carboxyhemoglobin [Presence] in Blood by Screen method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32681-9</td>
+                    <td>Hemoglobin C/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32682-7</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>32683-5</td>
+                    <td>Hemoglobin S/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>33593-5</td>
+                    <td>Hemoglobin G - Coushatta/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>34660-1</td>
+                    <td>Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>34663-5</td>
+                    <td>Hemoglobin S [Presence] in Amniotic fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>34969-6</td>
+                    <td>Fractional oxyhemoglobin in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>35125-4</td>
+                    <td>Hemoglobin Lepore/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>35126-2</td>
+                    <td>Hemoglobin O - Arab/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>35127-0</td>
+                    <td>Hemoglobin A2.prime/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>38524-5</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>39533-5</td>
+                    <td>Deoxyhemoglobin [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40545-6</td>
+                    <td>Hemoglobin C [Presence] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40546-4</td>
+                    <td>Hemoglobin E [Presence] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40547-2</td>
+                    <td>Hemoglobin H [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40549-8</td>
+                    <td>Hemoglobin F [Mass/volume] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40550-6</td>
+                    <td>Hemoglobin H [Mass/volume] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40720-5</td>
+                    <td>Hemoglobin C [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>40721-3</td>
+                    <td>Hemoglobin F [Presence] in Specimen by Apt-Downey method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>41607-3</td>
+                    <td>Methemoglobin/Hemoglobin.total in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>41619-8</td>
+                    <td>Unstable Hemoglobin [Presence] in Red Blood Cells by Isopropanol stability</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>41648-7</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Mixed venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>41995-2</td>
+                    <td>Hemoglobin A1c [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>42244-4</td>
+                    <td>Hemoglobin A/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>42245-1</td>
+                    <td>Hemoglobin A2/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>42246-9</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>44920-7</td>
+                    <td>Hemoglobin C/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>44921-5</td>
+                    <td>Hemoglobin D/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>44922-3</td>
+                    <td>Hemoglobin E/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>44923-1</td>
+                    <td>Hemoglobin S/Hemoglobin.total in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>45208-6</td>
+                    <td>Hemoglobin A [Presence] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4534-4</td>
+                    <td>Cyanmethemoglobin/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4536-9</td>
+                    <td>Deoxyhemoglobin/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4546-8</td>
+                    <td>Hemoglobin A/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4547-6</td>
+                    <td>Hemoglobin A1/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4548-4</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4549-2</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4550-0</td>
+                    <td>Hemoglobin A2 [Moles/volume] in Blood by Chromatography column</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4551-8</td>
+                    <td>Hemoglobin A2/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4552-6</td>
+                    <td>Hemoglobin A2/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4553-4</td>
+                    <td>Hemoglobin A2/Hemoglobin.total in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4554-2</td>
+                    <td>Hemoglobin A2/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4556-7</td>
+                    <td>Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4557-5</td>
+                    <td>Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4558-3</td>
+                    <td>Hemoglobin Barts [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4559-1</td>
+                    <td>Hemoglobin Barts [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4560-9</td>
+                    <td>Hemoglobin Bethesda [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4561-7</td>
+                    <td>Hemoglobin C/Hemoglobin.total in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4562-5</td>
+                    <td>Hemoglobin C/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4563-3</td>
+                    <td>Hemoglobin C/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4564-1</td>
+                    <td>Hemoglobin C - Harlem [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4565-8</td>
+                    <td>Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4566-6</td>
+                    <td>Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4567-4</td>
+                    <td>Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4568-2</td>
+                    <td>Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4569-0</td>
+                    <td>Hemoglobin D/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4572-4</td>
+                    <td>Hemoglobin Denver [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4573-2</td>
+                    <td>Hemoglobin E/Hemoglobin.total in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4574-0</td>
+                    <td>Hemoglobin E/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4575-7</td>
+                    <td>Hemoglobin E/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4576-5</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4577-3</td>
+                    <td>Hemoglobin F - Texas [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4578-1</td>
+                    <td>Hemoglobin F - Texas [Units/volume] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4579-9</td>
+                    <td>Hemoglobin F [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4580-7</td>
+                    <td>Hemoglobin F1/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4581-5</td>
+                    <td>Hemoglobin G - Coushatta [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4582-3</td>
+                    <td>Hemoglobin G - Coushatta [Units/volume] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4583-1</td>
+                    <td>Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4584-9</td>
+                    <td>Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4585-6</td>
+                    <td>Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4586-4</td>
+                    <td>Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4587-2</td>
+                    <td>Hemoglobin H/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4588-0</td>
+                    <td>Hemoglobin H/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4589-8</td>
+                    <td>Hemoglobin Hasharon [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4590-6</td>
+                    <td>Hemoglobin Hasharon [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4591-4</td>
+                    <td>Hemoglobin Hope [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4592-2</td>
+                    <td>Hemoglobin Hope [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4593-0</td>
+                    <td>Hemoglobin I [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4594-8</td>
+                    <td>Hemoglobin I [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4595-5</td>
+                    <td>Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4596-3</td>
+                    <td>Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4597-1</td>
+                    <td>Hemoglobin J - Capetown [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4598-9</td>
+                    <td>Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4599-7</td>
+                    <td>Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4600-3</td>
+                    <td>Hemoglobin Kansas [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4601-1</td>
+                    <td>Hemoglobin Kempsey [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4602-9</td>
+                    <td>Hemoglobin Kempsey [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4603-7</td>
+                    <td>Hemoglobin Koln [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4604-5</td>
+                    <td>Hemoglobin Lepore [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4605-2</td>
+                    <td>Hemoglobin Lepore [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4606-0</td>
+                    <td>Hemoglobin M - Boston [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4607-8</td>
+                    <td>Hemoglobin M - Hyde Park [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4608-6</td>
+                    <td>Hemoglobin M - Iwate [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4610-2</td>
+                    <td>Hemoglobin M - Saskatoon [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4611-0</td>
+                    <td>Hemoglobin Malmo [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4612-8</td>
+                    <td>Hemoglobin Malmo [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4613-6</td>
+                    <td>Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4614-4</td>
+                    <td>Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4615-1</td>
+                    <td>Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4616-9</td>
+                    <td>Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4617-7</td>
+                    <td>Hemoglobin O - Arab [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4618-5</td>
+                    <td>Hemoglobin O - Arab [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4619-3</td>
+                    <td>Hemoglobin Ranier [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4621-9</td>
+                    <td>Hemoglobin S [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4622-7</td>
+                    <td>Hemoglobin S [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4623-5</td>
+                    <td>Hemoglobin S [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4625-0</td>
+                    <td>Hemoglobin S/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4626-8</td>
+                    <td>Hemoglobin Yakima [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4627-6</td>
+                    <td>Hemoglobin Yoshizuka [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4628-4</td>
+                    <td>Hemoglobin Ypsilanti [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4629-2</td>
+                    <td>Hemoglobin Zurich [Presence] in Blood by Electrophoresis acid (pH 6.3)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4630-0</td>
+                    <td>Hemoglobin Zurich [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4631-8</td>
+                    <td>Hemoglobin F [Presence] in Stool by Apt-Downey method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4632-6</td>
+                    <td>Hemoglobin F [Presence] in Blood by Alkali denaturation</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4633-4</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4638-3</td>
+                    <td>Thermolabile hemoglobin/Hemoglobin.total in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4639-1</td>
+                    <td>Unstable Hemoglobin [Presence] in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4683-9</td>
+                    <td>Sulfhemoglobin [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4684-7</td>
+                    <td>Sulfhemoglobin [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>4685-4</td>
+                    <td>Sulfhemoglobin/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>50765-7</td>
+                    <td>Hemoglobin Hasharon/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>51196-4</td>
+                    <td>Hemoglobin A1/Hemoglobin.total in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>51613-8</td>
+                    <td>Hemoglobin J/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>51614-6</td>
+                    <td>Hemoglobin M/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>53117-8</td>
+                    <td>Thermolabile hemoglobin [Presence] in Red Blood Cells</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>53223-4</td>
+                    <td>Hemoglobin G/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>53224-2</td>
+                    <td>Hemoglobin M [Presence] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>53857-9</td>
+                    <td>Hemoglobin F [Mass/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54068-2</td>
+                    <td>Hemoglobin O - Arab/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54069-0</td>
+                    <td>Hemoglobin Barts/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54070-8</td>
+                    <td>Hemoglobin D/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54071-6</td>
+                    <td>Hemoglobin E/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54072-4</td>
+                    <td>Hemoglobin A/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54073-2</td>
+                    <td>Hemoglobin C/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54074-0</td>
+                    <td>Hemoglobin F/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>54209-2</td>
+                    <td>Hemoglobin C - Harlem/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>55372-7</td>
+                    <td>Hemoglobin Constant Spring/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>55783-5</td>
+                    <td>Hemoglobin Barts [Presence] in Blood by HPLC</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>55942-7</td>
+                    <td>Methemoglobin/Hemoglobin.total in Cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>56040-9</td>
+                    <td>Methemoglobin [Moles/volume] in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>56476-5</td>
+                    <td>Hemoglobin S/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>5913-9</td>
+                    <td>Hemoglobin F/Hemoglobin.total in Amniotic fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>59261-8</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>62388-4</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in Blood by JDS/JSCC protocol</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>63523-5</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Arterial cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>63524-3</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Venous cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>6864-3</td>
+                    <td>Hemoglobin S [Presence] in Blood by Solubility test</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>72262-9</td>
+                    <td>Methemoglobin [Moles/volume] in Cerebral spinal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>72263-7</td>
+                    <td>Oxyhemoglobin [Moles/volume] in Cerebral spinal fluid</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>72360-1</td>
+                    <td>Methemoglobin/Hemoglobin.total in Venous cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>72361-9</td>
+                    <td>Methemoglobin/Hemoglobin.total in Arterial cord blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>80655-4</td>
+                    <td>Hemoglobin G - Philadelphia/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>80656-2</td>
+                    <td>Hemoglobin Hope/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>80657-0</td>
+                    <td>Hemoglobin Q/Hemoglobin.total in Blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>87437-0</td>
+                    <td>Oxyhemoglobin [Mass/volume] in Plasma</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>96595-4</td>
+                    <td>Hemoglobin A1c/Hemoglobin.total in DBS</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>9749-3</td>
+                    <td>Hemoglobin F [Units/volume] in Blood by Electrophoresis</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97551-6</td>
+                    <td>Carboxyhemoglobin/Hemoglobin.total in Central venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97552-4</td>
+                    <td>Fractional oxyhemoglobin in Central venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97553-2</td>
+                    <td>Deoxyhemoglobin/Hemoglobin.total in Central venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+                <tr class="">
+                    <td>97554-0</td>
+                    <td>Methemoglobin/Hemoglobin.total in Central venous blood</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">1</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                    <td class="check">0</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Decision Guidance</h2>
+        <h3>Key Questions:</h3>
+        <ol>
+            <li><strong>Specimen Exclusions:</strong> Which specimen types should be excluded? (Review "Specimen Types Found" section)</li>
+            <li><strong>Component Strategy:</strong> Fixed component or descendants? (Compare Exp 2 vs Exp 3)</li>
+            <li><strong>Recall Priority:</strong> Do you need high recall (capture all relevant codes) or high precision (only exact matches)?</li>
+            <li><strong>Interpolar Alignment:</strong> Should results align closely with Interpolar reference?</li>
+        </ol>
+
+        <h3>Experiment Guide:</h3>
+        <ul>
+            <li><strong>Exp 0 (Pre-coordinated Descendants):</strong> All descendants of the primary observable entity itself (e.g., all child concepts under "Creatinine in serum" - THIS is the true pre-coordinated hierarchy)</li>
+            <li><strong>Exp 1 (Fixed Component):</strong> Observable entities with EXACTLY this component (no subcomponents)</li>
+            <li><strong>Exp 2 (Component Descendants):</strong> Observable entities with this component OR its descendants (includes subcomponents like HbA1c for Hemoglobin)</li>
+            <li><strong>Exp 3 (Fixed Component + Property):</strong> Adds specific property constraint (e.g., substance concentration)</li>
+            <li><strong>Exp 4 (Fixed Component + System):</strong> Adds specimen/system constraint (e.g., blood specimen)</li>
+            <li><strong>Exp 5 (Refined Query V1):</strong> Component + Universal Measurement Property (all quantitative types) + System - Most comprehensive</li>
+        </ul>
+
+        <h3>Why Start with Exp 0?</h3>
+        <p><strong>Exp 0</strong> queries the pre-coordinated hierarchy (e.g., << "Substance concentration of creatinine in serum" concept), capturing all child observable entities in that hierarchy. This is your baseline to compare against post-coordinated approaches (Exp 1-5).</p>
+    </div>
+</body>
+</html>

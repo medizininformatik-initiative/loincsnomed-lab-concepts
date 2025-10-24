@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-163626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-163626",
+  "version": "1.0",
+  "name": "ECLComponent163626",
+  "title": "ECL Component-Based: Ammoniak [Mol/Volumen] in Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 16362-6 (SNOMED 243181010000108)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16362-6",
+            "display": "Ammonia [Moles/volume] in Plasma"
+          },
+          {
+            "code": "1845-7",
+            "display": "Ammonium ion [Moles/volume] in Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

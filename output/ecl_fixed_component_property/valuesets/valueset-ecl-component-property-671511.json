@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-671511",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-671511",
+  "version": "1.0",
+  "name": "ECLComponentProperty671511",
+  "title": "ECL Component+Property: Troponin T.kardial [Masse/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=102684000 AND Property=118539007 for LOINC 67151-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "101915-7",
+            "display": "LOINC 101915-7"
+          },
+          {
+            "code": "106734-7",
+            "display": "LOINC 106734-7"
+          },
+          {
+            "code": "48425-3",
+            "display": "LOINC 48425-3"
+          },
+          {
+            "code": "6597-9",
+            "display": "LOINC 6597-9"
+          },
+          {
+            "code": "6598-7",
+            "display": "LOINC 6598-7"
+          },
+          {
+            "code": "67151-1",
+            "display": "LOINC 67151-1"
+          }
+        ]
+      }
+    ]
+  }
+}

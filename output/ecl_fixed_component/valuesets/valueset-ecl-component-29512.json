@@ -1,0 +1,278 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-29512",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-29512",
+  "version": "1.0",
+  "name": "ECLComponent29512",
+  "title": "ECL Fixed Component: Natrium [Mol/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=304050002 for LOINC 2951-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "111263-0",
+            "display": "Sodium [Measurement] in Stool"
+          },
+          {
+            "code": "111466-9",
+            "display": "Sodium [Measurement] in Urine"
+          },
+          {
+            "code": "11149-2",
+            "display": "Sodium/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "12907-2",
+            "display": "Sodium [Moles/volume] in Red Blood Cells"
+          },
+          {
+            "code": "12908-0",
+            "display": "Sodium [Moles/volume] in Vitreous fluid"
+          },
+          {
+            "code": "13809-9",
+            "display": "Sodium/Creatinine [Mass Ratio] in 24 hour Urine"
+          },
+          {
+            "code": "13895-8",
+            "display": "Sodium [Moles/volume] in Milk"
+          },
+          {
+            "code": "14055-8",
+            "display": "Sodium [Moles/mass] in Stool"
+          },
+          {
+            "code": "15207-4",
+            "display": "Sodium [Moles/volume] in Stool"
+          },
+          {
+            "code": "17796-4",
+            "display": "Sodium [Moles/volume] in Hyperal solution"
+          },
+          {
+            "code": "21525-1",
+            "display": "Sodium [Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "21526-9",
+            "display": "Sodium [Mass/volume] in 24 hour Urine"
+          },
+          {
+            "code": "27257-5",
+            "display": "Sodium [Moles/mass] in 24 hour Stool"
+          },
+          {
+            "code": "28003-2",
+            "display": "Sodium/Potassium [Molar ratio] in Serum or Plasma"
+          },
+          {
+            "code": "2947-0",
+            "display": "Sodium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2948-8",
+            "display": "Sodium [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2949-6",
+            "display": "Sodium [Moles/volume] in Dialysis fluid"
+          },
+          {
+            "code": "2950-4",
+            "display": "Sodium [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "2951-2",
+            "display": "Sodium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2952-0",
+            "display": "Sodium [Molar amount] in 24 hour Stool"
+          },
+          {
+            "code": "2953-8",
+            "display": "Sodium [Molar amount] in 72 hour Stool"
+          },
+          {
+            "code": "2954-6",
+            "display": "Sodium [Moles/volume] in Sweat"
+          },
+          {
+            "code": "2955-3",
+            "display": "Sodium [Moles/volume] in Urine"
+          },
+          {
+            "code": "2958-7",
+            "display": "Sodium/Potassium [Molar ratio] in Sweat"
+          },
+          {
+            "code": "2959-5",
+            "display": "Sodium/Potassium [Molar ratio] in Urine"
+          },
+          {
+            "code": "30558-1",
+            "display": "Sodium [Moles/volume] in Total parental nutrition"
+          },
+          {
+            "code": "32340-2",
+            "display": "Sodium [Moles/volume] in Specimen"
+          },
+          {
+            "code": "32553-0",
+            "display": "Sodium [Molar amount] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "32717-1",
+            "display": "Sodium [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "33951-5",
+            "display": "Sodium/Creatinine [Molar ratio] in Urine"
+          },
+          {
+            "code": "35678-2",
+            "display": "Sodium [Moles/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "39787-7",
+            "display": "Sodium [Moles/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "39791-9",
+            "display": "Sodium [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "39792-7",
+            "display": "Sodium [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "41657-8",
+            "display": "Sodium [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "42570-2",
+            "display": "Sodium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "43223-7",
+            "display": "Sodium/Creatinine [Ratio] in Urine"
+          },
+          {
+            "code": "44405-9",
+            "display": "Sodium/Creatinine [Molar ratio] in 24 hour Urine"
+          },
+          {
+            "code": "44406-7",
+            "display": "Sodium/Potassium [Molar ratio] in 24 hour Urine"
+          },
+          {
+            "code": "44783-9",
+            "display": "Sodium [Moles/volume] (Maximum value during study) in Serum or Plasma"
+          },
+          {
+            "code": "49790-9",
+            "display": "Sodium [Moles/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "49791-7",
+            "display": "Sodium [Moles/volume] in Amniotic fluid"
+          },
+          {
+            "code": "50911-7",
+            "display": "Sodium [Moles/volume] in Gastric fluid"
+          },
+          {
+            "code": "50912-5",
+            "display": "Sodium [Moles/mass] in Hair"
+          },
+          {
+            "code": "51205-3",
+            "display": "Sodium [Mass/mass] in Hair"
+          },
+          {
+            "code": "51419-0",
+            "display": "Sodium [Moles/volume] corrected for glucose in Serum or Plasma"
+          },
+          {
+            "code": "56979-8",
+            "display": "Sodium [Moles/volume] in Saliva (oral fluid)"
+          },
+          {
+            "code": "56980-6",
+            "display": "Sodium/Creatinine [Ratio] in 24 hour Urine"
+          },
+          {
+            "code": "57370-9",
+            "display": "Sodium [Moles/volume] in 12 hour Urine"
+          },
+          {
+            "code": "57382-4",
+            "display": "Sodium [Moles/volume] in 2 hour Urine"
+          },
+          {
+            "code": "59163-6",
+            "display": "Sodium [Moles/volume] in 24 hour Stool"
+          },
+          {
+            "code": "60220-1",
+            "display": "Sodium [Moles/volume] in Mother's milk"
+          },
+          {
+            "code": "74685-9",
+            "display": "Sodium [Moles/volume] in 4 hour Urine"
+          },
+          {
+            "code": "74688-3",
+            "display": "Sodium [Moles/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "77139-4",
+            "display": "Sodium [Moles/volume] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "82812-9",
+            "display": "Sodium [Mass/volume] in Red Blood Cells"
+          },
+          {
+            "code": "92572-7",
+            "display": "Sodium [Molar amount] in 24 hour Dialysis fluid"
+          },
+          {
+            "code": "93997-5",
+            "display": "Sodium [Moles/volume] in Serum or Plasma --1 hour post dose vasopressin"
+          },
+          {
+            "code": "94006-4",
+            "display": "Sodium [Moles/volume] in Serum or Plasma --2 hours post dose vasopressin"
+          },
+          {
+            "code": "94842-2",
+            "display": "Sodium [Moles/volume] in Urine from Fetus"
+          },
+          {
+            "code": "9485-4",
+            "display": "Sodium [Mass/volume] in Water"
+          },
+          {
+            "code": "97779-3",
+            "display": "Sodium [Moles/volume] in Dialysis fluid --1 hour specimen"
+          },
+          {
+            "code": "97780-1",
+            "display": "Sodium [Moles/volume] in Dialysis fluid --2 hour specimen"
+          },
+          {
+            "code": "97781-9",
+            "display": "Sodium [Moles/volume] in Dialysis fluid --4 hour specimen"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-20750",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-20750",
+  "version": "1.0",
+  "name": "InterpolarFiltered20750",
+  "title": "Interpolar LOINC (Filtered): Chloride [Moles/volume] in Mixed venous blood",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 2075-0. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100745-9",
+            "display": "Chloride [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "2069-3",
+            "display": "Chloride [Moles/volume] in Blood"
+          },
+          {
+            "code": "2075-0",
+            "display": "Chloride [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35676-6",
+            "display": "Chloride [Moles/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "41649-5",
+            "display": "Chloride [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "41650-3",
+            "display": "Chloride [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "51590-8",
+            "display": "Chloride [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "77138-6",
+            "display": "Chloride [Moles/volume] in Serum, Plasma or Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

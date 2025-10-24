@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-7518",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-7518",
+  "version": "3.6",
+  "name": "InterpolarLOINC7518",
+  "title": "Interpolar LOINC Group: Neutrophile [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 751-8 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26499-4",
+            "display": "Neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "751-8",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "752-6",
+            "display": "Deprecated Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "753-4",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-20982",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-20982",
+  "version": "1.0",
+  "name": "ECLComponent20982",
+  "title": "ECL Component-Based: Cholinesterase [Enzymaktivität/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 2098-2 (SNOMED 216641010000108)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2098-2",
+            "display": "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "77367-1",
+            "display": "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma by calculation --Dibucaine"
+          }
+        ]
+      }
+    ]
+  }
+}

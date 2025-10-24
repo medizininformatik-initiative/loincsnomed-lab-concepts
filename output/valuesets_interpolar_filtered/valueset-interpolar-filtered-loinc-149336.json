@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-149336",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-149336",
+  "version": "1.0",
+  "name": "InterpolarFiltered149336",
+  "title": "Interpolar LOINC (Filtered): Harnsäure [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 14933-6. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 4",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14933-6",
+            "display": "Urate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3084-1",
+            "display": "Urate [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35232-8",
+            "display": "Urate [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "98981-4",
+            "display": "Urate [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

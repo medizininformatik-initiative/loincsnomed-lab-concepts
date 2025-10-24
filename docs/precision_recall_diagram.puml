@@ -1,0 +1,93 @@
+@startuml precision_recall_venn_diagram
+skinparam backgroundColor white
+skinparam defaultFontSize 12
+skinparam defaultFontName Arial
+
+title Precision vs Recall: Venn Diagram Explanation
+
+!procedure $circle($name, $x, $y, $radius, $color, $label)
+  circle $name {
+    (($x, $y), $radius) $color
+  }
+  $label at ($x, $y-$radius-20)
+!endprocedure
+
+' Create two overlapping circles
+skinparam circle {
+  BackgroundColor<<interpolar>> lightblue
+  BackgroundColor<<ecl>> lightgreen
+  BorderColor black
+  BorderThickness 2
+}
+
+rectangle "   " as space1 {
+}
+
+rectangle "Universe of All Possible LOINC Codes" as universe {
+
+  ' Left circle only - False Negatives (FN)
+  rectangle "        FN = 4\n\n  Missed by ECL\n  (in Interpolar only)" as FN #FFCCCC
+
+  ' Intersection - True Positives (TP)
+  rectangle "             TP = 15\n\n      Correct Matches\n  (in both Interpolar & ECL)" as TP #CCFFCC
+
+  ' Right circle only - False Positives (FP)
+  rectangle "        FP = 11\n\n  Found by ECL\n  (not in Interpolar)" as FP #FFFFCC
+
+  FN -[hidden]right- TP
+  TP -[hidden]right- FP
+}
+
+note left of universe
+  **Ground Truth (Interpolar)**
+  ◄─────────────────►
+  FN + TP = 19 codes
+
+  **ECL Query Results**
+          ◄─────────────────►
+          TP + FP = 26 codes
+end note
+
+note right of universe
+  **RECALL = TP / (TP + FN)**
+  = 15 / (15 + 4)
+  = 15 / 19
+  = **78.9%**
+
+  → Measures completeness
+  → "How many relevant we found"
+
+  ---
+
+  **PRECISION = TP / (TP + FP)**
+  = 15 / (15 + 11)
+  = 15 / 26
+  = **57.7%**
+
+  → Measures accuracy
+  → "How many found are relevant"
+
+  ---
+
+  **F1 SCORE**
+  = 2 × (P × R) / (P + R)
+  = **66.7%**
+
+  → Harmonic mean (balance)
+end note
+
+legend bottom
+  **Example: Hemoglobin ECL Query (with cord blood exclusion)**
+
+  | Region | Count | Meaning |
+  | TP (Green) | 15 | Correctly found codes (in both sets) |
+  | FN (Red) | 4 | Missed codes (lower recall) |
+  | FP (Yellow) | 11 | Extra codes found (lower precision) |
+
+  **Interpretation:**
+  • High recall (78.9%) → Found most Interpolar codes
+  • Medium precision (57.7%) → Many extra codes found
+  • Trade-off: Broader queries increase recall but decrease precision
+end legend
+
+@enduml

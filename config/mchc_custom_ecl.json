@@ -1,0 +1,12 @@
+{
+  "description": "Custom ECL queries for MCHC - Mean Corpuscular Hemoglobin Concentration (LOINC 786-4 automated, 28540-3 generic)",
+  "note": "SPECIAL CASE: MCHC uses 'Inheres in' relationship (704319004), NOT Component attribute. Post-coordinated queries (Exp 1-5) will fail. Use Pre-coordinated Descendants (Exp 0) approach only.",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Pre-coordinated Parent Descendants)",
+      "description": "MCHC has no Component attribute - uses 'Inheres in' relationship with Hemoglobin (38082009). Parent concept 521371010000101 has 2 descendants: 786-4 (automated) and 28540-3 (generic). Direct site is Erythrocyte specimen (119351004). Post-coordinated ECL cannot capture this relationship, so we use pre-coordinated hierarchy query.",
+      "ecl": "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|"
+    }
+  ]
+}

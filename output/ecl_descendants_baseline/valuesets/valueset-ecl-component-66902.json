@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-66902",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-66902",
+  "version": "1.0",
+  "name": "ECLComponent66902",
+  "title": "ECL Component-Based: Leukozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 6690-2 (SNOMED 147071010000102)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "20482-6",
+            "display": "Granulocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "30229-9",
+            "display": "Band form neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "33256-9",
+            "display": "Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood by Automated count"
+          },
+          {
+            "code": "51383-8",
+            "display": "Leukocytes other [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "53115-2",
+            "display": "Immature granulocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "704-7",
+            "display": "Basophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "711-2",
+            "display": "Eosinophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "731-0",
+            "display": "Lymphocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "742-7",
+            "display": "Monocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "751-8",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          }
+        ]
+      }
+    ]
+  }
+}

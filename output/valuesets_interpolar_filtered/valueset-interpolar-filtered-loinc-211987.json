@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-211987",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-211987",
+  "version": "1.0",
+  "name": "InterpolarFiltered211987",
+  "title": "Interpolar LOINC (Filtered): Choriongonadotropin [Einheiten/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 21198-7. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 18",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "19080-1",
+            "display": "Choriogonadotropin [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "20415-6",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma by Immunoassay (EIA) 3rd IS"
+          },
+          {
+            "code": "2106-3",
+            "display": "Choriogonadotropin [Presence] in Urine"
+          },
+          {
+            "code": "2107-1",
+            "display": "Choriogonadotropin [Moles/volume] in Urine"
+          },
+          {
+            "code": "2111-3",
+            "display": "Choriogonadotropin.beta subunit [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2114-7",
+            "display": "Choriogonadotropin.beta subunit [Moles/volume] in Urine"
+          },
+          {
+            "code": "2118-8",
+            "display": "Choriogonadotropin [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "2119-6",
+            "display": "Choriogonadotropin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "21198-7",
+            "display": "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "23840-2",
+            "display": "Choriogonadotropin.beta subunit [Multiple of the median] unadjusted in Serum or Plasma"
+          },
+          {
+            "code": "23841-0",
+            "display": "Choriogonadotropin.beta subunit [Multiple of the median] adjusted in Serum or Plasma"
+          },
+          {
+            "code": "25372-4",
+            "display": "Choriogonadotropin [Units/volume] in Urine"
+          },
+          {
+            "code": "32166-1",
+            "display": "Choriogonadotropin [Multiple of the median] adjusted in Serum or Plasma"
+          },
+          {
+            "code": "34670-0",
+            "display": "Choriogonadotropin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "55868-4",
+            "display": "Choriogonadotropin.beta subunit [Multiple of the median] in Serum or Plasma"
+          },
+          {
+            "code": "55869-2",
+            "display": "Choriogonadotropin.beta subunit [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "83086-9",
+            "display": "Choriogonadotropin [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "99104-2",
+            "display": "Choriogonadotropin [Mass/volume] in Urine"
+          }
+        ]
+      }
+    ]
+  }
+}

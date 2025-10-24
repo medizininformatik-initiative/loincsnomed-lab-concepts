@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-21576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-21576",
+  "version": "1.0",
+  "name": "ECLComponentProperty21576",
+  "title": "ECL Component+Property: Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=75828004 AND Property=118524006 for LOINC 2157-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16688-4",
+            "display": "LOINC 16688-4"
+          },
+          {
+            "code": "2151-9",
+            "display": "LOINC 2151-9"
+          },
+          {
+            "code": "2156-8",
+            "display": "LOINC 2156-8"
+          },
+          {
+            "code": "2157-6",
+            "display": "LOINC 2157-6"
+          },
+          {
+            "code": "53433-9",
+            "display": "LOINC 53433-9"
+          }
+        ]
+      }
+    ]
+  }
+}

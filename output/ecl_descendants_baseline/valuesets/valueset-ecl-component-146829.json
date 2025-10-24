@@ -1,0 +1,150 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-146829",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-146829",
+  "version": "1.0",
+  "name": "ECLComponent146829",
+  "title": "ECL Component-Based: Creatinine [Moles/volume] in Venous blood",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 14682-9 (SNOMED 274271010000103)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "103616-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma by LC/MS/MS"
+          },
+          {
+            "code": "14682-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "40112-5",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --pre XXX challenge"
+          },
+          {
+            "code": "40113-3",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --1.5 hours pre XXX challenge"
+          },
+          {
+            "code": "40114-1",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --1 hour pre XXX challenge"
+          },
+          {
+            "code": "40115-8",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --45 minutes pre XXX challenge"
+          },
+          {
+            "code": "40116-6",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --30 minutes pre XXX challenge"
+          },
+          {
+            "code": "40117-4",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --45 minutes post XXX challenge"
+          },
+          {
+            "code": "40118-2",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --3.5 hours post XXX challenge"
+          },
+          {
+            "code": "40119-0",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --4 hours post XXX challenge"
+          },
+          {
+            "code": "40120-8",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --8 hours post XXX challenge"
+          },
+          {
+            "code": "40121-6",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --9 hours post XXX challenge"
+          },
+          {
+            "code": "40122-4",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --10 hours post XXX challenge"
+          },
+          {
+            "code": "40123-2",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --12 hours post XXX challenge"
+          },
+          {
+            "code": "40124-0",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --16 hours post XXX challenge"
+          },
+          {
+            "code": "40125-7",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --18 hours post XXX challenge"
+          },
+          {
+            "code": "40126-5",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --2 days post XXX challenge"
+          },
+          {
+            "code": "40127-3",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --4 days post XXX challenge"
+          },
+          {
+            "code": "40128-1",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --7 days post XXX challenge"
+          },
+          {
+            "code": "40264-4",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --baseline"
+          },
+          {
+            "code": "40265-1",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --30 minutes post XXX challenge"
+          },
+          {
+            "code": "40266-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --1 hour post XXX challenge"
+          },
+          {
+            "code": "40267-7",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --1.5 hours post XXX challenge"
+          },
+          {
+            "code": "40268-5",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --2 hours post XXX challenge"
+          },
+          {
+            "code": "40269-3",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --2.5 hours post XXX challenge"
+          },
+          {
+            "code": "40270-1",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --3 hours post XXX challenge"
+          },
+          {
+            "code": "40271-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --5 hours post XXX challenge"
+          },
+          {
+            "code": "40272-7",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --6 hours post XXX challenge"
+          },
+          {
+            "code": "40273-5",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --1 day post XXX challenge"
+          },
+          {
+            "code": "51619-5",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --pre dialysis"
+          },
+          {
+            "code": "51620-3",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "62425-4",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma --post XXX challenge"
+          }
+        ]
+      }
+    ]
+  }
+}

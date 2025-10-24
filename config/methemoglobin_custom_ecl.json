@@ -1,0 +1,17 @@
+{
+  "description": "Custom ECL queries for Methemoglobin (LOINC 2614-6)",
+  "queries": [
+    {
+      "id": "refined_query_v2_quant",
+      "name": "Refined Query V2 Quantitative (Measurement Properties)",
+      "description": "Uses Component = Methemoglobin (with descendants to capture variants like cyanmethemoglobin) AND Property = Measurement property (universal parent) for quantitative measurements. Excludes ratio-based measurements like Methemoglobin/Hemoglobin ratios.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|"
+    },
+    {
+      "id": "refined_query_v2_ratio",
+      "name": "Refined Query V2 Ratio (Ratio Properties)",
+      "description": "Uses Component = Methemoglobin (with descendants) AND Property = Ratio for ratio-based measurements. This captures Methemoglobin/Hemoglobin.total ratios and similar relative measurements.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-143347",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-143347",
+  "version": "1.0",
+  "name": "ECLComponent143347",
+  "title": "ECL Fixed Component: Lithium [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=720377006 for LOINC 14334-7",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "101751-6",
+            "display": "Lithium [Moles/volume] in Blood by Inductively Coupled Plasma/Optical Emission Spectrometry (ICP/OES)"
+          },
+          {
+            "code": "108824-4",
+            "display": "Lithium [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "110374-6",
+            "display": "Lithium [Measurement] in Urine"
+          },
+          {
+            "code": "14334-7",
+            "display": "Lithium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "17086-0",
+            "display": "Lithium [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "18238-6",
+            "display": "Lithium [Mass/mass] in Tissue"
+          },
+          {
+            "code": "25461-5",
+            "display": "Lithium, [Moles/volume] in Blood"
+          },
+          {
+            "code": "25462-3",
+            "display": "Lithium [Moles/volume] in Red Blood Cells"
+          },
+          {
+            "code": "25463-1",
+            "display": "Lithium [Moles/volume] in Urine"
+          },
+          {
+            "code": "34330-1",
+            "display": "Lithium [Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "34331-9",
+            "display": "Lithium/Creatinine [Molar ratio] in Urine"
+          },
+          {
+            "code": "3718-4",
+            "display": "Lithium [Mass/mass] in Hair"
+          },
+          {
+            "code": "3719-2",
+            "display": "Lithium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3720-0",
+            "display": "Lithium [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "3721-8",
+            "display": "Lithium [Mass/volume] in Urine"
+          },
+          {
+            "code": "3723-4",
+            "display": "Lithium [Mass/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "4300-0",
+            "display": "Lithium [Mass] of Dose"
+          },
+          {
+            "code": "43176-7",
+            "display": "Lithium [Moles/volume] in Saliva (oral fluid)"
+          },
+          {
+            "code": "50872-1",
+            "display": "Lithium [Moles/mass] in Hair"
+          },
+          {
+            "code": "56032-6",
+            "display": "Lithium [Moles/volume] in Gastric fluid"
+          },
+          {
+            "code": "74806-1",
+            "display": "Lithium [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "9358-3",
+            "display": "Lithium [Mass/volume] in Saliva (oral fluid)"
+          },
+          {
+            "code": "9815-2",
+            "display": "Lithium [Mass/volume] in Red Blood Cells"
+          }
+        ]
+      }
+    ]
+  }
+}

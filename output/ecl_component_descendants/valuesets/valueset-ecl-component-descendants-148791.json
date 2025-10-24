@@ -1,0 +1,246 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-148791",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-148791",
+  "version": "1.0",
+  "name": "ECLComponentDescendants148791",
+  "title": "ECL Component Descendants: Phosphat [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<304053000 for LOINC 14879-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108011-8",
+            "display": "LOINC 108011-8"
+          },
+          {
+            "code": "108801-2",
+            "display": "LOINC 108801-2"
+          },
+          {
+            "code": "10884-5",
+            "display": "LOINC 10884-5"
+          },
+          {
+            "code": "109721-1",
+            "display": "LOINC 109721-1"
+          },
+          {
+            "code": "110637-6",
+            "display": "LOINC 110637-6"
+          },
+          {
+            "code": "11141-9",
+            "display": "LOINC 11141-9"
+          },
+          {
+            "code": "12242-4",
+            "display": "LOINC 12242-4"
+          },
+          {
+            "code": "13539-2",
+            "display": "LOINC 13539-2"
+          },
+          {
+            "code": "13542-6",
+            "display": "LOINC 13542-6"
+          },
+          {
+            "code": "13795-0",
+            "display": "LOINC 13795-0"
+          },
+          {
+            "code": "14404-8",
+            "display": "LOINC 14404-8"
+          },
+          {
+            "code": "14405-5",
+            "display": "LOINC 14405-5"
+          },
+          {
+            "code": "14406-3",
+            "display": "LOINC 14406-3"
+          },
+          {
+            "code": "14407-1",
+            "display": "LOINC 14407-1"
+          },
+          {
+            "code": "14408-9",
+            "display": "LOINC 14408-9"
+          },
+          {
+            "code": "14878-3",
+            "display": "LOINC 14878-3"
+          },
+          {
+            "code": "14879-1",
+            "display": "LOINC 14879-1"
+          },
+          {
+            "code": "17447-4",
+            "display": "LOINC 17447-4"
+          },
+          {
+            "code": "21458-5",
+            "display": "LOINC 21458-5"
+          },
+          {
+            "code": "22733-0",
+            "display": "LOINC 22733-0"
+          },
+          {
+            "code": "24519-1",
+            "display": "LOINC 24519-1"
+          },
+          {
+            "code": "24520-9",
+            "display": "LOINC 24520-9"
+          },
+          {
+            "code": "25127-2",
+            "display": "LOINC 25127-2"
+          },
+          {
+            "code": "25501-8",
+            "display": "LOINC 25501-8"
+          },
+          {
+            "code": "25973-9",
+            "display": "LOINC 25973-9"
+          },
+          {
+            "code": "27123-9",
+            "display": "LOINC 27123-9"
+          },
+          {
+            "code": "2774-8",
+            "display": "LOINC 2774-8"
+          },
+          {
+            "code": "2775-5",
+            "display": "LOINC 2775-5"
+          },
+          {
+            "code": "2777-1",
+            "display": "LOINC 2777-1"
+          },
+          {
+            "code": "2778-9",
+            "display": "LOINC 2778-9"
+          },
+          {
+            "code": "2780-5",
+            "display": "LOINC 2780-5"
+          },
+          {
+            "code": "30544-1",
+            "display": "LOINC 30544-1"
+          },
+          {
+            "code": "34354-1",
+            "display": "LOINC 34354-1"
+          },
+          {
+            "code": "34938-1",
+            "display": "LOINC 34938-1"
+          },
+          {
+            "code": "35220-3",
+            "display": "LOINC 35220-3"
+          },
+          {
+            "code": "35221-1",
+            "display": "LOINC 35221-1"
+          },
+          {
+            "code": "35222-9",
+            "display": "LOINC 35222-9"
+          },
+          {
+            "code": "35673-3",
+            "display": "LOINC 35673-3"
+          },
+          {
+            "code": "38717-5",
+            "display": "LOINC 38717-5"
+          },
+          {
+            "code": "48617-5",
+            "display": "LOINC 48617-5"
+          },
+          {
+            "code": "48641-5",
+            "display": "LOINC 48641-5"
+          },
+          {
+            "code": "49006-0",
+            "display": "LOINC 49006-0"
+          },
+          {
+            "code": "50898-6",
+            "display": "LOINC 50898-6"
+          },
+          {
+            "code": "55972-4",
+            "display": "LOINC 55972-4"
+          },
+          {
+            "code": "55973-2",
+            "display": "LOINC 55973-2"
+          },
+          {
+            "code": "56964-0",
+            "display": "LOINC 56964-0"
+          },
+          {
+            "code": "56965-7",
+            "display": "LOINC 56965-7"
+          },
+          {
+            "code": "57348-5",
+            "display": "LOINC 57348-5"
+          },
+          {
+            "code": "57349-3",
+            "display": "LOINC 57349-3"
+          },
+          {
+            "code": "58019-1",
+            "display": "LOINC 58019-1"
+          },
+          {
+            "code": "59037-2",
+            "display": "LOINC 59037-2"
+          },
+          {
+            "code": "59161-0",
+            "display": "LOINC 59161-0"
+          },
+          {
+            "code": "74889-7",
+            "display": "LOINC 74889-7"
+          },
+          {
+            "code": "76656-8",
+            "display": "LOINC 76656-8"
+          },
+          {
+            "code": "80611-7",
+            "display": "LOINC 80611-7"
+          },
+          {
+            "code": "88713-3",
+            "display": "LOINC 88713-3"
+          }
+        ]
+      }
+    ]
+  }
+}

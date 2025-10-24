@@ -1,0 +1,286 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-7310",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-7310",
+  "version": "1.0",
+  "name": "ECLComponent7310",
+  "title": "ECL Fixed Component: Lymphozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=56972008 for LOINC 731-0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100854-9",
+            "display": "Lymphocytes/cells in Blood mononuclear cells by Immunoassay"
+          },
+          {
+            "code": "10328-3",
+            "display": "Lymphocytes/Leukocytes in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "105870-0",
+            "display": "Lymphocytes [#/volume] in Specimen"
+          },
+          {
+            "code": "106918-6",
+            "display": "Lymphocytes/Cells in Bronchoalveolar lavage"
+          },
+          {
+            "code": "107036-6",
+            "display": "Lymphocytes [#/volume] in Specimen by Flow cytometry (FC)"
+          },
+          {
+            "code": "107042-4",
+            "display": "Lymphocytes [#/volume] in Bone marrow by Flow cytometry (FC)"
+          },
+          {
+            "code": "107155-4",
+            "display": "Lymphocytes [#/volume] in Hematopoietic progenitor cells from Blood product unit"
+          },
+          {
+            "code": "11031-2",
+            "display": "Lymphocytes/Leukocytes in Body fluid"
+          },
+          {
+            "code": "11108-8",
+            "display": "Lymphocytes/cells in Bone marrow by Manual count"
+          },
+          {
+            "code": "13941-0",
+            "display": "Lymphocytes/Leukocytes in Body fluid by Manual count"
+          },
+          {
+            "code": "14106-9",
+            "display": "Lymphocytes [#/volume] in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "14818-9",
+            "display": "Lymphocytes/Leukocytes in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "14819-7",
+            "display": "Lymphocytes/Leukocytes in Bronchial specimen by Manual count"
+          },
+          {
+            "code": "14820-5",
+            "display": "Lymphocytes/Leukocytes in Pleural fluid by Manual count"
+          },
+          {
+            "code": "14821-3",
+            "display": "Lymphocytes/Leukocytes in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "14822-1",
+            "display": "Lymphocytes/Leukocytes in Synovial fluid by Manual count"
+          },
+          {
+            "code": "17227-0",
+            "display": "Lymphocytes/Leukocytes in Synovial fluid by Automated count"
+          },
+          {
+            "code": "20585-6",
+            "display": "Lymphocytes [#/volume] in Specimen by Automated count"
+          },
+          {
+            "code": "20619-3",
+            "display": "Lymphocytes/Leukocytes in Specimen by Automated count"
+          },
+          {
+            "code": "26474-7",
+            "display": "Lymphocytes [#/volume] in Blood"
+          },
+          {
+            "code": "26475-4",
+            "display": "Lymphocytes [#/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "26476-2",
+            "display": "Lymphocytes [#/volume] in Body fluid"
+          },
+          {
+            "code": "26478-8",
+            "display": "Lymphocytes/Leukocytes in Blood"
+          },
+          {
+            "code": "26479-6",
+            "display": "Lymphocytes/Leukocytes in Cerebral spinal fluid"
+          },
+          {
+            "code": "26480-4",
+            "display": "Lymphocytes/Leukocytes in Pericardial fluid"
+          },
+          {
+            "code": "26481-2",
+            "display": "Lymphocytes/Leukocytes in Pleural fluid"
+          },
+          {
+            "code": "26482-0",
+            "display": "Lymphocytes/Leukocytes in Peritoneal fluid"
+          },
+          {
+            "code": "26483-8",
+            "display": "Lymphocytes/Leukocytes in Synovial fluid"
+          },
+          {
+            "code": "27936-4",
+            "display": "Lymphocytes/Leukocytes in Sputum"
+          },
+          {
+            "code": "30364-4",
+            "display": "Lymphocytes [#/volume] in Blood by Flow cytometry (FC)"
+          },
+          {
+            "code": "30365-1",
+            "display": "Lymphocytes/Leukocytes in Blood by Flow cytometry (FC)"
+          },
+          {
+            "code": "30421-2",
+            "display": "Lymphocytes/Leukocytes in Bronchial specimen"
+          },
+          {
+            "code": "32697-5",
+            "display": "Lymphocytes [#/volume] in Synovial fluid by Manual count"
+          },
+          {
+            "code": "35049-6",
+            "display": "Lymphocytes [#/volume] in Synovial fluid"
+          },
+          {
+            "code": "35097-5",
+            "display": "Lymphocytes [#/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "35098-3",
+            "display": "Lymphocytes [#/volume] in Pleural fluid"
+          },
+          {
+            "code": "38903-1",
+            "display": "Lymphocytes [Presence] in Stool by Light microscopy"
+          },
+          {
+            "code": "40470-7",
+            "display": "Lymphocytes [#/area] in Semen by Microscopy high power field"
+          },
+          {
+            "code": "40538-1",
+            "display": "Lymphocytes/Leukocytes in Peritoneal dialysis fluid by Manual count"
+          },
+          {
+            "code": "51627-8",
+            "display": "Lymphocytes [#/volume] in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "55787-6",
+            "display": "Lymphocytes [#] in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "56769-3",
+            "display": "Lymphocytes/Leukocytes in Bronchial specimen by Flow cytometry (FC)"
+          },
+          {
+            "code": "56774-3",
+            "display": "Lymphocytes/Leukocytes in Tissue"
+          },
+          {
+            "code": "59463-0",
+            "display": "Lymphocytes/Leukocytes in Dialysis fluid"
+          },
+          {
+            "code": "61123-6",
+            "display": "Lymphocytes/Leukocytes in Specimen by Flow cytometry (FC)"
+          },
+          {
+            "code": "66140-5",
+            "display": "Lymphocytes [#/volume] in Blood from Fetus by Manual count"
+          },
+          {
+            "code": "66761-8",
+            "display": "Lymphocytes/Leukocytes in Dialysis fluid by Manual count"
+          },
+          {
+            "code": "6744-7",
+            "display": "Lymphocytes [#/volume] in Body fluid by Manual count"
+          },
+          {
+            "code": "67827-6",
+            "display": "Lymphocytes [#/volume] in Pericardial fluid"
+          },
+          {
+            "code": "67833-4",
+            "display": "Lymphocytes [#/volume] in Pleural fluid from Fetus"
+          },
+          {
+            "code": "68404-3",
+            "display": "Lymphocytes [#/volume] in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "68405-0",
+            "display": "Lymphocytes [#/volume] in Pleural fluid by Manual count"
+          },
+          {
+            "code": "68407-6",
+            "display": "Lymphocytes [#/volume] in Vitreous fluid by Manual count"
+          },
+          {
+            "code": "72219-9",
+            "display": "Lymphocytes [#/area] in Urine sediment by Microscopy high power field"
+          },
+          {
+            "code": "72364-3",
+            "display": "Lymphocytes/Leukocytes in Vitreous fluid by Manual count"
+          },
+          {
+            "code": "731-0",
+            "display": "Lymphocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "732-8",
+            "display": "Lymphocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "736-9",
+            "display": "Lymphocytes/Leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "737-7",
+            "display": "Lymphocytes/Leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "74401-1",
+            "display": "Lymphocytes [#/volume] in Cord blood"
+          },
+          {
+            "code": "74402-9",
+            "display": "Lymphocytes/Leukocytes in Cord blood"
+          },
+          {
+            "code": "74461-5",
+            "display": "Lymphocytes/Leukocytes in Blood from Fetus"
+          },
+          {
+            "code": "74848-3",
+            "display": "Lymphocytes/cells in Lymph node by Manual count"
+          },
+          {
+            "code": "76409-2",
+            "display": "Lymphocytes [#] in Body fluid by Manual count"
+          },
+          {
+            "code": "95220-0",
+            "display": "Lymphocytes/Leukocytes in Stem cell product by Manual count"
+          },
+          {
+            "code": "95842-1",
+            "display": "Lymphocytes/Leukocytes in Sputum by Manual count"
+          }
+        ]
+      }
+    ]
+  }
+}

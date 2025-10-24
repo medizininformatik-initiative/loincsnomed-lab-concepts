@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-327106",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-327106",
+  "version": "1.0",
+  "name": "ECLComponent327106",
+  "title": "ECL Fixed Component: Nitrit [Nachweis] in Urin",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=31528005 for LOINC 32710-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13616-8",
+            "display": "Nitrite [Mass/volume] in Water"
+          },
+          {
+            "code": "18370-7",
+            "display": "Nitrite [Mass/volume] in Blood"
+          },
+          {
+            "code": "20407-3",
+            "display": "Nitrite [Mass/volume] in Urine by Test strip"
+          },
+          {
+            "code": "2657-5",
+            "display": "Nitrite [Mass/volume] in Urine"
+          },
+          {
+            "code": "32710-6",
+            "display": "Nitrite [Presence] in Urine"
+          },
+          {
+            "code": "50558-6",
+            "display": "Nitrite [Presence] in Urine by Automated test strip"
+          },
+          {
+            "code": "55947-6",
+            "display": "Nitrite [Mass/volume] in Dialysis fluid"
+          },
+          {
+            "code": "55948-4",
+            "display": "Nitrite [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "5802-4",
+            "display": "Nitrite [Presence] in Urine by Test strip"
+          }
+        ]
+      }
+    ]
+  }
+}

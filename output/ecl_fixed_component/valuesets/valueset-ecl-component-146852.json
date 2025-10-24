@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-146852",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-146852",
+  "version": "1.0",
+  "name": "ECLComponent146852",
+  "title": "ECL Fixed Component: Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=304111003 for LOINC 14685-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14685-2",
+            "display": "Cobalamin (Vitamin B12) [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "16695-9",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Blood"
+          },
+          {
+            "code": "16696-7",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Urine --post XXX challenge"
+          },
+          {
+            "code": "2132-9",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "26916-7",
+            "display": "Cobalamin (Vitamin B12) [Presence] in Blood"
+          },
+          {
+            "code": "30904-7",
+            "display": "Cobalamin (Vitamin B12) [Units/volume] in 24 hour Urine --post dose cyanocobalamin"
+          },
+          {
+            "code": "30905-4",
+            "display": "Cobalamin (Vitamin B12) [Ratio] in 24 hour Urine --post dose cyanocobalamin+intrinsic factor/post dose cyanocobalamin"
+          },
+          {
+            "code": "30906-2",
+            "display": "Cobalamin (Vitamin B12) [Units/volume] in 24 hour Urine --post dose cyanocobalamin+intrinsic factor"
+          },
+          {
+            "code": "35201-3",
+            "display": "Cobalamin (Vitamin B12) [Mass or Moles/volume] in Serum"
+          },
+          {
+            "code": "54376-9",
+            "display": "Cobalamin (Vitamin B12) [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "54377-7",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "54378-5",
+            "display": "Cobalamin (Vitamin B12) [Moles/volume] in Urine"
+          },
+          {
+            "code": "55850-2",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Urine"
+          }
+        ]
+      }
+    ]
+  }
+}

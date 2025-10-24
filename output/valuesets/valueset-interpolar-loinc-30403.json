@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-30403",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-30403",
+  "version": "3.6",
+  "name": "InterpolarLOINC30403",
+  "title": "Interpolar LOINC Group: Triacylglycerid-Lipase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 3040-3 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "3040-3",
+            "display": "Lipase [Enzymatic activity/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

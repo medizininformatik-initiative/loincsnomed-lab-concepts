@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-21576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-21576",
+  "version": "1.0",
+  "name": "InterpolarFiltered21576",
+  "title": "Interpolar LOINC (Filtered): Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 2157-6. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2157-6",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "50756-6",
+            "display": "Creatine kinase [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

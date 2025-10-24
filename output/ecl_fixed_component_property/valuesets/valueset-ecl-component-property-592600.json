@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-592600",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-592600",
+  "version": "1.0",
+  "name": "ECLComponentProperty592600",
+  "title": "ECL Component+Property: Hämoglobin [Masse/Volumen] in arteriellem Blut mit Oximetrie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=38082009 AND Property=118556004 for LOINC 59260-0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "103750-6",
+            "display": "LOINC 103750-6"
+          },
+          {
+            "code": "105300-8",
+            "display": "LOINC 105300-8"
+          },
+          {
+            "code": "59260-0",
+            "display": "LOINC 59260-0"
+          },
+          {
+            "code": "75928-2",
+            "display": "LOINC 75928-2"
+          },
+          {
+            "code": "93846-4",
+            "display": "LOINC 93846-4"
+          }
+        ]
+      }
+    ]
+  }
+}

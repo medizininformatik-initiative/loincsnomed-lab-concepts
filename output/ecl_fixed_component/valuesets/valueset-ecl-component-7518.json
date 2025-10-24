@@ -1,0 +1,282 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-7518",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-7518",
+  "version": "1.0",
+  "name": "ECLComponent7518",
+  "title": "ECL Fixed Component: Neutrophile [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=127913001 for LOINC 751-8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100850-7",
+            "display": "Neutrophils [#/volume] in Amniotic fluid by Manual count"
+          },
+          {
+            "code": "106919-4",
+            "display": "Neutrophils/Cells in Bronchoalveolar lavage"
+          },
+          {
+            "code": "11115-3",
+            "display": "Neutrophils/cells in Bone marrow by Manual count"
+          },
+          {
+            "code": "12238-2",
+            "display": "Neutrophils/Leukocytes in Body fluid by Manual count"
+          },
+          {
+            "code": "13516-0",
+            "display": "Neutrophils/Leukocytes in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "13597-0",
+            "display": "Neutrophils/Leukocytes in Nose"
+          },
+          {
+            "code": "13836-2",
+            "display": "Neutrophils/Leukocytes in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "14039-2",
+            "display": "Neutrophils/Leukocytes in Cerebral spinal fluid by Microscopy"
+          },
+          {
+            "code": "14847-8",
+            "display": "Neutrophils/Leukocytes in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "14848-6",
+            "display": "Neutrophils/Leukocytes in Pleural fluid by Manual count"
+          },
+          {
+            "code": "16290-9",
+            "display": "Neutrophils [Presence] in Stool"
+          },
+          {
+            "code": "17359-1",
+            "display": "Neutrophils [#/volume] in Semen by Manual count"
+          },
+          {
+            "code": "17836-8",
+            "display": "Neutrophils/Leukocytes in Synovial fluid"
+          },
+          {
+            "code": "23761-0",
+            "display": "Neutrophils/Leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "26499-4",
+            "display": "Neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "26500-9",
+            "display": "Neutrophils [#/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "26501-7",
+            "display": "Neutrophils [#/volume] in Pleural fluid"
+          },
+          {
+            "code": "26502-5",
+            "display": "Neutrophils [#/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "26503-3",
+            "display": "Neutrophils [#/volume] in Semen"
+          },
+          {
+            "code": "26504-1",
+            "display": "Neutrophils [#/volume] in Synovial fluid"
+          },
+          {
+            "code": "26511-6",
+            "display": "Neutrophils/Leukocytes in Blood"
+          },
+          {
+            "code": "26512-4",
+            "display": "Neutrophils/Leukocytes in Cerebral spinal fluid"
+          },
+          {
+            "code": "26513-2",
+            "display": "Neutrophils/Leukocytes in Body fluid"
+          },
+          {
+            "code": "26514-0",
+            "display": "Neutrophils/Leukocytes in Peritoneal fluid"
+          },
+          {
+            "code": "27930-7",
+            "display": "Neutrophils/Leukocytes in Bronchial specimen"
+          },
+          {
+            "code": "27932-3",
+            "display": "Neutrophils/Leukocytes in Sputum"
+          },
+          {
+            "code": "30448-5",
+            "display": "Neutrophils [#/volume] in Urine"
+          },
+          {
+            "code": "30454-3",
+            "display": "Neutrophils/Leukocytes in Pericardial fluid"
+          },
+          {
+            "code": "30455-0",
+            "display": "Neutrophils/Leukocytes in Pleural fluid"
+          },
+          {
+            "code": "32709-8",
+            "display": "Neutrophils [#/volume] in Body fluid"
+          },
+          {
+            "code": "32804-7",
+            "display": "Neutrophils/Leukocytes in Bronchial specimen by Manual count"
+          },
+          {
+            "code": "38996-5",
+            "display": "Neutrophils [Presence] in Urine by Light microscopy"
+          },
+          {
+            "code": "40491-3",
+            "display": "Neutrophils/Leukocytes in Synovial fluid by Manual count"
+          },
+          {
+            "code": "40536-5",
+            "display": "Neutrophils/Leukocytes in Peritoneal dialysis fluid by Manual count"
+          },
+          {
+            "code": "40566-2",
+            "display": "Neutrophils [#/volume] in Body fluid by Manual count"
+          },
+          {
+            "code": "48048-3",
+            "display": "Neutrophils [Presence] in Nose by Wright stain"
+          },
+          {
+            "code": "48050-9",
+            "display": "Neutrophils [Presence] in Stool by Wright stain"
+          },
+          {
+            "code": "53520-3",
+            "display": "Neutrophils/Leukocytes in Dialysis fluid"
+          },
+          {
+            "code": "55791-8",
+            "display": "Neutrophils [#] in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "56770-1",
+            "display": "Neutrophils/Leukocytes in Bronchial specimen by Flow cytometry (FC)"
+          },
+          {
+            "code": "5906-3",
+            "display": "Neutrophils [#/volume] in Synovial fluid by Automated count"
+          },
+          {
+            "code": "66139-7",
+            "display": "Neutrophils [#/volume] in Blood from Fetus by Manual count"
+          },
+          {
+            "code": "67826-8",
+            "display": "Neutrophils [#/volume] in Pericardial fluid"
+          },
+          {
+            "code": "67832-6",
+            "display": "Neutrophils [#/volume] in Pleural fluid from Fetus"
+          },
+          {
+            "code": "68425-8",
+            "display": "Neutrophils [#/volume] in Pericardial fluid by Manual count"
+          },
+          {
+            "code": "68426-6",
+            "display": "Neutrophils/Leukocytes in Vitreous fluid by Manual count"
+          },
+          {
+            "code": "68427-4",
+            "display": "Neutrophils [#/volume] in Vitreous fluid by Manual count"
+          },
+          {
+            "code": "72347-8",
+            "display": "Neutrophils [#/volume] in Prostatic fluid by Manual count"
+          },
+          {
+            "code": "74398-9",
+            "display": "Neutrophils [#/volume] in Cord blood"
+          },
+          {
+            "code": "74457-3",
+            "display": "Neutrophils/Leukocytes in Cord blood"
+          },
+          {
+            "code": "751-8",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "753-4",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "754-2",
+            "display": "Neutrophils [#/volume] in Cerebral spinal fluid by Automated count"
+          },
+          {
+            "code": "755-9",
+            "display": "Neutrophils [#/volume] in Cerebral spinal fluid by Manual count"
+          },
+          {
+            "code": "756-7",
+            "display": "Neutrophils [#/volume] in Pleural fluid by Automated count"
+          },
+          {
+            "code": "757-5",
+            "display": "Neutrophils [#/volume] in Pleural fluid by Manual count"
+          },
+          {
+            "code": "758-3",
+            "display": "Neutrophils [#/volume] in Peritoneal fluid by Automated count"
+          },
+          {
+            "code": "759-1",
+            "display": "Neutrophils [#/volume] in Peritoneal fluid by Manual count"
+          },
+          {
+            "code": "760-9",
+            "display": "Neutrophils [#/volume] in Synovial fluid by Manual count"
+          },
+          {
+            "code": "761-7",
+            "display": "Neutrophils [#/volume] in Urine by Automated count"
+          },
+          {
+            "code": "762-5",
+            "display": "Neutrophils [#/volume] in Urine by Manual count"
+          },
+          {
+            "code": "76411-8",
+            "display": "Neutrophils [#] in Body fluid by Manual count"
+          },
+          {
+            "code": "770-8",
+            "display": "Neutrophils/Leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "85369-7",
+            "display": "Neutrophils [#/volume] in Control Blood by Flow cytometry (FC)"
+          },
+          {
+            "code": "95843-9",
+            "display": "Neutrophils/Leukocytes in Sputum by Manual count"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-21576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-21576",
+  "version": "1.0",
+  "name": "ECLComponentDescendants21576",
+  "title": "ECL Component Descendants: Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<75828004 for LOINC 2157-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "101446-3",
+            "display": "LOINC 101446-3"
+          },
+          {
+            "code": "107446-7",
+            "display": "LOINC 107446-7"
+          },
+          {
+            "code": "111058-4",
+            "display": "LOINC 111058-4"
+          },
+          {
+            "code": "12187-1",
+            "display": "LOINC 12187-1"
+          },
+          {
+            "code": "12189-7",
+            "display": "LOINC 12189-7"
+          },
+          {
+            "code": "13969-1",
+            "display": "LOINC 13969-1"
+          },
+          {
+            "code": "15048-2",
+            "display": "LOINC 15048-2"
+          },
+          {
+            "code": "15049-0",
+            "display": "LOINC 15049-0"
+          },
+          {
+            "code": "16688-4",
+            "display": "LOINC 16688-4"
+          },
+          {
+            "code": "20569-0",
+            "display": "LOINC 20569-0"
+          },
+          {
+            "code": "2151-9",
+            "display": "LOINC 2151-9"
+          },
+          {
+            "code": "2152-7",
+            "display": "LOINC 2152-7"
+          },
+          {
+            "code": "2153-5",
+            "display": "LOINC 2153-5"
+          },
+          {
+            "code": "2154-3",
+            "display": "LOINC 2154-3"
+          },
+          {
+            "code": "2155-0",
+            "display": "LOINC 2155-0"
+          },
+          {
+            "code": "2156-8",
+            "display": "LOINC 2156-8"
+          },
+          {
+            "code": "2157-6",
+            "display": "LOINC 2157-6"
+          },
+          {
+            "code": "32673-6",
+            "display": "LOINC 32673-6"
+          },
+          {
+            "code": "34160-2",
+            "display": "LOINC 34160-2"
+          },
+          {
+            "code": "38482-6",
+            "display": "LOINC 38482-6"
+          },
+          {
+            "code": "49136-5",
+            "display": "LOINC 49136-5"
+          },
+          {
+            "code": "49551-5",
+            "display": "LOINC 49551-5"
+          },
+          {
+            "code": "50756-6",
+            "display": "LOINC 50756-6"
+          },
+          {
+            "code": "51505-6",
+            "display": "LOINC 51505-6"
+          },
+          {
+            "code": "51506-4",
+            "display": "LOINC 51506-4"
+          },
+          {
+            "code": "51507-2",
+            "display": "LOINC 51507-2"
+          },
+          {
+            "code": "53433-9",
+            "display": "LOINC 53433-9"
+          },
+          {
+            "code": "59149-5",
+            "display": "LOINC 59149-5"
+          },
+          {
+            "code": "83092-7",
+            "display": "LOINC 83092-7"
+          },
+          {
+            "code": "9642-0",
+            "display": "LOINC 9642-0"
+          },
+          {
+            "code": "9643-8",
+            "display": "LOINC 9643-8"
+          }
+        ]
+      }
+    ]
+  }
+}

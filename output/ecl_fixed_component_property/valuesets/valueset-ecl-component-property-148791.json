@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-property-148791",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-property-148791",
+  "version": "1.0",
+  "name": "ECLComponentProperty148791",
+  "title": "ECL Component+Property: Phosphat [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=304053000 AND Property=118556004 for LOINC 14879-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13539-2",
+            "display": "LOINC 13539-2"
+          },
+          {
+            "code": "14879-1",
+            "display": "LOINC 14879-1"
+          },
+          {
+            "code": "22733-0",
+            "display": "LOINC 22733-0"
+          },
+          {
+            "code": "24519-1",
+            "display": "LOINC 24519-1"
+          },
+          {
+            "code": "24520-9",
+            "display": "LOINC 24520-9"
+          },
+          {
+            "code": "25501-8",
+            "display": "LOINC 25501-8"
+          },
+          {
+            "code": "25973-9",
+            "display": "LOINC 25973-9"
+          },
+          {
+            "code": "34938-1",
+            "display": "LOINC 34938-1"
+          },
+          {
+            "code": "49006-0",
+            "display": "LOINC 49006-0"
+          },
+          {
+            "code": "55972-4",
+            "display": "LOINC 55972-4"
+          },
+          {
+            "code": "55973-2",
+            "display": "LOINC 55973-2"
+          },
+          {
+            "code": "59161-0",
+            "display": "LOINC 59161-0"
+          },
+          {
+            "code": "74889-7",
+            "display": "LOINC 74889-7"
+          },
+          {
+            "code": "80611-7",
+            "display": "LOINC 80611-7"
+          }
+        ]
+      }
+    ]
+  }
+}

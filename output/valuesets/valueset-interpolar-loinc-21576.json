@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-21576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-21576",
+  "version": "3.6",
+  "name": "InterpolarLOINC21576",
+  "title": "Interpolar LOINC Group: Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 2157-6 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2157-6",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "50756-6",
+            "display": "Creatine kinase [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-560409",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-560409",
+  "version": "3.6",
+  "name": "InterpolarLOINC560409",
+  "title": "Interpolar LOINC Group: Methämoglobin [Masse/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 56040-9 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "15082-1",
+            "display": "Methemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "56040-9",
+            "display": "Methemoglobin [Moles/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

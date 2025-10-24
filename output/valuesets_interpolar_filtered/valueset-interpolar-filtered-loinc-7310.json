@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-7310",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-7310",
+  "version": "1.0",
+  "name": "InterpolarFiltered7310",
+  "title": "Interpolar LOINC (Filtered): Lymphozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 731-0. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 4",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26474-7",
+            "display": "Lymphocytes [#/volume] in Blood"
+          },
+          {
+            "code": "30364-4",
+            "display": "Lymphocytes [#/volume] in Blood by Flow cytometry (FC)"
+          },
+          {
+            "code": "731-0",
+            "display": "Lymphocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "732-8",
+            "display": "Lymphocytes [#/volume] in Blood by Manual count"
+          }
+        ]
+      }
+    ]
+  }
+}

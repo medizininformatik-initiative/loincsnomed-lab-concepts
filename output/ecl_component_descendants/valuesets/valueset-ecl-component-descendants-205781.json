@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-205781",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-205781",
+  "version": "1.0",
+  "name": "ECLComponentDescendants205781",
+  "title": "ECL Component Descendants: Vancomycin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<372735009 for LOINC 20578-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13586-3",
+            "display": "LOINC 13586-3"
+          },
+          {
+            "code": "13587-1",
+            "display": "LOINC 13587-1"
+          },
+          {
+            "code": "20578-1",
+            "display": "LOINC 20578-1"
+          },
+          {
+            "code": "31012-8",
+            "display": "LOINC 31012-8"
+          },
+          {
+            "code": "39092-2",
+            "display": "LOINC 39092-2"
+          },
+          {
+            "code": "39796-8",
+            "display": "LOINC 39796-8"
+          },
+          {
+            "code": "39797-6",
+            "display": "LOINC 39797-6"
+          },
+          {
+            "code": "4090-7",
+            "display": "LOINC 4090-7"
+          },
+          {
+            "code": "4091-5",
+            "display": "LOINC 4091-5"
+          },
+          {
+            "code": "4092-3",
+            "display": "LOINC 4092-3"
+          },
+          {
+            "code": "4459-4",
+            "display": "LOINC 4459-4"
+          },
+          {
+            "code": "50938-0",
+            "display": "LOINC 50938-0"
+          },
+          {
+            "code": "526-4",
+            "display": "LOINC 526-4"
+          },
+          {
+            "code": "59381-4",
+            "display": "LOINC 59381-4"
+          },
+          {
+            "code": "97657-1",
+            "display": "LOINC 97657-1"
+          }
+        ]
+      }
+    ]
+  }
+}

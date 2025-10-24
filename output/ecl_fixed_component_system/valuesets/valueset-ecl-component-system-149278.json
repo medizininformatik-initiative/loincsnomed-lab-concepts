@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-149278",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-149278",
+  "version": "1.0",
+  "name": "ECLComponentSystem149278",
+  "title": "ECL Component+System: Triglycerid [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=85600001 AND System=122592007 for LOINC 14927-8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "111065-9",
+            "display": "LOINC 111065-9"
+          },
+          {
+            "code": "12951-0",
+            "display": "LOINC 12951-0"
+          },
+          {
+            "code": "14927-8",
+            "display": "LOINC 14927-8"
+          },
+          {
+            "code": "1644-4",
+            "display": "LOINC 1644-4"
+          },
+          {
+            "code": "2571-8",
+            "display": "LOINC 2571-8"
+          },
+          {
+            "code": "28554-4",
+            "display": "LOINC 28554-4"
+          },
+          {
+            "code": "3048-6",
+            "display": "LOINC 3048-6"
+          },
+          {
+            "code": "30524-3",
+            "display": "LOINC 30524-3"
+          },
+          {
+            "code": "35217-9",
+            "display": "LOINC 35217-9"
+          },
+          {
+            "code": "44733-4",
+            "display": "LOINC 44733-4"
+          },
+          {
+            "code": "47210-0",
+            "display": "LOINC 47210-0"
+          },
+          {
+            "code": "55607-6",
+            "display": "LOINC 55607-6"
+          }
+        ]
+      }
+    ]
+  }
+}

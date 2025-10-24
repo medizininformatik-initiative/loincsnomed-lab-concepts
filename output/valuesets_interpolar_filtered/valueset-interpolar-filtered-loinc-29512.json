@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-29512",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-29512",
+  "version": "1.0",
+  "name": "InterpolarFiltered29512",
+  "title": "Interpolar LOINC (Filtered): Natrium [Mol/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 2951-2. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2947-0",
+            "display": "Sodium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2951-2",
+            "display": "Sodium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "32717-1",
+            "display": "Sodium [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "39791-9",
+            "display": "Sodium [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "39792-7",
+            "display": "Sodium [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "41657-8",
+            "display": "Sodium [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "42570-2",
+            "display": "Sodium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "77139-4",
+            "display": "Sodium [Moles/volume] in Serum, Plasma or Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

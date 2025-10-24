@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-26146",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-26146",
+  "version": "1.0",
+  "name": "InterpolarFiltered26146",
+  "title": "Interpolar LOINC (Filtered): Methämoglobin/Hämoglobin.gesamt in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 2614-6. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 12",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2614-6",
+            "display": "Methemoglobin/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "2615-3",
+            "display": "Methemoglobin/Hemoglobin.total in Arterial blood"
+          },
+          {
+            "code": "2616-1",
+            "display": "Methemoglobin/Hemoglobin.total in Capillary blood"
+          },
+          {
+            "code": "2617-9",
+            "display": "Methemoglobin/Hemoglobin.total in Venous blood"
+          },
+          {
+            "code": "2618-7",
+            "display": "Methemoglobin/Hemoglobin.total in Red Blood Cells"
+          },
+          {
+            "code": "41607-3",
+            "display": "Methemoglobin/Hemoglobin.total in Mixed venous blood"
+          },
+          {
+            "code": "71879-1",
+            "display": "Methemoglobin/Hemoglobin.total [Pure mass fraction] in Venous blood"
+          },
+          {
+            "code": "71880-9",
+            "display": "Methemoglobin/Hemoglobin.total [Pure mass fraction] in Mixed venous blood"
+          },
+          {
+            "code": "71881-7",
+            "display": "Methemoglobin/Hemoglobin.total [Pure mass fraction] in Capillary blood"
+          },
+          {
+            "code": "71882-5",
+            "display": "Methemoglobin/Hemoglobin.total [Pure mass fraction] in Arterial blood"
+          },
+          {
+            "code": "71883-3",
+            "display": "Methemoglobin/Hemoglobin.total [Pure mass fraction] in Blood"
+          },
+          {
+            "code": "97554-0",
+            "display": "Methemoglobin/Hemoglobin.total in Central venous blood"
+          }
+        ]
+      }
+    ]
+  }
+}

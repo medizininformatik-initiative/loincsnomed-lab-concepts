@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-337626",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-337626",
+  "version": "1.0",
+  "name": "ECLComponentSystem337626",
+  "title": "ECL Component+System: Natriuretisches Peptid.B Prohormon N-Terminal [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=407060002 AND System=122592007 for LOINC 33762-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "110215-1",
+            "display": "LOINC 110215-1"
+          },
+          {
+            "code": "33762-6",
+            "display": "LOINC 33762-6"
+          },
+          {
+            "code": "33763-4",
+            "display": "LOINC 33763-4"
+          },
+          {
+            "code": "83107-3",
+            "display": "LOINC 83107-3"
+          },
+          {
+            "code": "83108-1",
+            "display": "LOINC 83108-1"
+          }
+        ]
+      }
+    ]
+  }
+}

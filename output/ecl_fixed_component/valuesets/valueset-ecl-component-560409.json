@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-560409",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-560409",
+  "version": "1.0",
+  "name": "ECLComponent560409",
+  "title": "ECL Fixed Component: Methämoglobin [Masse/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=27840003 for LOINC 56040-9",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "109592-6",
+            "display": "Methemoglobin [Measurement] in Blood"
+          },
+          {
+            "code": "15082-1",
+            "display": "Methemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "2613-8",
+            "display": "Methemoglobin [Presence] in Blood"
+          },
+          {
+            "code": "2614-6",
+            "display": "Methemoglobin/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "2615-3",
+            "display": "Methemoglobin/Hemoglobin.total in Arterial blood"
+          },
+          {
+            "code": "2616-1",
+            "display": "Methemoglobin/Hemoglobin.total in Capillary blood"
+          },
+          {
+            "code": "2617-9",
+            "display": "Methemoglobin/Hemoglobin.total in Venous blood"
+          },
+          {
+            "code": "2618-7",
+            "display": "Methemoglobin/Hemoglobin.total in Red Blood Cells"
+          },
+          {
+            "code": "2619-5",
+            "display": "Methemoglobin [Presence] in Red Blood Cells"
+          },
+          {
+            "code": "41607-3",
+            "display": "Methemoglobin/Hemoglobin.total in Mixed venous blood"
+          },
+          {
+            "code": "55942-7",
+            "display": "Methemoglobin/Hemoglobin.total in Cord blood"
+          },
+          {
+            "code": "56040-9",
+            "display": "Methemoglobin [Moles/volume] in Blood"
+          },
+          {
+            "code": "72262-9",
+            "display": "Methemoglobin [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "72360-1",
+            "display": "Methemoglobin/Hemoglobin.total in Venous cord blood"
+          },
+          {
+            "code": "72361-9",
+            "display": "Methemoglobin/Hemoglobin.total in Arterial cord blood"
+          },
+          {
+            "code": "97554-0",
+            "display": "Methemoglobin/Hemoglobin.total in Central venous blood"
+          }
+        ]
+      }
+    ]
+  }
+}

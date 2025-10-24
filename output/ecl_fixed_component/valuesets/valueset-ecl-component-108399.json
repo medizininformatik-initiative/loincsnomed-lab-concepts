@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-108399",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-108399",
+  "version": "1.0",
+  "name": "ECLComponent108399",
+  "title": "ECL Fixed Component: Troponin I.kardial [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=116886006 for LOINC 10839-9",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "106733-9",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum, Plasma or Blood by Rapid immunoassay"
+          },
+          {
+            "code": "106906-1",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum, Plasma or Blood by High sensitivity method"
+          },
+          {
+            "code": "10839-9",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "110289-6",
+            "display": "Troponin I.cardiac [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "16255-2",
+            "display": "Troponin I.cardiac [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "42757-5",
+            "display": "Troponin I.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "49563-0",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL"
+          },
+          {
+            "code": "76399-5",
+            "display": "Troponin I.cardiac [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+          },
+          {
+            "code": "89579-7",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          }
+        ]
+      }
+    ]
+  }
+}

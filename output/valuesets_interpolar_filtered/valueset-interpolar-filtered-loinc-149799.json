@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-149799",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-149799",
+  "version": "1.0",
+  "name": "InterpolarFiltered149799",
+  "title": "Interpolar LOINC (Filtered): aPTT in thrombozytenarmem Plasma mit Gerinnungstest",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 14979-9. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 9",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14979-9",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "15362-7",
+            "display": "aPTT.inhibitor sensitive in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "3173-2",
+            "display": "aPTT in Blood by Coagulation assay"
+          },
+          {
+            "code": "34571-0",
+            "display": "aPTT.lupus sensitive (LA screen)"
+          },
+          {
+            "code": "52751-5",
+            "display": "aPTT.factor sensitive in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "53570-8",
+            "display": "aPTT.lupus insensitive in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "5898-2",
+            "display": "Deprecated Activated partial thrombplastin time (aPTT) in Blood by Coagulation assay"
+          },
+          {
+            "code": "5899-0",
+            "display": "aPTT normal/actual in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "63561-5",
+            "display": "aPTT actual/normal in Platelet poor plasma by Coagulation assay"
+          }
+        ]
+      }
+    ]
+  }
+}

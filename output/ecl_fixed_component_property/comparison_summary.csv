@@ -1,0 +1,43 @@
+Primary LOINC,German Name,Component ID,Interpolar Count,ECL Count,Overlap,Precision,Recall,F1 Score
+1742-6,Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma,56935002,5,13,5,0.385,1.0,0.556
+1751-7,Albumin [Mass/volume] in Serum or Plasma by Nephelometry,52454007,10,60,7,0.117,0.7,0.2
+1920-8,Aspartat-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma,26091008,3,15,3,0.2,1.0,0.333
+14631-6,Bilirubin.gesamt [Mol/Volumen] in Serum oder Plasma,79706000,21,17,9,0.529,0.429,0.474
+1988-5,C-reaktives Protein [Masse/Volumen] in Serum oder Plasma,61425002,6,9,4,0.444,0.667,0.533
+2157-6,Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma,75828004,2,5,1,0.2,0.5,0.286
+14682-9,Creatinine [Moles/volume] in Venous blood,15373003,9,79,4,0.051,0.444,0.091
+14749-6,Glucose [Moles/volume] in Mixed venous blood,67079006,22,282,11,0.039,0.5,0.072
+59260-0,Hämoglobin [Masse/Volumen] in arteriellem Blut mit Oximetrie,38082009,18,5,3,0.6,0.167,0.261
+6690-2,Leukozyten [#/Volumen] in Blut,52501007,4,88,4,0.045,1.0,0.087
+751-8,Neutrophile [#/Volumen] in Blut,127913001,4,31,3,0.097,0.75,0.171
+26515-7,Thrombozyten [#/Volumen] in Blut,16378004,7,14,6,0.429,0.857,0.571
+2823-3,Kalium [Masse/Volumen] in Serum oder Plasma,304048005,10,37,7,0.189,0.7,0.298
+2951-2,Natrium [Mol/Volumen] in Blut,304050002,8,40,7,0.175,0.875,0.292
+16362-6,Ammoniak [Mol/Volumen] in Plasma,43953005,6,10,3,0.3,0.5,0.375
+2000-8,Calcium [Masse/Volumen] in Serum oder Plasma,5540006,7,74,4,0.054,0.571,0.099
+1994-3,Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE),259295006,24,28,15,0.536,0.625,0.577
+11557-6,Kohlenstoffdioxid [Partialdruck] in Blut,31811003,14,24,14,0.583,1.0,0.737
+2075-0,Chloride [Moles/volume] in Mixed venous blood,304052005,8,35,8,0.229,1.0,0.372
+21198-7,Choriongonadotropin [Einheiten/Volumen] in Serum oder Plasma,40940006,9,7,2,0.286,0.222,0.25
+14685-2,Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma,304111003,5,3,1,0.333,0.2,0.25
+3559-2,Digitoxin [Mol/Volumen] in Serum oder Plasma,373534001,2,3,1,0.333,0.5,0.4
+10535-3,Digoxin [Masse/Volumen] in Serum oder Plasma,387461009,5,3,2,0.667,0.4,0.5
+5643-2,Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie,419442005,9,14,5,0.357,0.556,0.435
+14334-7,Lithium [Mol/Volumen] in Serum oder Plasma,720377006,6,9,3,0.333,0.5,0.4
+2601-3,Deprecated Magnesium [Molecules/volume] in Serum or Plasma,72717003,10,17,2,0.118,0.2,0.148
+33762-6,Natriuretisches Peptid.B Prohormon N-Terminal [Masse/Volumen] in Serum oder Plasma,407060002,8,7,3,0.429,0.375,0.4
+11558-4,pH von Blut,89177007,11,64,11,0.172,1.0,0.293
+14879-1,Phosphat [Mol/Volumen] in Serum oder Plasma,304053000,6,14,2,0.143,0.333,0.2
+3016-3,"Thyreotropin [Einheiten/Volumen] in Serum oder Plasma mit Nachweisgrenze <= 0,05 mIU/L",65428006,7,68,4,0.059,0.571,0.107
+10839-9,Troponin I.kardial [Masse/Volumen] in Serum oder Plasma,116886006,5,6,4,0.667,0.8,0.727
+67151-1,Troponin T.kardial [Masse/Volumen] in Blut,102684000,4,6,4,0.667,1.0,0.8
+70209-2,Haptoglobin [Masse/Volumen] in Serum oder Plasma,85294008,5,1,1,1.0,0.2,0.333
+2098-2,Cholinesterase [Enzymaktivität/Volumen] in Blut,18004003,3,7,2,0.286,0.667,0.4
+3040-3,Triacylglycerid-Lipase [Enzymaktivität/Volumen] in Serum oder Plasma,72993008,1,16,1,0.062,1.0,0.118
+2614-6,Methämoglobin/Hämoglobin.gesamt in Blut,27840003,12,10,7,0.7,0.583,0.636
+56040-9,Methämoglobin [Masse/Volumen] in Blut,27840003,2,2,1,0.5,0.5,0.5
+731-0,Lymphozyten [#/Volumen] in Blut,56972008,3,25,3,0.12,1.0,0.214
+32710-6,Nitrit [Nachweis] in Urin,31528005,3,3,3,1.0,1.0,1.0
+14933-6,Harnsäure [Mol/Volumen] in Serum oder Plasma,88476001,4,8,1,0.125,0.25,0.167
+14927-8,Triglycerid [Mol/Volumen] in Serum oder Plasma,85600001,5,11,1,0.091,0.2,0.125
+20578-1,Vancomycin [Masse/Volumen] in Serum oder Plasma,372735009,9,9,6,0.667,0.667,0.667

@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-702092",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-702092",
+  "version": "1.0",
+  "name": "ECLComponent702092",
+  "title": "ECL Fixed Component: Haptoglobin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=85294008 for LOINC 70209-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "110648-3",
+            "display": "Haptoglobin [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "29220-1",
+            "display": "Haptoglobin [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "40717-1",
+            "display": "Haptoglobin [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "4542-7",
+            "display": "Haptoglobin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "4543-5",
+            "display": "Haptoglobin [Mass/volume] in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "46127-7",
+            "display": "Haptoglobin [Mass/volume] in Serum or Plasma by Nephelometry"
+          },
+          {
+            "code": "70209-2",
+            "display": "Haptoglobin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "98997-0",
+            "display": "Haptoglobin/Protein.total in Serum or Plasma by Electrophoresis"
+          }
+        ]
+      }
+    ]
+  }
+}

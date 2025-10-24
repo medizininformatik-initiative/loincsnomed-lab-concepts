@@ -1,0 +1,98 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-19208",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-19208",
+  "version": "1.0",
+  "name": "ECLComponent19208",
+  "title": "ECL Fixed Component: Aspartat-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=26091008 for LOINC 1920-8",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "110764-8",
+            "display": "Aspartate aminotransferase [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "14409-7",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Pleural fluid"
+          },
+          {
+            "code": "14410-5",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "14411-3",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Synovial fluid"
+          },
+          {
+            "code": "14412-1",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Gastric fluid"
+          },
+          {
+            "code": "14413-9",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Urine"
+          },
+          {
+            "code": "14414-7",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Dialysis fluid"
+          },
+          {
+            "code": "16412-9",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Red Blood Cells"
+          },
+          {
+            "code": "1916-6",
+            "display": "Aspartate aminotransferase/Alanine aminotransferase [Enzymatic activity ratio] in Serum or Plasma"
+          },
+          {
+            "code": "1917-4",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Amniotic fluid"
+          },
+          {
+            "code": "1918-2",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "1919-0",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Body fluid"
+          },
+          {
+            "code": "1920-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "27344-1",
+            "display": "Aspartate aminotransferase [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "30239-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
+          },
+          {
+            "code": "43822-6",
+            "display": "Aspartate aminotransferase [Presence] in Body fluid"
+          },
+          {
+            "code": "44786-2",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] (Maximum value during study) in Serum or Plasma"
+          },
+          {
+            "code": "88112-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
+          },
+          {
+            "code": "96587-1",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in DBS"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-descendants-146852",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-descendants-146852",
+  "version": "1.0",
+  "name": "ECLComponentDescendants146852",
+  "title": "ECL Component Descendants: Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component descendants <<304111003 for LOINC 14685-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14685-2",
+            "display": "LOINC 14685-2"
+          },
+          {
+            "code": "16695-9",
+            "display": "LOINC 16695-9"
+          },
+          {
+            "code": "16696-7",
+            "display": "LOINC 16696-7"
+          },
+          {
+            "code": "2132-9",
+            "display": "LOINC 2132-9"
+          },
+          {
+            "code": "26916-7",
+            "display": "LOINC 26916-7"
+          },
+          {
+            "code": "30904-7",
+            "display": "LOINC 30904-7"
+          },
+          {
+            "code": "30905-4",
+            "display": "LOINC 30905-4"
+          },
+          {
+            "code": "30906-2",
+            "display": "LOINC 30906-2"
+          },
+          {
+            "code": "35201-3",
+            "display": "LOINC 35201-3"
+          },
+          {
+            "code": "54376-9",
+            "display": "LOINC 54376-9"
+          },
+          {
+            "code": "54377-7",
+            "display": "LOINC 54377-7"
+          },
+          {
+            "code": "54378-5",
+            "display": "LOINC 54378-5"
+          },
+          {
+            "code": "55850-2",
+            "display": "LOINC 55850-2"
+          }
+        ]
+      }
+    ]
+  }
+}

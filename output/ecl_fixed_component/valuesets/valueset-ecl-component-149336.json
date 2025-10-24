@@ -1,0 +1,150 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-149336",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-149336",
+  "version": "1.0",
+  "name": "ECLComponent149336",
+  "title": "ECL Fixed Component: Harnsäure [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=88476001 for LOINC 14933-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108691-7",
+            "display": "Urate [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "111470-1",
+            "display": "Urate [Measurement] in Urine"
+          },
+          {
+            "code": "13820-6",
+            "display": "Urate/Creatinine [Mass Ratio] in 24 hour Urine"
+          },
+          {
+            "code": "13902-2",
+            "display": "Urate [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "14932-8",
+            "display": "Urate [Presence] in Stone"
+          },
+          {
+            "code": "14933-6",
+            "display": "Urate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14934-4",
+            "display": "Urate [Moles/volume] in Urine"
+          },
+          {
+            "code": "21587-1",
+            "display": "Urate [Mass/volume] in 24 hour Urine"
+          },
+          {
+            "code": "25548-9",
+            "display": "Urate [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "25997-8",
+            "display": "Urate [Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "3083-3",
+            "display": "Urate [Mass/volume] in Amniotic fluid"
+          },
+          {
+            "code": "3084-1",
+            "display": "Urate [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3085-8",
+            "display": "Urate [Mass/volume] in Synovial fluid"
+          },
+          {
+            "code": "3086-6",
+            "display": "Urate [Mass/volume] in Urine"
+          },
+          {
+            "code": "3089-0",
+            "display": "Urate/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "32149-7",
+            "display": "Urate/Total in Stone"
+          },
+          {
+            "code": "32343-6",
+            "display": "Urate [Moles/volume] in Specimen"
+          },
+          {
+            "code": "32555-5",
+            "display": "Urate [Molar amount] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "34385-5",
+            "display": "Urate/Creatinine [Molar ratio] in Urine"
+          },
+          {
+            "code": "35232-8",
+            "display": "Urate [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35233-6",
+            "display": "Urate [Mass or Moles/volume] in Urine"
+          },
+          {
+            "code": "35253-4",
+            "display": "Urate [Mass or Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "39788-5",
+            "display": "Urate [Moles/volume] in Synovial fluid"
+          },
+          {
+            "code": "49003-7",
+            "display": "Urate [Mass/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "53612-8",
+            "display": "Urate [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "57332-9",
+            "display": "Urate [Mass/volume] in 12 hour Urine"
+          },
+          {
+            "code": "57386-5",
+            "display": "Urate [Mass/volume] in 2 hour Urine"
+          },
+          {
+            "code": "60469-4",
+            "display": "Urate [Mass/volume] in Pleural fluid"
+          },
+          {
+            "code": "74979-6",
+            "display": "Urate [Moles/volume] in Bronchoalveolar lavage"
+          },
+          {
+            "code": "75139-6",
+            "display": "Urate [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "75642-9",
+            "display": "Urate/Creatinine [Molar ratio] in 24 hour Urine"
+          },
+          {
+            "code": "98981-4",
+            "display": "Urate [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

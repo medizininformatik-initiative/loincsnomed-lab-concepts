@@ -1,0 +1,12 @@
+{
+  "description": "Custom ECL queries for MCV - Mean Corpuscular Volume (LOINC 787-2 automated, 30428-7 generic)",
+  "note": "SPECIAL CASE: MCV uses 'Inheres in' relationship (704319004), NOT Component attribute. Post-coordinated queries (Exp 1-5) will fail. Use Pre-coordinated Descendants (Exp 0) approach only.",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Pre-coordinated Parent Descendants)",
+      "description": "MCV has no Component attribute - uses 'Inheres in' relationship with Erythrocyte (41898006). Parent concept 525321010000100 has 2 descendants: 787-2 (automated) and 30428-7 (generic). Post-coordinated ECL cannot capture this relationship, so we use pre-coordinated hierarchy query.",
+      "ecl": "<< 525321010000100 |Mean cell volume (observable entity)|"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-265157",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-265157",
+  "version": "1.0",
+  "name": "ECLComponent265157",
+  "title": "ECL Component-Based: Thrombozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using component descendants for LOINC 26515-7 (SNOMED 90581010000105)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "107193-5",
+            "display": "Platelets [#/volume] in Blood by Automated count --in presence of EDTA to detect possible clumping"
+          },
+          {
+            "code": "13056-7",
+            "display": "Platelets [#/volume] in Plasma by Automated count"
+          },
+          {
+            "code": "26515-7",
+            "display": "Platelets [#/volume] in Blood"
+          },
+          {
+            "code": "26516-5",
+            "display": "Platelets [#/volume] in Plasma"
+          },
+          {
+            "code": "47284-5",
+            "display": "Platelets [#/volume] in Cord blood"
+          },
+          {
+            "code": "49497-1",
+            "display": "Platelets [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "55802-3",
+            "display": "Platelets [#/volume] in Cord blood by Estimate"
+          },
+          {
+            "code": "74464-9",
+            "display": "Platelets [#/volume] in Capillary blood by Manual count"
+          },
+          {
+            "code": "74775-8",
+            "display": "Platelets [#/volume] in Platelet rich plasma by Automated count"
+          },
+          {
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "778-1",
+            "display": "Platelets [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "96354-6",
+            "display": "Platelets Large [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "97995-5",
+            "display": "Platelets [#/volume] in Blood by Automated count.optical"
+          }
+        ]
+      }
+    ]
+  }
+}

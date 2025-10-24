@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-66902",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-66902",
+  "version": "1.0",
+  "name": "ECLComponentSystem66902",
+  "title": "ECL Component+System: Leukozyten [#/Volumen] in Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=52501007 AND System=119297000 for LOINC 6690-2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "12227-5",
+            "display": "LOINC 12227-5"
+          },
+          {
+            "code": "26464-8",
+            "display": "LOINC 26464-8"
+          },
+          {
+            "code": "26471-3",
+            "display": "LOINC 26471-3"
+          },
+          {
+            "code": "30406-3",
+            "display": "LOINC 30406-3"
+          },
+          {
+            "code": "33256-9",
+            "display": "LOINC 33256-9"
+          },
+          {
+            "code": "40646-2",
+            "display": "LOINC 40646-2"
+          },
+          {
+            "code": "49498-9",
+            "display": "LOINC 49498-9"
+          },
+          {
+            "code": "51383-8",
+            "display": "LOINC 51383-8"
+          },
+          {
+            "code": "6690-2",
+            "display": "LOINC 6690-2"
+          },
+          {
+            "code": "729-4",
+            "display": "LOINC 729-4"
+          },
+          {
+            "code": "730-2",
+            "display": "LOINC 730-2"
+          },
+          {
+            "code": "804-5",
+            "display": "LOINC 804-5"
+          }
+        ]
+      }
+    ]
+  }
+}

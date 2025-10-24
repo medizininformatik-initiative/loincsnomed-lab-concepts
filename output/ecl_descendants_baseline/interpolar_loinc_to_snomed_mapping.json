@@ -1,0 +1,694 @@
+{
+  "timestamp": "2025-10-13T22:45:11.739440",
+  "summary": {
+    "total_primary_codes": 47,
+    "total_interpolar_codes": 356
+  },
+  "mappings": {
+    "1742-6": {
+      "loinc_code": "1742-6",
+      "snomed_concept_id": "105311010000109",
+      "german_name": "Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "1743-4",
+        "77144-4",
+        "1744-2",
+        "1742-6",
+        "76625-3"
+      ]
+    },
+    "1751-7": {
+      "loinc_code": "1751-7",
+      "snomed_concept_id": "225451010000107",
+      "german_name": "Albumin [Mass/volume] in Serum or Plasma by Nephelometry",
+      "interpolar_secondary_codes": [
+        "61151-7",
+        "62234-0",
+        "62235-7",
+        "76631-1",
+        "77148-5",
+        "61152-5",
+        "2862-1",
+        "1751-7",
+        "54347-0",
+        "101198-0"
+      ]
+    },
+    "1920-8": {
+      "loinc_code": "1920-8",
+      "snomed_concept_id": "274161010000103",
+      "german_name": "Aspartat-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "88112-8",
+        "30239-8",
+        "1920-8"
+      ]
+    },
+    "14631-6": {
+      "loinc_code": "14631-6",
+      "snomed_concept_id": "84411010000106",
+      "german_name": "Bilirubin.gesamt [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "53327-3",
+        "59828-4",
+        "1975-2",
+        "68367-2",
+        "5770-3",
+        "77137-8",
+        "89871-8",
+        "58450-8",
+        "42719-5",
+        "59827-6",
+        "1977-8",
+        "89872-6",
+        "54363-7",
+        "41016-7",
+        "70199-5",
+        "35194-0",
+        "20505-4",
+        "50551-1",
+        "97770-2",
+        "1978-6",
+        "14631-6"
+      ]
+    },
+    "1988-5": {
+      "loinc_code": "1988-5",
+      "snomed_concept_id": "146641010000100",
+      "german_name": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "1988-5",
+        "76485-2",
+        "30522-7",
+        "76486-0",
+        "71426-1",
+        "48421-2"
+      ]
+    },
+    "14979-9": {
+      "loinc_code": "14979-9",
+      "snomed_concept_id": "497241010000106",
+      "german_name": "aPTT in thrombozytenarmem Plasma mit Gerinnungstest",
+      "interpolar_secondary_codes": [
+        "34571-0",
+        "3173-2",
+        "53570-8",
+        "52751-5",
+        "14979-9",
+        "15362-7",
+        "5898-2"
+      ]
+    },
+    "6301-6": {
+      "loinc_code": "6301-6",
+      "snomed_concept_id": "602821010000104",
+      "german_name": "International Normalized Ratio (INR) in Blut mit Gerinnungstest",
+      "interpolar_secondary_codes": [
+        "34714-6",
+        "6301-6",
+        "46418-0",
+        "5895-7",
+        "38875-1"
+      ]
+    },
+    "2157-6": {
+      "loinc_code": "2157-6",
+      "snomed_concept_id": "134671010000102",
+      "german_name": "Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "50756-6",
+        "2157-6"
+      ]
+    },
+    "14682-9": {
+      "loinc_code": "14682-9",
+      "snomed_concept_id": "274271010000103",
+      "german_name": "Creatinine [Moles/volume] in Venous blood",
+      "interpolar_secondary_codes": [
+        "72271-0",
+        "35203-9",
+        "101475-2",
+        "59826-8",
+        "21232-4",
+        "38483-4",
+        "2160-0",
+        "77140-2",
+        "14682-9"
+      ]
+    },
+    "62238-1": {
+      "loinc_code": "62238-1",
+      "snomed_concept_id": "602541010000107",
+      "german_name": "Creatinine renal clearance/1.73 sq M.predicted among females by Cockcroft-Gault formula, BSA formula",
+      "interpolar_secondary_codes": [
+        "50380-5",
+        "35592-5",
+        "88294-4",
+        "69405-9",
+        "48642-3",
+        "88293-6",
+        "98979-8",
+        "50044-7",
+        "97952-6",
+        "98980-6",
+        "62238-1",
+        "50210-4",
+        "94677-2",
+        "35591-7",
+        "33914-3",
+        "76633-7",
+        "70969-1",
+        "77147-7",
+        "50381-3",
+        "48643-1"
+      ]
+    },
+    "14749-6": {
+      "loinc_code": "14749-6",
+      "snomed_concept_id": "211551010000101",
+      "german_name": "Glucose [Moles/volume] in Mixed venous blood",
+      "interpolar_secondary_codes": [
+        "15074-8",
+        "77135-2",
+        "2341-6",
+        "39480-9",
+        "72516-8",
+        "41651-1",
+        "100746-7",
+        "41652-9",
+        "76629-5",
+        "51596-5",
+        "41653-7",
+        "77145-1",
+        "32016-8",
+        "14749-6",
+        "2340-8",
+        "14743-9",
+        "2345-7",
+        "35211-2",
+        "6777-7",
+        "39481-7",
+        "74774-1",
+        "2339-0"
+      ]
+    },
+    "59260-0": {
+      "loinc_code": "59260-0",
+      "snomed_concept_id": "214131010000101",
+      "german_name": "Hämoglobin [Masse/Volumen] in arteriellem Blut mit Oximetrie",
+      "interpolar_secondary_codes": [
+        "14775-1",
+        "76769-9",
+        "59260-0",
+        "30351-1",
+        "30352-9",
+        "55782-7",
+        "718-7",
+        "97550-8",
+        "93846-4",
+        "42243-6",
+        "30313-1",
+        "30350-3",
+        "48725-6",
+        "20509-6",
+        "75928-2",
+        "76768-1",
+        "97556-5",
+        "97555-7"
+      ]
+    },
+    "6690-2": {
+      "loinc_code": "6690-2",
+      "snomed_concept_id": "147071010000102",
+      "german_name": "Leukozyten [#/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "804-5",
+        "49498-9",
+        "26464-8",
+        "6690-2"
+      ]
+    },
+    "751-8": {
+      "loinc_code": "751-8",
+      "snomed_concept_id": "167111010000104",
+      "german_name": "Neutrophile [#/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "753-4",
+        "26499-4",
+        "751-8",
+        "752-6"
+      ]
+    },
+    "26515-7": {
+      "loinc_code": "26515-7",
+      "snomed_concept_id": "90581010000105",
+      "german_name": "Thrombozyten [#/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "777-3",
+        "74464-9",
+        "49497-1",
+        "26515-7",
+        "97995-5",
+        "778-1",
+        "5907-1"
+      ]
+    },
+    "2823-3": {
+      "loinc_code": "2823-3",
+      "snomed_concept_id": "254381010000105",
+      "german_name": "Kalium [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "6298-4",
+        "42569-4",
+        "41656-0",
+        "77142-8",
+        "2823-3",
+        "22760-3",
+        "75940-7",
+        "39789-3",
+        "39790-1",
+        "32713-0"
+      ]
+    },
+    "2951-2": {
+      "loinc_code": "2951-2",
+      "snomed_concept_id": "229351010000104",
+      "german_name": "Natrium [Mol/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "32717-1",
+        "42570-2",
+        "77139-4",
+        "2951-2",
+        "39791-9",
+        "2947-0",
+        "41657-8",
+        "39792-7"
+      ]
+    },
+    "16362-6": {
+      "loinc_code": "16362-6",
+      "snomed_concept_id": "243181010000108",
+      "german_name": "Ammoniak [Mol/Volumen] in Plasma",
+      "interpolar_secondary_codes": [
+        "32664-5",
+        "16362-6",
+        "1839-0",
+        "22763-7",
+        "35254-2",
+        "93684-9"
+      ]
+    },
+    "2000-8": {
+      "loinc_code": "2000-8",
+      "snomed_concept_id": "189431010000109",
+      "german_name": "Calcium [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "49765-1",
+        "2000-8",
+        "42857-3",
+        "42593-4",
+        "35246-8",
+        "17861-6",
+        "1996-8"
+      ]
+    },
+    "1994-3": {
+      "loinc_code": "1994-3",
+      "snomed_concept_id": "205021010000103",
+      "german_name": "Calcium.ionisiert [Mol/Volumen] in Serum oder Plasma mit ionenselektiver Membranelektrode (ISE)",
+      "interpolar_secondary_codes": [
+        "41646-1",
+        "17864-0",
+        "42567-8",
+        "41645-3",
+        "19072-8",
+        "47598-8",
+        "59473-9",
+        "13959-2",
+        "59471-3",
+        "59472-1",
+        "53140-0",
+        "59470-5",
+        "1994-3",
+        "38230-9",
+        "50838-2",
+        "34581-9",
+        "53138-4",
+        "53139-2",
+        "1995-0",
+        "12180-6",
+        "17863-2",
+        "41644-6",
+        "47596-2",
+        "57333-7"
+      ]
+    },
+    "11557-6": {
+      "loinc_code": "11557-6",
+      "snomed_concept_id": "174721010000106",
+      "german_name": "Kohlenstoffdioxid [Partialdruck] in Blut",
+      "interpolar_secondary_codes": [
+        "49694-3",
+        "11557-6",
+        "2019-8",
+        "2020-6",
+        "2021-4",
+        "50981-0",
+        "97539-1",
+        "40619-9",
+        "32771-8",
+        "97538-3",
+        "49695-0",
+        "19212-0",
+        "40620-7",
+        "34705-4"
+      ]
+    },
+    "2075-0": {
+      "loinc_code": "2075-0",
+      "snomed_concept_id": "239411010000105",
+      "german_name": "Chloride [Moles/volume] in Mixed venous blood",
+      "interpolar_secondary_codes": [
+        "2069-3",
+        "77138-6",
+        "35676-6",
+        "51590-8",
+        "2075-0",
+        "41649-5",
+        "41650-3",
+        "100745-9"
+      ]
+    },
+    "21198-7": {
+      "loinc_code": "21198-7",
+      "snomed_concept_id": "252361010000106",
+      "german_name": "Choriongonadotropin [Einheiten/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "2111-3",
+        "2118-8",
+        "83086-9",
+        "20415-6",
+        "55869-2",
+        "21198-7",
+        "2119-6",
+        "19080-1",
+        "34670-0"
+      ]
+    },
+    "14685-2": {
+      "loinc_code": "14685-2",
+      "snomed_concept_id": "216331010000108",
+      "german_name": "Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "35201-3",
+        "16695-9",
+        "15039-1",
+        "14685-2",
+        "2132-9"
+      ]
+    },
+    "3559-2": {
+      "loinc_code": "3559-2",
+      "snomed_concept_id": "171271010000103",
+      "german_name": "Digitoxin [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "15104-3",
+        "3559-2"
+      ]
+    },
+    "10535-3": {
+      "loinc_code": "10535-3",
+      "snomed_concept_id": "191571010000106",
+      "german_name": "Digoxin [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "35244-3",
+        "83094-3",
+        "83093-5",
+        "14698-5",
+        "10535-3"
+      ]
+    },
+    "5643-2": {
+      "loinc_code": "5643-2",
+      "snomed_concept_id": "52791010000108",
+      "german_name": "Ethanol [Masse/Volumen] in Serum oder Plasma mit Gaschromatographie",
+      "interpolar_secondary_codes": [
+        "15120-9",
+        "14336-2",
+        "48342-0",
+        "56478-1",
+        "5643-2",
+        "5640-8",
+        "14719-9",
+        "74859-0",
+        "35240-1"
+      ]
+    },
+    "14334-7": {
+      "loinc_code": "14334-7",
+      "snomed_concept_id": "120031010000103",
+      "german_name": "Lithium [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "14334-7",
+        "3723-4",
+        "3719-2",
+        "25461-5",
+        "80970-7",
+        "74806-1"
+      ]
+    },
+    "2601-3": {
+      "loinc_code": "2601-3",
+      "snomed_concept_id": "131851010000108",
+      "german_name": "Deprecated Magnesium [Molecules/volume] in Serum or Plasma",
+      "interpolar_secondary_codes": [
+        "21377-7",
+        "2601-3",
+        "73573-8",
+        "11554-3",
+        "32698-3",
+        "73572-0",
+        "19123-9",
+        "35249-2",
+        "2600-5",
+        "2593-2"
+      ]
+    },
+    "33762-6": {
+      "loinc_code": "33762-6",
+      "snomed_concept_id": "100651010000107",
+      "german_name": "Natriuretisches Peptid.B Prohormon N-Terminal [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "47092-2",
+        "33763-4",
+        "83108-1",
+        "33762-6",
+        "83107-3",
+        "71425-3",
+        "35257-5",
+        "42637-9"
+      ]
+    },
+    "11558-4": {
+      "loinc_code": "11558-4",
+      "snomed_concept_id": "260991010000106",
+      "german_name": "pH von Blut",
+      "interpolar_secondary_codes": [
+        "33254-4",
+        "39486-6",
+        "97537-5",
+        "19213-8",
+        "11558-4",
+        "50980-2",
+        "2745-8",
+        "49701-6",
+        "2744-1",
+        "97536-7",
+        "2746-6"
+      ]
+    },
+    "14879-1": {
+      "loinc_code": "14879-1",
+      "snomed_concept_id": "70531010000104",
+      "german_name": "Phosphat [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "14879-1",
+        "20941-1",
+        "35221-1",
+        "2774-8",
+        "2777-1",
+        "24519-1"
+      ]
+    },
+    "3016-3": {
+      "loinc_code": "3016-3",
+      "snomed_concept_id": "193811010000101",
+      "german_name": "Thyreotropin [Einheiten/Volumen] in Serum oder Plasma mit Nachweisgrenze <= 0,05 mIU/L",
+      "interpolar_secondary_codes": [
+        "27975-2",
+        "20452-9",
+        "3016-3",
+        "11579-0",
+        "11580-8",
+        "14297-6",
+        "3015-5"
+      ]
+    },
+    "10839-9": {
+      "loinc_code": "10839-9",
+      "snomed_concept_id": "126721010000101",
+      "german_name": "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "10839-9",
+        "49563-0",
+        "42757-5",
+        "89579-7",
+        "16255-2"
+      ]
+    },
+    "67151-1": {
+      "loinc_code": "67151-1",
+      "snomed_concept_id": "116701010000104",
+      "german_name": "Troponin T.kardial [Masse/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "48425-3",
+        "6598-7",
+        "67151-1",
+        "6597-9"
+      ]
+    },
+    "70209-2": {
+      "loinc_code": "70209-2",
+      "snomed_concept_id": "263841010000101",
+      "german_name": "Haptoglobin [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "4542-7",
+        "55453-5",
+        "70209-2",
+        "4543-5",
+        "46127-7"
+      ]
+    },
+    "2098-2": {
+      "loinc_code": "2098-2",
+      "snomed_concept_id": "216641010000108",
+      "german_name": "Cholinesterase [Enzymaktivität/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "11154-2",
+        "2098-2",
+        "9509-1"
+      ]
+    },
+    "3040-3": {
+      "loinc_code": "3040-3",
+      "snomed_concept_id": "57081010000105",
+      "german_name": "Triacylglycerid-Lipase [Enzymaktivität/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "3040-3"
+      ]
+    },
+    "2614-6": {
+      "loinc_code": "2614-6",
+      "snomed_concept_id": "517541010000104",
+      "german_name": "Methämoglobin/Hämoglobin.gesamt in Blut",
+      "interpolar_secondary_codes": [
+        "71879-1",
+        "71883-3",
+        "2615-3",
+        "2614-6",
+        "71882-5",
+        "41607-3",
+        "71881-7",
+        "97554-0",
+        "2616-1",
+        "2618-7",
+        "2617-9",
+        "71880-9"
+      ]
+    },
+    "56040-9": {
+      "loinc_code": "56040-9",
+      "snomed_concept_id": "184071010000100",
+      "german_name": "Methämoglobin [Masse/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "56040-9",
+        "15082-1"
+      ]
+    },
+    "2692-2": {
+      "loinc_code": "2692-2",
+      "snomed_concept_id": "519211010000109",
+      "german_name": "Osmolalität von Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "2692-2"
+      ]
+    },
+    "18182-6": {
+      "loinc_code": "18182-6",
+      "snomed_concept_id": "501431010000100",
+      "german_name": "Osmolalität von Serum oder Plasma, berechnet",
+      "interpolar_secondary_codes": [
+        "18182-6"
+      ]
+    },
+    "731-0": {
+      "loinc_code": "731-0",
+      "snomed_concept_id": "71861010000100",
+      "german_name": "Lymphozyten [#/Volumen] in Blut",
+      "interpolar_secondary_codes": [
+        "30364-4",
+        "26474-7",
+        "731-0"
+      ]
+    },
+    "32710-6": {
+      "loinc_code": "32710-6",
+      "snomed_concept_id": "45931010000103",
+      "german_name": "Nitrit [Nachweis] in Urin",
+      "interpolar_secondary_codes": [
+        "50558-6",
+        "32710-6",
+        "5802-4"
+      ]
+    },
+    "14933-6": {
+      "loinc_code": "14933-6",
+      "snomed_concept_id": "163261010000104",
+      "german_name": "Harnsäure [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "14933-6",
+        "35232-8",
+        "98981-4",
+        "3084-1"
+      ]
+    },
+    "14927-8": {
+      "loinc_code": "14927-8",
+      "snomed_concept_id": "186131010000107",
+      "german_name": "Triglycerid [Mol/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "14927-8",
+        "35217-9",
+        "2571-8",
+        "3043-7",
+        "3049-4"
+      ]
+    },
+    "20578-1": {
+      "loinc_code": "20578-1",
+      "snomed_concept_id": "163861010000100",
+      "german_name": "Vancomycin [Masse/Volumen] in Serum oder Plasma",
+      "interpolar_secondary_codes": [
+        "39796-8",
+        "97657-1",
+        "59381-4",
+        "39797-6",
+        "20578-1",
+        "4090-7",
+        "31012-8",
+        "4092-3",
+        "4091-5"
+      ]
+    }
+  }
+}

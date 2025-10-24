@@ -1,0 +1,25 @@
+====================================================================================================
+DASHBOARD RESULTS SUMMARY - SNOMED CONCEPT COUNTS
+====================================================================================================
+
+Parameter                 LOINC        Exp0     V2       LOINC Codes  Interpolar  
+----------------------------------------------------------------------------------------------------
+Hemoglobin                59260-0      7        28       248          0           
+Erythrocytes              26453-1      14       4        213          0           
+Leukocytes                26464-8      67       11       741          0           
+Platelets                 777-3        5        0        26           0           
+Hematocrit                20570-8      3        12       213          0           
+MCV                       787-2        1        2        2            0           
+MCH                       28539-5      2        2        264          0           
+MCHC                      786-4        1        2        2            0           
+Methemoglobin             2614-6       1        12       11           0           
+Potassium                 6298-4       13       17       57           0           
+Nitrite Urine             32710-6      3        5        5            0           
+
+====================================================================================================
+Legend:
+  Exp0: Precoordinated Descendants (baseline)
+  V2: Refined Query V2 (custom ECL with property/component filtering)
+  LOINC Codes: Total unique LOINC codes found across all experiments
+  Interpolar: Reference codes from Interpolar mapping (level 1+2)
+====================================================================================================

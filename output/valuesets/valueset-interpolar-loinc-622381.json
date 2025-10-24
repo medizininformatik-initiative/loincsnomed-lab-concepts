@@ -1,0 +1,102 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-622381",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-622381",
+  "version": "3.6",
+  "name": "InterpolarLOINC622381",
+  "title": "Interpolar LOINC Group: Creatinine renal clearance/1.73 sq M.predicted among females by Cockcroft-Gault formula, BSA formula",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 62238-1 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "33914-3",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M"
+          },
+          {
+            "code": "35591-7",
+            "display": "Creatinine renal clearance predicted by Cockcroft-Gault formula"
+          },
+          {
+            "code": "35592-5",
+            "display": "Creatinine renal clearance/1.73 sq M.predicted by Cockcroft-Gault formula, BSA formula"
+          },
+          {
+            "code": "48642-3",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among non black population"
+          },
+          {
+            "code": "48643-1",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among black population"
+          },
+          {
+            "code": "50044-7",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among female population"
+          },
+          {
+            "code": "50210-4",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Cystatin C-based formula/1.73 sq M"
+          },
+          {
+            "code": "50380-5",
+            "display": "Creatinine renal clearance/1.73 sq M.predicted among females by Cockcroft-Gault formula, BSA formula"
+          },
+          {
+            "code": "50381-3",
+            "display": "Creatinine renal clearance/1.73 sq M.predicted among males by Cockcroft-Gault formula, BSA formula"
+          },
+          {
+            "code": "62238-1",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)/1.73 sq M"
+          },
+          {
+            "code": "69405-9",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by based on 1.73 sq M"
+          },
+          {
+            "code": "70969-1",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among male population"
+          },
+          {
+            "code": "76633-7",
+            "display": "Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD) in Blood"
+          },
+          {
+            "code": "77147-7",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M"
+          },
+          {
+            "code": "88293-6",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)/1.73 sq M among black population"
+          },
+          {
+            "code": "88294-4",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)/1.73 sq M among non black population"
+          },
+          {
+            "code": "94677-2",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine and Cystatin C-based formula (CKD-EPI)/1.73 sq M"
+          },
+          {
+            "code": "97952-6",
+            "display": "Deprecated Glomerular filtration rate/Body surface area [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (CKD-EPI)"
+          },
+          {
+            "code": "98979-8",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M"
+          },
+          {
+            "code": "98980-6",
+            "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine and Cystatin C-based formula (CKD-EPI 2021)/1.73 sq M"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-17426",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-17426",
+  "version": "3.6",
+  "name": "InterpolarLOINC17426",
+  "title": "Interpolar LOINC Group: Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 1742-6 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "1742-6",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1743-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
+          },
+          {
+            "code": "1744-2",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
+          },
+          {
+            "code": "76625-3",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Blood"
+          },
+          {
+            "code": "77144-4",
+            "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

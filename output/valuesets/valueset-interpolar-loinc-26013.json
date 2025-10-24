@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-26013",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-26013",
+  "version": "3.6",
+  "name": "InterpolarLOINC26013",
+  "title": "Interpolar LOINC Group: Deprecated Magnesium [Molecules/volume] in Serum or Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 2601-3 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11554-3",
+            "display": "Deprecated Magnesium [Molecules/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19123-9",
+            "display": "Magnesium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "21377-7",
+            "display": "Magnesium [Mass/volume] in Blood"
+          },
+          {
+            "code": "2593-2",
+            "display": "Magnesium [Moles/volume] in Blood"
+          },
+          {
+            "code": "2600-5",
+            "display": "Magnesium Ionized [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2601-3",
+            "display": "Magnesium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "32698-3",
+            "display": "Magnesium Ionized [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35249-2",
+            "display": "Magnesium [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "73572-0",
+            "display": "Magnesium Ionized [Moles/volume] in Blood by Ion-selective membrane electrode (ISE)"
+          },
+          {
+            "code": "73573-8",
+            "display": "Magnesium Ionized [Moles/volume] adjusted to pH 7.4 in Blood by Ion-selective membrane electrode (ISE)"
+          }
+        ]
+      }
+    ]
+  }
+}

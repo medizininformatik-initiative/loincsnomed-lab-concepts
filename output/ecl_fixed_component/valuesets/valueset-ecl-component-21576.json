@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-21576",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-21576",
+  "version": "1.0",
+  "name": "ECLComponent21576",
+  "title": "ECL Fixed Component: Creatinkinase [Enzymaktivität/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=75828004 for LOINC 2157-6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16688-4",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Body fluid"
+          },
+          {
+            "code": "2151-9",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "2156-8",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Amniotic fluid"
+          },
+          {
+            "code": "2157-6",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "34160-2",
+            "display": "Creatine kinase [Presence] in Body fluid"
+          },
+          {
+            "code": "50756-6",
+            "display": "Creatine kinase [Mass/volume] in Blood"
+          },
+          {
+            "code": "53433-9",
+            "display": "Creatine kinase [Enzymatic activity/volume] in Dialysis fluid"
+          }
+        ]
+      }
+    ]
+  }
+}

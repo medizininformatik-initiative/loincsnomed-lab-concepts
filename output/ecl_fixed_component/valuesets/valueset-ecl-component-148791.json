@@ -1,0 +1,246 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-148791",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-148791",
+  "version": "1.0",
+  "name": "ECLComponent148791",
+  "title": "ECL Fixed Component: Phosphat [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=304053000 for LOINC 14879-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108011-8",
+            "display": "Phosphate [Measurement] in Urine"
+          },
+          {
+            "code": "108801-2",
+            "display": "Phosphate [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "10884-5",
+            "display": "Phosphate [Mass/mass] in Stool"
+          },
+          {
+            "code": "109721-1",
+            "display": "Phosphate [Measurement] in Dialysis fluid"
+          },
+          {
+            "code": "110637-6",
+            "display": "Phosphate [Measurement] in Stool"
+          },
+          {
+            "code": "11141-9",
+            "display": "Phosphate/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "12242-4",
+            "display": "Phosphate [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "13539-2",
+            "display": "Phosphate [Moles/volume] in Urine"
+          },
+          {
+            "code": "13542-6",
+            "display": "Phosphate [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "13795-0",
+            "display": "Phosphate/Creatinine [Mass Ratio] in 24 hour Urine"
+          },
+          {
+            "code": "14404-8",
+            "display": "Phosphate [Mass/volume] in Pleural fluid"
+          },
+          {
+            "code": "14405-5",
+            "display": "Phosphate [Mass/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "14406-3",
+            "display": "Phosphate [Mass/volume] in Synovial fluid"
+          },
+          {
+            "code": "14407-1",
+            "display": "Phosphate [Mass/volume] in Gastric fluid"
+          },
+          {
+            "code": "14408-9",
+            "display": "Phosphate [Mass/volume] in Amniotic fluid"
+          },
+          {
+            "code": "14878-3",
+            "display": "Phosphate [Presence] in Stone"
+          },
+          {
+            "code": "14879-1",
+            "display": "Phosphate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "17447-4",
+            "display": "Phosphate [Presence] in Stool"
+          },
+          {
+            "code": "21458-5",
+            "display": "Phosphate [Mass/volume] in 24 hour Urine"
+          },
+          {
+            "code": "22733-0",
+            "display": "Phosphate [Moles/volume] in Specimen"
+          },
+          {
+            "code": "24519-1",
+            "display": "Phosphate [Moles/volume] in Blood"
+          },
+          {
+            "code": "24520-9",
+            "display": "Phosphate [Moles/volume] in Red Blood Cells"
+          },
+          {
+            "code": "25127-2",
+            "display": "Phosphate/Creatinine [Molar ratio] in 24 hour Urine"
+          },
+          {
+            "code": "25501-8",
+            "display": "Phosphate [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "25973-9",
+            "display": "Phosphate [Moles/volume] in 24 hour Urine"
+          },
+          {
+            "code": "27123-9",
+            "display": "Phosphate [Mass/mass] in Red Blood Cells"
+          },
+          {
+            "code": "2774-8",
+            "display": "Phosphate [Mass/volume] in Blood"
+          },
+          {
+            "code": "2775-5",
+            "display": "Phosphate [Mass/volume] in Dialysis fluid"
+          },
+          {
+            "code": "2777-1",
+            "display": "Phosphate [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2778-9",
+            "display": "Phosphate [Mass/volume] in Urine"
+          },
+          {
+            "code": "2780-5",
+            "display": "Phosphate [Presence] in Urine"
+          },
+          {
+            "code": "30544-1",
+            "display": "Phosphate [Mass/volume] in Total parental nutrition"
+          },
+          {
+            "code": "34354-1",
+            "display": "Phosphate/Creatinine [Molar ratio] in Urine"
+          },
+          {
+            "code": "34938-1",
+            "display": "Phosphate [Moles/volume] in Dialysis fluid"
+          },
+          {
+            "code": "35220-3",
+            "display": "Phosphate [Mass or Moles/volume] in Dialysis fluid"
+          },
+          {
+            "code": "35221-1",
+            "display": "Phosphate [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35222-9",
+            "display": "Phosphate [Mass or Moles/volume] in Urine"
+          },
+          {
+            "code": "35673-3",
+            "display": "Phosphate [Mass/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "38717-5",
+            "display": "Phosphate [Mass/volume] in Air"
+          },
+          {
+            "code": "48617-5",
+            "display": "Phosphate [Mass/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "48641-5",
+            "display": "Phosphate [Mass/volume] in Serum or Plasma --pre dialysis"
+          },
+          {
+            "code": "49006-0",
+            "display": "Phosphate [Moles/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "50898-6",
+            "display": "Phosphate [Moles/mass] in Hair"
+          },
+          {
+            "code": "55972-4",
+            "display": "Phosphate [Moles/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "55973-2",
+            "display": "Phosphate [Moles/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "56964-0",
+            "display": "Phosphate/Creatinine [Ratio] in Urine"
+          },
+          {
+            "code": "56965-7",
+            "display": "Phosphate/Creatinine [Ratio] in 24 hour Urine"
+          },
+          {
+            "code": "57348-5",
+            "display": "Phosphate [Mass/volume] in 12 hour Urine"
+          },
+          {
+            "code": "57349-3",
+            "display": "Phosphate [Mass/volume] in 2 hour Urine"
+          },
+          {
+            "code": "58019-1",
+            "display": "Phosphate [Mass/volume] in Nonbiological fluid"
+          },
+          {
+            "code": "59037-2",
+            "display": "Phosphate [Mass/volume] in Peritoneal dialysis fluid"
+          },
+          {
+            "code": "59161-0",
+            "display": "Phosphate [Moles/volume] in Stool"
+          },
+          {
+            "code": "74889-7",
+            "display": "Phosphate [Moles/volume] in Saliva (oral fluid)"
+          },
+          {
+            "code": "76656-8",
+            "display": "Phosphate [Mass/mass] in Hair"
+          },
+          {
+            "code": "80611-7",
+            "display": "Phosphate [Moles/volume] in Urine collected for unspecified duration"
+          },
+          {
+            "code": "88713-3",
+            "display": "Phosphate [Mass/volume] in Stool"
+          }
+        ]
+      }
+    ]
+  }
+}

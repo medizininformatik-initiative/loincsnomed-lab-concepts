@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-filtered-loinc-108399",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-filtered-loinc-108399",
+  "version": "1.0",
+  "name": "InterpolarFiltered108399",
+  "title": "Interpolar LOINC (Filtered): Troponin I.kardial [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - Filtered (1-quantitativ + 2-cutoff)",
+  "description": "Interpolar LOINC codes for primary code 10839-9. Includes only comparability levels '1 - quantitativ' and '2 - cutoff_Fragestellung'. Total codes: 5",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10839-9",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "16255-2",
+            "display": "Troponin I.cardiac [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "42757-5",
+            "display": "Troponin I.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "49563-0",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL"
+          },
+          {
+            "code": "89579-7",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          }
+        ]
+      }
+    ]
+  }
+}

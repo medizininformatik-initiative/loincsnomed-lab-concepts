@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-105353",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-105353",
+  "version": "1.0",
+  "name": "ECLComponent105353",
+  "title": "ECL Fixed Component: Digoxin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=387461009 for LOINC 10535-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10535-3",
+            "display": "Digoxin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "110653-3",
+            "display": "Digoxin [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "14698-5",
+            "display": "Digoxin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "29216-9",
+            "display": "Digoxin [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "35244-3",
+            "display": "Digoxin [Mass or Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "4222-6",
+            "display": "Digoxin [Mass] of Dose"
+          },
+          {
+            "code": "83093-5",
+            "display": "Digoxin [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "83094-3",
+            "display": "Digoxin [Moles/volume] in Serum or Plasma by Immunoassay"
+          }
+        ]
+      }
+    ]
+  }
+}

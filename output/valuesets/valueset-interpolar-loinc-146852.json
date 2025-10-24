@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-146852",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-146852",
+  "version": "3.6",
+  "name": "InterpolarLOINC146852",
+  "title": "Interpolar LOINC Group: Cobalamin (Vitamin B12) [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 14685-2 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14685-2",
+            "display": "Cobalamin (Vitamin B12) [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "15039-1",
+            "display": "Deprecated Cobalamin [Molecules/volume] in Serum"
+          },
+          {
+            "code": "16695-9",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Blood"
+          },
+          {
+            "code": "2132-9",
+            "display": "Cobalamin (Vitamin B12) [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "35201-3",
+            "display": "Cobalamin (Vitamin B12) [Mass or Moles/volume] in Serum"
+          }
+        ]
+      }
+    ]
+  }
+}

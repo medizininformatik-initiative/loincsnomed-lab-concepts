@@ -1,0 +1,262 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-592600",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-592600",
+  "version": "1.0",
+  "name": "ECLComponent592600",
+  "title": "ECL Fixed Component: Hämoglobin [Masse/Volumen] in arteriellem Blut mit Oximetrie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=38082009 for LOINC 59260-0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "103750-6",
+            "display": "Hemoglobin [Moles/volume] in Venous cord blood"
+          },
+          {
+            "code": "105040-0",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood by calculation"
+          },
+          {
+            "code": "105274-5",
+            "display": "Hemoglobin [Mass/volume] in Venous blood by calculation"
+          },
+          {
+            "code": "105300-8",
+            "display": "Hemoglobin [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "109484-6",
+            "display": "Hemoglobin [Measurement] in Arterial blood"
+          },
+          {
+            "code": "109886-2",
+            "display": "Hemoglobin [Measurement] in Venous blood"
+          },
+          {
+            "code": "109887-0",
+            "display": "Hemoglobin [Measurement] in Mixed venous blood"
+          },
+          {
+            "code": "110885-1",
+            "display": "Hemoglobin [Measurement] in Blood"
+          },
+          {
+            "code": "14775-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood by Oximetry"
+          },
+          {
+            "code": "20509-6",
+            "display": "Hemoglobin [Mass/volume] in Blood by calculation"
+          },
+          {
+            "code": "28539-5",
+            "display": "MCH [Entitic mass]"
+          },
+          {
+            "code": "30313-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "30350-3",
+            "display": "Hemoglobin [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "30351-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood"
+          },
+          {
+            "code": "30352-9",
+            "display": "Hemoglobin [Mass/volume] in Capillary blood"
+          },
+          {
+            "code": "30353-7",
+            "display": "Hemoglobin [Mass/volume] in Venous cord blood"
+          },
+          {
+            "code": "30354-5",
+            "display": "Hemoglobin [Mass/volume] in Arterial cord blood"
+          },
+          {
+            "code": "32017-6",
+            "display": "Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis"
+          },
+          {
+            "code": "33025-8",
+            "display": "Hemoglobin [Mass/volume] in Venous cord blood by calculation"
+          },
+          {
+            "code": "33026-6",
+            "display": "Hemoglobin [Mass/volume] in Arterial cord blood by calculation"
+          },
+          {
+            "code": "33509-1",
+            "display": "Hemoglobin [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "33517-4",
+            "display": "Hemoglobin [Presence] in Body fluid"
+          },
+          {
+            "code": "34618-9",
+            "display": "Hemoglobin [Presence] in Specimen"
+          },
+          {
+            "code": "35183-3",
+            "display": "Hemoglobin [Mass or Moles/volume] in Plasma"
+          },
+          {
+            "code": "40719-7",
+            "display": "Hemoglobin [Mass/volume] in Cord blood"
+          },
+          {
+            "code": "42248-5",
+            "display": "Hemoglobin.other/Hemoglobin.total in Blood by HPLC"
+          },
+          {
+            "code": "42810-2",
+            "display": "Hemoglobin [Entitic mass] in Reticulocytes"
+          },
+          {
+            "code": "47278-7",
+            "display": "MCH [Entitic mass] in Cord blood"
+          },
+          {
+            "code": "48035-0",
+            "display": "Hemoglobin [Presence] in Cerebral spinal fluid"
+          },
+          {
+            "code": "48343-8",
+            "display": "Hemoglobin.other/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "48725-6",
+            "display": "Hemoglobin [Mass/volume] in Blood --pre therapeutic phlebotomy"
+          },
+          {
+            "code": "49137-3",
+            "display": "Hemoglobin [Mass/volume] in Urine by Test strip"
+          },
+          {
+            "code": "50559-4",
+            "display": "Hemoglobin [Mass/volume] in Urine by Automated test strip"
+          },
+          {
+            "code": "54289-4",
+            "display": "Hemoglobin [Mass/volume] in Blood from Blood product unit"
+          },
+          {
+            "code": "55782-7",
+            "display": "Hemoglobin [Mass/volume] in Blood by Oximetry"
+          },
+          {
+            "code": "57751-0",
+            "display": "Hemoglobin [Presence] in Urine by Automated test strip"
+          },
+          {
+            "code": "5794-3",
+            "display": "Hemoglobin [Presence] in Urine by Test strip"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hemoglobin [Moles/volume] in Blood"
+          },
+          {
+            "code": "59468-9",
+            "display": "MCH [Entitic substance]"
+          },
+          {
+            "code": "61180-6",
+            "display": "Hemoglobin [Mass/volume] in Blood from Fetus"
+          },
+          {
+            "code": "62243-1",
+            "display": "MCH [Entitic mass] in Fetus by Automated count"
+          },
+          {
+            "code": "69950-4",
+            "display": "Hemoglobin [Mass/volume] in Pericardial fluid"
+          },
+          {
+            "code": "71694-4",
+            "display": "Hemoglobin [Entitic mass] in Reticulocytes by Automated count"
+          },
+          {
+            "code": "717-9",
+            "display": "Hemoglobin [Presence] in Blood"
+          },
+          {
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "719-5",
+            "display": "Hemoglobin [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "722-9",
+            "display": "Hemoglobin [Mass/volume] in Pleural fluid"
+          },
+          {
+            "code": "723-7",
+            "display": "Hemoglobin [Mass/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "724-5",
+            "display": "Hemoglobin [Mass/volume] in Synovial fluid"
+          },
+          {
+            "code": "725-2",
+            "display": "Hemoglobin [Presence] in Urine"
+          },
+          {
+            "code": "726-0",
+            "display": "Hemoglobin [Mass/volume] in Urine"
+          },
+          {
+            "code": "73895-5",
+            "display": "Hemoglobin [Entitic substance] in Reticulocytes by Automated count"
+          },
+          {
+            "code": "75928-2",
+            "display": "Hemoglobin [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "76768-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry"
+          },
+          {
+            "code": "76769-9",
+            "display": "Hemoglobin [Mass/volume] in Venous blood by Oximetry"
+          },
+          {
+            "code": "785-6",
+            "display": "MCH [Entitic mass] by Automated count"
+          },
+          {
+            "code": "93846-4",
+            "display": "Hemoglobin [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "97550-8",
+            "display": "Hemoglobin [Mass/volume] in Central venous blood by calculation"
+          },
+          {
+            "code": "97555-7",
+            "display": "Hemoglobin [Mass/volume] in Central venous blood by Oximetry"
+          },
+          {
+            "code": "97556-5",
+            "display": "Hemoglobin [Mass/volume] in Capillary blood by Oximetry"
+          }
+        ]
+      }
+    ]
+  }
+}

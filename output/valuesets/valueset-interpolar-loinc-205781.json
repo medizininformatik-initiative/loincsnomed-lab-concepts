@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-205781",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-205781",
+  "version": "3.6",
+  "name": "InterpolarLOINC205781",
+  "title": "Interpolar LOINC Group: Vancomycin [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 20578-1 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "20578-1",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "31012-8",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "39796-8",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma --peak"
+          },
+          {
+            "code": "39797-6",
+            "display": "Vancomycin [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "4090-7",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --peak"
+          },
+          {
+            "code": "4091-5",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --random"
+          },
+          {
+            "code": "4092-3",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "59381-4",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --post dialysis"
+          },
+          {
+            "code": "97657-1",
+            "display": "Vancomycin [Mass/volume] in Serum or Plasma --2 hours post dose"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "interpolar-loinc-143347",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/interpolar-loinc-143347",
+  "version": "3.6",
+  "name": "InterpolarLOINC143347",
+  "title": "Interpolar LOINC Group: Lithium [Mol/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR",
+  "description": "ValueSet containing LOINC primary code 14334-7 and all quantitatively comparable secondary codes from Interpolar mapping v3.6",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "14334-7",
+            "display": "Lithium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "25461-5",
+            "display": "Lithium, [Moles/volume] in Blood"
+          },
+          {
+            "code": "3719-2",
+            "display": "Lithium [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3723-4",
+            "display": "Lithium [Mass/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "74806-1",
+            "display": "Lithium [Moles/volume] in Serum or Plasma --trough"
+          },
+          {
+            "code": "80970-7",
+            "display": "Lithium free [Moles/volume] in Serum or Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

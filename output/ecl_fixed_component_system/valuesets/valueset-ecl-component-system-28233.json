@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-system-28233",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-system-28233",
+  "version": "1.0",
+  "name": "ECLComponentSystem28233",
+  "title": "ECL Component+System: Kalium [Masse/Volumen] in Serum oder Plasma",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using Component=304048005 AND System=122592007 for LOINC 2823-3",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "108797-2",
+            "display": "LOINC 108797-2"
+          },
+          {
+            "code": "12812-4",
+            "display": "LOINC 12812-4"
+          },
+          {
+            "code": "12813-2",
+            "display": "LOINC 12813-2"
+          },
+          {
+            "code": "22760-3",
+            "display": "LOINC 22760-3"
+          },
+          {
+            "code": "2823-3",
+            "display": "LOINC 2823-3"
+          },
+          {
+            "code": "29349-8",
+            "display": "LOINC 29349-8"
+          },
+          {
+            "code": "42569-4",
+            "display": "LOINC 42569-4"
+          },
+          {
+            "code": "51618-7",
+            "display": "LOINC 51618-7"
+          },
+          {
+            "code": "93998-3",
+            "display": "LOINC 93998-3"
+          },
+          {
+            "code": "94007-2",
+            "display": "LOINC 94007-2"
+          }
+        ]
+      }
+    ]
+  }
+}

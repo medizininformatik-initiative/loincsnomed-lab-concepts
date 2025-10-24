@@ -1,0 +1,322 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ecl-component-115584",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/ecl-component-115584",
+  "version": "1.0",
+  "name": "ECLComponent115584",
+  "title": "ECL Fixed Component: pH von Blut",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-13",
+  "publisher": "MII INTERPOLAR - ECL Experiment",
+  "description": "ECL-generated ValueSet using fixed Component=89177007 for LOINC 11558-4",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10582-5",
+            "display": "pH of Cervical mucus"
+          },
+          {
+            "code": "106930-1",
+            "display": "pH of Urine by pH-metry"
+          },
+          {
+            "code": "106982-2",
+            "display": "pH of Arterial cord blood by calculation adjusted to eucapnic level"
+          },
+          {
+            "code": "11558-4",
+            "display": "pH of Blood"
+          },
+          {
+            "code": "14873-4",
+            "display": "pH of Cord blood"
+          },
+          {
+            "code": "17433-4",
+            "display": "pH of Specimen"
+          },
+          {
+            "code": "19213-8",
+            "display": "pH of Mixed venous blood"
+          },
+          {
+            "code": "27378-9",
+            "display": "pH of 24 hour Urine"
+          },
+          {
+            "code": "2743-3",
+            "display": "pH of Amniotic fluid"
+          },
+          {
+            "code": "2744-1",
+            "display": "pH of Arterial blood"
+          },
+          {
+            "code": "2745-8",
+            "display": "pH of Capillary blood"
+          },
+          {
+            "code": "2746-6",
+            "display": "pH of Venous blood"
+          },
+          {
+            "code": "2747-4",
+            "display": "pH of Cerebral spinal fluid"
+          },
+          {
+            "code": "2748-2",
+            "display": "pH of Body fluid"
+          },
+          {
+            "code": "2749-0",
+            "display": "pH of Gastric fluid"
+          },
+          {
+            "code": "2750-8",
+            "display": "pH of Pleural fluid"
+          },
+          {
+            "code": "2751-6",
+            "display": "pH of Peritoneal fluid"
+          },
+          {
+            "code": "2752-4",
+            "display": "pH of Semen"
+          },
+          {
+            "code": "2753-2",
+            "display": "pH of Serum or Plasma"
+          },
+          {
+            "code": "2754-0",
+            "display": "pH of Synovial fluid"
+          },
+          {
+            "code": "2755-7",
+            "display": "pH of Stool"
+          },
+          {
+            "code": "2756-5",
+            "display": "pH of Urine"
+          },
+          {
+            "code": "28646-8",
+            "display": "pH of Arterial cord blood"
+          },
+          {
+            "code": "28647-6",
+            "display": "pH of Venous cord blood"
+          },
+          {
+            "code": "33254-4",
+            "display": "pH of Arterial blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "33417-7",
+            "display": "pH of Pericardial fluid"
+          },
+          {
+            "code": "33913-5",
+            "display": "pH of Capillary blood from Fetus"
+          },
+          {
+            "code": "35326-8",
+            "display": "pH of Body fluid--5th specimen post Sincalide"
+          },
+          {
+            "code": "35327-6",
+            "display": "pH of Body fluid--4th specimen post Sincalide"
+          },
+          {
+            "code": "35328-4",
+            "display": "pH of Body fluid--3rd specimen post Sincalide"
+          },
+          {
+            "code": "35329-2",
+            "display": "pH of Body fluid--2nd specimen post Sincalide"
+          },
+          {
+            "code": "35330-0",
+            "display": "pH of Body fluid--1st specimen post Sincalide"
+          },
+          {
+            "code": "35747-5",
+            "display": "Hydrogen ion [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "35748-3",
+            "display": "Hydrogen ion [Moles/volume] adjusted to patient's actual temperature in Arterial blood"
+          },
+          {
+            "code": "39485-8",
+            "display": "pH of Capillary blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "39486-6",
+            "display": "pH of Venous blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "42670-0",
+            "display": "pH of Vitreous fluid"
+          },
+          {
+            "code": "42728-6",
+            "display": "pH of Ocular fluid"
+          },
+          {
+            "code": "47720-8",
+            "display": "pH of Cord blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "48037-6",
+            "display": "pH of Vaginal fluid"
+          },
+          {
+            "code": "49698-4",
+            "display": "pH of Arterial cord blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "49699-2",
+            "display": "pH of Venous cord blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "49701-6",
+            "display": "pH of Blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "50560-2",
+            "display": "pH of Urine by Automated test strip"
+          },
+          {
+            "code": "50858-0",
+            "display": "Hydrogen ion [Moles/volume] in Mixed venous cord blood"
+          },
+          {
+            "code": "50859-8",
+            "display": "Hydrogen ion [Moles/volume] in Venous cord blood"
+          },
+          {
+            "code": "50860-6",
+            "display": "Hydrogen ion [Moles/volume] in Arterial cord blood"
+          },
+          {
+            "code": "50861-4",
+            "display": "Hydrogen ion [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "50862-2",
+            "display": "Hydrogen ion [Moles/volume] in Cord blood"
+          },
+          {
+            "code": "50863-0",
+            "display": "Hydrogen ion [Moles/volume] in Blood"
+          },
+          {
+            "code": "50864-8",
+            "display": "Hydrogen ion [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "50865-5",
+            "display": "Hydrogen ion [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "50895-2",
+            "display": "pH of Pleural fluid by Test strip"
+          },
+          {
+            "code": "50896-0",
+            "display": "pH of Body fluid by Test strip"
+          },
+          {
+            "code": "50897-8",
+            "display": "pH of 24 hour Urine by Test strip"
+          },
+          {
+            "code": "50980-2",
+            "display": "pH of Mixed venous blood adjusted to patient's actual temperature"
+          },
+          {
+            "code": "53143-4",
+            "display": "Hydrogen ion [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "53600-3",
+            "display": "pH of Blood product unit"
+          },
+          {
+            "code": "53651-6",
+            "display": "pH of 2 hour Urine"
+          },
+          {
+            "code": "53652-4",
+            "display": "pH of 4 hour Urine"
+          },
+          {
+            "code": "53653-2",
+            "display": "pH of Bile fluid"
+          },
+          {
+            "code": "53654-0",
+            "display": "pH of Dialysis fluid"
+          },
+          {
+            "code": "55968-2",
+            "display": "pH of Total parental nutrition"
+          },
+          {
+            "code": "55976-5",
+            "display": "pH of Nonbiological fluid"
+          },
+          {
+            "code": "56963-2",
+            "display": "pH of Saliva (oral fluid)"
+          },
+          {
+            "code": "5803-2",
+            "display": "pH of Urine by Test strip"
+          },
+          {
+            "code": "68381-3",
+            "display": "pH of Synovial fluid by Test strip"
+          },
+          {
+            "code": "68382-1",
+            "display": "pH of Pericardial fluid by Test strip"
+          },
+          {
+            "code": "68459-7",
+            "display": "pH of Peritoneal fluid by Test strip"
+          },
+          {
+            "code": "72269-4",
+            "display": "pH of Vaginal fluid by Test strip"
+          },
+          {
+            "code": "80830-3",
+            "display": "pH of Lower respiratory specimen"
+          },
+          {
+            "code": "9481-3",
+            "display": "pH of Water"
+          },
+          {
+            "code": "96717-4",
+            "display": "pH of Prostatic fluid"
+          },
+          {
+            "code": "97536-7",
+            "display": "pH of Central venous blood"
+          },
+          {
+            "code": "97537-5",
+            "display": "pH of Central venous blood adjusted to patient's actual temperature"
+          }
+        ]
+      }
+    ]
+  }
+}
