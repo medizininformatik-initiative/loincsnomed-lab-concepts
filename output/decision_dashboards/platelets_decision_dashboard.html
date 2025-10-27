@@ -113,7 +113,7 @@
     <div class="header">
         <h1>ECL Decision Dashboard: PLATELETS</h1>
         <p>Primary LOINC: <strong>777-3</strong> - Platelets [#/volume] in Blood by Automated count</p>
-        <p>Generated: 2025-10-23 20:15:17</p>
+        <p>Generated: 2025-10-27 09:31:16</p>
     </div>
 
     <div class="section">
@@ -179,6 +179,14 @@
                 <p>F1: 0.133</p>
             </div>
 
+            <div class="stat-card">
+                <h4>Refined Query V2</h4>
+                <p>Codes: <span class="stat-value">7</span></p>
+                <p>Recall: <span class="good">100.0%</span></p>
+                <p>Precision: <span class="poor">14.3%</span></p>
+                <p>F1: 0.250</p>
+            </div>
+
         </div>
     </div>
 
@@ -233,6 +241,11 @@
     704327008 |Direct site| = << 119297000 |Blood specimen (specimen)|</div>
         <p>Results: 14 SNOMED concepts, 14 LOINC codes</p>
 
+        <h3>Refined Query V2</h3>
+        <p><em>Uses Component = Platelet AND Property = Number concentration (118550005) to capture platelet counts. Excludes cord blood and plasma specimens to focus on routine blood platelet counts.</em></p>
+        <div class="ecl-query"><< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 704327008 |Direct site (attribute)| != << 122556008 |Cord blood specimen (specimen)|, << 704327008 |Direct site (attribute)| != << 119361006 |Plasma specimen (specimen)|</div>
+        <p>Results: 7 SNOMED concepts, 7 LOINC codes</p>
+
     </div>
 
     <div class="section">
@@ -251,6 +264,7 @@
                     <th>Ecl Fixed Component Property</th>
                     <th>Ecl Fixed Component System</th>
                     <th>Refined Query V1</th>
+                    <th>Refined Query V2</th>
 
                 </tr>
             </thead>
@@ -262,31 +276,6 @@
                     <td></td>
                     <td></td>
                     <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                </tr>
-
-                <tr class="">
-                    <td>13056-7</td>
-                    <td>Platelets [#/volume] in Plasma by Automated count</td>
-                    <td></td>
-                    <td></td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                </tr>
-
-                <tr class="">
-                    <td>74775-8</td>
-                    <td>Platelets [#/volume] in Platelet rich plasma by Automated count</td>
-                    <td></td>
-                    <td></td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
@@ -306,6 +295,21 @@
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>13056-7</td>
+                    <td>Platelets [#/volume] in Plasma by Automated count</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -315,31 +319,6 @@
                     <td>✓</td>
                     <td class="check"></td>
                     <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                </tr>
-
-                <tr class="">
-                    <td>26516-5</td>
-                    <td>Platelets [#/volume] in Plasma</td>
-                    <td></td>
-                    <td></td>
-                    <td class="check"></td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                </tr>
-
-                <tr class="">
-                    <td>47284-5</td>
-                    <td>Platelets [#/volume] in Cord blood</td>
-                    <td></td>
-                    <td></td>
-                    <td class="check"></td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
@@ -358,18 +337,6 @@
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
-                </tr>
-
-                <tr class="">
-                    <td>55802-3</td>
-                    <td>Platelets [#/volume] in Cord blood by Estimate</td>
-                    <td></td>
-                    <td></td>
-                    <td class="check"></td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
                     <td class="check">✓</td>
                 </tr>
 
@@ -384,6 +351,21 @@
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>74775-8</td>
+                    <td>Platelets [#/volume] in Platelet rich plasma by Automated count</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -392,6 +374,7 @@
                     <td></td>
                     <td></td>
                     <td class="check"></td>
+                    <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
@@ -410,6 +393,49 @@
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+
+                <tr class="">
+                    <td>26516-5</td>
+                    <td>Platelets [#/volume] in Plasma</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
+                </tr>
+
+                <tr class="">
+                    <td>47284-5</td>
+                    <td>Platelets [#/volume] in Cord blood</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
+                </tr>
+
+                <tr class="">
+                    <td>55802-3</td>
+                    <td>Platelets [#/volume] in Cord blood by Estimate</td>
+                    <td></td>
+                    <td></td>
+                    <td class="check"></td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -423,6 +449,7 @@
                     <td class="check"></td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -436,6 +463,7 @@
                     <td class="check"></td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -449,6 +477,7 @@
                     <td class="check"></td>
                     <td class="check">✓</td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -460,6 +489,7 @@
                     <td class="check">✓</td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
                 </tr>
@@ -475,6 +505,7 @@
                     <td class="check">✓</td>
                     <td class="check"></td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -488,6 +519,7 @@
                     <td class="check"></td>
                     <td class="check">✓</td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -498,6 +530,7 @@
                     <td class="check"></td>
                     <td class="check">✓</td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
@@ -514,6 +547,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -524,6 +558,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
@@ -540,6 +575,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -550,6 +586,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
@@ -566,6 +603,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -579,6 +617,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
+                    <td class="check"></td>
                 </tr>
 
                 <tr class="">
@@ -589,6 +628,7 @@
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check">✓</td>
+                    <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>
                     <td class="check"></td>

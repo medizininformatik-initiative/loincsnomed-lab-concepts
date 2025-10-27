@@ -1,0 +1,11 @@
+{
+  "description": "Custom ECL queries for Platelets/Thrombocyte Count (LOINC 777-3, 26515-7)",
+  "queries": [
+    {
+      "id": "refined_query_v2",
+      "name": "Refined Query V2 (Property-Specific: Number Concentration, Excl. Cord & Plasma)",
+      "description": "Uses Component = Platelet AND Property = Number concentration (118550005) to capture platelet counts. Excludes cord blood and plasma specimens to focus on routine blood platelet counts.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 704327008 |Direct site (attribute)| != << 122556008 |Cord blood specimen (specimen)|, << 704327008 |Direct site (attribute)| != << 119361006 |Plasma specimen (specimen)|"
+    }
+  ]
+}
