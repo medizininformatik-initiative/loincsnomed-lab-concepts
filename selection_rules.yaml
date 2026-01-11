@@ -1,0 +1,686 @@
+# Laboratory ValueSet Selection Rules Framework
+# Version: 1.0
+# Last Updated: 2026-01-11
+# Purpose: Define selection criteria for three-tier ValueSet hierarchy
+
+# ==============================================================================
+# OVERVIEW
+# ==============================================================================
+#
+# This file defines selection rules for generating LOINC ValueSets at three
+# granularity levels, each optimized for different clinical use cases:
+#
+#   1. FOCUSED    - Clinical Decision Support (CDS) alerts and rules
+#   2. MODERATE   - EHR data extraction and quality reporting
+#   3. COMPREHENSIVE - Research cohorts and phenotyping
+#
+# Medical staff should review these SELECTION RULES, not individual ValueSets.
+# Approval means: "These rules are clinically sound for generating ValueSets."
+
+# ==============================================================================
+# USE CASE DEFINITIONS
+# ==============================================================================
+
+use_cases:
+
+  # ----------------------------------------------------------------------------
+  # FOCUSED: Clinical Decision Support
+  # ----------------------------------------------------------------------------
+  focused:
+    name: "Focused (Clinical Decision Support)"
+    tier: 1
+    abbreviation: "CDS"
+
+    primary_purpose: "Automated clinical alerts, quality measures, and decision support rules"
+
+    target_users:
+      - "CDS rule engines"
+      - "Quality measure calculators"
+      - "Automated screening alerts"
+      - "Clinical pathway triggers"
+
+    key_requirement: "High precision (minimize false positives to avoid alert fatigue)"
+
+    typical_size: "5-10 LOINC codes per lab parameter"
+
+    clinical_rationale: |
+      Alert fatigue is a patient safety risk. CDS rules must fire only on
+      appropriate tests. Example: An anemia alert should trigger on standard
+      CBC hemoglobin, NOT on HbA1c or carboxyhemoglobin (different analytes).
+
+      Accept some false negatives (missed alerts) to avoid false positives
+      (inappropriate alerts that erode clinician trust).
+
+    # Selection criteria for INCLUSION
+    inclusion_criteria:
+      - criterion: "Primary measurement of the analyte"
+        example: "Hemoglobin mass concentration, not HbA1c or hemoglobin variants"
+        rationale: "Avoid triggering on related but different clinical concepts"
+
+      - criterion: "Most common specimen type"
+        example: "Blood, serum, or plasma (not CSF, ascites, tissue)"
+        rationale: "Standard clinical testing specimens only"
+
+      - criterion: "Standard measurement property"
+        example: "Mass concentration or molar concentration"
+        rationale: "Avoid exotic measurement types not used in routine care"
+
+      - criterion: "WHO-approved reference methods when available"
+        example: "IFCC reference method for HbA1c"
+        rationale: "Standardized methods ensure comparable thresholds"
+
+    # Selection criteria for EXCLUSION
+    exclusion_criteria:
+      - criterion: "Variant analytes"
+        example: "Exclude HbA1c when defining hemoglobin ValueSet"
+        rationale: "Different clinical meaning despite shared component"
+
+      - criterion: "Calculated values (unless only form exists)"
+        example: "Exclude calculated hemoglobin unless it's the primary measurement"
+        rationale: "Prefer direct measurements for clinical decisions"
+
+      - criterion: "Exotic specimen types"
+        example: "Exclude CSF, ascites fluid, tissue specimens"
+        rationale: "Non-routine specimens have different clinical contexts"
+
+      - criterion: "Research-only assays"
+        example: "Experimental methods not validated for clinical use"
+        rationale: "Only clinically validated tests for decision support"
+
+      - criterion: "Deprecated codes"
+        example: "LOINC codes marked as deprecated or discouraged"
+        rationale: "Current codes only for active clinical use"
+
+    # ECL query approach mapping
+    ecl_approach:
+      primary: "refined"
+      alternatives: ["fixed_component_property", "fixed_component_system"]
+      description: |
+        Use ECL with all three attributes fixed:
+        - Component = exact concept (no descendants)
+        - Property = specific property (mass concentration, molar concentration)
+        - Direct site = standard specimen (blood, serum, plasma)
+
+        Example:
+        << 363787002 |Observable entity| :
+           246093002 |Component| = 38082009 |Hemoglobin|,
+           370130000 |Property| = << 118556004 |Mass concentration|,
+           704327008 |Direct site| = << 119297000 |Blood specimen|
+
+    # Validation requirements
+    validation:
+      reference_sets:
+        - name: "Interpolar"
+          expected_overlap: ">= 95%"
+          rationale: "Expert-curated mappings should be nearly fully covered"
+
+        - name: "MII Top 300"
+          expected_overlap: ">= 90%"
+          rationale: "Common tests should be well-represented"
+
+      clinical_review:
+        - question: "Can a CDS rule safely fire on ANY code in this set?"
+          pass_criteria: "Yes, without reviewing individual lab results"
+
+        - question: "Are all codes clinically equivalent for decision thresholds?"
+          pass_criteria: "Yes, same reference ranges and clinical interpretation"
+
+        - question: "Would this set cause alert fatigue if used in CDS?"
+          pass_criteria: "No, precision is high enough to maintain trust"
+
+      spot_check:
+        required: true
+        sample_size: "3-5 codes per ValueSet"
+        review_questions:
+          - "Is this a standard clinical test?"
+          - "Same specimen type as other codes?"
+          - "Same measurement property?"
+          - "Appropriate for automated alerts?"
+
+    # Example ValueSets
+    examples:
+      - lab_parameter: "Hemoglobin"
+        loinc_primary: "59260-0"
+        code_count: 5
+        included_codes:
+          - "718-7: Hemoglobin [Mass/volume] in Blood"
+          - "59260-0: Hemoglobin [Mass/volume] in Blood by Oximetry"
+          - "20509-6: Hemoglobin [Mass/volume] in Blood by calculation"
+          - "30350-3: Hemoglobin [Mass/volume] in Venous blood"
+          - "30351-1: Hemoglobin [Mass/volume] in Arterial blood"
+        excluded_examples:
+          - "4548-4: Hemoglobin A1c [Mass/volume] in Blood - EXCLUDED (variant analyte)"
+          - "2614-6: Methemoglobin [Mass/volume] in Blood - EXCLUDED (variant analyte)"
+          - "20572-4: Hemoglobin [Mass/volume] in Blood by Copper sulfate - EXCLUDED (non-standard method)"
+        clinical_use_case: "Alert: Hemoglobin < 7.0 g/dL → Consider transfusion"
+
+      - lab_parameter: "Creatinine"
+        loinc_primary: "2160-0"
+        code_count: 8
+        clinical_use_case: "Alert: Patient on metformin, creatinine > 1.5 mg/dL → Review drug safety"
+        rationale: "Serum/plasma creatinine only for GFR calculation and drug monitoring"
+
+      - lab_parameter: "Glucose"
+        loinc_primary: "2345-7"
+        code_count: 12
+        clinical_use_case: "Diabetes screening: Fasting glucose >126 mg/dL on two occasions"
+        rationale: "Fasting and random glucose in standard specimens only"
+
+  # ----------------------------------------------------------------------------
+  # MODERATE: EHR Data Extraction
+  # ----------------------------------------------------------------------------
+  moderate:
+    name: "Moderate (EHR Data Extraction)"
+    tier: 2
+    abbreviation: "EHR"
+
+    primary_purpose: "Data warehouse queries, quality reporting, cohort identification"
+
+    target_users:
+      - "Quality reporting systems"
+      - "Data warehouse analysts"
+      - "Cohort identification tools"
+      - "Performance dashboards"
+
+    key_requirement: "Balanced precision/recall (capture clinical variation without excessive noise)"
+
+    typical_size: "30-60 LOINC codes per lab parameter"
+
+    clinical_rationale: |
+      Healthcare sites use different laboratory methods and specimen types.
+      Quality metrics must capture this real-world variation to avoid
+      underestimating testing rates. However, exotic tests and variants
+      should still be excluded to maintain meaningful aggregate statistics.
+
+      Balance false negatives (missed tests) with false positives (inappropriate
+      inclusions). Population-level statistics are robust to some variation.
+
+    inclusion_criteria:
+      - criterion: "All codes from Focused tier"
+        example: "Start with the 5-10 focused codes"
+        rationale: "Moderate is a superset of Focused"
+
+      - criterion: "Alternative measurement methods"
+        example: "HPLC, immunoassay, electrophoresis, spectrophotometry"
+        rationale: "Different sites use different validated methods"
+
+      - criterion: "Common specimen variations"
+        example: "Arterial blood, venous blood, capillary blood, cord blood"
+        rationale: "Clinical practice uses specimen variations appropriately"
+
+      - criterion: "Point-of-care testing methods"
+        example: "Bedside glucose meters, rapid testing devices"
+        rationale: "POC testing is clinically significant and reportable"
+
+      - criterion: "Calculated values when clinically relevant"
+        example: "Calculated LDL cholesterol alongside direct measurement"
+        rationale: "Calculation methods are clinically acceptable"
+
+    exclusion_criteria:
+      - criterion: "Variant analytes (still excluded)"
+        example: "No HbA1c in hemoglobin ValueSet"
+        rationale: "Different clinical meaning despite shared component"
+
+      - criterion: "Very exotic specimen types"
+        example: "Research specimens (tissue, exotic fluids)"
+        rationale: "Not part of routine clinical care statistics"
+
+      - criterion: "Purely research assays"
+        example: "Experimental methods without clinical validation"
+        rationale: "Quality metrics should reflect standard care"
+
+    ecl_approach:
+      primary: "fixed_component"
+      alternatives: ["fixed_component_property", "fixed_component_system"]
+      description: |
+        Use ECL with component fixed, property/system as descendants:
+        - Component = exact concept (no descendants)
+        - Property = descendants (capture method variations)
+        - Direct site = descendants (capture specimen variations)
+
+        Example (Component + Property descendants):
+        << 363787002 |Observable entity| :
+           246093002 |Component| = 38082009 |Hemoglobin|,
+           370130000 |Property| = << 118556004 |Mass concentration|
+
+        Example (Component + System descendants):
+        << 363787002 |Observable entity| :
+           246093002 |Component| = 38082009 |Hemoglobin|,
+           704327008 |Direct site| = << 119297000 |Blood specimen|
+
+    validation:
+      reference_sets:
+        - name: "MII Top 300"
+          expected_overlap: "~100%"
+          rationale: "Should capture ALL common tests from reference"
+
+        - name: "Interpolar"
+          expected_overlap: ">= 95%"
+          rationale: "Expert mappings should be fully covered"
+
+      clinical_review:
+        - question: "Does this capture real-world method variation across sites?"
+          pass_criteria: "Yes, includes HPLC, immunoassay, etc. variations"
+
+        - question: "Would this set give accurate quality measure denominators?"
+          pass_criteria: "Yes, captures testing without excessive noise"
+
+        - question: "Are variant analytes still properly excluded?"
+          pass_criteria: "Yes, HbA1c not in hemoglobin set, etc."
+
+      spot_check:
+        required: true
+        sample_size: "5-7 codes per ValueSet"
+        review_questions:
+          - "Is this a clinically relevant method variation?"
+          - "Is the specimen type used in routine care?"
+          - "Would this code appear in quality measure queries?"
+
+    examples:
+      - lab_parameter: "Hemoglobin"
+        loinc_primary: "59260-0"
+        code_count: 50
+        additional_beyond_focused:
+          methods:
+            - "Hemoglobin by HPLC"
+            - "Hemoglobin by electrophoresis"
+            - "Hemoglobin by CO-oximetry"
+          specimens:
+            - "Capillary blood"
+            - "Cord blood"
+            - "Mixed venous blood"
+        clinical_use_case: "Quality measure: % of anemia patients with annual CBC"
+        rationale: "Capture all common clinical methods and specimen types"
+
+      - lab_parameter: "HbA1c"
+        loinc_primary: "4548-4"
+        code_count: 15
+        additional_beyond_focused:
+          methods:
+            - "HbA1c by HPLC"
+            - "HbA1c by immunoassay"
+            - "HbA1c by electrophoresis"
+            - "HbA1c by enzymatic method"
+        clinical_use_case: "Diabetes quality measure: % with HbA1c <7.0%"
+        rationale: "Multiple methods used across sites for HbA1c measurement"
+
+  # ----------------------------------------------------------------------------
+  # COMPREHENSIVE: Research & Phenotyping
+  # ----------------------------------------------------------------------------
+  comprehensive:
+    name: "Comprehensive (Research & Phenotyping)"
+    tier: 3
+    abbreviation: "Research"
+
+    primary_purpose: "Research cohorts, comprehensive phenotyping, hypothesis generation"
+
+    target_users:
+      - "Clinical researchers"
+      - "Phenotyping algorithms"
+      - "Retrospective data analysis"
+      - "Hypothesis generation tools"
+
+    key_requirement: "High recall (minimize false negatives, capture everything possibly related)"
+
+    typical_size: "200+ LOINC codes per lab parameter"
+
+    clinical_rationale: |
+      Research requires maximum sensitivity. Missing relevant cases biases
+      results and undermines research validity. False positives can be filtered
+      through manual chart review (typical research workflow), but false
+      negatives cannot be recovered.
+
+      Accept many false positives (requiring manual review) to minimize false
+      negatives (missing cases that bias research findings).
+
+    inclusion_criteria:
+      - criterion: "All codes from Moderate tier"
+        example: "Start with 30-60 moderate codes"
+        rationale: "Comprehensive is a superset of Moderate"
+
+      - criterion: "All variant analytes and subtypes"
+        example: "HbA1c, HbF, HbS, carboxyhemoglobin, methemoglobin"
+        rationale: "Research may need all hemoglobin-related abnormalities"
+
+      - criterion: "All specimen types (including exotic)"
+        example: "CSF, ascites fluid, tissue, amniotic fluid"
+        rationale: "Research contexts may involve non-standard specimens"
+
+      - criterion: "All measurement methods (including research)"
+        example: "Experimental assays, mass spectrometry variants"
+        rationale: "Comprehensive coverage for exploratory analysis"
+
+      - criterion: "Calculated indices using the analyte"
+        example: "MCH, MCHC when querying hemoglobin"
+        rationale: "Derived measures may be clinically relevant"
+
+      - criterion: "Historical/deprecated codes"
+        example: "Old LOINC codes for retrospective studies"
+        rationale: "Longitudinal research needs historical code coverage"
+
+    exclusion_criteria:
+      - criterion: "Only completely unrelated concepts"
+        example: "Exclude bilirubin when querying creatinine"
+        rationale: "Minimal exclusions for maximum recall"
+
+    ecl_approach:
+      primary: "component_descendants"
+      alternatives: ["fixed_component"]
+      description: |
+        Use ECL with component descendants (broadest approach):
+        - Component = concept OR any descendant
+        - No property or specimen constraints
+
+        Example:
+        << 363787002 |Observable entity| :
+           246093002 |Component| = << 38082009 |Hemoglobin|
+
+        This captures:
+        - All hemoglobin measurements
+        - All hemoglobin variants (HbA1c, HbF, HbS, etc.)
+        - All specimen types
+        - All measurement methods
+        - Calculated indices (MCH, MCHC)
+
+    validation:
+      reference_sets:
+        - name: "Interpolar"
+          expected_overlap: "100%"
+          rationale: "Should capture everything in expert reference"
+
+        - name: "MII Top 300"
+          expected_overlap: "100%"
+          rationale: "Should capture everything in common tests"
+
+      clinical_review:
+        - question: "Are there ANY related codes we're missing?"
+          pass_criteria: "No, comprehensive coverage via ECL descendants"
+
+        - question: "Is manual review of this set feasible for research?"
+          pass_criteria: "Yes, 200-500 codes is reviewable for research cohort"
+
+        - question: "Would a researcher miss cases using this set?"
+          pass_criteria: "No, high recall minimizes false negatives"
+
+      spot_check:
+        required: true
+        sample_size: "10-15 codes per ValueSet (sampling from different clusters)"
+        review_questions:
+          - "Is this concept related to the lab parameter?"
+          - "Could this be relevant for any research question?"
+          - "Is this code completely unrelated (should be excluded)?"
+
+    examples:
+      - lab_parameter: "Hemoglobin"
+        loinc_primary: "59260-0"
+        code_count: 267
+        additional_beyond_moderate:
+          variants:
+            - "HbA1c (glycosylated hemoglobin)"
+            - "HbF (fetal hemoglobin)"
+            - "HbS (sickle cell hemoglobin)"
+            - "Carboxyhemoglobin"
+            - "Methemoglobin"
+          calculated:
+            - "Mean corpuscular hemoglobin (MCH)"
+            - "MCH concentration (MCHC)"
+          exotic_specimens:
+            - "Tissue specimens"
+            - "Ascites fluid"
+            - "Cerebrospinal fluid"
+        clinical_use_case: "Phenotype all patients with ANY hemoglobin-related abnormality"
+        rationale: "Comprehensive coverage for exploratory research queries"
+
+      - lab_parameter: "Glucose"
+        loinc_primary: "2345-7"
+        code_count: 340
+        additional_beyond_moderate:
+          - "Urine glucose"
+          - "CSF glucose"
+          - "Continuous glucose monitoring values"
+          - "Dialysate glucose"
+        clinical_use_case: "Hypoglycemia phenotyping across all body fluids and contexts"
+        rationale: "Research needs maximum recall across all glucose measurements"
+
+# ==============================================================================
+# HIERARCHICAL RELATIONSHIPS
+# ==============================================================================
+
+hierarchy:
+  principle: "Focused ⊂ Moderate ⊂ Comprehensive"
+
+  description: |
+    Each tier is a strict subset relationship:
+    - Every code in Focused MUST be in Moderate
+    - Every code in Moderate MUST be in Comprehensive
+    - No code can be in a higher tier but not in lower tiers
+
+  validation_rules:
+    - rule: "Focused ⊆ Moderate"
+      check: "All focused codes present in moderate"
+      failure_action: "Review moderate selection or focused exclusion"
+
+    - rule: "Moderate ⊆ Comprehensive"
+      check: "All moderate codes present in comprehensive"
+      failure_action: "Review comprehensive ECL query scope"
+
+    - rule: "Focused < Moderate < Comprehensive (strict size ordering)"
+      check: "|Focused| < |Moderate| < |Comprehensive|"
+      failure_action: "Review if tiers collapsed or overlap incorrectly"
+
+# ==============================================================================
+# ECL QUERY APPROACH MAPPING
+# ==============================================================================
+
+ecl_approaches:
+  # Maps ECL query patterns to use cases
+
+  refined:
+    full_name: "Refined Query (Component + Property + System)"
+    tier_mapping:
+      primary: "focused"
+      secondary: []
+    ecl_pattern: |
+      << 363787002 |Observable entity| :
+         246093002 |Component| = {ComponentID},
+         370130000 |Property| = << {PropertyID},
+         704327008 |Direct site| = << {SystemID}
+    characteristics:
+      - "Most restrictive"
+      - "All three attributes specified"
+      - "Property and System as descendants (slight variation capture)"
+    typical_code_count: "5-10"
+
+  fixed_component_property:
+    full_name: "Fixed Component + Property"
+    tier_mapping:
+      primary: "focused"
+      secondary: ["moderate"]
+    ecl_pattern: |
+      << 363787002 |Observable entity| :
+         246093002 |Component| = {ComponentID},
+         370130000 |Property| = << {PropertyID}
+    characteristics:
+      - "Constrains measurement type"
+      - "Allows specimen variation"
+    typical_code_count: "10-30"
+
+  fixed_component_system:
+    full_name: "Fixed Component + System"
+    tier_mapping:
+      primary: "focused"
+      secondary: ["moderate"]
+    ecl_pattern: |
+      << 363787002 |Observable entity| :
+         246093002 |Component| = {ComponentID},
+         704327008 |Direct site| = << {SystemID}
+    characteristics:
+      - "Constrains specimen type"
+      - "Allows measurement method variation"
+    typical_code_count: "20-40"
+
+  fixed_component:
+    full_name: "Fixed Component Only"
+    tier_mapping:
+      primary: "moderate"
+      secondary: ["comprehensive"]
+    ecl_pattern: |
+      << 363787002 |Observable entity| :
+         246093002 |Component| = {ComponentID}
+    characteristics:
+      - "Component exactly specified"
+      - "All properties and specimens included"
+    typical_code_count: "50-100"
+
+  component_descendants:
+    full_name: "Component Descendants"
+    tier_mapping:
+      primary: "comprehensive"
+      secondary: []
+    ecl_pattern: |
+      << 363787002 |Observable entity| :
+         246093002 |Component| = << {ComponentID}
+    characteristics:
+      - "Broadest approach"
+      - "Includes all component variants"
+      - "Maximum recall"
+    typical_code_count: "200-500"
+
+  precoordinated:
+    full_name: "Pre-coordinated Concept Descendants"
+    tier_mapping:
+      primary: "focused"
+      secondary: []
+    ecl_pattern: |
+      << {PrecoordinatedConceptID}
+    characteristics:
+      - "For calculated indices (MCV, MCH, MCHC)"
+      - "Single concept with descendants"
+    typical_code_count: "2-5"
+    use_when: "Lab parameter has pre-coordinated SNOMED concept (e.g., calculated indices)"
+
+# ==============================================================================
+# QUALITY GATES
+# ==============================================================================
+
+quality_gates:
+  # Automated validation checks before ValueSet publication
+
+  hierarchy_validation:
+    name: "Hierarchical Subset Validation"
+    checks:
+      - "Focused ⊆ Moderate"
+      - "Moderate ⊆ Comprehensive"
+      - "|Focused| < |Moderate| < |Comprehensive|"
+    failure_severity: "ERROR"
+
+  reference_set_overlap:
+    name: "Reference Set Comparison"
+    checks:
+      interpolar:
+        focused: ">= 95% overlap"
+        moderate: ">= 95% overlap"
+        comprehensive: "100% overlap"
+      mii_top_300:
+        focused: ">= 90% overlap"
+        moderate: "~100% overlap"
+        comprehensive: "100% overlap"
+    failure_severity: "WARNING"
+
+  size_validation:
+    name: "ValueSet Size Reasonableness"
+    checks:
+      focused: "3-15 codes (typical 5-10)"
+      moderate: "20-80 codes (typical 30-60)"
+      comprehensive: "100-1000 codes (typical 200-500)"
+    failure_severity: "WARNING"
+    rationale: "Unusual sizes may indicate query errors or edge cases"
+
+  clinical_spot_check:
+    name: "Clinical Review Spot Check"
+    process: |
+      1. Randomly sample N codes from each tier
+      2. Medical staff reviews sample codes for appropriateness
+      3. If >20% inappropriate, review entire ValueSet
+    sample_sizes:
+      focused: 3
+      moderate: 5
+      comprehensive: 10
+    failure_severity: "BLOCKING"
+
+# ==============================================================================
+# MEDICAL STAFF APPROVAL PROCESS
+# ==============================================================================
+
+approval_process:
+  scope: "Approve SELECTION RULES, not individual ValueSets"
+
+  what_to_review:
+    - item: "Use case definitions (Focused, Moderate, Comprehensive)"
+      questions:
+        - "Are these use cases clinically meaningful?"
+        - "Do the precision/recall tradeoffs make sense?"
+
+    - item: "Inclusion/exclusion criteria"
+      questions:
+        - "Are the criteria appropriate for each use case?"
+        - "Are there missing criteria or inappropriate ones?"
+
+    - item: "ECL approach mappings"
+      questions:
+        - "Do the ECL patterns match the clinical intent?"
+        - "Are there cases where the approach would fail?"
+
+    - item: "Spot-check examples (5-10 ValueSets)"
+      questions:
+        - "Does the focused set look appropriate for CDS?"
+        - "Does the moderate set capture clinical variation?"
+        - "Is the comprehensive set too broad or appropriate for research?"
+
+  what_NOT_to_review:
+    - "Individual LOINC codes in each ValueSet (too time-consuming)"
+    - "Technical ECL syntax details (automated validation)"
+    - "SNOMED concept IDs (automated mapping)"
+
+  approval_statement:
+    template: |
+      "I approve the selection rules framework defined in this file for
+      generating LOINC ValueSets for laboratory concepts. The use case
+      definitions, inclusion/exclusion criteria, and ECL approach mappings
+      are clinically sound for the MII laboratory data harmonization project."
+
+    signoff_requirements:
+      - "Laboratory medicine specialist (required)"
+      - "Clinical informatician (required)"
+      - "Quality measure expert (recommended)"
+
+  estimated_review_time: "60-90 minutes"
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  document_type: "Selection Rules Framework"
+  version: "1.0"
+  date: "2026-01-11"
+  author: "Claude (AI Assistant) with MII Project Team"
+  reviewers: []
+  approval_status: "DRAFT - Awaiting Medical Staff Review"
+
+  change_history:
+    - version: "1.0"
+      date: "2026-01-11"
+      changes: "Initial framework creation"
+      author: "Claude"
+
+  related_documents:
+    - "HIERARCHICAL_CLUSTERING.md - Detailed conceptual framework"
+    - "ECL_METHODOLOGY.md - Technical ECL query methodology"
+    - "NEXT_STEPS.md - Project roadmap and future improvements"
+    - "PROJECT_SUMMARY.md - Overall project context"
+
+  notes: |
+    This framework is designed to scale to 100+ laboratory parameters.
+    Once approved, these rules can generate ValueSets automatically via
+    ECL query execution against the LOINCSNOMED Edition.
