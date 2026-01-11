@@ -6,13 +6,13 @@ echo ""
 
 # Test 1: LOINCSNOMED Adapter (public, no auth required)
 echo "[1/2] Testing LOINCSNOMED Adapter..."
-python scripts/test_scripts/test_loincsnomed_adapter.py
+python3 scripts/test_scripts/test_loincsnomed_adapter.py
 TEST1=$?
 
 # Test 2: OntoServer Adapter (requires MII credentials)
 echo ""
 echo "[2/2] Testing OntoServer Adapter (requires MII auth)..."
-python scripts/test_scripts/test_ontoserver_adapter.py
+python3 scripts/test_scripts/test_ontoserver_adapter.py
 TEST2=$?
 
 echo ""
