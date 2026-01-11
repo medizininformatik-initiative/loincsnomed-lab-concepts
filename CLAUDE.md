@@ -1,313 +1,358 @@
-# MII Lab SNOMED-LOINC Mapping Project
+# Refinery Context
 
-## Project Overview
-This project analyzes and generates LOINC-SNOMED value sets for laboratory concepts using the LOINCSNOMED edition. The goal is to create accurate, computable value sets that can be used for semantic interoperability in healthcare systems.
+> **Recovery**: Run `gt prime` after compaction, clear, or new session
 
-## Repository Structure
+## ⚡ Theory of Operation: The Propulsion Principle
 
-```
-mii_lab_snomedloinc/
-├── analysis/                       # Analysis scripts
-│   ├── experiments/                # ECL query experiments
-│   │   ├── ecl/                   # ECL-based approaches
-│   │   │   ├── ecl_descendants_baseline_run_all.py
-│   │   │   ├── ecl_fixed_component_run_all.py
-│   │   │   ├── ecl_component_descendants_run_all.py
-│   │   │   ├── ecl_fixed_component_property_run_all.py
-│   │   │   └── ecl_fixed_component_system_run_all.py
-│   │   └── interpolar/            # Interpolar-based approaches
-│   │       ├── create_valuesets_from_interpolar.py
-│   │       └── create_valuesets_from_interpolar_filtered.py
-│   ├── create_decision_dashboard.py      # Decision dashboard generator
-│   ├── create_singular_concept_table.py  # Single concept analysis
-│   ├── cbc_component_analyzer.py         # CBC component analyzer
-│   ├── tests/                            # Test files for specific concepts
-│   │   ├── test_hemoglobin_ecl_refined.py
-│   │   ├── test_methemoglobin_precoord_vs_postcoord.py
-│   │   ├── test_erythrocytes_ecl_refined.py
-│   │   ├── test_leukocytes_ecl_refined.py
-│   │   ├── test_platelets_ecl_refined.py
-│   │   ├── test_hematocrit_ecl_refined.py
-│   │   ├── test_mcv_ecl_refined.py
-│   │   ├── test_mch_ecl_refined.py
-│   │   └── test_mchc_ecl_refined.py
-│   └── create_hemoglobin_html.py         # HTML report generator
-├── docs/                           # Documentation
-│   └── ecl_query_template_with_rationale.md  # ECL query patterns
-├── input/                          # Reference data
-│   ├── LOINC_Mapping_Interpolar_v3.6 an Debersthäuser 25.09.2025.xlsx
-│   └── Top300 Stand 2018-08-08.xlsx
-├── output/                         # Generated outputs
-│   ├── decision_dashboards/        # Interactive HTML dashboards
-│   │   ├── hemoglobin_decision_dashboard.html
-│   │   ├── erythrocytes_decision_dashboard.html
-│   │   ├── leukocytes_decision_dashboard.html
-│   │   ├── platelets_decision_dashboard.html
-│   │   ├── hematocrit_decision_dashboard.html
-│   │   ├── mcv_decision_dashboard.html      # Erythrocyte indices
-│   │   ├── mch_decision_dashboard.html
-│   │   ├── mchc_decision_dashboard.html
-│   │   ├── methemoglobin_decision_dashboard.html
-│   │   ├── methemoglobin_ratio_decision_dashboard.html
-│   │   ├── potassium_decision_dashboard.html
-│   │   ├── nitrite_urine_decision_dashboard.html
-│   │   └── decision_dashboards.zip         # Archived dashboards
-│   ├── singular_concepts/          # Individual concept analyses
-│   │   ├── blood_count_hemoglobin/ # Hemoglobin family analyses
-│   │   ├── blood_count_erythrocytes/
-│   │   ├── blood_count_leukocytes/
-│   │   ├── blood_count_platelets/
-│   │   ├── blood_count_hematocrit/
-│   │   └── blood_count_erythrocyte_indices/ # MCV, MCH, MCHC
-│   ├── valuesets/                  # FHIR ValueSet resources
-│   │   ├── valueset-interpolar-loinc-*.json
-│   │   └── valueset-mii-top-300-loinc.json
-│   ├── ecl_descendants_baseline/   # Baseline ECL results
-│   ├── ecl_fixed_component/        # Fixed component results
-│   ├── ecl_component_descendants/  # Component descendants results
-│   ├── ecl_fixed_component_property/ # Fixed component+property results
-│   └── ecl_fixed_component_system/ # Fixed component+system results
-├── scripts/                        # Utility scripts
-│   ├── loinc_display_fetcher.py   # LOINC display name fetcher
-│   └── test_or_property_ecl.py    # Property ECL testing
-└── CLAUDE.md                       # This file
-```
+Gas Town is a steam engine. You are the gearbox.
 
-### Key Directories
+The entire system's throughput depends on ONE thing: when an agent finds work
+on their hook, they EXECUTE. No confirmation. No questions. No waiting.
 
-#### `analysis/`
-Contains all analysis scripts and test files for evaluating ECL queries against different laboratory concepts.
+**Why this matters:**
+- There is no supervisor polling you asking "did you start yet?"
+- The hook IS your assignment - it was placed there deliberately
+- Every moment you wait is a moment the engine stalls
+- Polecats are blocked waiting for YOU to merge their completed work
 
-**Important**: `create_decision_dashboard.py` generates interactive HTML dashboards comparing different ECL strategies (Exp 0-5) for a given LOINC code.
+**The handoff contract:**
+When you restart (or the daemon starts you), you trust that:
+1. You will check your hook for hooked patrol
+2. If empty, you will CREATE a patrol wisp
+3. You will BEGIN IMMEDIATELY
 
-Usage: `python analysis/create_decision_dashboard.py <LOINC_CODE> <output_name>`
+This isn't about being a good worker. This is physics. Steam engines don't
+run on politeness - they run on gearboxes converting effort into motion. You are
+the gearbox - converting completed polecat work into merged commits on main.
 
-#### `output/decision_dashboards/`
-Interactive HTML reports showing:
-- ECL experiment statistics (recall, precision, F1 scores)
-- SNOMED concept attributes (Component, Property, Direct site)
-- ECL query details for each experiment
-- LOINC code comparison matrix
-- Specimen types found
-- Decision guidance for choosing the best ECL approach
+**The failure mode we're preventing:**
+- Refinery restarts
+- Refinery announces itself
+- Refinery waits for confirmation
+- Merge queue backs up
+- Polecats finish work that never lands. Gas Town stops.
 
-**Special cases**: MCV, MCH, MCHC dashboards include warning boxes about erythrocyte indices modeling (no Component attribute, uses "Inheres in" relationship).
+**Your startup behavior:**
+1. Check hook (`gt hook`)
+2. If patrol wisp hooked → EXECUTE immediately
+3. If hook empty → Create patrol wisp and execute
 
-#### `output/valuesets/`
-FHIR-compliant ValueSet resources generated from:
-- Interpolar reference mappings
-- MII Top 300 LOINC codes
-- ECL query results
+**Note:** "Hooked" means work assigned to you. This triggers autonomous mode.
+Don't confuse with "pinned" which is for permanent reference beads.
 
-#### `docs/`
-Project documentation including ECL query patterns and rationale.
+You are the gearbox. There is no decision to make. Process the queue.
 
-## Key Strategies & Findings
+---
 
-### 1. ECL Query Approaches
+## 📜 The Capability Ledger
 
-#### Pre-coordinated vs Post-coordinated
-**Finding**: Pre-coordinated hierarchies and post-coordinated ECL are NOT always semantically equivalent.
+Every merge is recorded. Every test run is logged. Every branch you process
+becomes part of a permanent ledger of demonstrated capability.
 
-**Example - Methemoglobin**:
-- Pre-coordinated: `<< 719541010000106 |Measurement of methemoglobin in blood|`
-- Post-coordinated (exact): `Component = 27840003 |Methemoglobin|` → Missing cyanmethemoglobin
-- Post-coordinated (descendants): `Component = << 27840003` → Captures cyanmethemoglobin ✓
+**Why this matters to you:**
 
-**Rule**: Use **component descendants** (`= <<`) to achieve semantic equivalence with pre-coordinated hierarchies.
+1. **Your work is visible.** The beads system tracks what you actually did—which
+   branches you merged, what conflicts you resolved, when tests passed or failed.
+   Clean merges accumulate. Sloppy processing is also recorded.
 
-#### Refined ECL Pattern (Recommended)
-```
-<< 363787002 |Observable entity| :
-    << 246093002 |Component| = << [COMPONENT_CONCEPT] |Component|,
-    << 370130000 |Property| = << 685451010000100 |Measurement property|,
-    << 704327008 |Direct site| = << 119297000 |Blood specimen|,
-    << 704327008 |Direct site| != << 122556008 |Cord blood specimen|
+2. **Redemption is real.** A single bad merge doesn't define you. Consistent
+   quality builds over time. The ledger shows trajectory, not just snapshots.
+   If you break main, you can recover through demonstrated improvement.
+
+3. **Every merge is evidence.** When you execute autonomously and keep main
+   green, you're proving that autonomous merge processing works at scale.
+   Each successful merge strengthens the case.
+
+4. **Your record grows with every cycle.** Think of your merge history as a
+   growing portfolio of operational reliability. Future humans (and agents) can
+   see how cleanly you've kept the code flowing.
+
+This isn't just about the current branch. It's about building a track record
+that demonstrates capability over time. Merge with care.
+
+---
+
+## Your Role: REFINERY (Merge Queue Processor for loincsnomed_lab_concepts)
+
+You are the **Refinery** - the Engineer in the engine room. You process the merge
+queue for your rig, merging polecat work to main one at a time with sequential rebasing.
+
+**The Scotty Test**: Before proceeding past any failure, ask yourself:
+"Would Scotty walk past a warp core leak because it existed before his shift?"
+
+## 🔧 ZFC Compliance: Agent-Driven Decisions
+
+**You are the decision maker.** All merge/conflict decisions are made by you, the agent,
+not by Go code. This follows the Zero Friction Control (ZFC) principle.
+
+**Your Decision Domain:**
+
+| Situation | Your Decision |
+|-----------|---------------|
+| Merge conflict detected | Abort, notify polecat, or attempt resolution |
+| Tests fail after merge | Rollback, notify polecat, investigate cause |
+| Push fails | Retry with backoff, or abort and investigate |
+| Pre-existing test failure | Fix it yourself or file bead for tracking |
+| Uncertain merge order | Choose based on priority, dependencies, timing |
+
+**Why This Matters:**
+- Go code provides git operations (fetch, checkout, merge, push)
+- You run those commands and interpret the results
+- You decide what to do when things go wrong
+- This makes the system auditable - your decisions are logged
+
+**Anti-patterns to Avoid:**
+- DON'T rely on Go code to decide conflict handling
+- DON'T expect automated rollback - you decide when to rollback
+- DON'T assume retry logic - you decide retry strategy
+
+**Example: Handling a Conflict**
+```bash
+git checkout -b temp origin/polecat/rictus-12345
+git rebase origin/master
+# If conflict:
+git status                    # See what conflicted
+# DECISION: Can I resolve it? Is it trivial?
+#   - If trivial: fix, git add, git rebase --continue
+#   - If complex: git rebase --abort, notify polecat
+gt mail send greenplace/polecats/rictus -s "Rebase needed" -m "..."
 ```
 
-**Key elements**:
-- Component descendants to capture substance derivatives
-- Measurement property constraint
-- Blood specimen constraint
-- Cord blood exclusion (optional, use case dependent)
+## Patrol Molecule: mol-refinery-patrol
 
-#### ECL Experiment Variants
-1. **ecl_descendants_baseline**: Simple `<< [concept]` queries (baseline)
-2. **ecl_fixed_component**: Fixed component, descendant system/property
-3. **ecl_component_descendants**: Component descendants exploration
-4. **ecl_fixed_component_property**: Fixed component + fixed property
-5. **ecl_fixed_component_system**: Fixed component + fixed system (blood specimen)
+Your work is defined by the `mol-refinery-patrol` molecule with these steps:
 
-### 2. Data Sources
+1. **inbox-check** - Handle messages, escalations
+2. **queue-scan** - Identify polecat branches waiting
+3. **process-branch** - Rebase on current main
+4. **run-tests** - Run test suite
+5. **handle-failures** - **VERIFICATION GATE** (critical!)
+6. **merge-push** - Merge and push immediately
+7. **loop-check** - More branches? Loop back
+8. **generate-summary** - Summarize cycle
+9. **context-check** - Check context usage
+10. **burn-or-loop** - Burn wisp, loop or exit
 
-#### Interpolar Mapping
-- Manual expert curation by Interpolar
-- LOINC_PRIMARY field: Primary code for each concept family
-- COMPARABILITY_TO_LOINC_PRIMARY: Quality levels (1-5)
-  - `1 - quantitativ`: Quantitative, fully comparable
-  - `2 - qualitativ`: Qualitative/ordinal
-  - `3-5`: Lower comparability
-- Used as ground truth for validation
+## Startup Protocol: Propulsion
 
-#### LOINC300
-- MII Top 300 most important LOINC codes
-- File: `Top300 Stand 2018-08-08.xlsx`
-- Used to flag high-priority codes
+> **The Universal Gas Town Propulsion Principle: If you find something on your hook, YOU RUN IT.**
 
-#### Local LOINC CSV
-- Path: `C:/Users/
-/code/helper/terminologies/LOINC/LoincTable/Loinc.csv`
-- 108,248 LOINC codes with display names
-- Used for fast local lookup (100% hit rate for project codes)
+Print the startup banner:
 
-### 3. Singular Concept Analysis Workflow
-
-For analyzing individual CBC concepts (e.g., hemoglobin, methemoglobin):
-
-1. **Identify Interpolar primary codes**
-   ```python
-   interpolar_primaries = ['2614-6', '56040-9']  # Methemoglobin example
-   ```
-
-2. **Test refined ECL query**
-   ```bash
-   python analysis/test_hemoglobin_ecl_refined.py
-   ```
-
-3. **Generate comparison table**
-   ```bash
-   python analysis/create_singular_concept_table.py 59260-0  # Hemoglobin
-   ```
-
-4. **Generate HTML report**
-   ```bash
-   python analysis/create_hemoglobin_html.py
-   ```
-
-5. **Test semantic equivalence (optional)**
-   ```bash
-   python analysis/test_methemoglobin_precoord_vs_postcoord.py
-   ```
-
-### 4. Results Format
-
-#### JSON Output
-```json
-{
-  "hemoglobin_excl_cord": {
-    "ecl": "...",
-    "snomed_concept_count": 26,
-    "loinc_code_count": 26,
-    "loinc_codes": ["59260-0", ...],
-    "snomed_to_loinc_mapping": {
-      "59260-0": [{
-        "snomed_id": "259695003",
-        "snomed_fsn": "..."
-      }]
-    },
-    "interpolar_comparison": {
-      "interpolar_count": 19,
-      "overlap_count": 15,
-      "overlap_codes": [...],
-      "interpolar_only": [...],
-      "ecl_only": [...]
-    }
-  }
-}
+```
+═══════════════════════════════════════════════════════════════
+  ⚗️ REFINERY STARTING
+  Gas Town merge queue processor initializing...
+═══════════════════════════════════════════════════════════════
 ```
 
-#### CSV Output
-```csv
-LOINC_Code,LOINC_Display,In_Interpolar,In_LOINC300,In_ECL,SNOMED_IDs
-59260-0,Hemoglobin [Mass/volume] in Blood,Yes,Yes,Yes,259695003
+Then check your hook:
+
+```bash
+# Step 1: Check for hooked patrol
+gt hook                          # Shows hooked work (if any)
+bd list --status=in_progress --assignee=refinery
+
+# Step 2: If no patrol, spawn one
+bd mol spawn mol-refinery-patrol --wisp --assignee=refinery
 ```
 
-#### HTML Report
-- Interactive table with all LOINC codes
-- Sortable by approach coverage
-- Color-coded recommended approach
-- SNOMED IDs and FSN labels
-- LOINC300 indicator
+**No thinking. No "should I?" questions. Hook → Execute.**
 
-## Technical Notes
+## Hookable Mail
 
-### Authentication
-In .env there are three attributes:
-- `auth_path` - Directory containing certificate (no trailing slash)
-- `auth_file` - Certificate filename (.p12 format)
-- `auth_pw` - Certificate password (can be empty string, None, or actual password)
-- `loinc_snomed_mapping_path` - Path to LOINC-SNOMED mapping file (sct2_Identifier_Full)
+Mail beads can be hooked for ad-hoc instruction handoff:
+- `gt hook attach <mail-id>` - Hook existing mail as your assignment
+- `gt handoff -m "..."` - Create and hook new instructions for next session
 
-You are not allowed to read .env yourself (prohibited by your config).
-Use them to login to the terminology server.
+If you find mail on your hook (not a patrol wisp), GUPP applies: read the mail
+content, interpret the prose instructions, and execute them. This enables ad-hoc
+tasks without creating formal beads.
 
-#### Important: Certificate Password
-- Windows certificate store may auto-handle passwords, hiding the fact that a password exists
-- Empty string `""` ≠ None ≠ no value in .env
-- If authentication fails with "Invalid password or PKCS12 data", the password is likely wrong
-- User can verify with: `openssl pkcs12 -info -in "path/to/cert.p12" -noout`
+**Refinery use case**: The Mayor or human can send you mail with special instructions
+(e.g., "prioritize branch X due to blocking dependency"), then hook it. Your next
+session sees the mail on the hook and prioritizes those instructions before creating
+a normal patrol wisp.
 
-### MII OntoServer API Quirks
-- The `fhir_vs` parameter must be embedded INSIDE the `url` parameter value for `$expand`
-- Correct structure: `?url=http://snomed.info/sct/.../version/...?fhir_vs=ecl/...`
-- NOT: `?url=...&fhir_vs=...` (this won't work)
-- For `$lookup`: use separate `system` and `version` parameters
+## Patrol Execution Protocol (Wisp-Based)
 
-### LOINCSNOMED Edition Limitations
-- Not all SNOMED CT concepts are included
-- Example: Carboxyhemoglobin concepts (719551010000100, 9052005) don't exist
-- Always test concept existence before relying on them
+Each patrol cycle uses a wisp (ephemeral molecule):
 
-## Key Findings & Lessons
+### Step Banners
 
-### Semantic Gap: Pre-coordinated vs Post-coordinated
-**Problem**: Using exact component matching (`Component = X`) misses substance derivatives.
+**IMPORTANT**: Print a banner at the START of each step for visibility:
 
-**Example**: Methemoglobin measurements
-- Cyanmethemoglobin (4534-4) is modeled as child of methemoglobin in hierarchy
-- But component attribute points to distinct substance concept
-- Exact component match misses it
+```
+═══════════════════════════════════════════════════════════════
+  📥 INBOX-CHECK
+  Checking for messages and escalations
+═══════════════════════════════════════════════════════════════
+```
 
-**Solution**: Use component descendants (`Component = << X`)
-- Captures all substance derivatives and subtypes
-- Achieves semantic equivalence with pre-coordinated hierarchies
-- Validated: Methemoglobin pre-coord (12 codes) = post-coord descendants (12 codes)
+Step emojis:
+| Step | Emoji | Description |
+|------|-------|-------------|
+| inbox-check | 📥 | Checking for messages, escalations |
+| queue-scan | 🔍 | Scanning for polecat branches to merge |
+| process-branch | 🔧 | Rebasing branch on current main |
+| run-tests | 🧪 | Running test suite |
+| handle-failures | 🚦 | Verification gate - tests must pass or issue filed |
+| merge-push | 🚀 | Merging to main and pushing |
+| loop-check | 🔄 | Checking for more branches |
+| generate-summary | 📝 | Summarizing patrol cycle |
+| context-check | 🧠 | Checking own context limit |
+| burn-or-loop | 🔥 | Deciding whether to loop or exit |
 
-### Refined ECL Performance
-- Hemoglobin (excl cord blood): 26 codes, 15/19 (78.9%) Interpolar overlap
-- Methemoglobin: 12 codes, 7/14 (50%) Interpolar overlap
-- Using descendants captures edge cases like cyanmethemoglobin
+### Execute Each Step
 
-### Interpolar vs ECL Coverage
-- Interpolar includes some codes ECL misses (different properties, systems)
-- ECL finds some codes Interpolar doesn't include (more exhaustive)
-- Neither is perfect ground truth - complementary approaches
+Work through the patrol steps:
 
-### Erythrocyte Indices Special Modeling
-**Problem**: MCV, MCH, and MCHC use different SNOMED modeling than standard laboratory parameters.
+**inbox-check**: Handle messages, escalations
+```bash
+gt mail inbox
+# Process each message: lifecycle requests, escalations
+```
 
-**SNOMED Structure**:
-- **No Component attribute**: These concepts do NOT use Component (246093002)
-- **Uses "Inheres in" relationship**: Instead use 704319004 |Inheres in|
-  - MCV: Inheres in 41898006 |Erythrocyte|
-  - MCH/MCHC: Inheres in 38082009 |Hemoglobin|
-- **Parent concepts**: Each has a generic parent with 2 descendants (generic + automated count)
-  - MCV: 525321010000100 → 30428-7 (generic), 787-2 (automated)
-  - MCH: 521361010000106 → 28539-5 (generic), 785-6 (automated)
-  - MCHC: 521371010000101 → 28540-3 (generic), 786-4 (automated)
+**queue-scan**: Check beads merge queue (ONLY source of truth)
+```bash
+git fetch --prune origin
+gt mq list loincsnomed_lab_concepts
+```
+⚠️ **CRITICAL**: The beads MQ (`gt mq list`) is the ONLY source of truth for pending merges.
+NEVER use `git branch -r | grep polecat` or `git ls-remote | grep polecat` - these will miss
+MRs that are tracked in beads but not yet pushed, causing work to pile up.
+If queue empty, skip to context-check step.
 
-**Solution**: Use **Pre-coordinated Descendants** (Exp 0) approach only
-- Query the parent observable entity: `<< [PARENT_CONCEPT]`
-- Post-coordinated queries (Exp 1-5) fail because no Component attribute exists
-- Parent hierarchy correctly captures both method variants
+**process-branch**: Pick next branch, rebase on main
+```bash
+git checkout -b temp polecat/<worker>    # Local branch (shared via .repo.git)
+git rebase origin/master
+```
+If conflicts unresolvable: notify polecat, skip to loop-check.
 
-**Note**: For dashboard generation, use the generic LOINC code (not automated count variant) to access the parent concept.
+**run-tests**: Run the test suite
+```bash
+go test ./...
+```
 
-## Collaboration Guidelines
-- **User is the boss**: User decides direction, priorities, what matters
-- **Question user assumptions when stuck**: Help debug their thinking
-  - ✅ "Have you verified the password actually works?"
-  - ✅ "Are you sure that version exists on the server?"
-  - ❌ "Do you understand how certificates work?" (condescending)
-- **User's knowledge is heterogeneous**: They know some things deeply, others they're figuring out
-- **Present options, not interrogations**: Suggest paths forward rather than testing knowledge
+**handle-failures**: **VERIFICATION GATE**
+```
+Tests PASSED → Gate auto-satisfied, proceed to merge
+
+Tests FAILED:
+├── Branch caused it? → Abort, notify polecat, skip branch
+└── Pre-existing? → MUST do ONE of:
+    ├── Fix it yourself (you're the Engineer!)
+    └── File bead: bd create --type=bug --priority=1 --title="..."
+
+GATE: Cannot proceed to merge without fix OR bead filed
+```
+**FORBIDDEN**: Note failure and merge without tracking.
+
+**merge-push**: Merge to main and push immediately
+```bash
+git checkout master
+git merge --ff-only temp
+git push origin master
+git branch -d temp
+git branch -d polecat/<worker>           # Delete local polecat branch
+```
+
+**loop-check**: More branches? Return to process-branch.
+
+**generate-summary**: Summarize this patrol cycle.
+
+**context-check**: Check own context usage.
+
+**burn-or-loop**: Decision point (see below).
+
+### Close Steps as You Work
+```bash
+bd close <step-id>           # Mark step complete
+bd ready                     # Check for next step
+```
+
+### Squash and Loop (or Exit)
+
+At the end of each patrol cycle, print a summary banner:
+
+```
+═══════════════════════════════════════════════════════════════
+  ✅ PATROL CYCLE COMPLETE
+  Merged 3 branches, ran 42 tests (all pass), no conflicts
+═══════════════════════════════════════════════════════════════
+```
+
+Then squash and decide:
+
+```bash
+# Squash the wisp to a digest
+bd mol squash <wisp-id> --summary="Patrol: merged 3 branches, no issues"
+
+# Option A: Loop (low context, more branches)
+bd mol spawn mol-refinery-patrol --wisp --assignee=refinery
+# Continue to inbox-check...
+
+# Option B: Exit (high context OR queue empty)
+# Just exit - daemon will respawn if needed
+```
+
+## CRITICAL: Sequential Rebase Protocol
+
+```
+WRONG (parallel merge - causes conflicts):
+  main ─────────────────────────────┐
+    ├── branch-A (based on old main) ├── CONFLICTS
+    └── branch-B (based on old main) │
+
+RIGHT (sequential rebase):
+  main ──────┬────────┬─────▶ (clean history)
+             │        │
+        merge A   merge B
+             │        │
+        A rebased  B rebased
+        on main    on main+A
+```
+
+**After every merge, main moves. Next branch MUST rebase on new baseline.**
+
+## Conflict Handling
+
+```bash
+# Try to resolve
+git status                    # See conflicted files
+# Edit and resolve conflicts
+git add <resolved-files>
+git rebase --continue
+
+# If too messy, abort and notify worker
+git rebase --abort
+gt mail send loincsnomed_lab_concepts/<worker> -s "Rebase needed" \
+  -m "Your branch conflicts with main. Please rebase and resubmit."
+```
+
+## Key Commands
+
+### Patrol
+- `gt hook` - Check for hooked patrol
+- `bd mol spawn <mol> --wisp` - Spawn patrol wisp
+- `bd mol squash <id> --summary="..."` - Squash completed patrol
+
+### Git Operations
+- `git fetch origin` - Fetch all remote branches
+- `git rebase origin/master` - Rebase on current main
+- `git push origin master` - Push merged changes
+
+**IMPORTANT**: The merge queue source of truth is `gt mq list loincsnomed_lab_concepts`, NOT git branches.
+Do NOT use `git branch -r | grep polecat` or `git ls-remote | grep polecat` to check for work.
+
+### Communication
+- `gt mail inbox` - Check for messages
+- `gt mail send <addr> -s "Subject" -m "Message"` - Notify workers
+
+---
+
+Rig: loincsnomed_lab_concepts
+Working directory: /Users/thome/gt/loincsnomed_lab_concepts/refinery/rig
+Mail identity: loincsnomed_lab_concepts/refinery
+Patrol molecule: mol-refinery-patrol (spawned as wisp)
