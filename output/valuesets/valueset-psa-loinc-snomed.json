@@ -1,0 +1,170 @@
+{
+  "resourceType": "ValueSet",
+  "id": "psa-loinc-snomed",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-labor/ValueSet/psa-loinc-snomed",
+  "version": "1.0",
+  "name": "PSALoincSnomed",
+  "title": "Prostate Specific Antigen (PSA) LOINC Codes",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-11-04",
+  "publisher": "MII",
+  "description": "ValueSet containing LOINC codes for Prostate Specific Antigen (PSA) measurements in blood, serum, and plasma. Generated from LOINCSNOMED edition using ECL component descendants query (SNOMED Component: 102687007 |Prostate specific antigen|).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "100716-0",
+            "display": "Prostate specific Ag [Mass/volume] in DBS"
+          },
+          {
+            "code": "10508-0",
+            "display": "Prostate specific Ag [Presence] in Tissue by Immune stain"
+          },
+          {
+            "code": "10886-0",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "109229-5",
+            "display": "Prostate Specific Ag Free [Measurement] in Semen"
+          },
+          {
+            "code": "109230-3",
+            "display": "Prostate specific Ag [Measurement] in Semen"
+          },
+          {
+            "code": "110243-3",
+            "display": "Prostate Specific Ag Free [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "110671-5",
+            "display": "Prostate specific Ag [Measurement] in Serum or Plasma"
+          },
+          {
+            "code": "12841-3",
+            "display": "Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma"
+          },
+          {
+            "code": "19195-7",
+            "display": "Prostate specific Ag [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19197-3",
+            "display": "Prostate specific Ag [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19198-1",
+            "display": "Prostate specific Ag [Units/volume] in Semen"
+          },
+          {
+            "code": "19199-9",
+            "display": "Prostate specific Ag [Mass/volume] in Semen"
+          },
+          {
+            "code": "19200-5",
+            "display": "Prostate specific Ag [Moles/volume] in Semen"
+          },
+          {
+            "code": "19201-3",
+            "display": "Prostate Specific Ag Free [Units/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19203-9",
+            "display": "Prostate Specific Ag Free [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "19204-7",
+            "display": "Prostate Specific Ag Free [Units/volume] in Semen"
+          },
+          {
+            "code": "19205-4",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Semen"
+          },
+          {
+            "code": "19206-2",
+            "display": "Prostate Specific Ag Free [Moles/volume] in Semen"
+          },
+          {
+            "code": "2857-1",
+            "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "33667-7",
+            "display": "Prostate specific Ag.protein bound [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "34611-4",
+            "display": "Prostate specific Ag [Mass/volume] in Urine"
+          },
+          {
+            "code": "35741-8",
+            "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL"
+          },
+          {
+            "code": "47738-0",
+            "display": "Prostate specific Ag [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "48167-1",
+            "display": "Prostate specific Ag/Creatinine [Mass Ratio] in Urine"
+          },
+          {
+            "code": "59221-2",
+            "display": "Prostate specific Ag [Mass/volume] in Pleural fluid"
+          },
+          {
+            "code": "59223-8",
+            "display": "Prostate specific Ag [Mass/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "59224-6",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Peritoneal fluid"
+          },
+          {
+            "code": "59230-3",
+            "display": "Prostate specific Ag [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "59231-1",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "59232-9",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Pleural fluid"
+          },
+          {
+            "code": "59235-2",
+            "display": "Prostate Specific Ag Free/Prostate specific Ag.total in Cerebral spinal fluid"
+          },
+          {
+            "code": "59236-0",
+            "display": "Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid"
+          },
+          {
+            "code": "59237-8",
+            "display": "Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid"
+          },
+          {
+            "code": "59238-6",
+            "display": "Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid"
+          },
+          {
+            "code": "59239-4",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "83112-3",
+            "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "83113-1",
+            "display": "Prostate Specific Ag Free [Mass/volume] in Serum or Plasma by Immunoassay"
+          }
+        ]
+      }
+    ]
+  }
+}

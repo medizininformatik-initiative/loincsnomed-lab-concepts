@@ -173,7 +173,8 @@ class OntoServerAdapter(TerminologyServerAdapter):
                 cert_path = os.path.join(auth_path, auth_file)
 
         if cert_password is None:
-            cert_password = os.getenv('auth_pw')
+            # Check CERT_PASSPHRASE first (global standard), then auth_pw (legacy)
+            cert_password = os.getenv('CERT_PASSPHRASE') or os.getenv('auth_pw')
             # Convert empty string or 'None' to actual None
             if not cert_password or cert_password in ('None', 'none'):
                 cert_password = None
