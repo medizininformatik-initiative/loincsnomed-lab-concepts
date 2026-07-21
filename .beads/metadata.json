@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "loincsnomed_lab_concepts",
+  "project_id": "b4bfa2dc-85fd-4ea2-be41-32985930c347"
+}
