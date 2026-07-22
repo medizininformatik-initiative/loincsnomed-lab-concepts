@@ -1,0 +1,53 @@
+{
+  "description": "Use-case-driven aggregation profiles (INTERPOLAR pattern). The USE CASE defines which slice of an analyte's candidate pool is aggregated. Classification uses BOTH SNOMED Scale type (370132008) and Property (370130000), because Scale type is not always asserted: e.g. generic 'Measurement of X' groupers carry only Property=Measurement property (no scale) and Presence observables carry Property=Presence (no scale). Rules (first match wins, see scripts/review_export.py): (1) qualitative if Ordinal/Nominal scale OR Presence property; (2) semiquantitative if Semi-quantitative scale; (3) quantitative if Quantitative scale OR any Measurement property (this pulls in the generic groupers, which belong in the full lists); convertible = quantitative with a concentration property, excl. ratio/fraction; (4) else unclassified.",
+  "attributes": {
+    "observable_root": "363787002",
+    "component": "246093002",
+    "scale_type": "370132008",
+    "property": "370130000"
+  },
+  "scale_types": {
+    "quantitative": "30766002",
+    "semiquantitative": "103392008",
+    "ordinal": "117363000",
+    "nominal": "117362005"
+  },
+  "properties": {
+    "measurement": "685451010000100",
+    "presence": ["705057003", "118584009"],
+    "concentration": ["118539007", "118556004", "118569000", "118550005", "118594004"],
+    "ratio_fraction": ["118586006", "118542001", "118567003", "118552002", "118596002"]
+  },
+  "buckets": [
+    {
+      "id": "complete",
+      "name": "Complete aggregation",
+      "description": "Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts."
+    },
+    {
+      "id": "quantitative",
+      "name": "Quantitative (all numeric)",
+      "description": "Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions."
+    },
+    {
+      "id": "quantitative_convertible",
+      "name": "Quantitative & convertible",
+      "description": "Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted."
+    },
+    {
+      "id": "qualitative",
+      "name": "Qualitative (ordinal / nominal / presence)",
+      "description": "Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results."
+    },
+    {
+      "id": "semiquantitative",
+      "name": "Semi-quantitative (test strip)",
+      "description": "Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip)."
+    },
+    {
+      "id": "panel_order",
+      "name": "Panel / order code (no Property)",
+      "description": "Observable with a Component but NO Property attribute (often + Technique only, e.g. 'Differential count of white blood cells'). Structurally an order / battery code that resolves into several component results — NOT a single measurable value. Excluded from result-aggregation ValueSets; handle via panel expansion."
+    }
+  ]
+}

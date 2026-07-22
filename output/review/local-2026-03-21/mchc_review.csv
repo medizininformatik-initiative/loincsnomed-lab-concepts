@@ -1,0 +1,3 @@
+SCTID,FSN,PT,Complete aggregation,Quantitative (all numeric),Quantitative & convertible,Qualitative (ordinal / nominal / presence),Semi-quantitative (test strip),Panel / order code (no Property),Use case,Reason
+521371010000101,Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity),MCHC [Entitic Mass/volume] in Red Blood Cells,Y,Y,·,·,·,·,quantitative,Quantitative scale
+613001010000107,Entitic mass concentration of hemoglobin in erythrocyte at point in time by automated count (observable entity),MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count,Y,Y,·,·,·,·,quantitative,Quantitative scale
