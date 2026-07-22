@@ -1,3 +1,3 @@
-SCTID,FSN,PT,Complete aggregation,Quantitative (all numeric),Quantitative & convertible,Qualitative (ordinal / nominal / presence),Semi-quantitative (test strip),Panel / order code (no Property),Use case,Reason
-525321010000100,Entitic mean volume of erythrocyte specimen at point in time (observable entity),MCV [Entitic mean volume] in Red Blood Cells,Y,Y,·,·,·,·,quantitative,Quantitative scale
-613061010000108,Entitic mean volume of erythrocyte specimen at point in time by automated count (observable entity),MCV [Entitic mean volume] in Red Blood Cells by Automated count,Y,Y,·,·,·,·,quantitative,Quantitative scale
+LOINC,SCTID,FSN,PT,Complete aggregation,Quantitative (all numeric),Quantitative & convertible,Qualitative (ordinal / nominal / presence),Semi-quantitative (test strip),Panel / order code (no Property),Use case,Reason
+30428-7,525321010000100,Entitic mean volume of erythrocyte specimen at point in time (observable entity),MCV [Entitic mean volume] in Red Blood Cells,Y,Y,·,·,·,·,quantitative,Quantitative scale
+787-2,613061010000108,Entitic mean volume of erythrocyte specimen at point in time by automated count (observable entity),MCV [Entitic mean volume] in Red Blood Cells by Automated count,Y,Y,·,·,·,·,quantitative,Quantitative scale

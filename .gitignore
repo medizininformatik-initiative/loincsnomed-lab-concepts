@@ -43,3 +43,6 @@ Thumbs.db
 .dolt/
 *.db
 .beads-credential-key
+
+# SNOMED-LOINC RF2 identifier extract (licensed release artifact)
+data/loincsnomed_identifiers_*.txt

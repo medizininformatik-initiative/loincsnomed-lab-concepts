@@ -68,6 +68,28 @@ OBSERVABLE_ROOT = "<< 363787002 |Observable entity (observable entity)|"
 COMPONENT_ATTR = "246093002"
 PROFILES_PATH = ROOT / "config" / "aggregation_profiles.json"
 
+# LOINC code ↔ SNOMED concept mapping lives in the LOINCSNOMED edition itself
+# (RF2 sct2_Identifier file, alternate-identifier scheme below). Snowstorm does
+# not expose it via API, so we read the extracted file directly.
+LOINC_SCHEME = "30051010000102"
+LOINC_MAP_PATH = ROOT / "data" / "loincsnomed_identifiers_20260321.txt"
+
+
+def load_loinc_map(path):
+    """Return dict SNOMED conceptId -> LOINC code from the RF2 Identifier file."""
+    m = {}
+    if not Path(path).exists():
+        print("  (LOINC map not found at {} — LOINC column will be empty)".format(path))
+        return m
+    with open(path) as f:
+        next(f, None)  # header
+        for line in f:
+            p = line.rstrip("\n").split("\t")
+            # alternateIdentifier, effectiveTime, active, moduleId, schemeId, refComp
+            if len(p) >= 6 and p[2] == "1" and p[4] == LOINC_SCHEME:
+                m[p[5]] = p[0]
+    return m
+
 
 def load_profiles():
     with open(PROFILES_PATH) as f:
@@ -196,7 +218,7 @@ def classify(cid, s):
     return "UNCLASSIFIED", "no Scale type and no Measurement/Presence property", set()
 
 
-def build_analyte(adapter, concept, data, prof):
+def build_analyte(adapter, concept, data, prof, loinc_map):
     base_refinement, focus_expr, how = derive_component(data)
     print("  component ({}): {}".format(how, base_refinement or focus_expr))
 
@@ -218,7 +240,8 @@ def build_analyte(adapter, concept, data, prof):
         marks = ["Y" if b["id"] in membership else "·" for b in buckets]
         classified = usecase != "UNCLASSIFIED"
         rows.append({
-            "sctid": cid, "fsn": meta["fsn"], "pt": meta["pt"],
+            "sctid": cid, "loinc": loinc_map.get(cid, ""),
+            "fsn": meta["fsn"], "pt": meta["pt"],
             "marks": marks, "classified": classified,
             "usecase": usecase, "reason": reason,
         })
@@ -240,12 +263,12 @@ def build_analyte(adapter, concept, data, prof):
 
 def write_csv(res, path):
     names = [b["name"] for b in res["buckets"]]
-    header = ["SCTID", "FSN", "PT"] + names + ["Use case", "Reason"]
+    header = ["LOINC", "SCTID", "FSN", "PT"] + names + ["Use case", "Reason"]
     with open(path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(header)
         for r in res["rows"]:
-            w.writerow([r["sctid"], r["fsn"], r["pt"]] + r["marks"]
+            w.writerow([r["loinc"], r["sctid"], r["fsn"], r["pt"]] + r["marks"]
                        + [r["usecase"], r["reason"]])
 
 
@@ -278,7 +301,7 @@ def write_xlsx(res, path):
     header_row_idx = ws.max_row + 1
 
     names = [b["name"] for b in res["buckets"]]
-    header = ["SCTID", "FSN", "PT"] + names + ["Use case", "Reason"]
+    header = ["LOINC", "SCTID", "FSN", "PT"] + names + ["Use case", "Reason"]
     ws.append(header)
     for c in range(1, len(header) + 1):
         cell = ws.cell(row=header_row_idx, column=c)
@@ -287,8 +310,9 @@ def write_xlsx(res, path):
         cell.alignment = Alignment(vertical="center", wrap_text=True)
 
     n_b = len(res["buckets"])
+    mark_col0 = 5  # first bucket column (after LOINC, SCTID, FSN, PT)
     for r in res["rows"]:
-        row = [r["sctid"], r["fsn"], r["pt"]] + r["marks"] + [r["usecase"], r["reason"]]
+        row = [r["loinc"], r["sctid"], r["fsn"], r["pt"]] + r["marks"] + [r["usecase"], r["reason"]]
         ws.append(row)
         ridx = ws.max_row
         for c in range(1, len(row) + 1):
@@ -297,7 +321,7 @@ def write_xlsx(res, path):
             for c in range(1, len(row) + 1):
                 ws.cell(row=ridx, column=c).fill = warn_fill
         for j in range(n_b):
-            cell = ws.cell(row=ridx, column=4 + j)
+            cell = ws.cell(row=ridx, column=mark_col0 + j)
             if cell.value == "Y":
                 cell.font = hit_font
             cell.alignment = Alignment(horizontal="center")
@@ -306,7 +330,7 @@ def write_xlsx(res, path):
     ws.auto_filter.ref = "A{}:{}{}".format(
         header_row_idx, get_column_letter(len(header)), ws.max_row)
 
-    widths = [18, 55, 40] + [14] * n_b + [22, 50]
+    widths = [12, 18, 55, 40] + [14] * n_b + [22, 50]
     for i, wdt in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(i)].width = wdt
 
@@ -319,6 +343,8 @@ def main():
     ap.add_argument("--config", action="append")
     ap.add_argument("--target", choices=list(TARGETS), default="local")
     ap.add_argument("--out-dir", default="output/review")
+    ap.add_argument("--loinc-map", default=str(LOINC_MAP_PATH),
+                    help="RF2 sct2_Identifier file with LOINC alternate identifiers")
     args = ap.parse_args()
 
     if args.config:
@@ -331,7 +357,9 @@ def main():
     prof = load_profiles()
     tgt = TARGETS[args.target]
     print("Target: {} ({} @ {})".format(tgt["name"], tgt["branch"], tgt["api_base"]))
-    print("Buckets: {}\n".format(", ".join(b["id"] for b in prof["buckets"])))
+    print("Buckets: {}".format(", ".join(b["id"] for b in prof["buckets"])))
+    loinc_map = load_loinc_map(args.loinc_map)
+    print("LOINC map: {} concept→code entries\n".format(len(loinc_map)))
     adapter = LOINCSNOMEDSnowstormAdapter(api_base=tgt["api_base"], branch=tgt["branch"])
 
     out_dir = ROOT / args.out_dir / tgt["name"]
@@ -341,7 +369,7 @@ def main():
     for cf in config_files:
         concept, data = load_config(cf)
         print("{}:".format(concept))
-        res = build_analyte(adapter, concept, data, prof)
+        res = build_analyte(adapter, concept, data, prof, loinc_map)
         write_csv(res, out_dir / "{}_review.csv".format(concept))
         write_xlsx(res, out_dir / "{}_review.xlsx".format(concept))
         summary.append((concept, res["counts"], res["pool_size"], res["unclassified"]))
