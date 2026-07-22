@@ -1,0 +1,7 @@
+LOINC,SCTID,FSN,tier,test
+785-6,612991010000106,Entitic mass of hemoglobin in erythrocyte at point in time by automated count (observable entity),standard,mch-standard
+71694-4,608081010000109,Entitic mass of hemoglobin in retic at point in time by automated count (observable entity),standard,mch-standard
+62243-1,602571010000101,Entitic mass of hemoglobin in RBC^Fetus at point in time by automated count (observable entity),standard,mch-standard
+47278-7,559591010000107,Entitic mass of hemoglobin in RBC^BldCo at point in time (observable entity),standard,mch-standard
+42810-2,552221010000102,Entitic mass of hemoglobin in retic at point in time (observable entity),standard,mch-standard
+28539-5,521361010000106,Entitic mass of hemoglobin in erythrocyte at point in time (observable entity),standard,mch-standard

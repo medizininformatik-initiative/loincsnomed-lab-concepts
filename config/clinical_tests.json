@@ -1,0 +1,108 @@
+{
+  "description": "Clinical test definitions (INTERPOLAR). Each entry = one distinct clinical test (component + tier) → one FHIR ValueSet + one Observation profile. 'standard' = the routine value a clinician means; 'specialized' = a clinically distinct variant (free PSA, LDH isoenzymes, WBC differential). The ECL selects the SNOMED-LOINC observables; the ValueSet is emitted LOINC-coded; the Observation profile (FSH, derived from MII KDS Laborbefund) binds the ValueSet to Observation.code and fixes specimen/unit/dataType.",
+  "base_valueset_url": "https://interpolar.example/fhir/ValueSet",
+  "base_profile_url": "https://interpolar.example/fhir/StructureDefinition",
+  "snomed_system": "http://snomed.info/sct",
+  "snomed_version": "http://snomed.info/sct/11010000107/version/20260321",
+  "loinc_system": "http://loinc.org",
+  "kds_lab_parent": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
+  "_ecl_blocks": {
+    "ROOT": "<< 363787002 |Observable entity (observable entity)|",
+    "serum_plasma": "<< 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|",
+    "blood": "<< 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|",
+    "urine": "<< 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|",
+    "quant": "<< 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  },
+  "tests": [
+    {
+      "id": "psa-total-standard", "analyte": "psa", "name": "Total PSA in serum/plasma",
+      "tier": "standard", "dataType": "Quantity", "unit": "ng/mL", "specimen": "Serum/Plasma",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "psa-free-standard", "analyte": "psa", "name": "Free PSA in serum/plasma",
+      "tier": "specialized", "dataType": "Quantity", "unit": "ng/mL", "specimen": "Serum/Plasma",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 706958000 |Free prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "psa-free-total-ratio", "analyte": "psa", "name": "%Free PSA (free/total ratio)",
+      "tier": "specialized", "dataType": "Quantity", "unit": "%", "specimen": "Serum/Plasma",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)"
+    },
+    {
+      "id": "ldh-monitoring-standard", "analyte": "ldh", "name": "LDH (total) monitoring in serum/plasma",
+      "tier": "standard", "dataType": "Quantity", "unit": "U/L", "specimen": "Serum/Plasma",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "ldh-isoenzymes", "analyte": "ldh", "name": "LDH isoenzyme analysis (LDH-1..5)",
+      "tier": "specialized", "dataType": "Quantity", "unit": "%", "specimen": "Serum/Plasma",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "potassium-standard", "analyte": "potassium", "name": "Potassium in serum/plasma",
+      "tier": "standard", "dataType": "Quantity", "unit": "mmol/L", "specimen": "Serum/Plasma",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "hemoglobin-standard", "analyte": "hemoglobin", "name": "Hemoglobin concentration in blood",
+      "tier": "standard", "dataType": "Quantity", "unit": "g/dL", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "hematocrit-standard", "analyte": "hematocrit", "name": "Hematocrit (volume fraction) in blood",
+      "tier": "standard", "dataType": "Quantity", "unit": "L/L", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "erythrocytes-count-standard", "analyte": "erythrocytes", "name": "Erythrocyte count in blood",
+      "tier": "standard", "dataType": "Quantity", "unit": "10*12/L", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "leukocytes-count-standard", "analyte": "leukocytes", "name": "Leukocyte count in blood",
+      "tier": "standard", "dataType": "Quantity", "unit": "10*9/L", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "leukocytes-differential-panel", "analyte": "leukocytes", "name": "WBC differential (panel)",
+      "tier": "specialized", "dataType": "unset", "unit": "", "specimen": "Blood",
+      "ecl": "(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)"
+    },
+    {
+      "id": "platelets-count-standard", "analyte": "platelets", "name": "Platelet count in blood",
+      "tier": "standard", "dataType": "Quantity", "unit": "10*9/L", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "mch-standard", "analyte": "mch", "name": "Mean cell hemoglobin (MCH)",
+      "tier": "standard", "dataType": "Quantity", "unit": "pg", "specimen": "Erythrocyte",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "mchc-standard", "analyte": "mchc", "name": "Mean cell hemoglobin concentration (MCHC)",
+      "tier": "standard", "dataType": "Quantity", "unit": "g/dL", "specimen": "Blood",
+      "ecl": "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "mcv-standard", "analyte": "mcv", "name": "Mean cell volume (MCV)",
+      "tier": "standard", "dataType": "Quantity", "unit": "fL", "specimen": "Blood",
+      "ecl": "<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "hba1c-standard", "analyte": "hba1c", "name": "HbA1c in blood",
+      "tier": "standard", "dataType": "Quantity", "unit": "% or mmol/mol", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "methemoglobin-standard", "analyte": "methemoglobin", "name": "Methemoglobin in blood (quantitative)",
+      "tier": "standard", "dataType": "Quantity", "unit": "% or g/dL", "specimen": "Blood",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+    },
+    {
+      "id": "nitrite-urine-standard", "analyte": "nitrite_urine", "name": "Nitrite in urine (qualitative)",
+      "tier": "standard", "dataType": "CodeableConcept", "unit": "", "specimen": "Urine",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|"
+    }
+  ]
+}

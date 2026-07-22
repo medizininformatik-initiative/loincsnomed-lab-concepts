@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "platelets-count-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/platelets-count-standard",
+  "name": "PlateletsCountStandard",
+  "title": "Platelet count in blood",
+  "status": "draft",
+  "experimental": true,
+  "description": "Platelet count in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "107193-5",
+            "display": "Number concentration of platelet in blood at point in time by automated count in presence of EDTA to detect possible clumping (observable entity)"
+          },
+          {
+            "code": "778-1",
+            "display": "Number concentration of platelet in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "55802-3",
+            "display": "Number concentration of platelet in cord blood at point in time by estimate (observable entity)"
+          },
+          {
+            "code": "777-3",
+            "display": "Number concentration of platelet in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "47284-5",
+            "display": "Number concentration of platelet in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "74775-8",
+            "display": "Number concentration of platelet in platelet rich plasma at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "26516-5",
+            "display": "Number concentration of platelet in plasma at point in time (observable entity)"
+          },
+          {
+            "code": "74464-9",
+            "display": "Number concentration of platelet in capillary blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26515-7",
+            "display": "Number concentration of platelet in blood at point in time (observable entity)"
+          },
+          {
+            "code": "49497-1",
+            "display": "Number concentration of platelet in blood at point in time by estimate (observable entity)"
+          },
+          {
+            "code": "13056-7",
+            "display": "Number concentration of platelet in plasma at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "97995-5",
+            "display": "Number concentration of platelet in blood at point in time by automated count.optical (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

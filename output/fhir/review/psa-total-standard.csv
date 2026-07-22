@@ -1,0 +1,4 @@
+LOINC,SCTID,FSN,tier,test
+35741-8,235341010000101,Mass concentration of prostate specific antigen in serum or plasma at point in time by detection limit <= 0.01 ng/mL (observable entity),standard,psa-total-standard
+2857-1,219111010000109,Mass concentration of prostate specific antigen in serum or plasma at point in time (observable entity),standard,psa-total-standard
+83112-3,88701010000106,Mass concentration of prostate specific antigen in serum or plasma at point in time by immunoassay (observable entity),standard,psa-total-standard

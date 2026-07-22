@@ -1,0 +1,12 @@
+LOINC,SCTID,FSN,tier,test
+4534-4,742371010000107,Mass fraction of cyanmethemoglobin to hemoglobin.total in blood at point in time (observable entity),standard,methemoglobin-standard
+72361-9,608471010000103,Mass fraction of methemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity),standard,methemoglobin-standard
+72360-1,608461010000108,Mass fraction of methemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity),standard,methemoglobin-standard
+55942-7,594651010000108,Mass fraction of methemoglobin to hemoglobin.total in cord blood at point in time (observable entity),standard,methemoglobin-standard
+41607-3,539721010000102,Mass fraction of methemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity),standard,methemoglobin-standard
+2617-9,517571010000105,Mass fraction of methemoglobin to hemoglobin.total in venous blood at point in time (observable entity),standard,methemoglobin-standard
+2616-1,517561010000100,Mass fraction of methemoglobin to hemoglobin.total in capillary blood at point in time (observable entity),standard,methemoglobin-standard
+2615-3,517551010000102,Mass fraction of methemoglobin to hemoglobin.total in arterial blood at point in time (observable entity),standard,methemoglobin-standard
+2614-6,517541010000104,Mass fraction of methemoglobin to hemoglobin.total in blood at point in time (observable entity),standard,methemoglobin-standard
+56040-9,184071010000100,Substance concentration of methemoglobin in blood at point in time (observable entity),standard,methemoglobin-standard
+15082-1,41771010000104,Mass concentration of methemoglobin in blood at point in time (observable entity),standard,methemoglobin-standard

@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "leukocytes-differential-panel",
+  "url": "https://interpolar.example/fhir/ValueSet/leukocytes-differential-panel",
+  "name": "LeukocytesDifferentialPanel",
+  "title": "WBC differential (panel)",
+  "status": "draft",
+  "experimental": true,
+  "description": "WBC differential (panel) (specialized). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "376201000119106",
+            "display": "Differential count of white blood cells by manual method (observable entity)"
+          },
+          {
+            "code": "375911000119106",
+            "display": "Differential count of white blood cells by automated method (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)"
+}

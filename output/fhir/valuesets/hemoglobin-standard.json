@@ -1,0 +1,96 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hemoglobin-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/hemoglobin-standard",
+  "name": "HemoglobinStandard",
+  "title": "Hemoglobin concentration in blood",
+  "status": "draft",
+  "experimental": true,
+  "description": "Hemoglobin concentration in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "105274-5",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "105040-0",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "30353-7",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33026-6",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "30354-5",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "14775-1",
+            "display": "Mass concentration of hemoglobin in arterial blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "55782-7",
+            "display": "Mass concentration of hemoglobin in blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "30350-3",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "40719-7",
+            "display": "Mass concentration of hemoglobin in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "718-7",
+            "display": "Mass concentration of hemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "76768-1",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "30351-1",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "30352-9",
+            "display": "Mass concentration of hemoglobin in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "97556-5",
+            "display": "Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "33025-8",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "30313-1",
+            "display": "Mass concentration of hemoglobin in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "76769-9",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "48725-6",
+            "display": "Mass concentration of hemoglobin in blood at point in time pre therapeutic phlebotomy (observable entity)"
+          },
+          {
+            "code": "20509-6",
+            "display": "Mass concentration of hemoglobin in blood at point in time by calculation (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "potassium-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/potassium-standard",
+  "name": "PotassiumStandard",
+  "title": "Potassium in serum/plasma",
+  "status": "draft",
+  "experimental": true,
+  "description": "Potassium in serum/plasma (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2823-3",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "29349-8",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time post-dialysis (observable entity)"
+          },
+          {
+            "code": "12812-4",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "12813-2",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "93998-3",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 1H post dose vasopressin (observable entity)"
+          },
+          {
+            "code": "51618-7",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time Pre-dialysis (observable entity)"
+          },
+          {
+            "code": "94007-2",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 2H post dose vasopressin (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

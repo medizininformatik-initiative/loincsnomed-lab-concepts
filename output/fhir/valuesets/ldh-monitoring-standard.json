@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ldh-monitoring-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/ldh-monitoring-standard",
+  "name": "LdhMonitoringStandard",
+  "title": "LDH (total) monitoring in serum/plasma",
+  "status": "draft",
+  "experimental": true,
+  "description": "LDH (total) monitoring in serum/plasma (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2532-0",
+            "display": "Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "14805-6",
+            "display": "Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "14804-9",
+            "display": "Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time by reaction: lactate to pyruvate (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

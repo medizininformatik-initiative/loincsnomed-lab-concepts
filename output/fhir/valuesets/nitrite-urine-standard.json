@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nitrite-urine-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/nitrite-urine-standard",
+  "name": "NitriteUrineStandard",
+  "title": "Nitrite in urine (qualitative)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Nitrite in urine (qualitative) (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "5802-4",
+            "display": "Presence of nitrite salt in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "50558-6",
+            "display": "Presence of nitrite salt in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "32710-6",
+            "display": "Presence of nitrite salt in urine at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|"
+}

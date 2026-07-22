@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "erythrocytes-count-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/erythrocytes-count-standard",
+  "name": "ErythrocytesCountStandard",
+  "title": "Erythrocyte count in blood",
+  "status": "draft",
+  "experimental": true,
+  "description": "Erythrocyte count in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26453-1",
+            "display": "Number concentration of erythrocyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "789-8",
+            "display": "Number concentration of erythrocyte in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "790-6",
+            "display": "Number concentration of erythrocyte in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "47280-3",
+            "display": "Number concentration of erythrocyte in cord blood at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

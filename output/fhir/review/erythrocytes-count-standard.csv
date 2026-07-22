@@ -1,0 +1,5 @@
+LOINC,SCTID,FSN,tier,test
+26453-1,262301010000104,Number concentration of erythrocyte in blood at point in time (observable entity),standard,erythrocytes-count-standard
+789-8,249121010000107,Number concentration of erythrocyte in blood at point in time by automated count (observable entity),standard,erythrocytes-count-standard
+790-6,176511010000101,Number concentration of erythrocyte in blood at point in time by manual count (observable entity),standard,erythrocytes-count-standard
+47280-3,105281010000107,Number concentration of erythrocyte in cord blood at point in time (observable entity),standard,erythrocytes-count-standard

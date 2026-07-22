@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "psa-free-total-ratio",
+  "url": "https://interpolar.example/fhir/ValueSet/psa-free-total-ratio",
+  "name": "PsaFreeTotalRatio",
+  "title": "%Free PSA (free/total ratio)",
+  "status": "draft",
+  "experimental": true,
+  "description": "%Free PSA (free/total ratio) (specialized). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "12841-3",
+            "display": "Mass fraction of free prostate specific antigen to prostate specific Ag.total in serum or plasma at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)"
+}

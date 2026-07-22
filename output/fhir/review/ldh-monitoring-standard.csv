@@ -1,0 +1,4 @@
+LOINC,SCTID,FSN,tier,test
+2532-0,515201010000109,Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time (observable entity),standard,ldh-monitoring-standard
+14805-6,97101010000107,Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time by reaction: pyruvate to lactate (observable entity),standard,ldh-monitoring-standard
+14804-9,52871010000100,Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time by reaction: lactate to pyruvate (observable entity),standard,ldh-monitoring-standard

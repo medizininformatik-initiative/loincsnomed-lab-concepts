@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mcv-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/mcv-standard",
+  "name": "McvStandard",
+  "title": "Mean cell volume (MCV)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Mean cell volume (MCV) (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "787-2",
+            "display": "Entitic mean volume of erythrocyte specimen at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "30428-7",
+            "display": "Entitic mean volume of erythrocyte specimen at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hematocrit-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/hematocrit-standard",
+  "name": "HematocritStandard",
+  "title": "Hematocrit (volume fraction) in blood",
+  "status": "draft",
+  "experimental": true,
+  "description": "Hematocrit (volume fraction) in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "48703-3",
+            "display": "Volume fraction of erythrocyte in blood at point in time by estimation (observable entity)"
+          },
+          {
+            "code": "4545-0",
+            "display": "Volume fraction of erythrocyte in blood at point in time by centrifugation (observable entity)"
+          },
+          {
+            "code": "4544-3",
+            "display": "Volume fraction of erythrocyte to blood in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "42908-4",
+            "display": "Volume fraction of erythrocyte in capillary blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "41655-2",
+            "display": "Volume fraction of erythrocyte in mixed venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "41654-5",
+            "display": "Volume fraction of erythrocyte to venous blood in venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "32354-3",
+            "display": "Volume fraction of erythrocyte to arterial blood in arterial blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "31100-1",
+            "display": "Volume fraction of erythrocyte to blood in blood at point in time by electrical impedance (observable entity)"
+          },
+          {
+            "code": "20570-8",
+            "display": "Volume fraction of erythrocyte to blood in blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "11271-4",
+            "display": "Volume fraction of erythrocyte in cord blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "11151-8",
+            "display": "Volume fraction of erythrocyte in cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "104874-3",
+            "display": "Volume fraction of erythrocyte in blood at point in time by calculation baseline (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

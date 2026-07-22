@@ -1,0 +1,8 @@
+LOINC,SCTID,FSN,tier,test
+2823-3,254381010000105,Substance concentration of potassium electrolyte in serum or plasma at point in time (observable entity),standard,potassium-standard
+29349-8,253591010000104,Substance concentration of potassium electrolyte in serum or plasma at point in time post-dialysis (observable entity),standard,potassium-standard
+12812-4,252001010000108,Substance concentration of potassium electrolyte in serum or plasma at point in time 2nd specimen (observable entity),standard,potassium-standard
+12813-2,243921010000107,Substance concentration of potassium electrolyte in serum or plasma at point in time 3rd specimen (observable entity),standard,potassium-standard
+93998-3,190021010000106,Substance concentration of potassium electrolyte in serum or plasma at point in time 1H post dose vasopressin (observable entity),standard,potassium-standard
+51618-7,136441010000101,Substance concentration of potassium electrolyte in serum or plasma at point in time Pre-dialysis (observable entity),standard,potassium-standard
+94007-2,89631010000100,Substance concentration of potassium electrolyte in serum or plasma at point in time 2H post dose vasopressin (observable entity),standard,potassium-standard

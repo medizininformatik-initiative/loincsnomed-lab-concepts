@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "methemoglobin-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/methemoglobin-standard",
+  "name": "MethemoglobinStandard",
+  "title": "Methemoglobin in blood (quantitative)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Methemoglobin in blood (quantitative) (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "4534-4",
+            "display": "Mass fraction of cyanmethemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "72361-9",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "72360-1",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "55942-7",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "41607-3",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "2617-9",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "2616-1",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "2615-3",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "2614-6",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "56040-9",
+            "display": "Substance concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "15082-1",
+            "display": "Mass concentration of methemoglobin in blood at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

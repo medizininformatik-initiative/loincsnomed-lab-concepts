@@ -1,0 +1,12 @@
+LOINC,SCTID,FSN,tier,test
+729-4,609141010000107,Number concentration of leukocytes other in blood at point in time by manual count (observable entity),standard,leukocytes-count-standard
+51383-8,567921010000104,Number concentration of leukocytes other in blood at point in time by automated count (observable entity),standard,leukocytes-count-standard
+30406-3,525211010000104,Number concentration of leukocytes other in blood at point in time (observable entity),standard,leukocytes-count-standard
+33256-9,274691010000100,Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time by automated count (observable entity),standard,leukocytes-count-standard
+47281-1,267321010000109,Number concentration of leukocyte in cord blood at point in time (observable entity),standard,leukocytes-count-standard
+12227-5,249831010000100,Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time (observable entity),standard,leukocytes-count-standard
+26464-8,197541010000107,Number concentration of leukocyte in blood at point in time (observable entity),standard,leukocytes-count-standard
+804-5,151221010000101,Number concentration of leukocyte in blood at point in time by manual count (observable entity),standard,leukocytes-count-standard
+6690-2,147071010000102,Number concentration of leukocyte in blood at point in time by automated count (observable entity),standard,leukocytes-count-standard
+49498-9,127421010000106,Number concentration of leukocyte in blood at point in time by estimate (observable entity),standard,leukocytes-count-standard
+66768-3,56211010000107,Number concentration of leukocyte corrected for nucleated erythrocytes in cord blood at point in time (observable entity),standard,leukocytes-count-standard

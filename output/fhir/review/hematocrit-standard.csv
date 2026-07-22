@@ -1,0 +1,13 @@
+LOINC,SCTID,FSN,tier,test
+48703-3,562671010000105,Volume fraction of erythrocyte in blood at point in time by estimation (observable entity),standard,hematocrit-standard
+4545-0,558271010000104,Volume fraction of erythrocyte in blood at point in time by centrifugation (observable entity),standard,hematocrit-standard
+4544-3,558261010000109,Volume fraction of erythrocyte to blood in blood at point in time by automated count (observable entity),standard,hematocrit-standard
+42908-4,552361010000103,Volume fraction of erythrocyte in capillary blood at point in time by calculation (observable entity),standard,hematocrit-standard
+41655-2,539811010000101,Volume fraction of erythrocyte in mixed venous blood at point in time by calculation (observable entity),standard,hematocrit-standard
+41654-5,539801010000104,Volume fraction of erythrocyte to venous blood in venous blood at point in time by calculation (observable entity),standard,hematocrit-standard
+32354-3,527701010000101,Volume fraction of erythrocyte to arterial blood in arterial blood at point in time by calculation (observable entity),standard,hematocrit-standard
+31100-1,526231010000104,Volume fraction of erythrocyte to blood in blood at point in time by electrical impedance (observable entity),standard,hematocrit-standard
+20570-8,504981010000105,Volume fraction of erythrocyte to blood in blood at point in time by calculation (observable entity),standard,hematocrit-standard
+11271-4,489951010000109,Volume fraction of erythrocyte in cord blood at point in time by automated count (observable entity),standard,hematocrit-standard
+11151-8,489801010000101,Volume fraction of erythrocyte in cord blood at point in time by calculation (observable entity),standard,hematocrit-standard
+104874-3,483951010000107,Volume fraction of erythrocyte in blood at point in time by calculation baseline (observable entity),standard,hematocrit-standard

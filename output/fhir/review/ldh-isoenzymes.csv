@@ -1,0 +1,39 @@
+LOINC,SCTID,FSN,tier,test
+14119-2,733851010000104,Catalytic ratio of lactic acid dehydrogenase isoenzyme 1 to lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time (observable entity),specialized,ldh-isoenzymes
+51522-1,568341010000109,Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51521-3,568331010000101,Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51520-5,568321010000104,Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51519-7,568311010000105,Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51518-9,568301010000107,Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51517-1,568291010000106,Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51516-3,568281010000108,Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51515-5,568271010000105,Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51514-8,568261010000100,Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51513-0,568251010000102,Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51512-2,568241010000104,Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51511-4,568231010000107,Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51510-6,568221010000109,Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51509-8,568211010000103,Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+51508-0,568201010000101,Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+2548-6,515861010000109,Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in serum or plasma at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+2545-2,515781010000109,Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in serum or plasma at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+2542-9,515651010000106,Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in serum or plasma at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+2539-5,515511010000109,Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in serum or plasma at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+2536-1,515391010000108,Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in serum or plasma at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+13890-9,494401010000101,Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+13889-1,494391010000103,Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+13888-3,494381010000101,Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+13887-5,494371010000104,Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+13886-7,494361010000109,Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+104814-9,483871010000108,Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in urine at point in time (observable entity),specialized,ldh-isoenzymes
+2535-3,234951010000101,Catalytic concentration of lactic acid dehydrogenase isoenzyme 1 in serum or plasma at point in time by chemical separation (observable entity),specialized,ldh-isoenzymes
+19248-4,228101010000108,Catalytic concentration of lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time by electrophoresis (observable entity),specialized,ldh-isoenzymes
+2538-7,216941010000101,Catalytic concentration of lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time by chemical separation (observable entity),specialized,ldh-isoenzymes
+2549-4,176891010000107,Catalytic concentration of lactic acid dehydrogenase isoenzyme 5 in serum or plasma at point in time (observable entity),specialized,ldh-isoenzymes
+2541-1,164501010000101,Catalytic concentration of lactic acid dehydrogenase isoenzyme 3 in serum or plasma at point in time by chemical separation (observable entity),specialized,ldh-isoenzymes
+2547-8,151741010000100,Catalytic concentration of lactic acid dehydrogenase isoenzyme 5 in serum or plasma at point in time by chemical separation (observable entity),specialized,ldh-isoenzymes
+2540-3,139141010000104,Catalytic concentration of lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time (observable entity),specialized,ldh-isoenzymes
+2546-0,136321010000102,Catalytic concentration of lactic acid dehydrogenase isoenzyme 4 in serum or plasma at point in time (observable entity),specialized,ldh-isoenzymes
+2537-9,60681010000107,Catalytic concentration of lactic acid dehydrogenase isoenzyme 1 in serum or plasma at point in time (observable entity),specialized,ldh-isoenzymes
+2543-7,46111010000101,Catalytic concentration of lactic acid dehydrogenase isoenzyme 3 in serum or plasma at point in time (observable entity),specialized,ldh-isoenzymes
+2544-5,41791010000103,Catalytic concentration of lactic acid dehydrogenase isoenzyme 4 in serum or plasma at point in time by chemical separation (observable entity),specialized,ldh-isoenzymes

@@ -1,0 +1,20 @@
+LOINC,SCTID,FSN,tier,test
+105274-5,484891010000107,Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity),standard,hemoglobin-standard
+105040-0,483971010000104,Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity),standard,hemoglobin-standard
+30353-7,259921010000108,Mass concentration of hemoglobin in venous cord blood at point in time (observable entity),standard,hemoglobin-standard
+33026-6,252711010000109,Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity),standard,hemoglobin-standard
+30354-5,240741010000109,Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity),standard,hemoglobin-standard
+14775-1,211871010000107,Mass concentration of hemoglobin in arterial blood at point in time by oximetry (observable entity),standard,hemoglobin-standard
+55782-7,204121010000101,Mass concentration of hemoglobin in blood at point in time by oximetry (observable entity),standard,hemoglobin-standard
+30350-3,198381010000105,Mass concentration of hemoglobin in venous blood at point in time (observable entity),standard,hemoglobin-standard
+40719-7,185861010000101,Mass concentration of hemoglobin in cord blood at point in time (observable entity),standard,hemoglobin-standard
+718-7,168331010000106,Mass concentration of hemoglobin in blood at point in time (observable entity),standard,hemoglobin-standard
+76768-1,160411010000108,Mass concentration of hemoglobin in mixed venous blood at point in time by oximetry (observable entity),standard,hemoglobin-standard
+30351-1,157231010000106,Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity),standard,hemoglobin-standard
+30352-9,143151010000100,Mass concentration of hemoglobin in capillary blood at point in time (observable entity),standard,hemoglobin-standard
+97556-5,122541010000102,Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity),standard,hemoglobin-standard
+33025-8,108491010000103,Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity),standard,hemoglobin-standard
+30313-1,103141010000106,Mass concentration of hemoglobin in arterial blood at point in time (observable entity),standard,hemoglobin-standard
+76769-9,89311010000104,Mass concentration of hemoglobin in venous blood at point in time by oximetry (observable entity),standard,hemoglobin-standard
+48725-6,67261010000101,Mass concentration of hemoglobin in blood at point in time pre therapeutic phlebotomy (observable entity),standard,hemoglobin-standard
+20509-6,66931010000104,Mass concentration of hemoglobin in blood at point in time by calculation (observable entity),standard,hemoglobin-standard

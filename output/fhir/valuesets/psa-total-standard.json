@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "psa-total-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/psa-total-standard",
+  "name": "PsaTotalStandard",
+  "title": "Total PSA in serum/plasma",
+  "status": "draft",
+  "experimental": true,
+  "description": "Total PSA in serum/plasma (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "35741-8",
+            "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time by detection limit <= 0.01 ng/mL (observable entity)"
+          },
+          {
+            "code": "2857-1",
+            "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "83112-3",
+            "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time by immunoassay (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

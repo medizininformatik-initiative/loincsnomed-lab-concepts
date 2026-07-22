@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "psa-free-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/psa-free-standard",
+  "name": "PsaFreeStandard",
+  "title": "Free PSA in serum/plasma",
+  "status": "draft",
+  "experimental": true,
+  "description": "Free PSA in serum/plasma (specialized). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "10886-0",
+            "display": "Mass concentration of free prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "83113-1",
+            "display": "Mass concentration of free prostate specific antigen in serum or plasma at point in time by immunoassay (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 706958000 |Free prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}

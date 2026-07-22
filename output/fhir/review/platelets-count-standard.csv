@@ -1,0 +1,13 @@
+LOINC,SCTID,FSN,tier,test
+107193-5,487891010000102,Number concentration of platelet in blood at point in time by automated count in presence of EDTA to detect possible clumping (observable entity),standard,platelets-count-standard
+778-1,268771010000105,Number concentration of platelet in blood at point in time by manual count (observable entity),standard,platelets-count-standard
+55802-3,247121010000104,Number concentration of platelet in cord blood at point in time by estimate (observable entity),standard,platelets-count-standard
+777-3,218801010000106,Number concentration of platelet in blood at point in time by automated count (observable entity),standard,platelets-count-standard
+47284-5,172051010000108,Number concentration of platelet in cord blood at point in time (observable entity),standard,platelets-count-standard
+74775-8,149011010000103,Number concentration of platelet in platelet rich plasma at point in time by automated count (observable entity),standard,platelets-count-standard
+26516-5,136661010000100,Number concentration of platelet in plasma at point in time (observable entity),standard,platelets-count-standard
+74464-9,124101010000103,Number concentration of platelet in capillary blood at point in time by manual count (observable entity),standard,platelets-count-standard
+26515-7,90581010000105,Number concentration of platelet in blood at point in time (observable entity),standard,platelets-count-standard
+49497-1,86361010000105,Number concentration of platelet in blood at point in time by estimate (observable entity),standard,platelets-count-standard
+13056-7,71831010000107,Number concentration of platelet in plasma at point in time by automated count (observable entity),standard,platelets-count-standard
+97995-5,56141010000104,Number concentration of platelet in blood at point in time by automated count.optical (observable entity),standard,platelets-count-standard

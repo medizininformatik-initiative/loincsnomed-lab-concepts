@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "leukocytes-count-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/leukocytes-count-standard",
+  "name": "LeukocytesCountStandard",
+  "title": "Leukocyte count in blood",
+  "status": "draft",
+  "experimental": true,
+  "description": "Leukocyte count in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "729-4",
+            "display": "Number concentration of leukocytes other in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "51383-8",
+            "display": "Number concentration of leukocytes other in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "30406-3",
+            "display": "Number concentration of leukocytes other in blood at point in time (observable entity)"
+          },
+          {
+            "code": "33256-9",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "47281-1",
+            "display": "Number concentration of leukocyte in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "12227-5",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time (observable entity)"
+          },
+          {
+            "code": "26464-8",
+            "display": "Number concentration of leukocyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "804-5",
+            "display": "Number concentration of leukocyte in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "6690-2",
+            "display": "Number concentration of leukocyte in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "49498-9",
+            "display": "Number concentration of leukocyte in blood at point in time by estimate (observable entity)"
+          },
+          {
+            "code": "66768-3",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in cord blood at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+}
