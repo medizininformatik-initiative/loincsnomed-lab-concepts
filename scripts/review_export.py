@@ -51,18 +51,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from terminology_server_adapters import LOINCSNOMEDSnowstormAdapter
 
-TARGETS = {
-    "public": {
-        "name": "public-2025-09-21",
-        "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
-        "branch": "MAIN/LOINC/2025-09-21",
-    },
-    "local": {
-        "name": "local-2026-03-21",
-        "api_base": "http://localhost:8090",
-        "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
-    },
-}
+import targets as _targets
+
+# Edition pins live in config/targets.json ("local" = current, "public" = previous)
+TARGETS = _targets.cli_targets()
 
 OBSERVABLE_ROOT = "<< 363787002 |Observable entity (observable entity)|"
 COMPONENT_ATTR = "246093002"
@@ -72,7 +64,7 @@ PROFILES_PATH = ROOT / "config" / "aggregation_profiles.json"
 # (RF2 sct2_Identifier file, alternate-identifier scheme below). Snowstorm does
 # not expose it via API, so we read the extracted file directly.
 LOINC_SCHEME = "30051010000102"
-LOINC_MAP_PATH = ROOT / "data" / "loincsnomed_identifiers_20260321.txt"
+LOINC_MAP_PATH = _targets.loinc_map_path()
 
 
 def load_loinc_map(path):

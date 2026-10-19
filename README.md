@@ -20,6 +20,21 @@ Automated tools for exploring and validating LOINC-SNOMED mappings:
 - Interactive HTML report generator
 - Batch processing for multiple concepts
 
+## Updating to a new LOINC-SNOMED release
+
+Edition pins live in `config/targets.json` (`current` = edition the artifacts are
+built from, `previous` = diff baseline); scripts read them via `scripts/targets.py`.
+A new release is loaded into the local Snowstorm and propagated with one command:
+
+```bash
+python3 scripts/update_release.py --zip ~/Downloads/SnomedCT_LOINCExtension_PRODUCTION_LO1010000_<eff>T120000Z.zip --dry-run
+python3 scripts/update_release.py --zip ...   # helper import → identifier extract → rotate pins → regenerate outputs
+```
+
+Server side this uses `~/code/helper/local-snowstorm/update-extension.sh`; the full
+procedure (including a dependency-aware rebuild of International + DE/AT/CH + LOINC)
+is the `snowstorm-edition-update` Claude skill.
+
 ## Features
 
 - **Automated ECL Query Generation**: Automatically builds multiple ECL query variants for any LOINC concept

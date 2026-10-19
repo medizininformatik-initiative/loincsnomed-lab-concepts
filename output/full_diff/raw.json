@@ -1,0 +1,32 @@
+{
+  "targets": [
+    {
+      "name": "A_public-2025-09-21",
+      "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
+      "branch": "MAIN/LOINC/2025-09-21"
+    },
+    {
+      "name": "B_local-2026-03-21",
+      "api_base": "http://localhost:8090",
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21"
+    }
+  ],
+  "counts": {
+    "active_A": 416815,
+    "active_B": 423857,
+    "only_A": 1539,
+    "only_B": 8581,
+    "both": 415276,
+    "fsn_changed": 2655
+  },
+  "removed_by_module": {
+    "900000000000207008": 1528,
+    "11010000107": 10,
+    "900000000000012004": 1
+  },
+  "added_by_module": {
+    "900000000000207008": 4712,
+    "11010000107": 3862,
+    "900000000000012004": 7
+  }
+}

@@ -76,14 +76,23 @@ class LOINCSNOMEDSnowstormAdapter(TerminologyServerAdapter):
 
     def __init__(self, api_base=None, branch=None):
         """
-        Initialize LOINCSNOMED adapter.
+        Initialize LOINCSNOMED Snowstorm adapter.
 
-        Args:
-            api_base: Base URL (default: http://browser.loincsnomed.org/snowstorm/snomed-ct)
-            branch: Branch path (default: MAIN/LOINC/2025-09-21)
+        Resolution order for api_base / branch:
+          1. Explicit constructor argument
+          2. Environment variable (LOINCSNOMED_API_BASE / LOINCSNOMED_BRANCH)
+          3. Public LOINCSNOMED browser defaults
         """
-        self.api_base = api_base or "http://browser.loincsnomed.org/snowstorm/snomed-ct"
-        self.branch = branch or "MAIN/LOINC/2025-09-21"
+        self.api_base = (
+            api_base
+            or os.getenv("LOINCSNOMED_API_BASE")
+            or "http://browser.loincsnomed.org/snowstorm/snomed-ct"
+        ).rstrip("/")
+        self.branch = (
+            branch
+            or os.getenv("LOINCSNOMED_BRANCH")
+            or "MAIN/LOINC/2025-09-21"
+        )
 
     def execute_ecl_query(self, ecl_expression, limit=1000):
         """Execute ECL query against LOINCSNOMED Snowstorm."""
@@ -142,25 +151,35 @@ class LOINCSNOMEDSnowstormAdapter(TerminologyServerAdapter):
 class OntoServerAdapter(TerminologyServerAdapter):
     """Adapter for OntoServer FHIR terminology server."""
 
-    def __init__(self, base_url, code_system_url=None, version_url=None, use_post=False,
+    def __init__(self, base_url=None, code_system_url=None, version_url=None, use_post=None,
                  cert_path=None, cert_password=None):
         """
         Initialize OntoServer adapter.
 
-        Args:
-            base_url: OntoServer base URL (e.g., https://ontoserver.mii-termserv.de/fhir)
-            code_system_url: SNOMED CT code system URL
-                (default: http://snomed.info/sct)
-            version_url: Version URL for SNOMED CT
-                (default: http://snomed.info/sct/11010000107/version/20250921)
-            use_post: If True, use POST with ValueSet body; if False, use GET with fhir_vs parameter
-            cert_path: Path to .p12 client certificate file for mTLS authentication
-            cert_password: Password for the .p12 certificate (can be None if no password)
+        Resolution order for each setting: explicit argument → env var → default.
+        Env vars: ONTOSERVER_BASE_URL, ONTOSERVER_CODE_SYSTEM_URL,
+                  ONTOSERVER_VERSION_URL, ONTOSERVER_USE_POST.
         """
-        self.base_url = base_url.rstrip('/')
-        self.code_system_url = code_system_url or "http://snomed.info/sct"
-        self.version_url = version_url or "http://snomed.info/sct/11010000107/version/20250921"
-        self.use_post = use_post
+        resolved_base = base_url or os.getenv("ONTOSERVER_BASE_URL")
+        if not resolved_base:
+            raise ValueError(
+                "OntoServerAdapter needs base_url (argument or ONTOSERVER_BASE_URL env)"
+            )
+        self.base_url = resolved_base.rstrip('/')
+        self.code_system_url = (
+            code_system_url
+            or os.getenv("ONTOSERVER_CODE_SYSTEM_URL")
+            or "http://snomed.info/sct"
+        )
+        self.version_url = (
+            version_url
+            or os.getenv("ONTOSERVER_VERSION_URL")
+            or "http://snomed.info/sct/11010000107/version/20250921"
+        )
+        if use_post is None:
+            self.use_post = os.getenv("ONTOSERVER_USE_POST", "").lower() in ("1", "true", "yes")
+        else:
+            self.use_post = use_post
 
         # Load certificate configuration from environment if not provided
         if cert_path is None:
@@ -409,7 +428,7 @@ class OntoServerAdapter(TerminologyServerAdapter):
             return {'concept_id': concept_id, 'fsn': 'Unknown', 'pt': 'Unknown'}
 
 
-def create_adapter(server_type, **kwargs):
+def create_adapter(server_type=None, **kwargs):
     """
     Factory function to create the appropriate terminology server adapter.
 
@@ -441,9 +460,10 @@ def create_adapter(server_type, **kwargs):
                                 version_url='http://snomed.info/sct/11010000107/version/20250921',
                                 use_post=True)
     """
-    if server_type.lower() == 'loincsnomed':
+    server_type = (server_type or os.getenv("TERMINOLOGY_SERVER_TYPE") or "loincsnomed").lower()
+    if server_type == 'loincsnomed':
         return LOINCSNOMEDSnowstormAdapter(**kwargs)
-    elif server_type.lower() == 'ontoserver':
+    elif server_type == 'ontoserver':
         return OntoServerAdapter(**kwargs)
     else:
         raise ValueError("Unknown server type: {}. Use 'loincsnomed' or 'ontoserver'".format(server_type))

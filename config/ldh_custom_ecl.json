@@ -1,0 +1,29 @@
+{
+  "description": "Custom ECL queries for Lactate Dehydrogenase (LDH), SNOMED component 259319003. Used as a non-specific marker of tissue damage (hemolysis, MI, liver injury, tumor lysis).",
+  "queries": [
+    {
+      "id": "refined_query_v2_measurement",
+      "name": "Refined Query V2 (Universal Measurement Property, incl. isoenzymes)",
+      "description": "All LDH observables in blood specimens with any measurement property — includes total LDH and isoenzymes (LDH-1..5) via << descent on component.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|"
+    },
+    {
+      "id": "refined_query_v2_total_only",
+      "name": "Refined Query V2 (Total LDH only, exact component)",
+      "description": "Restricts component to exactly Lactate dehydrogenase (no << descent) — excludes isoenzymes and D/L stereoisomers.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|"
+    },
+    {
+      "id": "refined_query_v2_no_ratio",
+      "name": "Refined Query V2 (Excl. Ratio)",
+      "description": "LDH observables in blood excluding ratio properties (e.g., LDH-1/LDH-2 isoenzyme ratios).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|"
+    },
+    {
+      "id": "refined_query_v2_ratio_only",
+      "name": "Refined Query V2 (Ratio Properties)",
+      "description": "LDH ratio observables only (isoenzyme ratios, fractions).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|"
+    }
+  ]
+}

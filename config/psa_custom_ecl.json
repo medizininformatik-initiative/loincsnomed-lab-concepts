@@ -1,0 +1,23 @@
+{
+  "description": "Custom ECL queries for Prostate Specific Antigen (PSA), SNOMED component 102687007. Used for prostate cancer tracking — total PSA, free PSA, and PSA ratio observables.",
+  "queries": [
+    {
+      "id": "refined_query_v2_measurement",
+      "name": "Refined Query V2 (Universal Measurement Property)",
+      "description": "All PSA observables in blood specimens with any measurement property — captures mass concentration, arbitrary concentration, etc.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|"
+    },
+    {
+      "id": "refined_query_v2_no_ratio",
+      "name": "Refined Query V2 (Excl. Ratio)",
+      "description": "PSA observables in blood, excluding ratio properties (e.g., free PSA / total PSA ratio). Focuses on absolute measurements.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|"
+    },
+    {
+      "id": "refined_query_v2_ratio_only",
+      "name": "Refined Query V2 (Ratio Properties)",
+      "description": "PSA ratio observables only (free PSA / total PSA, etc.) — clinically relevant for distinguishing benign from malignant elevations.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|"
+    }
+  ]
+}

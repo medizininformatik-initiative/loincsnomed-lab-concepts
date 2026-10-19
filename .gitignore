@@ -46,3 +46,6 @@ Thumbs.db
 
 # SNOMED-LOINC RF2 identifier extract (licensed release artifact)
 data/loincsnomed_identifiers_*.txt
+
+# full_branch_diff.py page cache (regenerable, ~90 MB)
+output/full_diff/.cache/

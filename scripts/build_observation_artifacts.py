@@ -28,6 +28,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from terminology_server_adapters import LOINCSNOMEDSnowstormAdapter
 from review_export import TARGETS, load_loinc_map, LOINC_MAP_PATH
+import targets as _targets
 
 TESTS_PATH = ROOT / "config" / "clinical_tests.json"
 
@@ -114,6 +115,8 @@ def main():
     args = ap.parse_args()
 
     cfg = json.loads(TESTS_PATH.read_text())
+    # the edition pin is owned by config/targets.json, not clinical_tests.json
+    cfg["snomed_version"] = _targets.snomed_version_uri()
     tgt = TARGETS[args.target]
     print("Target: {} ({})".format(tgt["name"], tgt["branch"]))
     loinc_map = load_loinc_map(args.loinc_map)
