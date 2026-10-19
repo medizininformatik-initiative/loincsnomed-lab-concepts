@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hba1c-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/hba1c-complete",
+  "name": "Hba1cComplete",
+  "title": "hba1c — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)| against http://snomed.info/sct/11010000107/version/20260321. 10 concepts (8 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "4548-4",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "17855-8",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "4549-2",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "17856-6",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "62388-4",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by JDS/JSCC (observable entity)"
+          },
+          {
+            "code": "96595-4",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "59261-8",
+            "display": "Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "41995-2",
+            "display": "Mass concentration of glycated hemoglobin-A1c in blood at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "408591000",
+            "display": "Hemoglobin A1c target (observable entity)"
+          },
+          {
+            "code": "446074002",
+            "display": "Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|",
+  "_bucket": "complete"
+}

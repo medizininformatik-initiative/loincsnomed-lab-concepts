@@ -1,0 +1,662 @@
+{
+  "resourceType": "ValueSet",
+  "id": "leukocytes-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/leukocytes-complete",
+  "name": "LeukocytesComplete",
+  "title": "leukocytes — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 156 concepts (153 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "34469-7",
+            "display": "Presence of leukocyte in bile at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "34445-7",
+            "display": "Presence of leukocyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "99928-4",
+            "display": "Presence of leukocyte in body fluid at point in time by automated technique (observable entity)"
+          },
+          {
+            "code": "107497-0",
+            "display": "Presence of leukocyte in bronchus at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "88114-4",
+            "display": "Presence of leukocyte in cerebrospinal fluid at point in time by Gram stain (observable entity)"
+          },
+          {
+            "code": "107475-6",
+            "display": "Presence of leukocyte in deep wound at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "88343-9",
+            "display": "Presence of leukocyte in ear at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "14105-1",
+            "display": "Presence of leukocyte in nose at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107483-0",
+            "display": "Presence of leukocyte in pericardial fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107465-7",
+            "display": "Presence of leukocyte in pus at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "32825-2",
+            "display": "Presence of leukocyte in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "72163-9",
+            "display": "Presence of leukocyte in specimen at point in time by Gram stain (observable entity)"
+          },
+          {
+            "code": "32761-9",
+            "display": "Presence of leukocyte in specimen at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "107469-9",
+            "display": "Presence of leukocyte in specimen obtained by aspiration at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "14328-9",
+            "display": "Presence of leukocyte in sputum at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "13655-6",
+            "display": "Presence of leukocyte in stool at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "42327-7",
+            "display": "Presence of leukocyte in stool at point in time by methylene blue stain (observable entity)"
+          },
+          {
+            "code": "48973-2",
+            "display": "Presence of leukocyte in stool at point in time by methylene blue stain 2nd specimen (observable entity)"
+          },
+          {
+            "code": "107476-4",
+            "display": "Presence of leukocyte in superficial wound at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "32142-2",
+            "display": "Presence of leukocyte in synovial fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107472-3",
+            "display": "Presence of leukocyte in tissue at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107011-9",
+            "display": "Presence of leukocyte in urethra at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "33052-2",
+            "display": "Presence of leukocyte in urine at point in time (observable entity)"
+          },
+          {
+            "code": "53316-6",
+            "display": "Presence of leukocyte in urine at point in time by automated technique (observable entity)"
+          },
+          {
+            "code": "53964-3",
+            "display": "Presence of leukocyte in urine at point in time by visual (observable entity)"
+          },
+          {
+            "code": "105105-1",
+            "display": "Presence of leukocyte in urine sediment at point in time (observable entity)"
+          },
+          {
+            "code": "20455-2",
+            "display": "Presence of leukocyte in urine sediment at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "12226-7",
+            "display": "Presence of leukocyte in vagina at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "110644-2",
+            "display": "Measurement of leukocyte in stool (observable entity)"
+          },
+          {
+            "code": "111204-4",
+            "display": "Measurement of leukocyte in urine sediment (observable entity)"
+          },
+          {
+            "code": "99929-2",
+            "display": "Number areic of leukocyte in body fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "96712-5",
+            "display": "Number areic of leukocyte in body fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "12224-2",
+            "display": "Number areic of leukocyte in nose at point in time by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "96718-2",
+            "display": "Number areic of leukocyte in prostatic fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "49224-9",
+            "display": "Number areic of leukocyte in seminal fluid at point in time by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "53225-9",
+            "display": "Number areic of leukocyte in specimen at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "12225-9",
+            "display": "Number areic of leukocyte in sputum at point in time by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "51770-6",
+            "display": "Number areic of leukocyte in stool at point in time by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "53226-7",
+            "display": "Number areic of leukocyte in urethra at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "104646-5",
+            "display": "Number areic of leukocyte in urine at point in time by computer assisted (observable entity)"
+          },
+          {
+            "code": "105104-4",
+            "display": "Number areic of leukocyte in urine sediment at point in time (observable entity)"
+          },
+          {
+            "code": "46702-7",
+            "display": "Number areic of leukocyte in urine sediment at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "5821-4",
+            "display": "Number areic of leukocyte in urine sediment at point in time by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "45383-7",
+            "display": "Number areic of leukocyte in urine sediment at point in time by low power field light microscopy (observable entity)"
+          },
+          {
+            "code": "53227-5",
+            "display": "Number areic of leukocyte in uterine cervix at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "44092-5",
+            "display": "Number areic of leukocyte in vagina at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "26471-3",
+            "display": "Number fraction of leukocytes other to leukocyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "40646-2",
+            "display": "Number fraction of leukocytes other to leukocyte in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "730-2",
+            "display": "Number fraction of leukocytes other to leukocyte in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26473-9",
+            "display": "Number fraction of leukocytes other to leukocyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "13524-4",
+            "display": "Number fraction of leukocytes other to leukocyte in body fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "32808-8",
+            "display": "Number fraction of leukocytes other to leukocyte in bronchus at point in time (observable entity)"
+          },
+          {
+            "code": "40543-1",
+            "display": "Number fraction of leukocytes other to leukocyte in bronchus at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26472-1",
+            "display": "Number fraction of leukocytes other to leukocyte in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "13523-6",
+            "display": "Number fraction of leukocytes other to leukocyte in cerebrospinal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30407-1",
+            "display": "Number fraction of leukocytes other to leukocyte in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14857-7",
+            "display": "Number fraction of leukocytes other to leukocyte in pericardial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "40535-7",
+            "display": "Number fraction of leukocytes other to leukocyte in peritoneal dialysate at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30409-7",
+            "display": "Number fraction of leukocytes other to leukocyte in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14859-3",
+            "display": "Number fraction of leukocytes other to leukocyte in peritoneal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30408-9",
+            "display": "Number fraction of leukocytes other to leukocyte in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14858-5",
+            "display": "Number fraction of leukocytes other to leukocyte in pleural fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30410-5",
+            "display": "Number fraction of leukocytes other to leukocyte in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14860-1",
+            "display": "Number fraction of leukocytes other to leukocyte in synovial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "68432-4",
+            "display": "Number fraction of leukocytes other to leukocyte in vitreous humor at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "61182-2",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in Bld^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "12227-5",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time (observable entity)"
+          },
+          {
+            "code": "33256-9",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "48052-5",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "55784-3",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in bone marrow at point in time (observable entity)"
+          },
+          {
+            "code": "48034-3",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "66768-3",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "70126-8",
+            "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "33765-9",
+            "display": "Number concentration of leukocyte in ^BPU.platelet pheresis at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "95218-4",
+            "display": "Number concentration of leukocyte in ^Stem cell product at point in time (observable entity)"
+          },
+          {
+            "code": "100849-9",
+            "display": "Number concentration of leukocyte in amniotic fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "33028-2",
+            "display": "Number concentration of leukocyte in Bld^BPU at point in time (observable entity)"
+          },
+          {
+            "code": "62239-9",
+            "display": "Number concentration of leukocyte in Bld^Fetus at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "26464-8",
+            "display": "Number concentration of leukocyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "6690-2",
+            "display": "Number concentration of leukocyte in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "49498-9",
+            "display": "Number concentration of leukocyte in blood at point in time by estimate (observable entity)"
+          },
+          {
+            "code": "804-5",
+            "display": "Number concentration of leukocyte in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26466-3",
+            "display": "Number concentration of leukocyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "57845-0",
+            "display": "Number concentration of leukocyte in body fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "6743-9",
+            "display": "Number concentration of leukocyte in body fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "82587-7",
+            "display": "Number concentration of leukocyte in bone marrow at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "99776-7",
+            "display": "Number concentration of leukocyte in bronchoalveolar lavage fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "99051-5",
+            "display": "Number concentration of leukocyte in bronchoalveolar lavage fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30401-4",
+            "display": "Number concentration of leukocyte in bronchus at point in time (observable entity)"
+          },
+          {
+            "code": "14810-6",
+            "display": "Number concentration of leukocyte in bronchus at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "92635-2",
+            "display": "Number concentration of leukocyte in buffy coat at point in time (observable entity)"
+          },
+          {
+            "code": "26465-5",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "76674-1",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time 1st tube (observable entity)"
+          },
+          {
+            "code": "46088-1",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time 2nd tube (observable entity)"
+          },
+          {
+            "code": "46089-9",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time 3rd tube (observable entity)"
+          },
+          {
+            "code": "46090-7",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time 4th tube (observable entity)"
+          },
+          {
+            "code": "805-2",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "806-0",
+            "display": "Number concentration of leukocyte in cerebrospinal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "47281-1",
+            "display": "Number concentration of leukocyte in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "53518-7",
+            "display": "Number concentration of leukocyte in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "68368-0",
+            "display": "Number concentration of leukocyte in dialysate at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "57847-6",
+            "display": "Number concentration of leukocyte in dialysate at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30402-2",
+            "display": "Number concentration of leukocyte in gastric fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14373-5",
+            "display": "Number concentration of leukocyte in gastric fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "98020-1",
+            "display": "Number concentration of leukocyte in lower respiratory tract at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30403-0",
+            "display": "Number concentration of leukocyte in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "57846-8",
+            "display": "Number concentration of leukocyte in pericardial fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "14811-4",
+            "display": "Number concentration of leukocyte in pericardial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "49928-5",
+            "display": "Number concentration of leukocyte in peritoneal dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "99775-9",
+            "display": "Number concentration of leukocyte in peritoneal dialysate at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "40533-2",
+            "display": "Number concentration of leukocyte in peritoneal dialysate at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26468-9",
+            "display": "Number concentration of leukocyte in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "809-4",
+            "display": "Number concentration of leukocyte in peritoneal fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "810-2",
+            "display": "Number concentration of leukocyte in peritoneal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26467-1",
+            "display": "Number concentration of leukocyte in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "807-8",
+            "display": "Number concentration of leukocyte in pleural fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "808-6",
+            "display": "Number concentration of leukocyte in pleural fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "62251-4",
+            "display": "Number concentration of leukocyte in plr fld^Fetus at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "72348-6",
+            "display": "Number concentration of leukocyte in prostatic fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "10579-1",
+            "display": "Number concentration of leukocyte in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "811-0",
+            "display": "Number concentration of leukocyte in seminal fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "812-8",
+            "display": "Number concentration of leukocyte in seminal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "20584-9",
+            "display": "Number concentration of leukocyte in specimen at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "30404-8",
+            "display": "Number concentration of leukocyte in stool at point in time (observable entity)"
+          },
+          {
+            "code": "13349-6",
+            "display": "Number concentration of leukocyte in stool at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26469-7",
+            "display": "Number concentration of leukocyte in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "813-6",
+            "display": "Number concentration of leukocyte in synovial fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "814-4",
+            "display": "Number concentration of leukocyte in synovial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "105921-1",
+            "display": "Number concentration of leukocyte in urethra at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "30405-5",
+            "display": "Number concentration of leukocyte in urine at point in time (observable entity)"
+          },
+          {
+            "code": "51487-7",
+            "display": "Number concentration of leukocyte in urine at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "24122-4",
+            "display": "Number concentration of leukocyte in urine at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "63555-7",
+            "display": "Number concentration of leukocyte in urine sediment by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "68434-0",
+            "display": "Number concentration of leukocyte in vitreous humor at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "66145-4",
+            "display": "Number concentration of leukocytes other in Bld^Fetus at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30406-3",
+            "display": "Number concentration of leukocytes other in blood at point in time (observable entity)"
+          },
+          {
+            "code": "51383-8",
+            "display": "Number concentration of leukocytes other in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "729-4",
+            "display": "Number concentration of leukocytes other in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "35051-2",
+            "display": "Number concentration of leukocytes other in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "26470-5",
+            "display": "Number concentration of leukocytes other in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "13351-2",
+            "display": "Number concentration of leukocytes other in cerebrospinal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "67830-0",
+            "display": "Number concentration of leukocytes other in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "68428-2",
+            "display": "Number concentration of leukocytes other in pericardial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "35054-6",
+            "display": "Number concentration of leukocytes other in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "68429-0",
+            "display": "Number concentration of leukocytes other in peritoneal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "35052-0",
+            "display": "Number concentration of leukocytes other in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "68430-8",
+            "display": "Number concentration of leukocytes other in pleural fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "67836-7",
+            "display": "Number concentration of leukocytes other in plr fld^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "35053-8",
+            "display": "Number concentration of leukocytes other in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "68431-6",
+            "display": "Number concentration of leukocytes other in synovial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "68433-2",
+            "display": "Number concentration of leukocytes other in vitreous humor at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "58805-3",
+            "display": "Number concentration of leukocyte in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "20408-1",
+            "display": "Number concentration of leukocyte in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "375911000119106",
+            "display": "Differential count of white blood cells by automated method (observable entity)"
+          },
+          {
+            "code": "376201000119106",
+            "display": "Differential count of white blood cells by manual method (observable entity)"
+          },
+          {
+            "code": "375701000119105",
+            "display": "Presence of white blood cells in stool (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|",
+  "_bucket": "complete"
+}

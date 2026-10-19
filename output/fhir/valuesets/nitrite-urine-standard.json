@@ -6,7 +6,7 @@
   "title": "Nitrite in urine (qualitative)",
   "status": "draft",
   "experimental": true,
-  "description": "Nitrite in urine (qualitative) (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "description": "Nitrite in urine (qualitative) (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -23,6 +23,17 @@
           {
             "code": "32710-6",
             "display": "Presence of nitrite salt in urine at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|"
           }
         ]
       }

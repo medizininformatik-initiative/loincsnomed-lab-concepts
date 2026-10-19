@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "platelets-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/platelets-qualitative",
+  "name": "PlateletsQualitative",
+  "title": "platelets — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "104705-9",
+            "display": "Presence of platelet in blood at point in time (observable entity)"
+          },
+          {
+            "code": "9317-9",
+            "display": "Presence of platelet in blood at point in time by light microscopy (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|",
+  "_bucket": "qualitative"
+}

@@ -6,7 +6,7 @@
   "title": "Leukocyte count in blood",
   "status": "draft",
   "experimental": true,
-  "description": "Leukocyte count in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "description": "Leukocyte count in blood (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -55,6 +55,17 @@
           {
             "code": "66768-3",
             "display": "Number concentration of leukocyte corrected for nucleated erythrocytes in cord blood at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }

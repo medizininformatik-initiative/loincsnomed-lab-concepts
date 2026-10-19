@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nitrite-urine-semiquantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/nitrite-urine-semiquantitative",
+  "name": "NitriteUrineSemiquantitative",
+  "title": "nitrite urine — Semi-quantitative (test strip)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Semi-quantitative (test strip): Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip). Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)| against http://snomed.info/sct/11010000107/version/20260321. 1 concepts (1 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "20407-3",
+            "display": "Mass concentration of nitrite salt in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|",
+  "_bucket": "semiquantitative"
+}

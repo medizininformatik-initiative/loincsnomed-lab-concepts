@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nitrite-urine-quantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/nitrite-urine-quantitative",
+  "name": "NitriteUrineQuantitative",
+  "title": "nitrite urine — Quantitative (all numeric)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)| against http://snomed.info/sct/11010000107/version/20260321. 5 concepts (5 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "18370-7",
+            "display": "Mass concentration of nitrite salt in blood at point in time (observable entity)"
+          },
+          {
+            "code": "55947-6",
+            "display": "Mass concentration of nitrite salt in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "2657-5",
+            "display": "Mass concentration of nitrite salt in urine at point in time (observable entity)"
+          },
+          {
+            "code": "13616-8",
+            "display": "Mass concentration of nitrite salt in water at point in time (observable entity)"
+          },
+          {
+            "code": "55948-4",
+            "display": "Substance concentration of nitrite salt in serum or plasma at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|",
+  "_bucket": "quantitative"
+}

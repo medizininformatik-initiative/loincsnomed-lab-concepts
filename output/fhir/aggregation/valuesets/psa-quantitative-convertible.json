@@ -1,0 +1,125 @@
+{
+  "resourceType": "ValueSet",
+  "id": "psa-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/psa-quantitative-convertible",
+  "name": "PsaQuantitativeConvertible",
+  "title": "psa — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)| against http://snomed.info/sct/11010000107/version/20260321. 26 concepts (26 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "19204-7",
+            "display": "Arbitrary concentration of free prostate specific antigen in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "19201-3",
+            "display": "Arbitrary concentration of free prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "19198-1",
+            "display": "Arbitrary concentration of prostate specific antigen in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "19195-7",
+            "display": "Arbitrary concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "59239-4",
+            "display": "Mass concentration of free prostate specific antigen in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "59231-1",
+            "display": "Mass concentration of free prostate specific antigen in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "59224-6",
+            "display": "Mass concentration of free prostate specific antigen in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "59232-9",
+            "display": "Mass concentration of free prostate specific antigen in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "19205-4",
+            "display": "Mass concentration of free prostate specific antigen in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "10886-0",
+            "display": "Mass concentration of free prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "83113-1",
+            "display": "Mass concentration of free prostate specific antigen in serum or plasma at point in time by immunoassay (observable entity)"
+          },
+          {
+            "code": "47738-0",
+            "display": "Mass concentration of prostate specific antigen in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "59230-3",
+            "display": "Mass concentration of prostate specific antigen in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "100716-0",
+            "display": "Mass concentration of prostate specific antigen in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "59223-8",
+            "display": "Mass concentration of prostate specific antigen in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "59221-2",
+            "display": "Mass concentration of prostate specific antigen in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "19199-9",
+            "display": "Mass concentration of prostate specific antigen in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "2857-1",
+            "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "35741-8",
+            "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time by detection limit <= 0.01 ng/mL (observable entity)"
+          },
+          {
+            "code": "83112-3",
+            "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time by immunoassay (observable entity)"
+          },
+          {
+            "code": "34611-4",
+            "display": "Mass concentration of prostate specific antigen in urine at point in time (observable entity)"
+          },
+          {
+            "code": "33667-7",
+            "display": "Mass concentration of protein-bound prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "19206-2",
+            "display": "Substance concentration of free prostate specific antigen in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "19203-9",
+            "display": "Substance concentration of free prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "19200-5",
+            "display": "Substance concentration of prostate specific antigen in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "19197-3",
+            "display": "Substance concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|",
+  "_bucket": "quantitative_convertible"
+}

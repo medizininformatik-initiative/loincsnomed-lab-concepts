@@ -127,7 +127,7 @@ def main():
     print(f"Active in both:             {len(both):,}")
 
     fsn_changed = []
-    for cid in both:
+    for cid in sorted(both):  # sorted → stable output across runs
         if A[cid]["fsn"] != B[cid]["fsn"]:
             fsn_changed.append((cid, A[cid]["fsn"], B[cid]["fsn"], A[cid]["moduleId"], B[cid]["moduleId"]))
     print(f"FSN changed on shared:      {len(fsn_changed):,}")

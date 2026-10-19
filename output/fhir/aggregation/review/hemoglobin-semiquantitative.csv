@@ -1,0 +1,3 @@
+LOINC,SCTID,FSN,use_case,reason
+49137-3,75411010000104,Mass concentration of hemoglobin in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+50559-4,69741010000101,Mass concentration of hemoglobin in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)

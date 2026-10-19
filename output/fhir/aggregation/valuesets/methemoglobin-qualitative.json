@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "methemoglobin-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/methemoglobin-qualitative",
+  "name": "MethemoglobinQualitative",
+  "title": "methemoglobin — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2613-8",
+            "display": "Presence of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2619-5",
+            "display": "Presence of methemoglobin in erythrocyte at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|",
+  "_bucket": "qualitative"
+}

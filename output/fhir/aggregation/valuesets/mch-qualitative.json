@@ -1,0 +1,477 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mch-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/mch-qualitative",
+  "name": "MchQualitative",
+  "title": "mch — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 114 concepts (114 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "32160-4",
+            "display": "Presence of carboxyhemoglobin in blood at point in time by screening (observable entity)"
+          },
+          {
+            "code": "45208-6",
+            "display": "Presence of hemoglobin A in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "28559-3",
+            "display": "Presence of hemoglobin A>2< in blood at point in time (observable entity)"
+          },
+          {
+            "code": "27345-8",
+            "display": "Presence of hemoglobin A>2< in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "4556-7",
+            "display": "Presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4557-5",
+            "display": "Presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4558-3",
+            "display": "Presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4559-1",
+            "display": "Presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "55783-5",
+            "display": "Presence of Hemoglobin Bart in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "4560-9",
+            "display": "Presence of Hemoglobin Bethesda in blood at point in time (observable entity)"
+          },
+          {
+            "code": "40720-5",
+            "display": "Presence of hemoglobin C in blood at point in time (observable entity)"
+          },
+          {
+            "code": "40545-6",
+            "display": "Presence of hemoglobin C in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "4564-1",
+            "display": "Presence of hemoglobin C-Harlem in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4565-8",
+            "display": "Presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4566-6",
+            "display": "Presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4567-4",
+            "display": "Presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4568-2",
+            "display": "Presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4572-4",
+            "display": "Presence of hemoglobin Denver in blood at point in time (observable entity)"
+          },
+          {
+            "code": "40546-4",
+            "display": "Presence of hemoglobin E in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "28067-7",
+            "display": "Presence of hemoglobin F in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "4579-9",
+            "display": "Presence of hemoglobin F in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4632-6",
+            "display": "Presence of hemoglobin F in blood at point in time by alkali denat (observable entity)"
+          },
+          {
+            "code": "32140-6",
+            "display": "Presence of hemoglobin F in blood at point in time by Kleihauer-Betke (observable entity)"
+          },
+          {
+            "code": "18277-4",
+            "display": "Presence of hemoglobin F in gastric fluid at point in time by Apt-Downey (observable entity)"
+          },
+          {
+            "code": "18278-2",
+            "display": "Presence of hemoglobin F in meconium at point in time by Apt-Downey (observable entity)"
+          },
+          {
+            "code": "30074-9",
+            "display": "Presence of hemoglobin F in specimen at point in time (observable entity)"
+          },
+          {
+            "code": "40721-3",
+            "display": "Presence of hemoglobin F in specimen at point in time by Apt-Downey (observable entity)"
+          },
+          {
+            "code": "4631-8",
+            "display": "Presence of hemoglobin F in stool at point in time by Apt-Downey (observable entity)"
+          },
+          {
+            "code": "28006-5",
+            "display": "Presence of hemoglobin F in vomitus at point in time (observable entity)"
+          },
+          {
+            "code": "4577-3",
+            "display": "Presence of hemoglobin F-Texas in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4581-5",
+            "display": "Presence of hemoglobin G-Coushatta in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4583-1",
+            "display": "Presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4584-9",
+            "display": "Presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4585-6",
+            "display": "Presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4586-4",
+            "display": "Presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "40547-2",
+            "display": "Presence of hemoglobin H in blood at point in time (observable entity)"
+          },
+          {
+            "code": "17871-5",
+            "display": "Presence of hemoglobin H in blood at point in time by heat denaturation (observable entity)"
+          },
+          {
+            "code": "4589-8",
+            "display": "Presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4590-6",
+            "display": "Presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4591-4",
+            "display": "Presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4592-2",
+            "display": "Presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4593-0",
+            "display": "Presence of hemoglobin I in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4594-8",
+            "display": "Presence of hemoglobin I in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4598-9",
+            "display": "Presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4599-7",
+            "display": "Presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "717-9",
+            "display": "Presence of hemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "33517-4",
+            "display": "Presence of hemoglobin in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "48035-0",
+            "display": "Presence of hemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "2334-1",
+            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity)"
+          },
+          {
+            "code": "42909-2",
+            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
+          },
+          {
+            "code": "42910-0",
+            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "42911-8",
+            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "34618-9",
+            "display": "Presence of hemoglobin in specimen at point in time (observable entity)"
+          },
+          {
+            "code": "50017-3",
+            "display": "Presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity)"
+          },
+          {
+            "code": "2335-8",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity)"
+          },
+          {
+            "code": "14563-1",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
+          },
+          {
+            "code": "14564-9",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "14565-6",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "12503-9",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity)"
+          },
+          {
+            "code": "12504-7",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity)"
+          },
+          {
+            "code": "27401-9",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity)"
+          },
+          {
+            "code": "27925-7",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity)"
+          },
+          {
+            "code": "27926-5",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity)"
+          },
+          {
+            "code": "80372-6",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity)"
+          },
+          {
+            "code": "104738-0",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity)"
+          },
+          {
+            "code": "29771-3",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity)"
+          },
+          {
+            "code": "57905-2",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity)"
+          },
+          {
+            "code": "56490-6",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity)"
+          },
+          {
+            "code": "56491-4",
+            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity)"
+          },
+          {
+            "code": "725-2",
+            "display": "Presence of hemoglobin in urine at point in time (observable entity)"
+          },
+          {
+            "code": "57751-0",
+            "display": "Presence of hemoglobin in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "5794-3",
+            "display": "Presence of hemoglobin in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "48047-5",
+            "display": "Presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity)"
+          },
+          {
+            "code": "42912-6",
+            "display": "Presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "42913-4",
+            "display": "Presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity)"
+          },
+          {
+            "code": "4595-5",
+            "display": "Presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4596-3",
+            "display": "Presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4597-1",
+            "display": "Presence of hemoglobin J-Cape Town in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4600-3",
+            "display": "Presence of Hemoglobin Kansas in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4601-1",
+            "display": "Presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4602-9",
+            "display": "Presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4603-7",
+            "display": "Presence of Hemoglobin Köln in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4604-5",
+            "display": "Presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4605-2",
+            "display": "Presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "53224-2",
+            "display": "Presence of hemoglobin M in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4606-0",
+            "display": "Presence of hemoglobin M-Boston in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4607-8",
+            "display": "Presence of hemoglobin M-Hyde Park in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4608-6",
+            "display": "Presence of hemoglobin M-Iwate in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4610-2",
+            "display": "Presence of hemoglobin M-Saskatoon in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4611-0",
+            "display": "Presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4612-8",
+            "display": "Presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4613-6",
+            "display": "Presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4614-4",
+            "display": "Presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4615-1",
+            "display": "Presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4616-9",
+            "display": "Presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4617-7",
+            "display": "Presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4618-5",
+            "display": "Presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4619-3",
+            "display": "Presence of Hemoglobin Rainier in blood at point in time (observable entity)"
+          },
+          {
+            "code": "34663-5",
+            "display": "Presence of hemoglobin S in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "4621-9",
+            "display": "Presence of hemoglobin S in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4622-7",
+            "display": "Presence of hemoglobin S in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4623-5",
+            "display": "Presence of hemoglobin S in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "6864-3",
+            "display": "Presence of hemoglobin S in blood at point in time by solubility test (observable entity)"
+          },
+          {
+            "code": "4626-8",
+            "display": "Presence of Hemoglobin Yakima in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4627-6",
+            "display": "Presence of Hemoglobin Yoshizuka in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4628-4",
+            "display": "Presence of Hemoglobin Ypsilanti in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4629-2",
+            "display": "Presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4630-0",
+            "display": "Presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "2613-8",
+            "display": "Presence of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2619-5",
+            "display": "Presence of methemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "4684-7",
+            "display": "Presence of sulfhemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "53117-8",
+            "display": "Presence of thermolabile hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "4639-1",
+            "display": "Presence of unstable hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "41619-8",
+            "display": "Presence of unstable hemoglobin in erythrocyte at point in time by isopropanol stability (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|",
+  "_bucket": "qualitative"
+}

@@ -47,8 +47,15 @@ def run_ecl(adapter, ecl, limit=10000):
     return out
 
 
-def make_valueset(cfg, test, concepts, loinc_map):
-    """LOINC-coded ValueSet; SNOMED include for concepts lacking a LOINC code."""
+def ecl_include(cfg, ecl):
+    """Intensional SNOMED include carrying the selection rule (FHIR 'constraint' filter)."""
+    return {"system": cfg["snomed_system"], "version": cfg["snomed_version"],
+            "filter": [{"property": "constraint", "op": "=", "value": ecl}]}
+
+
+def make_valueset(cfg, test, concepts, loinc_map, with_ecl=True):
+    """LOINC-coded ValueSet; SNOMED include for concepts lacking a LOINC code;
+    optionally the ECL itself as an intensional SNOMED include (the rule)."""
     vs_url = "{}/{}".format(cfg["base_valueset_url"], test["id"])
     loinc_concepts, snomed_concepts = [], []
     for c in concepts:
@@ -63,6 +70,8 @@ def make_valueset(cfg, test, concepts, loinc_map):
     if snomed_concepts:
         include.append({"system": cfg["snomed_system"],
                         "version": cfg["snomed_version"], "concept": snomed_concepts})
+    if with_ecl:
+        include.append(ecl_include(cfg, test["ecl"]))
     return {
         "resourceType": "ValueSet",
         "id": test["id"],
@@ -71,7 +80,8 @@ def make_valueset(cfg, test, concepts, loinc_map):
         "title": test["name"],
         "status": "draft",
         "experimental": True,
-        "description": "{} ({}). Generated from ECL against {}. Review required."
+        "description": "{} ({}). LOINC enumeration selected by the SNOMED ECL below against {}; "
+                       "the ECL is also carried as an intensional SNOMED include (the rule). Review required."
             .format(test["name"], test["tier"], cfg["snomed_version"]),
         "compose": {"include": include or [{"system": cfg["loinc_system"]}]},
         "_ecl": test["ecl"],
@@ -112,6 +122,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--target", choices=list(TARGETS), default="local")
     ap.add_argument("--loinc-map", default=str(LOINC_MAP_PATH))
+    ap.add_argument("--no-ecl-include", action="store_true",
+                    help="omit the intensional SNOMED ECL include (LOINC enumeration only)")
     args = ap.parse_args()
 
     cfg = json.loads(TESTS_PATH.read_text())
@@ -133,7 +145,7 @@ def main():
         concepts = run_ecl(adapter, test["ecl"])
         n_loinc = sum(1 for c in concepts if loinc_map.get(c["sctid"]))
 
-        vs = make_valueset(cfg, test, concepts, loinc_map)
+        vs = make_valueset(cfg, test, concepts, loinc_map, with_ecl=not args.no_ecl_include)
         (out / "valuesets" / "{}.json".format(test["id"])).write_text(
             json.dumps(vs, indent=2, ensure_ascii=False))
 

@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "erythrocytes-semiquantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/erythrocytes-semiquantitative",
+  "name": "ErythrocytesSemiquantitative",
+  "title": "erythrocytes — Semi-quantitative (test strip)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Semi-quantitative (test strip): Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip). Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "57747-8",
+            "display": "Number concentration of erythrocyte in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "20409-9",
+            "display": "Number concentration of erythrocyte in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|",
+  "_bucket": "semiquantitative"
+}

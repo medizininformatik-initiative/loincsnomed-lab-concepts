@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hematocrit-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/hematocrit-qualitative",
+  "name": "HematocritQualitative",
+  "title": "hematocrit — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 17 concepts (16 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "19098-3",
+            "display": "Presence of erythrocyte in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "34446-5",
+            "display": "Presence of erythrocyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "99926-8",
+            "display": "Presence of erythrocyte in body fluid at point in time by automated technique (observable entity)"
+          },
+          {
+            "code": "88113-6",
+            "display": "Presence of erythrocyte in cerebrospinal fluid at point in time by Gram stain (observable entity)"
+          },
+          {
+            "code": "68901-8",
+            "display": "Presence of erythrocyte in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "38285-3",
+            "display": "Presence of erythrocyte in duodenal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "72338-7",
+            "display": "Presence of erythrocyte in prostatic fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "13627-5",
+            "display": "Presence of erythrocyte in seminal fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "72162-1",
+            "display": "Presence of erythrocyte in specimen at point in time by Gram stain (observable entity)"
+          },
+          {
+            "code": "70124-3",
+            "display": "Presence of erythrocyte in specimen at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "33668-5",
+            "display": "Presence of erythrocyte in stool at point in time (observable entity)"
+          },
+          {
+            "code": "33051-4",
+            "display": "Presence of erythrocyte in urine at point in time (observable entity)"
+          },
+          {
+            "code": "53292-9",
+            "display": "Presence of erythrocyte in urine at point in time by automated technique (observable entity)"
+          },
+          {
+            "code": "105090-5",
+            "display": "Presence of erythrocyte in urine sediment at point in time (observable entity)"
+          },
+          {
+            "code": "32776-7",
+            "display": "Presence of erythrocyte in urine sediment at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "48051-7",
+            "display": "Presence of erythrocyte in vagina at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "648131000005102",
+            "display": "Presence of erythrocytes in urine (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|",
+  "_bucket": "qualitative"
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "leukocytes-semiquantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/leukocytes-semiquantitative",
+  "name": "LeukocytesSemiquantitative",
+  "title": "leukocytes — Semi-quantitative (test strip)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Semi-quantitative (test strip): Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip). Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "58805-3",
+            "display": "Number concentration of leukocyte in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "20408-1",
+            "display": "Number concentration of leukocyte in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|",
+  "_bucket": "semiquantitative"
+}

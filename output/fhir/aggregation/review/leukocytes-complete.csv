@@ -1,0 +1,157 @@
+LOINC,SCTID,FSN,use_case,reason
+100849-9,88571010000106,Number concentration of leukocyte in amniotic fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+104646-5,483171010000102,Number areic of leukocyte in urine at point in time by computer assisted (observable entity),quantitative,Quantitative scale
+105104-4,484351010000106,Number areic of leukocyte in urine sediment at point in time (observable entity),quantitative,Quantitative scale
+105105-1,484361010000108,Presence of leukocyte in urine sediment at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+10579-1,73201010000104,Number concentration of leukocyte in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+105921-1,485941010000109,Number concentration of leukocyte in urethra at point in time by wet preparation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107011-9,709931010000106,Presence of leukocyte in urethra at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107465-7,710251010000101,Presence of leukocyte in pus at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107469-9,710281010000107,Presence of leukocyte in specimen obtained by aspiration at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107472-3,710311010000109,Presence of leukocyte in tissue at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107475-6,710331010000100,Presence of leukocyte in deep wound at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107476-4,710341010000108,Presence of leukocyte in superficial wound at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107483-0,710401010000104,Presence of leukocyte in pericardial fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107497-0,710461010000103,Presence of leukocyte in bronchus at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+110644-2,726841010000107,Measurement of leukocyte in stool (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+111204-4,731041010000109,Measurement of leukocyte in urine sediment (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+12224-2,166761010000104,Number areic of leukocyte in nose at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+12225-9,103621010000106,Number areic of leukocyte in sputum at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+12226-7,269111010000105,Presence of leukocyte in vagina at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12227-5,249831010000100,Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+13349-6,91131010000106,Number concentration of leukocyte in stool at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+13351-2,491661010000101,Number concentration of leukocytes other in cerebrospinal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+13523-6,492381010000108,Number fraction of leukocytes other to leukocyte in cerebrospinal fluid at point in time by manual count (observable entity),quantitative,Quantitative scale
+13524-4,492391010000106,Number fraction of leukocytes other to leukocyte in body fluid at point in time by manual count (observable entity),quantitative,Quantitative scale
+13655-6,121251010000107,Presence of leukocyte in stool at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14105-1,188781010000108,Presence of leukocyte in nose at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14328-9,104961010000105,Presence of leukocyte in sputum at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14373-5,230861010000104,Number concentration of leukocyte in gastric fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+14810-6,100271010000101,Number concentration of leukocyte in bronchus at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+14811-4,54031010000103,Number concentration of leukocyte in pericardial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+14857-7,496981010000108,Number fraction of leukocytes other to leukocyte in pericardial fluid at point in time by manual count (observable entity),quantitative,Quantitative scale
+14858-5,496991010000106,Number fraction of leukocytes other to leukocyte in pleural fluid at point in time by manual count (observable entity),quantitative,Quantitative scale
+14859-3,497001010000100,Number fraction of leukocytes other to leukocyte in peritoneal fluid at point in time by manual count (observable entity),quantitative,Quantitative scale
+14860-1,497011010000102,Number fraction of leukocytes other to leukocyte in synovial fluid at point in time by manual count (observable entity),quantitative,Quantitative scale
+20408-1,275041010000100,Number concentration of leukocyte in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+20455-2,213301010000107,Presence of leukocyte in urine sediment at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+20584-9,122251010000102,Number concentration of leukocyte in specimen at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+24122-4,110241010000105,Number concentration of leukocyte in urine at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26464-8,197541010000107,Number concentration of leukocyte in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26465-5,184161010000109,Number concentration of leukocyte in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26466-3,216131010000106,Number concentration of leukocyte in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26467-1,265071010000101,Number concentration of leukocyte in pleural fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26468-9,148591010000109,Number concentration of leukocyte in peritoneal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26469-7,131531010000101,Number concentration of leukocyte in synovial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26470-5,517731010000104,Number concentration of leukocytes other in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26471-3,517741010000107,Number fraction of leukocytes other to leukocyte in blood at point in time (observable entity),quantitative,Quantitative scale
+26472-1,517751010000109,Number fraction of leukocytes other to leukocyte in cerebrospinal fluid at point in time (observable entity),quantitative,Quantitative scale
+26473-9,517761010000106,Number fraction of leukocytes other to leukocyte in body fluid at point in time (observable entity),quantitative,Quantitative scale
+30401-4,60781010000103,Number concentration of leukocyte in bronchus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30402-2,214351010000109,Number concentration of leukocyte in gastric fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30403-0,166121010000107,Number concentration of leukocyte in pericardial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30404-8,93691010000102,Number concentration of leukocyte in stool at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30405-5,153361010000103,Number concentration of leukocyte in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30406-3,525211010000104,Number concentration of leukocytes other in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30407-1,525221010000105,Number fraction of leukocytes other to leukocyte in pericardial fluid at point in time (observable entity),quantitative,Quantitative scale
+30408-9,525231010000108,Number fraction of leukocytes other to leukocyte in pleural fluid at point in time (observable entity),quantitative,Quantitative scale
+30409-7,525241010000100,Number fraction of leukocytes other to leukocyte in peritoneal fluid at point in time (observable entity),quantitative,Quantitative scale
+30410-5,525251010000103,Number fraction of leukocytes other to leukocyte in synovial fluid at point in time (observable entity),quantitative,Quantitative scale
+32142-2,51641010000103,Presence of leukocyte in synovial fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32761-9,82841010000101,Presence of leukocyte in specimen at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32808-8,528861010000109,Number fraction of leukocytes other to leukocyte in bronchus at point in time (observable entity),quantitative,Quantitative scale
+32825-2,155931010000107,Presence of leukocyte in seminal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33028-2,108081010000105,Number concentration of leukocyte in Bld^BPU at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33052-2,86841010000102,Presence of leukocyte in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33256-9,274691010000100,Number concentration of leukocyte corrected for nucleated erythrocytes in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33765-9,259481010000104,Number concentration of leukocyte in ^BPU.platelet pheresis at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+34445-7,175831010000102,Presence of leukocyte in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34469-7,72371010000105,Presence of leukocyte in bile at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+35051-2,532721010000105,Number concentration of leukocytes other in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+35052-0,532731010000108,Number concentration of leukocytes other in pleural fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+35053-8,532741010000100,Number concentration of leukocytes other in synovial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+35054-6,532751010000103,Number concentration of leukocytes other in peritoneal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40533-2,181071010000103,Number concentration of leukocyte in peritoneal dialysate at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40535-7,537501010000108,Number fraction of leukocytes other to leukocyte in peritoneal dialysate at point in time by manual count (observable entity),quantitative,Quantitative scale
+40543-1,537581010000101,Number fraction of leukocytes other to leukocyte in bronchus at point in time by manual count (observable entity),quantitative,Quantitative scale
+40646-2,537741010000102,Number fraction of leukocytes other to leukocyte in blood at point in time by automated count (observable entity),quantitative,Quantitative scale
+42327-7,181201010000103,Presence of leukocyte in stool at point in time by methylene blue stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+44092-5,96981010000100,Number areic of leukocyte in vagina at point in time by wet preparation (observable entity),quantitative,Quantitative scale
+45383-7,244791010000109,Number areic of leukocyte in urine sediment at point in time by low power field light microscopy (observable entity),quantitative,Quantitative scale
+46088-1,181381010000102,Number concentration of leukocyte in cerebrospinal fluid at point in time 2nd tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+46089-9,116591010000103,Number concentration of leukocyte in cerebrospinal fluid at point in time 3rd tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+46090-7,226821010000108,Number concentration of leukocyte in cerebrospinal fluid at point in time 4th tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+46702-7,163361010000107,Number areic of leukocyte in urine sediment at point in time by automated count (observable entity),quantitative,Quantitative scale
+47281-1,267321010000109,Number concentration of leukocyte in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+48034-3,61751010000100,Number concentration of leukocyte corrected for nucleated erythrocytes in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+48052-5,53121010000102,Number concentration of leukocyte corrected for nucleated erythrocytes in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+48973-2,151871010000104,Presence of leukocyte in stool at point in time by methylene blue stain 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+49224-9,174461010000107,Number areic of leukocyte in seminal fluid at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+49498-9,127421010000106,Number concentration of leukocyte in blood at point in time by estimate (observable entity),quantitative_convertible,Quantitative scale + concentration property
+49928-5,41581010000106,Number concentration of leukocyte in peritoneal dialysate at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+51383-8,567921010000104,Number concentration of leukocytes other in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+51487-7,238221010000105,Number concentration of leukocyte in urine at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+51770-6,84691010000100,Number areic of leukocyte in stool at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+53225-9,41591010000109,Number areic of leukocyte in specimen at point in time by wet preparation (observable entity),quantitative,Quantitative scale
+53226-7,276511010000103,Number areic of leukocyte in urethra at point in time by wet preparation (observable entity),quantitative,Quantitative scale
+53227-5,47661010000109,Number areic of leukocyte in uterine cervix at point in time by wet preparation (observable entity),quantitative,Quantitative scale
+53316-6,211751010000108,Presence of leukocyte in urine at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53518-7,146181010000101,Number concentration of leukocyte in dialysate at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+53964-3,265431010000106,Presence of leukocyte in urine at point in time by visual (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+55784-3,46181010000106,Number concentration of leukocyte corrected for nucleated erythrocytes in bone marrow at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+57845-0,223321010000108,Number concentration of leukocyte in body fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+57846-8,217741010000102,Number concentration of leukocyte in pericardial fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+57847-6,124241010000108,Number concentration of leukocyte in dialysate at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+5821-4,68061010000106,Number areic of leukocyte in urine sediment at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+58805-3,237081010000100,Number concentration of leukocyte in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+61182-2,245731010000109,Number concentration of leukocyte corrected for nucleated erythrocytes in Bld^Fetus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+62239-9,245211010000108,Number concentration of leukocyte in Bld^Fetus at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+62251-4,177561010000100,Number concentration of leukocyte in plr fld^Fetus at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+63555-7,190981010000109,Number concentration of leukocyte in urine sediment by high power field light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+66145-4,604521010000109,Number concentration of leukocytes other in Bld^Fetus at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+66768-3,56211010000107,Number concentration of leukocyte corrected for nucleated erythrocytes in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+6690-2,147071010000102,Number concentration of leukocyte in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+6743-9,135141010000102,Number concentration of leukocyte in body fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+67830-0,605361010000106,Number concentration of leukocytes other in pericardial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+67836-7,605371010000101,Number concentration of leukocytes other in plr fld^Fetus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68368-0,74551010000101,Number concentration of leukocyte in dialysate at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68428-2,605771010000102,Number concentration of leukocytes other in pericardial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68429-0,605781010000104,Number concentration of leukocytes other in peritoneal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68430-8,605791010000101,Number concentration of leukocytes other in pleural fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68431-6,605801010000100,Number concentration of leukocytes other in synovial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68432-4,605811010000102,Number fraction of leukocytes other to leukocyte in vitreous humor at point in time by manual count (observable entity),quantitative,Quantitative scale
+68433-2,605821010000108,Number concentration of leukocytes other in vitreous humor at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68434-0,49291010000107,Number concentration of leukocyte in vitreous humor at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+70126-8,153231010000104,Number concentration of leukocyte corrected for nucleated erythrocytes in pleural fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72163-9,139511010000109,Presence of leukocyte in specimen at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+72348-6,253781010000107,Number concentration of leukocyte in prostatic fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+729-4,609141010000107,Number concentration of leukocytes other in blood at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+730-2,609161010000106,Number fraction of leukocytes other to leukocyte in blood at point in time by manual count (observable entity),quantitative,Quantitative scale
+76674-1,229211010000107,Number concentration of leukocyte in cerebrospinal fluid at point in time 1st tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+804-5,151221010000101,Number concentration of leukocyte in blood at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+805-2,269091010000103,Number concentration of leukocyte in cerebrospinal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+806-0,40981010000106,Number concentration of leukocyte in cerebrospinal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+807-8,244501010000108,Number concentration of leukocyte in pleural fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+808-6,51431010000108,Number concentration of leukocyte in pleural fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+809-4,266821010000100,Number concentration of leukocyte in peritoneal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+810-2,157841010000104,Number concentration of leukocyte in peritoneal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+811-0,61141010000101,Number concentration of leukocyte in seminal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+812-8,100311010000101,Number concentration of leukocyte in seminal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+813-6,61661010000105,Number concentration of leukocyte in synovial fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+814-4,87861010000100,Number concentration of leukocyte in synovial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+82587-7,190461010000109,Number concentration of leukocyte in bone marrow at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+88114-4,153601010000108,Presence of leukocyte in cerebrospinal fluid at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+88343-9,149521010000104,Presence of leukocyte in ear at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+92635-2,139631010000101,Number concentration of leukocyte in buffy coat at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+95218-4,179511010000106,Number concentration of leukocyte in ^Stem cell product at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+96712-5,241341010000100,Number areic of leukocyte in body fluid at point in time by light microscopy (observable entity),quantitative,Quantitative scale
+96718-2,104251010000100,Number areic of leukocyte in prostatic fluid at point in time by light microscopy (observable entity),quantitative,Quantitative scale
+98020-1,261241010000101,Number concentration of leukocyte in lower respiratory tract at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99051-5,242491010000105,Number concentration of leukocyte in bronchoalveolar lavage fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99775-9,231691010000100,Number concentration of leukocyte in peritoneal dialysate at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99776-7,107991010000106,Number concentration of leukocyte in bronchoalveolar lavage fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99928-4,70271010000104,Presence of leukocyte in body fluid at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+99929-2,209861010000100,Number areic of leukocyte in body fluid at point in time by automated count (observable entity),quantitative,Quantitative scale
+,375911000119106,Differential count of white blood cells by automated method (observable entity),panel_order,no Property attribute → order/panel code
+,376201000119106,Differential count of white blood cells by manual method (observable entity),panel_order,no Property attribute → order/panel code
+,375701000119105,Presence of white blood cells in stool (observable entity),qualitative,Presence property → qualitative

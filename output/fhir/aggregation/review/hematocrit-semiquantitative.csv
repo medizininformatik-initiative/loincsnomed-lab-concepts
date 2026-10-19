@@ -1,0 +1,3 @@
+LOINC,SCTID,FSN,use_case,reason
+20409-9,239531010000102,Number concentration of erythrocyte in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+57747-8,193321010000101,Number concentration of erythrocyte in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)

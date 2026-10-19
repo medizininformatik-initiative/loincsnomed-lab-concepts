@@ -1,0 +1,4 @@
+LOINC,SCTID,FSN,use_case,reason
+32710-6,45931010000103,Presence of nitrite salt in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+50558-6,194401010000100,Presence of nitrite salt in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+5802-4,209111010000106,Presence of nitrite salt in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative

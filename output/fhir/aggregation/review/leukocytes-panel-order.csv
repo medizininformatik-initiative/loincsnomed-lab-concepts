@@ -1,0 +1,3 @@
+LOINC,SCTID,FSN,use_case,reason
+,375911000119106,Differential count of white blood cells by automated method (observable entity),panel_order,no Property attribute → order/panel code
+,376201000119106,Differential count of white blood cells by manual method (observable entity),panel_order,no Property attribute → order/panel code

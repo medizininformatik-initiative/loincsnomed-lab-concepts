@@ -6,7 +6,7 @@
   "title": "Mean cell hemoglobin (MCH)",
   "status": "draft",
   "experimental": true,
-  "description": "Mean cell hemoglobin (MCH) (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "description": "Mean cell hemoglobin (MCH) (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -35,6 +35,17 @@
           {
             "code": "28539-5",
             "display": "Entitic mass of hemoglobin in erythrocyte at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }

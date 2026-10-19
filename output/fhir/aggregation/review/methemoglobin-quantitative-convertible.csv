@@ -1,0 +1,4 @@
+LOINC,SCTID,FSN,use_case,reason
+15082-1,41771010000104,Mass concentration of methemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+56040-9,184071010000100,Substance concentration of methemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72262-9,215401010000104,Substance concentration of methemoglobin in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property

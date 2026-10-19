@@ -1,14 +1,16 @@
 {
   "targets": [
     {
-      "name": "A_public-2025-09-21",
       "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
-      "branch": "MAIN/LOINC/2025-09-21"
+      "branch": "MAIN/LOINC/2025-09-21",
+      "effective": "20250921",
+      "name": "public-2025-09-21"
     },
     {
-      "name": "B_local-2026-03-21",
       "api_base": "http://localhost:8090",
-      "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21"
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
+      "effective": "20260321",
+      "name": "local-2026-03-21"
     }
   ],
   "counts": {

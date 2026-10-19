@@ -1,0 +1,10 @@
+LOINC,SCTID,FSN,use_case,reason
+13616-8,194131010000103,Mass concentration of nitrite salt in water at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+18370-7,200381010000108,Mass concentration of nitrite salt in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+20407-3,165761010000107,Mass concentration of nitrite salt in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+2657-5,132171010000102,Mass concentration of nitrite salt in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+32710-6,45931010000103,Presence of nitrite salt in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+50558-6,194401010000100,Presence of nitrite salt in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+55947-6,49951010000106,Mass concentration of nitrite salt in dialysate at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55948-4,92751010000107,Substance concentration of nitrite salt in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+5802-4,209111010000106,Presence of nitrite salt in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative

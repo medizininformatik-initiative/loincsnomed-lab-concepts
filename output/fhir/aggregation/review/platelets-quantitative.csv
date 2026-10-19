@@ -1,0 +1,18 @@
+LOINC,SCTID,FSN,use_case,reason
+107193-5,487891010000102,Number concentration of platelet in blood at point in time by automated count in presence of EDTA to detect possible clumping (observable entity),quantitative_convertible,Quantitative scale + concentration property
+111353-9,732051010000102,Measurement of platelet in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+13056-7,71831010000107,Number concentration of platelet in plasma at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+13057-5,156651010000101,Arbitrary concentration of platelet in dialysate at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26515-7,90581010000105,Number concentration of platelet in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26516-5,136661010000100,Number concentration of platelet in plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40574-6,260911010000103,Number concentration of platelet in body fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+47284-5,172051010000108,Number concentration of platelet in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+49497-1,86361010000105,Number concentration of platelet in blood at point in time by estimate (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55802-3,247121010000104,Number concentration of platelet in cord blood at point in time by estimate (observable entity),quantitative_convertible,Quantitative scale + concentration property
+62244-9,66141010000105,Number concentration of platelet in Bld^Fetus at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+74464-9,124101010000103,Number concentration of platelet in capillary blood at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+74775-8,149011010000103,Number concentration of platelet in platelet rich plasma at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+777-3,218801010000106,Number concentration of platelet in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+778-1,268771010000105,Number concentration of platelet in blood at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+79427-1,190041010000101,Number areic of platelet in blood at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+97995-5,56141010000104,Number concentration of platelet in blood at point in time by automated count.optical (observable entity),quantitative_convertible,Quantitative scale + concentration property

@@ -1,0 +1,185 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ldh-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/ldh-quantitative-convertible",
+  "name": "LdhQuantitativeConvertible",
+  "title": "ldh — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against http://snomed.info/sct/11010000107/version/20260321. 41 concepts (41 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2527-0",
+            "display": "Catalytic concentration of lactate dehydrogenase in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "2529-6",
+            "display": "Catalytic concentration of lactate dehydrogenase in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14803-1",
+            "display": "Catalytic concentration of lactate dehydrogenase in body fluid at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "60017-1",
+            "display": "Catalytic concentration of lactate dehydrogenase in body fluid at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "2528-8",
+            "display": "Catalytic concentration of lactate dehydrogenase in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "60024-7",
+            "display": "Catalytic concentration of lactate dehydrogenase in cerebrospinal fluid at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "60023-9",
+            "display": "Catalytic concentration of lactate dehydrogenase in cerebrospinal fluid at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "5921-2",
+            "display": "Catalytic concentration of lactate dehydrogenase in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "11053-6",
+            "display": "Catalytic concentration of lactate dehydrogenase in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "14403-0",
+            "display": "Catalytic concentration of lactate dehydrogenase in gastric fluid at point in time (observable entity)"
+          },
+          {
+            "code": "33367-4",
+            "display": "Catalytic concentration of lactate dehydrogenase in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "60019-7",
+            "display": "Catalytic concentration of lactate dehydrogenase in pericardial fluid at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "60018-9",
+            "display": "Catalytic concentration of lactate dehydrogenase in pericardial fluid at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "81430-1",
+            "display": "Catalytic concentration of lactate dehydrogenase in peritoneal dialysate at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "2531-2",
+            "display": "Catalytic concentration of lactate dehydrogenase in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "68387-0",
+            "display": "Catalytic concentration of lactate dehydrogenase in peritoneal fluid at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "60020-5",
+            "display": "Catalytic concentration of lactate dehydrogenase in peritoneal fluid at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "2530-4",
+            "display": "Catalytic concentration of lactate dehydrogenase in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "60022-1",
+            "display": "Catalytic concentration of lactate dehydrogenase in pleural fluid at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "60021-3",
+            "display": "Catalytic concentration of lactate dehydrogenase in pleural fluid at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "57664-5",
+            "display": "Catalytic concentration of lactate dehydrogenase in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "2532-0",
+            "display": "Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "14804-9",
+            "display": "Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "14805-6",
+            "display": "Catalytic concentration of lactate dehydrogenase in serum or plasma at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "32324-6",
+            "display": "Catalytic concentration of lactate dehydrogenase in specimen at point in time (observable entity)"
+          },
+          {
+            "code": "2533-8",
+            "display": "Catalytic concentration of lactate dehydrogenase in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "68453-0",
+            "display": "Catalytic concentration of lactate dehydrogenase in synovial fluid at point in time by reaction: lactate to pyruvate (observable entity)"
+          },
+          {
+            "code": "68452-2",
+            "display": "Catalytic concentration of lactate dehydrogenase in synovial fluid at point in time by reaction: pyruvate to lactate (observable entity)"
+          },
+          {
+            "code": "2534-6",
+            "display": "Catalytic concentration of lactate dehydrogenase in urine at point in time (observable entity)"
+          },
+          {
+            "code": "47678-8",
+            "display": "Catalytic concentration of lactate dehydrogenase in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "2537-9",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 1 in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "2535-3",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 1 in serum or plasma at point in time by chemical separation (observable entity)"
+          },
+          {
+            "code": "2540-3",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "2538-7",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time by chemical separation (observable entity)"
+          },
+          {
+            "code": "19248-4",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "2543-7",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 3 in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "2541-1",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 3 in serum or plasma at point in time by chemical separation (observable entity)"
+          },
+          {
+            "code": "2546-0",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 4 in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "2544-5",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 4 in serum or plasma at point in time by chemical separation (observable entity)"
+          },
+          {
+            "code": "2549-4",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 5 in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "2547-8",
+            "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 5 in serum or plasma at point in time by chemical separation (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|",
+  "_bucket": "quantitative_convertible"
+}

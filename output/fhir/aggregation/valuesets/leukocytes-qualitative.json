@@ -1,0 +1,143 @@
+{
+  "resourceType": "ValueSet",
+  "id": "leukocytes-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/leukocytes-qualitative",
+  "name": "LeukocytesQualitative",
+  "title": "leukocytes — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 29 concepts (28 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "34469-7",
+            "display": "Presence of leukocyte in bile at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "34445-7",
+            "display": "Presence of leukocyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "99928-4",
+            "display": "Presence of leukocyte in body fluid at point in time by automated technique (observable entity)"
+          },
+          {
+            "code": "107497-0",
+            "display": "Presence of leukocyte in bronchus at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "88114-4",
+            "display": "Presence of leukocyte in cerebrospinal fluid at point in time by Gram stain (observable entity)"
+          },
+          {
+            "code": "107475-6",
+            "display": "Presence of leukocyte in deep wound at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "88343-9",
+            "display": "Presence of leukocyte in ear at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "14105-1",
+            "display": "Presence of leukocyte in nose at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107483-0",
+            "display": "Presence of leukocyte in pericardial fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107465-7",
+            "display": "Presence of leukocyte in pus at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "32825-2",
+            "display": "Presence of leukocyte in seminal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "72163-9",
+            "display": "Presence of leukocyte in specimen at point in time by Gram stain (observable entity)"
+          },
+          {
+            "code": "32761-9",
+            "display": "Presence of leukocyte in specimen at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "107469-9",
+            "display": "Presence of leukocyte in specimen obtained by aspiration at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "14328-9",
+            "display": "Presence of leukocyte in sputum at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "13655-6",
+            "display": "Presence of leukocyte in stool at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "42327-7",
+            "display": "Presence of leukocyte in stool at point in time by methylene blue stain (observable entity)"
+          },
+          {
+            "code": "48973-2",
+            "display": "Presence of leukocyte in stool at point in time by methylene blue stain 2nd specimen (observable entity)"
+          },
+          {
+            "code": "107476-4",
+            "display": "Presence of leukocyte in superficial wound at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "32142-2",
+            "display": "Presence of leukocyte in synovial fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107472-3",
+            "display": "Presence of leukocyte in tissue at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "107011-9",
+            "display": "Presence of leukocyte in urethra at point in time by wet preparation (observable entity)"
+          },
+          {
+            "code": "33052-2",
+            "display": "Presence of leukocyte in urine at point in time (observable entity)"
+          },
+          {
+            "code": "53316-6",
+            "display": "Presence of leukocyte in urine at point in time by automated technique (observable entity)"
+          },
+          {
+            "code": "53964-3",
+            "display": "Presence of leukocyte in urine at point in time by visual (observable entity)"
+          },
+          {
+            "code": "105105-1",
+            "display": "Presence of leukocyte in urine sediment at point in time (observable entity)"
+          },
+          {
+            "code": "20455-2",
+            "display": "Presence of leukocyte in urine sediment at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "12226-7",
+            "display": "Presence of leukocyte in vagina at point in time by wet preparation (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "375701000119105",
+            "display": "Presence of white blood cells in stool (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|",
+  "_bucket": "qualitative"
+}

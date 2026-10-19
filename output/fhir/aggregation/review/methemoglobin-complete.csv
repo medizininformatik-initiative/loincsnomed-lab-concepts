@@ -1,0 +1,18 @@
+LOINC,SCTID,FSN,use_case,reason
+109592-6,719541010000106,Measurement of methemoglobin in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+15082-1,41771010000104,Mass concentration of methemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+2613-8,112391010000106,Presence of methemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2614-6,517541010000104,Mass fraction of methemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+2615-3,517551010000102,Mass fraction of methemoglobin to hemoglobin.total in arterial blood at point in time (observable entity),quantitative,Quantitative scale
+2616-1,517561010000100,Mass fraction of methemoglobin to hemoglobin.total in capillary blood at point in time (observable entity),quantitative,Quantitative scale
+2617-9,517571010000105,Mass fraction of methemoglobin to hemoglobin.total in venous blood at point in time (observable entity),quantitative,Quantitative scale
+2618-7,517581010000108,Mass fraction of methemoglobin to hemoglobin.total in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
+2619-5,225921010000105,Presence of methemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+41607-3,539721010000102,Mass fraction of methemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity),quantitative,Quantitative scale
+4534-4,742371010000107,Mass fraction of cyanmethemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+55942-7,594651010000108,Mass fraction of methemoglobin to hemoglobin.total in cord blood at point in time (observable entity),quantitative,Quantitative scale
+56040-9,184071010000100,Substance concentration of methemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72262-9,215401010000104,Substance concentration of methemoglobin in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72360-1,608461010000108,Mass fraction of methemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity),quantitative,Quantitative scale
+72361-9,608471010000103,Mass fraction of methemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity),quantitative,Quantitative scale
+97554-0,624201010000105,Mass fraction of methemoglobin to hemoglobin.total in BldCV at point in time (observable entity),quantitative,Quantitative scale

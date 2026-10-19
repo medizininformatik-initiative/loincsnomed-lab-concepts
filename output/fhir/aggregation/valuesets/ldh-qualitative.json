@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ldh-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/ldh-qualitative",
+  "name": "LdhQualitative",
+  "title": "ldh — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "17041-5",
+            "display": "Presence of lactate dehydrogenase in urine at point in time (observable entity)"
+          },
+          {
+            "code": "53248-1",
+            "display": "Presence of Plasmodium sp lactate dehydrogenase in blood at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|",
+  "_bucket": "qualitative"
+}

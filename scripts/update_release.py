@@ -43,6 +43,7 @@ RUNS = [
     ["python3", "scripts/full_branch_diff.py"],
     ["python3", "scripts/review_export.py"],
     ["python3", "scripts/build_observation_artifacts.py"],
+    ["python3", "scripts/build_aggregation_valuesets.py"],
     ["python3", "scripts/build_dashboard.py"],
 ]
 
@@ -171,6 +172,7 @@ def main():
     print("  output/full_diff/concepts.md        whole-branch concept diff by module")
     print("  output/review/{}/                   per-analyte review XLSX/CSV".format(new_cfg["current"]))
     print("  output/fhir/SUMMARY.md              18 ValueSets + profiles, concept counts")
+    print("  output/fhir/aggregation/SUMMARY.md  comprehensive per-analyte ValueSets (one per use-case bucket)")
     print("  output/dashboard/index.html         dashboard")
     return 0
 

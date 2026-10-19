@@ -1,0 +1,249 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hemoglobin-quantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/hemoglobin-quantitative",
+  "name": "HemoglobinQuantitative",
+  "title": "hemoglobin — Quantitative (all numeric)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 57 concepts (57 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "59468-9",
+            "display": "Entitic amount of substance of hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "73895-5",
+            "display": "Entitic amount of substance of hemoglobin in retic at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "28539-5",
+            "display": "Entitic mass of hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "785-6",
+            "display": "Entitic mass of hemoglobin in erythrocyte at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "47278-7",
+            "display": "Entitic mass of hemoglobin in RBC^BldCo at point in time (observable entity)"
+          },
+          {
+            "code": "62243-1",
+            "display": "Entitic mass of hemoglobin in RBC^Fetus at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "42810-2",
+            "display": "Entitic mass of hemoglobin in retic at point in time (observable entity)"
+          },
+          {
+            "code": "71694-4",
+            "display": "Entitic mass of hemoglobin in retic at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "27396-1",
+            "display": "Mass content of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity)"
+          },
+          {
+            "code": "24469-9",
+            "display": "Mass fraction of hemoglobin to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "48343-8",
+            "display": "Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "32017-6",
+            "display": "Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "42248-5",
+            "display": "Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "109484-6",
+            "display": "Measurement of hemoglobin in arterial blood (observable entity)"
+          },
+          {
+            "code": "110885-1",
+            "display": "Measurement of hemoglobin in blood (observable entity)"
+          },
+          {
+            "code": "109887-0",
+            "display": "Measurement of hemoglobin in mixed venous blood (observable entity)"
+          },
+          {
+            "code": "109886-2",
+            "display": "Measurement of hemoglobin in venous blood (observable entity)"
+          },
+          {
+            "code": "30313-1",
+            "display": "Mass concentration of hemoglobin in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "14775-1",
+            "display": "Mass concentration of hemoglobin in arterial blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "30354-5",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33026-6",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "54289-4",
+            "display": "Mass concentration of hemoglobin in Bld^BPU at point in time (observable entity)"
+          },
+          {
+            "code": "61180-6",
+            "display": "Mass concentration of hemoglobin in Bld^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "97550-8",
+            "display": "Mass concentration of hemoglobin in BldCV at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "97555-7",
+            "display": "Mass concentration of hemoglobin in BldCV at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "718-7",
+            "display": "Mass concentration of hemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "20509-6",
+            "display": "Mass concentration of hemoglobin in blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "55782-7",
+            "display": "Mass concentration of hemoglobin in blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "48725-6",
+            "display": "Mass concentration of hemoglobin in blood at point in time pre therapeutic phlebotomy (observable entity)"
+          },
+          {
+            "code": "33509-1",
+            "display": "Mass concentration of hemoglobin in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "30352-9",
+            "display": "Mass concentration of hemoglobin in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "97556-5",
+            "display": "Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "719-5",
+            "display": "Mass concentration of hemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "40719-7",
+            "display": "Mass concentration of hemoglobin in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "30351-1",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "105040-0",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "76768-1",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "69950-4",
+            "display": "Mass concentration of hemoglobin in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "723-7",
+            "display": "Mass concentration of hemoglobin in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "722-9",
+            "display": "Mass concentration of hemoglobin in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "107191-9",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
+          },
+          {
+            "code": "107190-1",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "107189-3",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "58453-2",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity)"
+          },
+          {
+            "code": "724-5",
+            "display": "Mass concentration of hemoglobin in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "726-0",
+            "display": "Mass concentration of hemoglobin in urine at point in time (observable entity)"
+          },
+          {
+            "code": "30350-3",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "105274-5",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "76769-9",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "30353-7",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33025-8",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "35183-3",
+            "display": "Mass concentration or substance concentration of hemoglobin in plasma at point in time (observable entity)"
+          },
+          {
+            "code": "75928-2",
+            "display": "Substance concentration of hemoglobin in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "59260-0",
+            "display": "Substance concentration of hemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "105300-8",
+            "display": "Substance concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "93846-4",
+            "display": "Substance concentration of hemoglobin in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "103750-6",
+            "display": "Substance concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|",
+  "_bucket": "quantitative"
+}

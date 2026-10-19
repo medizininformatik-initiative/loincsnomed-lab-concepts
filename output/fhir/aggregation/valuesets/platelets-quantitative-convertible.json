@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "id": "platelets-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/platelets-quantitative-convertible",
+  "name": "PlateletsQuantitativeConvertible",
+  "title": "platelets — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)| against http://snomed.info/sct/11010000107/version/20260321. 15 concepts (15 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13057-5",
+            "display": "Arbitrary concentration of platelet in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "62244-9",
+            "display": "Number concentration of platelet in Bld^Fetus at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "26515-7",
+            "display": "Number concentration of platelet in blood at point in time (observable entity)"
+          },
+          {
+            "code": "777-3",
+            "display": "Number concentration of platelet in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "107193-5",
+            "display": "Number concentration of platelet in blood at point in time by automated count in presence of EDTA to detect possible clumping (observable entity)"
+          },
+          {
+            "code": "97995-5",
+            "display": "Number concentration of platelet in blood at point in time by automated count.optical (observable entity)"
+          },
+          {
+            "code": "49497-1",
+            "display": "Number concentration of platelet in blood at point in time by estimate (observable entity)"
+          },
+          {
+            "code": "778-1",
+            "display": "Number concentration of platelet in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "40574-6",
+            "display": "Number concentration of platelet in body fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "74464-9",
+            "display": "Number concentration of platelet in capillary blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "47284-5",
+            "display": "Number concentration of platelet in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "55802-3",
+            "display": "Number concentration of platelet in cord blood at point in time by estimate (observable entity)"
+          },
+          {
+            "code": "26516-5",
+            "display": "Number concentration of platelet in plasma at point in time (observable entity)"
+          },
+          {
+            "code": "13056-7",
+            "display": "Number concentration of platelet in plasma at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "74775-8",
+            "display": "Number concentration of platelet in platelet rich plasma at point in time by automated count (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|",
+  "_bucket": "quantitative_convertible"
+}

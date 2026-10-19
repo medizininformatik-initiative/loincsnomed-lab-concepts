@@ -1,0 +1,297 @@
+LOINC,SCTID,FSN,use_case,reason
+10346-5,205121010000102,Arbitrary concentration of hemoglobin A in blood at point in time by electrophoresis (observable entity),quantitative_convertible,Quantitative scale + concentration property
+103750-6,481881010000107,Substance concentration of hemoglobin in venous cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+104738-0,824631010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+105040-0,483971010000104,Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+105274-5,484891010000107,Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+105300-8,484911010000109,Substance concentration of hemoglobin in mixed venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107189-3,825481010000107,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107190-1,825491010000105,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107191-9,825501010000104,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),quantitative_convertible,Quantitative scale + concentration property
+109484-6,719011010000100,Measurement of hemoglobin in arterial blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+109575-1,719461010000109,Measurement of hemoglobin H in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+109592-6,719541010000106,Measurement of methemoglobin in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+109886-2,721761010000108,Measurement of hemoglobin in venous blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+109887-0,721771010000103,Measurement of hemoglobin in mixed venous blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+110885-1,728771010000107,Measurement of hemoglobin in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+110938-8,729241010000104,Measurement of hemoglobin F in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+11559-2,490141010000103,Mass fraction of oxyhemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+12503-9,828341010000100,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12504-7,828351010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14563-1,829271010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14564-9,829281010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14565-6,829291010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14775-1,211871010000107,Mass concentration of hemoglobin in arterial blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+15082-1,41771010000104,Mass concentration of methemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+17855-8,501091010000106,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+17856-6,501101010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+17871-5,142841010000103,Presence of hemoglobin H in blood at point in time by heat denaturation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+18277-4,260071010000106,Presence of hemoglobin F in gastric fluid at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+18278-2,200711010000102,Presence of hemoglobin F in meconium at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+18291-5,501631010000102,Mass fraction of hemoglobin F to hemoglobin.total in bld^newborn at point in time (observable entity),quantitative,Quantitative scale
+19225-2,504041010000102,Mass fraction of deoxyhemoglobin to hemoglobin.total in arterial blood at point in time (observable entity),quantitative,Quantitative scale
+19226-0,504051010000100,Mass fraction of deoxyhemoglobin to hemoglobin.total in capillary blood at point in time (observable entity),quantitative,Quantitative scale
+19227-8,504061010000103,Mass fraction of deoxyhemoglobin to hemoglobin.total in venous blood at point in time (observable entity),quantitative,Quantitative scale
+19228-6,504071010000108,Mass fraction of deoxyhemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity),quantitative,Quantitative scale
+2030-5,504441010000106,Mass fraction of carboxyhemoglobin to hemoglobin.total in arterial blood at point in time (observable entity),quantitative,Quantitative scale
+2031-3,504451010000108,Mass fraction of carboxyhemoglobin to hemoglobin.total in capillary blood at point in time (observable entity),quantitative,Quantitative scale
+2032-1,504461010000105,Mass fraction of carboxyhemoglobin to hemoglobin.total in venous blood at point in time (observable entity),quantitative,Quantitative scale
+20509-6,66931010000104,Mass concentration of hemoglobin in blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+20563-3,504961010000102,Mass fraction of carboxyhemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+20572-4,504991010000108,Mass fraction of hemoglobin A to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+2334-1,832611010000109,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2335-8,832621010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+24469-9,832861010000108,Mass fraction of hemoglobin to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+2613-8,112391010000106,Presence of methemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2614-6,517541010000104,Mass fraction of methemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+2615-3,517551010000102,Mass fraction of methemoglobin to hemoglobin.total in arterial blood at point in time (observable entity),quantitative,Quantitative scale
+2616-1,517561010000100,Mass fraction of methemoglobin to hemoglobin.total in capillary blood at point in time (observable entity),quantitative,Quantitative scale
+2617-9,517571010000105,Mass fraction of methemoglobin to hemoglobin.total in venous blood at point in time (observable entity),quantitative,Quantitative scale
+2618-7,517581010000108,Mass fraction of methemoglobin to hemoglobin.total in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
+2619-5,225921010000105,Presence of methemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2714-4,519921010000109,Mass fraction of oxyhemoglobin to hemoglobin.total in arterial blood at point in time (observable entity),quantitative,Quantitative scale
+2715-1,519931010000107,Mass fraction of oxyhemoglobin to hemoglobin.total in capillary blood at point in time (observable entity),quantitative,Quantitative scale
+2716-9,519951010000102,Mass fraction of oxyhemoglobin to hemoglobin.total in venous blood at point in time (observable entity),quantitative,Quantitative scale
+2717-7,519991010000106,Mass fraction of oxyhemoglobin to hemoglobin.total in plasma at point in time (observable entity),quantitative,Quantitative scale
+27345-8,60841010000102,Presence of hemoglobin A>2< in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27396-1,833951010000109,Mass content of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity),quantitative,Quantitative scale
+27401-9,833961010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27925-7,834041010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27926-5,834051010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+28006-5,275921010000109,Presence of hemoglobin F in vomitus at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+28067-7,163791010000102,Presence of hemoglobin F in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+28539-5,521361010000106,Entitic mass of hemoglobin in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
+28559-3,139351010000104,Presence of hemoglobin A>2< in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+29771-3,834201010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+30074-9,153791010000108,Presence of hemoglobin F in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+30313-1,103141010000106,Mass concentration of hemoglobin in arterial blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30350-3,198381010000105,Mass concentration of hemoglobin in venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30351-1,157231010000106,Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30352-9,143151010000100,Mass concentration of hemoglobin in capillary blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30353-7,259921010000108,Mass concentration of hemoglobin in venous cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30354-5,240741010000109,Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30369-3,525011010000109,Mass fraction of oxyhemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity),quantitative,Quantitative scale
+30370-1,525021010000103,Mass fraction of oxyhemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity),quantitative,Quantitative scale
+31156-3,526391010000109,Mass fraction of Hemoglobin Bart to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+31157-1,142931010000103,Mass concentration of carboxyhemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+32017-6,527101010000100,Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+32140-6,193571010000105,Presence of hemoglobin F in blood at point in time by Kleihauer-Betke (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32160-4,55371010000103,Presence of carboxyhemoglobin in blood at point in time by screening (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32681-9,528401010000105,Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+32682-7,528411010000108,Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+32683-5,528421010000102,Mass fraction of hemoglobin S to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+33025-8,108491010000103,Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33026-6,252711010000109,Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33509-1,190711010000102,Mass concentration of hemoglobin in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33517-4,113801010000100,Presence of hemoglobin in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33593-5,530001010000101,Mass fraction of hemoglobin G-Coushatta to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+34618-9,145031010000105,Presence of hemoglobin in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34660-1,532111010000103,Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by chromatography.column (observable entity),quantitative,Quantitative scale
+34663-5,120571010000107,Presence of hemoglobin S in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34969-6,532461010000106,Mass fraction of oxyhemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity),quantitative,Quantitative scale
+35125-4,532811010000106,Mass fraction of Hemoglobin Lepore to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+35126-2,532821010000100,Mass fraction of hemoglobin O-Arab to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+35127-0,738901010000103,Mass fraction of hemoglobin A>2<prime to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+35183-3,738931010000109,Mass concentration or substance concentration of hemoglobin in plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+38524-5,535491010000109,Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity),quantitative,Quantitative scale
+39533-5,150481010000107,Mass concentration of deoxyhemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40545-6,124791010000109,Presence of hemoglobin C in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40546-4,136681010000108,Presence of hemoglobin E in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40547-2,54061010000105,Presence of hemoglobin H in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40549-8,146631010000108,Mass concentration of hemoglobin F in blood at point in time by electrophoresis (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40550-6,145151010000101,Mass concentration of hemoglobin H in blood at point in time by electrophoresis (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40719-7,185861010000101,Mass concentration of hemoglobin in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40720-5,238701010000109,Presence of hemoglobin C in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40721-3,154451010000107,Presence of hemoglobin F in specimen at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+41607-3,539721010000102,Mass fraction of methemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity),quantitative,Quantitative scale
+41619-8,262101010000102,Presence of unstable hemoglobin in erythrocyte at point in time by isopropanol stability (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+41648-7,539781010000103,Mass fraction of carboxyhemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity),quantitative,Quantitative scale
+41995-2,43401010000104,Mass concentration of glycated hemoglobin-A1c in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+42244-4,551161010000107,Mass fraction of hemoglobin A to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+42245-1,551171010000102,Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+42246-9,551181010000104,Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+42248-5,551191010000101,Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+42810-2,552221010000102,Entitic mass of hemoglobin in retic at point in time (observable entity),quantitative,Quantitative scale
+42909-2,839561010000104,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42910-0,839571010000109,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42911-8,839581010000107,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42912-6,839591010000105,Presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42913-4,839601010000104,Presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+44920-7,557641010000107,Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+44921-5,742251010000108,Mass fraction of hemoglobin D to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+44922-3,557651010000109,Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+44923-1,557661010000106,Mass fraction of hemoglobin S to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),quantitative,Quantitative scale
+45208-6,203541010000104,Presence of hemoglobin A in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4534-4,742371010000107,Mass fraction of cyanmethemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4536-9,558181010000107,Mass fraction of deoxyhemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4546-8,558281010000101,Mass fraction of hemoglobin A to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4547-6,558291010000103,Mass fraction of hemoglobin A1 to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4548-4,558301010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4549-2,558311010000104,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+4550-0,213081010000103,Substance concentration of hemoglobin A>2< in blood at point in time by chromatography.column (observable entity),quantitative_convertible,Quantitative scale + concentration property
+4551-8,558331010000108,Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4552-6,558341010000100,Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+4553-4,558351010000103,Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by electrophoresis pH 6.3 (observable entity),quantitative,Quantitative scale
+4554-2,558361010000101,Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity),quantitative,Quantitative scale
+4556-7,118861010000105,Presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4557-5,66791010000102,Presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4558-3,178681010000106,Presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4559-1,97001010000108,Presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4560-9,139861010000109,Presence of Hemoglobin Bethesda in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4561-7,558381010000109,Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by electrophoresis pH 6.3 (observable entity),quantitative,Quantitative scale
+4562-5,558391010000107,Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity),quantitative,Quantitative scale
+4563-3,558401010000109,Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4564-1,48591010000103,Presence of hemoglobin C-Harlem in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4565-8,169541010000103,Presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4566-6,96801010000103,Presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4567-4,277581010000105,Presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4568-2,188201010000108,Presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4569-0,742401010000105,Mass fraction of hemoglobin D to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4572-4,134051010000100,Presence of hemoglobin Denver in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4573-2,558421010000101,Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time by electrophoresis pH 6.3 (observable entity),quantitative,Quantitative scale
+4574-0,558431010000103,Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity),quantitative,Quantitative scale
+4575-7,558441010000106,Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4576-5,558451010000108,Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4577-3,742411010000108,Presence of hemoglobin F-Texas in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4578-1,742421010000102,Arbitrary concentration of hemoglobin F-Texas in blood at point in time by electrophoresis pH 8.9 (observable entity),quantitative_convertible,Quantitative scale + concentration property
+4579-9,81981010000106,Presence of hemoglobin F in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4580-7,742431010000104,Mass fraction of glycosylated hemoglobin F to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4581-5,45561010000101,Presence of hemoglobin G-Coushatta in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4582-3,78691010000103,Arbitrary concentration of hemoglobin G-Coushatta in blood at point in time by electrophoresis pH 8.9 (observable entity),quantitative_convertible,Quantitative scale + concentration property
+4583-1,124041010000100,Presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4584-9,156971010000104,Presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4585-6,117971010000108,Presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4586-4,60121010000103,Presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4587-2,558471010000100,Mass fraction of hemoglobin H to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+4588-0,558481010000102,Mass fraction of hemoglobin H to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4589-8,49491010000106,Presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4590-6,47111010000104,Presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4591-4,127271010000108,Presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4592-2,156351010000108,Presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4593-0,252421010000106,Presence of hemoglobin I in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4594-8,93551010000105,Presence of hemoglobin I in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4595-5,95121010000105,Presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4596-3,127571010000106,Presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4597-1,269741010000108,Presence of hemoglobin J-Cape Town in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4598-9,175971010000108,Presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4599-7,195901010000107,Presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4600-3,243751010000103,Presence of Hemoglobin Kansas in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4601-1,107061010000101,Presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4602-9,207471010000100,Presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4603-7,129191010000109,Presence of Hemoglobin Köln in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4604-5,227821010000105,Presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4605-2,253871010000102,Presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4606-0,244711010000101,Presence of hemoglobin M-Boston in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4607-8,215341010000108,Presence of hemoglobin M-Hyde Park in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4608-6,213931010000100,Presence of hemoglobin M-Iwate in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4610-2,51991010000103,Presence of hemoglobin M-Saskatoon in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4611-0,152381010000101,Presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4612-8,46821010000103,Presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4613-6,129421010000100,Presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4614-4,50431010000101,Presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4615-1,200431010000102,Presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4616-9,88721010000103,Presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4617-7,136811010000102,Presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4618-5,250251010000104,Presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4619-3,178431010000107,Presence of Hemoglobin Rainier in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4621-9,231821010000103,Presence of hemoglobin S in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4622-7,250371010000100,Presence of hemoglobin S in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4623-5,40691010000102,Presence of hemoglobin S in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4625-0,558691010000101,Mass fraction of hemoglobin S to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+4626-8,204551010000100,Presence of Hemoglobin Yakima in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4627-6,56931010000105,Presence of Hemoglobin Yoshizuka in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4628-4,119491010000105,Presence of Hemoglobin Ypsilanti in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4629-2,65511010000108,Presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4630-0,97401010000103,Presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4631-8,267521010000101,Presence of hemoglobin F in stool at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4632-6,244091010000107,Presence of hemoglobin F in blood at point in time by alkali denat (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4633-4,558741010000104,Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by Kleihauer-Betke (observable entity),quantitative,Quantitative scale
+4638-3,558751010000102,Mass fraction of thermolabile hemoglobin to hemoglobin.total in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
+4639-1,105601010000102,Presence of unstable hemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4683-9,114821010000106,Mass concentration of sulfhemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+4684-7,277211010000102,Presence of sulfhemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4685-4,558951010000104,Mass fraction of sulfhemoglobin to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+47278-7,559591010000107,Entitic mass of hemoglobin in RBC^BldCo at point in time (observable entity),quantitative,Quantitative scale
+48035-0,141941010000104,Presence of hemoglobin in cerebrospinal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48047-5,842371010000105,Presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48343-8,562251010000100,Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+48725-6,67261010000101,Mass concentration of hemoglobin in blood at point in time pre therapeutic phlebotomy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+49137-3,75411010000104,Mass concentration of hemoglobin in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+50017-3,844281010000109,Presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+50559-4,69741010000101,Mass concentration of hemoglobin in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+50765-7,566541010000101,Mass fraction of Hemoglobin Hasharon to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+51196-4,567471010000105,Mass fraction of hemoglobin A1 to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+51613-8,746091010000109,Mass fraction of hemoglobin J to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+51614-6,568421010000108,Mass fraction of hemoglobin M to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+53117-8,243681010000100,Presence of thermolabile hemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53223-4,746311010000104,Mass fraction of hemoglobin G to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+53224-2,54021010000101,Presence of hemoglobin M in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53857-9,204891010000107,Mass concentration of hemoglobin F in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+54068-2,592221010000109,Mass fraction of hemoglobin O-Arab to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54069-0,592231010000107,Mass fraction of Hemoglobin Bart to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54070-8,746571010000101,Mass fraction of hemoglobin D to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54071-6,592241010000104,Mass fraction of hemoglobin E to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54072-4,592251010000102,Mass fraction of hemoglobin A to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54073-2,592261010000100,Mass fraction of hemoglobin C to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54074-0,592271010000105,Mass fraction of hemoglobin F to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+54209-2,592521010000107,Mass fraction of hemoglobin C-Harlem to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+54289-4,241521010000102,Mass concentration of hemoglobin in Bld^BPU at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55372-7,593471010000101,Mass fraction of Hemoglobin Constant Springs to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+55782-7,204121010000101,Mass concentration of hemoglobin in blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55783-5,68661010000102,Presence of Hemoglobin Bart in blood at point in time by high pressure liquid chromatography (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+55942-7,594651010000108,Mass fraction of methemoglobin to hemoglobin.total in cord blood at point in time (observable entity),quantitative,Quantitative scale
+56040-9,184071010000100,Substance concentration of methemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+56476-5,595011010000103,Mass fraction of hemoglobin S to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+56490-6,848171010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+56491-4,848181010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57751-0,43271010000109,Presence of hemoglobin in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57905-2,848921010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+5794-3,246811010000100,Presence of hemoglobin in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+58453-2,849041010000107,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),quantitative_convertible,Quantitative scale + concentration property
+5913-9,598581010000108,Mass fraction of hemoglobin F to hemoglobin.total in amniotic fluid at point in time (observable entity),quantitative,Quantitative scale
+59260-0,214131010000101,Substance concentration of hemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+59468-9,599241010000109,Entitic amount of substance of hemoglobin in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
+61180-6,91561010000106,Mass concentration of hemoglobin in Bld^Fetus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+62243-1,602571010000101,Entitic mass of hemoglobin in RBC^Fetus at point in time by automated count (observable entity),quantitative,Quantitative scale
+62388-4,602671010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by JDS/JSCC (observable entity),quantitative,Quantitative scale
+63523-5,603361010000107,Mass fraction of carboxyhemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity),quantitative,Quantitative scale
+63524-3,603371010000102,Mass fraction of carboxyhemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity),quantitative,Quantitative scale
+6864-3,108861010000107,Presence of hemoglobin S in blood at point in time by solubility test (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+69950-4,108391010000106,Mass concentration of hemoglobin in pericardial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+71694-4,608081010000109,Entitic mass of hemoglobin in retic at point in time by automated count (observable entity),quantitative,Quantitative scale
+717-9,186111010000103,Presence of hemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+718-7,168331010000106,Mass concentration of hemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+719-5,41781010000101,Mass concentration of hemoglobin in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+722-9,195541010000103,Mass concentration of hemoglobin in pleural fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72262-9,215401010000104,Substance concentration of methemoglobin in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72263-7,190951010000103,Substance concentration of oxyhemoglobin in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+723-7,149081010000108,Mass concentration of hemoglobin in peritoneal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+72360-1,608461010000108,Mass fraction of methemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity),quantitative,Quantitative scale
+72361-9,608471010000103,Mass fraction of methemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity),quantitative,Quantitative scale
+724-5,224421010000101,Mass concentration of hemoglobin in synovial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+725-2,111791010000102,Presence of hemoglobin in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+726-0,165951010000108,Mass concentration of hemoglobin in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+73895-5,609901010000107,Entitic amount of substance of hemoglobin in retic at point in time by automated count (observable entity),quantitative,Quantitative scale
+75928-2,241881010000100,Substance concentration of hemoglobin in arterial blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+76768-1,160411010000108,Mass concentration of hemoglobin in mixed venous blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+76769-9,89311010000104,Mass concentration of hemoglobin in venous blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+785-6,612991010000106,Entitic mass of hemoglobin in erythrocyte at point in time by automated count (observable entity),quantitative,Quantitative scale
+80372-6,855941010000107,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+80655-4,614431010000106,Mass fraction of hemoglobin G-Philadelphia to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+80656-2,614441010000103,Mass fraction of Hemoglobin Hope to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+80657-0,758161010000100,Mass fraction of hemoglobin Q to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+87437-0,224941010000101,Mass concentration of oxyhemoglobin in plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+93846-4,151971010000108,Substance concentration of hemoglobin in venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+96595-4,623431010000103,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
+9749-3,164801010000104,Arbitrary concentration of hemoglobin F in blood at point in time by electrophoresis (observable entity),quantitative_convertible,Quantitative scale + concentration property
+97550-8,98801010000104,Mass concentration of hemoglobin in BldCV at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+97551-6,624171010000106,Mass fraction of carboxyhemoglobin to hemoglobin.total in BldCV at point in time (observable entity),quantitative,Quantitative scale
+97552-4,624181010000109,Mass fraction of oxyhemoglobin to hemoglobin.total in BldCV at point in time (observable entity),quantitative,Quantitative scale
+97553-2,624191010000107,Mass fraction of deoxyhemoglobin to hemoglobin.total in BldCV at point in time (observable entity),quantitative,Quantitative scale
+97554-0,624201010000105,Mass fraction of methemoglobin to hemoglobin.total in BldCV at point in time (observable entity),quantitative,Quantitative scale
+97555-7,269771010000102,Mass concentration of hemoglobin in BldCV at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+97556-5,122541010000102,Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+,408591000,Hemoglobin A1c target (observable entity),quantitative_convertible,"Measurement property, no scale asserted (generic) + concentration property"
+,446074002,Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity),quantitative_convertible,"Measurement property, no scale asserted (generic) + concentration property"
+,431314004,Peripheral oxygen saturation (observable entity),quantitative,Quantitative scale

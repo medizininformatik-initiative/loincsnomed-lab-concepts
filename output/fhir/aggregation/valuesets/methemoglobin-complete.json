@@ -1,0 +1,100 @@
+{
+  "resourceType": "ValueSet",
+  "id": "methemoglobin-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/methemoglobin-complete",
+  "name": "MethemoglobinComplete",
+  "title": "methemoglobin — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 17 concepts (17 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2613-8",
+            "display": "Presence of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2619-5",
+            "display": "Presence of methemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "4534-4",
+            "display": "Mass fraction of cyanmethemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2615-3",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "72361-9",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "97554-0",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in BldCV at point in time (observable entity)"
+          },
+          {
+            "code": "2614-6",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2616-1",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "55942-7",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "2618-7",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "41607-3",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "2617-9",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "72360-1",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "109592-6",
+            "display": "Measurement of methemoglobin in blood (observable entity)"
+          },
+          {
+            "code": "15082-1",
+            "display": "Mass concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "56040-9",
+            "display": "Substance concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "72262-9",
+            "display": "Substance concentration of methemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|",
+  "_bucket": "complete"
+}

@@ -1,0 +1,4 @@
+LOINC,SCTID,FSN,use_case,reason
+41995-2,43401010000104,Mass concentration of glycated hemoglobin-A1c in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+,408591000,Hemoglobin A1c target (observable entity),quantitative_convertible,"Measurement property, no scale asserted (generic) + concentration property"
+,446074002,Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity),quantitative_convertible,"Measurement property, no scale asserted (generic) + concentration property"

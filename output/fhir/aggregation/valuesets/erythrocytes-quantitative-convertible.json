@@ -1,0 +1,229 @@
+{
+  "resourceType": "ValueSet",
+  "id": "erythrocytes-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/erythrocytes-quantitative-convertible",
+  "name": "ErythrocytesQuantitativeConvertible",
+  "title": "erythrocytes — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 52 concepts (52 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "30390-9",
+            "display": "Arbitrary concentration of erythrocyte in stool at point in time (observable entity)"
+          },
+          {
+            "code": "14331-3",
+            "display": "Arbitrary concentration of erythrocyte in stool at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "55779-3",
+            "display": "Number concentration of erythrocyte in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "62240-7",
+            "display": "Number concentration of erythrocyte in Bld^Fetus at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "26453-1",
+            "display": "Number concentration of erythrocyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "789-8",
+            "display": "Number concentration of erythrocyte in blood at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "790-6",
+            "display": "Number concentration of erythrocyte in blood at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26455-6",
+            "display": "Number concentration of erythrocyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "23860-0",
+            "display": "Number concentration of erythrocyte in body fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "6741-3",
+            "display": "Number concentration of erythrocyte in body fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "82588-5",
+            "display": "Number concentration of erythrocyte in bone marrow at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "99777-5",
+            "display": "Number concentration of erythrocyte in bronchoalveolar lavage fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "99050-7",
+            "display": "Number concentration of erythrocyte in bronchoalveolar lavage fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26454-9",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "791-4",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "792-2",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "76673-3",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 1st tube (observable entity)"
+          },
+          {
+            "code": "46087-3",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 2nd tube (observable entity)"
+          },
+          {
+            "code": "46091-5",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 3rd tube (observable entity)"
+          },
+          {
+            "code": "46092-3",
+            "display": "Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 4th tube (observable entity)"
+          },
+          {
+            "code": "47280-3",
+            "display": "Number concentration of erythrocyte in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "57841-9",
+            "display": "Number concentration of erythrocyte in dialysate at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "53517-9",
+            "display": "Number concentration of erythrocyte in dialysate at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30387-5",
+            "display": "Number concentration of erythrocyte in gastric fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14372-7",
+            "display": "Number concentration of erythrocyte in gastric fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "96727-3",
+            "display": "Number concentration of erythrocyte in lower respiratory tract at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30388-3",
+            "display": "Number concentration of erythrocyte in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "57842-7",
+            "display": "Number concentration of erythrocyte in pericardial fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "14713-2",
+            "display": "Number concentration of erythrocyte in pericardial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "81640-5",
+            "display": "Number concentration of erythrocyte in peritoneal dialysate at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "40534-0",
+            "display": "Number concentration of erythrocyte in peritoneal dialysate at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26457-2",
+            "display": "Number concentration of erythrocyte in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "57843-5",
+            "display": "Number concentration of erythrocyte in peritoneal fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "795-5",
+            "display": "Number concentration of erythrocyte in peritoneal fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "26456-4",
+            "display": "Number concentration of erythrocyte in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "794-8",
+            "display": "Number concentration of erythrocyte in pleural fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "793-0",
+            "display": "Number concentration of erythrocyte in pleural fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "67831-8",
+            "display": "Number concentration of erythrocyte in plr fld^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "43245-0",
+            "display": "Number concentration of erythrocyte in seminal fluid at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "30389-1",
+            "display": "Number concentration of erythrocyte in seminal plasma at point in time (observable entity)"
+          },
+          {
+            "code": "16828-6",
+            "display": "Number concentration of erythrocyte in seminal plasma at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "23859-2",
+            "display": "Number concentration of erythrocyte in specimen at point in time by light microscopy (observable entity)"
+          },
+          {
+            "code": "26458-0",
+            "display": "Number concentration of erythrocyte in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "796-3",
+            "display": "Number concentration of erythrocyte in synovial fluid at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "797-1",
+            "display": "Number concentration of erythrocyte in synovial fluid at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "30391-7",
+            "display": "Number concentration of erythrocyte in urine at point in time (observable entity)"
+          },
+          {
+            "code": "798-9",
+            "display": "Number concentration of erythrocyte in urine at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "799-7",
+            "display": "Number concentration of erythrocyte in urine at point in time by manual count (observable entity)"
+          },
+          {
+            "code": "105108-5",
+            "display": "Number concentration of erythrocyte in urine sediment at point in time (observable entity)"
+          },
+          {
+            "code": "5808-1",
+            "display": "Number concentration of erythrocyte in urine sediment at point in time by high power field light microscopy (observable entity)"
+          },
+          {
+            "code": "68902-6",
+            "display": "Number concentration of erythrocyte in urine sediment by light microscopy (observable entity)"
+          },
+          {
+            "code": "68435-7",
+            "display": "Number concentration of erythrocyte in vitreous humor at point in time by automated count (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|",
+  "_bucket": "quantitative_convertible"
+}

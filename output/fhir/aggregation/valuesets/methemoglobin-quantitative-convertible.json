@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "methemoglobin-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/methemoglobin-quantitative-convertible",
+  "name": "MethemoglobinQuantitativeConvertible",
+  "title": "methemoglobin — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 3 concepts (3 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "15082-1",
+            "display": "Mass concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "56040-9",
+            "display": "Substance concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "72262-9",
+            "display": "Substance concentration of methemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|",
+  "_bucket": "quantitative_convertible"
+}

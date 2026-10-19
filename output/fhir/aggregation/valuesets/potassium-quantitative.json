@@ -1,0 +1,249 @@
+{
+  "resourceType": "ValueSet",
+  "id": "potassium-quantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/potassium-quantitative",
+  "name": "PotassiumQuantitative",
+  "title": "potassium — Quantitative (all numeric)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)| against http://snomed.info/sct/11010000107/version/20260321. 57 concepts (57 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "79710-0",
+            "display": "Mass content of potassium electrolyte in hair at point in time (observable entity)"
+          },
+          {
+            "code": "59733-6",
+            "display": "Mass content of potassium electrolyte in tissue at point in time (observable entity)"
+          },
+          {
+            "code": "11148-4",
+            "display": "Mass ratio of potassium electrolyte to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "13798-4",
+            "display": "Mass ratio of potassium electrolyte to creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "108797-2",
+            "display": "Measurement of potassium electrolyte in serum or plasma (observable entity)"
+          },
+          {
+            "code": "111266-3",
+            "display": "Measurement of potassium electrolyte in stool (observable entity)"
+          },
+          {
+            "code": "111459-4",
+            "display": "Measurement of potassium electrolyte in urine (observable entity)"
+          },
+          {
+            "code": "43222-9",
+            "display": "Ratio of potassium electrolyte to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "56971-5",
+            "display": "Ratio of potassium electrolyte to creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "32550-6",
+            "display": "Substance amount of potassium electrolyte in urine (observable entity)"
+          },
+          {
+            "code": "50902-6",
+            "display": "Substance content of potassium electrolyte in hair at point in time (observable entity)"
+          },
+          {
+            "code": "25506-7",
+            "display": "Substance content of potassium electrolyte in stool at point in time (observable entity)"
+          },
+          {
+            "code": "27441-5",
+            "display": "Substance content of potassium electrolyte in stool in 24 hours (observable entity)"
+          },
+          {
+            "code": "33949-9",
+            "display": "Substance ratio of potassium electrolyte to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "56143-1",
+            "display": "Substance ratio of potassium electrolyte to creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "75940-7",
+            "display": "Mass concentration of potassium electrolyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "82722-0",
+            "display": "Mass concentration of potassium electrolyte in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "22760-3",
+            "display": "Mass concentration of potassium electrolyte in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "9482-1",
+            "display": "Mass concentration of potassium electrolyte in water at point in time (observable entity)"
+          },
+          {
+            "code": "42569-4",
+            "display": "Mass concentration or substance concentration of potassium electrolyte in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "49788-3",
+            "display": "Substance concentration of potassium electrolyte in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "32713-0",
+            "display": "Substance concentration of potassium electrolyte in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "6298-4",
+            "display": "Substance concentration of potassium electrolyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2821-7",
+            "display": "Substance concentration of potassium electrolyte in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "39790-1",
+            "display": "Substance concentration of potassium electrolyte in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "2819-1",
+            "display": "Substance concentration of potassium electrolyte in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "2820-9",
+            "display": "Substance concentration of potassium electrolyte in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "2824-1",
+            "display": "Substance concentration of potassium electrolyte in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "2822-5",
+            "display": "Substance concentration of potassium electrolyte in gastric fluid at point in time (observable entity)"
+          },
+          {
+            "code": "17795-6",
+            "display": "Substance concentration of potassium electrolyte in hyperal solution at point in time (observable entity)"
+          },
+          {
+            "code": "41656-0",
+            "display": "Substance concentration of potassium electrolyte in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "60218-5",
+            "display": "Substance concentration of potassium electrolyte in Mother's milk at point in time (observable entity)"
+          },
+          {
+            "code": "39785-1",
+            "display": "Substance concentration of potassium electrolyte in peritoneal dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "49789-1",
+            "display": "Substance concentration of potassium electrolyte in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "77142-8",
+            "display": "Substance concentration of potassium electrolyte in plasma or serum or whole blood at point in time (observable entity)"
+          },
+          {
+            "code": "2825-8",
+            "display": "Substance concentration of potassium electrolyte in saliva at point in time (observable entity)"
+          },
+          {
+            "code": "2823-3",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "93998-3",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 1H post dose vasopressin (observable entity)"
+          },
+          {
+            "code": "94007-2",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 2H post dose vasopressin (observable entity)"
+          },
+          {
+            "code": "12812-4",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "12813-2",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "29349-8",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time post-dialysis (observable entity)"
+          },
+          {
+            "code": "51618-7",
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time Pre-dialysis (observable entity)"
+          },
+          {
+            "code": "32336-0",
+            "display": "Substance concentration of potassium electrolyte in specimen at point in time (observable entity)"
+          },
+          {
+            "code": "15202-5",
+            "display": "Substance concentration of potassium electrolyte in stool at point in time (observable entity)"
+          },
+          {
+            "code": "59162-8",
+            "display": "Substance concentration of potassium electrolyte in stool in 24 hours (observable entity)"
+          },
+          {
+            "code": "2827-4",
+            "display": "Substance concentration of potassium electrolyte in sweat at point in time (observable entity)"
+          },
+          {
+            "code": "14172-1",
+            "display": "Substance concentration of potassium electrolyte in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "30549-0",
+            "display": "Substance concentration of potassium electrolyte in TPN at point in time (observable entity)"
+          },
+          {
+            "code": "35677-4",
+            "display": "Substance concentration of potassium electrolyte in urine (observable entity)"
+          },
+          {
+            "code": "2828-2",
+            "display": "Substance concentration of potassium electrolyte in urine at point in time (observable entity)"
+          },
+          {
+            "code": "57355-0",
+            "display": "Substance concentration of potassium electrolyte in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "57379-0",
+            "display": "Substance concentration of potassium electrolyte in urine in 2 hours (observable entity)"
+          },
+          {
+            "code": "21476-7",
+            "display": "Substance concentration of potassium electrolyte in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "94841-4",
+            "display": "Substance concentration of potassium electrolyte in Urine^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "39789-3",
+            "display": "Substance concentration of potassium electrolyte in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "12814-0",
+            "display": "Substance concentration of potassium electrolyte in vitreous humor at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|",
+  "_bucket": "quantitative"
+}

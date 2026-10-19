@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hba1c-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/hba1c-quantitative-convertible",
+  "name": "Hba1cQuantitativeConvertible",
+  "title": "hba1c — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)| against http://snomed.info/sct/11010000107/version/20260321. 3 concepts (1 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "41995-2",
+            "display": "Mass concentration of glycated hemoglobin-A1c in blood at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "408591000",
+            "display": "Hemoglobin A1c target (observable entity)"
+          },
+          {
+            "code": "446074002",
+            "display": "Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|",
+  "_bucket": "quantitative_convertible"
+}

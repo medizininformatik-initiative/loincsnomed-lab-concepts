@@ -6,7 +6,7 @@
   "title": "Hemoglobin concentration in blood",
   "status": "draft",
   "experimental": true,
-  "description": "Hemoglobin concentration in blood (standard). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "description": "Hemoglobin concentration in blood (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -87,6 +87,17 @@
           {
             "code": "20509-6",
             "display": "Mass concentration of hemoglobin in blood at point in time by calculation (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }

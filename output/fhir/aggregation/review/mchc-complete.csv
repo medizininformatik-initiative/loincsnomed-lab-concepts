@@ -1,0 +1,3 @@
+LOINC,SCTID,FSN,use_case,reason
+28540-3,521371010000101,Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
+786-4,613001010000107,Entitic mass concentration of hemoglobin in erythrocyte at point in time by automated count (observable entity),quantitative,Quantitative scale

@@ -1,0 +1,89 @@
+LOINC,SCTID,FSN,use_case,reason
+104647-3,483181010000104,Number areic of erythrocyte in urine at point in time by computer assisted (observable entity),quantitative,Quantitative scale
+104874-3,483951010000107,Volume fraction of erythrocyte in blood at point in time by calculation baseline (observable entity),quantitative,Quantitative scale
+105107-7,484381010000100,Number areic of erythrocyte in urine sediment at point in time (observable entity),quantitative,Quantitative scale
+105108-5,484391010000102,Number concentration of erythrocyte in urine sediment at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107175-2,487771010000105,Volume fraction of erythrocyte in peritoneal fluid at point in time (observable entity),quantitative,Quantitative scale
+109724-5,720581010000103,Measurement of erythrocyte in dialysate (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+11151-8,489801010000101,Volume fraction of erythrocyte in cord blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+11153-4,489821010000109,Volume fraction of erythrocyte to body fluid in body fluid at point in time by calculation (observable entity),quantitative,Quantitative scale
+11271-4,489951010000109,Volume fraction of erythrocyte in cord blood at point in time by automated count (observable entity),quantitative,Quantitative scale
+13508-7,492301010000101,Volume fraction of erythrocyte in cerebrospinal fluid at point in time by centrifugation (observable entity),quantitative,Quantitative scale
+13945-1,180501010000108,Number areic of erythrocyte in urine sediment at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+14331-3,495631010000106,Arbitrary concentration of erythrocyte in stool at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+14372-7,189761010000107,Number concentration of erythrocyte in gastric fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+14713-2,259061010000100,Number concentration of erythrocyte in pericardial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+16828-6,190201010000107,Number concentration of erythrocyte in seminal plasma at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+17809-5,500871010000107,Volume fraction of erythrocyte in urine at point in time by calculation (observable entity),quantitative,Quantitative scale
+20570-8,504981010000105,Volume fraction of erythrocyte to blood in blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+23859-2,146381010000104,Number concentration of erythrocyte in specimen at point in time by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+23860-0,119161010000105,Number concentration of erythrocyte in body fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26453-1,262301010000104,Number concentration of erythrocyte in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26454-9,268871010000103,Number concentration of erythrocyte in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26455-6,182041010000104,Number concentration of erythrocyte in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26456-4,110421010000101,Number concentration of erythrocyte in pleural fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26457-2,254911010000101,Number concentration of erythrocyte in peritoneal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+26458-0,153771010000107,Number concentration of erythrocyte in synovial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30387-5,122871010000106,Number concentration of erythrocyte in gastric fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30388-3,49061010000107,Number concentration of erythrocyte in pericardial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30389-1,85581010000101,Number concentration of erythrocyte in seminal plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30390-9,525161010000106,Arbitrary concentration of erythrocyte in stool at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30391-7,100381010000106,Number concentration of erythrocyte in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30398-2,525191010000100,Volume fraction of erythrocyte in cerebrospinal fluid at point in time by calculation (observable entity),quantitative,Quantitative scale
+31100-1,526231010000104,Volume fraction of erythrocyte to blood in blood at point in time by electrical impedance (observable entity),quantitative,Quantitative scale
+32354-3,527701010000101,Volume fraction of erythrocyte to arterial blood in arterial blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+40534-0,79331010000101,Number concentration of erythrocyte in peritoneal dialysate at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+41654-5,539801010000104,Volume fraction of erythrocyte to venous blood in venous blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+41655-2,539811010000101,Volume fraction of erythrocyte in mixed venous blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+42908-4,552361010000103,Volume fraction of erythrocyte in capillary blood at point in time by calculation (observable entity),quantitative,Quantitative scale
+43245-0,274641010000107,Number concentration of erythrocyte in seminal fluid at point in time by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+43416-7,554311010000109,Volume fraction of erythrocyte in ^Stem cell product at point in time by calculation (observable entity),quantitative,Quantitative scale
+44242-6,177231010000109,Number areic of erythrocyte in vagina at point in time by wet preparation (observable entity),quantitative,Quantitative scale
+4544-3,558261010000109,Volume fraction of erythrocyte to blood in blood at point in time by automated count (observable entity),quantitative,Quantitative scale
+4545-0,558271010000104,Volume fraction of erythrocyte in blood at point in time by centrifugation (observable entity),quantitative,Quantitative scale
+46087-3,90911010000108,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 2nd tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+46091-5,151291010000104,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 3rd tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+46092-3,206801010000109,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 4th tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+46419-8,228491010000109,Number areic of erythrocyte in urine sediment at point in time by automated count (observable entity),quantitative,Quantitative scale
+47280-3,105281010000107,Number concentration of erythrocyte in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+47640-8,560711010000108,Volume fraction of erythrocyte in dialysate at point in time by calculation (observable entity),quantitative,Quantitative scale
+48703-3,562671010000105,Volume fraction of erythrocyte in blood at point in time by estimation (observable entity),quantitative,Quantitative scale
+51382-0,218251010000106,Number areic of erythrocyte in synovial fluid at point in time by light microscopy (observable entity),quantitative,Quantitative scale
+51910-8,196681010000101,Number areic of erythrocyte in bronchoalveolar lavage fluid at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+53517-9,148681010000105,Number concentration of erythrocyte in dialysate at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55779-3,96551010000101,Number concentration of erythrocyte in amniotic fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55781-9,594271010000102,Volume fraction of erythrocyte in bone marrow at point in time by calculation (observable entity),quantitative,Quantitative scale
+57841-9,63741010000103,Number concentration of erythrocyte in dialysate at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+57842-7,206081010000108,Number concentration of erythrocyte in pericardial fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+57843-5,128641010000103,Number concentration of erythrocyte in peritoneal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+5808-1,86471010000106,Number concentration of erythrocyte in urine sediment at point in time by high power field light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+58767-5,76841010000107,Number areic of erythrocyte in seminal fluid at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+62240-7,93071010000109,Number concentration of erythrocyte in Bld^Fetus at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+62241-5,602551010000109,Volume fraction of erythrocyte in Bld^Fetus at point in time by automated count (observable entity),quantitative,Quantitative scale
+6741-3,183111010000108,Number concentration of erythrocyte in body fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+67831-8,182601010000108,Number concentration of erythrocyte in plr fld^Fetus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68435-7,67351010000107,Number concentration of erythrocyte in vitreous humor at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+68902-6,275451010000106,Number concentration of erythrocyte in urine sediment by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+70168-0,607521010000104,Volume fraction of erythrocyte in synovial fluid at point in time by calculation (observable entity),quantitative,Quantitative scale
+70169-8,607531010000101,Volume fraction of erythrocyte in pleural fluid at point in time by calculation (observable entity),quantitative,Quantitative scale
+75237-8,181151010000105,Number areic of erythrocyte in synovial fluid at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+76673-3,174301010000104,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 1st tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
+789-8,249121010000107,Number concentration of erythrocyte in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+790-6,176511010000101,Number concentration of erythrocyte in blood at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+791-4,260111010000100,Number concentration of erythrocyte in cerebrospinal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+792-2,166351010000102,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+793-0,182781010000105,Number concentration of erythrocyte in pleural fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+794-8,176241010000104,Number concentration of erythrocyte in pleural fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+795-5,228571010000107,Number concentration of erythrocyte in peritoneal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+796-3,257201010000102,Number concentration of erythrocyte in synovial fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+797-1,213761010000109,Number concentration of erythrocyte in synovial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+798-9,231331010000107,Number concentration of erythrocyte in urine at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+799-7,269011010000106,Number concentration of erythrocyte in urine at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+81640-5,99551010000108,Number concentration of erythrocyte in peritoneal dialysate at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+82588-5,227101010000109,Number concentration of erythrocyte in bone marrow at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+96711-7,41931010000100,Number areic of erythrocyte in body fluid at point in time by light microscopy (observable entity),quantitative,Quantitative scale
+96719-0,223251010000105,Number areic of erythrocyte in prostatic fluid at point in time by light microscopy (observable entity),quantitative,Quantitative scale
+96727-3,182361010000103,Number concentration of erythrocyte in lower respiratory tract at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99050-7,165371010000101,Number concentration of erythrocyte in bronchoalveolar lavage fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99777-5,266051010000101,Number concentration of erythrocyte in bronchoalveolar lavage fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+99927-6,221051010000102,Number areic of erythrocyte in body fluid at point in time by automated count (observable entity),quantitative,Quantitative scale

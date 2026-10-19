@@ -1,0 +1,41 @@
+LOINC,SCTID,FSN,use_case,reason
+103750-6,481881010000107,Substance concentration of hemoglobin in venous cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+105040-0,483971010000104,Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+105274-5,484891010000107,Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+105300-8,484911010000109,Substance concentration of hemoglobin in mixed venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107189-3,825481010000107,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107190-1,825491010000105,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),quantitative_convertible,Quantitative scale + concentration property
+107191-9,825501010000104,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),quantitative_convertible,Quantitative scale + concentration property
+14775-1,211871010000107,Mass concentration of hemoglobin in arterial blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+20509-6,66931010000104,Mass concentration of hemoglobin in blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30313-1,103141010000106,Mass concentration of hemoglobin in arterial blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30350-3,198381010000105,Mass concentration of hemoglobin in venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30351-1,157231010000106,Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30352-9,143151010000100,Mass concentration of hemoglobin in capillary blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30353-7,259921010000108,Mass concentration of hemoglobin in venous cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+30354-5,240741010000109,Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33025-8,108491010000103,Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33026-6,252711010000109,Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+33509-1,190711010000102,Mass concentration of hemoglobin in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+35183-3,738931010000109,Mass concentration or substance concentration of hemoglobin in plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40719-7,185861010000101,Mass concentration of hemoglobin in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+48725-6,67261010000101,Mass concentration of hemoglobin in blood at point in time pre therapeutic phlebotomy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+54289-4,241521010000102,Mass concentration of hemoglobin in Bld^BPU at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+55782-7,204121010000101,Mass concentration of hemoglobin in blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+58453-2,849041010000107,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),quantitative_convertible,Quantitative scale + concentration property
+59260-0,214131010000101,Substance concentration of hemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+61180-6,91561010000106,Mass concentration of hemoglobin in Bld^Fetus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+69950-4,108391010000106,Mass concentration of hemoglobin in pericardial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+718-7,168331010000106,Mass concentration of hemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+719-5,41781010000101,Mass concentration of hemoglobin in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+722-9,195541010000103,Mass concentration of hemoglobin in pleural fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+723-7,149081010000108,Mass concentration of hemoglobin in peritoneal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+724-5,224421010000101,Mass concentration of hemoglobin in synovial fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+726-0,165951010000108,Mass concentration of hemoglobin in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+75928-2,241881010000100,Substance concentration of hemoglobin in arterial blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+76768-1,160411010000108,Mass concentration of hemoglobin in mixed venous blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+76769-9,89311010000104,Mass concentration of hemoglobin in venous blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+93846-4,151971010000108,Substance concentration of hemoglobin in venous blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+97550-8,98801010000104,Mass concentration of hemoglobin in BldCV at point in time by calculation (observable entity),quantitative_convertible,Quantitative scale + concentration property
+97555-7,269771010000102,Mass concentration of hemoglobin in BldCV at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property
+97556-5,122541010000102,Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity),quantitative_convertible,Quantitative scale + concentration property

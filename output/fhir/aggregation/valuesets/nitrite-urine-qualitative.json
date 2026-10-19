@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nitrite-urine-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/nitrite-urine-qualitative",
+  "name": "NitriteUrineQualitative",
+  "title": "nitrite urine — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)| against http://snomed.info/sct/11010000107/version/20260321. 3 concepts (3 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "32710-6",
+            "display": "Presence of nitrite salt in urine at point in time (observable entity)"
+          },
+          {
+            "code": "50558-6",
+            "display": "Presence of nitrite salt in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "5802-4",
+            "display": "Presence of nitrite salt in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|",
+  "_bucket": "qualitative"
+}

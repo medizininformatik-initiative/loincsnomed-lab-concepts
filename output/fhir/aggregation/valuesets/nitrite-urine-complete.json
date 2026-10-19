@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nitrite-urine-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/nitrite-urine-complete",
+  "name": "NitriteUrineComplete",
+  "title": "nitrite urine — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)| against http://snomed.info/sct/11010000107/version/20260321. 9 concepts (9 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "32710-6",
+            "display": "Presence of nitrite salt in urine at point in time (observable entity)"
+          },
+          {
+            "code": "50558-6",
+            "display": "Presence of nitrite salt in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "5802-4",
+            "display": "Presence of nitrite salt in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "18370-7",
+            "display": "Mass concentration of nitrite salt in blood at point in time (observable entity)"
+          },
+          {
+            "code": "55947-6",
+            "display": "Mass concentration of nitrite salt in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "2657-5",
+            "display": "Mass concentration of nitrite salt in urine at point in time (observable entity)"
+          },
+          {
+            "code": "13616-8",
+            "display": "Mass concentration of nitrite salt in water at point in time (observable entity)"
+          },
+          {
+            "code": "55948-4",
+            "display": "Substance concentration of nitrite salt in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "20407-3",
+            "display": "Mass concentration of nitrite salt in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|",
+  "_bucket": "complete"
+}

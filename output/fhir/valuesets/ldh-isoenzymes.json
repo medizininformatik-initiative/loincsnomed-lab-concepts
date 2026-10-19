@@ -6,7 +6,7 @@
   "title": "LDH isoenzyme analysis (LDH-1..5)",
   "status": "draft",
   "experimental": true,
-  "description": "LDH isoenzyme analysis (LDH-1..5) (specialized). Generated from ECL against http://snomed.info/sct/11010000107/version/20260321. Review required.",
+  "description": "LDH isoenzyme analysis (LDH-1..5) (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -163,6 +163,17 @@
           {
             "code": "2544-5",
             "display": "Catalytic concentration of lactic acid dehydrogenase isoenzyme 4 in serum or plasma at point in time by chemical separation (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }

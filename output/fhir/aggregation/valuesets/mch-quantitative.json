@@ -1,0 +1,747 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mch-quantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/mch-quantitative",
+  "name": "MchQuantitative",
+  "title": "mch — Quantitative (all numeric)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 180 concepts (177 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "59468-9",
+            "display": "Entitic amount of substance of hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "73895-5",
+            "display": "Entitic amount of substance of hemoglobin in retic at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "28539-5",
+            "display": "Entitic mass of hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "785-6",
+            "display": "Entitic mass of hemoglobin in erythrocyte at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "47278-7",
+            "display": "Entitic mass of hemoglobin in RBC^BldCo at point in time (observable entity)"
+          },
+          {
+            "code": "62243-1",
+            "display": "Entitic mass of hemoglobin in RBC^Fetus at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "42810-2",
+            "display": "Entitic mass of hemoglobin in retic at point in time (observable entity)"
+          },
+          {
+            "code": "71694-4",
+            "display": "Entitic mass of hemoglobin in retic at point in time by automated count (observable entity)"
+          },
+          {
+            "code": "27396-1",
+            "display": "Mass content of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity)"
+          },
+          {
+            "code": "2030-5",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "63523-5",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "97551-6",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in BldCV at point in time (observable entity)"
+          },
+          {
+            "code": "20563-3",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2031-3",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "41648-7",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "2032-1",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "63524-3",
+            "display": "Mass fraction of carboxyhemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "4534-4",
+            "display": "Mass fraction of cyanmethemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "19225-2",
+            "display": "Mass fraction of deoxyhemoglobin to hemoglobin.total in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "97553-2",
+            "display": "Mass fraction of deoxyhemoglobin to hemoglobin.total in BldCV at point in time (observable entity)"
+          },
+          {
+            "code": "4536-9",
+            "display": "Mass fraction of deoxyhemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "19226-0",
+            "display": "Mass fraction of deoxyhemoglobin to hemoglobin.total in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "19228-6",
+            "display": "Mass fraction of deoxyhemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "19227-8",
+            "display": "Mass fraction of deoxyhemoglobin to hemoglobin.total in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "4548-4",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "17855-8",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "4549-2",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "17856-6",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "62388-4",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by JDS/JSCC (observable entity)"
+          },
+          {
+            "code": "96595-4",
+            "display": "Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "4580-7",
+            "display": "Mass fraction of glycosylated hemoglobin F to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4546-8",
+            "display": "Mass fraction of hemoglobin A to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "20572-4",
+            "display": "Mass fraction of hemoglobin A to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "42244-4",
+            "display": "Mass fraction of hemoglobin A to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "54072-4",
+            "display": "Mass fraction of hemoglobin A to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "4547-6",
+            "display": "Mass fraction of hemoglobin A1 to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "51196-4",
+            "display": "Mass fraction of hemoglobin A1 to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "4551-8",
+            "display": "Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "34660-1",
+            "display": "Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by chromatography.column (observable entity)"
+          },
+          {
+            "code": "4552-6",
+            "display": "Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "4553-4",
+            "display": "Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4554-2",
+            "display": "Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "42245-1",
+            "display": "Mass fraction of hemoglobin A>2< to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "35127-0",
+            "display": "Mass fraction of hemoglobin A>2<prime to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "31156-3",
+            "display": "Mass fraction of Hemoglobin Bart to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "54069-0",
+            "display": "Mass fraction of Hemoglobin Bart to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "4563-3",
+            "display": "Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "32681-9",
+            "display": "Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "4561-7",
+            "display": "Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4562-5",
+            "display": "Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "44920-7",
+            "display": "Mass fraction of hemoglobin C to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "54073-2",
+            "display": "Mass fraction of hemoglobin C to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "54209-2",
+            "display": "Mass fraction of hemoglobin C-Harlem to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "55372-7",
+            "display": "Mass fraction of Hemoglobin Constant Springs to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4569-0",
+            "display": "Mass fraction of hemoglobin D to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "44921-5",
+            "display": "Mass fraction of hemoglobin D to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "54070-8",
+            "display": "Mass fraction of hemoglobin D to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "4575-7",
+            "display": "Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4573-2",
+            "display": "Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time by electrophoresis pH 6.3 (observable entity)"
+          },
+          {
+            "code": "4574-0",
+            "display": "Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "44922-3",
+            "display": "Mass fraction of hemoglobin E to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "54071-6",
+            "display": "Mass fraction of hemoglobin E to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "5913-9",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "18291-5",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in bld^newborn at point in time (observable entity)"
+          },
+          {
+            "code": "4576-5",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "32682-7",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "38524-5",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "42246-9",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "4633-4",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in blood at point in time by Kleihauer-Betke (observable entity)"
+          },
+          {
+            "code": "54074-0",
+            "display": "Mass fraction of hemoglobin F to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "53223-4",
+            "display": "Mass fraction of hemoglobin G to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "33593-5",
+            "display": "Mass fraction of hemoglobin G-Coushatta to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "80655-4",
+            "display": "Mass fraction of hemoglobin G-Philadelphia to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4588-0",
+            "display": "Mass fraction of hemoglobin H to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4587-2",
+            "display": "Mass fraction of hemoglobin H to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "50765-7",
+            "display": "Mass fraction of Hemoglobin Hasharon to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "80656-2",
+            "display": "Mass fraction of Hemoglobin Hope to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "51613-8",
+            "display": "Mass fraction of hemoglobin J to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "35125-4",
+            "display": "Mass fraction of Hemoglobin Lepore to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "51614-6",
+            "display": "Mass fraction of hemoglobin M to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "35126-2",
+            "display": "Mass fraction of hemoglobin O-Arab to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "54068-2",
+            "display": "Mass fraction of hemoglobin O-Arab to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "80657-0",
+            "display": "Mass fraction of hemoglobin Q to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4625-0",
+            "display": "Mass fraction of hemoglobin S to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "32683-5",
+            "display": "Mass fraction of hemoglobin S to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "44923-1",
+            "display": "Mass fraction of hemoglobin S to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "56476-5",
+            "display": "Mass fraction of hemoglobin S to hemoglobin.total in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "24469-9",
+            "display": "Mass fraction of hemoglobin to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "48343-8",
+            "display": "Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "32017-6",
+            "display": "Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "42248-5",
+            "display": "Mass fraction of hemoglobin.other to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity)"
+          },
+          {
+            "code": "2615-3",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "72361-9",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "97554-0",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in BldCV at point in time (observable entity)"
+          },
+          {
+            "code": "2614-6",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2616-1",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "55942-7",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "2618-7",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "41607-3",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "2617-9",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "72360-1",
+            "display": "Mass fraction of methemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "2714-4",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "30370-1",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "97552-4",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in BldCV at point in time (observable entity)"
+          },
+          {
+            "code": "11559-2",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "2715-1",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "34969-6",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "2717-7",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in plasma at point in time (observable entity)"
+          },
+          {
+            "code": "2716-9",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "30369-3",
+            "display": "Mass fraction of oxyhemoglobin to hemoglobin.total in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "4685-4",
+            "display": "Mass fraction of sulfhemoglobin to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "4638-3",
+            "display": "Mass fraction of thermolabile hemoglobin to hemoglobin.total in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "110938-8",
+            "display": "Measurement of hemoglobin F in blood (observable entity)"
+          },
+          {
+            "code": "109575-1",
+            "display": "Measurement of hemoglobin H in blood (observable entity)"
+          },
+          {
+            "code": "109484-6",
+            "display": "Measurement of hemoglobin in arterial blood (observable entity)"
+          },
+          {
+            "code": "110885-1",
+            "display": "Measurement of hemoglobin in blood (observable entity)"
+          },
+          {
+            "code": "109887-0",
+            "display": "Measurement of hemoglobin in mixed venous blood (observable entity)"
+          },
+          {
+            "code": "109886-2",
+            "display": "Measurement of hemoglobin in venous blood (observable entity)"
+          },
+          {
+            "code": "109592-6",
+            "display": "Measurement of methemoglobin in blood (observable entity)"
+          },
+          {
+            "code": "59261-8",
+            "display": "Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity)"
+          },
+          {
+            "code": "10346-5",
+            "display": "Arbitrary concentration of hemoglobin A in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "9749-3",
+            "display": "Arbitrary concentration of hemoglobin F in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "4578-1",
+            "display": "Arbitrary concentration of hemoglobin F-Texas in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "4582-3",
+            "display": "Arbitrary concentration of hemoglobin G-Coushatta in blood at point in time by electrophoresis pH 8.9 (observable entity)"
+          },
+          {
+            "code": "31157-1",
+            "display": "Mass concentration of carboxyhemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "39533-5",
+            "display": "Mass concentration of deoxyhemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "41995-2",
+            "display": "Mass concentration of glycated hemoglobin-A1c in blood at point in time (observable entity)"
+          },
+          {
+            "code": "53857-9",
+            "display": "Mass concentration of hemoglobin F in blood at point in time (observable entity)"
+          },
+          {
+            "code": "40549-8",
+            "display": "Mass concentration of hemoglobin F in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "40550-6",
+            "display": "Mass concentration of hemoglobin H in blood at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "30313-1",
+            "display": "Mass concentration of hemoglobin in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "14775-1",
+            "display": "Mass concentration of hemoglobin in arterial blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "30354-5",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33026-6",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "54289-4",
+            "display": "Mass concentration of hemoglobin in Bld^BPU at point in time (observable entity)"
+          },
+          {
+            "code": "61180-6",
+            "display": "Mass concentration of hemoglobin in Bld^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "97550-8",
+            "display": "Mass concentration of hemoglobin in BldCV at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "97555-7",
+            "display": "Mass concentration of hemoglobin in BldCV at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "718-7",
+            "display": "Mass concentration of hemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "20509-6",
+            "display": "Mass concentration of hemoglobin in blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "55782-7",
+            "display": "Mass concentration of hemoglobin in blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "48725-6",
+            "display": "Mass concentration of hemoglobin in blood at point in time pre therapeutic phlebotomy (observable entity)"
+          },
+          {
+            "code": "33509-1",
+            "display": "Mass concentration of hemoglobin in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "30352-9",
+            "display": "Mass concentration of hemoglobin in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "97556-5",
+            "display": "Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "719-5",
+            "display": "Mass concentration of hemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "40719-7",
+            "display": "Mass concentration of hemoglobin in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "30351-1",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "105040-0",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "76768-1",
+            "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "69950-4",
+            "display": "Mass concentration of hemoglobin in pericardial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "723-7",
+            "display": "Mass concentration of hemoglobin in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "722-9",
+            "display": "Mass concentration of hemoglobin in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "107191-9",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
+          },
+          {
+            "code": "107190-1",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "107189-3",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "58453-2",
+            "display": "Mass concentration of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity)"
+          },
+          {
+            "code": "724-5",
+            "display": "Mass concentration of hemoglobin in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "726-0",
+            "display": "Mass concentration of hemoglobin in urine at point in time (observable entity)"
+          },
+          {
+            "code": "30350-3",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "105274-5",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "76769-9",
+            "display": "Mass concentration of hemoglobin in venous blood at point in time by oximetry (observable entity)"
+          },
+          {
+            "code": "30353-7",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33025-8",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "15082-1",
+            "display": "Mass concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "87437-0",
+            "display": "Mass concentration of oxyhemoglobin in plasma at point in time (observable entity)"
+          },
+          {
+            "code": "4683-9",
+            "display": "Mass concentration of sulfhemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "35183-3",
+            "display": "Mass concentration or substance concentration of hemoglobin in plasma at point in time (observable entity)"
+          },
+          {
+            "code": "4550-0",
+            "display": "Substance concentration of hemoglobin A>2< in blood at point in time by chromatography.column (observable entity)"
+          },
+          {
+            "code": "75928-2",
+            "display": "Substance concentration of hemoglobin in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "59260-0",
+            "display": "Substance concentration of hemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "105300-8",
+            "display": "Substance concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "93846-4",
+            "display": "Substance concentration of hemoglobin in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "103750-6",
+            "display": "Substance concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "56040-9",
+            "display": "Substance concentration of methemoglobin in blood at point in time (observable entity)"
+          },
+          {
+            "code": "72262-9",
+            "display": "Substance concentration of methemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "72263-7",
+            "display": "Substance concentration of oxyhemoglobin in cerebrospinal fluid at point in time (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "concept": [
+          {
+            "code": "431314004",
+            "display": "Peripheral oxygen saturation (observable entity)"
+          },
+          {
+            "code": "408591000",
+            "display": "Hemoglobin A1c target (observable entity)"
+          },
+          {
+            "code": "446074002",
+            "display": "Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|",
+  "_bucket": "quantitative"
+}

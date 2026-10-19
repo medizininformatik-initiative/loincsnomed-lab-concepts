@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mchc-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/mchc-complete",
+  "name": "MchcComplete",
+  "title": "mchc — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 521371010000101 |Mean cell hemoglobin concentration (observable entity)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "28540-3",
+            "display": "Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "786-4",
+            "display": "Entitic mass concentration of hemoglobin in erythrocyte at point in time by automated count (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|",
+  "_bucket": "complete"
+}
