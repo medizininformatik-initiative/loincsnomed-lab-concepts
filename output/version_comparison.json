@@ -1,14 +1,16 @@
 {
   "targets": [
     {
-      "name": "public-2025-09-21",
       "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
-      "branch": "MAIN/LOINC/2025-09-21"
+      "branch": "MAIN/LOINC/2025-09-21",
+      "effective": "20250921",
+      "name": "public-2025-09-21"
     },
     {
-      "name": "local-2026-03-21",
       "api_base": "http://localhost:8090",
-      "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21"
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
+      "effective": "20260321",
+      "name": "local-2026-03-21"
     }
   ],
   "rows": [
@@ -112,6 +114,102 @@
           "832861010000108"
         ],
         "in_both": 28
+      }
+    },
+    {
+      "concept": "ldh",
+      "query_id": "refined_query_v2_measurement",
+      "query_name": "Refined Query V2 (Universal Measurement Property, incl. isoenzymes)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 21,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 21,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 21
+      }
+    },
+    {
+      "concept": "ldh",
+      "query_id": "refined_query_v2_total_only",
+      "query_name": "Refined Query V2 (Total LDH only, exact component)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 4,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 4,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 4
+      }
+    },
+    {
+      "concept": "ldh",
+      "query_id": "refined_query_v2_no_ratio",
+      "query_name": "Refined Query V2 (Excl. Ratio)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 15,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 20,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "515391010000108",
+          "515511010000109",
+          "515651010000106",
+          "515781010000109",
+          "515861010000109"
+        ],
+        "in_both": 15
+      }
+    },
+    {
+      "concept": "ldh",
+      "query_id": "refined_query_v2_ratio_only",
+      "query_name": "Refined Query V2 (Ratio Properties)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 6,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 1,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [
+          "515391010000108",
+          "515511010000109",
+          "515651010000106",
+          "515781010000109",
+          "515861010000109"
+        ],
+        "only_in_b": [],
+        "in_both": 1
       }
     },
     {
@@ -342,6 +440,73 @@
         "only_in_a": [],
         "only_in_b": [],
         "in_both": 17
+      }
+    },
+    {
+      "concept": "psa",
+      "query_id": "refined_query_v2_measurement",
+      "query_name": "Refined Query V2 (Universal Measurement Property)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 14,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 14,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 14
+      }
+    },
+    {
+      "concept": "psa",
+      "query_id": "refined_query_v2_no_ratio",
+      "query_name": "Refined Query V2 (Excl. Ratio)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 13,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 14,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "491361010000107"
+        ],
+        "in_both": 13
+      }
+    },
+    {
+      "concept": "psa",
+      "query_id": "refined_query_v2_ratio_only",
+      "query_name": "Refined Query V2 (Ratio Properties)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|",
+      "per_target": {
+        "public-2025-09-21": {
+          "total": 1,
+          "error": null
+        },
+        "local-2026-03-21": {
+          "total": 0,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [
+          "491361010000107"
+        ],
+        "only_in_b": [],
+        "in_both": 0
       }
     }
   ]

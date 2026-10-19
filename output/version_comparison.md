@@ -8,6 +8,10 @@
 | hba1c | Refined Query V2 (Mass Fraction Property) | 6 | 6 | 0 | 0 | 6 |
 | hematocrit | Refined Query V2 (Property-Specific: Volume Fraction) | 12 | 0 | 12 | 0 | 0 |
 | hemoglobin | Refined Query V2 (Excl. Ratio & Plasma) | 28 | 32 | 0 | 4 | 28 |
+| ldh | Refined Query V2 (Universal Measurement Property, incl. isoenzymes) | 21 | 21 | 0 | 0 | 21 |
+| ldh | Refined Query V2 (Total LDH only, exact component) | 4 | 4 | 0 | 0 | 4 |
+| ldh | Refined Query V2 (Excl. Ratio) | 15 | 20 | 0 | 5 | 15 |
+| ldh | Refined Query V2 (Ratio Properties) | 6 | 1 | 5 | 0 | 1 |
 | leukocytes | Refined Query V2 (Property-Specific: Number Concentration) | 11 | 11 | 0 | 0 | 11 |
 | mch | Refined Query V2 (Entitic Mass Property) | 2 | 2 | 0 | 0 | 2 |
 | mchc | Refined Query V2 (Pre-coordinated Parent Descendants) | 2 | 2 | 0 | 0 | 2 |
@@ -18,6 +22,9 @@
 | nitrite_urine | Refined Query V2 Qualitative (Presence Properties) | 3 | 3 | 0 | 0 | 3 |
 | platelets | Refined Query V2 (Property-Specific: Number Concentration, Excl. Cord & Plasma) | 7 | 7 | 0 | 0 | 7 |
 | potassium | Refined Query V2 (Universal Measurement Property) | 17 | 17 | 0 | 0 | 17 |
+| psa | Refined Query V2 (Universal Measurement Property) | 14 | 14 | 0 | 0 | 14 |
+| psa | Refined Query V2 (Excl. Ratio) | 13 | 14 | 0 | 1 | 13 |
+| psa | Refined Query V2 (Ratio Properties) | 1 | 0 | 1 | 0 | 0 |
 
 ## Per-query detail
 
@@ -52,6 +59,38 @@
 - **Only in public-2025-09-21** (0): 
 - **Only in local-2026-03-21** (4): 527101010000100, 551191010000101, 562251010000100, 832861010000108
 - **In both**: 28
+
+### ldh — Refined Query V2 (Universal Measurement Property, incl. isoenzymes)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|
+```
+- **Only in public-2025-09-21** (0): 
+- **Only in local-2026-03-21** (0): 
+- **In both**: 21
+
+### ldh — Refined Query V2 (Total LDH only, exact component)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|
+```
+- **Only in public-2025-09-21** (0): 
+- **Only in local-2026-03-21** (0): 
+- **In both**: 4
+
+### ldh — Refined Query V2 (Excl. Ratio)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|
+```
+- **Only in public-2025-09-21** (0): 
+- **Only in local-2026-03-21** (5): 515391010000108, 515511010000109, 515651010000106, 515781010000109, 515861010000109
+- **In both**: 15
+
+### ldh — Refined Query V2 (Ratio Properties)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|
+```
+- **Only in public-2025-09-21** (5): 515391010000108, 515511010000109, 515651010000106, 515781010000109, 515861010000109
+- **Only in local-2026-03-21** (0): 
+- **In both**: 1
 
 ### leukocytes — Refined Query V2 (Property-Specific: Number Concentration)
 ```
@@ -132,3 +171,27 @@
 - **Only in public-2025-09-21** (0): 
 - **Only in local-2026-03-21** (0): 
 - **In both**: 17
+
+### psa — Refined Query V2 (Universal Measurement Property)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|
+```
+- **Only in public-2025-09-21** (0): 
+- **Only in local-2026-03-21** (0): 
+- **In both**: 14
+
+### psa — Refined Query V2 (Excl. Ratio)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|
+```
+- **Only in public-2025-09-21** (0): 
+- **Only in local-2026-03-21** (1): 491361010000107
+- **In both**: 13
+
+### psa — Refined Query V2 (Ratio Properties)
+```
+<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|
+```
+- **Only in public-2025-09-21** (1): 491361010000107
+- **Only in local-2026-03-21** (0): 
+- **In both**: 0
