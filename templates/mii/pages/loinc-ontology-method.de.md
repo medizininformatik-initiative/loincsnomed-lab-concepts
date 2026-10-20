@@ -42,7 +42,7 @@ Teil 1 und 2 sind die Aufzählung von Teil 3 zum genannten Release. Sie sind kei
 ### Expandieren und validieren
 
 * Auf einem Terminologieserver, der das Release der LOINC Ontology hält (etwa Snowstorm mit geladener LOINC-Extension oder der LOINC-Ontology-Browser), expandieren alle drei Teile, und die Expansion entspricht der Aufzählung.
-* Auf einem Server ohne LOINC Ontology, etwa dem HL7-Server des IG-Builds, lassen sich die SNOMED-CT-Includes nicht auflösen, und der QA-Report des Builds markiert sie. Die LOINC-Aufzählung expandiert trotzdem, und die Validierung eines `Observation.code` mit LOINC-Code funktioniert wie gewohnt.
+* Auf einem Server ohne LOINC Ontology, etwa dem HL7-Server des IG-Builds, lassen sich die SNOMED-CT-Includes nicht auflösen. Der QA-Report des Builds zeigt das als Warnung für jedes ECL-Include und als Fehler für jeden aufgezählten SNOMED-CT-Code ohne LOINC-Code (derzeit in fünf ValueSets: die *vollständigen* und *qualitativen* Mengen von Erythrozyten und Hämatokrit sowie die *qualitative* Menge der Leukozyten, je ein Konzept). Die LOINC-Aufzählung expandiert trotzdem, und die Validierung eines `Observation.code` mit LOINC-Code funktioniert wie gewohnt.
 * Ein Validator, der `Observation.code` gegen ein abgeleitetes Profil prüft, braucht nur die LOINC-Aufzählung.
 
 ### Versionen und Neuerzeugung
