@@ -44,6 +44,7 @@ Parts 1 and 2 are the enumeration of part 3 at the stated release. They are not 
 * On a terminology server that holds the LOINC Ontology release (for example Snowstorm with the LOINC extension loaded, or the LOINC Ontology browser), all three parts expand and the expansion equals the enumeration.
 * On a server without the LOINC Ontology, such as the HL7 server used by the IG build, the SNOMED CT includes cannot be resolved. The build's QA report shows this as a warning for every ECL include and as an error for every enumerated SNOMED CT code without a LOINC code (currently in five ValueSets: the erythrocyte and hematocrit *complete* and *qualitative* sets and the leukocyte *qualitative* set, one concept each). The LOINC enumeration still expands, and validation of an `Observation.code` carrying a LOINC code works as usual.
 * A validator checking `Observation.code` against a derived profile only needs the LOINC enumeration.
+* **The module's own CI** validates against the MII terminology server through a proxy. In the October 2026 runs that server rejected every enumerated LOINC and SNOMED CT code, on `master` as well (the laboratory-area ValueSet's 18 LOINC codes are reported as invalid there). The branch preview therefore shows one error per enumerated LOINC code of this proposal. Those counts measure the CI terminology setup, not the ValueSets; the build with the public HL7 server reports only the LOINC Ontology errors named above.
 
 ### Versions and regeneration
 

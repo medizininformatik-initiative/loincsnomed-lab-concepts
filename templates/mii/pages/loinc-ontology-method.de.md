@@ -44,6 +44,7 @@ Teil 1 und 2 sind die Aufzählung von Teil 3 zum genannten Release. Sie sind kei
 * Auf einem Terminologieserver, der das Release der LOINC Ontology hält (etwa Snowstorm mit geladener LOINC-Extension oder der LOINC-Ontology-Browser), expandieren alle drei Teile, und die Expansion entspricht der Aufzählung.
 * Auf einem Server ohne LOINC Ontology, etwa dem HL7-Server des IG-Builds, lassen sich die SNOMED-CT-Includes nicht auflösen. Der QA-Report des Builds zeigt das als Warnung für jedes ECL-Include und als Fehler für jeden aufgezählten SNOMED-CT-Code ohne LOINC-Code (derzeit in fünf ValueSets: die *vollständigen* und *qualitativen* Mengen von Erythrozyten und Hämatokrit sowie die *qualitative* Menge der Leukozyten, je ein Konzept). Die LOINC-Aufzählung expandiert trotzdem, und die Validierung eines `Observation.code` mit LOINC-Code funktioniert wie gewohnt.
 * Ein Validator, der `Observation.code` gegen ein abgeleitetes Profil prüft, braucht nur die LOINC-Aufzählung.
+* **Die CI des Moduls** validiert über einen Proxy gegen den MII-Terminologieserver. In den Läufen vom Oktober 2026 hat dieser Server jeden aufgezählten LOINC- und SNOMED-CT-Code zurückgewiesen, auch auf `master` (die 18 LOINC-Codes des ValueSets Laborbereich werden dort als ungültig gemeldet). Die Branch-Preview zeigt deshalb je aufgezähltem LOINC-Code dieses Vorschlags einen Fehler. Diese Zahlen messen die Terminologie-Konfiguration der CI, nicht die ValueSets; der Build mit dem öffentlichen HL7-Server meldet nur die oben genannten LOINC-Ontology-Fehler.
 
 ### Versionen und Neuerzeugung
 
