@@ -1,0 +1,2 @@
+* **Two SNOMED CT concepts, no LOINC code.** The LOINC Ontology holds the manual and the automated differential as order-level concepts (Component Leukocyte, no Property). LOINC's own panel codes for the differential are not members of this pool.
+* **Not a result ValueSet.** The profile derived for it fixes no value type. In the module, a differential is a set of single Observations (neutrophils, lymphocytes, …), each a clinical test of its own; the panel concept belongs on the order or in a grouping Observation.

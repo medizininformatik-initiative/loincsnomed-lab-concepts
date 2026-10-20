@@ -1,0 +1,2 @@
+* **Drei Nachweis-Codes** (5802-4, 32710-6 Teststreifen, 50558-6 automatisierter Teststreifen). Das Profil legt CodeableConcept fest; Ergebnisse werden mit den kodierten Laborergebnissen des Moduls kodiert.
+* **Die quantitativen Streifen-Codes sind draußen.** 2657-5 und 20407-3 (Nitrit [Masse/Volumen] im Urin, letzteres per Teststreifen) sind über die Property ausgeschlossen. Manche Analysatoren exportieren das Streifen-Nitrit als Konzentration; ein Standort, der das tut, fiele aus diesem ValueSet heraus und sollte stattdessen auf den Nachweis-Code mappen.

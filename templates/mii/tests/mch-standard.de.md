@@ -1,0 +1,2 @@
+* **Sechs Codes, alle entitische Masse je Erythrozyt**, einschließlich der Codes für den Retikulozyten-Hämoglobingehalt (Ret-He). Ob Ret-He zu „MCH" gehört, ist eine klinische Entscheidung; es ist in der Eisenmangeldiagnostik ein eigener Parameter und wäre ein eigener klinischer Test.
+* **Der Analyt-Pool ist zu weit.** Component `<< Hemoglobin` holt HbA1c, Carboxyhämoglobin und die Varianten in die Use-Case-ValueSets. Die Regel je Test ist davon unberührt; die Pool-Definition sollte auf die exakte Component wechseln.

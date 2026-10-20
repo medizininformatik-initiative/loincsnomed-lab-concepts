@@ -1,0 +1,2 @@
+* **Jedes Material ist drin.** Die Regel schränkt nur Component (`< Lactate dehydrogenase`, die fünf Isoenzyme) und Skala ein, also sind Serum, Urin, Liquor und die Ergüsse alle enthalten: 38 Codes. Für ein Serum-Isoenzymprofil die Materialeinschränkung ergänzen; die Tabelle zeigt, was das entfernen würde.
+* **Anteile und Aktivitäten sind gemischt.** Isoenzym-Ergebnisse kommen als Aktivität (U/L) und als Anteil am Gesamt-LDH (%); die Use-Case-Ebene trennt sie, die Menge je Test nicht.

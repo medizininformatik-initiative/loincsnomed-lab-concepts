@@ -1,0 +1,3 @@
+* **Drei Codes**: 2532-0 und die beiden Varianten nach Reaktionsrichtung (14804-9, 14805-6). Die IFCC-Methode ist Laktat zu Pyruvat; Standorte, die noch die Rückreaktion berichten, haben systematisch andere Werte, weshalb die Methodencodes existieren und das Zusammenfassen Sorgfalt braucht.
+* **Isoenzyme und Quotienten sind draußen** über Component und Property; siehe den Isoenzym-Test.
+* **Körperflüssigkeiten** (Pleura, Peritoneum, Liquor) sind über das Material ausgeschlossen. LDH in Ergüssen ist ein häufiger, klinisch eigenständiger Test und verdient womöglich einen eigenen klinischen Test statt in „Monitoring" aufzugehen.

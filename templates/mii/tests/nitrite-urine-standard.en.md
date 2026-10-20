@@ -1,0 +1,2 @@
+* **Three presence codes** (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results.
+* **The quantitative strip codes are out.** 2657-5 and 20407-3 (Nitrite [Mass/volume] in Urine, the latter by test strip) are excluded by Property. Some analysers export the dipstick nitrite as a concentration; a site doing so would fall outside this ValueSet and should map to the presence code instead.

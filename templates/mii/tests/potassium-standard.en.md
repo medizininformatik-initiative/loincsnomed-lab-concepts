@@ -1,0 +1,3 @@
+* **Whole blood potassium is out.** 6298-4 (blood), 32713-0 (arterial) and 39789-3 (venous), the blood gas analyser values, fail the serum/plasma constraint. Clinically they are used interchangeably with the serum value in acute care; the proposal is to decide this explicitly, either widening Direct site to `<< Blood specimen` or keeping a separate blood gas test.
+* **22760-3 and 42569-4 are out by Property.** Mass concentration (mg/dL) is rare in Germany; 42569-4 ("Mass or Moles") was used by some systems as a catch-all and should be retired rather than included.
+* **The included set is 2823-3 plus timed and dialysis variants** (pre/post dialysis, numbered specimens). Those are the same measurement in a context; pooling them is the data user's call.

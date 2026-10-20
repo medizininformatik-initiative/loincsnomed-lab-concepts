@@ -1,0 +1,2 @@
+* **Every specimen is in.** The rule constrains Component (`< Lactate dehydrogenase`, the five isoenzymes) and scale only, so serum, urine, CSF and the effusions are all included: 38 codes. For a serum isoenzyme profile add the specimen constraint; the table shows what that would remove.
+* **Fractions and activities are mixed.** Isoenzyme results come as activity (U/L) and as fraction of total (%); the use-case layer separates them, the per-test set does not.

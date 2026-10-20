@@ -44,6 +44,7 @@ RUNS = [
     ["python3", "scripts/review_export.py"],
     ["python3", "scripts/build_observation_artifacts.py"],
     ["python3", "scripts/build_aggregation_valuesets.py"],
+    ["python3", "scripts/pool_attributes.py"],
     ["python3", "scripts/build_dashboard.py"],
 ]
 

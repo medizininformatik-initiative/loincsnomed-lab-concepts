@@ -1,0 +1,1 @@
+* **Eigenes Observable-Konzept.** MCHC hat in der LOINC Ontology keine Zerlegung in Component; die Regel wählt das Konzept und seine Subtypen. Zwei Codes, nichts ausgeschlossen. Eine Technique-Einschränkung wäre die einzige mögliche Verfeinerung.

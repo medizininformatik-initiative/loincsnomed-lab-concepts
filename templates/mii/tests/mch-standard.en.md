@@ -1,0 +1,2 @@
+* **Six codes, all entitic mass per erythrocyte**, including the reticulocyte hemoglobin content (Ret-He) codes. Whether Ret-He belongs to "MCH" is a clinical decision; it is a distinct parameter in iron-deficiency work-up and would be its own clinical test.
+* **The analyte pool is too wide.** Component `<< Hemoglobin` brings HbA1c, carboxyhemoglobin and the variants into the use-case ValueSets. The per-test rule is unaffected; the pool definition should move to the exact Component.

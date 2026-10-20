@@ -243,10 +243,11 @@ def parse_ecl(ecl):
         for part in _split_top(refinement):
             if "=" not in part:
                 continue
-            attr, value = part.split("=", 1)
+            negated = "!=" in part
+            attr, value = (part.split("!=", 1) if negated else part.split("=", 1))
             aid = re.search(r"\d{6,}", attr)
             aname = ATTR_NAMES.get(aid.group(0), _term(attr)) if aid else attr.strip()
-            rows.append((aname, _term(value)))
+            rows.append((aname, ("not " if negated else "") + _term(value)))
     if minus:  # the subtrahend names the attribute that must be absent
         m = re.search(r"(\d{6,}) \|[^|]*\| = \*", minus)
         if m:
@@ -266,7 +267,7 @@ def md_cell(s):
     """Table cell text. ECL operators go into a code span: the IG Publisher's markdown
     renderer turns a bare '<<' into a guillemet."""
     s = s.replace("|", "\\|")
-    return "`{}`".format(s) if s.startswith("<") or " or <" in s else s
+    return "`{}`".format(s) if s.startswith("<") or s.startswith("not <") or " or <" in s or "; <" in s else s
 
 
 def tests_table(test_rows, lang):
@@ -279,8 +280,10 @@ def tests_table(test_rows, lang):
         vs, pr = "ValueSet", "Profil"
     L = ["| " + " | ".join(head) + " |", "|---|---|" + "|".join("---" for _ in cols) + "|--:|--:|---|---|"]
     for r in test_rows:
-        d = dict(r["attrs"])
-        cells = [r["name"], r["tier"]] + [md_cell(d.get(c, "")) for c in cols] + [
+        d = {}
+        for a, v in r["attrs"]:
+            d[a] = (d[a] + "; " + v) if a in d else v
+        cells = ["[{}]({}.html)".format(r["name"], analyte_page_id(r["analyte"])), r["tier"]] + [md_cell(d.get(c, "")) for c in cols] + [
             str(r["n_loinc"]), str(r["n_sct"]),
             "[{}](ValueSet-{}.html)".format(vs, r["vs_id"]),
             "[{}](StructureDefinition-{}.html)".format(pr, r["pr_id"])]
@@ -304,7 +307,7 @@ def usecase_table(analytes, buckets, agg_index, lang):
         for b in cols:
             e = agg_index.get((a["analyte"], b["id"]))
             cells.append("[{}](ValueSet-{}.html)".format(e["n"], e["vs_id"]) if e else "–")
-        L.append("| {} | {} | {} |".format(a["analyte"].replace("_", " "), md_cell(pool), " | ".join(cells)))
+        L.append("| [{}]({}.html) | {} | {} |".format(a["analyte"].replace("_", " "), analyte_page_id(a["analyte"]), md_cell(pool), " | ".join(cells)))
     return "\n".join(L)
 
 
@@ -341,6 +344,207 @@ def render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index):
             sys.exit("unreplaced placeholders in {}.{}: {}".format(page, lang, left))
         out[page] = text
     return out
+
+
+# ── analyte subpages (pool, per-test included/excluded with reasons, discussion) ──
+
+POOL_ATTRS = ROOT / "output" / "fhir" / "aggregation" / "pool_attributes.json"
+SHOW_ATTRS = ["Direct site", "Property", "Scale type", "Technique"]
+L10N = {
+    "en": {"name": "Name", "fails": "Fails", "included": "Included", "excluded": "Excluded from the pool",
+           "discussion": "Discussion", "pool": "The pool and its use-case buckets", "bucket": "Bucket",
+           "reason": "Reason", "rule": "Rule", "attribute": "Attribute", "value": "Value",
+           "specimens": "Specimens among the included codes", "techniques": "Techniques among the included codes",
+           "none": "(none)", "no_attr": "–",
+           "because": "Excluded because {} does not match ({})", "because_multi": "Excluded because {} do not match ({})",
+           "because_neg": "Excluded because the concept has a {} ({})",
+           "intro": ("This page is the review material for the analyte **{analyte}** of the "
+                     "[LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology "
+                     "{release} defines it, and for every clinical test of the analyte which pool concepts the rule "
+                     "selects, which it leaves out and on which attribute. The method is explained under "
+                     "[How the ValueSets are built](loinc-ontology-method.html)."),
+           "pool_intro": "Candidate pool: `{ecl}` ({n} concepts, {n_loinc} with a LOINC code). Use-case ValueSets: {links}.",
+           "test_intro": "ValueSet [{vs}](ValueSet-{vs}.html), profile [{pr}](StructureDefinition-{pr}.html). The rule selects {n_inc} of the {n_pool} pool concepts.",
+           "auto_note": "Points a reviewer should settle for this test:",
+           "pool_note": "One row per pool concept with the attributes the classification uses; the bucket is the use-case ValueSet the concept lands in.",
+           "and": " and ", "comma": ", ",
+           "unmodelled": "{} of these have no {} attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: {}."},
+    "de": {"name": "Name", "fails": "Scheitert an", "included": "Enthalten", "excluded": "Aus dem Pool ausgeschlossen",
+           "discussion": "Diskussion", "pool": "Der Pool und seine Use-Case-Gruppen", "bucket": "Gruppe",
+           "reason": "Begründung", "rule": "Regel", "attribute": "Attribut", "value": "Wert",
+           "specimens": "Materialien unter den enthaltenen Codes", "techniques": "Techniken unter den enthaltenen Codes",
+           "none": "(keine)", "no_attr": "–",
+           "because": "Ausgeschlossen, weil {} nicht passt ({})", "because_multi": "Ausgeschlossen, weil {} nicht passen ({})",
+           "because_neg": "Ausgeschlossen, weil das Konzept eine {} hat ({})",
+           "intro": ("Diese Seite ist das Review-Material für den Analyten **{analyte}** des "
+                     "[LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC "
+                     "Ontology {release} definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die "
+                     "Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter "
+                     "[Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt."),
+           "pool_intro": "Kandidatenpool: `{ecl}` ({n} Konzepte, {n_loinc} mit LOINC-Code). Use-Case-ValueSets: {links}.",
+           "test_intro": "ValueSet [{vs}](ValueSet-{vs}.html), Profil [{pr}](StructureDefinition-{pr}.html). Die Regel wählt {n_inc} der {n_pool} Poolkonzepte aus.",
+           "auto_note": "Punkte, die ein Reviewer für diesen Test entscheiden sollte:",
+           "pool_note": "Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die Gruppe ist das Use-Case-ValueSet, in dem das Konzept landet.",
+           "and": " und ", "comma": ", ",
+           "unmodelled": "{} davon haben in diesem Release gar kein Attribut {} (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: {}."},
+}
+BUCKET_LABEL = {"en": {"complete": "Complete", "quantitative": "Quantitative", "quantitative_convertible": "Convertible",
+                       "qualitative": "Qualitative", "semiquantitative": "Semi-quantitative", "panel_order": "Panel / order",
+                       "UNCLASSIFIED": "unclassified"},
+                "de": {"complete": "Vollständig", "quantitative": "Quantitativ", "quantitative_convertible": "Konvertierbar",
+                       "qualitative": "Qualitativ", "semiquantitative": "Semiquantitativ", "panel_order": "Panel / Auftrag",
+                       "UNCLASSIFIED": "unklassifiziert"}}
+ATTR_LABEL_DE = {"Direct site": "Direct site", "Property": "Property", "Scale type": "Scale type",
+                 "Technique": "Technique", "Component": "Component", "Time aspect": "Time aspect"}
+REASON_DE = {"Quantitative scale + concentration property": "Quantitative Skala + Konzentrations-Property",
+             "Quantitative scale": "Quantitative Skala",
+             "Ordinal/Nominal scale → qualitative": "Ordinale/nominale Skala → qualitativ",
+             "Presence property → qualitative": "Nachweis-Property → qualitativ",
+             "Semi-quantitative scale (test strip)": "Semiquantitative Skala (Teststreifen)",
+             "Measurement property, no scale asserted (generic)": "Mess-Property, keine Skala asserted (generisch)",
+             "Measurement property, no scale asserted (generic) + concentration property":
+                 "Mess-Property, keine Skala asserted (generisch) + Konzentrations-Property",
+             "no Property attribute → order/panel code": "keine Property → Auftrags-/Panelcode"}
+
+
+def attr_text(concept, attr, t):
+    vals = concept["attrs"].get(attr)
+    return t["comma"].join(v["term"] for v in vals) if vals else t["no_attr"]
+
+
+def name_of(c):
+    return c["pt"] or re.sub(r"\s*\(observable entity\)$", "", c["fsn"])
+
+
+def code_cell(c):
+    return c["loinc"] if c["loinc"] else "SCT {}".format(c["sctid"])
+
+
+def analyte_page_id(analyte):
+    return "loinc-ontology-analyte-" + analyte.replace("_", "-")
+
+
+def render_analyte_page(lang, analyte, data, tests, test_rows_by_id, agg_index, buckets, ctx):
+    t = L10N[lang]
+    pool = data["concepts"]
+    for cid, c in pool.items():
+        c["sctid"] = cid
+    L = []
+    L.append(t["intro"].format(analyte=analyte.replace("_", " "), release=ctx["RELEASE"]))
+    L.append("")
+    links = []
+    for b in buckets:
+        e = agg_index.get((analyte, b["id"]))
+        if e:
+            links.append("[{}]({})".format(BUCKET_LABEL[lang][b["id"]], "ValueSet-{}.html".format(e["vs_id"])))
+    L.append(t["pool_intro"].format(ecl=data["pool_ecl"], n=len(pool),
+                                    n_loinc=sum(1 for c in pool.values() if c["loinc"]), links=t["comma"].join(links)))
+    L.append("")
+    for test in [x for x in tests if x["analyte"] == analyte]:
+        td = data["tests"][test["id"]]
+        row = test_rows_by_id[test["id"]]
+        inc = [pool[c] for c in td["included"] if c in pool]
+        inc.sort(key=lambda c: name_of(c))
+        L.append("### {}".format(test["name"]))
+        L.append("")
+        L.append(t["test_intro"].format(vs=row["vs_id"], pr=row["pr_id"], n_inc=len(inc), n_pool=len(pool)))
+        L.append("")
+        # rule
+        focus, rows = parse_ecl(test["ecl"])
+        L.append("| {} | {} |".format(t["attribute"], t["value"]))
+        L.append("|---|---|")
+        for a, v in rows:
+            L.append("| {} | {} |".format(a, md_cell(v)))
+        L.append("")
+        # included
+        L.append("#### {} ({})".format(t["included"], len(inc)))
+        L.append("")
+        if inc:
+            L.append("| LOINC | {} | {} |".format(t["name"], " | ".join(SHOW_ATTRS)))
+            L.append("|---|---|" + "---|" * len(SHOW_ATTRS))
+            for c in inc:
+                L.append("| {} | {} | {} |".format(code_cell(c), name_of(c), " | ".join(attr_text(c, a, t) for a in SHOW_ATTRS)))
+            L.append("")
+            # auto facts: specimens and techniques among included
+            spec = {}
+            tech = {}
+            for c in inc:
+                for v in c["attrs"].get("Direct site", []):
+                    spec[v["term"]] = spec.get(v["term"], 0) + 1
+                for v in c["attrs"].get("Technique", []):
+                    tech[v["term"]] = tech.get(v["term"], 0) + 1
+            L.append("* **{}**: {}".format(t["specimens"], t["comma"].join("{} ({})".format(k, n) for k, n in sorted(spec.items(), key=lambda x: -x[1])) or t["none"]))
+            L.append("* **{}**: {}".format(t["techniques"], t["comma"].join("{} ({})".format(k, n) for k, n in sorted(tech.items(), key=lambda x: -x[1])) or t["none"]))
+            L.append("")
+        # excluded, grouped by failing clause set
+        groups = {}
+        for cid, c in pool.items():
+            if cid in td["included"]:
+                continue
+            fails = []
+            for cl in td["clauses"]:
+                satisfied = cid in cl["satisfied"]
+                if satisfied == cl["negated"]:
+                    fails.append(cl)
+            key = tuple((cl["attr"], cl["negated"]) for cl in fails)
+            groups.setdefault(key, []).append(c)
+        n_exc = sum(len(v) for v in groups.values())
+        L.append("#### {} ({})".format(t["excluded"], n_exc))
+        L.append("")
+        for key, members in sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+            members.sort(key=lambda c: name_of(c))
+            attrs = [a for a, neg in key]
+            if any(neg for a, neg in key):
+                head = t["because_neg"].format(attrs[0], len(members))
+            elif len(attrs) == 1:
+                head = t["because"].format(attrs[0], len(members))
+            elif attrs:
+                head = t["because_multi"].format(t["comma"].join(attrs[:-1]) + t["and"] + attrs[-1], len(members))
+            else:
+                head = "{} ({})".format(t["excluded"], len(members))
+            L.append("**{}**".format(head))
+            L.append("")
+            cols = [a for a in SHOW_ATTRS if a in attrs] or SHOW_ATTRS[:3]
+            L.append("| LOINC | {} | {} |".format(t["name"], " | ".join(cols)))
+            L.append("|---|---|" + "---|" * len(cols))
+            for c in members:
+                L.append("| {} | {} | {} |".format(code_cell(c), name_of(c), " | ".join(attr_text(c, a, t) for a in cols)))
+            L.append("")
+            for a in attrs:
+                missing = [c for c in members if not c["attrs"].get(a)]
+                if missing and not any(neg for _, neg in key):
+                    L.append(t["unmodelled"].format(len(missing), a, t["comma"].join(code_cell(c) for c in missing)))
+                    L.append("")
+        # discussion
+        disc = TEMPLATES / "tests" / "{}.{}.md".format(test["id"], lang)
+        L.append("#### {}".format(t["discussion"]))
+        L.append("")
+        if disc.exists():
+            L.append(disc.read_text(encoding="utf-8").strip())
+        else:
+            L.append(t["auto_note"])
+            L.append("")
+            L.append("* " + ("Whether every specimen subtype and technique listed above belongs to the routine test."
+                             if lang == "en" else
+                             "Ob jeder oben genannte Materialsubtyp und jede Technik zum Routinetest gehört."))
+            L.append("* " + ("Whether any excluded group is a result the sites actually report under this test."
+                             if lang == "en" else
+                             "Ob eine ausgeschlossene Gruppe ein Ergebnis ist, das die Standorte tatsächlich unter diesem Test berichten."))
+        L.append("")
+    # full pool
+    L.append("### {}".format(t["pool"]))
+    L.append("")
+    L.append(t["pool_note"])
+    L.append("")
+    L.append("| LOINC | {} | Property | Scale type | Direct site | {} | {} |".format(t["name"], t["bucket"], t["reason"]))
+    L.append("|---|---|---|---|---|---|---|")
+    order = {"quantitative_convertible": 0, "quantitative": 1, "qualitative": 2, "semiquantitative": 3, "panel_order": 4, "UNCLASSIFIED": 5}
+    for c in sorted(pool.values(), key=lambda c: (order.get(c["use_case"], 9), name_of(c))):
+        reason = c["reason"] if lang == "en" else REASON_DE.get(c["reason"], c["reason"])
+        L.append("| {} | {} | {} | {} | {} | {} | {} |".format(
+            code_cell(c), name_of(c), attr_text(c, "Property", t), attr_text(c, "Scale type", t),
+            attr_text(c, "Direct site", t), BUCKET_LABEL[lang].get(c["use_case"], c["use_case"]), reason))
+    return "\n".join(L) + "\n"
 
 
 # ── main ─────────────────────────────────────────────────────────────────────
@@ -395,7 +599,7 @@ def main():
             "Clinical test '{}'".format(t["name"]))
         pr_name, pr_id, pr_text = render_profile(t, vs_name, args.date, release)
         files[pr_dir / (pr_name + ".fsh")] = pr_text
-        test_rows.append({"name": t["name"], "tier": t["tier"], "specimen": t["specimen"],
+        test_rows.append({"test_id": t["id"], "analyte": t["analyte"], "name": t["name"], "tier": t["tier"], "specimen": t["specimen"],
                           "n_loinc": len(loinc), "n_sct": len(sct), "vs_id": vs_id, "pr_id": pr_id,
                           "attrs": parse_ecl(t["ecl"])[1]})
 
@@ -440,6 +644,18 @@ def main():
             files[base / (page + ".md")] = text
     for src in sorted((TEMPLATES / "fsh").glob("*.fsh")):
         files[inst_dir / src.name] = src.read_text(encoding="utf-8")
+    analyte_pages = []
+    if POOL_ATTRS.exists():
+        pool_data = json.loads(POOL_ATTRS.read_text(encoding="utf-8"))
+        test_rows_by_id = {r["test_id"]: r for r in test_rows}
+        for analyte in sorted(pool_data):
+            analyte_pages.append(analyte_page_id(analyte))
+            for lang, base in (("en", out / "input" / "pagecontent"),
+                               ("de", out / "input" / "translations" / "de" / "pagecontent")):
+                files[base / (analyte_page_id(analyte) + ".md")] = render_analyte_page(
+                    lang, analyte, pool_data[analyte], tests, test_rows_by_id, agg_index, buckets, ctx)
+    else:
+        print("  (no pool_attributes.json: analyte subpages skipped; run scripts/pool_attributes.py)")
 
     print("LOINC Ontology {} -> {}".format(release, out))
     print("  {} test ValueSets, {} profiles, {} aggregation ValueSets, {} pages x 2 languages, {} example(s)".format(
@@ -454,6 +670,7 @@ def main():
     for p, text in files.items():
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(text, encoding="utf-8")
+    print("  analyte pages: {}".format(len(analyte_pages)))
     print("  written")
 
 

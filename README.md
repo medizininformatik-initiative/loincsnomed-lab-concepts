@@ -52,6 +52,11 @@ generated artifacts as MII-convention FSH for the KDS Laborbefund module
   `{{PLACEHOLDERS}}` for the generated tables (rules decomposed into attribute
   columns, analyte × bucket counts)
 - `input/fsh/instances/loinc-ontology/` — worked examples copied from `templates/mii/fsh/`
+- `input/pagecontent/loinc-ontology-analyte-<analyte>.md` (+ de) — review subpages: the
+  pool with attributes and buckets, per test the included codes, the excluded codes grouped
+  by the failing constraint, and a discussion from `templates/mii/tests/<test-id>.<lang>.md`.
+  Needs `output/fhir/aggregation/pool_attributes.json` from `scripts/pool_attributes.py`
+  (Snowstorm bulk-load of attributes + per-clause ECL evaluation; part of update_release.py).
 
 Each ValueSet = LOINC enumeration (`$loinc`, module pin) + LOINC Ontology
 observables without LOINC code + the ECL as an intensional include on the

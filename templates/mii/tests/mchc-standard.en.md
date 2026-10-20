@@ -1,0 +1,1 @@
+* **Own observable concept.** MCHC has no Component decomposition in the LOINC Ontology; the rule selects the concept and its subtypes. Two codes, nothing excluded. A Technique constraint would be the only possible refinement.
