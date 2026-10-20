@@ -12,12 +12,16 @@ Writes into <out> (the module root):
   input/fsh/valuesets/loinc-ontology/tests/MII_VS_Labor_LOINC_Ontology_<Test>.fsh      (18)
   input/fsh/valuesets/loinc-ontology/aggregation/MII_VS_Labor_LOINC_Ontology_<Analyte>_<Bucket>.fsh
   input/fsh/profiles/loinc-ontology/MII_PR_Labor_LOINC_Ontology_<Test>.fsh              (18)
-  input/pagecontent/loinc-ontology-valuesets.md                   (English, default language)
-  input/translations/de/pagecontent/loinc-ontology-valuesets.md   (German translation)
+  input/fsh/instances/loinc-ontology/*.fsh                        (worked examples, from templates/mii/fsh)
+  input/pagecontent/loinc-ontology-{valuesets,method,clinical-tests,use-cases}.md        (English)
+  input/translations/de/pagecontent/loinc-ontology-*.md           (German translation)
+
+Page prose lives in templates/mii/pages/<page>.<lang>.md with {{PLACEHOLDERS}} for the
+generated tables and numbers; edit the prose there, never in the module.
 
 Not written (one-time hand edits in the module, see README "MII lab module branch"):
 sushi-config.yaml pages:, input/includes/menu.xml (+ de), the IG-level .po page
-title, and the link line in value-sets.md.
+titles, the link line in value-sets.md and the example line in examples.md (en + de).
 
 Inputs: output/fhir/valuesets/*.json, output/fhir/aggregation/valuesets/*.json,
 config/clinical_tests.json, config/aggregation_profiles.json, config/targets.json.
@@ -45,7 +49,6 @@ SCT_SYSTEM = "http://snomed.info/sct"
 SCT_ALIAS = "$sct-loinc-ontology"
 BUCKET_SLUG = {"quantitative_convertible": "convertible"}
 SKIP_BUCKETS = {"panel_order"}  # order/panel codes: review tables only, no ValueSet
-PAGE = "loinc-ontology-valuesets"
 TOPIC = "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
 
 VS_RULESETS = """* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -177,203 +180,164 @@ def render_profile(test, vs_name, date, release):
     return name, pid, "\n".join(out) + "\n"
 
 
-# ── page renderers ───────────────────────────────────────────────────────────
+# ── ECL decomposition + page rendering ───────────────────────────────────────
 
-def page_en(release, version_uri, tests, test_rows, analytes, buckets, agg_index, repo_url):
-    L = []
-    L.append("This page is a **proposal**, not normative content of the module. It accompanies ballot comments on "
-             "2027.0.0-ballot and shows, with concrete artifacts, how the LOINC ValueSets bound to `Observation.code` "
-             "can be defined computably from the LOINC Ontology instead of being maintained as hand-curated lists. "
-             "All artifacts on this page are generated; the generator and the review tables behind them live in "
-             "[{}]({}).".format(repo_url.split("/")[-1], repo_url))
-    L.append("")
-    L.append("### Why the LOINC Ontology")
-    L.append("")
-    L.append("The [LOINC Ontology](https://loincsnomed.org) (SNOMED International and the Regenstrief Institute) "
-             "represents LOINC laboratory terms as SNOMED CT observable entities with the attributes Component, "
-             "Property, Scale type, Direct site (specimen), Technique and Time aspect. Every such observable carries "
-             "its LOINC code as an alternate identifier. A set of LOINC codes can therefore be stated as an "
-             "Expression Constraint Language (ECL) expression over those attributes, and the enumeration can be "
-             "regenerated whenever a new LOINC Ontology release appears. The release used here is "
-             "**LOINC Ontology {}** (`{}`).".format(release, version_uri))
-    L.append("")
-    L.append("Every ValueSet on this page has the same three parts:")
-    L.append("")
-    L.append("1. the **LOINC enumeration** (`http://loinc.org`), resolved from the ECL against that release;")
-    L.append("2. observables of the LOINC Ontology module that have **no LOINC code yet**, as SNOMED CT codes;")
-    L.append("3. the **ECL itself** as an intensional include, pinned to the release. It is the rule a reviewer reads, "
-             "and the part a terminology server that holds the LOINC Ontology can expand directly.")
-    L.append("")
-    L.append("### Layer 1: ValueSets per clinical test")
-    L.append("")
-    L.append("One distinct clinical test (component plus tier: *standard* is the routine value a clinician means, "
-             "*specialized* a clinically distinct variant such as free PSA or the LDH isoenzymes) is one ValueSet and "
-             "one Observation profile derived from [Laboratory Test](StructureDefinition-mii-pr-labor-laboruntersuchung.html). "
-             "The profile binds `Observation.code` to the ValueSet (required) and states the expected data type and unit. "
-             "The ECL of each test constrains Component, Direct site, Property and Scale type.")
-    L.append("")
-    L.append("| Test | Tier | Specimen | LOINC codes | SNOMED only | ValueSet | Profile |")
-    L.append("|---|---|---|--:|--:|---|---|")
-    for r in test_rows:
-        L.append("| {name} | {tier} | {specimen} | {n_loinc} | {n_sct} | [ValueSet](ValueSet-{vs_id}.html) | "
-                 "[Profile](StructureDefinition-{pr_id}.html) |".format(**r))
-    L.append("")
-    L.append("### Layer 2: use-case ValueSets per analyte")
-    L.append("")
-    L.append("For secondary use the **use case defines the aggregation**, not a fixed list. The candidate pool of an "
-             "analyte is everything mapped to its Component (any property, scale or specimen). Each pool is then "
-             "classified by Scale type and Property into use-case buckets:")
-    L.append("")
-    for b in buckets:
-        if b["id"] == "panel_order":
-            L.append("* **{}**: {} These are listed in the review tables but get no ValueSet.".format(b["name"], b["description"]))
+TEMPLATES = ROOT / "templates" / "mii"
+PAGES = ["loinc-ontology-valuesets", "loinc-ontology-method", "loinc-ontology-clinical-tests",
+         "loinc-ontology-use-cases"]
+ATTR_NAMES = {"246093002": "Component", "704327008": "Direct site", "370130000": "Property",
+              "370132008": "Scale type", "246501002": "Technique", "370134009": "Time aspect",
+              "704319004": "Inheres in", "704321002": "Characterizes", "704320005": "Towards",
+              "718497002": "Inherent location", "704326004": "Precondition"}
+ATTR_ORDER = ["Component", "Inheres in", "Direct site", "Property", "Scale type", "Technique", "Time aspect"]
+
+
+def _term(label):
+    """'<< 38082009 |Hemoglobin (substance)|' -> '<< Hemoglobin'; handles '<', '<<', OR-groups."""
+    label = label.strip()
+    if label.startswith("(") and label.endswith(")"):
+        inner = label[1:-1]
+        if " OR " in inner:
+            return " or ".join(_term(x) for x in inner.split(" OR "))
+        label = inner.strip()
+    prefix = "<< " if label.startswith("<<") else ("< " if label.startswith("<") else "")
+    m = re.search(r"\|([^|]*)\|", label)
+    name = m.group(1).strip() if m else label.lstrip("<").strip()
+    while True:  # drop semantic tags, also doubled ones like '(property) (qualifier value)'
+        n2 = re.sub(r"\s*\([^()]*\)\s*$", "", name)
+        if n2 == name:
+            break
+        name = n2
+    return prefix + name
+
+
+def _split_top(text, sep=","):
+    """Split on `sep` outside |labels| and outside parentheses."""
+    parts, buf, inside, depth = [], "", False, 0
+    for ch in text:
+        if ch == "|":
+            inside = not inside
+        elif not inside:
+            depth += {"(": 1, ")": -1}.get(ch, 0)
+        if ch == sep and not inside and depth == 0:
+            parts.append(buf); buf = ""
         else:
-            L.append("* **{}**: {}".format(b["name"], b["description"]))
-    L.append("")
-    L.append("Scale type is not always asserted in the LOINC Ontology, so the classification uses Scale type *and* "
-             "Property (presence properties count as qualitative; any measurement property counts as quantitative). "
-             "The *complete* ValueSet carries the pool ECL as its intensional include; the other buckets are "
-             "classifications of that pool and state their rule in the description. Cells link to the ValueSet and show "
-             "the number of concepts.")
-    L.append("")
-    cols = [b for b in buckets if b["id"] != "panel_order"]
-    L.append("| Analyte | Pool ECL | " + " | ".join(b["name"] for b in cols) + " |")
-    L.append("|---|---|" + "|".join("--:" for _ in cols) + "|")
+            buf += ch
+    parts.append(buf)
+    return parts
+
+
+def parse_ecl(ecl):
+    """-> (focus, [(attribute name, value text)]) for the ECL shapes used in this project:
+    'focus : attr = value, ...', focus-only, and 'A MINUS (A, attr = *)' (attribute absent)."""
+    ecl = ecl.strip()
+    minus = None
+    if " MINUS " in ecl:
+        ecl, minus = ecl.split(" MINUS ", 1)
+        ecl = ecl.strip().strip("()").strip()
+    if ":" not in ecl:
+        focus, rows = _term(ecl), []
+    else:
+        focus_s, refinement = ecl.split(":", 1)
+        focus, rows = _term(focus_s), []
+        for part in _split_top(refinement):
+            if "=" not in part:
+                continue
+            attr, value = part.split("=", 1)
+            aid = re.search(r"\d{6,}", attr)
+            aname = ATTR_NAMES.get(aid.group(0), _term(attr)) if aid else attr.strip()
+            rows.append((aname, _term(value)))
+    if minus:  # the subtrahend names the attribute that must be absent
+        m = re.search(r"(\d{6,}) \|[^|]*\| = \*", minus)
+        if m:
+            rows.append((ATTR_NAMES.get(m.group(1), m.group(1)), "(none)"))
+    if "Component" not in dict(rows):
+        rows.insert(0, ("Component", focus + " [observable]"))
+    return focus, rows
+
+
+def attr_columns(rows_by_test):
+    cols = [a for a in ATTR_ORDER if any(a in dict(r) for r in rows_by_test)]
+    extra = sorted({a for r in rows_by_test for a, _ in r} - set(cols))
+    return cols + extra
+
+
+def md_cell(s):
+    return s.replace("|", "\\|")
+
+
+def tests_table(test_rows, lang):
+    cols = attr_columns([r["attrs"] for r in test_rows])
+    if lang == "en":
+        head = ["Test", "Tier"] + cols + ["LOINC", "SNOMED only", "ValueSet", "Profile"]
+        vs, pr = "ValueSet", "Profile"
+    else:
+        head = ["Test", "Stufe"] + cols + ["LOINC", "nur SNOMED", "ValueSet", "Profil"]
+        vs, pr = "ValueSet", "Profil"
+    L = ["| " + " | ".join(head) + " |", "|---|---|" + "|".join("---" for _ in cols) + "|--:|--:|---|---|"]
+    for r in test_rows:
+        d = dict(r["attrs"])
+        cells = [r["name"], r["tier"]] + [md_cell(d.get(c, "")) for c in cols] + [
+            str(r["n_loinc"]), str(r["n_sct"]),
+            "[{}](ValueSet-{}.html)".format(vs, r["vs_id"]),
+            "[{}](StructureDefinition-{}.html)".format(pr, r["pr_id"])]
+        L.append("| " + " | ".join(cells) + " |")
+    return "\n".join(L)
+
+
+def usecase_table(analytes, buckets, agg_index, lang):
+    names = {"en": {"complete": "Complete", "quantitative": "Quantitative", "quantitative_convertible": "Convertible",
+                    "qualitative": "Qualitative", "semiquantitative": "Semi-quantitative"},
+             "de": {"complete": "Vollständig", "quantitative": "Quantitativ", "quantitative_convertible": "Konvertierbar",
+                    "qualitative": "Qualitativ", "semiquantitative": "Semiquantitativ"}}[lang]
+    cols = [b for b in buckets if b["id"] in names]
+    head = ("| Analyte | Pool (Component) | " if lang == "en" else "| Analyt | Pool (Component) | ") + \
+           " | ".join(names[b["id"]] for b in cols) + " |"
+    L = [head, "|---|---|" + "|".join("--:" for _ in cols) + "|"]
     for a in analytes:
+        focus, rows = parse_ecl(a["ecl"])
+        pool = dict(rows).get("Component") or focus
         cells = []
         for b in cols:
             e = agg_index.get((a["analyte"], b["id"]))
             cells.append("[{}](ValueSet-{}.html)".format(e["n"], e["vs_id"]) if e else "–")
-        L.append("| {} | `{}` | {} |".format(a["analyte"].replace("_", " "), ecl_short(a["ecl"]), " | ".join(cells)))
-    L.append("")
-    L.append("### What to review")
-    L.append("")
-    L.append("* **Expansion.** The HL7 terminology server used by the IG build does not hold the LOINC Ontology, so the "
-             "SNOMED CT includes of these ValueSets cannot be expanded there and the QA report flags them. The LOINC "
-             "enumerations expand as usual. A terminology server with the LOINC Ontology loaded (for example Snowstorm "
-             "with the LOINC extension) expands all three parts.")
-    L.append("* **Versions.** The LOINC enumerations were resolved against LOINC Ontology {}; the module pins LOINC 2.82. "
-             "A code introduced or deprecated between the two is a review item, not an error of the method.".format(release))
-    L.append("* **Pool definitions.** Hematocrit and erythrocyte count share the same Component (Erythrocyte), so their "
-             "*complete* ValueSets are identical; the narrow test ValueSets differ. MCH is modelled on descendants of "
-             "Hemoglobin and therefore also pulls in HbA1c and the hemoglobin variants. Both are pool-definition choices "
-             "to be settled by the module, not properties of the LOINC Ontology.")
-    L.append("* **Panel codes.** Observables with a Component but without a Property (for example the WBC differential) "
-             "are order or panel codes and are excluded from result aggregation.")
-    L.append("* **Tier and specimen choices** per test are a clinical decision; the ECL makes each choice explicit and "
-             "reviewable.")
-    L.append("")
-    L.append("The review tables with one row per concept (LOINC, SCTID, FSN, bucket and reason) are published with the "
-             "generator in [{}]({}).".format(repo_url.split("/")[-1], repo_url))
-    return "\n".join(L) + "\n"
+        L.append("| {} | {} | {} |".format(a["analyte"].replace("_", " "), md_cell(pool), " | ".join(cells)))
+    return "\n".join(L)
 
 
-def page_de(release, version_uri, tests, test_rows, analytes, buckets, agg_index, repo_url):
-    names_de = {
-        "complete": "Vollständig", "quantitative": "Quantitativ (alle numerischen)",
-        "quantitative_convertible": "Quantitativ & konvertierbar",
-        "qualitative": "Qualitativ (ordinal / nominal / Nachweis)",
-        "semiquantitative": "Semiquantitativ (Teststreifen)", "panel_order": "Panel / Auftragscode (ohne Property)"}
-    desc_de = {
-        "complete": "Alles, was auf die Komponente abgebildet ist: jede Skala, jede Property, jedes Material. "
-                    "Definiert den Kandidatenpool als Obergrenze, einschließlich der generischen Grouper-Konzepte "
-                    "„Measurement of X“.",
-        "quantitative": "Messungen mit quantitativer Skala plus generische Messkonzepte ohne asserted Skala. Alle "
-                        "numerischen Ergebnisse einschließlich Verhältnisse und Anteile.",
-        "quantitative_convertible": "Quantitativ mit einer Konzentrations-Property (Masse, Stoffmenge, arbiträr, "
-                                    "Anzahl, Menge), ohne Verhältnisse und Anteile. Die Menge, deren Werte sich "
-                                    "tatsächlich poolen und umrechnen lassen.",
-        "qualitative": "Ordinale oder nominale Skala oder Nachweis-Property. Nachweis/kein Nachweis, +/-, "
-                       "Teststreifen-ähnliche Ergebnisse.",
-        "semiquantitative": "Semiquantitative Skala: Teststreifen-Ablesungen, die weder streng quantitativ noch rein "
-                            "qualitativ sind (z. B. Nitrit, Hämoglobin im Urin per Teststreifen).",
-        "panel_order": "Observable mit Komponente, aber ohne Property (oft nur Technique, z. B. „Differential count "
-                       "of white blood cells“). Strukturell ein Auftrags- oder Panelcode, der in mehrere "
-                       "Einzelergebnisse zerfällt, kein einzelner Messwert."}
-    L = []
-    L.append("Diese Seite ist ein **Vorschlag**, kein normativer Inhalt des Moduls. Sie begleitet Ballot-Kommentare zu "
-             "2027.0.0-ballot und zeigt an konkreten Artefakten, wie die an `Observation.code` gebundenen LOINC-ValueSets "
-             "berechenbar aus der LOINC Ontology definiert werden können, statt als handgepflegte Listen. Alle Artefakte "
-             "dieser Seite sind generiert; Generator und Review-Tabellen liegen in [{}]({}).".format(repo_url.split("/")[-1], repo_url))
-    L.append("")
-    L.append("### Warum die LOINC Ontology")
-    L.append("")
-    L.append("Die [LOINC Ontology](https://loincsnomed.org) (SNOMED International und Regenstrief Institute) bildet "
-             "LOINC-Laborterme als SNOMED-CT-Observables mit den Attributen Component, Property, Scale type, Direct site "
-             "(Material), Technique und Time aspect ab. Jedes dieser Observables trägt seinen LOINC-Code als alternativen "
-             "Identifikator. Eine Menge von LOINC-Codes lässt sich daher als Ausdruck der Expression Constraint Language "
-             "(ECL) über diese Attribute formulieren, und die Aufzählung lässt sich bei jedem neuen Release der LOINC "
-             "Ontology neu erzeugen. Verwendetes Release: **LOINC Ontology {}** (`{}`).".format(release, version_uri))
-    L.append("")
-    L.append("Jedes ValueSet dieser Seite besteht aus denselben drei Teilen:")
-    L.append("")
-    L.append("1. der **LOINC-Aufzählung** (`http://loinc.org`), aus der ECL gegen dieses Release aufgelöst;")
-    L.append("2. Observables des LOINC-Ontology-Moduls, die **noch keinen LOINC-Code** haben, als SNOMED-CT-Codes;")
-    L.append("3. der **ECL selbst** als intensionales Include, auf das Release gepinnt. Das ist die Regel, die ein "
-             "Reviewer liest, und der Teil, den ein Terminologieserver mit geladener LOINC Ontology direkt expandieren kann.")
-    L.append("")
-    L.append("### Ebene 1: ValueSets je klinischem Test")
-    L.append("")
-    L.append("Ein klinisch unterscheidbarer Test (Komponente plus Stufe: *standard* ist der Routinewert, den eine "
-             "Klinikerin meint, *specialized* eine klinisch eigenständige Variante wie freies PSA oder die LDH-Isoenzyme) "
-             "ist ein ValueSet und ein von [Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.html) "
-             "abgeleitetes Observation-Profil. Das Profil bindet `Observation.code` required an das ValueSet und nennt "
-             "erwarteten Datentyp und Einheit. Die ECL jedes Tests schränkt Component, Direct site, Property und Scale type ein.")
-    L.append("")
-    L.append("| Test | Stufe | Material | LOINC-Codes | nur SNOMED | ValueSet | Profil |")
-    L.append("|---|---|---|--:|--:|---|---|")
-    for r in test_rows:
-        L.append("| {name} | {tier} | {specimen} | {n_loinc} | {n_sct} | [ValueSet](ValueSet-{vs_id}.html) | "
-                 "[Profil](StructureDefinition-{pr_id}.html) |".format(**r))
-    L.append("")
-    L.append("### Ebene 2: Use-Case-ValueSets je Analyt")
-    L.append("")
-    L.append("Für die Sekundärnutzung **definiert der Use Case die Aggregation**, nicht eine feste Liste. Der "
-             "Kandidatenpool eines Analyten ist alles, was auf seine Komponente abgebildet ist (jede Property, Skala, "
-             "jedes Material). Jeder Pool wird dann über Scale type und Property in Use-Case-Gruppen klassifiziert:")
-    L.append("")
-    for b in buckets:
-        if b["id"] == "panel_order":
-            L.append("* **{}**: {} Diese erscheinen in den Review-Tabellen, erhalten aber kein ValueSet.".format(names_de[b["id"]], desc_de[b["id"]]))
-        else:
-            L.append("* **{}**: {}".format(names_de[b["id"]], desc_de[b["id"]]))
-    L.append("")
-    L.append("Scale type ist in der LOINC Ontology nicht immer asserted, deshalb nutzt die Klassifikation Scale type "
-             "*und* Property (Nachweis-Properties zählen als qualitativ, jede Mess-Property als quantitativ). Das "
-             "ValueSet *Vollständig* trägt die Pool-ECL als intensionales Include; die übrigen Gruppen sind "
-             "Klassifikationen dieses Pools und nennen ihre Regel in der Beschreibung. Die Zellen verlinken das ValueSet "
-             "und zeigen die Zahl der Konzepte.")
-    L.append("")
-    cols = [b for b in buckets if b["id"] != "panel_order"]
-    L.append("| Analyt | Pool-ECL | " + " | ".join(names_de[b["id"]] for b in cols) + " |")
-    L.append("|---|---|" + "|".join("--:" for _ in cols) + "|")
-    for a in analytes:
-        cells = []
-        for b in cols:
-            e = agg_index.get((a["analyte"], b["id"]))
-            cells.append("[{}](ValueSet-{}.html)".format(e["n"], e["vs_id"]) if e else "–")
-        L.append("| {} | `{}` | {} |".format(a["analyte"].replace("_", " "), ecl_short(a["ecl"]), " | ".join(cells)))
-    L.append("")
-    L.append("### Was zu prüfen ist")
-    L.append("")
-    L.append("* **Expansion.** Der HL7-Terminologieserver des IG-Builds hält die LOINC Ontology nicht; die SNOMED-CT-"
-             "Includes dieser ValueSets lassen sich dort nicht expandieren, und der QA-Report markiert sie. Die "
-             "LOINC-Aufzählungen expandieren wie gewohnt. Ein Terminologieserver mit geladener LOINC Ontology (z. B. "
-             "Snowstorm mit der LOINC-Extension) expandiert alle drei Teile.")
-    L.append("* **Versionen.** Die LOINC-Aufzählungen wurden gegen LOINC Ontology {} aufgelöst; das Modul pinnt LOINC "
-             "2.82. Ein zwischen beiden eingeführter oder abgekündigter Code ist ein Review-Punkt, kein Fehler der "
-             "Methode.".format(release))
-    L.append("* **Pool-Definitionen.** Hämatokrit und Erythrozytenzahl teilen dieselbe Komponente (Erythrocyte), ihre "
-             "*vollständigen* ValueSets sind daher identisch; die engen Test-ValueSets unterscheiden sich. MCH ist über "
-             "die Nachfahren von Hemoglobin modelliert und zieht deshalb auch HbA1c und die Hämoglobin-Varianten mit. "
-             "Beides sind Entscheidungen zur Pool-Definition, die das Modul treffen muss, keine Eigenschaften der LOINC Ontology.")
-    L.append("* **Panelcodes.** Observables mit Komponente, aber ohne Property (z. B. das Differentialblutbild) sind "
-             "Auftrags- oder Panelcodes und von der Ergebnisaggregation ausgeschlossen.")
-    L.append("* **Stufen- und Materialwahl** je Test sind klinische Entscheidungen; die ECL macht jede Wahl explizit und prüfbar.")
-    L.append("")
-    L.append("Die Review-Tabellen mit einer Zeile je Konzept (LOINC, SCTID, FSN, Gruppe und Begründung) sind mit dem "
-             "Generator in [{}]({}) veröffentlicht.".format(repo_url.split("/")[-1], repo_url))
-    return "\n".join(L) + "\n"
+def example_ecl_rows(tests, lang):
+    t = next(x for x in tests if x["id"] == "hemoglobin-standard")
+    focus, rows = parse_ecl(t["ecl"])
+    if lang == "en":
+        L = ["The same rule, decomposed as the tables on the following pages show it:", "",
+             "| Attribute | Value | Reading |", "|---|---|---|"]
+        reading = {"Component": "exactly this substance", "Direct site": "this specimen or any subtype",
+                   "Property": "this property or any subtype", "Scale type": "this scale or any subtype"}
+    else:
+        L = ["Dieselbe Regel, zerlegt wie in den Tabellen der folgenden Seiten:", "",
+             "| Attribut | Wert | Lesart |", "|---|---|---|"]
+        reading = {"Component": "genau diese Substanz", "Direct site": "dieses Material oder ein Subtyp",
+                   "Property": "diese Property oder ein Subtyp", "Scale type": "diese Skala oder ein Subtyp"}
+    for a, v in rows:
+        L.append("| {} | {} | {} |".format(a, md_cell(v), reading.get(a, "")))
+    return "\n".join(L)
+
+
+def render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index):
+    subst = dict(ctx)
+    subst["TESTS_TABLE"] = tests_table(test_rows, lang)
+    subst["USECASE_TABLE"] = usecase_table(analytes, buckets, agg_index, lang)
+    subst["EXAMPLE_ECL_ROWS"] = example_ecl_rows(tests, lang)
+    out = {}
+    for page in PAGES:
+        text = (TEMPLATES / "pages" / "{}.{}.md".format(page, lang)).read_text(encoding="utf-8")
+        for k, v in subst.items():
+            text = text.replace("{{" + k + "}}", str(v))
+        left = re.findall(r"{{[A-Z_]+}}", text)
+        if left:
+            sys.exit("unreplaced placeholders in {}.{}: {}".format(page, lang, left))
+        out[page] = text
+    return out
 
 
 # ── main ─────────────────────────────────────────────────────────────────────
@@ -399,8 +363,7 @@ def main():
 
     vs_test_dir = out / "input" / "fsh" / "valuesets" / "loinc-ontology"
     pr_dir = out / "input" / "fsh" / "profiles" / "loinc-ontology"
-    page_en_path = out / "input" / "pagecontent" / (PAGE + ".md")
-    page_de_path = out / "input" / "translations" / "de" / "pagecontent" / (PAGE + ".md")
+    inst_dir = out / "input" / "fsh" / "instances" / "loinc-ontology"
 
     files = {}  # path -> text
 
@@ -430,7 +393,8 @@ def main():
         pr_name, pr_id, pr_text = render_profile(t, vs_name, args.date, release)
         files[pr_dir / (pr_name + ".fsh")] = pr_text
         test_rows.append({"name": t["name"], "tier": t["tier"], "specimen": t["specimen"],
-                          "n_loinc": len(loinc), "n_sct": len(sct), "vs_id": vs_id, "pr_id": pr_id})
+                          "n_loinc": len(loinc), "n_sct": len(sct), "vs_id": vs_id, "pr_id": pr_id,
+                          "attrs": parse_ecl(t["ecl"])[1]})
 
     # Layer 2: aggregation
     analytes, seen = [], set()
@@ -464,17 +428,24 @@ def main():
             "Analyte {}, bucket {}".format(analyte, bucket_id))
     analytes.sort(key=lambda a: a["analyte"])
 
-    files[page_en_path] = page_en(release, version_uri, tests, test_rows, analytes, buckets, agg_index, args.repo_url)
-    files[page_de_path] = page_de(release, version_uri, tests, test_rows, analytes, buckets, agg_index, args.repo_url)
+    ctx = {"RELEASE": release, "VERSION_URI": version_uri, "REPO_URL": args.repo_url,
+           "REPO_NAME": args.repo_url.rstrip("/").split("/")[-1], "N_TESTS": len(test_rows),
+           "N_USECASE": len(agg_index), "N_ANALYTES": len(analytes)}
+    for lang, base in (("en", out / "input" / "pagecontent"),
+                       ("de", out / "input" / "translations" / "de" / "pagecontent")):
+        for page, text in render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index).items():
+            files[base / (page + ".md")] = text
+    for src in sorted((TEMPLATES / "fsh").glob("*.fsh")):
+        files[inst_dir / src.name] = src.read_text(encoding="utf-8")
 
     print("LOINC Ontology {} -> {}".format(release, out))
-    print("  {} test ValueSets, {} profiles, {} aggregation ValueSets, 2 pages".format(
-        len(test_rows), len(test_rows), len(agg_index)))
+    print("  {} test ValueSets, {} profiles, {} aggregation ValueSets, {} pages x 2 languages, {} example(s)".format(
+        len(test_rows), len(test_rows), len(agg_index), len(PAGES), len(list((TEMPLATES / "fsh").glob("*.fsh")))))
     if args.dry_run:
         for p in sorted(files):
             print("  would write", p.relative_to(out))
         return
-    for d in (vs_test_dir, pr_dir):
+    for d in (vs_test_dir, pr_dir, inst_dir):
         if d.exists():
             shutil.rmtree(d)
     for p, text in files.items():

@@ -47,7 +47,11 @@ generated artifacts as MII-convention FSH for the KDS Laborbefund module
 - `input/fsh/valuesets/loinc-ontology/aggregation/` — use-case ValueSets per
   analyte × bucket (`panel_order` is skipped; ids use `convertible` for
   `quantitative_convertible` to stay under 64 chars)
-- `input/pagecontent/loinc-ontology-valuesets.md` + the German translation
+- `input/pagecontent/loinc-ontology-{valuesets,method,clinical-tests,use-cases}.md`
+  + German translations; prose in `templates/mii/pages/<page>.<lang>.md` with
+  `{{PLACEHOLDERS}}` for the generated tables (rules decomposed into attribute
+  columns, analyte × bucket counts)
+- `input/fsh/instances/loinc-ontology/` — worked examples copied from `templates/mii/fsh/`
 
 Each ValueSet = LOINC enumeration (`$loinc`, module pin) + LOINC Ontology
 observables without LOINC code + the ECL as an intensional include on the
@@ -58,9 +62,9 @@ Derived profiles only insert `PR_CS_VS_Version`, `Publisher` and
 re-inserting them makes SUSHI fail.
 
 One-time hand edits in the module (already on the branch
-`proposal/loinc-ontology-valuesets`): `sushi-config.yaml` pages entry, both
-`menu.xml`, the page title in `ImplementationGuide-mii-ig-labor.po`, and a link
-line in `value-sets.md` (en + de). Re-running the exporter after a release
+`proposal/loinc-ontology-valuesets`): `sushi-config.yaml` pages entries, both
+`menu.xml`, the page titles in `ImplementationGuide-mii-ig-labor.po`, a link
+line in `value-sets.md` and the example line in `examples.md` (en + de). Re-running the exporter after a release
 update only rewrites the generated directories and the two pages. Verify with
 `sushi .`, `node --test scripts/terminology-pins.test.mjs`,
 `node scripts/convention-check.mjs`, `scripts/language-model-check.sh`,
