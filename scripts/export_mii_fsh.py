@@ -168,7 +168,7 @@ def render_profile(test, vs_name, date, release):
            PR_RULESETS.replace("{date}", date).rstrip("\n"),
            "* code from {} (required)".format(vs_name),
            "* code ^binding.description = {}".format(fsh_str(
-               "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology {}: {}"
+               "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology {}: `{}`"
                .format(release, test["ecl"])))]
     dtype = test.get("dataType")
     if dtype == "Quantity":
@@ -386,7 +386,7 @@ def main():
         vs_id = fsh_id("mii-vs-labor", t["id"])
         desc = ("Proposal: LOINC codes of the clinical test '{}' ({} tier, specimen {}), computed by ECL over the "
                 "LOINC Ontology {}. Parts: LOINC enumeration ({}), LOINC Ontology observables without LOINC code ({}), "
-                "and the ECL as an intensional include. ECL: {}"
+                "and the ECL as an intensional include. ECL: `{}`"
                 .format(t["name"], t["tier"], t["specimen"], release, len(loinc), len(sct), t["ecl"]))
         purpose = ("Guidance for binding Observation.code of the MII laboratory test profile to a computably defined "
                    "LOINC set; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.")
@@ -421,7 +421,7 @@ def main():
         agg_index[(analyte, bucket_id)] = {"vs_id": vs_id, "n": n}
         desc = ("Proposal: use-case ValueSet '{}' for the analyte {} ({}). Candidate pool = {} against the LOINC "
                 "Ontology {}. {} concepts ({} with LOINC). {}"
-                .format(b["name"], analyte.replace("_", " "), b["description"], pool_ecl, release, n, len(loinc),
+                .format(b["name"], analyte.replace("_", " "), b["description"], "`" + pool_ecl + "`", release, n, len(loinc),
                         "The pool ECL is carried as an intensional include." if ecl else
                         "Classification of the pool by Scale type and Property; the rule is stated above."))
         purpose = ("Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies "
