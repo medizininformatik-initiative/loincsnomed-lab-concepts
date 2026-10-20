@@ -263,7 +263,10 @@ def attr_columns(rows_by_test):
 
 
 def md_cell(s):
-    return s.replace("|", "\\|")
+    """Table cell text. ECL operators go into a code span: the IG Publisher's markdown
+    renderer turns a bare '<<' into a guillemet."""
+    s = s.replace("|", "\\|")
+    return "`{}`".format(s) if s.startswith("<") or " or <" in s else s
 
 
 def tests_table(test_rows, lang):
