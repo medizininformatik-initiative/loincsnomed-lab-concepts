@@ -35,6 +35,37 @@ Server side this uses `~/code/helper/local-snowstorm/update-extension.sh`; the f
 procedure (including a dependency-aware rebuild of International + DE/AT/CH + LOINC)
 is the `snowstorm-edition-update` Claude skill.
 
+## Exporting to the MII lab module (ballot proposal branch)
+
+`scripts/export_mii_fsh.py --out <kerndatensatzmodul-labor checkout>` renders the
+generated artifacts as MII-convention FSH for the KDS Laborbefund module
+(IG-publisher layout, `master` = 2027.0.0-ci):
+
+- `input/fsh/valuesets/loinc-ontology/tests/` — 18 ValueSets per clinical test
+- `input/fsh/profiles/loinc-ontology/` — 18 Observation profiles derived from
+  `MII_PR_Labor_Laboruntersuchung` (code bound required, value type/unit stated)
+- `input/fsh/valuesets/loinc-ontology/aggregation/` — use-case ValueSets per
+  analyte × bucket (`panel_order` is skipped; ids use `convertible` for
+  `quantitative_convertible` to stay under 64 chars)
+- `input/pagecontent/loinc-ontology-valuesets.md` + the German translation
+
+Each ValueSet = LOINC enumeration (`$loinc`, module pin) + LOINC Ontology
+observables without LOINC code + the ECL as an intensional include on the
+alias `$sct-loinc-ontology` (pinned to `config/targets.json#snomed_version_uri`,
+kept out of `aliases.fsh` so the module's manifest pin test is untouched).
+Derived profiles only insert `PR_CS_VS_Version`, `Publisher` and
+`SnomedLicense`; the CRMI/license `^extension[+]` rulesets are inherited and
+re-inserting them makes SUSHI fail.
+
+One-time hand edits in the module (already on the branch
+`proposal/loinc-ontology-valuesets`): `sushi-config.yaml` pages entry, both
+`menu.xml`, the page title in `ImplementationGuide-mii-ig-labor.po`, and a link
+line in `value-sets.md` (en + de). Re-running the exporter after a release
+update only rewrites the generated directories and the two pages. Verify with
+`sushi .`, `node --test scripts/terminology-pins.test.mjs`,
+`node scripts/convention-check.mjs`, `scripts/language-model-check.sh`,
+`scripts/ig-translate.sh --validate de` in the module.
+
 ## Features
 
 - **Automated ECL Query Generation**: Automatically builds multiple ECL query variants for any LOINC concept
