@@ -2,7 +2,7 @@ LOINC,SCTID,FSN,use_case,reason
 100849-9,88571010000106,Number concentration of leukocyte in amniotic fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 104646-5,483171010000102,Number areic of leukocyte in urine at point in time by computer assisted (observable entity),quantitative,Quantitative scale
 105104-4,484351010000106,Number areic of leukocyte in urine sediment at point in time (observable entity),quantitative,Quantitative scale
-10579-1,73201010000104,Number concentration of leukocyte in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+10579-1,73201010000104,Number concentration of leukocyte in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 105921-1,485941010000109,Number concentration of leukocyte in urethra at point in time by wet preparation (observable entity),quantitative_convertible,Quantitative scale + concentration property
 110644-2,726841010000107,Measurement of leukocyte in stool (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
 111204-4,731041010000109,Measurement of leukocyte in urine sediment (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
@@ -63,7 +63,7 @@ LOINC,SCTID,FSN,use_case,reason
 47281-1,267321010000109,Number concentration of leukocyte in cord blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 48034-3,61751010000100,Number concentration of leukocyte corrected for nucleated erythrocytes in cerebrospinal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 48052-5,53121010000102,Number concentration of leukocyte corrected for nucleated erythrocytes in body fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-49224-9,174461010000107,Number areic of leukocyte in seminal fluid at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+49224-9,174461010000107,Number areic of leukocyte in semen sample at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
 49498-9,127421010000106,Number concentration of leukocyte in blood at point in time by estimate (observable entity),quantitative_convertible,Quantitative scale + concentration property
 49928-5,41581010000106,Number concentration of leukocyte in peritoneal dialysate at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 51383-8,567921010000104,Number concentration of leukocytes other in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
@@ -108,8 +108,8 @@ LOINC,SCTID,FSN,use_case,reason
 808-6,51431010000108,Number concentration of leukocyte in pleural fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 809-4,266821010000100,Number concentration of leukocyte in peritoneal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 810-2,157841010000104,Number concentration of leukocyte in peritoneal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
-811-0,61141010000101,Number concentration of leukocyte in seminal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
-812-8,100311010000101,Number concentration of leukocyte in seminal fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+811-0,61141010000101,Number concentration of leukocyte in semen sample at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
+812-8,100311010000101,Number concentration of leukocyte in semen sample at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 813-6,61661010000105,Number concentration of leukocyte in synovial fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 814-4,87861010000100,Number concentration of leukocyte in synovial fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 82587-7,190461010000109,Number concentration of leukocyte in bone marrow at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property

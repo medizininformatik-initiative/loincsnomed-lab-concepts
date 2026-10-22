@@ -6,7 +6,7 @@
   "title": "leukocytes — Quantitative (all numeric)",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 123 concepts (123 with LOINC). Review required.",
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20261021. 123 concepts (123 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -38,7 +38,7 @@
           },
           {
             "code": "49224-9",
-            "display": "Number areic of leukocyte in seminal fluid at point in time by high power field light microscopy (observable entity)"
+            "display": "Number areic of leukocyte in semen sample at point in time by high power field light microscopy (observable entity)"
           },
           {
             "code": "53225-9",
@@ -378,15 +378,15 @@
           },
           {
             "code": "10579-1",
-            "display": "Number concentration of leukocyte in seminal fluid at point in time (observable entity)"
+            "display": "Number concentration of leukocyte in semen sample at point in time (observable entity)"
           },
           {
             "code": "811-0",
-            "display": "Number concentration of leukocyte in seminal fluid at point in time by automated count (observable entity)"
+            "display": "Number concentration of leukocyte in semen sample at point in time by automated count (observable entity)"
           },
           {
             "code": "812-8",
-            "display": "Number concentration of leukocyte in seminal fluid at point in time by manual count (observable entity)"
+            "display": "Number concentration of leukocyte in semen sample at point in time by manual count (observable entity)"
           },
           {
             "code": "20584-9",

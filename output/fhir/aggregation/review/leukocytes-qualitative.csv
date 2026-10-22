@@ -1,30 +1,35 @@
 LOINC,SCTID,FSN,use_case,reason
-105105-1,484361010000108,Presence of leukocyte in urine sediment at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107011-9,709931010000106,Presence of leukocyte in urethra at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107465-7,710251010000101,Presence of leukocyte in pus at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107469-9,710281010000107,Presence of leukocyte in specimen obtained by aspiration at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107472-3,710311010000109,Presence of leukocyte in tissue at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107475-6,710331010000100,Presence of leukocyte in deep wound at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107476-4,710341010000108,Presence of leukocyte in superficial wound at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107483-0,710401010000104,Presence of leukocyte in pericardial fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-107497-0,710461010000103,Presence of leukocyte in bronchus at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-12226-7,269111010000105,Presence of leukocyte in vagina at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-13655-6,121251010000107,Presence of leukocyte in stool at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14105-1,188781010000108,Presence of leukocyte in nose at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14328-9,104961010000105,Presence of leukocyte in sputum at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-20455-2,213301010000107,Presence of leukocyte in urine sediment at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-32142-2,51641010000103,Presence of leukocyte in synovial fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-32761-9,82841010000101,Presence of leukocyte in specimen at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-32825-2,155931010000107,Presence of leukocyte in seminal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-33052-2,86841010000102,Presence of leukocyte in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-34445-7,175831010000102,Presence of leukocyte in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-34469-7,72371010000105,Presence of leukocyte in bile at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42327-7,181201010000103,Presence of leukocyte in stool at point in time by methylene blue stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-48973-2,151871010000104,Presence of leukocyte in stool at point in time by methylene blue stain 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-53316-6,211751010000108,Presence of leukocyte in urine at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-53964-3,265431010000106,Presence of leukocyte in urine at point in time by visual (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-72163-9,139511010000109,Presence of leukocyte in specimen at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-88114-4,153601010000108,Presence of leukocyte in cerebrospinal fluid at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-88343-9,149521010000104,Presence of leukocyte in ear at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-99928-4,70271010000104,Presence of leukocyte in body fluid at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+105105-1,484361010000108,Threshold presence of leukocyte in urine sediment at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107011-9,709931010000106,Threshold presence of leukocyte in urethra at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107465-7,710251010000101,Threshold presence of leukocyte in pus at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107469-9,710281010000107,Threshold presence of leukocyte in specimen obtained by aspiration at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107472-3,710311010000109,Threshold presence of leukocyte in tissue at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107475-6,710331010000100,Threshold presence of leukocyte in deep wound at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107476-4,710341010000108,Threshold presence of leukocyte in superficial wound at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107483-0,710401010000104,Threshold presence of leukocyte in pericardial fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+107497-0,710461010000103,Threshold presence of leukocyte in bronchus at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+113033-5,885081010000108,Threshold presence of leukocyte in bronchoalveolar lavage fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+113044-2,885121010000105,Threshold presence of leukocyte in vagina at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+113052-5,885161010000101,Threshold presence of leukocyte in pleural fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+113058-2,885201010000105,Threshold presence of leukocyte in peritoneal fluid at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+113077-2,885271010000101,Threshold presence of leukocyte in tissue at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12226-7,269111010000105,Threshold presence of leukocyte in vagina at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+13655-6,121251010000107,Threshold presence of leukocyte in stool at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14105-1,188781010000108,Threshold presence of leukocyte in nose at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14328-9,104961010000105,Threshold presence of leukocyte in sputum at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+20455-2,213301010000107,Threshold presence of leukocyte in urine sediment at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32142-2,51641010000103,Threshold presence of leukocyte in synovial fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32761-9,82841010000101,Threshold presence of leukocyte in specimen at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32825-2,155931010000107,Threshold presence of leukocyte in semen sample at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33052-2,86841010000102,Threshold presence of leukocyte in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34445-7,175831010000102,Threshold presence of leukocyte in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34469-7,72371010000105,Threshold presence of leukocyte in bile at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42327-7,181201010000103,Threshold presence of leukocyte in stool at point in time by methylene blue stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48973-2,151871010000104,Threshold presence of leukocyte in stool at point in time by methylene blue stain 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53316-6,211751010000108,Threshold presence of leukocyte in urine at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53964-3,265431010000106,Threshold presence of leukocyte in urine at point in time by visual (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+72163-9,139511010000109,Threshold presence of leukocyte in specimen at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+88114-4,153601010000108,Threshold presence of leukocyte in cerebrospinal fluid at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+88343-9,149521010000104,Threshold presence of leukocyte in ear at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+99928-4,70271010000104,Threshold presence of leukocyte in body fluid at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
 ,375701000119105,Presence of white blood cells in stool (observable entity),qualitative,Presence property → qualitative

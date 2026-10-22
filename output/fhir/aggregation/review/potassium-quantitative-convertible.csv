@@ -28,11 +28,11 @@ LOINC,SCTID,FSN,use_case,reason
 42569-4,741411010000103,Mass concentration or substance concentration of potassium electrolyte in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 49788-3,200351010000102,Substance concentration of potassium electrolyte in amniotic fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 49789-1,195601010000104,Substance concentration of potassium electrolyte in peritoneal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-51618-7,136441010000101,Substance concentration of potassium electrolyte in serum or plasma at point in time Pre-dialysis (observable entity),quantitative_convertible,Quantitative scale + concentration property
+51618-7,136441010000101,Substance concentration of potassium electrolyte in serum or plasma at point in time pre-dialysis (observable entity),quantitative_convertible,Quantitative scale + concentration property
 57355-0,150811010000104,Substance concentration of potassium electrolyte in urine in 12 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
 57379-0,189611010000103,Substance concentration of potassium electrolyte in urine in 2 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
 59162-8,140741010000107,Substance concentration of potassium electrolyte in stool in 24 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
-60218-5,249661010000106,Substance concentration of potassium electrolyte in Mother's milk at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+60218-5,249661010000106,Substance concentration of potassium electrolyte in mother's milk at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 6298-4,195421010000109,Substance concentration of potassium electrolyte in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 75940-7,216181010000107,Mass concentration of potassium electrolyte in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 77142-8,61521010000100,Substance concentration of potassium electrolyte in plasma or serum or whole blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property

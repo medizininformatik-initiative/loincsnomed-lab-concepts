@@ -6,7 +6,7 @@
   "title": "methemoglobin — Quantitative & convertible",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 3 concepts (3 with LOINC). Review required.",
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20261021. 3 concepts (3 with LOINC). Review required.",
   "compose": {
     "include": [
       {

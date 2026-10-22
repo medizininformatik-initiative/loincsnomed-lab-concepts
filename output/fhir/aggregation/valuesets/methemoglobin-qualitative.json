@@ -6,7 +6,7 @@
   "title": "methemoglobin — Qualitative (ordinal / nominal / presence)",
   "status": "draft",
   "experimental": true,
-  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20261021. 2 concepts (2 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,11 +14,11 @@
         "concept": [
           {
             "code": "2613-8",
-            "display": "Presence of methemoglobin in blood at point in time (observable entity)"
+            "display": "Threshold presence of methemoglobin in blood at point in time (observable entity)"
           },
           {
             "code": "2619-5",
-            "display": "Presence of methemoglobin in erythrocyte at point in time (observable entity)"
+            "display": "Threshold presence of methemoglobin in erythrocyte at point in time (observable entity)"
           }
         ]
       }

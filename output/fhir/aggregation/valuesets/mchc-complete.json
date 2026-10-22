@@ -6,7 +6,7 @@
   "title": "mchc — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 521371010000101 |Mean cell hemoglobin concentration (observable entity)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 521371010000101 |Mean cell hemoglobin concentration (observable entity)| against http://snomed.info/sct/11010000107/version/20261021. 2 concepts (2 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -24,7 +24,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

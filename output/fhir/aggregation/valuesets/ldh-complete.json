@@ -6,7 +6,7 @@
   "title": "ldh — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against http://snomed.info/sct/11010000107/version/20260321. 79 concepts (79 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against http://snomed.info/sct/11010000107/version/20261021. 79 concepts (79 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,11 +14,11 @@
         "concept": [
           {
             "code": "17041-5",
-            "display": "Presence of lactate dehydrogenase in urine at point in time (observable entity)"
+            "display": "Threshold presence of lactate dehydrogenase in urine at point in time (observable entity)"
           },
           {
             "code": "53248-1",
-            "display": "Presence of Plasmodium sp lactate dehydrogenase in blood at point in time (observable entity)"
+            "display": "Threshold presence of Plasmodium sp lactate dehydrogenase in blood at point in time (observable entity)"
           },
           {
             "code": "51510-6",
@@ -246,7 +246,7 @@
           },
           {
             "code": "57664-5",
-            "display": "Catalytic concentration of lactate dehydrogenase in seminal fluid at point in time (observable entity)"
+            "display": "Catalytic concentration of lactate dehydrogenase in semen sample at point in time (observable entity)"
           },
           {
             "code": "2532-0",
@@ -332,7 +332,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

@@ -18,7 +18,7 @@ LOINC,SCTID,FSN,use_case,reason
 30390-9,525161010000106,Arbitrary concentration of erythrocyte in stool at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 30391-7,100381010000106,Number concentration of erythrocyte in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 40534-0,79331010000101,Number concentration of erythrocyte in peritoneal dialysate at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
-43245-0,274641010000107,Number concentration of erythrocyte in seminal fluid at point in time by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+43245-0,274641010000107,Number concentration of erythrocyte in semen sample at point in time by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
 46087-3,90911010000108,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 2nd tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
 46091-5,151291010000104,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 3rd tube (observable entity),quantitative_convertible,Quantitative scale + concentration property
 46092-3,206801010000109,Number concentration of erythrocyte in cerebrospinal fluid at point in time by manual count 4th tube (observable entity),quantitative_convertible,Quantitative scale + concentration property

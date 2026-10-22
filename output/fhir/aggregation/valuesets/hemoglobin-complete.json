@@ -6,7 +6,7 @@
   "title": "hemoglobin — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 89 concepts (89 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20261021. 89 concepts (89 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,123 +14,123 @@
         "concept": [
           {
             "code": "717-9",
-            "display": "Presence of hemoglobin in blood at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in blood at point in time (observable entity)"
           },
           {
             "code": "33517-4",
-            "display": "Presence of hemoglobin in body fluid at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in body fluid at point in time (observable entity)"
           },
           {
             "code": "48035-0",
-            "display": "Presence of hemoglobin in cerebrospinal fluid at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in cerebrospinal fluid at point in time (observable entity)"
           },
           {
             "code": "2334-1",
-            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity)"
           },
           {
             "code": "42909-2",
-            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
           },
           {
             "code": "42910-0",
-            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
           },
           {
             "code": "42911-8",
-            "display": "Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
           },
           {
             "code": "34618-9",
-            "display": "Presence of hemoglobin in specimen at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in specimen at point in time (observable entity)"
           },
           {
             "code": "50017-3",
-            "display": "Presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity)"
           },
           {
             "code": "2335-8",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity)"
           },
           {
             "code": "14563-1",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity)"
           },
           {
             "code": "14564-9",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
           },
           {
             "code": "14565-6",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity)"
           },
           {
             "code": "12503-9",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity)"
           },
           {
             "code": "12504-7",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity)"
           },
           {
             "code": "27401-9",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity)"
           },
           {
             "code": "27925-7",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity)"
           },
           {
             "code": "27926-5",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity)"
           },
           {
             "code": "80372-6",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity)"
           },
           {
             "code": "104738-0",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity)"
           },
           {
             "code": "29771-3",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity)"
           },
           {
             "code": "57905-2",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity)"
           },
           {
             "code": "56490-6",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity)"
           },
           {
             "code": "56491-4",
-            "display": "Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity)"
           },
           {
             "code": "725-2",
-            "display": "Presence of hemoglobin in urine at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in urine at point in time (observable entity)"
           },
           {
             "code": "57751-0",
-            "display": "Presence of hemoglobin in urine at point in time by automated test strip (observable entity)"
+            "display": "Threshold presence of hemoglobin in urine at point in time by automated test strip (observable entity)"
           },
           {
             "code": "5794-3",
-            "display": "Presence of hemoglobin in urine at point in time by test strip (observable entity)"
+            "display": "Threshold presence of hemoglobin in urine at point in time by test strip (observable entity)"
           },
           {
             "code": "48047-5",
-            "display": "Presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity)"
+            "display": "Threshold presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity)"
           },
           {
             "code": "42912-6",
-            "display": "Presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity)"
           },
           {
             "code": "42913-4",
-            "display": "Presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity)"
+            "display": "Threshold presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity)"
           },
           {
             "code": "59468-9",
@@ -372,7 +372,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

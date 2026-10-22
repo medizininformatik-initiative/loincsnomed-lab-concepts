@@ -6,7 +6,7 @@
   "title": "platelets — Quantitative & convertible",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)| against http://snomed.info/sct/11010000107/version/20260321. 15 concepts (15 with LOINC). Review required.",
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)| against http://snomed.info/sct/11010000107/version/20261021. 15 concepts (15 with LOINC). Review required.",
   "compose": {
     "include": [
       {

@@ -36,7 +36,7 @@ LOINC,SCTID,FSN,use_case,reason
 41654-5,539801010000104,Volume fraction of erythrocyte to venous blood in venous blood at point in time by calculation (observable entity),quantitative,Quantitative scale
 41655-2,539811010000101,Volume fraction of erythrocyte in mixed venous blood at point in time by calculation (observable entity),quantitative,Quantitative scale
 42908-4,552361010000103,Volume fraction of erythrocyte in capillary blood at point in time by calculation (observable entity),quantitative,Quantitative scale
-43245-0,274641010000107,Number concentration of erythrocyte in seminal fluid at point in time by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
+43245-0,274641010000107,Number concentration of erythrocyte in semen sample at point in time by light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
 43416-7,554311010000109,Volume fraction of erythrocyte in ^Stem cell product at point in time by calculation (observable entity),quantitative,Quantitative scale
 44242-6,177231010000109,Number areic of erythrocyte in vagina at point in time by wet preparation (observable entity),quantitative,Quantitative scale
 4544-3,558261010000109,Volume fraction of erythrocyte to blood in blood at point in time by automated count (observable entity),quantitative,Quantitative scale
@@ -57,7 +57,7 @@ LOINC,SCTID,FSN,use_case,reason
 57842-7,206081010000108,Number concentration of erythrocyte in pericardial fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 57843-5,128641010000103,Number concentration of erythrocyte in peritoneal fluid at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 5808-1,86471010000106,Number concentration of erythrocyte in urine sediment at point in time by high power field light microscopy (observable entity),quantitative_convertible,Quantitative scale + concentration property
-58767-5,76841010000107,Number areic of erythrocyte in seminal fluid at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
+58767-5,76841010000107,Number areic of erythrocyte in semen sample at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
 62240-7,93071010000109,Number concentration of erythrocyte in Bld^Fetus at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 62241-5,602551010000109,Volume fraction of erythrocyte in Bld^Fetus at point in time by automated count (observable entity),quantitative,Quantitative scale
 6741-3,183111010000108,Number concentration of erythrocyte in body fluid at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property

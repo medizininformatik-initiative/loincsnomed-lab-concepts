@@ -6,7 +6,7 @@
   "title": "psa — Quantitative (all numeric)",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)| against http://snomed.info/sct/11010000107/version/20260321. 36 concepts (36 with LOINC). Review required.",
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)| against http://snomed.info/sct/11010000107/version/20261021. 36 concepts (36 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -38,7 +38,7 @@
           },
           {
             "code": "109229-5",
-            "display": "Measurement of free prostate specific antigen in seminal fluid (observable entity)"
+            "display": "Measurement of free prostate specific antigen in semen sample (observable entity)"
           },
           {
             "code": "110243-3",
@@ -46,7 +46,7 @@
           },
           {
             "code": "109230-3",
-            "display": "Measurement of prostate specific antigen in seminal fluid (observable entity)"
+            "display": "Measurement of prostate specific antigen in semen sample (observable entity)"
           },
           {
             "code": "110671-5",
@@ -54,7 +54,7 @@
           },
           {
             "code": "19204-7",
-            "display": "Arbitrary concentration of free prostate specific antigen in seminal fluid at point in time (observable entity)"
+            "display": "Arbitrary concentration of free prostate specific antigen in semen sample at point in time (observable entity)"
           },
           {
             "code": "19201-3",
@@ -62,7 +62,7 @@
           },
           {
             "code": "19198-1",
-            "display": "Arbitrary concentration of prostate specific antigen in seminal fluid at point in time (observable entity)"
+            "display": "Arbitrary concentration of prostate specific antigen in semen sample at point in time (observable entity)"
           },
           {
             "code": "19195-7",
@@ -86,7 +86,7 @@
           },
           {
             "code": "19205-4",
-            "display": "Mass concentration of free prostate specific antigen in seminal fluid at point in time (observable entity)"
+            "display": "Mass concentration of free prostate specific antigen in semen sample at point in time (observable entity)"
           },
           {
             "code": "10886-0",
@@ -118,7 +118,7 @@
           },
           {
             "code": "19199-9",
-            "display": "Mass concentration of prostate specific antigen in seminal fluid at point in time (observable entity)"
+            "display": "Mass concentration of prostate specific antigen in semen sample at point in time (observable entity)"
           },
           {
             "code": "2857-1",
@@ -142,7 +142,7 @@
           },
           {
             "code": "19206-2",
-            "display": "Substance concentration of free prostate specific antigen in seminal fluid at point in time (observable entity)"
+            "display": "Substance concentration of free prostate specific antigen in semen sample at point in time (observable entity)"
           },
           {
             "code": "19203-9",
@@ -150,7 +150,7 @@
           },
           {
             "code": "19200-5",
-            "display": "Substance concentration of prostate specific antigen in seminal fluid at point in time (observable entity)"
+            "display": "Substance concentration of prostate specific antigen in semen sample at point in time (observable entity)"
           },
           {
             "code": "19197-3",

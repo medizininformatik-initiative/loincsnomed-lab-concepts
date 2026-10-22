@@ -1,115 +1,115 @@
 LOINC,SCTID,FSN,use_case,reason
-104738-0,824631010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-12503-9,828341010000100,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-12504-7,828351010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14563-1,829271010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14564-9,829281010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14565-6,829291010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-17871-5,142841010000103,Presence of hemoglobin H in blood at point in time by heat denaturation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-18277-4,260071010000106,Presence of hemoglobin F in gastric fluid at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-18278-2,200711010000102,Presence of hemoglobin F in meconium at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2334-1,832611010000109,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2335-8,832621010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2613-8,112391010000106,Presence of methemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2619-5,225921010000105,Presence of methemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27345-8,60841010000102,Presence of hemoglobin A>2< in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27401-9,833961010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27925-7,834041010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27926-5,834051010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-28006-5,275921010000109,Presence of hemoglobin F in vomitus at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-28067-7,163791010000102,Presence of hemoglobin F in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-28559-3,139351010000104,Presence of hemoglobin A>2< in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-29771-3,834201010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-30074-9,153791010000108,Presence of hemoglobin F in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-32140-6,193571010000105,Presence of hemoglobin F in blood at point in time by Kleihauer-Betke (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-32160-4,55371010000103,Presence of carboxyhemoglobin in blood at point in time by screening (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-33517-4,113801010000100,Presence of hemoglobin in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-34618-9,145031010000105,Presence of hemoglobin in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-34663-5,120571010000107,Presence of hemoglobin S in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-40545-6,124791010000109,Presence of hemoglobin C in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-40546-4,136681010000108,Presence of hemoglobin E in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-40547-2,54061010000105,Presence of hemoglobin H in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-40720-5,238701010000109,Presence of hemoglobin C in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-40721-3,154451010000107,Presence of hemoglobin F in specimen at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-41619-8,262101010000102,Presence of unstable hemoglobin in erythrocyte at point in time by isopropanol stability (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42909-2,839561010000104,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42910-0,839571010000109,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42911-8,839581010000107,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42912-6,839591010000105,Presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42913-4,839601010000104,Presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-45208-6,203541010000104,Presence of hemoglobin A in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4556-7,118861010000105,Presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4557-5,66791010000102,Presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4558-3,178681010000106,Presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4559-1,97001010000108,Presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4560-9,139861010000109,Presence of Hemoglobin Bethesda in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4564-1,48591010000103,Presence of hemoglobin C-Harlem in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4565-8,169541010000103,Presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4566-6,96801010000103,Presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4567-4,277581010000105,Presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4568-2,188201010000108,Presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4572-4,134051010000100,Presence of hemoglobin Denver in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4577-3,742411010000108,Presence of hemoglobin F-Texas in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4579-9,81981010000106,Presence of hemoglobin F in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4581-5,45561010000101,Presence of hemoglobin G-Coushatta in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4583-1,124041010000100,Presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4584-9,156971010000104,Presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4585-6,117971010000108,Presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4586-4,60121010000103,Presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4589-8,49491010000106,Presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4590-6,47111010000104,Presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4591-4,127271010000108,Presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4592-2,156351010000108,Presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4593-0,252421010000106,Presence of hemoglobin I in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4594-8,93551010000105,Presence of hemoglobin I in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4595-5,95121010000105,Presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4596-3,127571010000106,Presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4597-1,269741010000108,Presence of hemoglobin J-Cape Town in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4598-9,175971010000108,Presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4599-7,195901010000107,Presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4600-3,243751010000103,Presence of Hemoglobin Kansas in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4601-1,107061010000101,Presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4602-9,207471010000100,Presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4603-7,129191010000109,Presence of Hemoglobin Köln in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4604-5,227821010000105,Presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4605-2,253871010000102,Presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4606-0,244711010000101,Presence of hemoglobin M-Boston in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4607-8,215341010000108,Presence of hemoglobin M-Hyde Park in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4608-6,213931010000100,Presence of hemoglobin M-Iwate in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4610-2,51991010000103,Presence of hemoglobin M-Saskatoon in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4611-0,152381010000101,Presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4612-8,46821010000103,Presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4613-6,129421010000100,Presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4614-4,50431010000101,Presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4615-1,200431010000102,Presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4616-9,88721010000103,Presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4617-7,136811010000102,Presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4618-5,250251010000104,Presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4619-3,178431010000107,Presence of Hemoglobin Rainier in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4621-9,231821010000103,Presence of hemoglobin S in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4622-7,250371010000100,Presence of hemoglobin S in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4623-5,40691010000102,Presence of hemoglobin S in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4626-8,204551010000100,Presence of Hemoglobin Yakima in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4627-6,56931010000105,Presence of Hemoglobin Yoshizuka in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4628-4,119491010000105,Presence of Hemoglobin Ypsilanti in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4629-2,65511010000108,Presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4630-0,97401010000103,Presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4631-8,267521010000101,Presence of hemoglobin F in stool at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4632-6,244091010000107,Presence of hemoglobin F in blood at point in time by alkali denat (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4639-1,105601010000102,Presence of unstable hemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-4684-7,277211010000102,Presence of sulfhemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-48035-0,141941010000104,Presence of hemoglobin in cerebrospinal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-48047-5,842371010000105,Presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-50017-3,844281010000109,Presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-53117-8,243681010000100,Presence of thermolabile hemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-53224-2,54021010000101,Presence of hemoglobin M in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-55783-5,68661010000102,Presence of Hemoglobin Bart in blood at point in time by high pressure liquid chromatography (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-56490-6,848171010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-56491-4,848181010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-57751-0,43271010000109,Presence of hemoglobin in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-57905-2,848921010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-5794-3,246811010000100,Presence of hemoglobin in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-6864-3,108861010000107,Presence of hemoglobin S in blood at point in time by solubility test (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-717-9,186111010000103,Presence of hemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-725-2,111791010000102,Presence of hemoglobin in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-80372-6,855941010000107,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+104738-0,824631010000108,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12503-9,828341010000100,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12504-7,828351010000103,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14563-1,829271010000108,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14564-9,829281010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14565-6,829291010000109,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+17871-5,142841010000103,Threshold presence of hemoglobin H in blood at point in time by heat denaturation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+18277-4,260071010000106,Threshold presence of hemoglobin F in gastric fluid at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+18278-2,200711010000102,Threshold presence of hemoglobin F in meconium at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2334-1,832611010000109,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2335-8,832621010000103,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2613-8,112391010000106,Threshold presence of methemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2619-5,225921010000105,Threshold presence of methemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27345-8,60841010000102,Threshold presence of hemoglobin A>2< in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27401-9,833961010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27925-7,834041010000109,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27926-5,834051010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+28006-5,275921010000109,Threshold presence of hemoglobin F in vomitus at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+28067-7,163791010000102,Threshold presence of hemoglobin F in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+28559-3,139351010000104,Threshold presence of hemoglobin A>2< in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+29771-3,834201010000103,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+30074-9,153791010000108,Threshold presence of hemoglobin F in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32140-6,193571010000105,Threshold presence of hemoglobin F in blood at point in time by Kleihauer-Betke (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32160-4,55371010000103,Threshold presence of carboxyhemoglobin in blood at point in time by screening (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33517-4,113801010000100,Threshold presence of hemoglobin in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34618-9,145031010000105,Threshold presence of hemoglobin in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34663-5,120571010000107,Threshold presence of hemoglobin S in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40545-6,124791010000109,Threshold presence of hemoglobin C in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40546-4,136681010000108,Threshold presence of hemoglobin E in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40547-2,54061010000105,Threshold presence of hemoglobin H in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40720-5,238701010000109,Threshold presence of hemoglobin C in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+40721-3,154451010000107,Threshold presence of hemoglobin F in specimen at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+41619-8,262101010000102,Threshold presence of unstable hemoglobin in erythrocyte at point in time by isopropanol stability (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42909-2,839561010000104,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42910-0,839571010000109,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42911-8,839581010000107,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42912-6,839591010000105,Threshold presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42913-4,839601010000104,Threshold presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+45208-6,203541010000104,Threshold presence of hemoglobin A in blood at point in time by electrophoresis (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4556-7,118861010000105,Threshold presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4557-5,66791010000102,Threshold presence of Hemoglobin Abruzzo in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4558-3,178681010000106,Threshold presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4559-1,97001010000108,Threshold presence of Hemoglobin Bart in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4560-9,139861010000109,Threshold presence of Hemoglobin Bethesda in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4564-1,48591010000103,Threshold presence of hemoglobin C-Harlem in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4565-8,169541010000103,Threshold presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4566-6,96801010000103,Threshold presence of Hemoglobin Chesapeake in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4567-4,277581010000105,Threshold presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4568-2,188201010000108,Threshold presence of Hemoglobin Constant Springs in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4572-4,134051010000100,Threshold presence of hemoglobin Denver in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4577-3,742411010000108,Threshold presence of hemoglobin F-Texas in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4579-9,81981010000106,Threshold presence of hemoglobin F in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4581-5,45561010000101,Threshold presence of hemoglobin G-Coushatta in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4583-1,124041010000100,Threshold presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4584-9,156971010000104,Threshold presence of hemoglobin G-Georgia in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4585-6,117971010000108,Threshold presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4586-4,60121010000103,Threshold presence of hemoglobin G-Philadelphia in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4589-8,49491010000106,Threshold presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4590-6,47111010000104,Threshold presence of Hemoglobin Hasharon in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4591-4,127271010000108,Threshold presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4592-2,156351010000108,Threshold presence of Hemoglobin Hope in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4593-0,252421010000106,Threshold presence of hemoglobin I in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4594-8,93551010000105,Threshold presence of hemoglobin I in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4595-5,95121010000105,Threshold presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4596-3,127571010000106,Threshold presence of hemoglobin J-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4597-1,269741010000108,Threshold presence of hemoglobin J-Cape Town in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4598-9,175971010000108,Threshold presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4599-7,195901010000107,Threshold presence of hemoglobin I-Interlaken in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4600-3,243751010000103,Threshold presence of Hemoglobin Kansas in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4601-1,107061010000101,Threshold presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4602-9,207471010000100,Threshold presence of hemoglobin Kempsey in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4603-7,129191010000109,Threshold presence of Hemoglobin Köln in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4604-5,227821010000105,Threshold presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4605-2,253871010000102,Threshold presence of Hemoglobin Lepore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4606-0,244711010000101,Threshold presence of hemoglobin M-Boston in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4607-8,215341010000108,Threshold presence of hemoglobin M-Hyde Park in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4608-6,213931010000100,Threshold presence of hemoglobin M-Iwate in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4610-2,51991010000103,Threshold presence of hemoglobin M-Saskatoon in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4611-0,152381010000101,Threshold presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4612-8,46821010000103,Threshold presence of Hemoglobin Malmo in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4613-6,129421010000100,Threshold presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4614-4,50431010000101,Threshold presence of hemoglobin N-Baltimore in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4615-1,200431010000102,Threshold presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4616-9,88721010000103,Threshold presence of hemoglobin N-Seattle in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4617-7,136811010000102,Threshold presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4618-5,250251010000104,Threshold presence of hemoglobin O-Arab in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4619-3,178431010000107,Threshold presence of Hemoglobin Rainier in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4621-9,231821010000103,Threshold presence of hemoglobin S in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4622-7,250371010000100,Threshold presence of hemoglobin S in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4623-5,40691010000102,Threshold presence of hemoglobin S in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4626-8,204551010000100,Threshold presence of Hemoglobin Yakima in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4627-6,56931010000105,Threshold presence of Hemoglobin Yoshizuka in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4628-4,119491010000105,Threshold presence of Hemoglobin Ypsilanti in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4629-2,65511010000108,Threshold presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 6.3 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4630-0,97401010000103,Threshold presence of Hemoglobin Zürich in blood at point in time by electrophoresis pH 8.9 (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4631-8,267521010000101,Threshold presence of hemoglobin F in stool at point in time by Apt-Downey (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4632-6,244091010000107,Threshold presence of hemoglobin F in blood at point in time by alkali denat (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4639-1,105601010000102,Threshold presence of unstable hemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+4684-7,277211010000102,Threshold presence of sulfhemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48035-0,141941010000104,Threshold presence of hemoglobin in cerebrospinal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48047-5,842371010000105,Threshold presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+50017-3,844281010000109,Threshold presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53117-8,243681010000100,Threshold presence of thermolabile hemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53224-2,54021010000101,Threshold presence of hemoglobin M in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+55783-5,68661010000102,Threshold presence of Hemoglobin Bart in blood at point in time by high pressure liquid chromatography (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+56490-6,848171010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+56491-4,848181010000109,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57751-0,43271010000109,Threshold presence of hemoglobin in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57905-2,848921010000108,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+5794-3,246811010000100,Threshold presence of hemoglobin in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+6864-3,108861010000107,Threshold presence of hemoglobin S in blood at point in time by solubility test (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+717-9,186111010000103,Threshold presence of hemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+725-2,111791010000102,Threshold presence of hemoglobin in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+80372-6,855941010000107,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative

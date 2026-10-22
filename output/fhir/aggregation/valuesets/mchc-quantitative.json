@@ -6,7 +6,7 @@
   "title": "mchc — Quantitative (all numeric)",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 521371010000101 |Mean cell hemoglobin concentration (observable entity)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (2 with LOINC). Review required.",
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 521371010000101 |Mean cell hemoglobin concentration (observable entity)| against http://snomed.info/sct/11010000107/version/20261021. 2 concepts (2 with LOINC). Review required.",
   "compose": {
     "include": [
       {

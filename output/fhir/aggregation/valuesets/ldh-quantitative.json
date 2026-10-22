@@ -6,7 +6,7 @@
   "title": "ldh — Quantitative (all numeric)",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against http://snomed.info/sct/11010000107/version/20260321. 77 concepts (77 with LOINC). Review required.",
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against http://snomed.info/sct/11010000107/version/20261021. 77 concepts (77 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -238,7 +238,7 @@
           },
           {
             "code": "57664-5",
-            "display": "Catalytic concentration of lactate dehydrogenase in seminal fluid at point in time (observable entity)"
+            "display": "Catalytic concentration of lactate dehydrogenase in semen sample at point in time (observable entity)"
           },
           {
             "code": "2532-0",

@@ -6,12 +6,12 @@
   "title": "WBC differential (panel)",
   "status": "draft",
   "experimental": true,
-  "description": "WBC differential (panel) (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "description": "WBC differential (panel) (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "concept": [
           {
             "code": "376201000119106",
@@ -25,7 +25,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

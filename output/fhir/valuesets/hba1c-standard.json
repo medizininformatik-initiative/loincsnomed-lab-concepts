@@ -6,7 +6,7 @@
   "title": "HbA1c in blood",
   "status": "draft",
   "experimental": true,
-  "description": "HbA1c in blood (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20260321; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "description": "HbA1c in blood (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -22,7 +22,7 @@
           },
           {
             "code": "59261-8",
-            "display": "Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity)"
+            "display": "Substance fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time standardized per IFCC-RMP for CDT (observable entity)"
           },
           {
             "code": "4549-2",
@@ -48,7 +48,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

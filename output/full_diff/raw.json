@@ -1,34 +1,34 @@
 {
   "targets": [
     {
-      "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
-      "branch": "MAIN/LOINC/2025-09-21",
-      "effective": "20250921",
-      "name": "public-2025-09-21"
-    },
-    {
-      "api_base": "http://localhost:8090",
+      "api_base": "http://localhost:8093",
       "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
       "effective": "20260321",
+      "_note": "baseline read from the v1.2.0 image (same server as current); production :8090 also has this branch",
       "name": "local-2026-03-21"
+    },
+    {
+      "api_base": "http://localhost:8093",
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-10-21",
+      "effective": "20261021",
+      "name": "local-2026-10-21"
     }
   ],
   "counts": {
-    "active_A": 416815,
-    "active_B": 423857,
-    "only_A": 1539,
-    "only_B": 8581,
-    "both": 415276,
-    "fsn_changed": 2655
+    "active_A": 423857,
+    "active_B": 430542,
+    "only_A": 737,
+    "only_B": 7422,
+    "both": 423120,
+    "fsn_changed": 12663
   },
   "removed_by_module": {
-    "900000000000207008": 1528,
-    "11010000107": 10,
-    "900000000000012004": 1
+    "900000000000207008": 734,
+    "11010000107": 3
   },
   "added_by_module": {
-    "900000000000207008": 4712,
-    "11010000107": 3862,
-    "900000000000012004": 7
+    "900000000000207008": 5435,
+    "11010000107": 1972,
+    "900000000000012004": 15
   }
 }

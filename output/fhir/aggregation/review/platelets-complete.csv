@@ -1,5 +1,5 @@
 LOINC,SCTID,FSN,use_case,reason
-104705-9,483341010000106,Presence of platelet in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+104705-9,483341010000106,Threshold presence of platelet in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
 107193-5,487891010000102,Number concentration of platelet in blood at point in time by automated count in presence of EDTA to detect possible clumping (observable entity),quantitative_convertible,Quantitative scale + concentration property
 111353-9,732051010000102,Measurement of platelet in blood (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
 13056-7,71831010000107,Number concentration of platelet in plasma at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
@@ -16,5 +16,5 @@ LOINC,SCTID,FSN,use_case,reason
 777-3,218801010000106,Number concentration of platelet in blood at point in time by automated count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 778-1,268771010000105,Number concentration of platelet in blood at point in time by manual count (observable entity),quantitative_convertible,Quantitative scale + concentration property
 79427-1,190041010000101,Number areic of platelet in blood at point in time by high power field light microscopy (observable entity),quantitative,Quantitative scale
-9317-9,232631010000108,Presence of platelet in blood at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+9317-9,232631010000108,Threshold presence of platelet in blood at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
 97995-5,56141010000104,Number concentration of platelet in blood at point in time by automated count.optical (observable entity),quantitative_convertible,Quantitative scale + concentration property

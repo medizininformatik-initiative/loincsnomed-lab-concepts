@@ -6,12 +6,12 @@
   "title": "leukocytes — Panel / order code (no Property)",
   "status": "draft",
   "experimental": true,
-  "description": "Panel / order code (no Property): Observable with a Component but NO Property attribute (often + Technique only, e.g. 'Differential count of white blood cells'). Structurally an order / battery code that resolves into several component results — NOT a single measurable value. Excluded from result-aggregation ValueSets; handle via panel expansion. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 2 concepts (0 with LOINC). Review required.",
+  "description": "Panel / order code (no Property): Observable with a Component but NO Property attribute (often + Technique only, e.g. 'Differential count of white blood cells'). Structurally an order / battery code that resolves into several component results — NOT a single measurable value. Excluded from result-aggregation ValueSets; handle via panel expansion. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against http://snomed.info/sct/11010000107/version/20261021. 2 concepts (0 with LOINC). Review required.",
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "concept": [
           {
             "code": "375911000119106",

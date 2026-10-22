@@ -138,7 +138,7 @@ LOINC,SCTID,FSN,use_case,reason
 58453-2,849041010000107,Mass concentration of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),quantitative_convertible,Quantitative scale + concentration property
 5913-9,598581010000108,Mass fraction of hemoglobin F to hemoglobin.total in amniotic fluid at point in time (observable entity),quantitative,Quantitative scale
 59260-0,214131010000101,Substance concentration of hemoglobin in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time standardized per IFCC-RMP for CDT (observable entity),quantitative,Quantitative scale
 59468-9,599241010000109,Entitic amount of substance of hemoglobin in erythrocyte at point in time (observable entity),quantitative,Quantitative scale
 61180-6,91561010000106,Mass concentration of hemoglobin in Bld^Fetus at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 62243-1,602571010000101,Entitic mass of hemoglobin in RBC^Fetus at point in time by automated count (observable entity),quantitative,Quantitative scale

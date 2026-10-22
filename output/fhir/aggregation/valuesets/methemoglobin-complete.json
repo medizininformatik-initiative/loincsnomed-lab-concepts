@@ -6,7 +6,7 @@
   "title": "methemoglobin — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20260321. 17 concepts (17 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20261021. 17 concepts (17 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,11 +14,11 @@
         "concept": [
           {
             "code": "2613-8",
-            "display": "Presence of methemoglobin in blood at point in time (observable entity)"
+            "display": "Threshold presence of methemoglobin in blood at point in time (observable entity)"
           },
           {
             "code": "2619-5",
-            "display": "Presence of methemoglobin in erythrocyte at point in time (observable entity)"
+            "display": "Threshold presence of methemoglobin in erythrocyte at point in time (observable entity)"
           },
           {
             "code": "4534-4",
@@ -84,7 +84,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

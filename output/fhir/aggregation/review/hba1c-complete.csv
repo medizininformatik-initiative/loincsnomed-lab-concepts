@@ -4,7 +4,7 @@ LOINC,SCTID,FSN,use_case,reason
 41995-2,43401010000104,Mass concentration of glycated hemoglobin-A1c in blood at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 4548-4,558301010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
 4549-2,558311010000104,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
-59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity),quantitative,Quantitative scale
+59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time standardized per IFCC-RMP for CDT (observable entity),quantitative,Quantitative scale
 62388-4,602671010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by JDS/JSCC (observable entity),quantitative,Quantitative scale
 96595-4,623431010000103,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in dried blood spot at point in time (observable entity),quantitative,Quantitative scale
 ,408591000,Hemoglobin A1c target (observable entity),quantitative_convertible,"Measurement property, no scale asserted (generic) + concentration property"

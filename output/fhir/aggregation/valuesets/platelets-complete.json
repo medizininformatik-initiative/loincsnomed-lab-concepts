@@ -6,7 +6,7 @@
   "title": "platelets — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)| against http://snomed.info/sct/11010000107/version/20260321. 19 concepts (19 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)| against http://snomed.info/sct/11010000107/version/20261021. 19 concepts (19 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,11 +14,11 @@
         "concept": [
           {
             "code": "104705-9",
-            "display": "Presence of platelet in blood at point in time (observable entity)"
+            "display": "Threshold presence of platelet in blood at point in time (observable entity)"
           },
           {
             "code": "9317-9",
-            "display": "Presence of platelet in blood at point in time by light microscopy (observable entity)"
+            "display": "Threshold presence of platelet in blood at point in time by light microscopy (observable entity)"
           },
           {
             "code": "111353-9",
@@ -92,7 +92,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

@@ -1,9 +1,9 @@
 {
   "_doc": "Single source of truth for which LOINC-SNOMED edition the scripts query. 'current' is the edition the ValueSets/profiles are built from; 'previous' is the baseline that compare_versions.py / full_branch_diff.py / build_dashboard.py diff against. Rotate with scripts/update_release.py; read via scripts/targets.py. 'local'/'public' remain CLI aliases for current/previous.",
-  "current": "local-2026-03-21",
-  "previous": "public-2025-09-21",
-  "snomed_version_uri": "http://snomed.info/sct/11010000107/version/20260321",
-  "loinc_identifier_file": "data/loincsnomed_identifiers_20260321.txt",
+  "current": "local-2026-10-21",
+  "previous": "local-2026-03-21",
+  "snomed_version_uri": "http://snomed.info/sct/11010000107/version/20261021",
+  "loinc_identifier_file": "data/loincsnomed_identifiers_20261021.txt",
   "targets": {
     "public-2025-09-21": {
       "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
@@ -11,9 +11,15 @@
       "effective": "20250921"
     },
     "local-2026-03-21": {
-      "api_base": "http://localhost:8090",
+      "api_base": "http://localhost:8093",
       "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
-      "effective": "20260321"
+      "effective": "20260321",
+      "_note": "baseline read from the v1.2.0 image (same server as current); production :8090 also has this branch"
+    },
+    "local-2026-10-21": {
+      "api_base": "http://localhost:8093",
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-10-21",
+      "effective": "20261021"
     }
   }
 }

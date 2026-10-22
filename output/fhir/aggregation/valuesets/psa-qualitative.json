@@ -6,7 +6,7 @@
   "title": "psa — Qualitative (ordinal / nominal / presence)",
   "status": "draft",
   "experimental": true,
-  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)| against http://snomed.info/sct/11010000107/version/20260321. 1 concepts (1 with LOINC). Review required.",
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)| against http://snomed.info/sct/11010000107/version/20261021. 1 concepts (1 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,7 +14,7 @@
         "concept": [
           {
             "code": "10508-0",
-            "display": "Presence of prostate specific antigen in tissue at point in time by immunohistochemistry (observable entity)"
+            "display": "Threshold presence of prostate specific antigen in tissue at point in time by immunohistochemistry (observable entity)"
           }
         ]
       }

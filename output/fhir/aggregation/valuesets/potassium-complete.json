@@ -6,7 +6,7 @@
   "title": "potassium — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)| against http://snomed.info/sct/11010000107/version/20260321. 57 concepts (57 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)| against http://snomed.info/sct/11010000107/version/20261021. 57 concepts (57 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -138,7 +138,7 @@
           },
           {
             "code": "60218-5",
-            "display": "Substance concentration of potassium electrolyte in Mother's milk at point in time (observable entity)"
+            "display": "Substance concentration of potassium electrolyte in mother's milk at point in time (observable entity)"
           },
           {
             "code": "39785-1",
@@ -182,7 +182,7 @@
           },
           {
             "code": "51618-7",
-            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time Pre-dialysis (observable entity)"
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time pre-dialysis (observable entity)"
           },
           {
             "code": "32336-0",
@@ -244,7 +244,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

@@ -1,3 +1,3 @@
 LOINC,SCTID,FSN,use_case,reason
-104705-9,483341010000106,Presence of platelet in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-9317-9,232631010000108,Presence of platelet in blood at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+104705-9,483341010000106,Threshold presence of platelet in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+9317-9,232631010000108,Threshold presence of platelet in blood at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative

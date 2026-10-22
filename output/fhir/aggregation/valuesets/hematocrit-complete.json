@@ -6,7 +6,7 @@
   "title": "hematocrit — Complete aggregation",
   "status": "draft",
   "experimental": true,
-  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 107 concepts (106 with LOINC). Review required.",
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20261021. 107 concepts (106 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -14,67 +14,67 @@
         "concept": [
           {
             "code": "19098-3",
-            "display": "Presence of erythrocyte in amniotic fluid at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in amniotic fluid at point in time (observable entity)"
           },
           {
             "code": "34446-5",
-            "display": "Presence of erythrocyte in body fluid at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in body fluid at point in time (observable entity)"
           },
           {
             "code": "99926-8",
-            "display": "Presence of erythrocyte in body fluid at point in time by automated technique (observable entity)"
+            "display": "Threshold presence of erythrocyte in body fluid at point in time by automated technique (observable entity)"
           },
           {
             "code": "88113-6",
-            "display": "Presence of erythrocyte in cerebrospinal fluid at point in time by Gram stain (observable entity)"
+            "display": "Threshold presence of erythrocyte in cerebrospinal fluid at point in time by Gram stain (observable entity)"
           },
           {
             "code": "68901-8",
-            "display": "Presence of erythrocyte in dialysate at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in dialysate at point in time (observable entity)"
           },
           {
             "code": "38285-3",
-            "display": "Presence of erythrocyte in duodenal fluid at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in duodenal fluid at point in time (observable entity)"
           },
           {
             "code": "72338-7",
-            "display": "Presence of erythrocyte in prostatic fluid at point in time by light microscopy (observable entity)"
+            "display": "Threshold presence of erythrocyte in prostatic fluid at point in time by light microscopy (observable entity)"
           },
           {
             "code": "13627-5",
-            "display": "Presence of erythrocyte in seminal fluid at point in time by light microscopy (observable entity)"
+            "display": "Threshold presence of erythrocyte in semen sample at point in time by light microscopy (observable entity)"
           },
           {
             "code": "72162-1",
-            "display": "Presence of erythrocyte in specimen at point in time by Gram stain (observable entity)"
+            "display": "Threshold presence of erythrocyte in specimen at point in time by Gram stain (observable entity)"
           },
           {
             "code": "70124-3",
-            "display": "Presence of erythrocyte in specimen at point in time by wet preparation (observable entity)"
+            "display": "Threshold presence of erythrocyte in specimen at point in time by wet preparation (observable entity)"
           },
           {
             "code": "33668-5",
-            "display": "Presence of erythrocyte in stool at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in stool at point in time (observable entity)"
           },
           {
             "code": "33051-4",
-            "display": "Presence of erythrocyte in urine at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in urine at point in time (observable entity)"
           },
           {
             "code": "53292-9",
-            "display": "Presence of erythrocyte in urine at point in time by automated technique (observable entity)"
+            "display": "Threshold presence of erythrocyte in urine at point in time by automated technique (observable entity)"
           },
           {
             "code": "105090-5",
-            "display": "Presence of erythrocyte in urine sediment at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in urine sediment at point in time (observable entity)"
           },
           {
             "code": "32776-7",
-            "display": "Presence of erythrocyte in urine sediment at point in time by light microscopy (observable entity)"
+            "display": "Threshold presence of erythrocyte in urine sediment at point in time by light microscopy (observable entity)"
           },
           {
             "code": "48051-7",
-            "display": "Presence of erythrocyte in vagina at point in time (observable entity)"
+            "display": "Threshold presence of erythrocyte in vagina at point in time (observable entity)"
           },
           {
             "code": "109724-5",
@@ -98,7 +98,7 @@
           },
           {
             "code": "58767-5",
-            "display": "Number areic of erythrocyte in seminal fluid at point in time by high power field light microscopy (observable entity)"
+            "display": "Number areic of erythrocyte in semen sample at point in time by high power field light microscopy (observable entity)"
           },
           {
             "code": "75237-8",
@@ -374,7 +374,7 @@
           },
           {
             "code": "43245-0",
-            "display": "Number concentration of erythrocyte in seminal fluid at point in time by light microscopy (observable entity)"
+            "display": "Number concentration of erythrocyte in semen sample at point in time by light microscopy (observable entity)"
           },
           {
             "code": "30389-1",
@@ -440,7 +440,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "concept": [
           {
             "code": "648131000005102",
@@ -450,7 +450,7 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/11010000107/version/20260321",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",

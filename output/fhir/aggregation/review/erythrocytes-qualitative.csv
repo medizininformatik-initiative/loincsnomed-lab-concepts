@@ -1,18 +1,18 @@
 LOINC,SCTID,FSN,use_case,reason
-105090-5,484251010000102,Presence of erythrocyte in urine sediment at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-13627-5,249581010000102,Presence of erythrocyte in seminal fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-19098-3,173061010000103,Presence of erythrocyte in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-32776-7,126891010000108,Presence of erythrocyte in urine sediment at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-33051-4,97361010000106,Presence of erythrocyte in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-33668-5,161961010000107,Presence of erythrocyte in stool at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-34446-5,133031010000108,Presence of erythrocyte in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-38285-3,68521010000107,Presence of erythrocyte in duodenal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-48051-7,153061010000100,Presence of erythrocyte in vagina at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-53292-9,76991010000106,Presence of erythrocyte in urine at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-68901-8,50031010000108,Presence of erythrocyte in dialysate at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-70124-3,217731010000105,Presence of erythrocyte in specimen at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-72162-1,157921010000102,Presence of erythrocyte in specimen at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-72338-7,213861010000101,Presence of erythrocyte in prostatic fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-88113-6,201171010000103,Presence of erythrocyte in cerebrospinal fluid at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-99926-8,221781010000105,Presence of erythrocyte in body fluid at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+105090-5,484251010000102,Threshold presence of erythrocyte in urine sediment at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+13627-5,249581010000102,Threshold presence of erythrocyte in semen sample at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+19098-3,173061010000103,Threshold presence of erythrocyte in amniotic fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32776-7,126891010000108,Threshold presence of erythrocyte in urine sediment at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33051-4,97361010000106,Threshold presence of erythrocyte in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33668-5,161961010000107,Threshold presence of erythrocyte in stool at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34446-5,133031010000108,Threshold presence of erythrocyte in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+38285-3,68521010000107,Threshold presence of erythrocyte in duodenal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48051-7,153061010000100,Threshold presence of erythrocyte in vagina at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53292-9,76991010000106,Threshold presence of erythrocyte in urine at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+68901-8,50031010000108,Threshold presence of erythrocyte in dialysate at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+70124-3,217731010000105,Threshold presence of erythrocyte in specimen at point in time by wet preparation (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+72162-1,157921010000102,Threshold presence of erythrocyte in specimen at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+72338-7,213861010000101,Threshold presence of erythrocyte in prostatic fluid at point in time by light microscopy (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+88113-6,201171010000103,Threshold presence of erythrocyte in cerebrospinal fluid at point in time by Gram stain (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+99926-8,221781010000105,Threshold presence of erythrocyte in body fluid at point in time by automated technique (observable entity),qualitative,Ordinal/Nominal scale → qualitative
 ,648131000005102,Presence of erythrocytes in urine (observable entity),qualitative,Presence property → qualitative

@@ -6,7 +6,7 @@
   "title": "potassium — Quantitative (all numeric)",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)| against http://snomed.info/sct/11010000107/version/20260321. 57 concepts (57 with LOINC). Review required.",
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)| against http://snomed.info/sct/11010000107/version/20261021. 57 concepts (57 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -138,7 +138,7 @@
           },
           {
             "code": "60218-5",
-            "display": "Substance concentration of potassium electrolyte in Mother's milk at point in time (observable entity)"
+            "display": "Substance concentration of potassium electrolyte in mother's milk at point in time (observable entity)"
           },
           {
             "code": "39785-1",
@@ -182,7 +182,7 @@
           },
           {
             "code": "51618-7",
-            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time Pre-dialysis (observable entity)"
+            "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time pre-dialysis (observable entity)"
           },
           {
             "code": "32336-0",

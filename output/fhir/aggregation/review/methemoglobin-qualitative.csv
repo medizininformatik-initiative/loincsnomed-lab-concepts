@@ -1,3 +1,3 @@
 LOINC,SCTID,FSN,use_case,reason
-2613-8,112391010000106,Presence of methemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2619-5,225921010000105,Presence of methemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2613-8,112391010000106,Threshold presence of methemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2619-5,225921010000105,Threshold presence of methemoglobin in erythrocyte at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative

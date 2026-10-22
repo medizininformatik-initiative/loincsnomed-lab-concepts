@@ -1,16 +1,17 @@
 {
   "targets": [
     {
-      "api_base": "http://browser.loincsnomed.org/snowstorm/snomed-ct",
-      "branch": "MAIN/LOINC/2025-09-21",
-      "effective": "20250921",
-      "name": "public-2025-09-21"
-    },
-    {
-      "api_base": "http://localhost:8090",
+      "api_base": "http://localhost:8093",
       "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
       "effective": "20260321",
+      "_note": "baseline read from the v1.2.0 image (same server as current); production :8090 also has this branch",
       "name": "local-2026-03-21"
+    },
+    {
+      "api_base": "http://localhost:8093",
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-10-21",
+      "effective": "20261021",
+      "name": "local-2026-10-21"
     }
   ],
   "rows": [
@@ -20,11 +21,11 @@
       "query_name": "Refined Query V2 (Universal Measurement Property)",
       "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|",
       "per_target": {
-        "public-2025-09-21": {
+        "local-2026-03-21": {
           "total": 14,
           "error": null
         },
-        "local-2026-03-21": {
+        "local-2026-10-21": {
           "total": 14,
           "error": null
         }
@@ -41,21 +42,19 @@
       "query_name": "Refined Query V2 (Excl. Ratio)",
       "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|",
       "per_target": {
-        "public-2025-09-21": {
-          "total": 13,
+        "local-2026-03-21": {
+          "total": 14,
           "error": null
         },
-        "local-2026-03-21": {
+        "local-2026-10-21": {
           "total": 14,
           "error": null
         }
       },
       "diff": {
         "only_in_a": [],
-        "only_in_b": [
-          "491361010000107"
-        ],
-        "in_both": 13
+        "only_in_b": [],
+        "in_both": 14
       }
     },
     {
@@ -64,19 +63,17 @@
       "query_name": "Refined Query V2 (Ratio Properties)",
       "ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118586006 |Ratio (property) (qualifier value)|",
       "per_target": {
-        "public-2025-09-21": {
-          "total": 1,
+        "local-2026-03-21": {
+          "total": 0,
           "error": null
         },
-        "local-2026-03-21": {
+        "local-2026-10-21": {
           "total": 0,
           "error": null
         }
       },
       "diff": {
-        "only_in_a": [
-          "491361010000107"
-        ],
+        "only_in_a": [],
         "only_in_b": [],
         "in_both": 0
       }

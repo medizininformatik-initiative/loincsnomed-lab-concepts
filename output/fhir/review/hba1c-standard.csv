@@ -1,7 +1,7 @@
 LOINC,SCTID,FSN,tier,test
 96595-4,623431010000103,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in dried blood spot at point in time (observable entity),standard,hba1c-standard
 62388-4,602671010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by JDS/JSCC (observable entity),standard,hba1c-standard
-59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c standardized per IFCC-RMP for CDT to hemoglobin.total in blood at point in time (observable entity),standard,hba1c-standard
+59261-8,598941010000105,Substance fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time standardized per IFCC-RMP for CDT (observable entity),standard,hba1c-standard
 4549-2,558311010000104,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by electrophoresis (observable entity),standard,hba1c-standard
 4548-4,558301010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time (observable entity),standard,hba1c-standard
 17856-6,501101010000102,Mass fraction of glycated hemoglobin-A1c to hemoglobin.total in blood at point in time by high pressure liquid chromatography (observable entity),standard,hba1c-standard

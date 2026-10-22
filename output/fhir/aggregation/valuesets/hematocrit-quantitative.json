@@ -6,7 +6,7 @@
   "title": "hematocrit — Quantitative (all numeric)",
   "status": "draft",
   "experimental": true,
-  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20260321. 88 concepts (88 with LOINC). Review required.",
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against http://snomed.info/sct/11010000107/version/20261021. 88 concepts (88 with LOINC). Review required.",
   "compose": {
     "include": [
       {
@@ -34,7 +34,7 @@
           },
           {
             "code": "58767-5",
-            "display": "Number areic of erythrocyte in seminal fluid at point in time by high power field light microscopy (observable entity)"
+            "display": "Number areic of erythrocyte in semen sample at point in time by high power field light microscopy (observable entity)"
           },
           {
             "code": "75237-8",
@@ -310,7 +310,7 @@
           },
           {
             "code": "43245-0",
-            "display": "Number concentration of erythrocyte in seminal fluid at point in time by light microscopy (observable entity)"
+            "display": "Number concentration of erythrocyte in semen sample at point in time by light microscopy (observable entity)"
           },
           {
             "code": "30389-1",

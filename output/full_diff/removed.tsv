@@ -1,1540 +1,738 @@
 conceptId	fsn_A	moduleId_A
-1004085005	Injection of filling material into eyelid (procedure)	900000000000207008
-1010454006	Retrograde pyelography of left renal pelvis with contrast (procedure)	900000000000207008
-1010455007	Retrograde pyelography of right renal pelvis with contrast (procedure)	900000000000207008
-102784005	Beta-N-acetylhexosaminidase A (substance)	900000000000207008
-102785006	Beta-N-acetylhexosaminidase B (substance)	900000000000207008
-102863008	Urinary crystal, magnesium ammonium phosphate (finding)	900000000000207008
-102931001	Fear of heart attack (finding)	900000000000207008
-103062007	Ectopic chorionic gonadotropin secretion (substance)	900000000000207008
-103534005	Coccidian parasite (navigational concept)	900000000000207008
-10354000	Somantin (substance)	900000000000207008
-104077008	Blood product reservation, release, transfusion or disposition (navigational concept)	900000000000207008
-104497009	Allo-tetrahydrocortisol measurement (procedure)	900000000000207008
-104683007	Gastrin challenge tests (procedure)	900000000000207008
-105448009	Sickness in family (finding)	900000000000207008
-105506000	Dependence on seeing eye dog (finding)	900000000000207008
-105951006	Proprietary agent AND/OR biological substance (navigational concept)	900000000000207008
-105962006	Noninfectious, vesicular AND/OR bullous disease (navigational concept)	900000000000207008
-105963001	Noninfectious, erythematous, papular AND/OR squamous disease (navigational concept)	900000000000207008
-105966009	Tumor-like lesion of skin (navigational concept)	900000000000207008
-106174000	Function AND/OR dysfunction of axon (navigational concept)	900000000000207008
-106191001	Response to immunization AND/OR skin test (navigational concept)	900000000000207008
-106220000	Genetic, molecular AND/OR cellular finding (navigational concept)	900000000000207008
-106223003	Common eye AND/OR eyelid symptom (navigational concept)	900000000000207008
-10629031000119100	Acute lymphadenitis of neck (disorder)	900000000000207008
-10692681000119108	Aspirin exacerbated respiratory disease (disorder)	900000000000207008
-10729003	Smoker's respiratory syndrome (disorder)	900000000000207008
-10732000	Genus Endomycopsis (organism)	900000000000207008
-107881000119100	Advanced collapse of scapholunate joint due to osteoarthritis (disorder)	900000000000207008
-108239002	Blood procedure AND/OR transfusion (navigational concept)	900000000000207008
-108269009	Drug monitoring procedure AND/OR toxicology screen (navigational concept)	900000000000207008
-108270005	Specific drug AND/OR toxicology test (navigational concept)	900000000000207008
-108327007	Home care AND/OR social service (navigational concept)	900000000000207008
-108333003	Smoking/drinking/substance abuse habits (navigational concept)	900000000000207008
-109006	Anxiety disorder of childhood OR adolescence (disorder)	900000000000207008
-109427000	Supracristal ventricular septal defect (disorder)	900000000000207008
-110544004	Upper respiratory fluids and spaces (navigational concept)	900000000000207008
-111473009	Transient neonatal hematological disorder (navigational concept)	900000000000207008
-111770008	Poisoning by water AND/OR mineral metabolism drug (navigational concept)	900000000000207008
-111774004	Toxic effect of nonpetroleum-based solvent (navigational concept)	900000000000207008
-111845000	Tick-borne hemorrhagic fever (navigational concept)	900000000000207008
-111847008	Mosquito-borne hemorrhagic fever (navigational concept)	900000000000207008
-112274002	Bacillus pulvifaciens (organism)	900000000000207008
-113400004	Actinomadura glomerata (organism)	900000000000207008
-113404008	Actinomadura longicatena (organism)	900000000000207008
-113427000	Anaerovibrio burkinabensis (organism)	900000000000207008
-113428005	Anaerovibrio glycerini (organism)	900000000000207008
-113456000	Bacillus dipsosauri (organism)	900000000000207008
-113457009	Bacillus ehimensis (organism)	900000000000207008
-113464006	Bacillus halodenitrificans (organism)	900000000000207008
-113469001	Bacillus kaustophilus (organism)	900000000000207008
-113478007	Bacillus salexigens (organism)	900000000000207008
-113482009	Bacillus thermocatenulatus (organism)	900000000000207008
-113488008	Bifidobacterium denticolens (organism)	900000000000207008
-113489000	Bifidobacterium inopinatum (organism)	900000000000207008
-113490009	Bifidobacterium lactis (organism)	900000000000207008
-113493006	Bifidobacterium ruminatium (organism)	900000000000207008
-113660007	Amycolatopsis orientalis ss orientalis (organism)	900000000000207008
-113661006	Amycolatopsis rugosa (organism)	900000000000207008
-113707000	Shewanella geldimarina (organism)	900000000000207008
-113712004	Roseomonas fauriae (organism)	900000000000207008
-113907005	Peptostreptococcus harei (organism)	900000000000207008
-113908000	Peptostreptococcus ivorii (organism)	900000000000207008
-113945006	Ruminococcus palsutris (organism)	900000000000207008
-113948008	Selenomonas acidaminovorans (organism)	900000000000207008
-113974002	Staphylococcus schleiferi subspecies coagulans (organism)	900000000000207008
-114006005	Thermoactinomyces putidus (organism)	900000000000207008
-114018001	Veillonella parvula ss atypica (organism)	900000000000207008
-114019009	Veillonella parvula ss parvula (organism)	900000000000207008
-114020003	Veillonella parvula ss rodentium (organism)	900000000000207008
-114099005	Paenibacillus larvae ss pulvifaciens (organism)	900000000000207008
-114158002	Porphyromonas cansulci (organism)	900000000000207008
-1144242006	Multiple cysts of pulmonary system (disorder)	900000000000207008
-115062001	Vibrio panaeicida (organism)	900000000000207008
-115150002	Genus Lactosphaera (organism)	900000000000207008
-115256001	Protein antigen (substance)	900000000000207008
-1156184000	Metatarsus primus varus of left foot (disorder)	900000000000207008
-1156185004	Metatarsus primus varus of right foot (disorder)	900000000000207008
-1156186003	Metatarsus primus varus of bilateral feet (disorder)	900000000000207008
-115990000	Trichophyton raubitschekii (organism)	900000000000207008
-115991001	Trichophyton kanei (organism)	900000000000207008
-116002005	Microsporum canis var. distortum (organism)	900000000000207008
-116385004	Brevibacterium liquefaciens (organism)	900000000000207008
-116434008	Thermomonospora alba (organism)	900000000000207008
-116438006	Thermomonospora fusca (organism)	900000000000207008
-116439003	Thermomonospora mesophilia (organism)	900000000000207008
-116440001	Thermomonospora mesouviformis (organism)	900000000000207008
-116650008	Microbiology finding (navigational concept)	900000000000207008
-1179410005	Perinatal infection of fetus and/or neonate (disorder)	900000000000207008
-118417008	Filling material (substance)	900000000000207008
-118439005	Procedure with high complexity (navigational concept)	900000000000207008
-118927008	Thrombotic disorder (navigational concept)	900000000000207008
-120058006	Fallopian tube endoscopy (procedure)	900000000000207008
-1204163004	Acute inflammation of cervical lymph node (disorder)	900000000000207008
-1204465002	Product containing precisely progesterone 416.667 microgram/1 hour prolonged-release vaginal ring (clinical drug)	900000000000207008
-1231482000	Product containing precisely rotigotine 125 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-1231484004	Product containing precisely rotigotine 41.667 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-1231775000	Product containing precisely nicotine 1.563 milligram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-123849002	Structure of lymphoid system subdivision (body structure)	900000000000207008
-124142001	Deficiency of malate oxidase (disorder)	900000000000207008
-124194004	Deficiency of nitrate reductase (disorder)	900000000000207008
-125054005	Sporotrichum beurmanni (organism)	900000000000207008
-1254960008	Seizure co-occurrent and due to substance withdrawal (disorder)	900000000000207008
-1255185005	Removal of filling material from breast (procedure)	900000000000207008
-125521010000104	Presence of beta-lactoglobulin specific immunoglobulin E in serum at point in time by radioallergosorbent testing (observable entity)	11010000107
-1260348009	Headache due to acute angle closure glaucoma (finding)	900000000000207008
-1263514008	Seizure due to migraine with aura (finding)	900000000000207008
-126723007	Neoplasm of mesothelial tissue of site other than pleura AND pericardium (navigational concept)	900000000000207008
-126948004	Cerebellopontine angle meningioma (disorder)	900000000000207008
-127106000	Tracheal lymphadenopathy (disorder)	900000000000207008
-127302008	Traumatic brain injury with no loss of consciousness (disorder)	900000000000207008
-127388009	Hypergammaglobulinemia (finding)	900000000000207008
-127548000	Tritirachium roseum (organism)	900000000000207008
-128089006	Hematologic disorder in newborn (navigational concept)	900000000000207008
-128299006	Chronic disease of immune system (navigational concept)	900000000000207008
-128480004	Acute disease of hematopoietic system (navigational concept)	900000000000207008
-1284939008	Introduction into subcutaneous tissue (procedure)	900000000000207008
-129454009	Increased level, laboratory test (navigational concept)	900000000000207008
-129455005	Decreased level, laboratory test (navigational concept)	900000000000207008
-129502002	Thymidine (18-F) (substance)	900000000000207008
-1295415001	Introduction into skin (procedure)	900000000000207008
-129586002	Frozen pelvis syndrome (disorder)	900000000000207008
-13081000119109	Complication of filtering bleb (disorder)	900000000000207008
-131205009	Aerococcus sanguicola (organism)	900000000000207008
-1351747008	Structure of granulosum of ovarian follicle (body structure)	900000000000207008
-1351870008	Entire granulosum of ovarian follicle (body structure)	900000000000207008
-13570003	Tuberculous tenosynovitis (disorder)	900000000000207008
-1363475000	Anastomosis of colon to anal canal (procedure)	900000000000207008
-1366488007	Bi-level spontaneous ventilation treatment (regime/therapy)	900000000000207008
-13771001	Mesenteric saponification (disorder)	900000000000207008
-137991000119103	Seizure disorder as sequela of stroke (disorder)	900000000000207008
-13862003	Microsporum gallinae (organism)	900000000000207008
-14188007	Tuberculosis of hip (disorder)	900000000000207008
-14434006	Cerebellar laceration with open intracranial wound AND no loss of consciousness (disorder)	900000000000207008
-14973001	Renal sclerosis with hypertension (disorder)	900000000000207008
-15295001	Retroversion of uterus (disorder)	900000000000207008
-15520004	Breathy whispered-intermittent group (finding)	900000000000207008
-15709001	Rhizomucor tauricus (organism)	900000000000207008
-157533041000119108	History of acute angle-closure glaucoma (situation)	900000000000207008
-158857004	Estate agent (occupation)	900000000000207008
-15954861000119106	Pendulous right breast (finding)	900000000000207008
-159921000146103	Never feeling insecure about caring for child (finding)	900000000000207008
-16068331000119102	Neonatal metabolic acidemia (disorder)	900000000000207008
-160775007	Home help requested (finding)	900000000000207008
-160857001	Offspring leaves home (finding)	900000000000207008
-16175007	Arthroderma vanbreuseghemii (organism)	900000000000207008
-16226271000119107	Structure of product of conception of ectopic pregnancy (body structure)	900000000000207008
-16283005	Stachybotrys alternans (organism)	900000000000207008
-1641000175108	Applicator - unit of product usage (qualifier value)	900000000000207008
-164810006	Special female test done (situation)	900000000000207008
-164824005	Special male test done (situation)	900000000000207008
-165309004	Behavior assessment (procedure)	900000000000207008
-16573007	Senile cardiac amyloidosis (disorder)	900000000000207008
-1671000175104	Strip - unit of product usage (qualifier value)	900000000000207008
-167891000	Synovial fluid fibrin clot (finding)	900000000000207008
-16873003	Musicogenic seizure (finding)	900000000000207008
-168844005	Double contrast barium meal (procedure)	900000000000207008
-168846007	Rectum double contrast examination (procedure)	900000000000207008
-168847003	Colon double contrast examination (procedure)	900000000000207008
-168858007	Retrograde cystography (procedure)	900000000000207008
-168859004	Percutaneous cystography (procedure)	900000000000207008
-168860009	Negative/double contrast cystography (procedure)	900000000000207008
-168861008	Intravenous cystography (procedure)	900000000000207008
-1691000175103	Stick - unit of product usage (qualifier value)	900000000000207008
-169143009	Isotope static scan kidneys (procedure)	900000000000207008
-1701000175103	Wafer - unit of product usage (qualifier value)	900000000000207008
-170694008	Neurological symptom changes (finding)	900000000000207008
-172657007	Implantation of audiant bone conductor (procedure)	900000000000207008
-174027003	Barium enema for radiological reduction of intussusception of ileum (procedure)	900000000000207008
-174303008	Radiological reduction of intussusception of rectum using barium enema (procedure)	900000000000207008
-17440005	Anal spasm (disorder)	900000000000207008
-174561006	Anastomosis main bile duct to duodenum (procedure)	900000000000207008
-174654004	Endoscopic retrograde pancreatography via accessory ampulla of Vater (procedure)	900000000000207008
-175988004	Nephrostogram (procedure)	900000000000207008
-176086008	Retrograde catheter ureteropyelography (procedure)	900000000000207008
-176890006	Intrauterine pressure test (procedure)	900000000000207008
-1769008	Thoracodidymus (disorder)	900000000000207008
-177860007	Primary repair of inguinal hernia (procedure)	900000000000207008
-177861006	Primary repair inguinal hernia using natural material (procedure)	900000000000207008
-177862004	Primary repair of inguinal hernia using synthetic patch (procedure)	900000000000207008
-177864003	Primary repair of inguinal hernia and reduction of sliding hernia (procedure)	900000000000207008
-177865002	Endoscopic primary repair of inguinal hernia (procedure)	900000000000207008
-177876003	Primary repair of femoral hernia using insert of natural material (procedure)	900000000000207008
-177877007	Primary repair of femoral hernia using synthetic patch (procedure)	900000000000207008
-177879005	Endoscopic primary repair of femoral hernia (procedure)	900000000000207008
-178358000	Skull and/or spine and/or bone and/or joint operations (navigational concept)	900000000000207008
-178524009	Primary foraminotomy of cervical spine (procedure)	900000000000207008
-178554004	Primary posterior decompression of thoracic disc (procedure)	900000000000207008
-178583001	Primary decompression of cervical spine (procedure)	900000000000207008
-178584007	Primary anterior decompression of cervical spinal cord and fusion (procedure)	900000000000207008
-178586009	Primary posterior decompression cervical cord (procedure)	900000000000207008
-178587000	Primary posterior decompression cervical cord and fusion (procedure)	900000000000207008
-178600005	Primary decompression of lumbar spine (procedure)	900000000000207008
-178601009	Primary extended posterior decompression lumbar spine and fusion (procedure)	900000000000207008
-178606004	Primary foraminotomy of lumbar spine (procedure)	900000000000207008
-179746005	Revision allograft replacement extra-articular ligament (procedure)	900000000000207008
-179755008	Extra-articular plastic replacement of intra-articular ligament (procedure)	900000000000207008
-179764003	Primary autograft augmentation extra-articular ligament (procedure)	900000000000207008
-179770009	Primary extra-articular autograft augmentation intra-articular ligament (procedure)	900000000000207008
-179771008	Primary intra-articular autograft augmentation intra-articular ligament (procedure)	900000000000207008
-179774000	Revision extra-articular autograft augmentation intra-articular ligament (procedure)	900000000000207008
-179780008	Extra-articular prosthetic augmentation of intra-articular ligament (procedure)	900000000000207008
-179786002	Primary prosthetic augmentation extra-articular ligament (procedure)	900000000000207008
-179787006	Primary allograft augmentation extra-articular ligament (procedure)	900000000000207008
-179788001	Primary xenograft augmentation extra-articular ligament (procedure)	900000000000207008
-179792008	Primary extra-articular allograft augmentation intra-articular ligament (procedure)	900000000000207008
-179793003	Primary extra-articular xenograft augmentation intra-articular ligament (procedure)	900000000000207008
-179794009	Revision extra-articular prosthetic augmentation intra-articular ligament (procedure)	900000000000207008
-179795005	Revision extra-articular allograft augmentation intra-articular ligament (procedure)	900000000000207008
-179796006	Revision extra-articular xenograft augmentation intra-articular ligament (procedure)	900000000000207008
-179870001	Primary arthroscopic ligament repair (procedure)	900000000000207008
-179871002	Primary arthroscopic reattachment of ligament (procedure)	900000000000207008
-179876007	Primary arthroscopic prosthetic ligament augmentation (procedure)	900000000000207008
-179877003	Primary arthroscopic autograft ligament augmentation (procedure)	900000000000207008
-179878008	Primary arthroscopic allograft ligament augmentation (procedure)	900000000000207008
-179879000	Primary arthroscopic xenograft ligament augmentation (procedure)	900000000000207008
-180485001	Kerasin thesaurismosis (disorder)	900000000000207008
-180919005	Subsidiary classification of laterality and operation sites (navigational concept)	900000000000207008
-1810009	Bacillus psychrophilus (organism)	900000000000207008
-181115008	Endocrine, breast and special senses (navigational concept)	900000000000207008
-181194006	Respiratory tract and mouth (navigational concept)	900000000000207008
-181243006	Digestive tract and abdominal organs (navigational concept)	900000000000207008
-181607009	Soft tissue (navigational concept)	900000000000207008
-18279000	Chlamydophila psittaci variant ovis (organism)	900000000000207008
-182889006	Analgesics requested (finding)	900000000000207008
-183079004	Patient advised about exposure to the sun (situation)	900000000000207008
-183183002	Milwaukee brace (physical object)	900000000000207008
-185367005	Microsporosis nigra (disorder)	900000000000207008
-185711004	Breast screening requested (finding)	900000000000207008
-185955000	On urgent housing list (finding)	900000000000207008
-185956004	On housing list (finding)	900000000000207008
-185957008	Awaiting housing improvement (finding)	900000000000207008
-186601006	Mite-borne hemorrhagic fever (navigational concept)	900000000000207008
-187604008	Malignant neoplasm of lower lip, external (disorder)	900000000000207008
-187613005	Malignant neoplasm of lower lip, buccal aspect (disorder)	900000000000207008
-188026007	Malignant neoplasm, overlapping lesion of connective and soft tissue (navigational concept)	900000000000207008
-188048001	Malignant melanoma of trunk (excluding scrotum) (navigational concept)	900000000000207008
-188859006	Benign neoplasm of perinephric tissue (disorder)	900000000000207008
-189088003	Melanocytic nevi of eyelid, including canthus (navigational concept)	900000000000207008
-189089006	Melanocytic nevi of ear and external auditory canal (navigational concept)	900000000000207008
-189091003	Melanocytic nevi of scalp and neck (navigational concept)	900000000000207008
-189093000	Melanocytic nevi of upper limb, including shoulder (navigational concept)	900000000000207008
-189094006	Melanocytic nevi of lower limb, including hip (navigational concept)	900000000000207008
-189335001	Carcinoma in situ of breast and genitourinary system (navigational concept)	900000000000207008
-189380000	Neoplasm of uncertain behavior of stomach, intestines and rectum (navigational concept)	900000000000207008
-189421002	Neoplasm of uncertain behavior of trachea, bronchus and lung (navigational concept)	900000000000207008
-189426007	Neoplasm of uncertain behavior of pleura, thymus and mediastinum (navigational concept)	900000000000207008
-189822004	Contagious disease (navigational concept)	900000000000207008
-191124002	Disease of blood AND/OR blood-forming organ (navigational concept)	900000000000207008
-191213007	Secondary warm-type hemolytic anemia (disorder)	900000000000207008
-191280003	Clotting and bleeding disorders (navigational concept)	900000000000207008
-191415002	Communicable disease (navigational concept)	900000000000207008
-191559008	Latent schizophrenia (disorder)	900000000000207008
-191565008	Latent schizophrenia in remission (disorder)	900000000000207008
-19210000	Brain stem laceration with open intracranial wound AND no loss of consciousness (disorder)	900000000000207008
-192131001	Hyperkinesis with developmental delay (disorder)	900000000000207008
-192780002	Cerebral degenerations usually manifest in childhood (navigational concept)	900000000000207008
-192897002	Myelopathy due to acute infarction of spinal cord (disorder)	900000000000207008
-193021002	Cursive (running) epilepsy (disorder)	900000000000207008
-193415008	Tapetoretinal dystrophy (disorder)	900000000000207008
-193487008	Secondary infected iridocyclitis (disorder)	900000000000207008
-193787009	Keratitis due to tuberculosis (disorder)	900000000000207008
-194023005	Orbital deformity associated with craniofacial deformity (disorder)	900000000000207008
-195714005	Acute fibrinous bronchitis (disorder)	900000000000207008
-196262008	Oral cavity, salivary glands and jaw diseases (navigational concept)	900000000000207008
-196368005	Alveolar pyorrhea (disorder)	900000000000207008
-196983007	Regional ileocolitis (disorder)	900000000000207008
-197306001	Zooparasitic portal cirrhosis (navigational concept)	900000000000207008
-198251001	Endometriosis of pelvic peritoneum (disorder)	900000000000207008
-200955003	Psoriasis and similar disorders (navigational concept)	900000000000207008
-200974006	Psoriasis universalis (disorder)	900000000000207008
-201433006	Arthropathies and related disorders (navigational concept)	900000000000207008
-201541008	Arthropathy associated with mycoses, of multiple sites (disorder)	900000000000207008
-201553007	Arthritis of multiple sites following helminthiasis (disorder)	900000000000207008
-20193002	Isospora rivolta (organism)	900000000000207008
-202046009	Arthritis secondary to malignancy (disorder)	900000000000207008
-202811000	Ankylosis or instability of cervical, thoracic or lumbar spine (navigational concept)	900000000000207008
-202973008	Peroneus longus rupture (disorder)	900000000000207008
-203326004	Osteitis deformans and osteopathies associated with other diseases (navigational concept)	900000000000207008
-20334002	Proctomenia (disorder)	900000000000207008
-203923004	Acrania (disorder)	900000000000207008
-204047001	Anomalies of cerebellum (disorder)	900000000000207008
-204630003	Cleft tongue (disorder)	900000000000207008
-205163001	Transverse deficiency of arm, upper arm level - short (disorder)	900000000000207008
-205164007	Transverse deficiency of arm, upper arm level - long (disorder)	900000000000207008
-206187005	Birth trauma, asphyxia and hypoxia (navigational concept)	900000000000207008
-20644006	Cladosporium mansonii (organism)	900000000000207008
-206509003	Fetal and newborn blood disorders (navigational concept)	900000000000207008
-20818009	Dissociated spinal nerve sensory loss (finding)	900000000000207008
-20890001	Stropharia cubensis (organism)	900000000000207008
-209420002	Strain of long head of biceps (disorder)	900000000000207008
-209845006	Cortex contusion with open intracranial wound, with no loss of consciousness (disorder)	900000000000207008
-209864000	Cortex laceration with open intracranial wound, with no loss of consciousness (disorder)	900000000000207008
-209902003	Hind brain laceration with open intracranial wound, with no loss of consciousness (disorder)	900000000000207008
-210175000	Liver moderate laceration with open wound into abdominal cavity (disorder)	900000000000207008
-211361010000109	Arbitrary concentration of beta-lactoglobulin specific immunoglobulin E in serum at point in time (observable entity)	11010000107
-212569005	Heavy metal agonist poisoning (navigational concept)	900000000000207008
-212682008	Quaternary ammonium derivative poisoning (navigational concept)	900000000000207008
-212783005	Dietetic poisoning (navigational concept)	900000000000207008
-212787006	Pharmaceutical excipient poisoning (navigational concept)	900000000000207008
-212801001	Mixed vaccine poisoning, excluding pertussis (navigational concept)	900000000000207008
-213769004	Causes of injury and poisoning (navigational concept)	900000000000207008
-2144001	Animal transmitted infectious disease (navigational concept)	900000000000207008
-216872006	Accidental cut, puncture, perforation or hemorrhage during surgical operation (navigational concept)	900000000000207008
-216873001	Accidental cut, puncture, perforation or hemorrhage during infusion or transfusion (navigational concept)	900000000000207008
-216874007	Accidental cut, puncture, perforation or hemorrhage during infusion (navigational concept)	900000000000207008
-216875008	Accidental cut, puncture, perforation or hemorrhage during transfusion (navigational concept)	900000000000207008
-216881000	Accidental cut, puncture, perforation or hemorrhage during injection or vaccination (navigational concept)	900000000000207008
-216882007	Accidental cut, puncture, perforation or hemorrhage during injection (navigational concept)	900000000000207008
-216883002	Accidental cut, puncture, perforation or hemorrhage during vaccination (navigational concept)	900000000000207008
-216885009	Accidental cut, puncture, perforation or hemorrhage during endoscopic examination (navigational concept)	900000000000207008
-216886005	Accidental cut, puncture, perforation or hemorrhage during aspiration of fluid or tissue, puncture and catheterization (navigational concept)	900000000000207008
-216887001	Accidental cut, puncture, perforation or hemorrhage during abdominal paracentesis (navigational concept)	900000000000207008
-216888006	Accidental cut, puncture, perforation or hemorrhage during aspirating needle biopsy (navigational concept)	900000000000207008
-216890007	Accidental cut, puncture, perforation or hemorrhage during lumbar puncture (navigational concept)	900000000000207008
-216891006	Accidental cut, puncture, perforation or hemorrhage during thoracentesis (navigational concept)	900000000000207008
-216893009	Accidental cut, puncture, perforation or hemorrhage during heart catheterization (navigational concept)	900000000000207008
-216894003	Accidental cut, puncture, perforation or hemorrhage during administration of enema (navigational concept)	900000000000207008
-21784000	Respiratory technique education (procedure)	900000000000207008
-218116009	Implantation of prosthesis or prosthetic device of joint of toe (procedure)	900000000000207008
-219051006	Adverse reaction to local astringents and local detergents (navigational concept)	900000000000207008
-219052004	Adverse reaction to emollients, demulcents and protectants (navigational concept)	900000000000207008
-219090005	Adverse reaction to mixed bacterial vaccines, excluding combinations with a pertussis component (navigational concept)	900000000000207008
-219102006	Adverse reaction to mixed viral-rickettsial and bacterial vaccines except combinations with a pertussis component (navigational concept)	900000000000207008
-219107000	Suicide and selfinflicted poisoning by solid and liquid substances (navigational concept)	900000000000207008
-219108005	Suicide and selfinflicted poisoning by analgesics, antipyretics and anti-rheumatics (navigational concept)	900000000000207008
-219109002	Suicide and self inflicted poisoning by barbiturates (navigational concept)	900000000000207008
-219110007	Suicide and self inflicted injury by amylobarbitone (navigational concept)	900000000000207008
-219111006	Suicide and self inflicted injury by Barbitone (navigational concept)	900000000000207008
-219112004	Suicide and self inflicted injury by Butabarbitone (navigational concept)	900000000000207008
-219113009	Suicide and self inflicted injury by Pentabarbitone (navigational concept)	900000000000207008
-219114003	Suicide and self inflicted injury by phenobarbitone (navigational concept)	900000000000207008
-219115002	Suicide and self inflicted injury by Quinalbarbitone (navigational concept)	900000000000207008
-219116001	Suicide and self inflicted injury by barbiturates (navigational concept)	900000000000207008
-219136000	Suicide and selfinflicted injury by hanging, strangulation and suffocation (navigational concept)	900000000000207008
-219137009	Suicide or attempted suicide by hanging (navigational concept)	900000000000207008
-219141008	Suicide and selfinflicted injury by drowning (navigational concept)	900000000000207008
-219142001	Suicide or selfinflicted injury by firearms and explosives (navigational concept)	900000000000207008
-219143006	Suicide or selfinflicted injury by handgun (navigational concept)	900000000000207008
-219144000	Suicide or selfinflicted injury by shotgun (navigational concept)	900000000000207008
-219145004	Suicide or selfinflicted injury by hunting rifle (navigational concept)	900000000000207008
-219146003	Suicide or selfinflicted injury by military firearm (navigational concept)	900000000000207008
-219148002	Suicide or selfinflicted injury by explosives (navigational concept)	900000000000207008
-219150005	Suicide or selfinflicted injury by cutting and stabbing (navigational concept)	900000000000207008
-219151009	Suicide or selfinflicted injury by cutting (navigational concept)	900000000000207008
-219153007	Suicide or selfinflicted injury by stabbing (navigational concept)	900000000000207008
-219155000	Suicide or self injury by jumping from a height (navigational concept)	900000000000207008
-219156004	Suicide and selfinflicted injury by jumping from residential premises (navigational concept)	900000000000207008
-219158003	Suicide and selfinflicted injury by jumping from natural sites (navigational concept)	900000000000207008
-219161002	Suicide and selfinflicted injury by jumping or lying before moving object (navigational concept)	900000000000207008
-219162009	Suicide and selfinflicted injury by jumping before moving object (navigational concept)	900000000000207008
-219163004	Suicide and selfinflicted injury by lying before moving object (navigational concept)	900000000000207008
-219165006	Suicide or self injury by burning or fire (navigational concept)	900000000000207008
-219166007	Suicide or self injury by scalding (navigational concept)	900000000000207008
-219167003	Suicide or self injury by exposure to cold (navigational concept)	900000000000207008
-219168008	Suicide or self injury by electric current (navigational concept)	900000000000207008
-219169000	Suicide or selfinflicted injury by crashing motor vehicle (navigational concept)	900000000000207008
-219170004	Suicide or selfinflicted injury by crashing of aircraft (navigational concept)	900000000000207008
-219171000	Suicide and selfinflicted injury by caustic substances, excluding poisoning (navigational concept)	900000000000207008
-224089000	No known relatives (finding)	900000000000207008
-225330006	Client participation (procedure)	900000000000207008
-22545009	Setosphaeria rostrata (organism)	900000000000207008
-225873007	Finding relating to grief and dying (finding)	900000000000207008
-227561004	Female infertility associated with anovulation (disorder)	900000000000207008
-228709004	Marker urogram (procedure)	900000000000207008
-228710009	Marker cystogram (procedure)	900000000000207008
-23002003	Zoonotic bacterial disease (navigational concept)	900000000000207008
-230163002	Mosquito-borne alphavirus encephalitis (navigational concept)	900000000000207008
-230164008	Mosquito-borne flavivirus encephalitis (navigational concept)	900000000000207008
-230172005	Tick-borne orbivirus encephalitis (navigational concept)	900000000000207008
-23022004	Tuberculous bronchiectasis (disorder)	900000000000207008
-230367007	Neuroaxonal leukodystrophy (disorder)	900000000000207008
-230431001	Situation-related seizures (disorder)	900000000000207008
-230440002	Secondary reading epilepsy (disorder)	900000000000207008
-230443000	Narcotic withdrawal epilepsy (disorder)	900000000000207008
-230453004	Decision-making epilepsy (disorder)	900000000000207008
-230454005	Aquagenic epilepsy (disorder)	900000000000207008
-230527005	Disorder of the third, fourth and sixth nerves and of eye movements (navigational concept)	900000000000207008
-230789008	Tumor-like lesion of nervous system (navigational concept)	900000000000207008
-231725008	Surgical peripheral iridectomy (procedure)	900000000000207008
-23220003	Structure of Fleischmann's bursa (body structure)	900000000000207008
-23292001	High-pitch group (finding)	900000000000207008
-233556006	Transfusion and related procedures (navigational concept)	900000000000207008
-233738009	Fibrous mediastinitis caused by radiation (disorder)	900000000000207008
-234241007	Intra-aortic balloon infection (disorder)	900000000000207008
-234242000	Intra-aortic balloon thrombosis (disorder)	900000000000207008
-234403002	Phosphoglycerokinase deficiency (disorder)	900000000000207008
-234702006	Pulpotomy - vital - partial (procedure)	900000000000207008
-23508005	Uterine incoordination, first degree (disorder)	900000000000207008
-235451000	Attention to enteral tube (procedure)	900000000000207008
-235643008	Tumor-like lesion of esophagus (navigational concept)	900000000000207008
-236196009	Cystoscopy and retrograde pyelography (procedure)	900000000000207008
-236197000	Cystoscopy and bulb catheter ureteropyelography (procedure)	900000000000207008
-236657002	Dysfunctional voiding (disorder)	900000000000207008
-237080002	Expulsion intrauterine contraceptive device (disorder)	900000000000207008
-237944004	Valinosis (disorder)	900000000000207008
-237953006	Mitochondrial 2-methylacetoacetyl-CoA thiolase deficiency - potassium stimulated (disorder)	900000000000207008
-238176007	Primary closure of congenital umbilical defect-all layers (procedure)	900000000000207008
-238177003	Primary closure of congenital umbilical defect-skin only (procedure)	900000000000207008
-238178008	Primary closure of congenital umbilical defect-with patch (procedure)	900000000000207008
-238392009	Sycosis cruris (disorder)	900000000000207008
-238599004	Papular, squamous and granulomatous eruptions of skin (navigational concept)	900000000000207008
-238718006	Median nail dystrophy of Heller (disorder)	900000000000207008
-238916002	Hirsuties papillaris penis (disorder)	900000000000207008
-238961003	Trichophobia (disorder)	900000000000207008
-238970000	Proctodynia (finding)	900000000000207008
-239113003	Malformation or hamartoma of skin appendage (navigational concept)	900000000000207008
-239114009	Malformation or hamartoma of eccrine sweat gland apparatus (navigational concept)	900000000000207008
-239119004	Malformation or hamartoma of apocrine sweat gland apparatus (navigational concept)	900000000000207008
-239122002	Malformation or hamartoma of pilosebaceous apparatus (navigational concept)	900000000000207008
-239822004	Arthritis secondary to non-hematological malignancy (disorder)	900000000000207008
-239881008	Otto's pelvis (disorder)	900000000000207008
-240036003	Tenosynovitis of fingers (disorder)	900000000000207008
-240488002	Mosquito-borne alphavirus hemorrhagic fever (navigational concept)	900000000000207008
-240489005	Mosquito-borne flavivirus hemorrhagic fever (navigational concept)	900000000000207008
-240490001	Mosquito-borne bunyavirus hemorrhagic fever (navigational concept)	900000000000207008
-240491002	Tick-borne flavivirus hemorrhagic fever (navigational concept)	900000000000207008
-240492009	Tick-borne bunyavirus hemorrhagic fever (navigational concept)	900000000000207008
-240495006	Mosquito-borne arboviral fever (navigational concept)	900000000000207008
-240496007	Mosquito-borne alphavirus fever (navigational concept)	900000000000207008
-240498008	Mosquito-borne flavivirus fever (navigational concept)	900000000000207008
-240501008	Mosquito-borne bunyamwera group virus fever (navigational concept)	900000000000207008
-240503006	Mosquito-borne bwamba group virus fever (navigational concept)	900000000000207008
-240504000	Mosquito-borne serogroup C bunyavirus fever (navigational concept)	900000000000207008
-240506003	Mosquito-borne California group virus fever (navigational concept)	900000000000207008
-240508002	Mosquito-borne simbu group virus fever (navigational concept)	900000000000207008
-240509005	Mosquito-borne guama group virus fever (navigational concept)	900000000000207008
-240510000	Mosquito-borne orbivirus fever (navigational concept)	900000000000207008
-240511001	Mosquito-borne rhabdovirus fever (navigational concept)	900000000000207008
-240516006	Tick-borne orbivirus fever (navigational concept)	900000000000207008
-240691009	Sibbens (disorder)	900000000000207008
-240959006	Therapeutic barium enema (procedure)	900000000000207008
-241124002	Video soft palate (procedure)	900000000000207008
-241141000	Double contrast barium swallow (procedure)	900000000000207008
-241142007	Single contrast barium swallow (procedure)	900000000000207008
-241143002	Water soluble contrast swallow (procedure)	900000000000207008
-241144008	Solid barium swallow (procedure)	900000000000207008
-241145009	Air contrast swallow (procedure)	900000000000207008
-241147001	Tube esophagram (procedure)	900000000000207008
-241150003	Videoswallow (procedure)	900000000000207008
-241151004	Cineswallow (procedure)	900000000000207008
-241155008	Single contrast barium meal (procedure)	900000000000207008
-241156009	Water soluble contrast meal (procedure)	900000000000207008
-241157000	Upper gastrointestinal tract series (procedure)	900000000000207008
-241160007	Small bowel meal (procedure)	900000000000207008
-241161006	Small bowel meal plus pneumocolon (procedure)	900000000000207008
-241163009	Ileostomy enema (procedure)	900000000000207008
-241164003	Double contrast barium enema (procedure)	900000000000207008
-241165002	Single contrast barium enema (procedure)	900000000000207008
-241167005	Instant barium enema (procedure)	900000000000207008
-241168000	Water soluble contrast enema (procedure)	900000000000207008
-241169008	Proctogram (procedure)	900000000000207008
-241171008	Gastrointestinal tract loopogram (procedure)	900000000000207008
-241181007	Percutaneous cyst puncture and cystogram (procedure)	900000000000207008
-241184004	Stress cystogram (procedure)	900000000000207008
-241185003	Retrograde ileoureterostogram (procedure)	900000000000207008
-241210005	Pneumocystogram (procedure)	900000000000207008
-241838006	Household product causing toxic effect (navigational concept)	900000000000207008
-241868002	Decorative product causing toxic effect (navigational concept)	900000000000207008
-241883007	Filler causing toxic effect (disorder)	900000000000207008
-241991002	Neurological decompression syndrome (disorder)	900000000000207008
-242783000	Exposure to electric current and radiation (navigational concept)	900000000000207008
-242842007	Suicide or self injury by jumping from high man-made structure (navigational concept)	900000000000207008
-242843002	Suicide or self injury by jumping from high building (navigational concept)	900000000000207008
-242844008	Suicide or self injury by jumping from bridge (navigational concept)	900000000000207008
-242845009	Suicide or self injury by jumping from high natural feature (navigational concept)	900000000000207008
-242846005	Suicide or self injury by jumping off cliff (navigational concept)	900000000000207008
-242847001	Suicide or self injury associated with moving vehicles (navigational concept)	900000000000207008
-242848006	Suicide or self injury by placing self in path of moving vehicle (navigational concept)	900000000000207008
-242849003	Suicide or self injury by placing self in path of moving motor vehicle (navigational concept)	900000000000207008
-242850003	Suicide or self injury by placing self in path of moving railway vehicle (navigational concept)	900000000000207008
-242851004	Suicide or self injury by igniting gasoline soaked clothing (navigational concept)	900000000000207008
-242852006	Suicide or self injury by arson (navigational concept)	900000000000207008
-242976002	Poisoning of undetermined intent by non-drug substance (navigational concept)	900000000000207008
-243320007	Vibrio species a-m (navigational concept)	900000000000207008
-243325002	Vibrio species n-z (navigational concept)	900000000000207008
-243331004	Alcaligenes rhulandii (organism)	900000000000207008
-243336009	Pseudomonas species a-f (navigational concept)	900000000000207008
-243340000	Pseudomonas species g-r (navigational concept)	900000000000207008
-243345005	Pseudomonas species s-z (navigational concept)	900000000000207008
-243347002	Sphingobacterium yabuuchiae (organism)	900000000000207008
-243375000	Atypical mycobacteria species a-m (navigational concept)	900000000000207008
-243380009	Atypical mycobacteria species n-z (navigational concept)	900000000000207008
-243405002	Clostridium species a-f (navigational concept)	900000000000207008
-243408000	Clostridium species g-p (navigational concept)	900000000000207008
-243412006	Clostridium species q-z (navigational concept)	900000000000207008
-243425003	Mucor rouxianus (organism)	900000000000207008
-243496008	Aspergillus phialiseptus (organism)	900000000000207008
-243505000	Emmonsia parva (organism)	900000000000207008
-243517003	Penicillium bertai (organism)	900000000000207008
-243526000	Trichophyton equinum var equinum (organism)	900000000000207008
-243644003	Intestinal protozoan (navigational concept)	900000000000207008
-243645002	Intestinal ameba (navigational concept)	900000000000207008
-243646001	Intestinal flagellate (navigational concept)	900000000000207008
-243647005	Intestinal ciliate (navigational concept)	900000000000207008
-243648000	Intestinal coccidia (navigational concept)	900000000000207008
-243649008	Intestinal microsporidian (navigational concept)	900000000000207008
-243650008	Blood and tissue protozoan (navigational concept)	900000000000207008
-243651007	Blood sporozoan (navigational concept)	900000000000207008
-243652000	Blood and tissue flagellate (navigational concept)	900000000000207008
-243665009	Intestinal nematode (navigational concept)	900000000000207008
-243667001	Tissue nematode (navigational concept)	900000000000207008
-243671003	Tissue fluke (navigational concept)	900000000000207008
-243801004	Chemical pathology test categorized by action status (navigational concept)	900000000000207008
-243802006	Hematology test categorized by action status (navigational concept)	900000000000207008
-243803001	Immunology test categorized by action status (navigational concept)	900000000000207008
-243804007	Microbiology test categorized by action status (navigational concept)	900000000000207008
-243805008	Histopathology test categorized by action status (navigational concept)	900000000000207008
-243806009	Cardiological test categorized by action status (navigational concept)	900000000000207008
-243807000	Respiratory test categorized by action status (navigational concept)	900000000000207008
-243808005	Neurological test categorized by action status (navigational concept)	900000000000207008
-243809002	Ear, nose and throat/auditory test categorized by action status (navigational concept)	900000000000207008
-243810007	Visual test categorized by action status (navigational concept)	900000000000207008
-243811006	Genitourinary test categorized by action status (navigational concept)	900000000000207008
-243812004	Gastrointestinal tract test categorized by action status (navigational concept)	900000000000207008
-243813009	Locomotor test categorized by action status (navigational concept)	900000000000207008
-243830006	Antenatal syphilis screening categorized by action status (navigational concept)	900000000000207008
-24455009	Intestinal trematode (navigational concept)	900000000000207008
-245481006	Entire right horn of uterus (body structure)	900000000000207008
-245482004	Entire left horn of uterus (body structure)	900000000000207008
-248744009	Flow in veins (observable entity)	900000000000207008
-248781008	Wet dreams (finding)	900000000000207008
-2490001	Ulocladium chartarum (organism)	900000000000207008
-249367001	Bleeding from nasopharynx (finding)	900000000000207008
-249391005	Previous cleft palate repair (finding)	900000000000207008
-249538003	Patulous umbilicus (finding)	900000000000207008
-250173006	Immunology finding (navigational concept)	900000000000207008
-251330002	Caries active (finding)	900000000000207008
-251332005	Caries inactive (finding)	900000000000207008
-252642000	Barium coated food gastric transit study (procedure)	900000000000207008
-252643005	Bread barium swallow (procedure)	900000000000207008
-252644004	Marshmallow barium swallow (procedure)	900000000000207008
-253468007	Ebstein's anomaly of right atrioventricular valve (disorder)	900000000000207008
-254137006	Oculodento-osseous dysplasia (disorder)	900000000000207008
-254138001	Oculodento-osseous dysplasia - severe type (disorder)	900000000000207008
-254139009	Oculodento-osseous dysplasia - mild type (disorder)	900000000000207008
-254571008	Tumor-like lesion of esophagus, stomach and duodenum (navigational concept)	900000000000207008
-254587006	Tumor-like lesion of intestine (navigational concept)	900000000000207008
-254735005	Tumor of dermis (navigational concept)	900000000000207008
-254821003	Tumor of mesothelial and soft tissue (navigational concept)	900000000000207008
-254826008	Benign mesothelioma of pericardium (disorder)	900000000000207008
-254946004	Glial tumor of spinal cord (disorder)	900000000000207008
-255048006	Tumor of lymphoid, hemopoietic and related tissue (navigational concept)	900000000000207008
-255103009	Malignant tumor of mesothelial and soft tissue (navigational concept)	900000000000207008
-255151001	Benign tumor of oral cavity, lips, salivary glands (navigational concept)	900000000000207008
-255194006	Benign tumor of mesothelial and soft tissue (navigational concept)	900000000000207008
-256232007	Cerulin (substance)	900000000000207008
-257794001	Transurethral radiofrequency thermotherapy (regime/therapy)	900000000000207008
-25798001	Subcutaneous injection of filling material (procedure)	900000000000207008
-258007007	Actinomadura pyogenes (organism)	900000000000207008
-258578009	Hematological sample (navigational concept)	900000000000207008
-258592003	Neurological sample (navigational concept)	900000000000207008
-258597009	Obstetrics and gynecology sample (navigational concept)	900000000000207008
-258619000	Inanimate samples and substances (navigational concept)	900000000000207008
-258690000	tons (qualifier value)	900000000000207008
-25882003	Anthropozoonosis (navigational concept)	900000000000207008
-259122009	Solvent A - C (navigational concept)	900000000000207008
-259161001	Solvent D - F (navigational concept)	900000000000207008
-259190007	Solvent H - I (navigational concept)	900000000000207008
-259219001	Solvent M - O (navigational concept)	900000000000207008
-259256005	Solvent P (navigational concept)	900000000000207008
-259275000	Solvent S - Z (navigational concept)	900000000000207008
-259332008	Hormones and their metabolites and precursors A - G (navigational concept)	900000000000207008
-259340002	Beta-lipotrophic hormone (substance)	900000000000207008
-259347004	Hormones and their metabolites and precursors H - S (navigational concept)	900000000000207008
-259354005	Hormones and their metabolites and precursors T - Z (navigational concept)	900000000000207008
-259499003	Heptacarboxylic acid porphyrin (substance)	900000000000207008
-259500007	Hexacarboxylic acid porphyrin (substance)	900000000000207008
-259586004	Proteins A - R (navigational concept)	900000000000207008
-259640009	Proteins S - Z (navigational concept)	900000000000207008
-259706004	Phosphoglycerokinase (substance)	900000000000207008
-259985008	Neuronal cell marker (substance)	900000000000207008
-261570006	Thermotherapy (regime/therapy)	900000000000207008
-263868004	Second degree (qualifier value)	900000000000207008
-263898006	Third degree (qualifier value)	900000000000207008
-264303006	Ectopic adrenocorticotropic hormone (substance)	900000000000207008
-264305004	Ectopic releasing factor (substance)	900000000000207008
-264338008	Toxic plant (organism)	900000000000207008
-264396005	Aspergillus notatum (organism)	900000000000207008
-264418008	Pathogenic organism (navigational concept)	900000000000207008
-264500008	First degree (qualifier value)	900000000000207008
-26485002	Sawdust liver (disorder)	900000000000207008
-264936004	Trichophyton mentagrophytes (var. granulare) (organism)	900000000000207008
-264957007	Insertion of pleural tube drain (procedure)	900000000000207008
-264959005	Primary repair of femoral hernia (procedure)	900000000000207008
-264960000	Primary repair of femoral hernia using sutures (procedure)	900000000000207008
-265289002	Surgical iridectomy (procedure)	900000000000207008
-265712003	Primary posterior decompression lumbar spine (procedure)	900000000000207008
-266129004	Secondary syphilis of viscera or bone (navigational concept)	900000000000207008
-266412007	Oral cavity, dental and salivary gland disorder (disorder)	900000000000207008
-26823002	Parkinson's facies (finding)	900000000000207008
-268832006	Aspiration of liquor or mucus in newborn (disorder)	900000000000207008
-268868001	Born very premature (disorder)	900000000000207008
-269456006	Malignant neoplasm of digestive organs and peritoneum (navigational concept)	900000000000207008
-269498009	Neoplasm of uncertain behavior of histiocytic and mast cells (navigational concept)	900000000000207008
-269692003	Accidental cut, puncture, perforation or hemorrhage during medical care (navigational concept)	900000000000207008
-269693008	Accidental cut, puncture, perforation or hemorrhage during blood sampling (navigational concept)	900000000000207008
-269725004	Suicide and selfinflicted injury (navigational concept)	900000000000207008
-269726003	Suicide and selfinflicted injury by suffocation by plastic bag (navigational concept)	900000000000207008
-269728002	Suicide or attempted suicide by drowning (navigational concept)	900000000000207008
-271415006	Removal of products of conception from fallopian tube (procedure)	900000000000207008
-271480008	Hemangiomas and lymphangiomas of any site (navigational concept)	900000000000207008
-271560005	Antenatal blood group screening categorized by action status (navigational concept)	900000000000207008
-271561009	Antenatal sickle cell screening categorized by action status (navigational concept)	900000000000207008
-271985009	Disorder of intra-aortic pulsation balloon (disorder)	900000000000207008
-272158000	Organic compounds A-C (navigational concept)	900000000000207008
-272160003	Organic compounds D-H (navigational concept)	900000000000207008
-272161004	Organic compounds I-R (navigational concept)	900000000000207008
-272162006	Organic compounds S-Z (navigational concept)	900000000000207008
-272423005	Degrees of severity (qualifier value)	900000000000207008
-272738007	Site of (a-h) (navigational concept)	900000000000207008
-272740002	Site of (i-z) (navigational concept)	900000000000207008
-273250006	Assessment scales Aa-Az (navigational concept)	900000000000207008
-273297007	Assessment scales Ba-Bz (navigational concept)	900000000000207008
-273346002	Assessment scales Ca-De (navigational concept)	900000000000207008
-273410005	Assessment scales Di-Ga (navigational concept)	900000000000207008
-273476008	Assessment scales Ge-Iz (navigational concept)	900000000000207008
-273541008	Assessment scales Ja-Me (navigational concept)	900000000000207008
-273606001	Assessment scales Mi-Oz (navigational concept)	900000000000207008
-273678004	Assessment scales Pa-Ra (navigational concept)	900000000000207008
-273734004	Assessment scales Re-Sc (navigational concept)	900000000000207008
-273794001	Assessment scales Se-Su (navigational concept)	900000000000207008
-273855008	Assessment scales Sw-Va (navigational concept)	900000000000207008
-273890000	Assessment scales Ve-Zu (navigational concept)	900000000000207008
-274678008	Abnormal microbiological finding in specimen from respiratory organ and thorax (navigational concept)	900000000000207008
-274680002	Abnormal microbiological finding in specimen from digestive organ and abdominal cavity (navigational concept)	900000000000207008
-274687004	Abnormal cytologic finding in specimen from digestive organ and abdominal cavity (navigational concept)	900000000000207008
-274690005	Abnormal cytological finding in specimen from respiratory organ and thorax (navigational concept)	900000000000207008
-274691009	Abnormal finding on cytological and histological examination of urine (navigational concept)	900000000000207008
-274811005	Paralysis absent (finding)	900000000000207008
-274836004	Abnormal histological finding in specimen from respiratory organ and thorax (navigational concept)	900000000000207008
-274837008	Abnormal histological finding in specimen from digestive organ and abdominal cavity (navigational concept)	900000000000207008
-274844004	Abnormal immunological finding in specimen from digestive organ and abdominal cavity (navigational concept)	900000000000207008
-274848001	Abnormal immunological finding in specimen from respiratory organ and thorax (navigational concept)	900000000000207008
-274932003	Self hanging, strangulation or suffocation (navigational concept)	900000000000207008
-274955000	Primary repair of inguinal hernia using sutures (procedure)	900000000000207008
-275465007	Tumor-like lesion of brain (navigational concept)	900000000000207008
-275643002	Housing - awaiting action (finding)	900000000000207008
-276017006	Gastrografin swallow (procedure)	900000000000207008
-276018001	Gastrografin meal (procedure)	900000000000207008
-276019009	Gastrografin enema (procedure)	900000000000207008
-276440003	Mouth, abdomen and bowel observations (navigational concept)	900000000000207008
-276441004	Genitalia, sexual function and urinary tract observations (navigational concept)	900000000000207008
-276473005	Whiplash shaken infant syndrome (disorder)	900000000000207008
-276590002	Tentorial laceration - acute syndrome (disorder)	900000000000207008
-276591003	Tentorial laceration - subacute syndrome (disorder)	900000000000207008
-276620002	Traumatic neonatal facial cyanosis (disorder)	900000000000207008
-276658003	Extreme immaturity (disorder)	900000000000207008
-276886008	Peripheral body temperature (navigational concept)	900000000000207008
-277775005	Test finding (navigational concept)	900000000000207008
-278293008	Techniques A-L (navigational concept)	900000000000207008
-278298004	Techniques M-Z (navigational concept)	900000000000207008
-278441008	Disorder of body wall and cavities (navigational concept)	900000000000207008
-278864000	Nursing attributes A - L (navigational concept)	900000000000207008
-278865004	Nursing attributes M - S (navigational concept)	900000000000207008
-278866003	Nursing attributes T - Z (navigational concept)	900000000000207008
-279990005	Livedo reticularis without ulceration (disorder)	900000000000207008
-280440001	Regional skeletal muscle structure (body structure)	900000000000207008
-281165003	Arbovirus (navigational concept)	900000000000207008
-281350007	Arthritis secondary to hematological malignancy (disorder)	900000000000207008
-281584007	Insertion of underwater seal chest drain (procedure)	900000000000207008
-281787002	Spinal decompression without discectomy (procedure)	900000000000207008
-282280002	Additional pain and sensation observations (navigational concept)	900000000000207008
-282453006	Corrosion of pharynx (disorder)	900000000000207008
-284671007	Obligate parasite (navigational concept)	900000000000207008
-284672000	Facultative parasite (navigational concept)	900000000000207008
-284673005	Intracellular parasite (navigational concept)	900000000000207008
-284674004	Entozoic parasite (navigational concept)	900000000000207008
-284675003	Coelozoic parasite (navigational concept)	900000000000207008
-284676002	Hematozoic parasite (navigational concept)	900000000000207008
-284677006	Ectozoic parasite (navigational concept)	900000000000207008
-284678001	Karyozoic parasite (navigational concept)	900000000000207008
-284685002	Commensal parasite (navigational concept)	900000000000207008
-284740008	Tissue ameba (navigational concept)	900000000000207008
-28509004	Insect-transmitted infectious disease (navigational concept)	900000000000207008
-285756005	Arthropod-borne viral encephalitis, vector unknown (navigational concept)	900000000000207008
-285806007	Oral cavity, dental and salivary gland injury (disorder)	900000000000207008
-28687005	Transcatheter therapy by infusion with angiography (procedure)	900000000000207008
-287082009	Congenital anomaly - oral/respiratory (navigational concept)	900000000000207008
-287087003	Congenital lordosis/scoliosis (disorder)	900000000000207008
-287169004	Accidental wound during transfusion (navigational concept)	900000000000207008
-287592005	Negative/double contrast pyelogram (procedure)	900000000000207008
-28762008	Zoonosis (navigational concept)	900000000000207008
-28772006	Arthropod-borne infectious disease (navigational concept)	900000000000207008
-288258008	Maternal pregnancy problem (navigational concept)	900000000000207008
-289479001	Inflammation of vulva (finding)	900000000000207008
-289896006	Menstrual problem (navigational concept)	900000000000207008
-290573009	Antineoplastic/immunosuppressant/immunostimulant poisoning (navigational concept)	900000000000207008
-291397006	Drug groups primarily used in obstets, gyne. and urinary tract disorders poisoning (navigational concept)	900000000000207008
-291418004	Alternative medicine poisoning (navigational concept)	900000000000207008
-291419007	Accidental alternative medicine poisoning (navigational concept)	900000000000207008
-291420001	Intentional alternative medicine poisoning (navigational concept)	900000000000207008
-291421002	Alternative medicine poisoning of undetermined intent (navigational concept)	900000000000207008
-291911002	Food, vitamin, electrolyte and inorganic salt poisoning (navigational concept)	900000000000207008
-292187008	Antineoplastic/immunosuppressant/immunostim adverse reaction (navigational concept)	900000000000207008
-29238009	Fusarium semitectum (organism)	900000000000207008
-292703002	Drug groups primarily used obs, gyn.+ urinary tract dis adverse reaction (navigational concept)	900000000000207008
-292753008	Alternative medicines adverse reaction (navigational concept)	900000000000207008
-292755001	Anthroposophical medicine adverse reaction (navigational concept)	900000000000207008
-292773003	Adverse reaction to bases and inactive substances (navigational concept)	900000000000207008
-292782009	Barrier preparation adverse reaction (navigational concept)	900000000000207008
-292890004	Biguanide disinfectant adverse reaction (disorder)	900000000000207008
-293353001	Foods, vitamins, electrolytes inorganic salts adverse reaction (navigational concept)	900000000000207008
-293581006	Analgesics and non-steroidal anti-inflammatory drug allergy (navigational concept)	900000000000207008
-293729009	Antineoplastic/immunosuppressant/immunostimulant allergy (navigational concept)	900000000000207008
-294205009	Oral dermatological agent allergy (navigational concept)	900000000000207008
-294292001	Alternative medicines allergy (navigational concept)	900000000000207008
-294294000	Anthroposophical medicine allergy (navigational concept)	900000000000207008
-294314002	Allergy to bases and inactive substances (navigational concept)	900000000000207008
-294323004	Barrier preparation allergy (navigational concept)	900000000000207008
-29443000	Cyclozoonosis (navigational concept)	900000000000207008
-294890000	Foods, vitamins, electrolytes and inorganic salts allergy (navigational concept)	900000000000207008
-295592009	Antineoplastic/immunosuppressant/immunostimulant overdose (navigational concept)	900000000000207008
-296508007	Drug groups primarily used in obstetrics, gynecological and urinary tract disorders overdose (navigational concept)	900000000000207008
-296524008	Alternative medicine overdose (navigational concept)	900000000000207008
-296525009	Accidental alternative medicine overdose (navigational concept)	900000000000207008
-296527001	Intentional alternative medicine overdose (navigational concept)	900000000000207008
-296528006	Alternative medicine overdose of undetermined intent (navigational concept)	900000000000207008
-296937000	Food, vitamin, electrolyte and inorganic salt overdose (navigational concept)	900000000000207008
-300273006	Bleeding of pharynx (finding)	900000000000207008
-30041005	Acute angle-closure glaucoma (disorder)	900000000000207008
-301814009	Post-renal renal failure (disorder)	900000000000207008
-301825000	Adverse reaction to premedication (navigational concept)	900000000000207008
-302127009	Primary decompression of thoracic spine (procedure)	900000000000207008
-302252000	Musculoskeletal functions and activities (navigational concept)	900000000000207008
-302253005	Delivered by cesarean section - pregnancy at term (finding)	900000000000207008
-302274006	Ability to transfer between wheelchair and toilet (observable entity)	900000000000207008
-302275007	Able to transfer between wheelchair and toilet (finding)	900000000000207008
-302276008	Unable to transfer between wheelchair and toilet (finding)	900000000000207008
-302277004	Does transfer between wheelchair and toilet (finding)	900000000000207008
-302278009	Does not transfer between wheelchair and toilet (finding)	900000000000207008
-302279001	Difficulty transferring between wheelchair and toilet (finding)	900000000000207008
-302302007	Enzymes A - L (navigational concept)	900000000000207008
-302303002	Enzymes M - Z (navigational concept)	900000000000207008
-30248008	Pygoamorphus (disorder)	900000000000207008
-302570001	Aeromonas canina (organism)	900000000000207008
-302582005	Actinomyces ericksonii (organism)	900000000000207008
-302620005	Salmonella group B phase 1 a-e (navigational concept)	900000000000207008
-302623007	Salmonella group B phase 1 f-r (navigational concept)	900000000000207008
-302626004	Salmonella group B phase 1 y-z (navigational concept)	900000000000207008
-302631002	Salmonella group C1 and C4 phase 1 a-e (navigational concept)	900000000000207008
-302633004	Salmonella group C1 and C4 phase 1 f-r (navigational concept)	900000000000207008
-302643001	Salmonella group C1 and C4 phase 1 y-z (navigational concept)	900000000000207008
-302646009	Salmonella group C2 and C3 phase 1 a-e (navigational concept)	900000000000207008
-302649002	Salmonella group C2 and C3 phase 1 f-r (navigational concept)	900000000000207008
-302652005	Salmonella group C2 and C3 phase 1 y-z (navigational concept)	900000000000207008
-302656008	Salmonella group D1 phase 1 a-e (navigational concept)	900000000000207008
-302659001	Salmonella group D1 phase 1 f-r (navigational concept)	900000000000207008
-302664002	Salmonella group D1 phase 1 y-z (navigational concept)	900000000000207008
-302666000	Salmonella group D2 phase 1 a-e (navigational concept)	900000000000207008
-302670008	Salmonella group D2 phase 1 f-r (navigational concept)	900000000000207008
-302671007	Salmonella group D2 phase 1 y-z (navigational concept)	900000000000207008
-302676002	Salmonella group E1 phase 1 a-e (navigational concept)	900000000000207008
-302678001	Salmonella group E1 phase 1 f-r (navigational concept)	900000000000207008
-302681006	Salmonella group E1 phase 1 y-z (navigational concept)	900000000000207008
-302686001	Salmonella group E4 phase 1 a-e (navigational concept)	900000000000207008
-302687005	Salmonella group E4 phase 1 f-r (navigational concept)	900000000000207008
-302689008	Salmonella group E4 phase 1 y-z (navigational concept)	900000000000207008
-302692007	Salmonella group F phase 1 a-e (navigational concept)	900000000000207008
-302694008	Salmonella group F phase 1 f-r (navigational concept)	900000000000207008
-302695009	Salmonella group F phase 1 y-z (navigational concept)	900000000000207008
-302699003	Salmonella group G1 and G2 phase 1 a-e (navigational concept)	900000000000207008
-302701003	Salmonella group G1 and G2 phase 1 f-r (navigational concept)	900000000000207008
-302706008	Salmonella group G1 and G2 phase 1 y-z (navigational concept)	900000000000207008
-302707004	Salmonella group H phase 1 a-e (navigational concept)	900000000000207008
-302709001	Salmonella group H phase 1 f-r (navigational concept)	900000000000207008
-302712003	Salmonella group H phase 1 y-z (navigational concept)	900000000000207008
-302714002	Salmonella group I phase 1 a-e (navigational concept)	900000000000207008
-302715001	Salmonella group I phase 1 f-r (navigational concept)	900000000000207008
-302719007	Salmonella group I phase 1 y-z (navigational concept)	900000000000207008
-302725006	Salmonella group M phase 1 a-e (navigational concept)	900000000000207008
-302727003	Salmonella group M phase 1 f-r (navigational concept)	900000000000207008
-302729000	Salmonella group M phase 1 y-z (navigational concept)	900000000000207008
-302737008	Salmonella group R phase 1 a-e (navigational concept)	900000000000207008
-302738003	Salmonella group R phase 1 f-r (navigational concept)	900000000000207008
-302739006	Salmonella group R phase 1 y-z (navigational concept)	900000000000207008
-303481006	Intercostal drain (physical object)	900000000000207008
-303757000	Upper gastrointestinal tract contrast procedure (procedure)	900000000000207008
-303849007	Special peripheral angiography procedures (procedure)	900000000000207008
-304035006	Regional back structure (body structure)	900000000000207008
-304896009	Castration anxiety complex (finding)	900000000000207008
-305072005	Structure of breast and/or endocrine system (body structure)	900000000000207008
-30658004	Turacoporphyrin (substance)	900000000000207008
-307274002	Human parasite (navigational concept)	900000000000207008
-307308002	Blood and tissue coccidia (navigational concept)	900000000000207008
-307389008	Blood and tissue microsporidian (navigational concept)	900000000000207008
-307422003	Urogenital protozoan (navigational concept)	900000000000207008
-308557000	Meetings and conferences (procedure)	900000000000207008
-308680003	Hypoglycemia-induced convulsion (disorder)	900000000000207008
-308742005	Alcohol withdrawal-induced convulsion (disorder)	900000000000207008
-308914004	Substances, materials and objects (navigational concept)	900000000000207008
-308915003	Activities, functions and processes (navigational concept)	900000000000207008
-309063006	Organ or tissue harvesting and transplantation procedures (navigational concept)	900000000000207008
-309160006	Normal biochemistry finding (navigational concept)	900000000000207008
-309161005	Normal microbiology finding (navigational concept)	900000000000207008
-309195009	Abnormal biochemistry finding (navigational concept)	900000000000207008
-309197001	Abnormal microbiology finding (navigational concept)	900000000000207008
-309228006	Lowered laboratory finding (navigational concept)	900000000000207008
-309231007	Lowered hematology finding (navigational concept)	900000000000207008
-309232000	Lowered biochemistry finding (navigational concept)	900000000000207008
-309233005	Lowered microbiology finding (navigational concept)	900000000000207008
-309234004	Borderline hematology finding (navigational concept)	900000000000207008
-309236002	Borderline biochemistry finding (navigational concept)	900000000000207008
-309237006	Borderline microbiology finding (navigational concept)	900000000000207008
-309238001	Borderline histology finding (navigational concept)	900000000000207008
-309240006	Raised hematology finding (navigational concept)	900000000000207008
-309241005	Raised biochemistry finding (navigational concept)	900000000000207008
-309242003	Raised microbiology finding (navigational concept)	900000000000207008
-309299006	Positive laboratory finding (navigational concept)	900000000000207008
-309300003	Negative laboratory finding (navigational concept)	900000000000207008
-309301004	Positive hematology finding (navigational concept)	900000000000207008
-309302006	Positive biochemistry finding (navigational concept)	900000000000207008
-309303001	Positive microbiology finding (navigational concept)	900000000000207008
-309304007	Hematology finding negative (navigational concept)	900000000000207008
-309305008	Negative biochemistry finding (navigational concept)	900000000000207008
-309306009	Negative microbiology finding (navigational concept)	900000000000207008
-309308005	Positive immunology finding (navigational concept)	900000000000207008
-309310007	Negative immunology finding (navigational concept)	900000000000207008
-309315002	Equivocal laboratory finding (navigational concept)	900000000000207008
-309316001	Equivocal hematology finding (navigational concept)	900000000000207008
-309317005	Equivocal biochemistry finding (navigational concept)	900000000000207008
-309318000	Equivocal microbiology finding (navigational concept)	900000000000207008
-30941007	Trichophyton fischeri (organism)	900000000000207008
-309517006	Multisystem therapy (procedure)	900000000000207008
-309569001	Normal immunology finding (navigational concept)	900000000000207008
-309571001	Abnormal immunology finding (navigational concept)	900000000000207008
-309574009	Laboratory finding present (navigational concept)	900000000000207008
-309575005	Laboratory finding absent (navigational concept)	900000000000207008
-309577002	Hematology finding present (navigational concept)	900000000000207008
-309578007	Microbiology finding present (navigational concept)	900000000000207008
-309579004	Microbiology finding absent (navigational concept)	900000000000207008
-309581002	Hematology finding absent (navigational concept)	900000000000207008
-309584005	Immunology finding present (navigational concept)	900000000000207008
-309588008	No abnormal laboratory finding detected (navigational concept)	900000000000207008
-309589000	No abnormal biochemistry finding detected (navigational concept)	900000000000207008
-309590009	No abnormal microbiology finding detected (navigational concept)	900000000000207008
-310231008	Type attribute A - C (navigational concept)	900000000000207008
-310232001	Type attribute D - F (navigational concept)	900000000000207008
-310233006	Type attribute G - L (navigational concept)	900000000000207008
-310234000	Type attribute M - P (navigational concept)	900000000000207008
-310235004	Type attribute R - S (navigational concept)	900000000000207008
-310239005	Type attribute T - Z (navigational concept)	900000000000207008
-310523002	Baby premature 24-26 weeks (finding)	900000000000207008
-310548004	Baby premature 26-28 weeks (finding)	900000000000207008
-310571002	Reactive laboratory finding (navigational concept)	900000000000207008
-310572009	Reactive microbiology finding (navigational concept)	900000000000207008
-310661005	Premature infant 28-37 weeks (finding)	900000000000207008
-311459003	Team meeting (procedure)	900000000000207008
-311526004	Parasitic nematode (navigational concept)	900000000000207008
-311736005	Non-medicinal substance (navigational concept)	900000000000207008
-311932003	Decorative agent (substance)	900000000000207008
-311933008	Filler (substance)	900000000000207008
-311997006	Parasitic fluke (navigational concept)	900000000000207008
-312001004	Arthropod-borne organism (navigational concept)	900000000000207008
-312071000	Vaccine and biological substance (navigational concept)	900000000000207008
-312082008	Contraceptive coil (physical object)	900000000000207008
-312100001	Types of drugs A-G (navigational concept)	900000000000207008
-312101002	Types of drugs H-M (navigational concept)	900000000000207008
-312102009	Types of drugs N-S (navigational concept)	900000000000207008
-312103004	Types of drugs T-Z (navigational concept)	900000000000207008
-312211002	Human arthropod parasite (navigational concept)	900000000000207008
-312296006	Infection of body wall and cavities (navigational concept)	900000000000207008
-312338006	Tick-borne coltivirus encephalitis (navigational concept)	900000000000207008
-312419003	Structure of respiratory system and/or intrathoracic structure (body structure)	900000000000207008
-312557001	Multisystem disorder W-X (navigational concept)	900000000000207008
-312565003	Multisystem disorder A-B (navigational concept)	900000000000207008
-312566002	Multisystem disorder C-D (navigational concept)	900000000000207008
-312567006	Multisystem disorder E-F (navigational concept)	900000000000207008
-312568001	Multisystem disorder G-H (navigational concept)	900000000000207008
-312569009	Multisystem disorder I-J (navigational concept)	900000000000207008
-312570005	Multisystem disorder K-L (navigational concept)	900000000000207008
-312571009	Multisystem disorder M-N (navigational concept)	900000000000207008
-312572002	Multisystem disorder O-P (navigational concept)	900000000000207008
-312573007	Multisystem disorder Q-R (navigational concept)	900000000000207008
-312574001	Multisystem disorder S-T (navigational concept)	900000000000207008
-312575000	Multisystem disorder U-V (navigational concept)	900000000000207008
-312576004	Multisystem disorder Y-Z (navigational concept)	900000000000207008
-314072006	Hematology screening test (procedure)	900000000000207008
-314090007	Sickle cell disease screening test (procedure)	900000000000207008
-314383006	Structure of pelvic peritoneal space (body structure)	900000000000207008
-314756007	Child height = 0.4th centile (observable entity)	900000000000207008
-3161000146109	Bacillus arsenicus (organism)	900000000000207008
-316972006	Compound proprietary antacids A-C (navigational concept)	900000000000207008
-317003008	Compound proprietary antacids D-L (navigational concept)	900000000000207008
-317038005	Compound proprietary antacids M-Z (navigational concept)	900000000000207008
-317072002	Calcium/bismuth antacids A-Z (navigational concept)	900000000000207008
-317172004	Compound antispasmodics A-Z (navigational concept)	900000000000207008
-317604003	Rectal laxatives A-Z (navigational concept)	900000000000207008
-317698009	Rectal compounds+steroids A-Z (navigational concept)	900000000000207008
-317811002	Gastric acidity increasers A-Z (navigational concept)	900000000000207008
-318084003	Potassium sparing compound diuretics A-Z (navigational concept)	900000000000207008
-318154008	Diuretics+potassium supplement A-Z (navigational concept)	900000000000207008
-32031003	Poisoning by antiallergic AND/OR antiemetic drug (navigational concept)	900000000000207008
-320430007	Compound bronchodilators A-Z (navigational concept)	900000000000207008
-3209002	Pancuronium sodium (substance)	900000000000207008
-320950000	Inhalations A-Z (navigational concept)	900000000000207008
-320998009	Proprietary cough compounds A-L (navigational concept)	900000000000207008
-321022009	Proprietary cough compounds M-Z (navigational concept)	900000000000207008
-321917006	Compound antidepressants A-Z (navigational concept)	900000000000207008
-322305003	Compound analgesics A-L (navigational concept)	900000000000207008
-322354005	Compound analgesics M-Z (navigational concept)	900000000000207008
-32247007	Sex chromosome (cell structure)	900000000000207008
-326190009	Product containing precisely estradiol 312.5 nanogram/1 hour prolonged-release vaginal ring (clinical drug)	900000000000207008
-328724007	Supplementary and complete feeds A to F (navigational concept)	900000000000207008
-328787003	Supplementary and complete feeds F to P (navigational concept)	900000000000207008
-328850002	Supplementary and complete feeds N to Z (navigational concept)	900000000000207008
-328925004	More supplement and complete foods A-Z (navigational concept)	900000000000207008
-331395000	Emollients/barrier creams: A-E (navigational concept)	900000000000207008
-331441009	Emollients/barrier creams: F-O (navigational concept)	900000000000207008
-331477002	Emollients/barrier creams: P-Z (navigational concept)	900000000000207008
-332467002	Sunscreening preparations A-Z (navigational concept)	900000000000207008
-332526009	Camouflaging preparations A-Z (navigational concept)	900000000000207008
-333117008	Minor skin infection preparations A-Z (navigational concept)	900000000000207008
-333185008	Chlorhexidine A-H (navigational concept)	900000000000207008
-333230002	Chlorhexidine I-Z (navigational concept)	900000000000207008
-333477005	Circulatory topical preparations A-Z (navigational concept)	900000000000207008
-334830004	Hemostatic gauze product (physical object)	900000000000207008
-335095000	Elastic diachylon ventilated bandage (physical object)	900000000000207008
-336031000119105	Anatomic narrow angle glaucoma of right eye (disorder)	900000000000207008
-33647009	Anatomical narrow angle glaucoma (disorder)	900000000000207008
-336611000119109	Acute angle-closure glaucoma of right eye (disorder)	900000000000207008
-339373001	Stoma belt (physical object)	900000000000207008
-34093004	Disorder of hematopoietic system (navigational concept)	900000000000207008
-34142005	Husky-breathy whispered-continuous group (finding)	900000000000207008
-341641000119100	Anatomic narrow angle glaucoma of left eye (disorder)	900000000000207008
-342221000119104	Acute angle-closure glaucoma of left eye (disorder)	900000000000207008
-346861000119107	Anatomic narrow angle glaucoma of bilateral eyes (disorder)	900000000000207008
-347381000119106	Bilateral acute angle-closure glaucoma (disorder)	900000000000207008
-349364007	Anthroposophical medicine (navigational concept)	900000000000207008
-350084001	Alternative medicines (navigational concept)	900000000000207008
-35237004	Actinomadura libanotica (organism)	900000000000207008
-35848003	Bifidobacterium infantis (organism)	900000000000207008
-360101006	Audiant bone conductor (physical object)	900000000000207008
-360283003	Auditory appliance (physical object)	900000000000207008
-360517009	Whirling disease (disorder)	900000000000207008
-360521002	Alternative arterial hierarchy (navigational concept)	900000000000207008
-360653002	Deficiency of pectinesterase (disorder)	900000000000207008
-360763000	Deficiency of phosphomonoesterase (disorder)	900000000000207008
-360822002	Deficiency of sulfatase (disorder)	900000000000207008
-360921008	Deficiency of peptidase a (disorder)	900000000000207008
-360953004	Deficiency of aminoacyl-histidine dipeptidase (disorder)	900000000000207008
-361267005	Alcohol-related fit (finding)	900000000000207008
-362591004	Entire lymphocytic tissue (body structure)	900000000000207008
-36272005	Infectious agent (navigational concept)	900000000000207008
-362956003	Procedure/intervention (navigational concept)	900000000000207008
-362957007	Finding / disorder (navigational concept)	900000000000207008
-362963003	Administrative / management procedure (navigational concept)	900000000000207008
-362976009	Finding / observation / clinical history (navigational concept)	900000000000207008
-363220001	Neonatal hematologic disorder (navigational concept)	900000000000207008
-363260000	Perinatal hematologic problems (navigational concept)	900000000000207008
-363536003	Pulmonary structure including vessels and lymphoid tissue (body structure)	900000000000207008
-363874003	Grief and dying observables (observable entity)	900000000000207008
-364006	Acute left-sided heart failure (disorder)	900000000000207008
-364935004	Finding related to ability to transfer between wheelchair and toilet (finding)	900000000000207008
-365844009	Biochemistry interpretation (navigational concept)	900000000000207008
-366237003	Finding of dental caries activity (finding)	900000000000207008
-36709001	Paecilomyces lilacinum (organism)	900000000000207008
-367563001	Penile sheath (physical object)	900000000000207008
-367951000119106	Traumatic anterior urethral stricture (disorder)	900000000000207008
-367961000119108	Traumatic bulbous urethral stricture (disorder)	900000000000207008
-367971000119102	Traumatic membranous urethral stricture (disorder)	900000000000207008
-368705005	Entire Fleischmann's bursa (body structure)	900000000000207008
-368846005	Entire physiologic cup of optic disc (body structure)	900000000000207008
-368981000119103	Traumatic stricture of female urethra (disorder)	900000000000207008
-36912005	Arthroderma otae (organism)	900000000000207008
-36950004	Isospora canis (organism)	900000000000207008
-370117001	Disorder of system (navigational concept)	900000000000207008
-370118006	Disorder of pregnancy / labor / delivery / puerperium (navigational concept)	900000000000207008
-370119003	Fetal / neonatal / perinatal disorder (navigational concept)	900000000000207008
-370120009	Endocrine / nutritional / metabolic disorder (navigational concept)	900000000000207008
-370122001	Poisoning / injury (navigational concept)	900000000000207008
-37017009	Helminth (navigational concept)	900000000000207008
-370376009	Ear, nose and throat test finding (navigational concept)	900000000000207008
-370496000	Urovagina (disorder)	900000000000207008
-370889009	Lymphocytic portal hepatitis (disorder)	900000000000207008
-370902001	Patient death or serious disability associated with the use of contaminated drugs, devices, or biologics provided by the healthcare facility (event)	900000000000207008
-370903006	Patient death or serious disability associated with the use or function of a device in patient care, in which the device is used or functions other than as intended (event)	900000000000207008
-370904000	Patient death or serious disability associated with intravascular air embolism that occurs while being cared for in a healthcare facility (event)	900000000000207008
-370907007	Patient death or serious disability associated with patient elopement (disappearance) for more than four hours (event)	900000000000207008
-370910000	Patient death or serious disability associated with a medication error (event)	900000000000207008
-370911001	Patient death or serious disability associated with a hemolytic reaction due to the administration of ABO-incompatible blood or blood products (event)	900000000000207008
-370912008	Maternal death or serious disability associated with labor or delivery in a low-risk pregnancy while being cared for in a healthcare facility (event)	900000000000207008
-370913003	Patient death or serious disability associated with hypoglycemia, the onset of which occurs while the patient is being cared for in a healthcare facility (event)	900000000000207008
-370916006	Patient death or serious disability due to spinal manipulative therapy (event)	900000000000207008
-370918007	Patient death or serious disability associated with an electric shock while being cared for in a healthcare facility (event)	900000000000207008
-370920005	Patient death or serious disability associated with a burn incurred from any source while being cared for in a healthcare facility (event)	900000000000207008
-370922002	Patient death or serious disability associated with the use of restraints or bedrails while being cared for in a healthcare facility (event)	900000000000207008
-370927008	Death or significant injury of a patient or staff member resulting from a physical assault (i.e., battery) that occurs within or on the grounds of the healthcare facility (event)	900000000000207008
-371003002	Ureterogram (procedure)	900000000000207008
-371022006	Seizures due to metabolic disorder (disorder)	900000000000207008
-371107004	Seizures complicating intracranial hemorrhage in the newborn (disorder)	900000000000207008
-371114002	Seizures complicating intracranial hemorrhage (disorder)	900000000000207008
-371115001	Seizures complicating infection (disorder)	900000000000207008
-37160003	Pintid (disorder)	900000000000207008
-371839009	Derived flow, non-valve (observable entity)	900000000000207008
-371875006	Device withdrawn and / or removed (finding)	900000000000207008
-371877003	Device inserted into sheath (finding)	900000000000207008
-372441001	Seizures complicating infection in the newborn (disorder)	900000000000207008
-372926008	Genus Chlamydophila (organism)	900000000000207008
-372986006	Infection caused by Aspergillus maydis (disorder)	900000000000207008
-372989004	Infection caused by Aspergillus notatum (disorder)	900000000000207008
-372994004	Infection caused by Aspergillus phialiseptus (disorder)	900000000000207008
-373002002	Infection caused by Aspergillus taumanii (disorder)	900000000000207008
-373312002	Procedure by transurethral approach (navigational concept)	900000000000207008
-373313007	Procedure by transthoracic approach (navigational concept)	900000000000207008
-373314001	Procedure by anterior approach (navigational concept)	900000000000207008
-373315000	Procedure by posterior approach (navigational concept)	900000000000207008
-373316004	Procedure by transcrotal approach (navigational concept)	900000000000207008
-373317008	Procedure by intranasal approach (navigational concept)	900000000000207008
-373318003	Procedure by extraoral approach (navigational concept)	900000000000207008
-373319006	Procedure by transluminal approach (navigational concept)	900000000000207008
-373320000	Procedure by vaginal approach (navigational concept)	900000000000207008
-373321001	Procedure by transsternal approach (navigational concept)	900000000000207008
-373322008	Procedure by suprapubic approach (navigational concept)	900000000000207008
-373323003	Procedure by abdominal approach (navigational concept)	900000000000207008
-373324009	Procedure by transvascular approach (navigational concept)	900000000000207008
-373325005	Procedure by colostomy approach (navigational concept)	900000000000207008
-373326006	Procedure by transsphenoidal approach (navigational concept)	900000000000207008
-373327002	Procedure by transoral approach (navigational concept)	900000000000207008
-373328007	Procedure by intravesical approach (navigational concept)	900000000000207008
-373329004	Procedure by sublabial approach (navigational concept)	900000000000207008
-373330009	Procedure by perineal approach (navigational concept)	900000000000207008
-373331008	Procedure by transcervical approach - neck (navigational concept)	900000000000207008
-373332001	Procedure by transanal approach (navigational concept)	900000000000207008
-373454003	Metalloporphyrin agent (substance)	900000000000207008
-373696007	Biguanide disinfectant (substance)	900000000000207008
-374017007	Product containing precisely fluoride 1.1 milligram/1 each conventional release oral tablet (clinical drug)	900000000000207008
-374018002	Product containing precisely fluoride 2.2 milligram/1 each conventional release oral tablet (clinical drug)	900000000000207008
-374019005	Product containing precisely fluoride 550 microgram/1 each conventional release oral tablet (clinical drug)	900000000000207008
-376132001	Product containing precisely glyceryl trinitrate 800 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-376251004	Product containing precisely glyceryl trinitrate 200 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-376252006	Product containing precisely glyceryl trinitrate 400 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-376253001	Product containing precisely glyceryl trinitrate 600 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-376625006	Product containing precisely glyceryl trinitrate 300 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-37758008	Drug-induced coagulation inhibitor (substance)	900000000000207008
-37763007	Parasite (navigational concept)	900000000000207008
-37844000	Toxic effect of chemical (navigational concept)	900000000000207008
-37860001	Mazoplasia (disorder)	900000000000207008
-37872007	Avoidant disorder of childhood OR adolescence (disorder)	900000000000207008
-38240000	Blood trematode (navigational concept)	900000000000207008
-384605003	Complex relationship building (procedure)	900000000000207008
-385447000	Mycoplasma haemosuis (organism)	900000000000207008
-385758005	Community special services assessment (procedure)	900000000000207008
-385759002	Provision of community special services (regime/therapy)	900000000000207008
-385760007	Community special services education (procedure)	900000000000207008
-385761006	Community special services management (procedure)	900000000000207008
-386095009	Test control (substance)	900000000000207008
-386125002	Device crossed septum (finding)	900000000000207008
-386283002	Environmental management: attachment process (procedure)	900000000000207008
-386520000	Attachment promotion (procedure)	900000000000207008
-387836001	Proprietary agent AND/OR biological product (navigational concept)	900000000000207008
-38815004	Isospora ohioensis (organism)	900000000000207008
-388871003	Primary optic nerve sheath meningioma (disorder)	900000000000207008
-39092007	Myelomenia (disorder)	900000000000207008
-391157003	Procedure recommendation categorized by action status (navigational concept)	900000000000207008
-394777002	Health encounter sites (environment)	900000000000207008
-394898006	Administration of treatment via specific route (navigational concept)	900000000000207008
-394899003	Oral administration of treatment (navigational concept)	900000000000207008
-394901007	Subcutaneous administration of treatment (navigational concept)	900000000000207008
-394903005	Intravenous administration of treatment (navigational concept)	900000000000207008
-394904004	Transdermal administration of treatment (navigational concept)	900000000000207008
-395097005	Treatment via bladder catheter (navigational concept)	900000000000207008
-395171002	Histology laboratory test (navigational concept)	900000000000207008
-395507008	Premature infant (finding)	900000000000207008
-395676008	Template entry - Electronic Health Record category (navigational concept)	900000000000207008
-395888007	Squill opiate (substance)	900000000000207008
-396177006	Mcg/m2 (qualifier value)	900000000000207008
-39662004	Crystalline corneal dystrophy (disorder)	900000000000207008
-396780003	Chemotherapy AND/OR radiation therapy prior to lymphadenectomy (situation)	900000000000207008
-396953001	Acetobacter hansenii (organism)	900000000000207008
-397152003	Excision of thyroglossal duct fistula (procedure)	900000000000207008
-397555007	Placido disk (physical object)	900000000000207008
-398074008	Thermotherapy with hot packs (regime/therapy)	900000000000207008
-398270009	Methods of tracheal or bronchial intubation (navigational concept)	900000000000207008
-398275004	Anesthesia type (navigational concept)	900000000000207008
-398765001	Therapeutic barium enema for reduction of intussusception (procedure)	900000000000207008
-398983000	Chronic disease of hematopoietic system (navigational concept)	900000000000207008
-399092006	Toxic effect of organophosphate AND/OR carbamate pesticide (navigational concept)	900000000000207008
-399319009	Diagnostic imaging and nuclear medicine procedures (navigational concept)	900000000000207008
-40008005	Plethysmometry (procedure)	900000000000207008
-400151006	Congenital melanocytic nevus (morphologic abnormality)	900000000000207008
-402649001	Acquired phlebectasia (navigational concept)	900000000000207008
-403003001	Tinea capitis caused by Microsporum canis variant distortum (disorder)	900000000000207008
-403009002	Tinea capitis caused by Trichophyton megninii (disorder)	900000000000207008
-403026008	Tinea corporis caused by Microsporum distortum (disorder)	900000000000207008
-403030006	Tinea corporis caused by Trichophyton megninii (disorder)	900000000000207008
-403067003	Tinea caused by Trichophyton equinum (disorder)	900000000000207008
-403069000	Tinea caused by Microsporum canis variant distortum (disorder)	900000000000207008
-403073002	Tinea caused by Trichophyton megninii (disorder)	900000000000207008
-403165009	Cat scratch injury (disorder)	900000000000207008
-403755007	Adverse cutaneous reaction to alternative medical therapy (navigational concept)	900000000000207008
-403773005	Facial milia, lobate tongue, lingual and labial frenula syndrome (disorder)	900000000000207008
-403952004	Lymphoepithelial tumor of skin (disorder)	900000000000207008
-404503003	Finding of Candida, not Candida albicans (finding)	900000000000207008
-404526005	Finding of Plasmodium species not Plasmodium falciparum (finding)	900000000000207008
-405726001	Inflammatory AND/OR infective disease of the central nervous system (navigational concept)	900000000000207008
-40636004	Avian schistosome (navigational concept)	900000000000207008
-406501003	Shigella flexneri 5a [V:3,4] (organism)	900000000000207008
-406502005	Shigella flexneri 5b [V:7,8] (organism)	900000000000207008
-407469007	Mosquito-borne orthobunyavirus encephalitis (navigational concept)	900000000000207008
-407473005	Tick-borne orthobunyavirus fever (navigational concept)	900000000000207008
-407474004	Mosquito-borne orthobunyavirus fever (navigational concept)	900000000000207008
-407674008	Aspirin-induced asthma (disorder)	900000000000207008
-407771008	Product containing precisely estradiol 2.083 microgram/1 hour prolonged-release vaginal ring (clinical drug)	900000000000207008
-40779009	Discoid atelectasis (disorder)	900000000000207008
-408842000	Antenatal human immunodeficiency virus blood screening test requested (finding)	900000000000207008
-408843005	Antenatal thalassemia blood screening test requested (finding)	900000000000207008
-409300002	Product containing precisely estradiol 4.167 microgram/1 hour prolonged-release vaginal ring (clinical drug)	900000000000207008
-409503001	Category A biological agent (navigational concept)	900000000000207008
-409504007	Category B biological agent (navigational concept)	900000000000207008
-409517005	Category C biological agent (navigational concept)	900000000000207008
-409835007	Subclass Actinobacteridae (organism)	900000000000207008
-410050000	Clinical manifestation of carnosinase deficiency (disorder)	900000000000207008
-410549006	Physical examination categorized by action status (navigational concept)	900000000000207008
-410550006	History taking categorized by action status (navigational concept)	900000000000207008
-41090000	Chlamydophila psittaci variant bovis (organism)	900000000000207008
-41169005	Aspergillus maydis (organism)	900000000000207008
-412065005	Squash (substance)	900000000000207008
-41266007	Disorder of immune system (navigational concept)	900000000000207008
-413101007	Stress-induced epilepsy (disorder)	900000000000207008
-413124000	Stroke/transient ischemic attack referral (finding)	900000000000207008
-413454004	Administration (navigational concept)	900000000000207008
-413516001	Ampule - unit of product usage (qualifier value)	900000000000207008
-413775006	Caulobacter crescentus (organism)	900000000000207008
-413857000	Class Actinobacteria (organism)	900000000000207008
-414018003	Disease transmitted by tick (navigational concept)	900000000000207008
-414093008	Encephalitis due to tick-borne encephalitis virus (navigational concept)	900000000000207008
-414094002	Encephalitis due to tick-borne encephalitis virus subgroup (navigational concept)	900000000000207008
-414301000119107	Defecography with barium enema (procedure)	900000000000207008
-41500002	Small bowel series (procedure)	900000000000207008
-415198008	Pseudomonas fulgida (organism)	900000000000207008
-415818006	Vial - unit of product usage (qualifier value)	900000000000207008
-415821008	Viral encephalitis transmitted by tick (navigational concept)	900000000000207008
-416186005	Enteropathogenic virus (navigational concept)	900000000000207008
-416331001	Enteropathogenic bacteria (navigational concept)	900000000000207008
-416401008	Glucose dependent insulinotropic peptide (substance)	900000000000207008
-416592005	Inferior pubis (finding)	900000000000207008
-416618000	Adjustment of suture within Molteno tube (procedure)	900000000000207008
-416816003	Ligamentous strain (finding)	900000000000207008
-416962007	Subclass Acidimicrobidae (organism)	900000000000207008
-417200003	Downslipped innominate (finding)	900000000000207008
-417223000	Adjustment of suture within Baerveldt tube (procedure)	900000000000207008
-417258003	Enteropathogen (navigational concept)	900000000000207008
-417304005	Subclass Coriobacteridae (organism)	900000000000207008
-417624003	Oculocephalogyric reflex (observable entity)	900000000000207008
-417680009	Cancer home care pack given (situation)	900000000000207008
-418004004	Gingival administration of treatment (navigational concept)	900000000000207008
-418241006	Zoonotic bacteria (navigational concept)	900000000000207008
-418442001	Intravesical administration of treatment into bladder (navigational concept)	900000000000207008
-418501001	Alternative medicine agent (navigational concept)	900000000000207008
-418512001	Respiratory viruses (navigational concept)	900000000000207008
-418530008	Tube - unit of product usage (qualifier value)	900000000000207008
-418604000	Intraspinal administration of treatment (navigational concept)	900000000000207008
-418642006	Zoonotic pathogen (navigational concept)	900000000000207008
-418660006	Buccal administration of treatment (navigational concept)	900000000000207008
-418805002	Lab result outside established criteria (navigational concept)	900000000000207008
-418833002	Vector-transmitted infectious disease (navigational concept)	900000000000207008
-418836005	Base - unit of product usage (qualifier value)	900000000000207008
-418904002	Intracavernous administration of treatment (navigational concept)	900000000000207008
-419054001	Sublingual administration of treatment (navigational concept)	900000000000207008
-419117008	Anthroposophical agent (navigational concept)	900000000000207008
-419276003	Flea-borne infectious disease (navigational concept)	900000000000207008
-419307005	Benign breast condition (navigational concept)	900000000000207008
-419344005	Barium small bowel meal (procedure)	900000000000207008
-419408001	Topical administration of treatment (navigational concept)	900000000000207008
-419647006	Treatment administration via gastrostomy (navigational concept)	900000000000207008
-419672006	Bottle - unit of product usage (qualifier value)	900000000000207008
-419702001	Patch - unit of product usage (qualifier value)	900000000000207008
-419741004	Fluoroscopic gastrointestinal tract loopography (procedure)	900000000000207008
-419773005	Small bowel series with water soluble contrast follow through (procedure)	900000000000207008
-419888008	Packet - unit of product usage (qualifier value)	900000000000207008
-419907002	Nasogastric administration of treatment (navigational concept)	900000000000207008
-420004004	Swallowed whole (qualifier value)	900000000000207008
-420023006	Mite-borne infectious disease (navigational concept)	900000000000207008
-420191001	Urethral administration of treatment (navigational concept)	900000000000207008
-420401004	Swab - unit of product usage (qualifier value)	900000000000207008
-42117003	Ulcerated varices (morphologic abnormality)	900000000000207008
-421705002	Afterimage (disorder)	900000000000207008
-421823004	Pad - unit of product usage (qualifier value)	900000000000207008
-422346007	Lente human insulin (substance)	900000000000207008
-423476009	Abnormal cardiac laboratory result (navigational concept)	900000000000207008
-42529003	Pilum (cell structure)	900000000000207008
-425565005	Blister - unit of product usage (qualifier value)	900000000000207008
-425699000	Genus Anaerobaculum (organism)	900000000000207008
-426140009	Subclass Rubrobacteridae (organism)	900000000000207008
-426148002	Sachet - unit of product usage (qualifier value)	900000000000207008
-426321009	Primary decompression of posterior fossa and upper cervical spinal cord and instrumentation (procedure)	900000000000207008
-42635006	Pseudomonas stanieri (organism)	900000000000207008
-426634003	Eclamptic seizure (finding)	900000000000207008
-426883001	Actinopolyspora iraqiensis (organism)	900000000000207008
-427099000	Active tuberculosis (disorder)	900000000000207008
-427203002	Tumor location cannot be determined (finding)	900000000000207008
-427586006	Head pressing (finding)	900000000000207008
-427678004	Disc - unit of product usage (qualifier value)	900000000000207008
-427863009	Unreliable laboratory result (navigational concept)	900000000000207008
-427984003	Primary foraminoplasty of cervical spine using laser (procedure)	900000000000207008
-428003006	Bar - unit of product usage (qualifier value)	900000000000207008
-428177008	Implant - unit of product usage (qualifier value)	900000000000207008
-428499005	Primary foraminoplasty of thoracic spine using laser (procedure)	900000000000207008
-428639001	Insert - unit of product usage (qualifier value)	900000000000207008
-428640004	Pellet - unit of product usage (qualifier value)	900000000000207008
-428641000	Capsule - unit of product usage (qualifier value)	900000000000207008
-428649003	Primary repair of umbilical hernia (procedure)	900000000000207008
-428654007	Primary foraminoplasty of spine (procedure)	900000000000207008
-428672001	Bag - unit of product usage (qualifier value)	900000000000207008
-428673006	Tablet - unit of product usage (qualifier value)	900000000000207008
-428836006	Primary repair of umbilical hernia using suture (procedure)	900000000000207008
-429258006	History of aspirin exacerbated respiratory disease (situation)	900000000000207008
-429308001	Can - unit of product usage (qualifier value)	900000000000207008
-429378000	Primary repair of umbilical hernia using prosthetic material (procedure)	900000000000207008
-429385001	Primary foraminoplasty of lumbar spine using laser (procedure)	900000000000207008
-42956005	Endomyces geotrichum (organism)	900000000000207008
-429587008	Lozenge - unit of product usage (qualifier value)	900000000000207008
-429671000	Sponge - unit of product usage (qualifier value)	900000000000207008
-429777007	Primary repair of umbilical hernia using natural material (procedure)	900000000000207008
-430293001	Suppository - unit of product usage (qualifier value)	900000000000207008
-430855004	Touch preparation cytologic material (specimen)	900000000000207008
-430900003	Streptomyces almquistii (organism)	900000000000207008
-430958003	Infection of peritoneal dialysis catheter (disorder)	900000000000207008
-431390009	Flexibacter aurantiacus (organism)	900000000000207008
-431462009	Therapeutic water soluble enema and fluoroscopy of colon (procedure)	900000000000207008
-431972002	Halomonas halodurans (organism)	900000000000207008
-432031004	Fluoroscopy of barium small bowel meal and follow through (procedure)	900000000000207008
-433047006	Klebsiella singaporensis (organism)	900000000000207008
-433197008	Genus Marinibacillus (organism)	900000000000207008
-433640007	Desulfurococcus mobilis (organism)	900000000000207008
-434094006	Chlorobaculum chlorovibrioides (organism)	900000000000207008
-434264007	Gluconacetobacter hansenii (organism)	900000000000207008
-434277003	Geobacillus gargensis (organism)	900000000000207008
-434287004	Microbispora mesophila (organism)	900000000000207008
-43521007	Corneal deposit associated with metabolic disorder (disorder)	900000000000207008
-43784004	Thymic lymphopoietin suppressing factor (substance)	900000000000207008
-437871001	Seizure after head injury (finding)	900000000000207008
-437919005	Streptomyces cyanoalbus (organism)	900000000000207008
-438032000	Subclass Sphaerobacteridae (organism)	900000000000207008
-438156004	Anoxic epileptic seizure (finding)	900000000000207008
-438230004	Streptomyces floridae (organism)	900000000000207008
-438234008	Streptomyces bambergiensis (organism)	900000000000207008
-438242009	Streptomyces albovinaceus (organism)	900000000000207008
-438268002	Sphingomonas cloacae (organism)	900000000000207008
-438282002	Streptomyces sporocinereus (organism)	900000000000207008
-438314009	Genus Vitellibacter (organism)	900000000000207008
-438468000	Saccharomonospora paurometabolica (organism)	900000000000207008
-438662005	Streptomyces phaeopurpureus (organism)	900000000000207008
-438883001	Genus Zymophilus (organism)	900000000000207008
-438914002	Streptomyces melanogenes (organism)	900000000000207008
-438929000	Streptomyces endus (organism)	900000000000207008
-439062004	Anthroposophical medicine regime (navigational concept)	900000000000207008
-439159004	Hepcidin (substance)	900000000000207008
-439179007	Streptomyces fluorescens (organism)	900000000000207008
-439561001	Genus Silicibacter (organism)	900000000000207008
-439577000	Negative virology finding (navigational concept)	900000000000207008
-439607009	Streptomyces rutgersensis (organism)	900000000000207008
-440245005	Dressing medicated with leptospermum honey (physical object)	900000000000207008
-440255009	Streptomyces rangoonensis (organism)	900000000000207008
-440296007	Streptococcus oligofermentans (organism)	900000000000207008
-440297003	Streptomyces alboviridis (organism)	900000000000207008
-440568002	Visit with nurse at next appointment requested (procedure)	900000000000207008
-440807002	Streptomyces diastaticus subspecies ardesiacus (organism)	900000000000207008
-441007009	Streptosporangium claviforme (organism)	900000000000207008
-441082001	Streptomyces diastaticus subspecies diastaticus (organism)	900000000000207008
-441141003	Streptomyces rutgersensis subspecies castelarensis (organism)	900000000000207008
-441150001	Streptomyces rutgersensis subspecies rutgersensis (organism)	900000000000207008
-441383002	Streptomyces cavourensis subspecies washingtonensis (organism)	900000000000207008
-441788009	Minimally invasive procedure (navigational concept)	900000000000207008
-442118009	Primary hemilaminectomy for decompression of lumbar spine (procedure)	900000000000207008
-44277000	Renal function study (navigational concept)	900000000000207008
-442980005	Family Catabacteriaceae (organism)	900000000000207008
-443255005	Injection of small joint (navigational concept)	900000000000207008
-443566004	Arthrocentesis and injection of intermediate joint (navigational concept)	900000000000207008
-443567008	Arthrocentesis of intermediate joint (navigational concept)	900000000000207008
-443800001	Quantitative measurement of mass concentration of hydrocortisone in serum or plasma specimen obtained at a specified time (procedure)	900000000000207008
-443801002	Quantitative measurement of mass concentration of hydrocortisone in p.m. serum or plasma specimen (procedure)	900000000000207008
-443863002	Quantitative measurement of mass concentration of hydrocortisone in baseline serum or plasma specimen after adrenocorticotropin challenge (procedure)	900000000000207008
-44391009	Leishmania mexicana garnhami (organism)	900000000000207008
-443984008	Quantitative measurement of mass concentration of hydrocortisone in saliva specimen (procedure)	900000000000207008
-444107005	Exposure to communicable disease (navigational concept)	900000000000207008
-444133002	Progressive systemic sclerosis (disorder)	900000000000207008
-444863008	Anatomical narrow angle glaucoma with borderline intraocular pressure (disorder)	900000000000207008
-445271007	Villous arthritis (disorder)	900000000000207008
-445863004	Loopogram of colon (procedure)	900000000000207008
-447202000	Parenteral route (navigational concept)	900000000000207008
-447222001	Granuloma gravidarum (disorder)	900000000000207008
-448070004	Primary extended posterior decompression of lumbar spine (procedure)	900000000000207008
-448207008	Primary decompression of cervical spinal cord by anterior approach (procedure)	900000000000207008
-448686005	Primary decompression of lumbar spinal cord by posterior approach (procedure)	900000000000207008
-448876006	Subarterial ventricular septal defect (disorder)	900000000000207008
-450338003	Primary decompression of peripheral nerve (procedure)	900000000000207008
-450382007	Pediococcus lolii (organism)	900000000000207008
-450406007	Bacillus methylotrophicus (organism)	900000000000207008
-450534002	Closed contusion (morphologic abnormality)	900000000000207008
-450724008	Injury of cervical region of back (disorder)	900000000000207008
-45703009	Molimen climacterium virile (finding)	900000000000207008
-463201002	Orthodontic extraoral headgear (physical object)	900000000000207008
-464578003	Oxygen administration face tent (physical object)	900000000000207008
-464976007	Ossicular prosthesis, total (physical object)	900000000000207008
-46770001	Protozoan parasite (navigational concept)	900000000000207008
-46797008	Bathing patient in isolette (procedure)	900000000000207008
-4730003	Mosquito-borne infectious disease (navigational concept)	900000000000207008
-473114006	History of active tuberculosis (situation)	900000000000207008
-47604008	Miliary tuberculosis (disorder)	900000000000207008
-47840007	Leptospira interrogans, serogroup Pomona (organism)	900000000000207008
-47901003	5-trimethoxyamphetamine (substance)	900000000000207008
-47966006	Division of bone of thorax, ribs or sternum (navigational concept)	900000000000207008
-48573006	Suppurative lymphadenopathy (disorder)	900000000000207008
-486731010000109	Presence or identity of Clostridium botulinum toxin in specimen at point in time by Endopep-MS (observable entity)	11010000107
-48948003	Isospora felis (organism)	900000000000207008
-49255002	Uremic convulsion (finding)	900000000000207008
-50337007	Toxic effect of benzene AND/OR homologue (navigational concept)	900000000000207008
-50435003	Exserohilum mcginnisii (organism)	900000000000207008
-50472009	Structure of physiologic cup of optic disc (body structure)	900000000000207008
-50724007	Longitudinal fetal presentation (finding)	900000000000207008
-5078000	Scriver-Goldbloom-Roy syndrome (disorder)	900000000000207008
-51072007	Saccharomyces fragilis (organism)	900000000000207008
-51424000	Dipodascus geotrichum (organism)	900000000000207008
-51589005	Poisoning by mixed bacterial vaccine except combinations with a pertussis component (navigational concept)	900000000000207008
-522007	Thermoactinomyces peptonophilus (organism)	900000000000207008
-53325009	Microsporum vanbreuseghemii (organism)	900000000000207008
-53482009	Startle partial seizure (finding)	900000000000207008
-53815009	Arthroderma grubyi (organism)	900000000000207008
-538181010000106	Mass ratio of 11-ketoandrosterone to creatinine in urine in 24 hours (observable entity)	11010000107
-538191010000109	Mass ratio of 11-ketoetiocholanolone to creatinine in urine in 24 hours (observable entity)	11010000107
-53980005	Trichophyton equinum var. autotrophicum (organism)	900000000000207008
-54566003	Common pilum (cell structure)	900000000000207008
-55067007	Poisoning by uric acid metabolism drug (navigational concept)	900000000000207008
-55295000	Mammalian schistosome (navigational concept)	900000000000207008
-55528005	Menosepsis (finding)	900000000000207008
-55941000	Cutaneous sarcoidosis (disorder)	900000000000207008
-5649002	Amphixenosis (navigational concept)	900000000000207008
-57568005	Strained hoarse voice-continuous group (finding)	900000000000207008
-57576007	Retroversion of gravid uterus (disorder)	900000000000207008
-58374007	Acute diffuse tuberculosis (disorder)	900000000000207008
-58415000	Normal urinary stream (finding)	900000000000207008
-59161003	Thymic erythropoietin suppression factor (substance)	900000000000207008
-59176006	Low-pitch hoarse group (finding)	900000000000207008
-60317006	Pattern sensitive seizure (finding)	900000000000207008
-605191010000102	Mass rate of excretion of 11-ketoandrosterone in 24 hours in urine (observable entity)	11010000107
-605201010000104	Mass rate of excretion of 11-ketoetiocholanolone in 24 hours in urine (observable entity)	11010000107
-60927005	Chlamydophila psittaci variant felis (organism)	900000000000207008
-61053005	Lactobacillus kefir (organism)	900000000000207008
-61531000119104	History of nephrectomy (situation)	900000000000207008
-61700007	Influenza with non-respiratory manifestation (disorder)	900000000000207008
-62012004	Tick-borne rickettsiosis (navigational concept)	900000000000207008
-62106007	Concussion with no loss of consciousness (disorder)	900000000000207008
-63362009	Disorder of visual pathways associated with vascular disorder (disorder)	900000000000207008
-63836009	Voice cluster (finding)	900000000000207008
-64184006	Strained hoarse voice arrest-intermittent rhythmic group (finding)	900000000000207008
-67042008	Failed attempted abortion complicated by shock (disorder)	900000000000207008
-67357007	Esophageal motility study with acid perfusion studies (procedure)	900000000000207008
-67894009	Megaloblastic anemia due to increased requirements (disorder)	900000000000207008
-68193004	Thomas' sign (finding)	900000000000207008
-6839008	Vertebral abnormalities, anal atresia, cardiac abnormalities, tracheo-esophageal fistula, limb defects syndrome (disorder)	900000000000207008
-68391009	Strained hoarse voice arrest-intermittent arrhythmic group (finding)	900000000000207008
-6891008	Uterine incoordination, second degree (disorder)	900000000000207008
-69284000	Fomite transmitted infectious disease (navigational concept)	900000000000207008
-69287007	Louse-borne infectious disease (navigational concept)	900000000000207008
-69540001	Sex pilum (cell structure)	900000000000207008
-69600003	Voice tremor group (finding)	900000000000207008
-6966009	Phialophora parasitica (organism)	900000000000207008
-6969002	Lymphocytic tissue structure (body structure)	900000000000207008
-698269000	Bulge test (procedure)	900000000000207008
-699283007	Mid-stream urine specimen obtained by single catheterization of urinary bladder (specimen)	900000000000207008
-699381006	Oculoskeletal dysplasia (disorder)	900000000000207008
-700073007	Aspiration of ectopic pregnancy from cornu of fallopian tube (procedure)	900000000000207008
-700472005	Vaginal suppository - unit of product usage (qualifier value)	900000000000207008
-700473000	Pastille - unit of product usage (qualifier value)	900000000000207008
-700474006	Prefilled syringe - unit of product usage (qualifier value)	900000000000207008
-700476008	Enema - unit of product usage (qualifier value)	900000000000207008
-700477004	Tampon - unit of product usage (qualifier value)	900000000000207008
-700478009	Dressing - unit of product usage (qualifier value)	900000000000207008
-700479001	Sublingual tablet - unit of product usage (qualifier value)	900000000000207008
-700480003	Rectal capsule - unit of product usage (qualifier value)	900000000000207008
-700481004	Rectal tablet - unit of product usage (qualifier value)	900000000000207008
-700482006	Vaginal tablet - unit of product usage (qualifier value)	900000000000207008
-700483001	Vaginal capsule - unit of product usage (qualifier value)	900000000000207008
-700641002	Flexible-end laryngoscope blade (physical object)	900000000000207008
-702210004	Cardiac radio-frequency ablation system (physical object)	900000000000207008
-704116001	Education about postcoital contraceptive (procedure)	900000000000207008
-706432008	Cup (physical object)	900000000000207008
-707325009	Scopulariopsis cinerea (organism)	900000000000207008
-708285007	Tissue impression smear specimen (specimen)	900000000000207008
-708317005	Pooled specimen from vaginal introitus and rectal swab (specimen)	900000000000207008
-708439006	Halomonas johnsoniae (organism)	900000000000207008
-709371009	Antigen of Respiratory virus (substance)	900000000000207008
-710068006	Baby premature 32-36 weeks (finding)	900000000000207008
-710203005	Therapeutic contrast enema for reduction of intussusception of colon using fluoroscopic guidance (procedure)	900000000000207008
-710235005	Baby premature 28-32 weeks (finding)	900000000000207008
-710497003	Establishment of rapport (procedure)	900000000000207008
-71093009	Pancreatography during surgery (procedure)	900000000000207008
-711122003	Establishment of trust (procedure)	900000000000207008
-711146005	Hexamethylene diisocyanate (substance)	900000000000207008
-711422005	Intravenous pyelogram using plain X-ray guidance (procedure)	900000000000207008
-713597002	Human leukocyte antigen B5701 detected (finding)	900000000000207008
-713720009	Sclerosing peritonitis as complication of peritoneal dialysis (disorder)	900000000000207008
-715515008	LOINC - SNOMED CT Cooperation Project module (core metadata concept)	900000000000012004
-716151000	Structure of oropharynx and/or hypopharynx and/or larynx (body structure)	900000000000207008
-716153002	Entire oropharynx and/or hypopharynx and/or larynx (body structure)	900000000000207008
-716256003	Candida inconspicua or Candida krusei (finding)	900000000000207008
-717080000	Staphylococcus petrasii subspecies jettensis (organism)	900000000000207008
-717081001	Staphylococcus petrasii subspecies petrasii (organism)	900000000000207008
-717199007	Blastoschizomyces capitatus or Candida krusei or Prototheca zopfii (finding)	900000000000207008
-717200005	Candida inconspicua or Candida krusei or Candida lambica (finding)	900000000000207008
-717201009	Comamonas acidovorans or Comamonas testosteroni (finding)	900000000000207008
-71751002	Lysinuric protein intolerance, type 2 (disorder)	900000000000207008
-718039009	Genus Monosporella (organism)	900000000000207008
-71808005	Internal parasite (navigational concept)	900000000000207008
-71943007	Chronic granulomatous tuberculosis (disorder)	900000000000207008
-719605001	Elizabethkingia endophytica (organism)	900000000000207008
-72014004	Abnormal fetal duplication (disorder)	900000000000207008
-722092008	Rectal stump blowout (disorder)	900000000000207008
-72304004	Brevibacterium refuscens (organism)	900000000000207008
-723926008	Perceptual disturbances and seizures co-occurrent and due to alcohol withdrawal (disorder)	900000000000207008
-723941008	Skin and subcutaneous tissue complication following insertion of filling material under skin (disorder)	900000000000207008
-724668002	Seizure co-occurrent and due to sedative withdrawal (disorder)	900000000000207008
-724669005	Seizure co-occurrent and due to hypnotic withdrawal (disorder)	900000000000207008
-724670006	Seizure co-occurrent and due to anxiolytic withdrawal (disorder)	900000000000207008
-724671005	Perceptual disturbances and seizures co-occurrent and due to sedative withdrawal (disorder)	900000000000207008
-724672003	Perceptual disturbances and seizures co-occurrent and due to hypnotic withdrawal (disorder)	900000000000207008
-724727001	Seizure co-occurrent and due to psychoactive substance withdrawal (disorder)	900000000000207008
-724728006	Perceptual disturbances and seizures co-occurrent and due to psychoactive substance withdrawal (disorder)	900000000000207008
-726528006	Genotyping (qualifier value)	900000000000207008
-730095007	Entire pelvic peritoneal space (body structure)	900000000000207008
-731165006	Entire breast and endocrine system (body structure)	900000000000207008
-731167003	Entire respiratory system and intrathoracic structure (body structure)	900000000000207008
-731647008	Entire product of conception of ectopic pregnancy (body structure)	900000000000207008
-732022009	Entire regional skeletal muscle (body structure)	900000000000207008
-732054000	Entire regional back (body structure)	900000000000207008
-732282004	Cell positive for CD8 antigen and negative for HLA antigen and positive for DR antigen (cell)	900000000000207008
-735643002	Short stature of childhood (disorder)	900000000000207008
-7377003	Sclerosing mediastinitis (disorder)	900000000000207008
-73842009	Thymic ectopic endocrine substance (substance)	900000000000207008
-73883007	Emulsion proteinuria (finding)	900000000000207008
-74028009	Mycobacterium paratuberculosis (organism)	900000000000207008
-74545005	Poisoning by vaccine AND/OR biological substance (navigational concept)	900000000000207008
-760951010000108	Susceptibility to delafloxacin in microbial isolate at point in time (observable entity)	11010000107
-76124007	Fonsecaea compacta (organism)	900000000000207008
-761411010000106	Susceptibility to delafloxacin in microbial isolate at point in time by MIC (observable entity)	11010000107
-762241010000103	Susceptibility to delafloxacin in microbial isolate at point in time by gradient strip susceptibility test (observable entity)	11010000107
-76238007	Vibrio splindidus (organism)	900000000000207008
-76418009	Concussion with mental confusion AND/OR disorientation without loss of consciousness (disorder)	900000000000207008
-76479006	Trichophyton megninii (organism)	900000000000207008
-767725003	Fluoride ion (substance)	900000000000207008
-768664009	Amphotericin B phospholipid complex (substance)	900000000000207008
-768825008	Doula (occupation)	900000000000207008
-7689009	Reading seizure (finding)	900000000000207008
-769500000	Product containing precisely estradiol 1.042 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769501001	Product containing precisely estradiol 1.563 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769502008	Product containing precisely estradiol 1.667 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769503003	Product containing precisely estradiol 2.083 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769504009	Product containing precisely estradiol 2.083 microgram/1 hour and norethisterone acetate 7.083 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769505005	Product containing precisely estradiol 2.083 microgram/1 hour and norethisterone acetate 10.417 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769506006	Product containing precisely estradiol 3.125 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769507002	Product containing precisely estradiol 3.333 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769508007	Product containing precisely estradiol 4.167 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769509004	Product containing precisely scopolamine 13.889 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769516003	Product containing precisely rotigotine 83.333 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769518002	Product containing precisely testosterone 104.167 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769519005	Product containing precisely granisetron 129.167 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769520004	Product containing precisely rotigotine 166.667 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769521000	Product containing precisely glyceryl trinitrate 208.333 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769522007	Product containing precisely testosterone 208.333 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769523002	Product containing precisely testosterone 250 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769524008	Product containing precisely rotigotine 250 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769525009	Product containing precisely nicotine 291.667 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769526005	Product containing precisely nicotine 312.5 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769527001	Product containing precisely glyceryl trinitrate 416.667 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769528006	Product containing precisely nicotine 583.333 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769529003	Product containing precisely glyceryl trinitrate 625 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769530008	Product containing precisely nicotine 625 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769531007	Product containing precisely nicotine 875 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-769532000	Product containing precisely nicotine 937.5 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-770099009	Smooth endoplasmic reticulum (cell structure)	900000000000207008
-771507004	Moderate to late prematurity of infant (disorder)	900000000000207008
-773381005	Product containing only amphotericin B phospholipid complex (medicinal product)	900000000000207008
-773386000	Product containing only amphotericin B phospholipid complex in parenteral dose form (medicinal product form)	900000000000207008
-77672004	Lactobacillus sanfrancisco (organism)	900000000000207008
-781084007	Accidental cut, puncture, perforation or hemorrhage during kidney dialysis (navigational concept)	900000000000207008
-78332001	Aspergillus taumanii (organism)	900000000000207008
-784663002	Product containing precisely ethinylestradiol 1.46 microgram/1 hour and norelgestromin 6.25 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784664008	Product containing precisely estradiol 2.08 microgram/1 hour and norethisterone acetate 5.83 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784665009	Product containing precisely estradiol 2.08 microgram/1 hour and norethisterone acetate 10.4 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784666005	Product containing precisely estradiol 1.88 microgram/1 hour and levonorgestrel 625 nanogram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784673000	Product containing precisely estradiol 1.04 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784674006	Product containing precisely estradiol 1.56 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784675007	Product containing precisely estradiol 2.08 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784676008	Product containing precisely estradiol 2.5 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784677004	Product containing precisely estradiol 3.13 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784679001	Product containing precisely estradiol 583 nanogram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784751002	Product containing precisely selegiline 500 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784752009	Product containing precisely selegiline 250 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784753004	Product containing precisely selegiline 375 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-784786000	Product containing precisely oxybutynin 162 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-785064003	Product containing precisely rivastigmine 192 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-785065002	Product containing precisely rivastigmine 396 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-785206009	Product containing precisely nicotine 458 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-785207000	Product containing precisely nicotine 917 microgram/1 hour prolonged-release transdermal patch (clinical drug)	900000000000207008
-787777003	Leaking Tenckhoff catheter (finding)	900000000000207008
-78814009	Toxic effect of chiefly nonmedicinal substance (navigational concept)	900000000000207008
-789057009	Tuberculosis of middle ear (disorder)	900000000000207008
-79022007	Zooanthroponosis (navigational concept)	900000000000207008
-79370008	Thiocyanate compound (substance)	900000000000207008
-79694000	Crossed hemianopsia (finding)	900000000000207008
-7983007	Sodium rhodanide (substance)	900000000000207008
-80018001	Hypertrophic glandular gastritis (disorder)	900000000000207008
-80228000	Lightening of fetus (finding)	900000000000207008
-80707008	Trichophyton equinum (organism)	900000000000207008
-80860003	Menophania (finding)	900000000000207008
-81539007	Metatarsus primus varus (disorder)	900000000000207008
-82007007	Thoracoparacephalus (disorder)	900000000000207008
-8219005	Saprozoonosis (navigational concept)	900000000000207008
-82688001	Removal of product of conception of ectopic pregnancy (procedure)	900000000000207008
-83481007	Lung trematode (navigational concept)	900000000000207008
-838351006	Acute seizure due to infection of central nervous system (disorder)	900000000000207008
-840687007	Multidrug-resistant Salmonella paratyphi (organism)	900000000000207008
-84557007	Bifid tongue (disorder)	900000000000207008
-85090007	Dextrocardia/situs inversus finding (finding)	900000000000207008
-85671000119102	Hallux valgus due to metatarsus primus varus (disorder)	900000000000207008
-85700008	Microhepatia (disorder)	900000000000207008
-86347007	Traumatic urethral stricture (disorder)	900000000000207008
-86393005	Median nail dystrophy (disorder)	900000000000207008
-86476009	Leishmania mexicana venezuelensis (organism)	900000000000207008
-86543007	Esophageal motility study (procedure)	900000000000207008
-87227007	Cerebral depression in newborn (disorder)	900000000000207008
-87410002	Technetium (99-Tc) lidofenin (substance)	900000000000207008
-87605005	Cornual pregnancy (disorder)	900000000000207008
-87733002	Ustilago zeae (organism)	900000000000207008
-87785000	Retrograde pyelography of bilateral renal pelvises with contrast (procedure)	900000000000207008
-88794008	Mosquito-borne viral encephalitis (navigational concept)	900000000000207008
-89385006	Limited duction associated with other condition of eye (disorder)	900000000000207008
-89389000	Mucor spinosus (organism)	900000000000207008
-89654006	Disorder of optic chiasm associated with vascular disorder (disorder)	900000000000207008
-90265001	Thermoactinomyces dichotomicus (organism)	900000000000207008
-91149004	Observation hip syndrome (disorder)	900000000000207008
-91272006	Chromosome (cell structure)	900000000000207008
-91378008	Metazoonosis (navigational concept)	900000000000207008
-93003001	Congenital anomaly of fetal head bones (disorder)	900000000000207008
-96036008	Miokamycin (substance)	900000000000207008
-96331008	3-alpha-allo-tetrahydrocortisol (substance)	900000000000207008
-9752009	Bdellovibrio stolpii (organism)	900000000000207008
-9834002	Acquired disease (navigational concept)	900000000000207008
+106090003	Body fluid property (observable entity)	900000000000207008
+106330007	Philologist, translator/interpreter (occupation)	900000000000207008
+107615000	Family Asclepiadaceae - milkweed (organism)	900000000000207008
+1079004	Macular retinal cyst (disorder)	900000000000207008
+108313002	Family psychotherapy procedure (regime/therapy)	900000000000207008
+1089021000119108	Malignant otitis externa of left external auditory canal (disorder)	900000000000207008
+1091631000119100	Malignant otitis externa of right external auditory canal (disorder)	900000000000207008
+109431006	Ebstein-like malformation of mitral valve (disorder)	900000000000207008
+109480001	Generalized enamel hypoplasia associated with systemic disease (disorder)	900000000000207008
+109481002	Generalized enamel hypoplasia associated with fluorosis (disorder)	900000000000207008
+109482009	Generalized enamel hypoplasia associated with radiation therapy (disorder)	900000000000207008
+109483004	Generalized enamel hypoplasia associated with ingestion of drugs (disorder)	900000000000207008
+109485006	Localized enamel hypoplasia associated with localized trauma (disorder)	900000000000207008
+109489000	Localized enamel hypomineralization associated with localized trauma (disorder)	900000000000207008
+109540007	Failure of exfoliation associated with lack of succedaneous tooth (disorder)	900000000000207008
+109541006	Failure of exfoliation associated with ectopic eruption of succedaneous tooth (disorder)	900000000000207008
+109544003	Failure of tooth eruption associated with tooth impaction (disorder)	900000000000207008
+109568006	Dental caries secondary to developmental defects of tooth structure (disorder)	900000000000207008
+109569003	Dental caries secondary to acquired defects of tooth structure (disorder)	900000000000207008
+110533007	Structure of intervertebral disc of sacral vertebra (body structure)	900000000000207008
+111411000119103	End stage renal disease due to hypertension (disorder)	900000000000207008
+111955002	Anodal closure clonus (finding)	900000000000207008
+112345008	Peptostreptococcus barnesae (organism)	900000000000207008
+1124005	Postpartum period, 6 days (finding)	900000000000207008
+112402002	Cryptococcus uniguttulatus (organism)	900000000000207008
+112459002	Spirometra houghtonii (organism)	900000000000207008
+113018007	Cardioassist (procedure)	900000000000207008
+113129008	Physiatric manipulation of lumbosacral region (procedure)	900000000000207008
+1141870003	Signet ring sign (finding)	900000000000207008
+1148819003	Injury of lung due to vaping (disorder)	900000000000207008
+115541009	Volatile agent (substance)	900000000000207008
+1156692008	Attention to feeding tube (procedure)	900000000000207008
+1156693003	Attention to heel protector (procedure)	900000000000207008
+1156815009	Familial adenomatous polyposis due to 5q22.2 microdeletion (disorder)	900000000000207008
+116831005	FMC-7+ cell (cell)	900000000000207008
+117111002	Blood product unit awaiting inspection and entry to inventory (finding)	900000000000207008
+1177000004	Pulmonary nodule caused by Pneumocystis (disorder)	900000000000207008
+1187119002	Hereditary pediatric Behçet-like disease (disorder)	900000000000207008
+1197057002	Hallermann Streiff like syndrome (disorder)	900000000000207008
+1204151009	Acute inferior non-ST segment elevation myocardial infarction of right ventricle (disorder)	900000000000207008
+120871000119108	Systolic heart failure stage B (disorder)	900000000000207008
+120901000119108	Diastolic heart failure stage B (disorder)	900000000000207008
+12168009	Variation in hair color (disorder)	900000000000207008
+1217044000	Ketosis-resistant diabetes mellitus (disorder)	900000000000207008
+122126009	Measurement of Thermoactinomyces candidus antibody (procedure)	900000000000207008
+12277711000119108	Gender dysphoria in adolescence and adulthood (disorder)	900000000000207008
+1231421005	Resection of non-ruptured aneurysm of carotid artery with interposition graft replacement (procedure)	900000000000207008
+1237337007	Extensive peripapillary myelinated nerve fibers of retina (disorder)	900000000000207008
+123890004	Asclepiadaceae poisoning (disorder)	900000000000207008
+12502001	Cedar oil (substance)	900000000000207008
+1251443007	Construction of stoma of thorax (procedure)	900000000000207008
+1255369007	Construction of abdominal stoma (procedure)	900000000000207008
+1259262005	Structure of tendon of flexor digiti minimi brevis of hand (body structure)	900000000000207008
+1259264006	Entire tendon of flexor digiti minimi brevis of hand (body structure)	900000000000207008
+1268905005	Primary malignant peripheral nerve sheath tumor (disorder)	900000000000207008
+126891008	Neoplasm of urinary bladder neck (disorder)	900000000000207008
+1269053004	Multiple injuries of blood vessel of pelvis (disorder)	900000000000207008
+1269054005	Multiple injuries of blood vessel of abdomen (disorder)	900000000000207008
+127093002	Delphian lymphadenopathy (disorder)	900000000000207008
+12739003	Revision of ileostomy, complicated (procedure)	900000000000207008
+127991000119101	Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)	900000000000207008
+128001000119105	Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)	900000000000207008
+1287773004	Attention to device (procedure)	900000000000207008
+1287774005	Attention to anastomosis (procedure)	900000000000207008
+1287775006	Attention to stoma (procedure)	900000000000207008
+1296788004	Papilledema of eye due to intraocular pressure below reference range (disorder)	900000000000207008
+129769006	Radiographic calcification with clustered distribution (finding)	900000000000207008
+13273002	Postpartum period, 4 days (finding)	900000000000207008
+1340701000168101	One thousand million colony-forming units (qualifier value)	900000000000207008
+13504006	Pill esophagitis (disorder)	900000000000207008
+13670005	Gender identity disorder of adulthood, previously heterosexual (disorder)	900000000000207008
+1370897008	Fluoroscopy of esophagus and stomach with gastrografin contrast swallow (procedure)	900000000000207008
+1370899006	Plain X-ray of esophagus and stomach with gastrografin contrast swallow (procedure)	900000000000207008
+1371358002	Pediculus humanus corporis (organism)	900000000000207008
+1371368007	Pseudophakic intraocular lens present in left eye (finding)	900000000000207008
+1371371004	Pseudophakic intraocular lens present in right eye (finding)	900000000000207008
+1371719005	Spondylomalacia (disorder)	900000000000207008
+1372721003	Fluoroscopy of lower gastrointestinal tract with gastrografin contrast enema (procedure)	900000000000207008
+139811000119109	Homozygous methylenetetrahydrofolate reductase mutation (disorder)	900000000000207008
+139821000119102	Heterozygous methylenetetrahydrofolate reductase mutation (disorder)	900000000000207008
+14080002	Illegitimate pregnancy, life event (finding)	900000000000207008
+14800001	Dermatitis vegetans (disorder)	900000000000207008
+153891000119101	End stage renal disease on dialysis due to hypertension (disorder)	900000000000207008
+15629591000119103	Congestive heart failure stage B due to ischemic cardiomyopathy (disorder)	900000000000207008
+15629641000119107	Systolic heart failure stage B due to ischemic cardiomyopathy (disorder)	900000000000207008
+16088007	Sarcostemma (organism)	900000000000207008
+16538005	Early postpartum state (finding)	900000000000207008
+16602611000119108	Awaiting transplantation of lung (situation)	900000000000207008
+16664009	Malignant otitis media (disorder)	900000000000207008
+167664004	Structure of delphian lymph node (body structure)	900000000000207008
+16870000	Structure of mucous gland of bronchiole (body structure)	900000000000207008
+16876006	Pericarditis co-occurrent and due to primary tumor (disorder)	900000000000207008
+168807005	Bronchography normal (finding)	900000000000207008
+168808000	Bronchography abnormal (finding)	900000000000207008
+168928000	Carotid A angiogram normal (finding)	900000000000207008
+168933001	Angiocardiography awaited (situation)	900000000000207008
+168937000	Coronary arteriography awaited (situation)	900000000000207008
+169483008	Contraceptive intrauterine device fitting awaited (finding)	900000000000207008
+169484002	Contraceptive intrauterine device removal awaited (finding)	900000000000207008
+169651008	Antenatal amniocentesis - awaited (finding)	900000000000207008
+169662008	Antenatal ultrasound scan awaited (finding)	900000000000207008
+169665005	Antenatal ultrasound scan abnormal (finding)	900000000000207008
+170499009	Isolation of infection contact (procedure)	900000000000207008
+171741002	Attention to neurostimulator adjacent to spinal cord (procedure)	900000000000207008
+17216000	Dyspnea, class I (finding)	900000000000207008
+173594000	Attention to connection of esophagus (procedure)	900000000000207008
+173765009	Attention to gastrostomy tube (procedure)	900000000000207008
+173838005	Attention to gastric balloon (procedure)	900000000000207008
+173972001	Attention to connection of ileum (procedure)	900000000000207008
+173977007	Creation of ileostomy (procedure)	900000000000207008
+173980008	Creation of temporary ileostomy (procedure)	900000000000207008
+173984004	Attention to ileostomy (procedure)	900000000000207008
+174630009	Endoscopic retrograde extraction of calculus from bile duct (procedure)	900000000000207008
+175330009	Attention to prosthesis of aorta (procedure)	900000000000207008
+175779004	Attention to arteriovenous shunt (procedure)	900000000000207008
+177603009	Attention to skin expander in subcutaneous tissue (procedure)	900000000000207008
+177680005	Attention to dressing of burn of head or neck (procedure)	900000000000207008
+179258006	Attention to electromagnetic stimulator in bone (procedure)	900000000000207008
+180006009	Attention to prosthesis for limb (procedure)	900000000000207008
+18003009	Gender identity disorder of adulthood (disorder)	900000000000207008
+180300007	Attention to plaster cast (procedure)	900000000000207008
+182524008	Attention to urinary catheter (procedure)	900000000000207008
+18275006	Physiatric manipulation of sacroiliac region (procedure)	900000000000207008
+183708003	Domiciliary visit requested (finding)	900000000000207008
+183709006	General medicine domiciliary visit requested (finding)	900000000000207008
+183710001	Pediatric domiciliary visit requested (finding)	900000000000207008
+183711002	Dermatology domiciliary visit requested (finding)	900000000000207008
+183712009	Cardiology domiciliary visit requested (finding)	900000000000207008
+183713004	Immunology domiciliary visit requested (finding)	900000000000207008
+183714005	Neurology domiciliary visit requested (finding)	900000000000207008
+183715006	Geriatric domiciliary visit requested (finding)	900000000000207008
+183716007	Gastroenterology domiciliary visit requested (finding)	900000000000207008
+183717003	Psychiatric domiciliary visit requested (finding)	900000000000207008
+183718008	Rheumatology domiciliary visit requested (finding)	900000000000207008
+183719000	Pulmonary medicine domiciliary visit requested (finding)	900000000000207008
+183720006	Psychogeriatrics domiciliary visit requested (finding)	900000000000207008
+183721005	Oncology domiciliary visit requested (finding)	900000000000207008
+183722003	Diabetology domiciliary visit requested (finding)	900000000000207008
+183724002	General surgery domiciliary visit requested (finding)	900000000000207008
+183725001	Ophthalmology domiciliary visit requested (finding)	900000000000207008
+183726000	Ear, nose and throat domiciliary visit requested (finding)	900000000000207008
+183727009	Orthopedic domiciliary visit requested (finding)	900000000000207008
+183728004	Neurosurgical domiciliary visit requested (finding)	900000000000207008
+183729007	Pediatric surgery domiciliary visit requested (finding)	900000000000207008
+183730002	Obstetric domiciliary visit requested (finding)	900000000000207008
+183731003	Gynecological domiciliary visit requested (finding)	900000000000207008
+183732005	Plastic surgery domiciliary visit requested (finding)	900000000000207008
+183733000	Oral surgery domiciliary visit requested (finding)	900000000000207008
+183734006	Urological domiciliary visit requested (finding)	900000000000207008
+183737004	Domiciliary visit received (finding)	900000000000207008
+183738009	General medicine domiciliary visit done (finding)	900000000000207008
+183739001	Pediatric domiciliary visit done (finding)	900000000000207008
+183740004	Dermatology domiciliary visit done (finding)	900000000000207008
+183741000	Cardiology domiciliary visit done (finding)	900000000000207008
+183742007	Immunology domiciliary visit done (finding)	900000000000207008
+183743002	Neurology domiciliary visit done (finding)	900000000000207008
+183744008	Geriatric domiciliary visit done (finding)	900000000000207008
+183745009	Gastroenterology domiciliary visit done (finding)	900000000000207008
+183746005	Psychiatry domiciliary visit done (finding)	900000000000207008
+183747001	Rheumatology domiciliary visit done (finding)	900000000000207008
+183748006	Pulmonary medicine domiciliary visit done (finding)	900000000000207008
+183749003	Psychogeriatric domiciliary visit done (finding)	900000000000207008
+183750003	Oncology domiciliary visit done (finding)	900000000000207008
+183751004	Diabetology domiciliary visit done (finding)	900000000000207008
+183753001	General surgical domiciliary visit done (finding)	900000000000207008
+183754007	Ophthalmology domiciliary visit done (finding)	900000000000207008
+183755008	Ear, nose and throat domiciliary visit done (finding)	900000000000207008
+183756009	Orthopedic domiciliary visit done (finding)	900000000000207008
+183757000	Neurosurgical domiciliary visit done (finding)	900000000000207008
+183759002	Pediatric surgical domiciliary visit done (finding)	900000000000207008
+183760007	Obstetric domiciliary visit done (finding)	900000000000207008
+183761006	Gynecological domiciliary visit done (finding)	900000000000207008
+183762004	Plastic surgery domiciliary visit done (finding)	900000000000207008
+183763009	Oral surgery domiciliary visit done (finding)	900000000000207008
+183764003	Urological domiciliary visit done (finding)	900000000000207008
+183930009	Awaiting admission elsewhere (situation)	900000000000207008
+184276009	Awaiting hospital death discharge letter (finding)	900000000000207008
+184307002	Postmortem report received (finding)	900000000000207008
+184835005	Life assurance preliminary report completed (finding)	900000000000207008
+184836006	Life assurance preliminary report sent off (finding)	900000000000207008
+184874003	Social sec report sent off (finding)	900000000000207008
+184894007	Fitness to drive rep sent off (finding)	900000000000207008
+184980005	Solicitors report sent (finding)	900000000000207008
+184981009	Solicitors examination and report sent (finding)	900000000000207008
+185004005	Medical report received (finding)	900000000000207008
+185006007	Medical report received from hospital (finding)	900000000000207008
+185007003	Insurance form received (finding)	900000000000207008
+185008008	Medical reports sent (finding)	900000000000207008
+185009000	Medical report sent (finding)	900000000000207008
+185011009	War Pensions report requested (finding)	900000000000207008
+185012002	War Pensions report sent (finding)	900000000000207008
+185444009	Ultrasound scan report received (finding)	900000000000207008
+185445005	Isotope scan report received (finding)	900000000000207008
+185461007	Home visit planned by doctor (finding)	900000000000207008
+185471009	Home visit - no reply (finding)	900000000000207008
+18554002	Structure of tracheal membranous wall (body structure)	900000000000207008
+186278007	Acute miliary tuberculosis of multiple sites (disorder)	900000000000207008
+187106009	Penicillosis (disorder)	900000000000207008
+188754005	Megakaryocytic leukemia (disorder)	900000000000207008
+191787001	Psychosexual identity disorder (disorder)	900000000000207008
+193190005	Polyneuropathy in herpes zoster (disorder)	900000000000207008
+194022000	Local orbit deformity associated with bone disorder (disorder)	900000000000207008
+194202008	Infective otitis externa due to erysipelas (disorder)	900000000000207008
+195896004	Pneumonia caused by pleuropneumonia-like organism (disorder)	900000000000207008
+197249003	Entire tracheal membranous wall (body structure)	900000000000207008
+198230004	Ulceration of vulva associated with another disorder (disorder)	900000000000207008
+200773006	Besnier's prurigo (disorder)	900000000000207008
+201182003	Perifolliculitis capitis abscedens (disorder)	900000000000207008
+201841000	Primary gonarthrosis, bilateral (disorder)	900000000000207008
+20678000	Extreme insulin resistance with acanthosis nigricans, hirsutism AND autoantibodies to the insulin receptors (disorder)	900000000000207008
+209451009	Sprain triangular fibrocartilage (disorder)	900000000000207008
+20984004	Diphyllobothrium houghtonii (organism)	900000000000207008
+210820009	Multiple abdominal and pelvic blood vessel injury (disorder)	900000000000207008
+211236007	Scalenus anticus syndrome (disorder)	900000000000207008
+212248007	Iliolumbar nerve injury (disorder)	900000000000207008
+21590003	Congenital zonular cataract (disorder)	900000000000207008
+216782002	Accidental poisoning by mercury and/or mercury compound and/or mercury vapor (event)	900000000000207008
+216784001	Accidental poisoning by mercury compounds (event)	900000000000207008
+216785000	Accidental poisoning by mercury vapor (event)	900000000000207008
+216804006	Accidental poisoning by nickel compounds (event)	900000000000207008
+216805007	Accidental poisoning by thallium compounds (event)	900000000000207008
+219360006	Injury undetermined whether accidentally or purposely inflicted, by crashing of motor vehicle (disorder)	900000000000207008
+22082007	Aneurysmectomy with anastomosis of abdominal vein (procedure)	900000000000207008
+225141004	Attention to skin creases (procedure)	900000000000207008
+225193002	Stoma irrigation (procedure)	900000000000207008
+225232000	Attention to peritoneal drain (procedure)	900000000000207008
+228155006	Feeding disability (finding)	900000000000207008
+229641005	Transsexual voice (finding)	900000000000207008
+229738006	Word finding difficulty (disorder)	900000000000207008
+230941005	Attention to intracranial pressure measuring device (procedure)	900000000000207008
+230942003	Attention to intracranial pressure transducer (procedure)	900000000000207008
+230945001	Attention to intracranial pressure catheter (procedure)	900000000000207008
+231361000	Attention to catheter (procedure)	900000000000207008
+232192008	Attention to middle ear ventilation tube (procedure)	900000000000207008
+232613003	Attention to tracheostomy (procedure)	900000000000207008
+233068009	Transluminal right ventricular outflow tract laser operation (procedure)	900000000000207008
+235042004	Melanin pigmentation of oral mucosa associated with systemic condition (disorder)	900000000000207008
+235207006	Attention to prosthesis within esophagus (procedure)	900000000000207008
+235222001	Attention to gastrostomy (procedure)	900000000000207008
+235243000	Attention to prosthesis within stomach (procedure)	900000000000207008
+235258008	Attention to duodenostomy (procedure)	900000000000207008
+235276001	Attention to prosthesis within duodenum (procedure)	900000000000207008
+235311002	Attention to prosthesis within small intestine (procedure)	900000000000207008
+235353001	Attention to prosthesis within large intestine (procedure)	900000000000207008
+235444009	Attention to gastrointestinal tract tube (procedure)	900000000000207008
+235445005	Attention to nasoesophageal tube (procedure)	900000000000207008
+235446006	Attention to nasoduodenal tube (procedure)	900000000000207008
+235447002	Attention to nasojejunal tube (procedure)	900000000000207008
+235448007	Attention to orogastric tube (procedure)	900000000000207008
+235449004	Attention to colonic tube (procedure)	900000000000207008
+235450004	Attention to flatus tube (procedure)	900000000000207008
+235563008	Percutaneous attention to tube in bile duct (procedure)	900000000000207008
+235628006	Nutcracker esophagus (disorder)	900000000000207008
+236127007	Internal stoma fistula (disorder)	900000000000207008
+236142005	Open repair of kidney or renal pelvis (procedure)	900000000000207008
+236223001	Attention to drainage of urinary bladder (procedure)	900000000000207008
+23625003	Aneurysmectomy with anastomosis of thoracic artery (procedure)	900000000000207008
+236302005	Acute interstitial pneumonitis (disorder)	900000000000207008
+236434000	End stage renal failure without renal replacement therapy (disorder)	900000000000207008
+236435004	End stage renal failure on dialysis (disorder)	900000000000207008
+236436003	End stage renal failure with renal transplant (disorder)	900000000000207008
+236455003	Saturnine nephropathy (disorder)	900000000000207008
+236826000	Radical total vulvectomy (procedure)	900000000000207008
+237656000	Acute splenic tumor (disorder)	900000000000207008
+237679004	Status post (contextual qualifier) (qualifier value)	900000000000207008
+238095002	Apolipoprotein A-I deficiency (disorder)	900000000000207008
+238438006	Scytalidium hyalinum infection of skin (disorder)	900000000000207008
+238742005	Acne keloidalis (disorder)	900000000000207008
+238866007	Juvenile elastofibromatosis (disorder)	900000000000207008
+238925008	Keloidalis nuchae (disorder)	900000000000207008
+23951003	Cyst of sweat gland of eyelid (disorder)	900000000000207008
+240179004	Pelvis juvenile osteochondropathy (disorder)	900000000000207008
+240180001	Hip juvenile osteochondropathy (disorder)	900000000000207008
+240493004	Hazara hemorrhagic fever (disorder)	900000000000207008
+240632000	Disseminated pneumocystosis (disorder)	900000000000207008
+240890007	Grain-shoveller's itch (disorder)	900000000000207008
+242117001	Accidental poisoning from exhaust gas of moving motor vehicle on road (event)	900000000000207008
+243262003	Corynebacterium mediolanum (organism)	900000000000207008
+243546005	Genus Sarcinosporon (organism)	900000000000207008
+244965002	Structure of coccygeal muscle (body structure)	900000000000207008
+245301007	Posterior external iliac lymph node group (body structure)	900000000000207008
+245385001	Entire duct of Wirsung (body structure)	900000000000207008
+246058009	Structure of sacrococcygeal muscle (body structure)	900000000000207008
+247056004	Anterior subcapsular lens opacities (disorder)	900000000000207008
+247057008	Cortical lens opacities (disorder)	900000000000207008
+247368002	Posterior compartment low back pain (finding)	900000000000207008
+248183003	Anterior slant (finding)	900000000000207008
+251490001	Lymphedematous hyperkeratosis (disorder)	900000000000207008
+252518009	Inhalational provocation test (procedure)	900000000000207008
+253443005	Ebstein's anomaly of common atrioventricular valve (disorder)	900000000000207008
+253496001	Ebstein's anomaly of left atrioventricular valve (disorder)	900000000000207008
+254132000	Endosteal hyperostoses with cerebellar hypoplasia (disorder)	900000000000207008
+254133005	Pachydermoperiostosis - familial (disorder)	900000000000207008
+254134004	Craniometaphyseal dysplasia - severe type (disorder)	900000000000207008
+254135003	Craniometaphyseal dysplasia - mild type (disorder)	900000000000207008
+254463006	Mixed parotid tumor (disorder)	900000000000207008
+254936001	Glial tumor of brain (disorder)	900000000000207008
+254941009	Mixed glial tumor of brain (disorder)	900000000000207008
+255127006	Local tumor spread (disorder)	900000000000207008
+255308008	Lytic (qualifier value)	900000000000207008
+255310005	Necrotizing (qualifier value)	900000000000207008
+255401001	Familial (qualifier value)	900000000000207008
+255404009	Hereditary (qualifier value)	900000000000207008
+255406006	Intrinsic (qualifier value)	900000000000207008
+255422007	Elephantiasic (qualifier value)	900000000000207008
+255426005	Ischemic (qualifier value)	900000000000207008
+255448004	Granulomatous (qualifier value)	900000000000207008
+256130006	Diethyl methacrylate (substance)	900000000000207008
+25760001	Angiography of cervicocerebral arteries (procedure)	900000000000207008
+261122009	Lower (qualifier value)	900000000000207008
+261183002	Upper (qualifier value)	900000000000207008
+263756000	Fibrosis (qualifier value)	900000000000207008
+263915009	Ulcero-granulomatous (qualifier value)	900000000000207008
+264539004	Irradiation fibrosis (qualifier value)	900000000000207008
+264572004	Single gene defect (qualifier value)	900000000000207008
+265036006	Attention to artificial voice box in larynx (procedure)	900000000000207008
+265220000	Attention to component of connection from ventricle of brain (procedure)	900000000000207008
+265316002	Attention to cochlear prosthesis (procedure)	900000000000207008
+265379004	Creation of jejunostomy (procedure)	900000000000207008
+265548004	Attention to central venous catheter (procedure)	900000000000207008
+265557005	Attention to nephrostomy tube (procedure)	900000000000207008
+265611001	Attention to penile prosthesis (procedure)	900000000000207008
+265941001	Translator/interpreter (occupation)	900000000000207008
+268363004	Auditory/vestibular test abnormal (finding)	900000000000207008
+268532004	Person counseled by (situation)	900000000000207008
+269475001	Malignant neoplasm of lymphoid, hematopoietic and/or related tissue (disorder)	900000000000207008
+269820002	Serum iron tests (procedure)	900000000000207008
+270103006	Coroner report - requested (finding)	900000000000207008
+270104000	Coroner report - sent off (finding)	900000000000207008
+270105004	Coroner report - paid for (finding)	900000000000207008
+270108002	Coroner's postmortem report awaited (finding)	900000000000207008
+270109005	Coroner's postmortem report requested (finding)	900000000000207008
+270110000	Coroner's postmortem report received (finding)	900000000000207008
+270607006	Police surgeon's postmortem report awaited (finding)	900000000000207008
+270608001	Police surgeon's postmortem report requested (finding)	900000000000207008
+270609009	Police surgeon's postmortem report received (finding)	900000000000207008
+271364002	Finding relating to awaiting housing or re-housing (finding)	900000000000207008
+272192002	Masterson catheter (physical object)	900000000000207008
+272725004	External stoma (morphologic abnormality)	900000000000207008
+272727007	Internal stoma (morphologic abnormality)	900000000000207008
+27396000	Cathodal opening clonus (finding)	900000000000207008
+274527008	Abnormal findings diagnostic imaging of liver+biliary tract (finding)	900000000000207008
+274530001	Abnormal findings on diagnostic imaging of breast (finding)	900000000000207008
+274531002	Abnormal findings diagnostic imaging heart+coronary circulat (finding)	900000000000207008
+274532009	Abnormal findings on diagnostic imaging of limbs (finding)	900000000000207008
+274533004	Abnormal findings on diagnostic imaging of lung (finding)	900000000000207008
+274535006	Abnormal findings on diagnostic imaging of skull and head (finding)	900000000000207008
+274536007	Abnormal findings on diagnostic imaging of urinary organs (finding)	900000000000207008
+274539000	Head scan abnormal (finding)	900000000000207008
+27540008	Lasègue sign (finding)	900000000000207008
+276843008	Attention to implanted drug delivery system (procedure)	900000000000207008
+27704008	Penicillium citreoviride (organism)	900000000000207008
+277267003	Calendar year (qualifier value)	900000000000207008
+277268008	1958 (qualifier value)	900000000000207008
+277269000	1974 (qualifier value)	900000000000207008
+277270004	1978 (qualifier value)	900000000000207008
+277271000	1982 (qualifier value)	900000000000207008
+277272007	1987 (qualifier value)	900000000000207008
+277273002	1992 (qualifier value)	900000000000207008
+277606000	Lymphoreticular tumor (disorder)	900000000000207008
+277623009	Monocytoid B-cell lymphoma (disorder)	900000000000207008
+278363000	Alcoholic macrocytosis (disorder)	900000000000207008
+278993004	Drug-induced (qualifier value)	900000000000207008
+278994005	Hormonal (qualifier value)	900000000000207008
+279363006	Entire hypogastric lymph node (body structure)	900000000000207008
+279760006	Ilioinguinal lymph node group (body structure)	900000000000207008
+280655003	Structure of valve of Hasner (body structure)	900000000000207008
+280699007	Abdominal stoma (morphologic abnormality)	900000000000207008
+281341005	Awaiting request (finding)	900000000000207008
+285841000119104	Malignant hypertensive end stage renal disease (disorder)	900000000000207008
+286371000119107	Malignant hypertensive end stage renal disease on dialysis (disorder)	900000000000207008
+286970007	Complicated femoral hernia (disorder)	900000000000207008
+286972004	Complicated diaphragmatic hernia (disorder)	900000000000207008
+287763009	Urethrostomy closure (procedure)	900000000000207008
+290036002	Attention to hearing aid (procedure)	900000000000207008
+297120004	Anesthetic face mask (physical object)	900000000000207008
+30118000	Postpartum period, 1 day (finding)	900000000000207008
+301337007	Finding of body composition (finding)	900000000000207008
+302178002	Outcome of benefit application awaited (finding)	900000000000207008
+302353008	Attention to jejunostomy (procedure)	900000000000207008
+302435001	Attention to dressing of burnt skin (procedure)	900000000000207008
+302436000	Attention to dressing of skin (procedure)	900000000000207008
+303109001	Pathogeneses (qualifier value)	900000000000207008
+303269009	Entire inferior inguinal lymph node (body structure)	900000000000207008
+30509009	Gender identity disorder of adolescence, previously homosexual (disorder)	900000000000207008
+30529005	Citrullinemia, neonatal type (disorder)	900000000000207008
+30613005	Aneurysmectomy with anastomosis (procedure)	900000000000207008
+307698002	Nystagmus signs (disorder)	900000000000207008
+308006008	Linguist/interpreter (occupation)	900000000000207008
+308538009	Domiciliary visit status (finding)	900000000000207008
+308552006	Report status (finding)	900000000000207008
+308806009	Coroner's report status (finding)	900000000000207008
+308808005	Postmortem report status (finding)	900000000000207008
+308809002	Coroner's postmortem report status (finding)	900000000000207008
+308810007	Police surgeon's postmortem report status (finding)	900000000000207008
+309021007	Driving license fitness report status (finding)	900000000000207008
+309024004	Life assurance report status (finding)	900000000000207008
+309029009	Social security report status (finding)	900000000000207008
+309030004	Solicitors report status (finding)	900000000000207008
+309031000	War pensions report status (finding)	900000000000207008
+309479002	Artery specimen (specimen)	900000000000207008
+309794002	Finding of body product (finding)	900000000000207008
+310302007	Advance directive discussed with patient (finding)	900000000000207008
+310303002	Advance directive discussed with relative (finding)	900000000000207008
+310363000	Employment report status (finding)	900000000000207008
+310451009	Life assurance report requested (finding)	900000000000207008
+310452002	Disabled driver report status (finding)	900000000000207008
+310453007	Disabled driver report requested (finding)	900000000000207008
+310454001	Fitness to drive report requested (finding)	900000000000207008
+310455000	Medical report requested (finding)	900000000000207008
+310456004	Report requested by benefits agency (finding)	900000000000207008
+310457008	Disabled registration report status (finding)	900000000000207008
+310458003	Disabled registration report requested (finding)	900000000000207008
+310853003	Housing report status (finding)	900000000000207008
+310855005	Housing report requested (finding)	900000000000207008
+310856006	Housing report sent (finding)	900000000000207008
+310857002	Housing report paid (finding)	900000000000207008
+311407009	Digit span forwards (finding)	900000000000207008
+311476004	Digit span reverse (finding)	900000000000207008
+311681003	Chewing exercises (regime/therapy)	900000000000207008
+312848003	1997 (qualifier value)	900000000000207008
+313374008	Solicitors report requested (finding)	900000000000207008
+315644009	Attention to laryngeal prosthetic device (procedure)	900000000000207008
+31614008	Personal motivation (finding)	900000000000207008
+31877008	Chagas' disease with other organ involvement (disorder)	900000000000207008
+320952008	Menthol+eucalyptus inhalation (product)	900000000000207008
+32711007	Ostomy collection bag, device (physical object)	900000000000207008
+331460002	Signal node (disorder)	900000000000207008
+331462691000119105	Acute dystonia caused by antipsychotic medication (disorder)	900000000000207008
+332457007	Virchow's node (disorder)	900000000000207008
+33416008	Structure of pilosebaceous apparatus (body structure)	900000000000207008
+335395009	Iodine goose quill brush (physical object)	900000000000207008
+339248003	Stoma bag closure (physical object)	900000000000207008
+34112007	Physiatric manipulation of back (procedure)	900000000000207008
+3455002	Discontinued pesticide (substance)	900000000000207008
+349365008	Herbal medicine (product)	900000000000207008
+35010007	Cathodal closure clonus (finding)	900000000000207008
+359736007	Candidal perionyxis (disorder)	900000000000207008
+360147003	Attention - action (qualifier value)	900000000000207008
+360783004	Structure of lacuna of iliac fossa (body structure)	900000000000207008
+364684009	Body product observable (observable entity)	900000000000207008
+366449000	Lasègue test finding (finding)	900000000000207008
+367606003	Structure of duct of Wirsung (body structure)	900000000000207008
+368471000119109	End stage renal disease on dialysis due to drug induced diabetes mellitus (disorder)	900000000000207008
+372461007	Intracavernous route (qualifier value)	900000000000207008
+37251003	Auditory reflex (finding)	900000000000207008
+372946003	Infection caused by Penicillium citreoviride (disorder)	900000000000207008
+37359003	Aneurysmectomy with anastomosis of head and neck artery (procedure)	900000000000207008
+374847481000119108	Awaiting transplantation of heart (situation)	900000000000207008
+38489008	Diphyllobothrium minus (organism)	900000000000207008
+385712009	Ostomy care (regime/therapy)	900000000000207008
+3861005	Aneurysmectomy with anastomosis of lower limb artery (procedure)	900000000000207008
+387707007	Repair AND revision of stoma of urinary bladder (procedure)	900000000000207008
+390927002	Awaiting radiotherapy (situation)	900000000000207008
+391032006	X-ray evidence of poor mineralization (finding)	900000000000207008
+39303003	Physiatric manipulation of wrist (procedure)	900000000000207008
+396277003	Fluid observable (observable entity)	900000000000207008
+397009000	Mast cell malignancy (disorder)	900000000000207008
+397010005	Malignant mast cell neoplasm (morphologic abnormality)	900000000000207008
+397108006	Esophagostomy operation (procedure)	900000000000207008
+398002006	Physiatric manipulation of muscle structures (procedure)	900000000000207008
+398235007	Construction of stoma of cecum (procedure)	900000000000207008
+398259002	Physiatric stretching of muscle (regime/therapy)	900000000000207008
+39856007	Imaging of arteries of lower extremities (procedure)	900000000000207008
+399078000	Physiatric manipulation of nuchal region (procedure)	900000000000207008
+39950000	Dyspnea, class III (finding)	900000000000207008
+401718000	Elastic band truss umbilical, single belt right (physical object)	900000000000207008
+402716004	Immunobullous disease (disorder)	900000000000207008
+402900005	Oral hairy leukoplakia associated with immunodeficiency (disorder)	900000000000207008
+403101002	Onychomycosis caused by Scytalidium hyalinum (disorder)	900000000000207008
+403354009	Hydration acne (disorder)	900000000000207008
+403570005	Calcinosis within skin cyst or tumor (disorder)	900000000000207008
+404002000	Atypical (pseudosarcomatous) histiocytoma of skin (disorder)	900000000000207008
+404028002	Pacinian schwannoma (disorder)	900000000000207008
+40570005	Interpreter (occupation)	900000000000207008
+407374003	Transsexual (finding)	900000000000207008
+407375002	Surgically transgendered transsexual (finding)	900000000000207008
+407376001	Male-to-female transsexual (finding)	900000000000207008
+407377005	Female-to-male transsexual (finding)	900000000000207008
+407378000	Surgically transgendered transsexual, male-to-female (finding)	900000000000207008
+407379008	Surgically transgendered transsexual, female-to-male (finding)	900000000000207008
+408382000	Home visit planned by healthcare professional (finding)	900000000000207008
+408671002	Polyneuropathy in collagen malignant disease (disorder)	900000000000207008
+410092005	Ostomy care management (procedure)	900000000000207008
+41112006	150 milligram calcium diet (finding)	900000000000207008
+411166007	Product containing diethyl methacrylate (medicinal product)	900000000000207008
+413912008	Contrast media seen in plaque (finding)	900000000000207008
+414237002	Feature of entity (observable entity)	900000000000207008
+414832002	Neosartorya fischeri group (organism)	900000000000207008
+415968002	Genus Torulomyces (organism)	900000000000207008
+416173001	Diphyllobothrium yonagoensis (organism)	900000000000207008
+417392003	Construction of external stoma (procedure)	900000000000207008
+418101009	Babesia EU1 (organism)	900000000000207008
+418165002	Herbal medicine agent (substance)	900000000000207008
+419724001	Haloarcula algeriensis (organism)	900000000000207008
+420159002	Phaeoseptoria (organism)	900000000000207008
+420403001	Pneumocystosis with acquired immunodeficiency syndrome (disorder)	900000000000207008
+421098004	Lipoblastoma/lipoblastomatosis (disorder)	900000000000207008
+423350005	Fast acetylator due to N-acetyltransferase enzyme variant (disorder)	900000000000207008
+423671006	Specimen from peritoneal tumor implant (specimen)	900000000000207008
+423722008	Finding related to ability to dispose of household sewage (finding)	900000000000207008
+424069004	Order Thiotrichales (organism)	900000000000207008
+425079005	Slow acetylator due to N-acetyltransferase enzyme variant (disorder)	900000000000207008
+425394002	Active healthcare will (finding)	900000000000207008
+425690001	Actinomadura glauciflava (organism)	900000000000207008
+425953004	Amphotericin B lipid complex (substance)	900000000000207008
+425990003	Percutaneous transluminal insertion of stent into pulmonary vein (procedure)	900000000000207008
+426192000	Class Ascomycetes (organism)	900000000000207008
+427573002	Attention to intrathecal drug delivery device adjacent to spinal cord (procedure)	900000000000207008
+427764007	Bacillus subtilis subtilis (organism)	900000000000207008
+42814007	Mid postpartum state (finding)	900000000000207008
+428552000	Normal extracardiac tracer uptake (finding)	900000000000207008
+428619000	Attention to hearing implant in external ear (procedure)	900000000000207008
+428920008	Increased lung tracer uptake (finding)	900000000000207008
+429382003	Subdiaphragmatic tracer uptake (finding)	900000000000207008
+429383008	Attention to hearing implant in middle ear (procedure)	900000000000207008
+429576000	Abnormal extracardiac tracer uptake (finding)	900000000000207008
+430864009	Tissue fixative (substance)	900000000000207008
+430867002	Substance with recombinant interleukin 1 receptor antagonist mechanism of action (substance)	900000000000207008
+43113008	Diphyllobothrium strictum (organism)	900000000000207008
+431196006	Tissue spot (specimen)	900000000000207008
+43122009	Physiatric manipulation of hand (procedure)	900000000000207008
+433338005	Carnoy fixative (substance)	900000000000207008
+433451001	Product containing recombinant interleukin 1 receptor antagonist (product)	900000000000207008
+433471005	Helly fixative (substance)	900000000000207008
+433473008	Zenker fixative (substance)	900000000000207008
+433474002	Bouin fluid (substance)	900000000000207008
+434222007	Pseudoalteromonas elyakovii (organism)	900000000000207008
+434224008	Pseudoalteromonas flavipulchra (organism)	900000000000207008
+434295000	Formol sublimate (substance)	900000000000207008
+438107000	Rhizobium radiobacter (organism)	900000000000207008
+438730003	Streptomyces plicatus (organism)	900000000000207008
+442258002	Attention to cemented hybrid prosthetic replacement of knee joint (procedure)	900000000000207008
+443724003	Surgically constructed orifice between systemic venous pathway and left atrium (morphologic abnormality)	900000000000207008
+447321005	Roseomonas ludipueritiae (organism)	900000000000207008
+448396008	Transarterial embolization (procedure)	900000000000207008
+448490003	Attention to prosthetic replacement of head of humerus (procedure)	900000000000207008
+448544009	Attention to prosthetic replacement of joint (procedure)	900000000000207008
+448837005	Attention to percutaneously inserted tubal prosthesis in bile duct (procedure)	900000000000207008
+45019006	Bard-Pic syndrome (disorder)	900000000000207008
+450333007	Attention to ventriculoperitoneal shunt (procedure)	900000000000207008
+450334001	Attention to ventriculopleural shunt (procedure)	900000000000207008
+450335000	Attention to cerebroventricular shunt (procedure)	900000000000207008
+450871008	Attention to colostomy (procedure)	900000000000207008
+46177005	End-stage renal disease (disorder)	900000000000207008
+46321002	Asterotoxin (substance)	900000000000207008
+46824002	Structure of mesotendineum (body structure)	900000000000207008
+470241008	In-exsufflator (physical object)	900000000000207008
+48211001	Blastoschizomyces (organism)	900000000000207008
+484201010000101	Presence of Neisseria gonorrhoeae rRNA in specimen at point in time (observable entity)	11010000107
+48581007	Plastic reagent (substance)	900000000000207008
+49046007	Human structural gene (substance)	900000000000207008
+49071005	Postpartum period, 2 days (finding)	900000000000207008
+49440008	Revision of colostomy, complicated (procedure)	900000000000207008
+50010001	4-nitrobiphenyl (substance)	900000000000207008
+5095008	Gender identity disorder of childhood (disorder)	900000000000207008
+51146001	Formation of cutaneous ureterostomy (procedure)	900000000000207008
+51352008	Exogenous (qualifier value)	900000000000207008
+51355005	Sarcostemma poisoning (disorder)	900000000000207008
+52554005	Structure of superior medial inguinal lymph node (body structure)	900000000000207008
+531681010000106	Velocity of spermatozoa at point in time in seminal fluid (observable entity)	11010000107
+54079004	Anodal opening clonus (finding)	900000000000207008
+54417002	Adult gender identity disorder, sexually attracted to females (disorder)	900000000000207008
+54675009	Tracheopathia osteoplastica (disorder)	900000000000207008
+55242003	Lycopersicon esculentum (organism)	900000000000207008
+55312004	Aneurysmectomy with anastomosis of lower limb vein (procedure)	900000000000207008
+55861007	Postpartum period, 5 days (finding)	900000000000207008
+56026007	Late postpartum state (finding)	900000000000207008
+56801004	Percutaneous transluminal angioplasty of renal artery using fluoroscopic guidance with contrast (procedure)	900000000000207008
+56943007	End organ deafness (disorder)	900000000000207008
+57434002	Radical excision with en bloc resection of regional organs and tissues (procedure)	900000000000207008
+57443006	Physiatric stretching of fascia (regime/therapy)	900000000000207008
+57715001	Gender identity disorder of adolescence (disorder)	900000000000207008
+58265007	Giardiasis (disorder)	900000000000207008
+59079001	Diabetes mellitus associated with hormonal etiology (disorder)	900000000000207008
+59216005	Adult gender identity disorder, sexually attracted to males (disorder)	900000000000207008
+597273291000119104	Awaiting transplantation of kidney and pancreas (situation)	900000000000207008
+60659001	Physiatric manipulation of thoracic region (procedure)	900000000000207008
+609185006	Magnetic resonance imaging report received (finding)	900000000000207008
+61180001	Adult gender identity disorder, sexually attracted to neither sex (disorder)	900000000000207008
+61221000087105	Monoclonal antibody to Orthopneumovirus hominis (substance)	900000000000207008
+62494007	Chronic miliary tuberculosis (disorder)	900000000000207008
+62634001	Aneurysmectomy with anastomosis of abdominal artery (procedure)	900000000000207008
+6430000	Scytalidium hyalinum (organism)	900000000000207008
+64541000	Postpartum period, 3 days (finding)	900000000000207008
+64876005	Multi-organism infectious disease (disorder)	900000000000207008
+64896002	Allergenic extract (substance)	900000000000207008
+65178004	Deventer's pelvis (disorder)	900000000000207008
+65815005	Aneurysmectomy with anastomosis of upper limb artery (procedure)	900000000000207008
+66881004	Choreoacanthocytosis (disorder)	900000000000207008
+67123006	Adult gender identity disorder, sexually attracted to both sexes (disorder)	900000000000207008
+67387001	Coronary perfusion catheter, device (physical object)	900000000000207008
+67732000	Khasan virus (organism)	900000000000207008
+677891000119106	Macular cyst of left eye (disorder)	900000000000207008
+677941000119107	Macular cyst of right eye (disorder)	900000000000207008
+67855008	Niemann-Pick disease, type C, subacute form (disorder)	900000000000207008
+68684004	Hazara virus (organism)	900000000000207008
+68963006	Gender identity disorder of adolescence, previously heterosexual (disorder)	900000000000207008
+69255009	Structure of hypogastric lymph node (body structure)	900000000000207008
+698303004	Awaiting transplantation of bone marrow (situation)	900000000000207008
+698304005	Awaiting corneal transplant (situation)	900000000000207008
+698305006	Awaiting transplantation of liver (situation)	900000000000207008
+698306007	Awaiting transplantation of kidney (situation)	900000000000207008
+698409004	Colonoscopic control of bleeding (procedure)	900000000000207008
+700816007	Outer ear otoscope (physical object)	900000000000207008
+703396000	Combination internal cardiac defibrillator and pacemaker in situ (finding)	900000000000207008
+704667004	Hypertension concurrent and due to end stage renal disease on dialysis (disorder)	900000000000207008
+707324008	Anemia co-occurrent and due to end stage renal disease (disorder)	900000000000207008
+710027002	Cytokine-associated toxicity (disorder)	900000000000207008
+710211010000102	Number areic of burst-forming unit erythroid in plasma at point in time (observable entity)	11010000107
+71040008	Computed tomography follow-up (procedure)	900000000000207008
+710903001	Periodontitis co-occurrent with genetic disorder (disorder)	900000000000207008
+711552004	Attention to prosthetic ear bone anchor pin (procedure)	900000000000207008
+712487000	End stage renal disease due to benign hypertension (disorder)	900000000000207008
+713007004	Eutypella scoparia (organism)	900000000000207008
+713490002	Infection caused by Pneumocystis co-occurrent with human immunodeficiency virus infection (disorder)	900000000000207008
+714186001	Male to female transsexual person on hormone therapy (finding)	900000000000207008
+714189008	Female to male transsexual person on hormone therapy (finding)	900000000000207008
+715240000	X-linked retinal dysplasia (disorder)	900000000000207008
+715534008	Infantile convulsion and choreoathetosis syndrome (disorder)	900000000000207008
+715989002	Congenital cataract with intellectual disability and anal atresia and urinary defect syndrome (disorder)	900000000000207008
+716706009	Protocadherin 19 clustering epilepsy (disorder)	900000000000207008
+717668007	Pseudomonas pertucinogena group (organism)	900000000000207008
+717840005	Congestive heart failure stage B (disorder)	900000000000207008
+718563007	Revised Children's Anxiety and Depression Scale Parent Version total anxiety subscale (assessment scale)	900000000000207008
+718729008	Revised Children's Anxiety and Depression Scale Parent Version social phobia subscale (assessment scale)	900000000000207008
+718730003	Revised Children's Anxiety and Depression Scale Parent Version Panic Disorder subscale (assessment scale)	900000000000207008
+718731004	Revised Children's Anxiety and Depression Scale Parent Version Obsessive Compulsive Disorder subscale (assessment scale)	900000000000207008
+718732006	Revised Children's Anxiety and Depression Scale Parent Version separation anxiety subscale (assessment scale)	900000000000207008
+718733001	Revised Children's Anxiety and Depression Scale Parent Version generalized anxiety subscale (assessment scale)	900000000000207008
+718734007	Revised Children's Anxiety and Depression Scale Parent Version Major Depressive Disorder subscale (assessment scale)	900000000000207008
+718735008	Revised Children's Anxiety and Depression Scale Parent Version total anxiety and depression subscale (assessment scale)	900000000000207008
+718739002	Revised Children's Anxiety and Depression Scale Major Depressive Disorder subscale (assessment scale)	900000000000207008
+718741001	Revised Children's Anxiety and Depression Scale Panic Disorder subscale (assessment scale)	900000000000207008
+718742008	Revised Children's Anxiety and Depression Scale social phobia subscale (assessment scale)	900000000000207008
+718743003	Revised Children's Anxiety and Depression Scale total anxiety subscale (assessment scale)	900000000000207008
+718744009	Revised Children's Anxiety and Depression Scale Obsessive Compulsive Disorder subscale (assessment scale)	900000000000207008
+718745005	Revised Children's Anxiety and Depression Scale total anxiety and depression subscale (assessment scale)	900000000000207008
+718746006	Revised Children's Anxiety and Depression Scale separation anxiety subscale (assessment scale)	900000000000207008
+718747002	Revised Children's Anxiety and Depression Scale generalized anxiety subscale (assessment scale)	900000000000207008
+719012009	X-linked intellectual disability Miles Carpenter type (disorder)	900000000000207008
+71937005	Physiatric manipulation (procedure)	900000000000207008
+719520001	Benign concentric annular macular dystrophy (disorder)	900000000000207008
+72146002	Bragard's sign (finding)	900000000000207008
+721804002	Infection of lung caused by Pneumocystis (disorder)	900000000000207008
+721936008	Occupation medicine specialist (occupation)	900000000000207008
+72243003	Corynebacterium tenuis (organism)	900000000000207008
+72365000	Dyspnea, class II (finding)	900000000000207008
+723991007	Angio-osteohypertrophic syndrome (disorder)	900000000000207008
+724500003	Idiopathic chronic eosinophilic pneumonitis (disorder)	900000000000207008
+724541008	Acute miliary tuberculosis of single site (disorder)	900000000000207008
+72466000	Injury of suprarenal arteries (disorder)	900000000000207008
+72488000	Niemann-Pick disease, type C, chronic form (disorder)	900000000000207008
+725733004	Aluminium hydroxide hydrate (substance)	900000000000207008
+726835009	Entire cerebellar lenticular nucleus (body structure)	900000000000207008
+726881009	Entire mucous gland of bronchiole (body structure)	900000000000207008
+727042000	Entire mesotendineum (body structure)	900000000000207008
+727083002	Entire superior medial inguinal lymph node (body structure)	900000000000207008
+727228003	Entire superior lateral inguinal lymph node (body structure)	900000000000207008
+727356005	Entire intervertebral disc of sacral vertebra (body structure)	900000000000207008
+729478007	Entire valve of Hasner (body structure)	900000000000207008
+730239009	Entire lacuna of iliac fossa (body structure)	900000000000207008
+73033003	Gill fluke (organism)	900000000000207008
+732247000	Cleft lip retinopathy syndrome (disorder)	900000000000207008
+732249002	Bone dysplasia lethal Holmgren type (disorder)	900000000000207008
+733110004	Van den Bosch syndrome (disorder)	900000000000207008
+73322006	Dyspnea, class IV (finding)	900000000000207008
+733771002	Dibasic sodium phosphate heptahydrate (substance)	900000000000207008
+734225004	Pseudomonas kunmingensis (organism)	900000000000207008
+737858009	Attention to endoprosthesis of bone (procedure)	900000000000207008
+738066004	Attention to total hip replacement (procedure)	900000000000207008
+738067008	Attention to dressing of skin of head (procedure)	900000000000207008
+738277004	Attention to total prosthetic replacement of elbow joint (procedure)	900000000000207008
+73979006	Endogenous (qualifier value)	900000000000207008
+745798003	Attention to dressing of skin of neck (procedure)	900000000000207008
+7487003	200 milligram calcium diet (finding)	900000000000207008
+7494000	Structure of cerebellar lenticular nucleus (body structure)	900000000000207008
+75682002	Diabetes mellitus caused by insulin receptor antibodies (disorder)	900000000000207008
+76144001	Radical resection for infection of pelvis (procedure)	900000000000207008
+762051003	Attention to hybrid total knee replacement (procedure)	900000000000207008
+762052005	Attention to total knee replacement (procedure)	900000000000207008
+762053000	Attention to total prosthetic replacement of shoulder joint (procedure)	900000000000207008
+762054006	Attention to hybrid prosthetic replacement of shoulder joint using cement (procedure)	900000000000207008
+762238003	Attention to nasogastric tube (procedure)	900000000000207008
+76260005	Physiatric hyperextension of joint (regime/therapy)	900000000000207008
+765750001	Angio-osteohypotrophic syndrome (disorder)	900000000000207008
+766740007	Dibasic sodium phosphate dihydrate (substance)	900000000000207008
+76704003	Structure of superior lateral inguinal lymph node (body structure)	900000000000207008
+770622009	Benign infantile focal epilepsy with midline spikes and waves during sleep (disorder)	900000000000207008
+770623004	Benign occipital lobe epilepsy (disorder)	900000000000207008
+773380006	Product containing only amphotericin B lipid complex (medicinal product)	900000000000207008
+773385001	Product containing only amphotericin B lipid complex in parenteral dose form (medicinal product form)	900000000000207008
+775572000	Product containing only diethyl methacrylate (medicinal product)	900000000000207008
+778047006	Myoclonic epilepsy in non-progressive encephalopathy (disorder)	900000000000207008
+77815007	Gender identity disorder of adulthood, previously homosexual (disorder)	900000000000207008
+7822001	Failed attempted abortion complicated by damage to pelvic organs AND/OR tissues (disorder)	900000000000207008
+783194008	Bleeding diathesis due to thromboxane synthesis deficiency (disorder)	900000000000207008
+783255002	Hereditary isolated aplastic anemia (disorder)	900000000000207008
+783332003	Clemastine fumarate hydrochloride (substance)	900000000000207008
+783333008	Product containing precisely clemastine (as clemastine fumarate hydrochloride) 1 milligram/1 each conventional release oral tablet (clinical drug)	900000000000207008
+784243001	Awaiting transplantation (situation)	900000000000207008
+784342008	Familial infantile myoclonic epilepsy (disorder)	900000000000207008
+78482005	Bouchard's disease (disorder)	900000000000207008
+785130004	Product containing precisely amphotericin B lipid complex 5 milligram/1 milliliter conventional release solution for injection (clinical drug)	900000000000207008
+786041005	Congenital systemic arteriovenous fistula (disorder)	900000000000207008
+788417006	Alopecia, epilepsy, intellectual disability syndrome Moynahan type (disorder)	900000000000207008
+788864001	Amnestic disorder caused by volatile solvent (disorder)	900000000000207008
+79962008	Diffuse spasm of esophagus (disorder)	900000000000207008
+8119004	Entire delphian lymph node (body structure)	900000000000207008
+82256003	Human gene (substance)	900000000000207008
+82393007	Giant esophagus (disorder)	900000000000207008
+840358001	High body weight (finding)	900000000000207008
+84160009	Laryngeal hemiplegia (disorder)	900000000000207008
+84781002	Sporadic cretinism (disorder)	900000000000207008
+85380009	Structure of inferior inguinal lymph node (body structure)	900000000000207008
+8549006	Desquamative interstitial pneumonitis (disorder)	900000000000207008
+86444004	Niemann-Pick disease, type C, acute form (disorder)	900000000000207008
+86454000	Postnecrotic cirrhosis (disorder)	900000000000207008
+866114005	Localized cataract opacities due to and following traumatic injury (disorder)	900000000000207008
+87991007	Gender identity disorder (disorder)	900000000000207008
+88007000	Sodium tetrahydride (substance)	900000000000207008
+88025007	Silvex (substance)	900000000000207008
+88314007	Wookey excision of esophagus with radical neck dissection (procedure)	900000000000207008
+88860002	Pneumocystosis (disorder)	900000000000207008
+890183008	Lymphedema due to podoconiosis (disorder)	900000000000207008
+895533005	Mini Nutritional Assessment score (observable entity)	900000000000207008
+895537006	Mini Nutritional Assessment (assessment scale)	900000000000207008
+89743005	Leuko-araiosis (finding)	900000000000207008
+90187004	Pseudomonas, group VA-1 (organism)	900000000000207008
+90653005	Vitamin A deficiency with corneal ulceration AND xerosis (disorder)	900000000000207008
+90771000119100	End stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)	900000000000207008
+90791000119104	End stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)	900000000000207008
+95217000	Pseudophakic intraocular lens present (finding)	900000000000207008
+95252008	Secondary dental caries associated with failed or defective dental restoration (disorder)	900000000000207008
+95253003	Secondary dental caries associated with local or systemic factors (disorder)	900000000000207008
+95603002	Galactischia (disorder)	900000000000207008
+9599004	Biopsy of lesion or structure of cervix with fulguration (procedure)	900000000000207008

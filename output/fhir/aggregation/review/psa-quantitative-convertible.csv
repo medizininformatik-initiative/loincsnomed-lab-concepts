@@ -3,14 +3,14 @@ LOINC,SCTID,FSN,use_case,reason
 10886-0,276781010000103,Mass concentration of free prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 19195-7,238361010000109,Arbitrary concentration of prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 19197-3,94521010000100,Substance concentration of prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-19198-1,189701010000106,Arbitrary concentration of prostate specific antigen in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-19199-9,198561010000107,Mass concentration of prostate specific antigen in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-19200-5,222971010000104,Substance concentration of prostate specific antigen in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+19198-1,189701010000106,Arbitrary concentration of prostate specific antigen in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+19199-9,198561010000107,Mass concentration of prostate specific antigen in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+19200-5,222971010000104,Substance concentration of prostate specific antigen in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 19201-3,100121010000105,Arbitrary concentration of free prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 19203-9,164181010000104,Substance concentration of free prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-19204-7,99571010000100,Arbitrary concentration of free prostate specific antigen in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-19205-4,113051010000107,Mass concentration of free prostate specific antigen in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
-19206-2,59841010000103,Substance concentration of free prostate specific antigen in seminal fluid at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+19204-7,99571010000100,Arbitrary concentration of free prostate specific antigen in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+19205-4,113051010000107,Mass concentration of free prostate specific antigen in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+19206-2,59841010000103,Substance concentration of free prostate specific antigen in semen sample at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 2857-1,219111010000109,Mass concentration of prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 33667-7,135211010000105,Mass concentration of protein-bound prostate specific antigen in serum or plasma at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
 34611-4,161371010000103,Mass concentration of prostate specific antigen in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property

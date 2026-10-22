@@ -1,31 +1,31 @@
 LOINC,SCTID,FSN,use_case,reason
-104738-0,824631010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-12503-9,828341010000100,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-12504-7,828351010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14563-1,829271010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14564-9,829281010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-14565-6,829291010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2334-1,832611010000109,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-2335-8,832621010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27401-9,833961010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27925-7,834041010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-27926-5,834051010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-29771-3,834201010000103,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-33517-4,113801010000100,Presence of hemoglobin in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-34618-9,145031010000105,Presence of hemoglobin in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42909-2,839561010000104,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42910-0,839571010000109,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42911-8,839581010000107,Presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42912-6,839591010000105,Presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-42913-4,839601010000104,Presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-48035-0,141941010000104,Presence of hemoglobin in cerebrospinal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-48047-5,842371010000105,Presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-50017-3,844281010000109,Presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-56490-6,848171010000106,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-56491-4,848181010000109,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-57751-0,43271010000109,Presence of hemoglobin in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-57905-2,848921010000108,Presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-5794-3,246811010000100,Presence of hemoglobin in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-717-9,186111010000103,Presence of hemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-725-2,111791010000102,Presence of hemoglobin in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
-80372-6,855941010000107,Presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+104738-0,824631010000108,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12503-9,828341010000100,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 4th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+12504-7,828351010000103,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 5th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14563-1,829271010000108,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14564-9,829281010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+14565-6,829291010000109,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2334-1,832611010000109,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2335-8,832621010000103,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27401-9,833961010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 6th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27925-7,834041010000109,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 7th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+27926-5,834051010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time 8th specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+29771-3,834201010000103,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+33517-4,113801010000100,Threshold presence of hemoglobin in body fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+34618-9,145031010000105,Threshold presence of hemoglobin in specimen at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42909-2,839561010000104,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42910-0,839571010000109,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42911-8,839581010000107,Threshold presence of hemoglobin in gast fld^Patient.gastrointestinal at point in time 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42912-6,839591010000105,Threshold presence of hemoglobin in XXX^Patient.gastrointestinal at point in time 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+42913-4,839601010000104,Threshold presence of hemoglobin in XXX^Patient.gastrointestinal.lower at point in time 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48035-0,141941010000104,Threshold presence of hemoglobin in cerebrospinal fluid at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+48047-5,842371010000105,Threshold presence of hemoglobin in Vomitus^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+50017-3,844281010000109,Threshold presence of hemoglobin in Sputum/Gast fld^Patient.gastrointestinal at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+56490-6,848171010000106,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 2nd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+56491-4,848181010000109,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 3rd specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57751-0,43271010000109,Threshold presence of hemoglobin in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57905-2,848921010000108,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal.lower at point in time by immunoassay 1st specimen (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+5794-3,246811010000100,Threshold presence of hemoglobin in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+717-9,186111010000103,Threshold presence of hemoglobin in blood at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+725-2,111791010000102,Threshold presence of hemoglobin in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+80372-6,855941010000107,Threshold presence of hemoglobin in Stool^Patient.gastrointestinal at point in time by rapid immunoassay (observable entity),qualitative,Ordinal/Nominal scale → qualitative
