@@ -6,7 +6,7 @@
   "title": "hemoglobin — Qualitative (ordinal / nominal / presence)",
   "status": "draft",
   "experimental": true,
-  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20261021. 30 concepts (30 with LOINC). Review required.",
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against http://snomed.info/sct/11010000107/version/20261021. 30 concepts (30 with LOINC). Review required.",
   "compose": {
     "include": [
       {

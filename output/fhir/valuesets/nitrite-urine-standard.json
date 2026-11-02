@@ -10,17 +10,34 @@
   "compose": {
     "include": [
       {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "5802-4",
+            "display": "Threshold presence of nitrite salt in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "50558-6",
+            "display": "Threshold presence of nitrite salt in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "32710-6",
+            "display": "Threshold presence of nitrite salt in urine at point in time (observable entity)"
+          }
+        ]
+      },
+      {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/11010000107/version/20261021",
         "filter": [
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118589004 |Threshold (property) (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118589004 |Threshold (property) (qualifier value)|"
 }

@@ -102,7 +102,7 @@
     {
       "id": "nitrite-urine-standard", "analyte": "nitrite_urine", "name": "Nitrite in urine (qualitative)",
       "tier": "standard", "dataType": "CodeableConcept", "unit": "", "specimen": "Urine",
-      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 705057003 |Presence (property) (qualifier value)|"
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118589004 |Threshold (property) (qualifier value)|"
     }
   ]
 }

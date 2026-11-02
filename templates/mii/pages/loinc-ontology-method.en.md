@@ -48,7 +48,7 @@ Parts 1 and 2 are the enumeration of part 3 at the stated release. They are not 
 
 ### Versions and regeneration
 
-The artifacts are pinned to **LOINC Ontology {{RELEASE}}**. The LOINC Ontology is released periodically; the module pins LOINC 2.82 for its own ValueSets. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. The release-to-release difference report is published with the generator in [{{REPO_NAME}}]({{REPO_URL}}).
+The artifacts are pinned to **LOINC Ontology {{RELEASE}}**. The LOINC Ontology is released periodically; the module pins LOINC 2.82 for its own ValueSets. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. A release can also remodel the attributes themselves: between 2026-03-21 and 2026-10-21 the LOINC Ontology moved more than 10,000 presence observables from Property `Presence` (705057003) to `Threshold (property)` (118589004, a subtype of Measurement property) and renamed them from "Presence of …" to "Threshold presence of …". The nitrite rule on this branch therefore selects `<< 118589004 |Threshold (property)|` instead of `<< 705057003 |Presence|`; its LOINC enumeration did not change. The old rule would have returned an empty ValueSet, which is the kind of failure a regeneration makes visible. The release-to-release difference report is published with the generator in [{{REPO_NAME}}]({{REPO_URL}}).
 
 ### Reading the review tables
 

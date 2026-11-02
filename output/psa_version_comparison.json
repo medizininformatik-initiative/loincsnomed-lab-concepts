@@ -1,14 +1,14 @@
 {
   "targets": [
     {
-      "api_base": "http://localhost:8093",
+      "api_base": "http://localhost:8090",
       "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
       "effective": "20260321",
-      "_note": "baseline read from the v1.2.0 image (same server as current); production :8090 also has this branch",
+      "_note": "old version branch on the production server (snowstorm-complete:v1.2.0 on :8090); survives the in-place update, so old-vs-new diffs run locally",
       "name": "local-2026-03-21"
     },
     {
-      "api_base": "http://localhost:8093",
+      "api_base": "http://localhost:8090",
       "branch": "MAIN/SNOMEDCT-LOINC/2026-10-21",
       "effective": "20261021",
       "name": "local-2026-10-21"

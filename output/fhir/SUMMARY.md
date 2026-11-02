@@ -23,4 +23,4 @@ Target: `local-2026-10-21` (MAIN/SNOMEDCT-LOINC/2026-10-21)
 | `mcv-standard` | mcv | standard | 2 | 2 |
 | `hba1c-standard` | hba1c | standard | 8 | 8 |
 | `methemoglobin-standard` | methemoglobin | standard | 11 | 11 |
-| `nitrite-urine-standard` | nitrite_urine | standard | 0 | 0 |
+| `nitrite-urine-standard` | nitrite_urine | standard | 3 | 3 |

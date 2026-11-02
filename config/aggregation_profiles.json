@@ -1,5 +1,5 @@
 {
-  "description": "Use-case-driven aggregation profiles (INTERPOLAR pattern). The USE CASE defines which slice of an analyte's candidate pool is aggregated. Classification uses BOTH SNOMED Scale type (370132008) and Property (370130000), because Scale type is not always asserted: e.g. generic 'Measurement of X' groupers carry only Property=Measurement property (no scale) and Presence observables carry Property=Presence (no scale). Rules (first match wins, see scripts/review_export.py): (1) qualitative if Ordinal/Nominal scale OR Presence property; (2) semiquantitative if Semi-quantitative scale; (3) quantitative if Quantitative scale OR any Measurement property (this pulls in the generic groupers, which belong in the full lists); convertible = quantitative with a concentration property, excl. ratio/fraction; (4) else unclassified.",
+  "description": "Use-case-driven aggregation profiles (INTERPOLAR pattern). The USE CASE defines which slice of an analyte's candidate pool is aggregated. Classification uses BOTH SNOMED Scale type (370132008) and Property (370130000), because Scale type is not always asserted: e.g. generic 'Measurement of X' groupers carry only Property=Measurement property (no scale) and Presence observables carry Property=Presence (no scale). Since LOINC Ontology 2026-10-21 most of them carry Property=Threshold (118589004, a Measurement property) with an Ordinal scale instead; Threshold is listed under presence so that it is classified before the Measurement-property rule. Rules (first match wins, see scripts/review_export.py): (1) qualitative if Ordinal/Nominal scale OR Presence/Threshold property; (2) semiquantitative if Semi-quantitative scale; (3) quantitative if Quantitative scale OR any Measurement property (this pulls in the generic groupers, which belong in the full lists); convertible = quantitative with a concentration property, excl. ratio/fraction; (4) else unclassified.",
   "attributes": {
     "observable_root": "363787002",
     "component": "246093002",
@@ -14,7 +14,7 @@
   },
   "properties": {
     "measurement": "685451010000100",
-    "presence": ["705057003", "118584009"],
+    "presence": ["705057003", "118584009", "118589004"],
     "concentration": ["118539007", "118556004", "118569000", "118550005", "118594004"],
     "ratio_fraction": ["118586006", "118542001", "118567003", "118552002", "118596002"]
   },
@@ -37,7 +37,7 @@
     {
       "id": "qualitative",
       "name": "Qualitative (ordinal / nominal / presence)",
-      "description": "Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results."
+      "description": "Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results."
     },
     {
       "id": "semiquantitative",
