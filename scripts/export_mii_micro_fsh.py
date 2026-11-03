@@ -648,9 +648,9 @@ def delta_tables(lang, families, deltas, concepts, prev_concepts, l10n_de, prev_
                 fam_title, fam["slug"], md(qn), d["a_total"], d["b_total"], len(d["added"]), len(d["removed"])))
             if not d["added"] and not d["removed"]:
                 continue
-            L.append("### {} — {}".format(fam_title, qn))
+            L.append("### {}".format(qn))
             L.append("")
-            L.append("[ValueSet](ValueSet-{}.html)".format(vs_id(q["id"])))
+            L.append("[{}](loinc-ontology-request-{}.html) · [ValueSet](ValueSet-{}.html)".format(fam_title, fam["slug"], vs_id(q["id"])))
             L.append("")
             for head, ids, src in ((heads[0].format(cur_label), d["added"], concepts), (heads[1].format(prev_label), d["removed"], prev_concepts)):
                 if not ids:
