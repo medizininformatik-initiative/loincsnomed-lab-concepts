@@ -1,0 +1,17 @@
+{
+  "description": "Microbiology request: Ct value (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_CT_Wert, ValueSet MII_VS_Mikrobio_CT_Wert_LOINC = LOINC PROPERTY ThrNum (cycle threshold) in CLASS MICRO). The ontology maps ThrNum to Property = 1268648001 |Threshold number|; the targeted nucleic acid is the Component.",
+  "queries": [
+    {
+      "id": "ct_value_microbial_nucleic_acid",
+      "name": "Ct value — threshold number of a microbial nucleic acid",
+      "description": "Cycle threshold of a pathogen nucleic acid by any amplification technique.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 1268648001 |Threshold number (property) (qualifier value)|, 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|"
+    },
+    {
+      "id": "ct_value_any",
+      "name": "Ct value — all threshold-number observables (upper bound)",
+      "description": "Every Threshold number observable, including human targets (RNase P control, TREC, SMN1). The difference to the query above is the non-microbiological remainder.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 1268648001 |Threshold number (property) (qualifier value)|"
+    }
+  ]
+}

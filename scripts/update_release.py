@@ -15,7 +15,7 @@ Steps
   3. verify MAIN/SNOMEDCT-LOINC/<yyyy-mm-dd> exists on --api-base
   4. extract sct2_Identifier_Snapshot → data/loincsnomed_identifiers_<eff>.txt (gitignored, licensed)
   5. rotate config/targets.json: previous ← current, current ← new; snomed version URI; identifier file
-  6. regenerate: compare_versions (all + psa + ldh), full_branch_diff, review_export,
+  6. regenerate: compare_versions (all + psa + ldh + micro requests), full_branch_diff, review_export,
      build_observation_artifacts, build_dashboard
 """
 
@@ -40,6 +40,10 @@ RUNS = [
      "--out", "output/psa_version_comparison.md", "--json-out", "output/psa_version_comparison.json"],
     ["python3", "scripts/compare_versions.py", "--config-glob", "config/ldh_custom_ecl.json",
      "--out", "output/ldh_version_comparison.md", "--json-out", "output/ldh_version_comparison.json"],
+    ["python3", "scripts/compare_versions.py", "--config-glob", "config/micro/*_custom_ecl.json",
+     "--out", "output/micro/version_comparison.md", "--json-out", "output/micro/version_comparison.json"],
+    ["python3", "scripts/diff_fsn_report.py", "--json", "output/micro/version_comparison.json",
+     "--out", "output/micro/added_removed.md"],
     ["python3", "scripts/full_branch_diff.py"],
     ["python3", "scripts/review_export.py"],
     ["python3", "scripts/build_observation_artifacts.py"],

@@ -1,0 +1,23 @@
+{
+  "description": "Microbiology request: general culture (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Allgemeine_Kultur, ValueSet MII_VS_Mikrobio_Allgemeine_Kultur_Tests_LOINC). The 2027 module post-coordinates: one generic culture code (11475-1 'Microorganism identified in Specimen by Culture') plus organism, specimen and method as separate elements. In the LOINC Ontology the generic code is 490041010000102 (Property = Presence or identity, Technique = Microbial culture technique, Inheres in = Organism). The organism sits in 'Inheres in' for identity observables and in 'Component' for threshold observables of a named organism (e.g. 13316-5 VRE by organism specific culture), so the ECL tests both attributes. 41852-5 ('Microorganism or agent identified') is not in the ontology.",
+  "queries": [
+    {
+      "id": "general_culture_identity",
+      "name": "General culture — organism identity by culture technique",
+      "description": "What the generic culture request returns: nominal identification of any organism by any culture technique (microbial, organism specific, anaerobic, fungal ...). Contains 11475-1.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|, (704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)| OR 246093002 |Component (attribute)| = << 410607006 |Organism (organism)|)"
+    },
+    {
+      "id": "specific_culture_threshold",
+      "name": "Targeted culture — threshold presence of a named organism by culture technique",
+      "description": "Culture requests that already name the organism (MRSA screening, VRE, Salmonella ...): ordinal presence/threshold of a named organism by culture. In the 2027 module these are 'specific determination' with method = culture rather than 'general culture'. Contains 13316-5.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|, (704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)| OR 246093002 |Component (attribute)| = << 410607006 |Organism (organism)|)"
+    },
+    {
+      "id": "culture_any_property",
+      "name": "Everything by culture technique (upper bound)",
+      "description": "Candidate pool: every observable with a culture technique regardless of property (identity, threshold, colony counts, susceptibility by culture). Upper bound for review.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|"
+    }
+  ]
+}

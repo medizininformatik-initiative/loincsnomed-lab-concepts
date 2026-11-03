@@ -1,0 +1,17 @@
+{
+  "description": "Microbiology request: titre (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Titer, ValueSet MII_VS_Mikrobio_Titer_Tests_LOINC = LOINC PROPERTY Titr in CLASS MICRO). Ontology: Property = 118590008 |Dilution factor expressed as titer|, Scale = Semi-quantitative, Component = the antibody (<< 312301006 |Infective organism antibody|). Titres of autoantibodies and blood-group antibodies share the property and are excluded by the Component clause.",
+  "queries": [
+    {
+      "id": "titer_infective_antibody",
+      "name": "Titre — pathogen antibody titre",
+      "description": "Titre of an antibody to an infective organism (serology titres: syphilis, Brucella, Widal, viral IgG/IgM titres).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118590008 |Dilution factor expressed as titer (property) (qualifier value)|, 246093002 |Component (attribute)| = << 312301006 |Infective organism antibody (substance)|"
+    },
+    {
+      "id": "titer_any",
+      "name": "Titre — all titre observables (upper bound)",
+      "description": "Every titre observable; the difference to the query above is autoimmune, blood-group and other non-infective titres.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118590008 |Dilution factor expressed as titer (property) (qualifier value)|"
+    }
+  ]
+}

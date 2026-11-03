@@ -1,0 +1,23 @@
+{
+  "description": "Microbiology request: general determination = untargeted identification of a microorganism by any method (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Allgemeine_Bestimmung, ValueSet MII_VS_Mikrobio_Allgemeine_Bestimmung_Tests_LOINC). Of the six enumerated module codes only three are in the ontology (11475-1 culture, and two sequencing/organism-group codes); the preferred 41852-5 'Microorganism or agent identified in Specimen' is NOT in the LOINC Ontology 2026-10-21. The ontology pattern is Property = Presence or identity with the organism (or organism group: Bacteria, Fungi, virus) in 'Inheres in'.",
+  "queries": [
+    {
+      "id": "organism_identity_any_technique",
+      "name": "General determination — organism identity, any technique",
+      "description": "Nominal identification of an organism or organism group by any technique (culture, sequencing, mass spectrometry, stain) or none. Superset of the general-culture identity query.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|"
+    },
+    {
+      "id": "organism_identity_no_technique",
+      "name": "General determination — method-neutral identity codes",
+      "description": "The technique-free identity observables ('Presence or identity of virus in specimen'); the method-neutral request codes live here.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|, [0..0] 246501002 |Technique (attribute)| = *"
+    },
+    {
+      "id": "organism_type",
+      "name": "Typing — type of an organism (serotype, genotype, biotype)",
+      "description": "Property = Type with an organism in 'Inheres in': serotyping, HBV/HCV genotype, biotype of an isolate. Sits between determination and susceptibility in the 2027 module (no own profile).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 410656007 |Type (property) (qualifier value)|, 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|"
+    }
+  ]
+}

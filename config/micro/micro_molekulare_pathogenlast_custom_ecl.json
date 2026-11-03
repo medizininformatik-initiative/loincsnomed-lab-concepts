@@ -1,0 +1,17 @@
+{
+  "description": "Microbiology request: molecular pathogen load (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Molekulare_Pathogenlast, ValueSet MII_VS_Mikrobio_Molekulare_Pathogenlast_Tests_LOINC = LOINC SCALE Qn + molecular METHOD_TYP in CLASS MICRO). Quantitative nucleic-acid concentration of a pathogen: Property = number concentration, log number concentration, arbitrary concentration (IU/mL viral loads) or log arbitrary concentration; Component = the organism's nucleic acid.",
+  "queries": [
+    {
+      "id": "pathogen_load_any_technique",
+      "name": "Pathogen load — quantitative microbial nucleic acid, any technique",
+      "description": "Viral/bacterial loads (HIV RNA, HBV DNA, CMV DNA ...) regardless of technique. Reference set for the request.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)| OR 118569000 |Arbitrary concentration (property) (qualifier value)| OR 762918005 |Logarithmic arbitrary concentration (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|"
+    },
+    {
+      "id": "pathogen_load_amplification",
+      "name": "Pathogen load — amplification technique asserted",
+      "description": "Same, restricted to Technique = << Molecular nucleic acid amplification technique. Shows the loss from a technique clause.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)| OR 118569000 |Arbitrary concentration (property) (qualifier value)| OR 762918005 |Logarithmic arbitrary concentration (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|, 246501002 |Technique (attribute)| = << 1156878000 |Molecular nucleic acid amplification technique (qualifier value)|"
+    }
+  ]
+}

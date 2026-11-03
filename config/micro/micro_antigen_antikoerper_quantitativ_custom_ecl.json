@@ -1,0 +1,17 @@
+{
+  "description": "Microbiology request: quantitative antigen/antibody tests = serology (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ, ValueSet MII_VS_Mikrobio_Antigen_Antikoerper_Quantitative_Tests_LOINC = LOINC SCALE Qn + immunoassay METHOD_TYPs in CLASS MICRO). Ontology groupers: antibodies to pathogens are << 312301006 |Infective organism antibody| (IgG/IgM/IgA to a named organism), antigens are << 116633006 |Microbial antigen|. Quantitative properties: arbitrary concentration (U/mL, index), mass concentration, substance concentration, number concentration. Most quantitative serology observables carry NO technique.",
+  "queries": [
+    {
+      "id": "ab_ag_quantitative",
+      "name": "Serology quantitative — concentration of a pathogen antibody or antigen",
+      "description": "Quantitative antibody/antigen observables, any technique or none.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118569000 |Arbitrary concentration (property) (qualifier value)| OR 118539007 |Mass concentration (property) (qualifier value)| OR 118556004 |Substance concentration (property) (qualifier value)| OR 118550005 |Number concentration (property) (qualifier value)|), 246093002 |Component (attribute)| = (<< 312301006 |Infective organism antibody (substance)| OR << 116633006 |Microbial antigen (substance)|)"
+    },
+    {
+      "id": "ab_ag_threshold",
+      "name": "Serology qualitative — threshold presence of a pathogen antibody or antigen",
+      "description": "The qualitative counterpart (ordinal/semi-quantitative presence). Belongs to 'specific determination' in the 2027 module, listed here for the review split quantitative vs qualitative.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246093002 |Component (attribute)| = (<< 312301006 |Infective organism antibody (substance)| OR << 116633006 |Microbial antigen (substance)|)"
+    }
+  ]
+}

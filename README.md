@@ -35,6 +35,27 @@ Server side this uses `~/code/helper/local-snowstorm/update-extension.sh`; the f
 procedure (including a dependency-aware rebuild of International + DE/AT/CH + LOINC)
 is the `snowstorm-edition-update` Claude skill.
 
+## Microbiology requests (MII KDS Mikrobiologie 2027)
+
+`config/micro/*_custom_ecl.json` holds one ECL definition per investigation
+request of the 2027 Mikrobiologie module (general/targeted culture, general and
+specific determination, microscopy, colony count, susceptibility phenotype and
+genotype, Ct value, pathogen load, quantitative serology, titre, resistant
+organisms). They are request-centric, not component-centric, so they live
+outside the lab glob and only feed the release comparison:
+
+```bash
+python3 scripts/compare_versions.py --config-glob "config/micro/*_custom_ecl.json" \
+        --out output/micro/version_comparison.md --json-out output/micro/version_comparison.json
+python3 scripts/diff_fsn_report.py --json output/micro/version_comparison.json \
+        --out output/micro/added_removed.md      # same delta with FSN + LOINC per concept
+```
+
+`config/micro/README.md` maps each module profile to its ontology pattern and
+records the findings per release (coverage of the module's enumerated codes,
+technique gaps, what a release added). `diff_fsn_report.py` works on any
+`compare_versions.py` JSON, lab analytes included.
+
 ## Exporting to the MII lab module (ballot proposal branch)
 
 `scripts/export_mii_fsh.py --out <kerndatensatzmodul-labor checkout>` renders the

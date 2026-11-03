@@ -1,0 +1,17 @@
+{
+  "description": "Microbiology request: resistance mechanisms and determinants, MRGN, resistant organisms (MII KDS Mikrobiologie 2027, profiles MII_PR_Mikrobio_Resistenzmechanismen_Determinanten and MII_PR_Mikrobio_MRGN_Klasse, ValueSet MII_VS_Mikrobio_Resistenzmechanismen_Determinanten_LOINC = LOINC PROPERTY PrThr in CLASS ABXBACT plus six enumerated codes). FINDING: none of the six enumerated module codes (86930-5, 101673-2 ... 101677-3) is in the LOINC Ontology 2026-10-21, and resistance GENES are modelled as plain nucleic-acid substances (702701010000106 'Messenger ribonucleic acid Bacteria mecA' is a child of 117174000 like any organism DNA) without a resistance grouper, so 'resistance determinant' is NOT expressible as an ECL. What is expressible: detection of an organism that SNOMED classifies as antimicrobial resistant (<< 409793007: MRSA, VRE, carbapenem-resistant, MRGN-like groupers).",
+  "queries": [
+    {
+      "id": "resistant_organism_detection",
+      "name": "Resistant-organism detection — presence/identity of an antimicrobial resistant organism",
+      "description": "Threshold presence or identity where the organism (Component or Inheres in) is << 409793007 |Antimicrobial resistant bacteria|: MRSA, VRE, ESBL producers, carbapenem-resistant bacteria. Nucleic-acid codes such as 35492-8 (MRSA DNA) are NOT included because their Component is the DNA substance, which is not under the resistant-bacteria grouper.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), (246093002 |Component (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)| OR 704319004 |Inheres in (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)|)"
+    },
+    {
+      "id": "resistant_organism_any_property",
+      "name": "Resistant organism — any observable about a resistant organism (upper bound)",
+      "description": "Every observable whose Component or Inheres in is an antimicrobial resistant organism, any property (identity, threshold, counts, type).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : (246093002 |Component (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)| OR 704319004 |Inheres in (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)|)"
+    }
+  ]
+}

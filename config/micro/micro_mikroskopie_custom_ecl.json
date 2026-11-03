@@ -1,0 +1,23 @@
+{
+  "description": "Microbiology request: microscopy (MII KDS Mikrobiologie 2027, profiles MII_PR_Mikrobio_Mikroskopie and MII_PR_Mikrobio_Spezifische_Mikroskopie, ValueSets MII_VS_Mikrobio_Allgemeine_Mikroskopie_Tests_LOINC and MII_VS_Mikrobio_Spezifische_Mikroskopie_Tests_LOINC). General microscopy = nominal 'what was seen' (Property = Presence or identity, Scale = Nominal); the preferred code 105059-0 is modelled WITHOUT a technique and with Inheres in = Specimen (484041010000107), the stain-named codes carry the stain as Technique (664-3 = Gram stain technique). Specific microscopy = ordinal threshold presence of a named object by a stain (the LOINC filter PrThr + Ord + stain METHOD_TYP).",
+  "queries": [
+    {
+      "id": "general_microscopy_by_technique",
+      "name": "General microscopy — nominal finding by microscopy or staining technique",
+      "description": "Nominal microscopic observation with an explicit microscopy or staining technique (Gram, Giemsa, acid-fast, light microscopy ...). Contains 664-3.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 370132008 |Scale type (attribute)| = 117362005 |Nominal value (qualifier value)|, 246501002 |Technique (attribute)| = (<< 278289002 |Microscopy technique (qualifier value)| OR << 703857004 |Staining technique (qualifier value)|)"
+    },
+    {
+      "id": "general_microscopy_finding_in_specimen",
+      "name": "General microscopy — method-neutral 'finding in specimen' pattern",
+      "description": "The technique-free pattern of 105059-0: nominal Presence or identity that inheres in the specimen itself (no organism, no technique). Catches the method-neutral microscopy codes that the technique filter misses.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 370132008 |Scale type (attribute)| = 117362005 |Nominal value (qualifier value)|, 704319004 |Inheres in (attribute)| = << 123038009 |Specimen (specimen)|"
+    },
+    {
+      "id": "specific_microscopy_threshold",
+      "name": "Specific microscopy — ordinal threshold presence by microscopy or staining technique",
+      "description": "Object sought and stain named in the code, result is the detection (LOINC PrThr + Ord + stain). Host cells (leukocytes, erythrocytes, epithelia) are included because the technique, not a class, selects.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 370132008 |Scale type (attribute)| = 117363000 |Ordinal value (qualifier value)|, 246501002 |Technique (attribute)| = (<< 278289002 |Microscopy technique (qualifier value)| OR << 703857004 |Staining technique (qualifier value)|)"
+    }
+  ]
+}

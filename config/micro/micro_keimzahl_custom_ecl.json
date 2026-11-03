@@ -1,0 +1,17 @@
+{
+  "description": "Microbiology request: colony count (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Keimzahl, ValueSet MII_VS_Mikrobio_Keimzahl_LOINC). None of the four enumerated module codes (49223-1, 564-5, 38436-2, 699-9) is in the LOINC Ontology 2026-10-21, so the ECL can only show the neighbourhood: number concentrations of organisms (e.g. 485861010000102 'Number concentration of bacteria in urine'). The organism is the Component for counts.",
+  "queries": [
+    {
+      "id": "colony_count_organism",
+      "name": "Colony count — number concentration of an organism",
+      "description": "Number concentration or logarithmic number concentration where the counted entity is an organism (Component or Inheres in).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)|), (246093002 |Component (attribute)| = << 410607006 |Organism (organism)| OR 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|)"
+    },
+    {
+      "id": "colony_count_by_culture",
+      "name": "Colony count — with culture technique asserted",
+      "description": "Same, restricted to observables that assert a culture technique (viable counts). Zero on 2026-10-21: counts are modelled without technique.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)|), (246093002 |Component (attribute)| = << 410607006 |Organism (organism)| OR 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|), 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|"
+    }
+  ]
+}

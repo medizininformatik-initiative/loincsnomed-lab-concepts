@@ -1,0 +1,35 @@
+{
+  "description": "Microbiology request: specific determination = targeted detection of a named pathogen (MII KDS Mikrobiologie 2027, profile MII_PR_Mikrobio_Spezifische_Bestimmung, ValueSet MII_VS_Mikrobio_Spezifische_Bestimmung_Tests_LOINC = LOINC CLASS MICRO with PROPERTY Prid or PrThr and a molecular METHOD_TYP). Three modelling patterns in the ontology: (1) nucleic-acid detection — Component = << 117174000 |Nucleic acid sequence with relative specificity for microorganism| (DNA/RNA of the organism), Property = Threshold/Presence/Presence or identity, Technique = a molecular technique or NONE (the 'non-probe.amp.tar' codes carry no Technique at all; a Technique clause silently drops them); (2) targeted culture — Technique = Organism specific culture technique with the organism as Component; (3) antigen detection — Component = << 116633006 |Microbial antigen|. The 2026-10-21 release adds 585 nucleic-acid detection observables (LOINC 2.83 codes 104341-3, 1126xx-x ...), almost all 'Threshold presence of <organism> DNA/RNA in specimen by molecular genetics'.",
+  "queries": [
+    {
+      "id": "naa_detection_any_technique",
+      "name": "Nucleic-acid detection — any or no technique",
+      "description": "Threshold presence / presence / identity of a microbial nucleic acid, regardless of technique. The reference set for the specific-determination request; includes 35492-8 (MRSA DNA by probe with target amplification).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|"
+    },
+    {
+      "id": "naa_detection_amplification",
+      "name": "Nucleic-acid detection — amplification technique asserted",
+      "description": "Same, restricted to Technique = << Molecular nucleic acid amplification technique (probe with target amplification, PCR ...). Shows how much a technique clause loses: the generic 'by molecular genetics' and the technique-free codes fall out.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|, 246501002 |Technique (attribute)| = << 1156878000 |Molecular nucleic acid amplification technique (qualifier value)|"
+    },
+    {
+      "id": "naa_detection_no_technique",
+      "name": "Nucleic-acid detection — no technique modelled",
+      "description": "The technique-free subset (LOINC METHOD_TYP 'non-probe.amp.tar' and method-less codes). Only reachable with the ECL cardinality [0..0] on Technique.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|, [0..0] 246501002 |Technique (attribute)| = *"
+    },
+    {
+      "id": "organism_specific_culture_detection",
+      "name": "Targeted culture detection — organism specific culture technique",
+      "description": "Threshold presence of a named organism by organism specific culture (MRSA/VRE/Salmonella screening cultures). Contains 13316-5.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246501002 |Technique (attribute)| = << 703752003 |Organism specific culture technique (qualifier value)|"
+    },
+    {
+      "id": "antigen_detection_threshold",
+      "name": "Antigen detection — threshold presence of a microbial antigen",
+      "description": "Rapid antigen tests and antigen immunoassays: ordinal presence of a microbial antigen in a specimen.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246093002 |Component (attribute)| = << 116633006 |Microbial antigen (substance)|"
+    }
+  ]
+}

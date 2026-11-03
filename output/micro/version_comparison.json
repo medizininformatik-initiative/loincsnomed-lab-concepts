@@ -1,0 +1,1495 @@
+{
+  "targets": [
+    {
+      "api_base": "http://localhost:8090",
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-03-21",
+      "effective": "20260321",
+      "_note": "old version branch on the production server (snowstorm-complete:v1.2.0 on :8090); survives the in-place update, so old-vs-new diffs run locally",
+      "name": "local-2026-03-21"
+    },
+    {
+      "api_base": "http://localhost:8090",
+      "branch": "MAIN/SNOMEDCT-LOINC/2026-10-21",
+      "effective": "20261021",
+      "name": "local-2026-10-21"
+    }
+  ],
+  "rows": [
+    {
+      "concept": "micro_allgemeine_bestimmung",
+      "query_id": "organism_identity_any_technique",
+      "query_name": "General determination \u2014 organism identity, any technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 756,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 780,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "883831010000102",
+          "883841010000105",
+          "883941010000102",
+          "884661010000105",
+          "884671010000100",
+          "884831010000104",
+          "884841010000107",
+          "884891010000100",
+          "884901010000101",
+          "884911010000103",
+          "885001010000101",
+          "885011010000103",
+          "885031010000107",
+          "885091010000106",
+          "885141010000100",
+          "885181010000109",
+          "902161010000103",
+          "902171010000108",
+          "902181010000106",
+          "902951010000103",
+          "902961010000101",
+          "902971010000106",
+          "903351010000109",
+          "903361010000106"
+        ],
+        "in_both": 756
+      }
+    },
+    {
+      "concept": "micro_allgemeine_bestimmung",
+      "query_id": "organism_identity_no_technique",
+      "query_name": "General determination \u2014 method-neutral identity codes",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|, [0..0] 246501002 |Technique (attribute)| = *",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 86,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 88,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "902181010000106",
+          "902971010000106"
+        ],
+        "in_both": 86
+      }
+    },
+    {
+      "concept": "micro_allgemeine_bestimmung",
+      "query_id": "organism_type",
+      "query_name": "Typing \u2014 type of an organism (serotype, genotype, biotype)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 410656007 |Type (property) (qualifier value)|, 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 22,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 22,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 22
+      }
+    },
+    {
+      "concept": "micro_allgemeine_kultur",
+      "query_id": "general_culture_identity",
+      "query_name": "General culture \u2014 organism identity by culture technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|, (704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)| OR 246093002 |Component (attribute)| = << 410607006 |Organism (organism)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 563,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 578,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "883841010000105",
+          "883941010000102",
+          "884661010000105",
+          "884671010000100",
+          "884831010000104",
+          "884841010000107",
+          "884891010000100",
+          "884901010000101",
+          "884911010000103",
+          "885001010000101",
+          "885011010000103",
+          "885031010000107",
+          "902961010000101",
+          "903351010000109",
+          "903361010000106"
+        ],
+        "in_both": 563
+      }
+    },
+    {
+      "concept": "micro_allgemeine_kultur",
+      "query_id": "specific_culture_threshold",
+      "query_name": "Targeted culture \u2014 threshold presence of a named organism by culture technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|, (704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)| OR 246093002 |Component (attribute)| = << 410607006 |Organism (organism)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 203,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 204,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "884821010000102"
+        ],
+        "in_both": 203
+      }
+    },
+    {
+      "concept": "micro_allgemeine_kultur",
+      "query_id": "culture_any_property",
+      "query_name": "Everything by culture technique (upper bound)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 772,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 788,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "883841010000105",
+          "883941010000102",
+          "884661010000105",
+          "884671010000100",
+          "884821010000102",
+          "884831010000104",
+          "884841010000107",
+          "884891010000100",
+          "884901010000101",
+          "884911010000103",
+          "885001010000101",
+          "885011010000103",
+          "885031010000107",
+          "902961010000101",
+          "903351010000109",
+          "903361010000106"
+        ],
+        "in_both": 772
+      }
+    },
+    {
+      "concept": "micro_antigen_antikoerper_quantitativ",
+      "query_id": "ab_ag_quantitative",
+      "query_name": "Serology quantitative \u2014 concentration of a pathogen antibody or antigen",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118569000 |Arbitrary concentration (property) (qualifier value)| OR 118539007 |Mass concentration (property) (qualifier value)| OR 118556004 |Substance concentration (property) (qualifier value)| OR 118550005 |Number concentration (property) (qualifier value)|), 246093002 |Component (attribute)| = (<< 312301006 |Infective organism antibody (substance)| OR << 116633006 |Microbial antigen (substance)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 1770,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 1813,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "734971010000101",
+          "734981010000103",
+          "734991010000100",
+          "735001010000105",
+          "735011010000108",
+          "735021010000102",
+          "735031010000104",
+          "736331010000109",
+          "736521010000103",
+          "737311010000103",
+          "737331010000107",
+          "739861010000104",
+          "739871010000109",
+          "739881010000107",
+          "739891010000105",
+          "739901010000109",
+          "739921010000101",
+          "741441010000104",
+          "741551010000101",
+          "741591010000105",
+          "741601010000104",
+          "743311010000105",
+          "749811010000101",
+          "749991010000103",
+          "751841010000103",
+          "751851010000101",
+          "751861010000104",
+          "751871010000109",
+          "751881010000107",
+          "751891010000105",
+          "751901010000109",
+          "751921010000101",
+          "751931010000103",
+          "751941010000106",
+          "751951010000108",
+          "751961010000105",
+          "751971010000100",
+          "751991010000104",
+          "754331010000101",
+          "754911010000109",
+          "755751010000108",
+          "756331010000105",
+          "884151010000104"
+        ],
+        "in_both": 1770
+      }
+    },
+    {
+      "concept": "micro_antigen_antikoerper_quantitativ",
+      "query_id": "ab_ag_threshold",
+      "query_name": "Serology qualitative \u2014 threshold presence of a pathogen antibody or antigen",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246093002 |Component (attribute)| = (<< 312301006 |Infective organism antibody (substance)| OR << 116633006 |Microbial antigen (substance)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 2769,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 2796,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "706781010000100",
+          "706941010000107",
+          "706961010000106",
+          "706971010000101",
+          "706991010000100",
+          "707001010000106",
+          "707021010000103",
+          "707031010000100",
+          "746071010000108",
+          "746081010000106",
+          "762721010000104",
+          "763061010000103",
+          "883971010000108",
+          "883981010000106",
+          "883991010000109",
+          "884001010000102",
+          "884011010000104",
+          "884081010000109",
+          "884091010000107",
+          "884161010000102",
+          "884171010000107",
+          "900621010000103",
+          "901291010000105",
+          "901301010000106",
+          "901311010000109",
+          "901321010000103",
+          "901331010000100"
+        ],
+        "in_both": 2769
+      }
+    },
+    {
+      "concept": "micro_ct_wert",
+      "query_id": "ct_value_microbial_nucleic_acid",
+      "query_name": "Ct value \u2014 threshold number of a microbial nucleic acid",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 1268648001 |Threshold number (property) (qualifier value)|, 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 40,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 40,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 40
+      }
+    },
+    {
+      "concept": "micro_ct_wert",
+      "query_id": "ct_value_any",
+      "query_name": "Ct value \u2014 all threshold-number observables (upper bound)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 1268648001 |Threshold number (property) (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 44,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 45,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "903401010000103"
+        ],
+        "in_both": 44
+      }
+    },
+    {
+      "concept": "micro_empfindlichkeit",
+      "query_id": "susceptibility_phenotype",
+      "query_name": "Phenotypic susceptibility \u2014 isolate, not genotyping",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118588007 |Susceptibility (property) (qualifier value)|, 704327008 |Direct site (attribute)| = << 119303007 |Microbial isolate specimen (specimen)|, [0..0] 246501002 |Technique (attribute)| = << 708060009 |Genotype determination technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 1227,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 1230,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "903001010000108",
+          "903161010000108",
+          "903311010000108"
+        ],
+        "in_both": 1227
+      }
+    },
+    {
+      "concept": "micro_empfindlichkeit",
+      "query_id": "susceptibility_genotype_predicted",
+      "query_name": "Predicted susceptibility \u2014 by genotype determination technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118588007 |Susceptibility (property) (qualifier value)|, 246501002 |Technique (attribute)| = << 708060009 |Genotype determination technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 81,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 81,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 81
+      }
+    },
+    {
+      "concept": "micro_empfindlichkeit",
+      "query_id": "susceptibility_all",
+      "query_name": "All susceptibility observables (upper bound)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118588007 |Susceptibility (property) (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 1345,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 1350,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "903001010000108",
+          "903011010000106",
+          "903151010000106",
+          "903161010000108",
+          "903311010000108"
+        ],
+        "in_both": 1345
+      }
+    },
+    {
+      "concept": "micro_keimzahl",
+      "query_id": "colony_count_organism",
+      "query_name": "Colony count \u2014 number concentration of an organism",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)|), (246093002 |Component (attribute)| = << 410607006 |Organism (organism)| OR 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 16,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 16,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 16
+      }
+    },
+    {
+      "concept": "micro_keimzahl",
+      "query_id": "colony_count_by_culture",
+      "query_name": "Colony count \u2014 with culture technique asserted",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)|), (246093002 |Component (attribute)| = << 410607006 |Organism (organism)| OR 704319004 |Inheres in (attribute)| = << 410607006 |Organism (organism)|), 246501002 |Technique (attribute)| = << 703725008 |Culture technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 4,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 4,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 4
+      }
+    },
+    {
+      "concept": "micro_mikroskopie",
+      "query_id": "general_microscopy_by_technique",
+      "query_name": "General microscopy \u2014 nominal finding by microscopy or staining technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 370132008 |Scale type (attribute)| = 117362005 |Nominal value (qualifier value)|, 246501002 |Technique (attribute)| = (<< 278289002 |Microscopy technique (qualifier value)| OR << 703857004 |Staining technique (qualifier value)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 376,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 383,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "883831010000102",
+          "883931010000105",
+          "884811010000108",
+          "885021010000109",
+          "885141010000100",
+          "885181010000109",
+          "902951010000103"
+        ],
+        "in_both": 376
+      }
+    },
+    {
+      "concept": "micro_mikroskopie",
+      "query_id": "general_microscopy_finding_in_specimen",
+      "query_name": "General microscopy \u2014 method-neutral 'finding in specimen' pattern",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118584009 |Presence or identity (property) (qualifier value)|, 370132008 |Scale type (attribute)| = 117362005 |Nominal value (qualifier value)|, 704319004 |Inheres in (attribute)| = << 123038009 |Specimen (specimen)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 355,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 357,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "884811010000108",
+          "885021010000109"
+        ],
+        "in_both": 355
+      }
+    },
+    {
+      "concept": "micro_mikroskopie",
+      "query_id": "specific_microscopy_threshold",
+      "query_name": "Specific microscopy \u2014 ordinal threshold presence by microscopy or staining technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 370132008 |Scale type (attribute)| = 117363000 |Ordinal value (qualifier value)|, 246501002 |Technique (attribute)| = (<< 278289002 |Microscopy technique (qualifier value)| OR << 703857004 |Staining technique (qualifier value)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 316,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 331,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [
+          "710541010000101"
+        ],
+        "only_in_b": [
+          "884021010000105",
+          "885051010000102",
+          "885061010000100",
+          "885071010000105",
+          "885101010000102",
+          "885131010000108",
+          "885171010000106",
+          "885201010000105",
+          "885211010000108",
+          "885221010000102",
+          "885231010000104",
+          "885241010000107",
+          "885251010000109",
+          "885281010000103",
+          "885291010000100",
+          "885301010000104"
+        ],
+        "in_both": 315
+      }
+    },
+    {
+      "concept": "micro_molekulare_pathogenlast",
+      "query_id": "pathogen_load_any_technique",
+      "query_name": "Pathogen load \u2014 quantitative microbial nucleic acid, any technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)| OR 118569000 |Arbitrary concentration (property) (qualifier value)| OR 762918005 |Logarithmic arbitrary concentration (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 397,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 401,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "884481010000100",
+          "884491010000102",
+          "884501010000108",
+          "901651010000103"
+        ],
+        "in_both": 397
+      }
+    },
+    {
+      "concept": "micro_molekulare_pathogenlast",
+      "query_id": "pathogen_load_amplification",
+      "query_name": "Pathogen load \u2014 amplification technique asserted",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118550005 |Number concentration (property) (qualifier value)| OR 705056007 |Logarithmic number concentration (property) (qualifier value)| OR 118569000 |Arbitrary concentration (property) (qualifier value)| OR 762918005 |Logarithmic arbitrary concentration (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|, 246501002 |Technique (attribute)| = << 1156878000 |Molecular nucleic acid amplification technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 355,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 359,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "884481010000100",
+          "884491010000102",
+          "884501010000108",
+          "901651010000103"
+        ],
+        "in_both": 355
+      }
+    },
+    {
+      "concept": "micro_resistenzmechanismen",
+      "query_id": "resistant_organism_detection",
+      "query_name": "Resistant-organism detection \u2014 presence/identity of an antimicrobial resistant organism",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), (246093002 |Component (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)| OR 704319004 |Inheres in (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 16,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 16,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 16
+      }
+    },
+    {
+      "concept": "micro_resistenzmechanismen",
+      "query_id": "resistant_organism_any_property",
+      "query_name": "Resistant organism \u2014 any observable about a resistant organism (upper bound)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : (246093002 |Component (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)| OR 704319004 |Inheres in (attribute)| = << 409793007 |Antimicrobial resistant bacteria (organism)|)",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 16,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 16,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [],
+        "in_both": 16
+      }
+    },
+    {
+      "concept": "micro_spezifische_bestimmung",
+      "query_id": "naa_detection_any_technique",
+      "query_name": "Nucleic-acid detection \u2014 any or no technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 1922,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 2507,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [
+          "484201010000101"
+        ],
+        "only_in_b": [
+          "708031010000104",
+          "884111010000100",
+          "884121010000106",
+          "884131010000109",
+          "884141010000101",
+          "884181010000105",
+          "884191010000108",
+          "884201010000106",
+          "884211010000109",
+          "884221010000103",
+          "884231010000100",
+          "884241010000108",
+          "884251010000105",
+          "884261010000107",
+          "884271010000102",
+          "884281010000104",
+          "884291010000101",
+          "884301010000100",
+          "884311010000102",
+          "884321010000108",
+          "884331010000106",
+          "884341010000103",
+          "884351010000101",
+          "884361010000104",
+          "884371010000109",
+          "884381010000107",
+          "884461010000108",
+          "884471010000103",
+          "884511010000106",
+          "884521010000100",
+          "884531010000102",
+          "884541010000105",
+          "884551010000107",
+          "884561010000109",
+          "884571010000104",
+          "884581010000101",
+          "884591010000103",
+          "884601010000109",
+          "884681010000102",
+          "884691010000104",
+          "884701010000104",
+          "884711010000101",
+          "884721010000107",
+          "884731010000105",
+          "884741010000102",
+          "884751010000100",
+          "884761010000103",
+          "884771010000108",
+          "884781010000106",
+          "884791010000109",
+          "884801010000105",
+          "884851010000109",
+          "884861010000106",
+          "884871010000101",
+          "884881010000103",
+          "895931010000105",
+          "895941010000102",
+          "895951010000100",
+          "895961010000103",
+          "895971010000108",
+          "895981010000106",
+          "895991010000109",
+          "896001010000105",
+          "896011010000108",
+          "896021010000102",
+          "896031010000104",
+          "896041010000107",
+          "896051010000109",
+          "896061010000106",
+          "896071010000101",
+          "896081010000103",
+          "896091010000100",
+          "896101010000109",
+          "896111010000107",
+          "896121010000101",
+          "896131010000103",
+          "896141010000106",
+          "896151010000108",
+          "896161010000105",
+          "896171010000100",
+          "896181010000102",
+          "896191010000104",
+          "896201010000101",
+          "896211010000103",
+          "896221010000109",
+          "896231010000107",
+          "896241010000104",
+          "896251010000102",
+          "896261010000100",
+          "896271010000105",
+          "896281010000108",
+          "896291010000106",
+          "896301010000107",
+          "896311010000105",
+          "896321010000104",
+          "896331010000101",
+          "896341010000109",
+          "896351010000106",
+          "896361010000108",
+          "896371010000103",
+          "896381010000100",
+          "896391010000102",
+          "896401010000100",
+          "896411010000102",
+          "896421010000108",
+          "896431010000106",
+          "896441010000103",
+          "896451010000101",
+          "896461010000104",
+          "896471010000109",
+          "896481010000107",
+          "896491010000105",
+          "896501010000104",
+          "896511010000101",
+          "896521010000107",
+          "896531010000105",
+          "896541010000102",
+          "896551010000100",
+          "896561010000103",
+          "896571010000108",
+          "896581010000106",
+          "896591010000109",
+          "896601010000103",
+          "896611010000100",
+          "896621010000106",
+          "896631010000109",
+          "896641010000101",
+          "896651010000104",
+          "896661010000102",
+          "896671010000107",
+          "896681010000105",
+          "896691010000108",
+          "896701010000108",
+          "896711010000106",
+          "896721010000100",
+          "896731010000102",
+          "896741010000105",
+          "896751010000107",
+          "896761010000109",
+          "896771010000104",
+          "896781010000101",
+          "896791010000103",
+          "896801010000102",
+          "896811010000104",
+          "896821010000105",
+          "896831010000108",
+          "896841010000100",
+          "896851010000103",
+          "896861010000101",
+          "896871010000106",
+          "896881010000109",
+          "896891010000107",
+          "896901010000106",
+          "896911010000109",
+          "896921010000103",
+          "896931010000100",
+          "896941010000108",
+          "896951010000105",
+          "896961010000107",
+          "896971010000102",
+          "896981010000104",
+          "896991010000101",
+          "897001010000107",
+          "897011010000105",
+          "897021010000104",
+          "897031010000101",
+          "897041010000109",
+          "897051010000106",
+          "897061010000108",
+          "897071010000103",
+          "897081010000100",
+          "897091010000102",
+          "897101010000106",
+          "897111010000109",
+          "897121010000103",
+          "897131010000100",
+          "897141010000108",
+          "897151010000105",
+          "897161010000107",
+          "897171010000102",
+          "897181010000104",
+          "897191010000101",
+          "897201010000103",
+          "897211010000100",
+          "897221010000106",
+          "897231010000109",
+          "897241010000101",
+          "897251010000104",
+          "897261010000102",
+          "897271010000107",
+          "897281010000105",
+          "897291010000108",
+          "897301010000109",
+          "897311010000107",
+          "897321010000101",
+          "897331010000103",
+          "897341010000106",
+          "897351010000108",
+          "897361010000105",
+          "897371010000100",
+          "897381010000102",
+          "897391010000104",
+          "897401010000102",
+          "897411010000104",
+          "897421010000105",
+          "897431010000108",
+          "897441010000100",
+          "897451010000103",
+          "897461010000101",
+          "897471010000106",
+          "897481010000109",
+          "897491010000107",
+          "897501010000101",
+          "897511010000103",
+          "897521010000109",
+          "897531010000107",
+          "897541010000104",
+          "897551010000102",
+          "897561010000100",
+          "897571010000105",
+          "897581010000108",
+          "897591010000106",
+          "897601010000100",
+          "897611010000102",
+          "897621010000108",
+          "897631010000106",
+          "897641010000103",
+          "897651010000101",
+          "897661010000104",
+          "897671010000109",
+          "897681010000107",
+          "897691010000105",
+          "897701010000105",
+          "897711010000108",
+          "897721010000102",
+          "897731010000104",
+          "897741010000107",
+          "897751010000109",
+          "897761010000106",
+          "897771010000101",
+          "897781010000103",
+          "897791010000100",
+          "897801010000104",
+          "897811010000101",
+          "897821010000107",
+          "897831010000105",
+          "897841010000102",
+          "897851010000100",
+          "897861010000103",
+          "897871010000108",
+          "897881010000106",
+          "897891010000109",
+          "897901010000108",
+          "897911010000106",
+          "897921010000100",
+          "897931010000102",
+          "897941010000105",
+          "897951010000107",
+          "897961010000109",
+          "897971010000104",
+          "897981010000101",
+          "897991010000103",
+          "898001010000106",
+          "898011010000109",
+          "898021010000103",
+          "898031010000100",
+          "898041010000108",
+          "898051010000105",
+          "898061010000107",
+          "898071010000102",
+          "898081010000104",
+          "898091010000101",
+          "898101010000105",
+          "898111010000108",
+          "898121010000102",
+          "898131010000104",
+          "898141010000107",
+          "898151010000109",
+          "898161010000106",
+          "898171010000101",
+          "898181010000103",
+          "898191010000100",
+          "898201010000102",
+          "898211010000104",
+          "898221010000105",
+          "898231010000108",
+          "898241010000100",
+          "898251010000103",
+          "898261010000101",
+          "898271010000106",
+          "898281010000109",
+          "898291010000107",
+          "898301010000108",
+          "898311010000106",
+          "898321010000100",
+          "898331010000102",
+          "898351010000107",
+          "898361010000109",
+          "898371010000104",
+          "898381010000101",
+          "898391010000103",
+          "898401010000101",
+          "898411010000103",
+          "898421010000109",
+          "898431010000107",
+          "898441010000104",
+          "898451010000102",
+          "898461010000100",
+          "898471010000105",
+          "898481010000108",
+          "898491010000106",
+          "898501010000100",
+          "898511010000102",
+          "898521010000108",
+          "898531010000106",
+          "898541010000103",
+          "898551010000101",
+          "898561010000104",
+          "898571010000109",
+          "898581010000107",
+          "898591010000105",
+          "898601010000104",
+          "898611010000101",
+          "898621010000107",
+          "898631010000105",
+          "898641010000102",
+          "898651010000100",
+          "898661010000103",
+          "898671010000108",
+          "898681010000106",
+          "898691010000109",
+          "898701010000109",
+          "898711010000107",
+          "898721010000101",
+          "898731010000103",
+          "898741010000106",
+          "898751010000108",
+          "898761010000105",
+          "898771010000100",
+          "898781010000102",
+          "898791010000104",
+          "898801010000103",
+          "898811010000100",
+          "898821010000106",
+          "898831010000109",
+          "898841010000101",
+          "898851010000104",
+          "898861010000102",
+          "898871010000107",
+          "898881010000105",
+          "898891010000108",
+          "898901010000107",
+          "898911010000105",
+          "898921010000104",
+          "898931010000101",
+          "898941010000109",
+          "898951010000106",
+          "898961010000108",
+          "898971010000103",
+          "898981010000100",
+          "898991010000102",
+          "899001010000102",
+          "899011010000104",
+          "899021010000105",
+          "899031010000108",
+          "899041010000100",
+          "899051010000103",
+          "899061010000101",
+          "899071010000106",
+          "899081010000109",
+          "899091010000107",
+          "899101010000103",
+          "899111010000100",
+          "899121010000106",
+          "899131010000109",
+          "899141010000101",
+          "899151010000104",
+          "899161010000102",
+          "899171010000107",
+          "899181010000105",
+          "899191010000108",
+          "899201010000106",
+          "899211010000109",
+          "899221010000103",
+          "899231010000100",
+          "899241010000108",
+          "899251010000105",
+          "899261010000107",
+          "899271010000102",
+          "899281010000104",
+          "899291010000101",
+          "899301010000100",
+          "899311010000102",
+          "899321010000108",
+          "899331010000106",
+          "899341010000103",
+          "899351010000101",
+          "899361010000104",
+          "899371010000109",
+          "899381010000107",
+          "899391010000105",
+          "899401010000107",
+          "899411010000105",
+          "899421010000104",
+          "899431010000101",
+          "899441010000109",
+          "899451010000106",
+          "899461010000108",
+          "899471010000103",
+          "899481010000100",
+          "899491010000102",
+          "899501010000108",
+          "899511010000106",
+          "899521010000100",
+          "899531010000102",
+          "899541010000105",
+          "899551010000107",
+          "899561010000109",
+          "899571010000104",
+          "899581010000101",
+          "899591010000103",
+          "899601010000109",
+          "899611010000107",
+          "899621010000101",
+          "899631010000103",
+          "899641010000106",
+          "899651010000108",
+          "899661010000105",
+          "899671010000100",
+          "899681010000102",
+          "899691010000104",
+          "899701010000104",
+          "899711010000101",
+          "899721010000107",
+          "899731010000105",
+          "899741010000102",
+          "899751010000100",
+          "899761010000103",
+          "899771010000108",
+          "899781010000106",
+          "899791010000109",
+          "899801010000105",
+          "899811010000108",
+          "899821010000102",
+          "899831010000104",
+          "899841010000107",
+          "899851010000109",
+          "899861010000106",
+          "899871010000101",
+          "899881010000103",
+          "899891010000100",
+          "899901010000101",
+          "899911010000103",
+          "899921010000109",
+          "899931010000107",
+          "899941010000104",
+          "899951010000102",
+          "899961010000100",
+          "899971010000105",
+          "899981010000108",
+          "899991010000106",
+          "900001010000104",
+          "900011010000101",
+          "900021010000107",
+          "900031010000105",
+          "900041010000102",
+          "900051010000100",
+          "900061010000103",
+          "900071010000108",
+          "900081010000106",
+          "900091010000109",
+          "900101010000100",
+          "900111010000102",
+          "900121010000108",
+          "900131010000106",
+          "900141010000103",
+          "900151010000101",
+          "900161010000104",
+          "900171010000109",
+          "900181010000107",
+          "900191010000105",
+          "900201010000108",
+          "900211010000106",
+          "900221010000100",
+          "900231010000102",
+          "900241010000105",
+          "900251010000107",
+          "900261010000109",
+          "900271010000104",
+          "900281010000101",
+          "900291010000103",
+          "900301010000102",
+          "900311010000104",
+          "900321010000105",
+          "900331010000108",
+          "900341010000100",
+          "900351010000103",
+          "900361010000101",
+          "900371010000106",
+          "900381010000109",
+          "900391010000107",
+          "900401010000109",
+          "900411010000107",
+          "900421010000101",
+          "900431010000103",
+          "900441010000106",
+          "900451010000108",
+          "900461010000105",
+          "900471010000100",
+          "900481010000102",
+          "900491010000104",
+          "900501010000105",
+          "900511010000108",
+          "900521010000102",
+          "900531010000104",
+          "900541010000107",
+          "900551010000109",
+          "900561010000106",
+          "900571010000101",
+          "900581010000103",
+          "900591010000100",
+          "900601010000106",
+          "900611010000109",
+          "900631010000100",
+          "900641010000108",
+          "900651010000105",
+          "900661010000107",
+          "900671010000102",
+          "900681010000104",
+          "900691010000101",
+          "900701010000101",
+          "900711010000103",
+          "900721010000109",
+          "900731010000107",
+          "900741010000104",
+          "900751010000102",
+          "900761010000100",
+          "900771010000105",
+          "900781010000108",
+          "900791010000106",
+          "900801010000107",
+          "900811010000105",
+          "900821010000104",
+          "900831010000101",
+          "900841010000109",
+          "900851010000106",
+          "900861010000108",
+          "900871010000103",
+          "900881010000100",
+          "900891010000102",
+          "900901010000103",
+          "900911010000100",
+          "900921010000106",
+          "900931010000109",
+          "900941010000101",
+          "900951010000104",
+          "900961010000102",
+          "900971010000107",
+          "900981010000105",
+          "900991010000108",
+          "901001010000109",
+          "901011010000107",
+          "901021010000101",
+          "901031010000103",
+          "901041010000106",
+          "901051010000108",
+          "901061010000105",
+          "901071010000100",
+          "901081010000102",
+          "901091010000104",
+          "901101010000108",
+          "901111010000106",
+          "901121010000100",
+          "901131010000102",
+          "901141010000105",
+          "901151010000107",
+          "901161010000109",
+          "901171010000104",
+          "901181010000101",
+          "901191010000103",
+          "901201010000100",
+          "901211010000102",
+          "901221010000108",
+          "901611010000104",
+          "901621010000105",
+          "901641010000100"
+        ],
+        "in_both": 1921
+      }
+    },
+    {
+      "concept": "micro_spezifische_bestimmung",
+      "query_id": "naa_detection_amplification",
+      "query_name": "Nucleic-acid detection \u2014 amplification technique asserted",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|, 246501002 |Technique (attribute)| = << 1156878000 |Molecular nucleic acid amplification technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 1486,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 1524,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "884181010000105",
+          "884191010000108",
+          "884201010000106",
+          "884211010000109",
+          "884221010000103",
+          "884231010000100",
+          "884241010000108",
+          "884251010000105",
+          "884261010000107",
+          "884271010000102",
+          "884281010000104",
+          "884291010000101",
+          "884301010000100",
+          "884311010000102",
+          "884321010000108",
+          "884331010000106",
+          "884341010000103",
+          "884351010000101",
+          "884361010000104",
+          "884371010000109",
+          "884381010000107",
+          "884461010000108",
+          "884471010000103",
+          "884511010000106",
+          "884521010000100",
+          "884531010000102",
+          "884541010000105",
+          "884551010000107",
+          "884561010000109",
+          "884571010000104",
+          "884581010000101",
+          "884591010000103",
+          "884601010000109",
+          "884871010000101",
+          "884881010000103",
+          "901611010000104",
+          "901621010000105",
+          "901641010000100"
+        ],
+        "in_both": 1486
+      }
+    },
+    {
+      "concept": "micro_spezifische_bestimmung",
+      "query_id": "naa_detection_no_technique",
+      "query_name": "Nucleic-acid detection \u2014 no technique modelled",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)| OR 118584009 |Presence or identity (property) (qualifier value)|), 246093002 |Component (attribute)| = << 117174000 |Nucleic acid sequence with relative specificity for microorganism (substance)|, [0..0] 246501002 |Technique (attribute)| = *",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 288,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 288,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [
+          "484031010000104",
+          "484061010000106",
+          "484101010000109",
+          "484121010000101",
+          "484131010000103",
+          "484141010000106",
+          "484151010000108",
+          "484161010000105",
+          "484191010000104",
+          "484201010000101",
+          "485601010000104",
+          "485611010000101",
+          "485681010000106",
+          "485711010000107",
+          "485741010000106",
+          "485801010000103",
+          "485881010000105",
+          "708471010000109",
+          "709341010000102"
+        ],
+        "only_in_b": [
+          "884111010000100",
+          "884121010000106",
+          "884131010000109",
+          "884141010000101",
+          "884681010000102",
+          "884691010000104",
+          "884701010000104",
+          "884711010000101",
+          "884721010000107",
+          "884731010000105",
+          "884741010000102",
+          "884751010000100",
+          "884761010000103",
+          "884771010000108",
+          "884781010000106",
+          "884791010000109",
+          "884801010000105",
+          "884851010000109",
+          "884861010000106"
+        ],
+        "in_both": 269
+      }
+    },
+    {
+      "concept": "micro_spezifische_bestimmung",
+      "query_id": "organism_specific_culture_detection",
+      "query_name": "Targeted culture detection \u2014 organism specific culture technique",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246501002 |Technique (attribute)| = << 703752003 |Organism specific culture technique (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 191,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 192,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "884821010000102"
+        ],
+        "in_both": 191
+      }
+    },
+    {
+      "concept": "micro_spezifische_bestimmung",
+      "query_id": "antigen_detection_threshold",
+      "query_name": "Antigen detection \u2014 threshold presence of a microbial antigen",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = (118589004 |Threshold (property) (qualifier value)| OR 705057003 |Presence (property) (qualifier value)|), 246093002 |Component (attribute)| = << 116633006 |Microbial antigen (substance)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 898,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 899,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "900621010000103"
+        ],
+        "in_both": 898
+      }
+    },
+    {
+      "concept": "micro_titer",
+      "query_id": "titer_infective_antibody",
+      "query_name": "Titre \u2014 pathogen antibody titre",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118590008 |Dilution factor expressed as titer (property) (qualifier value)|, 246093002 |Component (attribute)| = << 312301006 |Infective organism antibody (substance)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 1712,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 1716,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "739971010000100",
+          "743281010000108",
+          "743291010000106",
+          "743301010000107"
+        ],
+        "in_both": 1712
+      }
+    },
+    {
+      "concept": "micro_titer",
+      "query_id": "titer_any",
+      "query_name": "Titre \u2014 all titre observables (upper bound)",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118590008 |Dilution factor expressed as titer (property) (qualifier value)|",
+      "per_target": {
+        "local-2026-03-21": {
+          "total": 2186,
+          "error": null
+        },
+        "local-2026-10-21": {
+          "total": 2188,
+          "error": null
+        }
+      },
+      "diff": {
+        "only_in_a": [],
+        "only_in_b": [
+          "883911010000101",
+          "901791010000102"
+        ],
+        "in_both": 2186
+      }
+    }
+  ]
+}

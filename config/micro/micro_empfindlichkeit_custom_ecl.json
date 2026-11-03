@@ -1,0 +1,23 @@
+{
+  "description": "Microbiology request: antimicrobial susceptibility (MII KDS Mikrobiologie 2027, profiles MII_PR_Mikrobio_Empfindlichkeit and MII_PR_Mikrobio_Voraussichtliche_Empfindlichkeit, ValueSets MII_VS_Mikrobio_Empfindlichkeit_Phenotyp_LOINC = LOINC CLASS ABXBACT + PROPERTY Susc, MII_VS_Mikrobio_Empfaenglichkeit_Genotyp_LOINC = same + METHOD_TYP Genotyping). The ontology models susceptibility as Property = 118588007 |Susceptibility|, Direct site = Microbial isolate specimen, Inheres in = Organism, Towards = the antimicrobial substance (e.g. 838881010000103 'Susceptibility to delafloxacin in microbial isolate'). Predicted (genotypic) susceptibility carries Technique = 708060009 |Genotype determination technique|. Towards (the drug) is the post-coordination axis the 2027 module puts into a separate element.",
+  "queries": [
+    {
+      "id": "susceptibility_phenotype",
+      "name": "Phenotypic susceptibility — isolate, not genotyping",
+      "description": "Susceptibility of a microbial isolate to a substance, excluding observables that assert a genotyping technique (ECL cardinality [0..0]). Matches the phenotype ValueSet intent (MIC, disk diffusion, gradient strip ... any phenotypic method).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118588007 |Susceptibility (property) (qualifier value)|, 704327008 |Direct site (attribute)| = << 119303007 |Microbial isolate specimen (specimen)|, [0..0] 246501002 |Technique (attribute)| = << 708060009 |Genotype determination technique (qualifier value)|"
+    },
+    {
+      "id": "susceptibility_genotype_predicted",
+      "name": "Predicted susceptibility — by genotype determination technique",
+      "description": "Genotypic prediction of susceptibility (HIV, HBV, HCV, M. tuberculosis drug resistance mutations). The LOINC filter METHOD_TYP = Genotyping maps to Technique = Genotype determination technique.",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118588007 |Susceptibility (property) (qualifier value)|, 246501002 |Technique (attribute)| = << 708060009 |Genotype determination technique (qualifier value)|"
+    },
+    {
+      "id": "susceptibility_all",
+      "name": "All susceptibility observables (upper bound)",
+      "description": "Every observable with Property = Susceptibility, any site, any technique. Upper bound for review; the difference to the two queries above is the set with a non-isolate site (e.g. susceptibility in blood).",
+      "ecl": "<< 363787002 |Observable entity (observable entity)| : 370130000 |Property (attribute)| = 118588007 |Susceptibility (property) (qualifier value)|"
+    }
+  ]
+}
