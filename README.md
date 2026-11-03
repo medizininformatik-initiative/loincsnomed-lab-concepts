@@ -56,6 +56,23 @@ records the findings per release (coverage of the module's enumerated codes,
 technique gaps, what a release added). `diff_fsn_report.py` works on any
 `compare_versions.py` JSON, lab analytes included.
 
+### Exporting to the MII Mikrobiologie module
+
+`scripts/export_mii_micro_fsh.py --out <checkout of kerndatensatzmodul-mikrobiologie>`
+renders the `config/micro` rules as a proposal branch of the Mikrobiologie module,
+parallel to the lab export below: one ValueSet per rule (LOINC enumeration pinned to
+LOINC 2.83, SNOMED-only observables, the ECL as intensional include), union
+ValueSets and a derived Observation profile per module request profile, and
+English + German pages (method, ValueSets per request with the coverage of the
+module's enumerated codes, release delta with codes, one review page per request
+family). German names and descriptions of the rules live in
+`config/micro/l10n_de.json`; the page prose in `templates/mii-micro/pages`. Run
+`compare_versions.py --config-glob "config/micro/*_custom_ecl.json" --json-out
+output/micro/version_comparison.json` first so that the delta is on the pages.
+The hand edits the module still needs (pages in `sushi-config.yaml`, menu
+entries, `.po` page titles, the link on `value-sets.md`) are listed in the
+script's docstring.
+
 ## Exporting to the MII lab module (ballot proposal branch)
 
 `scripts/export_mii_fsh.py --out <kerndatensatzmodul-labor checkout>` renders the

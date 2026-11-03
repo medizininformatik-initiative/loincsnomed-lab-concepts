@@ -1,0 +1,156 @@
+{
+  "_doc": "German names and descriptions for the microbiology request families and rules, used by scripts/export_mii_micro_fsh.py for the German pages of the MII Mikrobiologie module. Keys: families[<config stem>].description, queries[<query id>].name / .description. English lives in the *_custom_ecl.json files.",
+  "families": {
+    "micro_allgemeine_kultur": {
+      "description": "Mikrobiologische Anforderung: allgemeine Kultur (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Allgemeine_Kultur, ValueSet MII_VS_Mikrobio_Allgemeine_Kultur_Tests_LOINC). Das Modul 2027 postkoordiniert: ein generischer Kulturcode (11475-1 „Microorganism identified in Specimen by Culture“) plus Erreger, Material und Methode als eigene Elemente. In der LOINC Ontology ist der generische Code 490041010000102 (Property = Presence or identity, Technique = Microbial culture technique, Inheres in = Organism). Der Erreger steht bei Identitäts-Observables in „Inheres in“ und bei Threshold-Observables eines benannten Erregers (z. B. 13316-5 VRE by organism specific culture) in „Component“; die ECL prüft daher beide Attribute. 41852-5 („Microorganism or agent identified“) ist nicht in der Ontology."
+    },
+    "micro_allgemeine_bestimmung": {
+      "description": "Mikrobiologische Anforderung: allgemeine Bestimmung = ungezielte Identifizierung eines Mikroorganismus mit beliebiger Methode (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Allgemeine_Bestimmung, ValueSet MII_VS_Mikrobio_Allgemeine_Bestimmung_Tests_LOINC). Von den sechs aufgezählten Modulcodes sind nur drei in der Ontology (11475-1 Kultur sowie zwei Sequenzierungs- bzw. Erregergruppen-Codes); der bevorzugte Code 41852-5 „Microorganism or agent identified in Specimen“ ist NICHT in der LOINC Ontology 2026-10-21. Das Muster der Ontology ist Property = Presence or identity mit dem Erreger (oder der Erregergruppe: Bakterien, Pilze, Virus) in „Inheres in“."
+    },
+    "micro_spezifische_bestimmung": {
+      "description": "Mikrobiologische Anforderung: spezifische Bestimmung = gezielter Nachweis eines benannten Erregers (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Spezifische_Bestimmung, ValueSet MII_VS_Mikrobio_Spezifische_Bestimmung_Tests_LOINC = LOINC CLASS MICRO mit PROPERTY Prid oder PrThr und molekularem METHOD_TYP). Drei Modellierungsmuster in der Ontology: (1) Nukleinsäurenachweis — Component = << 117174000 |Nucleic acid sequence with relative specificity for microorganism| (DNA/RNA des Erregers), Property = Threshold/Presence/Presence or identity, Technique = eine molekulare Technik oder KEINE (die „non-probe.amp.tar“-Codes tragen gar keine Technique; eine Technique-Klausel verliert sie stillschweigend); (2) gezielte Kultur — Technique = Organism specific culture technique mit dem Erreger als Component; (3) Antigennachweis — Component = << 116633006 |Microbial antigen|. Das Release 2026-10-21 ergänzt 585 Nukleinsäurenachweis-Observables (LOINC-2.83-Codes 104341-3, 1126xx-x …), fast alle „Threshold presence of <Erreger> DNA/RNA in specimen by molecular genetics“."
+    },
+    "micro_mikroskopie": {
+      "description": "Mikrobiologische Anforderung: Mikroskopie (MII KDS Mikrobiologie 2027, Profile MII_PR_Mikrobio_Allgemeine_Mikroskopie und MII_PR_Mikrobio_Spezifische_Mikroskopie, ValueSets MII_VS_Mikrobio_Allgemeine_Mikroskopie_Tests_LOINC und MII_VS_Mikrobio_Spezifische_Mikroskopie_Tests_LOINC). Allgemeine Mikroskopie = nominales „was wurde gesehen“ (Property = Presence or identity, Scale = Nominal); der bevorzugte Code 105059-0 ist OHNE Technique und mit Inheres in = Specimen modelliert (484041010000107), die nach Färbung benannten Codes tragen die Färbung als Technique (664-3 = Gram stain technique). Spezifische Mikroskopie = ordinale Threshold-Presence eines benannten Objekts durch eine Färbung (der LOINC-Filter PrThr + Ord + Färbungs-METHOD_TYP)."
+    },
+    "micro_keimzahl": {
+      "description": "Mikrobiologische Anforderung: Keimzahl (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Keimzahl, ValueSet MII_VS_Mikrobio_Keimzahl_LOINC). Keiner der vier aufgezählten Modulcodes (49223-1, 564-5, 38436-2, 699-9) ist in der LOINC Ontology 2026-10-21; die ECL kann daher nur die Nachbarschaft zeigen: Anzahlkonzentrationen von Erregern (z. B. 485861010000102 „Number concentration of bacteria in urine“). Bei Zählungen ist der Erreger die Component."
+    },
+    "micro_empfindlichkeit": {
+      "description": "Mikrobiologische Anforderung: antimikrobielle Empfindlichkeit (MII KDS Mikrobiologie 2027, Profile MII_PR_Mikrobio_Empfindlichkeit und MII_PR_Mikrobio_Voraussichtliche_Empfindlichkeit, ValueSets MII_VS_Mikrobio_Empfindlichkeit_Phenotyp_LOINC = LOINC CLASS ABXBACT + PROPERTY Susc, MII_VS_Mikrobio_Empfaenglichkeit_Genotyp_LOINC = dasselbe + METHOD_TYP Genotyping). Die Ontology modelliert Empfindlichkeit als Property = 118588007 |Susceptibility|, Direct site = Microbial isolate specimen, Inheres in = Organism, Towards = die antimikrobielle Substanz (z. B. 838881010000103 „Susceptibility to delafloxacin in microbial isolate“). Voraussichtliche (genotypische) Empfindlichkeit trägt Technique = 708060009 |Genotype determination technique|. Towards (das Antibiotikum) ist die Postkoordinationsachse, die das Modul 2027 in ein eigenes Element legt."
+    },
+    "micro_ct_wert": {
+      "description": "Mikrobiologische Anforderung: Ct-Wert (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Ct_Wert, ValueSet MII_VS_Mikrobio_CT_Wert_LOINC = LOINC PROPERTY ThrNum (cycle threshold) in CLASS MICRO). Die Ontology bildet ThrNum auf Property = 1268648001 |Threshold number| ab; die gesuchte Nukleinsäure ist die Component."
+    },
+    "micro_molekulare_pathogenlast": {
+      "description": "Mikrobiologische Anforderung: molekulare Pathogenlast (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Molekulare_Pathogenlast, ValueSet MII_VS_Mikrobio_Molekulare_Pathogenlast_Tests_LOINC = LOINC SCALE Qn + molekularer METHOD_TYP in CLASS MICRO). Quantitative Nukleinsäurekonzentration eines Erregers: Property = Number concentration, Log number concentration, Arbitrary concentration (IU/mL-Viruslasten) oder Log arbitrary concentration; Component = die Nukleinsäure des Erregers."
+    },
+    "micro_antigen_antikoerper_quantitativ": {
+      "description": "Mikrobiologische Anforderung: quantitative Antigen-/Antikörpertests = Serologie (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ, ValueSet MII_VS_Mikrobio_Antigen_Antikoerper_Quantitative_Tests_LOINC = LOINC SCALE Qn + Immunoassay-METHOD_TYPs in CLASS MICRO). Grouper der Ontology: Antikörper gegen Erreger sind << 312301006 |Infective organism antibody| (IgG/IgM/IgA gegen einen benannten Erreger), Antigene sind << 116633006 |Microbial antigen|. Quantitative Properties: Arbitrary concentration (U/mL, Index), Mass concentration, Substance concentration, Number concentration. Die meisten quantitativen Serologie-Observables tragen KEINE Technique."
+    },
+    "micro_titer": {
+      "description": "Mikrobiologische Anforderung: Titer (MII KDS Mikrobiologie 2027, Profil MII_PR_Mikrobio_Titer, ValueSet MII_VS_Mikrobio_Titer_Tests_LOINC = LOINC PROPERTY Titr in CLASS MICRO). Ontology: Property = 118590008 |Dilution factor expressed as titer|, Scale = Semi-quantitative, Component = der Antikörper (<< 312301006 |Infective organism antibody|). Titer von Autoantikörpern und Blutgruppenantikörpern teilen die Property und werden über die Component-Klausel ausgeschlossen."
+    },
+    "micro_resistenzmechanismen": {
+      "description": "Mikrobiologische Anforderung: Resistenzmechanismen und Determinanten, MRGN, resistente Erreger (MII KDS Mikrobiologie 2027, Profile MII_PR_Mikrobio_Resistenzmechanismen_Determinanten und MII_PR_Mikrobio_MRGN_Klasse, ValueSet MII_VS_Mikrobio_Resistenzmechanismen_Determinanten_LOINC = LOINC PROPERTY PrThr in CLASS ABXBACT plus sechs aufgezählte Codes). BEFUND: Keiner der sechs aufgezählten Modulcodes (86930-5, 101673-2 … 101677-3) ist in der LOINC Ontology 2026-10-21, und Resistenz-GENE sind als gewöhnliche Nukleinsäure-Substanzen modelliert (702701010000106 „Messenger ribonucleic acid Bacteria mecA“ ist ein Kind von 117174000 wie jede Erreger-DNA) ohne Resistenz-Grouper; „Resistenzdeterminante“ ist als ECL daher NICHT ausdrückbar. Ausdrückbar ist: der Nachweis eines Erregers, den SNOMED als antimikrobiell resistent klassifiziert (<< 409793007: MRSA, VRE, Carbapenem-resistent, MRGN-artige Grouper)."
+    }
+  },
+  "queries": {
+    "general_culture_identity": {
+      "name": "Allgemeine Kultur — Erregeridentität durch Kulturtechnik",
+      "description": "Was die generische Kulturanforderung liefert: nominale Identifizierung eines beliebigen Erregers durch eine beliebige Kulturtechnik (mikrobiell, erregerspezifisch, anaerob, Pilzkultur …). Enthält 11475-1."
+    },
+    "specific_culture_threshold": {
+      "name": "Gezielte Kultur — Threshold-Presence eines benannten Erregers durch Kulturtechnik",
+      "description": "Kulturanforderungen, die den Erreger bereits benennen (MRSA-Screening, VRE, Salmonellen …): ordinale Presence/Threshold eines benannten Erregers durch Kultur. Im Modul 2027 sind das „spezifische Bestimmung“ mit Methode = Kultur, nicht „allgemeine Kultur“. Enthält 13316-5."
+    },
+    "culture_any_property": {
+      "name": "Alles durch Kulturtechnik (Obergrenze)",
+      "description": "Kandidatenpool: jedes Observable mit einer Kulturtechnik, unabhängig von der Property (Identität, Threshold, Keimzahlen, Empfindlichkeit durch Kultur). Obergrenze für das Review."
+    },
+    "organism_identity_any_technique": {
+      "name": "Allgemeine Bestimmung — Erregeridentität, beliebige Technik",
+      "description": "Nominale Identifizierung eines Erregers oder einer Erregergruppe durch eine beliebige Technik (Kultur, Sequenzierung, Massenspektrometrie, Färbung) oder ohne Technik. Obermenge der Identitätsregel der allgemeinen Kultur."
+    },
+    "organism_identity_no_technique": {
+      "name": "Allgemeine Bestimmung — methodenneutrale Identitätscodes",
+      "description": "Die technikfreien Identitäts-Observables („Presence or identity of virus in specimen“); hier liegen die methodenneutralen Anforderungscodes."
+    },
+    "organism_type": {
+      "name": "Typisierung — Typ eines Erregers (Serotyp, Genotyp, Biotyp)",
+      "description": "Property = Type mit einem Erreger in „Inheres in“: Serotypisierung, HBV/HCV-Genotyp, Biotyp eines Isolats. Liegt im Modul 2027 zwischen Bestimmung und Empfindlichkeit (kein eigenes Profil)."
+    },
+    "naa_detection_any_technique": {
+      "name": "Nukleinsäurenachweis — beliebige oder keine Technik",
+      "description": "Threshold-Presence / Presence / Identität einer mikrobiellen Nukleinsäure, unabhängig von der Technik. Die Referenzmenge für die Anforderung „spezifische Bestimmung“; enthält 35492-8 (MRSA-DNA by probe with target amplification)."
+    },
+    "naa_detection_amplification": {
+      "name": "Nukleinsäurenachweis — Amplifikationstechnik ausgewiesen",
+      "description": "Dasselbe, eingeschränkt auf Technique = << Molecular nucleic acid amplification technique (Sonde mit Zielamplifikation, PCR …). Zeigt, wie viel eine Technique-Klausel verliert: die generischen „by molecular genetics“- und die technikfreien Codes fallen heraus."
+    },
+    "naa_detection_no_technique": {
+      "name": "Nukleinsäurenachweis — keine Technik modelliert",
+      "description": "Die technikfreie Teilmenge (LOINC METHOD_TYP „non-probe.amp.tar“ und methodenlose Codes). Nur über die ECL-Kardinalität [0..0] auf Technique erreichbar."
+    },
+    "organism_specific_culture_detection": {
+      "name": "Gezielter Kulturnachweis — erregerspezifische Kulturtechnik",
+      "description": "Threshold-Presence eines benannten Erregers durch erregerspezifische Kultur (MRSA-/VRE-/Salmonellen-Screeningkulturen). Enthält 13316-5."
+    },
+    "antigen_detection_threshold": {
+      "name": "Antigennachweis — Threshold-Presence eines mikrobiellen Antigens",
+      "description": "Antigen-Schnelltests und Antigen-Immunoassays: ordinale Presence eines mikrobiellen Antigens in einem Material."
+    },
+    "general_microscopy_by_technique": {
+      "name": "Allgemeine Mikroskopie — nominaler Befund durch Mikroskopie- oder Färbetechnik",
+      "description": "Nominale mikroskopische Beobachtung mit expliziter Mikroskopie- oder Färbetechnik (Gram, Giemsa, säurefest, Lichtmikroskopie …). Enthält 664-3."
+    },
+    "general_microscopy_finding_in_specimen": {
+      "name": "Allgemeine Mikroskopie — methodenneutrales Muster „Befund im Material“",
+      "description": "Das technikfreie Muster von 105059-0: nominale Presence or identity, die im Material selbst inhäriert (kein Erreger, keine Technik). Fängt die methodenneutralen Mikroskopiecodes, die der Technikfilter verfehlt."
+    },
+    "specific_microscopy_threshold": {
+      "name": "Spezifische Mikroskopie — ordinale Threshold-Presence durch Mikroskopie- oder Färbetechnik",
+      "description": "Gesuchtes Objekt und Färbung stehen im Code, das Ergebnis ist der Nachweis (LOINC PrThr + Ord + Färbung). Wirtszellen (Leukozyten, Erythrozyten, Epithelien) sind enthalten, weil die Technik und nicht eine Klasse selektiert."
+    },
+    "colony_count_organism": {
+      "name": "Keimzahl — Anzahlkonzentration eines Erregers",
+      "description": "Anzahlkonzentration oder logarithmische Anzahlkonzentration, bei der das Gezählte ein Erreger ist (Component oder Inheres in)."
+    },
+    "colony_count_by_culture": {
+      "name": "Keimzahl — mit ausgewiesener Kulturtechnik",
+      "description": "Dasselbe, eingeschränkt auf Observables mit Kulturtechnik (Lebendkeimzahlen). Null am 2026-10-21: Zählungen sind ohne Technik modelliert."
+    },
+    "susceptibility_phenotype": {
+      "name": "Phänotypische Empfindlichkeit — Isolat, keine Genotypisierung",
+      "description": "Empfindlichkeit eines mikrobiellen Isolats gegenüber einer Substanz, ohne Observables, die eine Genotypisierungstechnik ausweisen (ECL-Kardinalität [0..0]). Entspricht der Absicht des Phänotyp-ValueSets (MHK, Agardiffusion, Gradientenstreifen … jede phänotypische Methode)."
+    },
+    "susceptibility_genotype_predicted": {
+      "name": "Voraussichtliche Empfindlichkeit — durch Genotypisierungstechnik",
+      "description": "Genotypische Vorhersage der Empfindlichkeit (HIV, HBV, HCV, M.-tuberculosis-Resistenzmutationen). Der LOINC-Filter METHOD_TYP = Genotyping entspricht Technique = Genotype determination technique."
+    },
+    "susceptibility_all": {
+      "name": "Alle Empfindlichkeits-Observables (Obergrenze)",
+      "description": "Jedes Observable mit Property = Susceptibility, beliebige Site, beliebige Technik. Obergrenze für das Review; die Differenz zu den beiden Regeln oben ist die Menge mit einer Nicht-Isolat-Site (z. B. Empfindlichkeit im Blut)."
+    },
+    "ct_value_microbial_nucleic_acid": {
+      "name": "Ct-Wert — Threshold number einer mikrobiellen Nukleinsäure",
+      "description": "Cycle threshold einer Erreger-Nukleinsäure durch eine beliebige Amplifikationstechnik."
+    },
+    "ct_value_any": {
+      "name": "Ct-Wert — alle Threshold-number-Observables (Obergrenze)",
+      "description": "Jedes Threshold-number-Observable, einschließlich humaner Ziele (RNase-P-Kontrolle, TREC, SMN1). Die Differenz zur Regel oben ist der nicht-mikrobiologische Rest."
+    },
+    "pathogen_load_any_technique": {
+      "name": "Pathogenlast — quantitative mikrobielle Nukleinsäure, beliebige Technik",
+      "description": "Virus-/Bakterienlasten (HIV-RNA, HBV-DNA, CMV-DNA …) unabhängig von der Technik. Referenzmenge für die Anforderung."
+    },
+    "pathogen_load_amplification": {
+      "name": "Pathogenlast — Amplifikationstechnik ausgewiesen",
+      "description": "Dasselbe, eingeschränkt auf Technique = << Molecular nucleic acid amplification technique. Zeigt den Verlust durch eine Technique-Klausel."
+    },
+    "ab_ag_quantitative": {
+      "name": "Serologie quantitativ — Konzentration eines Erreger-Antikörpers oder -Antigens",
+      "description": "Quantitative Antikörper-/Antigen-Observables, beliebige oder keine Technik."
+    },
+    "ab_ag_threshold": {
+      "name": "Serologie qualitativ — Threshold-Presence eines Erreger-Antikörpers oder -Antigens",
+      "description": "Das qualitative Gegenstück (ordinale/semiquantitative Presence). Gehört im Modul 2027 zur „spezifischen Bestimmung“; hier für die Review-Trennung quantitativ vs. qualitativ aufgeführt."
+    },
+    "titer_infective_antibody": {
+      "name": "Titer — Erreger-Antikörpertiter",
+      "description": "Titer eines Antikörpers gegen einen infektiösen Erreger (Serologie-Titer: Syphilis, Brucella, Widal, virale IgG-/IgM-Titer)."
+    },
+    "titer_any": {
+      "name": "Titer — alle Titer-Observables (Obergrenze)",
+      "description": "Jedes Titer-Observable; die Differenz zur Regel oben sind Autoimmun-, Blutgruppen- und andere nicht-infektiöse Titer."
+    },
+    "resistant_organism_detection": {
+      "name": "Nachweis resistenter Erreger — Presence/Identität eines antimikrobiell resistenten Erregers",
+      "description": "Threshold-Presence oder Identität, bei der der Erreger (Component oder Inheres in) << 409793007 |Antimicrobial resistant bacteria| ist: MRSA, VRE, ESBL-Bildner, Carbapenem-resistente Bakterien. Nukleinsäurecodes wie 35492-8 (MRSA-DNA) sind NICHT enthalten, weil ihre Component die DNA-Substanz ist, die nicht unter dem Grouper der resistenten Bakterien liegt."
+    },
+    "resistant_organism_any_property": {
+      "name": "Resistenter Erreger — jedes Observable über einen resistenten Erreger (Obergrenze)",
+      "description": "Jedes Observable, dessen Component oder Inheres in ein antimikrobiell resistenter Erreger ist, beliebige Property (Identität, Threshold, Zählungen, Typ)."
+    }
+  }
+}
