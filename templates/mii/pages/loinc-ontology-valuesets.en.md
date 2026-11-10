@@ -18,7 +18,7 @@ A worked example instance, [Laboratory result: hemoglobin (LOINC Ontology profil
 
 ### At a glance
 
-* Release used: **LOINC Ontology {{RELEASE}}** (`{{VERSION_URI}}`); the module's LOINC pin is 2.82.
+* Release used: **LOINC Ontology {{RELEASE}}** (`{{VERSION_URI}}`); LOINC enumerations pinned to **LOINC {{LOINC_VERSION}}**, the LOINC release the LOINC Ontology is built on. The module's own LOINC pin is {{MODULE_LOINC_PIN}}.
 * Every ValueSet carries the LOINC enumeration, the LOINC Ontology observables that have no LOINC code yet, and the rule itself as an intensional SNOMED CT include.
 * All artifacts are `draft` and `experimental`. Their canonical URLs follow the module pattern and would be stable if the module adopted them.
 * Generator, rule set and per-concept review tables: [{{REPO_NAME}}]({{REPO_URL}}).

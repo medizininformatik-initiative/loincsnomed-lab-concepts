@@ -47,6 +47,8 @@ AGG_PROFILES = ROOT / "config" / "aggregation_profiles.json"
 LOINC_SYSTEM = "http://loinc.org"
 SCT_SYSTEM = "http://snomed.info/sct"
 SCT_ALIAS = "$sct-loinc-ontology"
+LOINC_VERSION = "2.83"  # the LOINC release the LOINC Ontology 2026-10-21 is built on
+LOINC_ALIAS = "$loinc-ontology-loinc"  # own pin; the module's $loinc is tied to the expansion manifest
 BUCKET_SLUG = {"quantitative_convertible": "convertible"}
 SKIP_BUCKETS = {"panel_order"}  # order/panel codes: review tables only, no ValueSet
 TOPIC = "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
@@ -123,6 +125,24 @@ def split_includes(vs):
     return loinc, sct, ecl, ver
 
 
+def module_loinc_pin(out):
+    """The LOINC version the module's own `$loinc` alias pins (input/fsh/aliases.fsh), or None."""
+    m = re.search(r"^Alias:\s*\$loinc\s*=\s*http://loinc\.org\|(\S+)", (out / "input" / "fsh" / "aliases.fsh").read_text(), re.M)
+    return m.group(1) if m else None
+
+
+def loinc_codes_first_released(loinc_csv, codes, version):
+    """[(code, long common name)] of `codes` whose VersionFirstReleased in Loinc.csv equals `version`."""
+    import csv
+    csv.field_size_limit(10 ** 8)
+    hits = []
+    with loinc_csv.open(encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            if row["LOINC_NUM"] in codes and row.get("VersionFirstReleased") == version:
+                hits.append((row["LOINC_NUM"], row["LONG_COMMON_NAME"]))
+    return sorted(hits)
+
+
 def ecl_short(ecl):
     """Strip the FSN labels for compact table cells."""
     return re.sub(r"\s*\|[^|]*\|", "", ecl)
@@ -141,9 +161,10 @@ def render_valueset(name, vid, title, description, purpose, loinc, sct, ecl, dat
     out.append(VS_RULESETS.replace("{date}", date).rstrip("\n"))
     out.append("* ^purpose = {}".format(fsh_str(purpose)))
     if loinc:
-        out.append("// {}: LOINC enumeration ({} codes) resolved from the ECL below".format(comments, len(loinc)))
+        out.append("// {}: LOINC enumeration ({} codes, LOINC {}) resolved from the ECL below".format(
+            comments, len(loinc), LOINC_VERSION))
         for c in loinc:
-            out.append("* $loinc#{}".format(c["code"]))
+            out.append("* {}#{}".format(LOINC_ALIAS, c["code"]))
     if sct:
         out.append("// Observables of the LOINC Ontology module without a LOINC code ({})".format(len(sct)))
         for c in sct:
@@ -555,6 +576,8 @@ def main():
     ap.add_argument("--date", default=dt.date.today().isoformat())
     ap.add_argument("--repo-url", default="https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--loinc-csv", help="LoincTable/Loinc.csv of LOINC %s; when given, the pages name the enumerated "
+                    "codes that this LOINC release introduced (unknown under the module's 2.82 pin)" % LOINC_VERSION)
     args = ap.parse_args()
 
     out = Path(args.out).expanduser().resolve()
@@ -562,6 +585,7 @@ def main():
         sys.exit("not a module checkout (no sushi-config.yaml): {}".format(out))
 
     version_uri = _targets.snomed_version_uri()
+    module_pin = module_loinc_pin(out)
     release = release_label(version_uri)
     tests_cfg = json.loads(CLINICAL_TESTS.read_text())
     tests = tests_cfg["tests"]
@@ -573,25 +597,32 @@ def main():
     inst_dir = out / "input" / "fsh" / "instances" / "loinc-ontology"
 
     files = {}  # path -> text
+    all_loinc_codes = set()
 
     files[vs_test_dir / "aliases-loinc-ontology.fsh"] = (
         "// LOINC Ontology (SNOMED CT extension module 11010000107), release {rel}.\n"
-        "// Only the proposal ValueSets under valuesets/loinc-ontology/ use this alias; it is\n"
+        "// Only the proposal ValueSets under valuesets/loinc-ontology/ use these aliases; they are\n"
         "// deliberately NOT in aliases.fsh, whose $sct/$loinc pins are tied to the expansion\n"
         "// manifest by scripts/terminology-pins.test.mjs.\n"
-        "Alias: {alias} = http://snomed.info/sct|{uri}\n".format(rel=release, alias=SCT_ALIAS, uri=version_uri))
+        "Alias: {alias} = http://snomed.info/sct|{uri}\n"
+        "// LOINC {lv}: the LOINC release the LOINC Ontology {rel} is built on. Kept separate from the\n"
+        "// module's own $loinc pin ({mp}, forced by the expansion manifest) so that the two can drift\n"
+        "// without touching the module; codes a newer LOINC release introduced are unknown under an older pin.\n"
+        "Alias: {lalias} = http://loinc.org|{lv}\n".format(rel=release, alias=SCT_ALIAS, uri=version_uri,
+                                                            lalias=LOINC_ALIAS, lv=LOINC_VERSION, mp=module_pin or "none"))
 
     # Layer 1: tests
     test_rows = []
     for t in tests:
         vs = json.loads((TEST_VS_DIR / "{}.json".format(t["id"])).read_text())
         loinc, sct, ecl, _ = split_includes(vs)
+        all_loinc_codes.update(c["code"] for c in loinc)
         vs_name = fsh_name("MII_VS_Labor", t["id"])
         vs_id = fsh_id("mii-vs-labor", t["id"])
         desc = ("Proposal: LOINC codes of the clinical test '{}' ({} tier, specimen {}), computed by ECL over the "
-                "LOINC Ontology {}. Parts: LOINC enumeration ({}), LOINC Ontology observables without LOINC code ({}), "
+                "LOINC Ontology {}. Parts: LOINC enumeration ({}, LOINC {}), LOINC Ontology observables without LOINC code ({}), "
                 "and the ECL as an intensional include. ECL: `{}`"
-                .format(t["name"], t["tier"], t["specimen"], release, len(loinc), len(sct), t["ecl"]))
+                .format(t["name"], t["tier"], t["specimen"], release, len(loinc), LOINC_VERSION, len(sct), t["ecl"]))
         purpose = ("Guidance for binding Observation.code of the MII laboratory test profile to a computably defined "
                    "LOINC set; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.")
         files[vs_test_dir / "tests" / (vs_name + ".fsh")] = render_valueset(
@@ -613,6 +644,7 @@ def main():
             continue
         analyte = vs["id"][: -(len(bucket_id.replace("_", "-")) + 1)].replace("-", "_")
         loinc, sct, ecl, _ = split_includes(vs)
+        all_loinc_codes.update(c["code"] for c in loinc)
         pool_ecl = vs["_ecl"]
         if analyte not in seen:
             seen.add(analyte)
@@ -624,8 +656,8 @@ def main():
         n = len(loinc) + len(sct)
         agg_index[(analyte, bucket_id)] = {"vs_id": vs_id, "n": n}
         desc = ("Proposal: use-case ValueSet '{}' for the analyte {} ({}). Candidate pool = {} against the LOINC "
-                "Ontology {}. {} concepts ({} with LOINC). {}"
-                .format(b["name"], analyte.replace("_", " "), b["description"], "`" + pool_ecl + "`", release, n, len(loinc),
+                "Ontology {}. {} concepts ({} with LOINC, enumerated at LOINC {}). {}"
+                .format(b["name"], analyte.replace("_", " "), b["description"], "`" + pool_ecl + "`", release, n, len(loinc), LOINC_VERSION,
                         "The pool ECL is carried as an intensional include." if ecl else
                         "Classification of the pool by Scale type and Property; the rule is stated above."))
         purpose = ("Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies "
@@ -635,9 +667,18 @@ def main():
             "Analyte {}, bucket {}".format(analyte, bucket_id))
     analytes.sort(key=lambda a: a["analyte"])
 
-    ctx = {"RELEASE": release, "VERSION_URI": version_uri, "REPO_URL": args.repo_url,
+    ctx = {"RELEASE": release, "VERSION_URI": version_uri, "REPO_URL": args.repo_url, "LOINC_VERSION": LOINC_VERSION,
+           "MODULE_LOINC_PIN": module_pin or "none", "NEW_LOINC_SENTENCE_EN": "", "NEW_LOINC_SENTENCE_DE": "",
            "REPO_NAME": args.repo_url.rstrip("/").split("/")[-1], "N_TESTS": len(test_rows),
            "N_USECASE": len(agg_index), "N_ANALYTES": len(analytes)}
+    if args.loinc_csv:
+        new_codes = loinc_codes_first_released(Path(args.loinc_csv), all_loinc_codes, LOINC_VERSION)
+        if new_codes:
+            listing = ", ".join("`{}` {}".format(c, n) for c, n in new_codes)
+            ctx["NEW_LOINC_SENTENCE_EN"] = (" {} of the enumerated codes were introduced in LOINC {} and are unknown "
+                                           "codes under any older LOINC pin: {}.".format(len(new_codes), LOINC_VERSION, listing))
+            ctx["NEW_LOINC_SENTENCE_DE"] = (" {} der aufgezählten Codes wurden mit LOINC {} eingeführt und sind unter jedem "
+                                           "älteren LOINC-Pin unbekannte Codes: {}.".format(len(new_codes), LOINC_VERSION, listing))
     for lang, base in (("en", out / "input" / "pagecontent"),
                        ("de", out / "input" / "translations" / "de" / "pagecontent")):
         for page, text in render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index).items():
