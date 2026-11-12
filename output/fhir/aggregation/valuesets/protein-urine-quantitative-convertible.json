@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "protein-urine-quantitative-convertible",
+  "url": "https://interpolar.example/fhir/ValueSet/protein-urine-quantitative-convertible",
+  "name": "ProteinUrineQuantitativeConvertible",
+  "title": "protein urine — Quantitative & convertible",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative & convertible: Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)| against http://snomed.info/sct/11010000107/version/20261021. 5 concepts (5 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "27298-9",
+            "display": "Arbitrary concentration of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "35663-4",
+            "display": "Mass concentration of protein in urine (observable entity)"
+          },
+          {
+            "code": "2888-6",
+            "display": "Mass concentration of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "12842-1",
+            "display": "Mass concentration of protein in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "21482-5",
+            "display": "Mass concentration of protein in urine in 24 hours (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|",
+  "_bucket": "quantitative_convertible"
+}

@@ -3,15 +3,19 @@
   "id": "psa-total-standard",
   "url": "https://interpolar.example/fhir/ValueSet/psa-total-standard",
   "name": "PsaTotalStandard",
-  "title": "Total PSA in serum/plasma",
+  "title": "Total PSA in serum, plasma or blood",
   "status": "draft",
   "experimental": true,
-  "description": "Total PSA in serum/plasma (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "description": "Total PSA in serum, plasma or blood (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "19195-7",
+            "display": "Arbitrary concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
           {
             "code": "35741-8",
             "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time by detection limit <= 0.01 ng/mL (observable entity)"
@@ -19,6 +23,10 @@
           {
             "code": "2857-1",
             "display": "Mass concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "19197-3",
+            "display": "Substance concentration of prostate specific antigen in serum or plasma at point in time (observable entity)"
           },
           {
             "code": "83112-3",
@@ -33,11 +41,12 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
 }

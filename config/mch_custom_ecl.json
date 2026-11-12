@@ -1,5 +1,13 @@
 {
   "description": "Custom ECL queries for MCH - Mean Corpuscular Hemoglobin (LOINC 28539-5)",
+  "component_ecl": "<< 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = (<< 118535001 |Entitic mass (property) (qualifier value)| OR << 118532003 |Entitic substance amount (property) (qualifier value)|)",
+  "component_ecl_doc": "The pool is the exact Component Hemoglobin with the entitic properties (mass per cell, substance amount per cell); the bare '<< Hemoglobin' pool would pull in HbA1c and the variants",
+  "_loinc_survey_doc": "LOINC-side recall survey (Loinc.csv of the pinned LOINC release): regexes on COMPONENT / PROPERTY / SYSTEM that select the LOINC terms a laboratory physician would count as this analyte (CLASSTYPE 1, not DEPRECATED). The generator reports how many of them the LOINC Ontology pool reaches.",
+  "loinc_survey": {
+    "component": "^Hemoglobin$",
+    "property": "^(EntMass|EntSub)",
+    "system": "^RBC$"
+  },
   "queries": [
     {
       "id": "refined_query_v2",

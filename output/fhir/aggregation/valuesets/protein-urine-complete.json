@@ -1,0 +1,116 @@
+{
+  "resourceType": "ValueSet",
+  "id": "protein-urine-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/protein-urine-complete",
+  "name": "ProteinUrineComplete",
+  "title": "protein urine — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)| against http://snomed.info/sct/11010000107/version/20261021. 21 concepts (21 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2887-8",
+            "display": "Threshold presence of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "57735-3",
+            "display": "Threshold presence of protein in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "53525-2",
+            "display": "Threshold presence of protein in urine at point in time by SSA (observable entity)"
+          },
+          {
+            "code": "20454-5",
+            "display": "Threshold presence of protein in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "32209-9",
+            "display": "Threshold presence of protein in urine in 24 hours by test strip (observable entity)"
+          },
+          {
+            "code": "98121-7",
+            "display": "Threshold presence of Protein/Creatinine in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "50408-4",
+            "display": "Mass fraction of protein.abnormal band to protein.total in urine at point in time by electrophoresis (observable entity)"
+          },
+          {
+            "code": "32551-4",
+            "display": "Mass of protein in urine (observable entity)"
+          },
+          {
+            "code": "2890-2",
+            "display": "Mass ratio of protein to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "60678-0",
+            "display": "Mass ratio of protein to creatinine in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "13801-6",
+            "display": "Mass ratio of protein to creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "108021-7",
+            "display": "Measurement of protein in urine (observable entity)"
+          },
+          {
+            "code": "34366-5",
+            "display": "Ratio of protein to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "40486-3",
+            "display": "Ratio of protein to creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "27298-9",
+            "display": "Arbitrary concentration of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "35663-4",
+            "display": "Mass concentration of protein in urine (observable entity)"
+          },
+          {
+            "code": "2888-6",
+            "display": "Mass concentration of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "12842-1",
+            "display": "Mass concentration of protein in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "21482-5",
+            "display": "Mass concentration of protein in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "50561-0",
+            "display": "Mass concentration of protein in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "5804-0",
+            "display": "Mass concentration of protein in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|",
+  "_bucket": "complete"
+}

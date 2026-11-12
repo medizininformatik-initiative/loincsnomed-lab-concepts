@@ -1,0 +1,112 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gfr-complete",
+  "url": "https://interpolar.example/fhir/ValueSet/gfr-complete",
+  "name": "GfrComplete",
+  "title": "gfr — Complete aggregation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Complete aggregation: Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts. Pool = << 363787002 |Observable entity (observable entity)| : << 704324001 |Process output (attribute)| = 580101010000109 |Glomerular filtration rate (calculation)| against http://snomed.info/sct/11010000107/version/20261021. 20 concepts (20 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "76633-7",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in blood by modification of diet in renal disease creatinine calculation formula relative to 1.73 square meters body surface area (observable entity)"
+          },
+          {
+            "code": "96591-3",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in dried blood spot by based on 1.73 sq M among black population (observable entity)"
+          },
+          {
+            "code": "96592-1",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in dried blood spot by based on 1.73 sq M among non black population (observable entity)"
+          },
+          {
+            "code": "69405-9",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by based on 1.73 sq M (observable entity)"
+          },
+          {
+            "code": "62238-1",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by Chronic Kidney Disease Epidemiology Collaboration creatinine calculation formula relative to 1.73 square meters body surface area (observable entity)"
+          },
+          {
+            "code": "98980-6",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine and Cystatin C-based formula (CKD-EPI 2021)/1.73 sq M (observable entity)"
+          },
+          {
+            "code": "94677-2",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine and Cystatin C-based formula (CKD-EPI)/1.73 sq M (observable entity)"
+          },
+          {
+            "code": "102097-3",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine, Cystatin C and Urea-based formula (CKiD)/1.73 sq M (observable entity)"
+          },
+          {
+            "code": "98979-8",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine-based formula (CKD-EPI 2021)/1.73 sq M (observable entity)"
+          },
+          {
+            "code": "88293-6",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine-based formula (CKD-EPI)/1.73 sq M among black population (observable entity)"
+          },
+          {
+            "code": "88294-4",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine-based formula (CKD-EPI)/1.73 sq M among non black population (observable entity)"
+          },
+          {
+            "code": "50044-7",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine-based formula (MDRD)/1.73 sq M among female population (observable entity)"
+          },
+          {
+            "code": "70969-1",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine-based formula (MDRD)/1.73 sq M among male population (observable entity)"
+          },
+          {
+            "code": "50384-7",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by creatinine-based formula (Schwartz)/1.73 sq M (observable entity)"
+          },
+          {
+            "code": "50210-4",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by cystatin C-based formula/1.73 sq M (observable entity)"
+          },
+          {
+            "code": "77147-7",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by modification of diet in renal disease creatinine calculation formula relative to 1.73 square meters body surface area (observable entity)"
+          },
+          {
+            "code": "48643-1",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by modification of diet in renal disease creatinine calculation formula relative to 1.73 square meters body surface area and adjusted for African race (observable entity)"
+          },
+          {
+            "code": "48642-3",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in plasma or serum or whole blood by modification of diet in renal disease creatinine calculation formula relative to 1.73 square meters body surface area and adjusted for non-African race (observable entity)"
+          },
+          {
+            "code": "33914-3",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in serum or plasma by modification of diet in renal disease creatinine calculation formula relative to 1.73 square meters body surface area (observable entity)"
+          },
+          {
+            "code": "78006-4",
+            "display": "Volume rate per area of glomerular filtration rate calculation in point in time in Urine+Ser/Plas by isotopic based on 1.73 sq M (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 704324001 |Process output (attribute)| = 580101010000109 |Glomerular filtration rate (calculation)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 704324001 |Process output (attribute)| = 580101010000109 |Glomerular filtration rate (calculation)|",
+  "_bucket": "complete"
+}

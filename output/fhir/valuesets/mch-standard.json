@@ -17,20 +17,8 @@
             "display": "Entitic mass of hemoglobin in erythrocyte at point in time by automated count (observable entity)"
           },
           {
-            "code": "71694-4",
-            "display": "Entitic mass of hemoglobin in retic at point in time by automated count (observable entity)"
-          },
-          {
-            "code": "62243-1",
-            "display": "Entitic mass of hemoglobin in RBC^Fetus at point in time by automated count (observable entity)"
-          },
-          {
-            "code": "47278-7",
-            "display": "Entitic mass of hemoglobin in RBC^BldCo at point in time (observable entity)"
-          },
-          {
-            "code": "42810-2",
-            "display": "Entitic mass of hemoglobin in retic at point in time (observable entity)"
+            "code": "59468-9",
+            "display": "Entitic amount of substance of hemoglobin in erythrocyte at point in time (observable entity)"
           },
           {
             "code": "28539-5",
@@ -45,11 +33,12 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118535001 |Entitic mass (property) (qualifier value)| OR << 118532003 |Entitic substance amount (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118535001 |Entitic mass (property) (qualifier value)| OR << 118532003 |Entitic substance amount (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
 }

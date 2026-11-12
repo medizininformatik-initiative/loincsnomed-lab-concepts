@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "protein-urine-qualitative",
+  "url": "https://interpolar.example/fhir/ValueSet/protein-urine-qualitative",
+  "name": "ProteinUrineQualitative",
+  "title": "protein urine — Qualitative (ordinal / nominal / presence)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Qualitative (ordinal / nominal / presence): Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)| against http://snomed.info/sct/11010000107/version/20261021. 6 concepts (6 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2887-8",
+            "display": "Threshold presence of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "57735-3",
+            "display": "Threshold presence of protein in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "53525-2",
+            "display": "Threshold presence of protein in urine at point in time by SSA (observable entity)"
+          },
+          {
+            "code": "20454-5",
+            "display": "Threshold presence of protein in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "32209-9",
+            "display": "Threshold presence of protein in urine in 24 hours by test strip (observable entity)"
+          },
+          {
+            "code": "98121-7",
+            "display": "Threshold presence of Protein/Creatinine in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|",
+  "_bucket": "qualitative"
+}

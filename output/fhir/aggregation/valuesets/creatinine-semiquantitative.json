@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "creatinine-semiquantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/creatinine-semiquantitative",
+  "name": "CreatinineSemiquantitative",
+  "title": "creatinine — Semi-quantitative (test strip)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Semi-quantitative (test strip): Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip). Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)| against http://snomed.info/sct/11010000107/version/20261021. 3 concepts (3 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "112593-9",
+            "display": "Mass concentration of creatinine in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "30004-6",
+            "display": "Mass concentration of creatinine in urine at point in time by test strip (observable entity)"
+          },
+          {
+            "code": "30002-0",
+            "display": "Substance concentration of creatinine in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|",
+  "_bucket": "semiquantitative"
+}

@@ -1,0 +1,3 @@
+LOINC,SCTID,FSN,use_case,reason
+50561-0,138121010000100,Mass concentration of protein in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+5804-0,235951010000100,Mass concentration of protein in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)

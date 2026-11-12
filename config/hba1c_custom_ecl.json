@@ -1,5 +1,9 @@
 {
   "description": "Custom ECL queries for Hemoglobin A1c (LOINC 4548-4)",
+  "_loinc_survey_doc": "LOINC-side recall survey (Loinc.csv of the pinned LOINC release): regexes on COMPONENT / PROPERTY / SYSTEM that select the LOINC terms a laboratory physician would count as this analyte (CLASSTYPE 1, not DEPRECATED). The generator reports how many of them the LOINC Ontology pool reaches.",
+  "loinc_survey": {
+    "component": "^Hemoglobin A1c(/Hemoglobin\\.total)?$"
+  },
   "queries": [
     {
       "id": "refined_query_v2",

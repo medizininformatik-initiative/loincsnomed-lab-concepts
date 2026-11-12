@@ -1,0 +1,3 @@
+* **Four codes, all mass concentration**: spot urine (2888-6), 12-hour (12842-1) and 24-hour collections (21482-5) and the collection of unspecified duration (35663-4). The collection period is part of the specimen in LOINC and of the specimen concept in the ontology, so the rule sees them as urine.
+* **Excretion per day is out.** The codes in mg/24 h have the property mass rate, which is not a concentration; a proteinuria quantification that reports g/day needs the property widened to mass rate, or a second test.
+* **Dipstick protein** (threshold and semi-quantitative) is out by scale and property, as the nitrite test shows the pattern for; it would be its own qualitative test. **Albumin** is a different Component.

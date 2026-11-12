@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hemoglobin-cord-blood",
+  "url": "https://interpolar.example/fhir/ValueSet/hemoglobin-cord-blood",
+  "name": "HemoglobinCordBlood",
+  "title": "Hemoglobin concentration in cord blood",
+  "status": "draft",
+  "experimental": true,
+  "description": "Hemoglobin concentration in cord blood (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "103750-6",
+            "display": "Substance concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "30353-7",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33026-6",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity)"
+          },
+          {
+            "code": "30354-5",
+            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "40719-7",
+            "display": "Mass concentration of hemoglobin in cord blood at point in time (observable entity)"
+          },
+          {
+            "code": "33025-8",
+            "display": "Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 122556008 |Cord blood specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 122556008 |Cord blood specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
+}

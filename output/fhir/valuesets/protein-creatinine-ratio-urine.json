@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "protein-creatinine-ratio-urine",
+  "url": "https://interpolar.example/fhir/ValueSet/protein-creatinine-ratio-urine",
+  "name": "ProteinCreatinineRatioUrine",
+  "title": "Protein/creatinine ratio in urine",
+  "status": "draft",
+  "experimental": true,
+  "description": "Protein/creatinine ratio in urine (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "60678-0",
+            "display": "Mass ratio of protein to creatinine in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "40486-3",
+            "display": "Ratio of protein to creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "34366-5",
+            "display": "Ratio of protein to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "2890-2",
+            "display": "Mass ratio of protein to creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "13801-6",
+            "display": "Mass ratio of protein to creatinine in urine in 24 hours (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704325000 |Relative to (attribute)| = 15373003 |Creatinine (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704325000 |Relative to (attribute)| = 15373003 |Creatinine (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
+}

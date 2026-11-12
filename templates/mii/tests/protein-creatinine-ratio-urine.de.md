@@ -1,0 +1,3 @@
+* **Über *Relative to* selektiert.** Die Quotienten-Observables tragen Component Protein und *Relative to* = Creatinine; die Regel nennt beides, die reinen Proteinkonzentrationen bleiben draußen. Fünf Codes: Spontanurin (2890-2, 34366-5), 12-Stunden- (60678-0) und 24-Stunden-Sammelurin (13801-6, 40486-3).
+* **Massenquotient und reiner Quotient sind beide drin.** LOINC unterscheidet den Massenquotienten (mg/g) vom dimensionslosen Quotienten (mg/mmol als Verhältnis berichtet); beide sind umrechenbar, die Menge behält beide.
+* **Der qualitative Quotient** (98121-7) ist über die Skala draußen; **Albumin/Kreatinin** ist eine andere Component.

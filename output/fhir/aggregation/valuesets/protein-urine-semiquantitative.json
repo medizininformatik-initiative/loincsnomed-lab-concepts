@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "protein-urine-semiquantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/protein-urine-semiquantitative",
+  "name": "ProteinUrineSemiquantitative",
+  "title": "protein urine — Semi-quantitative (test strip)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Semi-quantitative (test strip): Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip). Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)| against http://snomed.info/sct/11010000107/version/20261021. 2 concepts (2 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "50561-0",
+            "display": "Mass concentration of protein in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "5804-0",
+            "display": "Mass concentration of protein in urine at point in time by test strip (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|",
+  "_bucket": "semiquantitative"
+}

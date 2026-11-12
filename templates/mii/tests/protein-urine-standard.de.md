@@ -1,0 +1,3 @@
+* **Vier Codes, alle Massenkonzentration**: Spontanurin (2888-6), 12-Stunden- (12842-1) und 24-Stunden-Sammelurin (21482-5) und die Sammlung unbestimmter Dauer (35663-4). Die Sammelperiode ist in LOINC Teil des Materials und in der Ontologie Teil des Specimen-Konzepts, die Regel sieht sie als Urin.
+* **Die Ausscheidung je Tag ist draußen.** Die Codes in mg/24 h haben die Property Mass rate, die keine Konzentration ist; eine Proteinurie-Quantifizierung in g/Tag braucht die Property um Mass rate erweitert oder einen zweiten Test.
+* **Teststreifen-Protein** (Threshold und semiquantitativ) ist über Skala und Property draußen, wie es der Nitrit-Test vormacht; es wäre ein eigener qualitativer Test. **Albumin** ist eine andere Component.

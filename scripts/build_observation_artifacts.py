@@ -64,6 +64,12 @@ def make_valueset(cfg, test, concepts, loinc_map, with_ecl=True):
             loinc_concepts.append({"code": code, "display": c["fsn"]})
         else:
             snomed_concepts.append({"code": c["sctid"], "display": c["fsn"]})
+    # ontology gaps: LOINC codes the release does not model; hand-added, documented on the review page
+    extra = [dict(e) for e in test.get("extra_loinc", [])]
+    enumerated = {c["code"] for c in loinc_concepts}
+    for e in extra:
+        if e["code"] not in enumerated:
+            loinc_concepts.append({"code": e["code"], "display": e["display"]})
     include = []
     if loinc_concepts:
         include.append({"system": cfg["loinc_system"], "concept": loinc_concepts})
@@ -85,6 +91,7 @@ def make_valueset(cfg, test, concepts, loinc_map, with_ecl=True):
             .format(test["name"], test["tier"], cfg["snomed_version"]),
         "compose": {"include": include or [{"system": cfg["loinc_system"]}]},
         "_ecl": test["ecl"],
+        "_extra_loinc": extra,
     }
 
 
@@ -143,7 +150,7 @@ def main():
     summary = []
     for test in cfg["tests"]:
         concepts = run_ecl(adapter, test["ecl"])
-        n_loinc = sum(1 for c in concepts if loinc_map.get(c["sctid"]))
+        n_loinc = sum(1 for c in concepts if loinc_map.get(c["sctid"])) + len(test.get("extra_loinc", []))
 
         vs = make_valueset(cfg, test, concepts, loinc_map, with_ecl=not args.no_ecl_include)
         (out / "valuesets" / "{}.json".format(test["id"])).write_text(

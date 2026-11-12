@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "protein-urine-standard",
+  "url": "https://interpolar.example/fhir/ValueSet/protein-urine-standard",
+  "name": "ProteinUrineStandard",
+  "title": "Protein in urine (mass concentration)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Protein in urine (mass concentration) (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "35663-4",
+            "display": "Mass concentration of protein in urine (observable entity)"
+          },
+          {
+            "code": "21482-5",
+            "display": "Mass concentration of protein in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "2888-6",
+            "display": "Mass concentration of protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "12842-1",
+            "display": "Mass concentration of protein in urine in 12 hours (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 88878007 |Protein (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
+}

@@ -1,6 +1,12 @@
 {
   "description": "Custom ECL queries for MCHC - Mean Corpuscular Hemoglobin Concentration (LOINC 786-4 automated, 28540-3 generic)",
   "note": "SPECIAL CASE: MCHC uses 'Inheres in' relationship (704319004), NOT Component attribute. Post-coordinated queries (Exp 1-5) will fail. Use Pre-coordinated Descendants (Exp 0) approach only.",
+  "_loinc_survey_doc": "LOINC-side recall survey (Loinc.csv of the pinned LOINC release): regexes on COMPONENT / PROPERTY / SYSTEM that select the LOINC terms a laboratory physician would count as this analyte (CLASSTYPE 1, not DEPRECATED). The generator reports how many of them the LOINC Ontology pool reaches.",
+  "loinc_survey": {
+    "component": "^Hemoglobin$",
+    "property": "^(EntMCnc|EntSCnc)",
+    "system": "^RBC$"
+  },
   "queries": [
     {
       "id": "refined_query_v2",

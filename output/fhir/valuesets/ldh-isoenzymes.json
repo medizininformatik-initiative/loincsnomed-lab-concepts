@@ -3,10 +3,10 @@
   "id": "ldh-isoenzymes",
   "url": "https://interpolar.example/fhir/ValueSet/ldh-isoenzymes",
   "name": "LdhIsoenzymes",
-  "title": "LDH isoenzyme analysis (LDH-1..5)",
+  "title": "LDH isoenzyme analysis (LDH-1..5) in serum/plasma",
   "status": "draft",
   "experimental": true,
-  "description": "LDH isoenzyme analysis (LDH-1..5) (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "description": "LDH isoenzyme analysis (LDH-1..5) in serum/plasma (specialized). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
@@ -15,66 +15,6 @@
           {
             "code": "14119-2",
             "display": "Catalytic ratio of lactic acid dehydrogenase isoenzyme 1 to lactic acid dehydrogenase isoenzyme 2 in serum or plasma at point in time (observable entity)"
-          },
-          {
-            "code": "51522-1",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51521-3",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51520-5",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51519-7",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51518-9",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51517-1",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51516-3",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51515-5",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51514-8",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51513-0",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51512-2",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51511-4",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51510-6",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in cerebrospinal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51509-8",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in peritoneal fluid at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "51508-0",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in pleural fluid at point in time by electrophoresis (observable entity)"
           },
           {
             "code": "2548-6",
@@ -95,30 +35,6 @@
           {
             "code": "2536-1",
             "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in serum or plasma at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "13890-9",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 5 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "13889-1",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 4 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "13888-3",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 3 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "13887-5",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 2 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "13886-7",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in urine at point in time by electrophoresis (observable entity)"
-          },
-          {
-            "code": "104814-9",
-            "display": "Catalytic fraction of lactic acid dehydrogenase isoenzyme 1 to lactate dehydrogenase.total in urine at point in time (observable entity)"
           },
           {
             "code": "2535-3",
@@ -173,11 +89,12 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
 }

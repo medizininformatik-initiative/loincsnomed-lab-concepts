@@ -1,0 +1,849 @@
+{
+  "resourceType": "ValueSet",
+  "id": "creatinine-quantitative",
+  "url": "https://interpolar.example/fhir/ValueSet/creatinine-quantitative",
+  "name": "CreatinineQuantitative",
+  "title": "creatinine — Quantitative (all numeric)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Quantitative (all numeric): Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions. Pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)| against http://snomed.info/sct/11010000107/version/20261021. 207 concepts (207 with LOINC). Review required.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "44716-9",
+            "display": "Mass ratio of creatinine to calcium in urine at point in time (observable entity)"
+          },
+          {
+            "code": "16285-9",
+            "display": "Mass ratio of creatinine to protein in urine at point in time (observable entity)"
+          },
+          {
+            "code": "31045-8",
+            "display": "Mass ratio of creatinine to urea nitrogen in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "109874-8",
+            "display": "Measurement of creatinine in body fluid (observable entity)"
+          },
+          {
+            "code": "110903-2",
+            "display": "Measurement of creatinine in dialysate (observable entity)"
+          },
+          {
+            "code": "110902-4",
+            "display": "Measurement of creatinine in peritoneal dialysate (observable entity)"
+          },
+          {
+            "code": "110658-2",
+            "display": "Measurement of creatinine in serum or plasma (observable entity)"
+          },
+          {
+            "code": "108024-1",
+            "display": "Measurement of creatinine in urine (observable entity)"
+          },
+          {
+            "code": "32543-1",
+            "display": "Substance amount of creatinine in urine (observable entity)"
+          },
+          {
+            "code": "2159-2",
+            "display": "Mass concentration of creatinine in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "21232-4",
+            "display": "Mass concentration of creatinine in arterial blood at point in time (observable entity)"
+          },
+          {
+            "code": "38483-4",
+            "display": "Mass concentration of creatinine in blood at point in time (observable entity)"
+          },
+          {
+            "code": "12190-5",
+            "display": "Mass concentration of creatinine in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14398-2",
+            "display": "Mass concentration of creatinine in cerebrospinal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "5919-6",
+            "display": "Mass concentration of creatinine in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "96590-5",
+            "display": "Mass concentration of creatinine in dried blood spot at point in time (observable entity)"
+          },
+          {
+            "code": "14402-2",
+            "display": "Mass concentration of creatinine in gastric fluid at point in time (observable entity)"
+          },
+          {
+            "code": "49004-5",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "12576-5",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 1st specimen (observable entity)"
+          },
+          {
+            "code": "12574-0",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 24H specimen (observable entity)"
+          },
+          {
+            "code": "12572-4",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 2H dwell specimen (observable entity)"
+          },
+          {
+            "code": "12577-3",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "12578-1",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 3rd specimen (observable entity)"
+          },
+          {
+            "code": "12573-2",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 4H dwell specimen (observable entity)"
+          },
+          {
+            "code": "12579-9",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 4th specimen (observable entity)"
+          },
+          {
+            "code": "12580-7",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 5th specimen (observable entity)"
+          },
+          {
+            "code": "12581-5",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 6th specimen (observable entity)"
+          },
+          {
+            "code": "12582-3",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 7th specimen (observable entity)"
+          },
+          {
+            "code": "12583-1",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time 8th specimen (observable entity)"
+          },
+          {
+            "code": "12575-7",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time baseline (observable entity)"
+          },
+          {
+            "code": "57345-1",
+            "display": "Mass concentration of creatinine in peritoneal dialysate at point in time overnight (observable entity)"
+          },
+          {
+            "code": "57726-2",
+            "display": "Mass concentration of creatinine in peritoneal dialysate in 24 hours (observable entity)"
+          },
+          {
+            "code": "12191-3",
+            "display": "Mass concentration of creatinine in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "12193-9",
+            "display": "Mass concentration of creatinine in peritoneal fluid at point in time four hours after peritoneal dialysis (observable entity)"
+          },
+          {
+            "code": "48626-6",
+            "display": "Mass concentration of creatinine in peritoneal fluid at point in time one day after peritoneal dialysis (observable entity)"
+          },
+          {
+            "code": "48630-8",
+            "display": "Mass concentration of creatinine in peritoneal fluid at point in time pre-dialysis (observable entity)"
+          },
+          {
+            "code": "12194-7",
+            "display": "Mass concentration of creatinine in peritoneal fluid at point in time twelve hours after peritoneal dialysis (observable entity)"
+          },
+          {
+            "code": "12192-1",
+            "display": "Mass concentration of creatinine in peritoneal fluid at point in time two hours after peritoneal dialysis (observable entity)"
+          },
+          {
+            "code": "14399-0",
+            "display": "Mass concentration of creatinine in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "2160-0",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "40251-1",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 1.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39956-8",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 1.5H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "39970-9",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 10H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39971-7",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 12H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39972-5",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 16H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39973-3",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 18H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40258-6",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 1D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "93999-1",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 1H post dose vasopressin (observable entity)"
+          },
+          {
+            "code": "40250-3",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 1H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39957-6",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 1H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40253-7",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 2.25H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40254-5",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 2.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39974-1",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 2D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "94008-0",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 2H post dose vasopressin (observable entity)"
+          },
+          {
+            "code": "40252-9",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 2H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "16188-5",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 2H specimen (observable entity)"
+          },
+          {
+            "code": "39961-8",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 3.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39962-6",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 3.75H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40249-5",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 30M post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39959-2",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 30M pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40255-2",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 3H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39964-2",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 4.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39960-0",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 45M post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39958-4",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 45M pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "39975-8",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 4D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39963-4",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 4H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39965-9",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 5.25H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39966-7",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 5.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40256-0",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39967-5",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 6.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40257-8",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 6H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39976-6",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 7D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39968-3",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 8H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39969-1",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time 9H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40248-7",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time baseline (observable entity)"
+          },
+          {
+            "code": "72271-0",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time before contrast (observable entity)"
+          },
+          {
+            "code": "16189-3",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time four hours specimen (observable entity)"
+          },
+          {
+            "code": "11041-1",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time post-dialysis (observable entity)"
+          },
+          {
+            "code": "39955-0",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "11042-9",
+            "display": "Mass concentration of creatinine in serum or plasma at point in time pre-dialysis (observable entity)"
+          },
+          {
+            "code": "44784-7",
+            "display": "Mass concentration of creatinine in serum or plasma at stdy^max (observable entity)"
+          },
+          {
+            "code": "14401-4",
+            "display": "Mass concentration of creatinine in synovial fluid at point in time (observable entity)"
+          },
+          {
+            "code": "35674-1",
+            "display": "Mass concentration of creatinine in urine (observable entity)"
+          },
+          {
+            "code": "2161-8",
+            "display": "Mass concentration of creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "39985-7",
+            "display": "Mass concentration of creatinine in urine at point in time 1.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39979-0",
+            "display": "Mass concentration of creatinine in urine at point in time 1.5H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "39996-4",
+            "display": "Mass concentration of creatinine in urine at point in time 1D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39984-0",
+            "display": "Mass concentration of creatinine in urine at point in time 1H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39980-8",
+            "display": "Mass concentration of creatinine in urine at point in time 1H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "47257-1",
+            "display": "Mass concentration of creatinine in urine at point in time 1st specimen post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39978-2",
+            "display": "Mass concentration of creatinine in urine at point in time 2.25H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "39987-3",
+            "display": "Mass concentration of creatinine in urine at point in time 2.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39986-5",
+            "display": "Mass concentration of creatinine in urine at point in time 2H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "58951-5",
+            "display": "Mass concentration of creatinine in urine at point in time 2nd specimen (observable entity)"
+          },
+          {
+            "code": "47256-3",
+            "display": "Mass concentration of creatinine in urine at point in time 2nd specimen post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39989-9",
+            "display": "Mass concentration of creatinine in urine at point in time 3.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39983-2",
+            "display": "Mass concentration of creatinine in urine at point in time 30M post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39981-6",
+            "display": "Mass concentration of creatinine in urine at point in time 30M pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "39988-1",
+            "display": "Mass concentration of creatinine in urine at point in time 3H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "47258-9",
+            "display": "Mass concentration of creatinine in urine at point in time 3rd specimen post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39991-5",
+            "display": "Mass concentration of creatinine in urine at point in time 4.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39990-7",
+            "display": "Mass concentration of creatinine in urine at point in time 4H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "47259-7",
+            "display": "Mass concentration of creatinine in urine at point in time 4th specimen post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39993-1",
+            "display": "Mass concentration of creatinine in urine at point in time 5.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39992-3",
+            "display": "Mass concentration of creatinine in urine at point in time 5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "47273-8",
+            "display": "Mass concentration of creatinine in urine at point in time 5th specimen post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39994-9",
+            "display": "Mass concentration of creatinine in urine at point in time 6H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "47261-3",
+            "display": "Mass concentration of creatinine in urine at point in time 6th specimen post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39995-6",
+            "display": "Mass concentration of creatinine in urine at point in time 8H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "39982-4",
+            "display": "Mass concentration of creatinine in urine at point in time baseline (observable entity)"
+          },
+          {
+            "code": "39977-4",
+            "display": "Mass concentration of creatinine in urine at point in time pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "57346-9",
+            "display": "Mass concentration of creatinine in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "57344-4",
+            "display": "Mass concentration of creatinine in urine in 2 hours (observable entity)"
+          },
+          {
+            "code": "20624-3",
+            "display": "Mass concentration of creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "1452-2",
+            "display": "Mass concentration of creatinine in urine in 24 hours 24H post 40 ug corticotropin IM BID 3 day (observable entity)"
+          },
+          {
+            "code": "1455-5",
+            "display": "Mass concentration of creatinine in urine in 24 hours 48H post 2 mg dexamethasone PO 2.5 day high dose q6h (observable entity)"
+          },
+          {
+            "code": "1453-0",
+            "display": "Mass concentration of creatinine in urine in 24 hours 48H post 40 ug corticotropin IM BID 3 day (observable entity)"
+          },
+          {
+            "code": "1454-8",
+            "display": "Mass concentration of creatinine in urine in 24 hours 48H post 500 ug dexamethasone PO 2.5 day low dose q6h (observable entity)"
+          },
+          {
+            "code": "1456-3",
+            "display": "Mass concentration of creatinine in urine in 24 hours 72H post 40 ug corticotropin IM BID 3 day (observable entity)"
+          },
+          {
+            "code": "1459-7",
+            "display": "Mass concentration of creatinine in urine in 24 hours pre 2 mg dexamethasone PO 2.5 day high dose q6h (observable entity)"
+          },
+          {
+            "code": "1457-1",
+            "display": "Mass concentration of creatinine in urine in 24 hours pre 40 ug corticotropin IM 3 day (observable entity)"
+          },
+          {
+            "code": "1458-9",
+            "display": "Mass concentration of creatinine in urine in 24 hours pre 500 ug dexamethasone PO 2.5 day low dose q6h (observable entity)"
+          },
+          {
+            "code": "94844-8",
+            "display": "Mass concentration of creatinine in Urine^Fetus at point in time (observable entity)"
+          },
+          {
+            "code": "12584-9",
+            "display": "Mass concentration of creatinine in vitreous humor at point in time (observable entity)"
+          },
+          {
+            "code": "35242-7",
+            "display": "Mass concentration or substance concentration of creatinine in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "35203-9",
+            "display": "Mass concentration or substance concentration of creatinine in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "35204-7",
+            "display": "Mass concentration or substance concentration of creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "35251-8",
+            "display": "Mass concentration or substance concentration of creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "15050-8",
+            "display": "Substance concentration of creatinine in amniotic fluid at point in time (observable entity)"
+          },
+          {
+            "code": "59826-8",
+            "display": "Substance concentration of creatinine in blood at point in time (observable entity)"
+          },
+          {
+            "code": "25386-4",
+            "display": "Substance concentration of creatinine in body fluid at point in time (observable entity)"
+          },
+          {
+            "code": "15051-6",
+            "display": "Substance concentration of creatinine in dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "97777-7",
+            "display": "Substance concentration of creatinine in dialysate at point in time 1H specimen (observable entity)"
+          },
+          {
+            "code": "46086-5",
+            "display": "Substance concentration of creatinine in dialysate at point in time 2H specimen (observable entity)"
+          },
+          {
+            "code": "46219-2",
+            "display": "Substance concentration of creatinine in dialysate at point in time four hours specimen (observable entity)"
+          },
+          {
+            "code": "46220-0",
+            "display": "Substance concentration of creatinine in dialysate at point in time overnight (observable entity)"
+          },
+          {
+            "code": "39472-6",
+            "display": "Substance concentration of creatinine in dialysate in 24 hours (observable entity)"
+          },
+          {
+            "code": "14681-1",
+            "display": "Substance concentration of creatinine in peritoneal dialysate at point in time (observable entity)"
+          },
+          {
+            "code": "78532-9",
+            "display": "Substance concentration of creatinine in peritoneal dialysate at point in time 2H dwell specimen (observable entity)"
+          },
+          {
+            "code": "78533-7",
+            "display": "Substance concentration of creatinine in peritoneal dialysate at point in time 4H dwell specimen (observable entity)"
+          },
+          {
+            "code": "79263-0",
+            "display": "Substance concentration of creatinine in peritoneal dialysate at point in time overnight dwell (observable entity)"
+          },
+          {
+            "code": "39471-8",
+            "display": "Substance concentration of creatinine in peritoneal dialysate in 24 hours (observable entity)"
+          },
+          {
+            "code": "39474-2",
+            "display": "Substance concentration of creatinine in peritoneal fluid at point in time (observable entity)"
+          },
+          {
+            "code": "77140-2",
+            "display": "Substance concentration of creatinine in plasma or serum or whole blood at point in time (observable entity)"
+          },
+          {
+            "code": "54375-1",
+            "display": "Substance concentration of creatinine in pleural fluid at point in time (observable entity)"
+          },
+          {
+            "code": "14682-9",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time (observable entity)"
+          },
+          {
+            "code": "40267-7",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 1.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40113-3",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 1.5H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40122-4",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 10H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40123-2",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 12H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40124-0",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 16H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40125-7",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 18H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40273-5",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 1D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40266-9",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 1H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40114-1",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 1H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40269-3",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 2.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40126-5",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 2D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40268-5",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 2H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40118-2",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 3.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40265-1",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 30M post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40116-6",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 30M pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40270-1",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 3H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40117-4",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 45M post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40115-8",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 45M pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40127-3",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 4D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40119-0",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 4H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40271-9",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40272-7",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 6H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40128-1",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 7D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40120-8",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 8H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40121-6",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time 9H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40264-4",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time baseline (observable entity)"
+          },
+          {
+            "code": "103616-9",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time by LC/MS/MS (observable entity)"
+          },
+          {
+            "code": "62425-4",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time post XXX challenge (observable entity)"
+          },
+          {
+            "code": "51620-3",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time post-dialysis (observable entity)"
+          },
+          {
+            "code": "40112-5",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "51619-5",
+            "display": "Substance concentration of creatinine in serum or plasma at point in time pre-dialysis (observable entity)"
+          },
+          {
+            "code": "22726-4",
+            "display": "Substance concentration of creatinine in specimen at point in time (observable entity)"
+          },
+          {
+            "code": "47610-1",
+            "display": "Substance concentration of creatinine in stool at point in time (observable entity)"
+          },
+          {
+            "code": "55593-8",
+            "display": "Substance concentration of creatinine in urine (observable entity)"
+          },
+          {
+            "code": "14683-7",
+            "display": "Substance concentration of creatinine in urine at point in time (observable entity)"
+          },
+          {
+            "code": "40136-4",
+            "display": "Substance concentration of creatinine in urine at point in time 1.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40130-7",
+            "display": "Substance concentration of creatinine in urine at point in time 1.5H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40147-1",
+            "display": "Substance concentration of creatinine in urine at point in time 1D post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40135-6",
+            "display": "Substance concentration of creatinine in urine at point in time 1H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40131-5",
+            "display": "Substance concentration of creatinine in urine at point in time 1H pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40138-0",
+            "display": "Substance concentration of creatinine in urine at point in time 2.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40137-2",
+            "display": "Substance concentration of creatinine in urine at point in time 2H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40140-6",
+            "display": "Substance concentration of creatinine in urine at point in time 3.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40134-9",
+            "display": "Substance concentration of creatinine in urine at point in time 30M post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40132-3",
+            "display": "Substance concentration of creatinine in urine at point in time 30M pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "40139-8",
+            "display": "Substance concentration of creatinine in urine at point in time 3H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40142-2",
+            "display": "Substance concentration of creatinine in urine at point in time 4.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40141-4",
+            "display": "Substance concentration of creatinine in urine at point in time 4H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40144-8",
+            "display": "Substance concentration of creatinine in urine at point in time 5.5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40143-0",
+            "display": "Substance concentration of creatinine in urine at point in time 5H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40145-5",
+            "display": "Substance concentration of creatinine in urine at point in time 6H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40146-3",
+            "display": "Substance concentration of creatinine in urine at point in time 8H post XXX challenge (observable entity)"
+          },
+          {
+            "code": "40133-1",
+            "display": "Substance concentration of creatinine in urine at point in time baseline (observable entity)"
+          },
+          {
+            "code": "112592-1",
+            "display": "Substance concentration of creatinine in urine at point in time by automated test strip (observable entity)"
+          },
+          {
+            "code": "40129-9",
+            "display": "Substance concentration of creatinine in urine at point in time pre XXX challenge (observable entity)"
+          },
+          {
+            "code": "53499-0",
+            "display": "Substance concentration of creatinine in urine in 12 hours (observable entity)"
+          },
+          {
+            "code": "25886-3",
+            "display": "Substance concentration of creatinine in urine in 24 hours (observable entity)"
+          },
+          {
+            "code": "93735-9",
+            "display": "Substance concentration of creatinine in urine in 5 hours (observable entity)"
+          },
+          {
+            "code": "39473-4",
+            "display": "Substance concentration of creatinine in urine in 72 hours (observable entity)"
+          },
+          {
+            "code": "101475-2",
+            "display": "Substance concentration of creatinine in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "75363-2",
+            "display": "Substance concentration of creatinine in vitreous humor at point in time (observable entity)"
+          }
+        ]
+      }
+    ]
+  },
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|",
+  "_bucket": "quantitative"
+}

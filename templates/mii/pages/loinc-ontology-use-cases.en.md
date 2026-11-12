@@ -1,4 +1,4 @@
-This page lists the {{N_USECASE}} ValueSets of the [LOINC Ontology proposal](loinc-ontology-valuesets.html) that serve **data users**: for each of {{N_ANALYTES}} analytes, graded sets of everything the LOINC Ontology maps to that analyte. The construction is explained under [How the ValueSets are built](loinc-ontology-method.html); the narrow per-test sets are on [ValueSets per clinical test](loinc-ontology-clinical-tests.html).
+This page lists the {{N_USECASE}} ValueSets of the [LOINC Ontology proposal](loinc-ontology-valuesets.html) that serve **data users**: for each of {{N_ANALYTES}} analytes, graded sets of everything the LOINC Ontology maps to that analyte. The construction is explained under [How the ValueSets are built](loinc-ontology-method.html); the narrow per-test sets are on [ValueSets per clinical test (Laborparameter)](loinc-ontology-clinical-tests.html).
 
 ### The use case defines the aggregation
 
@@ -26,9 +26,16 @@ The pool column shows the Component; `<<` marks "this concept and its subtypes".
 
 {{USECASE_TABLE}}
 
+### Recall against LOINC itself
+
+A rule can only select what the LOINC Ontology models, so the pools are checked the other way round as well: for every analyte, the LOINC table of release {{LOINC_VERSION}} is searched for the laboratory terms a laboratory physician would count as that analyte (by Component, where needed Property and System), and the table says how many of them the pool reaches. A term outside the pool is modelled with another Component, or not modelled at all; the analyte pages list them one by one. The last column counts how many of the LOINC terms the per-test ValueSets enumerate; the gap to the pool is the set of codes a clinician would not call the routine value.
+
+{{RECALL_TABLE}}
+
 ### Review notes
 
-* **Hematocrit and erythrocyte count** share the Component *Erythrocyte*, so their pools, and therefore their use-case ValueSets, are identical. Only the per-test ValueSets tell them apart. If the module wants separate pools, hematocrit needs its own Component or an added Property constraint.
-* **MCH** is pooled on *Hemoglobin and subtypes*, which also brings in HbA1c and the hemoglobin variants, while the hemoglobin pool uses the exact Component. One of the two should be aligned; both are pool-definition choices, not properties of the LOINC Ontology.
+* **Hematocrit** has its own pool now: Erythrocyte with the property volume fraction. The erythrocyte pool still contains the hematocrit concepts, which is correct, a hematocrit is an erythrocyte observable; only the hematocrit use-case ValueSets are no longer a copy of the erythrocyte ones.
+* **MCH** is pooled on the exact Component Hemoglobin with the two entitic properties (mass and substance amount per cell), no longer on `<< Hemoglobin`, which had brought HbA1c and the hemoglobin variants in. The hemoglobin pool uses the exact Component and therefore also contains the MCH concepts.
+* **GFR** has no Component in the LOINC Ontology; its pool is every observable whose *Process output* is the GFR calculation. **Protein in urine** is pooled with the specimen in the pool definition, because total protein in serum is a different clinical parameter.
 * **Leukocytes** has two order-level concepts (the differential) that are listed in the review tables and excluded from every bucket.
 * **Specimen is not a criterion** in this layer: urine hemoglobin and blood hemoglobin are in the same quantitative bucket. A data user who needs one specimen narrows by the per-test ValueSet or by `Observation.specimen`.

@@ -1,0 +1,4 @@
+LOINC,SCTID,FSN,use_case,reason
+112593-9,884061010000101,Mass concentration of creatinine in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+30002-0,203321010000101,Substance concentration of creatinine in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+30004-6,49141010000107,Mass concentration of creatinine in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)

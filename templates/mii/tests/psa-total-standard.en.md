@@ -1,3 +1,3 @@
-* **Three codes**: 2857-1, the immunoassay-specific 83112-3 and the ultrasensitive 35741-8. The latter is a method with a different detection limit; in post-prostatectomy monitoring it matters, and a site that reports it should map to it.
-* **µg/L and ng/mL are the same mass concentration**; UCUM handles it. The substance concentration (19197-3) and arbitrary units (19195-7) codes are out and rarely used.
-* **Protein-bound PSA** (33667-7) and **free PSA** are different Components and stay out; see the two specialized tests.
+* **Five codes.** 2857-1, the immunoassay-specific 83112-3 and the ultrasensitive 35741-8 (a method with a lower detection limit that matters in post-prostatectomy monitoring), plus the molar 19197-3 and the arbitrary-unit 19195-7 variants that the widened property block admits. The last two are rare, but they are the same measurement in another unit and UCUM-convertible.
+* **The specimen block is the shared blood block.** It admits serum, plasma and whole blood; no whole-blood PSA code is modelled today, so the set does not change by it. Dried blood spot PSA (100716-0, a mail-in screening kit) is excluded by the block.
+* **Protein-bound PSA** (33667-7), **free PSA** and the **ratio** are other Components or properties and stay out; see the two specialized tests.

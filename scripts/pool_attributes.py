@@ -41,8 +41,8 @@ ATTR_NAMES = {"246093002": "Component", "704327008": "Direct site", "370130000":
               "704319004": "Inheres in", "704321002": "Characterizes", "704320005": "Towards",
               "718497002": "Inherent location", "704326004": "Precondition",
               "719722006": "Has realization", "704322009": "Process agent",
-              "704323004": "Process duration", "704324005": "Process output",
-              "704325006": "Relative to", "704327008 ": "Direct site"}
+              "704323007": "Process duration", "704324001": "Process output",
+              "704325000": "Relative to"}
 
 
 def strip_tag(term):
@@ -69,16 +69,32 @@ def split_top(text, sep=","):
     return [p.strip() for p in parts if p.strip()]
 
 
+def split_top_minus(ecl):
+    """-> (left, right) at a top-level ' MINUS ' (outside |labels| and parentheses), else (ecl, None).
+    A MINUS inside an attribute value, as in the blood block
+    '(<< Blood specimen MINUS (<< Cord blood ... ))', is part of the value and stays."""
+    inside, depth = False, 0
+    i = 0
+    while i < len(ecl):
+        ch = ecl[i]
+        if ch == "|":
+            inside = not inside
+        elif not inside:
+            depth += {"(": 1, ")": -1}.get(ch, 0)
+            if depth == 0 and ecl.startswith(" MINUS ", i):
+                return ecl[:i], ecl[i + len(" MINUS "):]
+        i += 1
+    return ecl, None
+
+
 def parse_clauses(ecl):
     """-> (base expression, [ {attr, text, negated} ]) for the shapes used in clinical_tests.json."""
     ecl = ecl.strip()
     clauses = []
-    minus = None
-    if " MINUS " in ecl:
-        ecl, minus = ecl.split(" MINUS ", 1)
-        ecl = ecl.strip()
-        if ecl.startswith("(") and ecl.endswith(")"):
-            ecl = ecl[1:-1].strip()
+    ecl, minus = split_top_minus(ecl)
+    ecl = ecl.strip()
+    if minus is not None and ecl.startswith("(") and ecl.endswith(")"):
+        ecl = ecl[1:-1].strip()
     base = ecl
     if ":" in ecl:
         base, refinement = ecl.split(":", 1)

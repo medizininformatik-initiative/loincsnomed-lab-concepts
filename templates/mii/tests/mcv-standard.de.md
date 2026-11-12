@@ -1,1 +1,1 @@
-* **Eigenes Observable-Konzept.** MCV hat in der LOINC Ontology keine Zerlegung in Component; die Regel wählt das Konzept und seine Subtypen. Zwei Codes, nichts ausgeschlossen. Eine Technique-Einschränkung wäre die einzige mögliche Verfeinerung.
+* **Eigenes Observable-Konzept.** MCV hat in der LOINC Ontology keine Component-Zerlegung; die Regel selektiert das Konzept und seine Subtypen. Zwei Codes (787-2 automatisiert, 30428-7), nichts ausgeschlossen. Eine Technique-Einschränkung wäre die einzige mögliche Verfeinerung.

@@ -1,0 +1,6 @@
+LOINC,SCTID,FSN,use_case,reason
+12842-1,62021010000100,Mass concentration of protein in urine in 12 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
+21482-5,189521010000105,Mass concentration of protein in urine in 24 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
+27298-9,123881010000101,Arbitrary concentration of protein in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+2888-6,181031010000101,Mass concentration of protein in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+35663-4,265371010000103,Mass concentration of protein in urine (observable entity),quantitative_convertible,Quantitative scale + concentration property

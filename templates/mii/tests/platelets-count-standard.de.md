@@ -1,4 +1,4 @@
-* **Plasma und plättchenreiches Plasma sind drin.** 26516-5, 13056-7 (Plasma) und 74775-8 (plättchenreiches Plasma) sind enthalten, weil Plasma in SNOMED CT ein Subtyp des Blutmaterials ist. Es sind transfusionsmedizinische Messungen, nicht die Routinezählung; der Vorschlag ist, sie auszuschließen (`Direct site != << Plasma specimen`).
-* **Nabelschnurblut** (47284-5, 55802-3) ist drin.
-* **Die EDTA-Aggregat-Kontrolle** (107193-5) und die optische Zählung (97995-5) sind Methodenvarianten der Routinezählung und bleiben drin.
+* **Plasma und thrombozytenreiches Plasma sind draußen, und genau das ist der Review-Punkt.** 13056-7 und 26516-5 (Plasma) und 74775-8 (thrombozytenreiches Plasma) sind transfusionsmedizinische Messungen an einem Präparat, nicht die Thrombozytenzahl des Patienten. SNOMED CT modelliert Plasma als azelluläres Blutmaterial, das der Blut-Block für die Serum-/Plasma-Chemie zulässt; diese Regel ergänzt den Block deshalb um `MINUS << Plasma specimen`. Ob dieser Ausschluss gewollt ist oder die drei Codes in einer 10-Code-Menge bleiben sollen, ist mit den klinischen Reviewern zu entscheiden.
+* **Nabelschnurblut** (47284-5, 55802-3) ist über den Blut-Block draußen.
+* **Die EDTA-Clumping-Kontrolle** (107193-5) und die optische Zählung (97995-5) sind Methodenvarianten der Routinezählung und bleiben drin.
 * **Fetales Blut** (62244-9) hat in diesem Release kein Direct site.

@@ -1,0 +1,5 @@
+LOINC,SCTID,FSN,tier,test
+35663-4,265371010000103,Mass concentration of protein in urine (observable entity),standard,protein-urine-standard
+21482-5,189521010000105,Mass concentration of protein in urine in 24 hours (observable entity),standard,protein-urine-standard
+2888-6,181031010000101,Mass concentration of protein in urine at point in time (observable entity),standard,protein-urine-standard
+12842-1,62021010000100,Mass concentration of protein in urine in 12 hours (observable entity),standard,protein-urine-standard

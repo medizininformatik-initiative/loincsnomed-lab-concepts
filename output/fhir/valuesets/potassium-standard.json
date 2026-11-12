@@ -3,15 +3,19 @@
   "id": "potassium-standard",
   "url": "https://interpolar.example/fhir/ValueSet/potassium-standard",
   "name": "PotassiumStandard",
-  "title": "Potassium in serum/plasma",
+  "title": "Potassium in serum, plasma or blood",
   "status": "draft",
   "experimental": true,
-  "description": "Potassium in serum/plasma (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
+  "description": "Potassium in serum, plasma or blood (standard). LOINC enumeration selected by the SNOMED ECL below against http://snomed.info/sct/11010000107/version/20261021; the ECL is also carried as an intensional SNOMED include (the rule). Review required.",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "22760-3",
+            "display": "Mass concentration of potassium electrolyte in serum or plasma at point in time (observable entity)"
+          },
           {
             "code": "2823-3",
             "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time (observable entity)"
@@ -19,6 +23,10 @@
           {
             "code": "29349-8",
             "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time post-dialysis (observable entity)"
+          },
+          {
+            "code": "41656-0",
+            "display": "Substance concentration of potassium electrolyte in mixed venous blood at point in time (observable entity)"
           },
           {
             "code": "12812-4",
@@ -29,6 +37,18 @@
             "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 3rd specimen (observable entity)"
           },
           {
+            "code": "75940-7",
+            "display": "Mass concentration of potassium electrolyte in blood at point in time (observable entity)"
+          },
+          {
+            "code": "39789-3",
+            "display": "Substance concentration of potassium electrolyte in venous blood at point in time (observable entity)"
+          },
+          {
+            "code": "6298-4",
+            "display": "Substance concentration of potassium electrolyte in blood at point in time (observable entity)"
+          },
+          {
             "code": "93998-3",
             "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 1H post dose vasopressin (observable entity)"
           },
@@ -37,8 +57,20 @@
             "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time pre-dialysis (observable entity)"
           },
           {
+            "code": "32713-0",
+            "display": "Substance concentration of potassium electrolyte in arterial blood at point in time (observable entity)"
+          },
+          {
             "code": "94007-2",
             "display": "Substance concentration of potassium electrolyte in serum or plasma at point in time 2H post dose vasopressin (observable entity)"
+          },
+          {
+            "code": "39790-1",
+            "display": "Substance concentration of potassium electrolyte in capillary blood at point in time (observable entity)"
+          },
+          {
+            "code": "77142-8",
+            "display": "Substance concentration of potassium electrolyte in plasma or serum or whole blood at point in time (observable entity)"
           }
         ]
       },
@@ -49,11 +81,12 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
 }

@@ -1,0 +1,22 @@
+LOINC,SCTID,FSN,use_case,reason
+108021-7,711931010000109,Measurement of protein in urine (observable entity),quantitative,"Measurement property, no scale asserted (generic)"
+12842-1,62021010000100,Mass concentration of protein in urine in 12 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
+13801-6,493951010000108,Mass ratio of protein to creatinine in urine in 24 hours (observable entity),quantitative,Quantitative scale
+20454-5,257051010000105,Threshold presence of protein in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+21482-5,189521010000105,Mass concentration of protein in urine in 24 hours (observable entity),quantitative_convertible,Quantitative scale + concentration property
+27298-9,123881010000101,Arbitrary concentration of protein in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+2887-8,147921010000104,Threshold presence of protein in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2888-6,181031010000101,Mass concentration of protein in urine at point in time (observable entity),quantitative_convertible,Quantitative scale + concentration property
+2890-2,521781010000104,Mass ratio of protein to creatinine in urine at point in time (observable entity),quantitative,Quantitative scale
+32209-9,245761010000102,Threshold presence of protein in urine in 24 hours by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32551-4,528041010000103,Mass of protein in urine (observable entity),quantitative,Quantitative scale
+34366-5,531411010000103,Ratio of protein to creatinine in urine at point in time (observable entity),quantitative,Quantitative scale
+35663-4,265371010000103,Mass concentration of protein in urine (observable entity),quantitative_convertible,Quantitative scale + concentration property
+40486-3,537111010000100,Ratio of protein to creatinine in urine in 24 hours (observable entity),quantitative,Quantitative scale
+50408-4,566011010000107,Mass fraction of protein.abnormal band to protein.total in urine at point in time by electrophoresis (observable entity),quantitative,Quantitative scale
+50561-0,138121010000100,Mass concentration of protein in urine at point in time by automated test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+53525-2,194241010000104,Threshold presence of protein in urine at point in time by SSA (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57735-3,75131010000100,Threshold presence of protein in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+5804-0,235951010000100,Mass concentration of protein in urine at point in time by test strip (observable entity),semiquantitative,Semi-quantitative scale (test strip)
+60678-0,600751010000103,Mass ratio of protein to creatinine in urine in 12 hours (observable entity),quantitative,Quantitative scale
+98121-7,245441010000108,Threshold presence of Protein/Creatinine in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative

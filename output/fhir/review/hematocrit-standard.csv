@@ -8,6 +8,4 @@ LOINC,SCTID,FSN,tier,test
 32354-3,527701010000101,Volume fraction of erythrocyte to arterial blood in arterial blood at point in time by calculation (observable entity),standard,hematocrit-standard
 31100-1,526231010000104,Volume fraction of erythrocyte to blood in blood at point in time by electrical impedance (observable entity),standard,hematocrit-standard
 20570-8,504981010000105,Volume fraction of erythrocyte to blood in blood at point in time by calculation (observable entity),standard,hematocrit-standard
-11271-4,489951010000109,Volume fraction of erythrocyte in cord blood at point in time by automated count (observable entity),standard,hematocrit-standard
-11151-8,489801010000101,Volume fraction of erythrocyte in cord blood at point in time by calculation (observable entity),standard,hematocrit-standard
 104874-3,483951010000107,Volume fraction of erythrocyte in blood at point in time by calculation baseline (observable entity),standard,hematocrit-standard

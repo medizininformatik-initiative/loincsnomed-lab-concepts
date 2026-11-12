@@ -15,19 +15,35 @@ Die [LOINC Ontology](https://loincsnomed.org) wird gemeinsam vom Regenstrief Ins
 
 ### Aufbau einer Regel
 
-Die Regel für den klinischen Test *Hämoglobinkonzentration im Blut* lautet:
+Die Regel für den Laborparameter *Hämoglobinkonzentration im Blut* lautet:
 
 ```
 << 363787002 |Observable entity| :
     246093002 |Component|   = 38082009 |Hemoglobin (substance)|,
- << 704327008 |Direct site| = << 119297000 |Blood specimen|,
- << 370130000 |Property|    = << 118539007 |Mass concentration|,
+ << 704327008 |Direct site| = (<< 119297000 |Blood specimen|
+                               MINUS (<< 122556008 |Cord blood specimen|
+                                      OR << 737357006 |Fetal blood specimen|
+                                      OR << 440500007 |Dried blood spot specimen|)),
+ << 370130000 |Property|    = (<< 118539007 |Mass concentration|
+                               OR << 118556004 |Substance concentration|
+                               OR << 118569000 |Arbitrary concentration|),
  << 370132008 |Scale type|  = << 30766002 |Quantitative value|
 ```
 
-Zu lesen als: jedes Observable, dessen Component genau Hemoglobin ist, dessen Material Blut oder ein Subtyp von Blut ist (venös, arteriell, kapillär), dessen Property Massenkonzentration oder ein Subtyp ist und dessen Skala quantitativ ist. `<<` bedeutet „dieses Konzept und alle seine Nachfahren", `<` „nur die Nachfahren"; ohne beides muss der Wert exakt passen. Die Wahl zwischen beidem ist eine sichtbar gemachte klinische Entscheidung: `<< 38082009` würde zusätzlich HbA1c und die Hämoglobin-Varianten einbeziehen, was für einen Hämoglobin-*Pool* gewollt ist, für den Routinetest Hämoglobin aber nicht.
+Zu lesen als: jedes Observable, dessen Component genau Hemoglobin ist, dessen Material Blut oder ein Subtyp von Blut ist (venös, arteriell, kapillär, Serum, Plasma), aber nicht Nabelschnurblut, fetales Blut oder Trockenblut, dessen Property eine der drei Konzentrations-Properties oder ein Subtyp ist und dessen Skala quantitativ ist. `<<` bedeutet „dieses Konzept und alle seine Nachfahren", `<` „nur die Nachfahren"; ohne beides muss der Wert exakt passen. Die Wahl zwischen beidem ist eine sichtbar gemachte klinische Entscheidung: `<< 38082009` würde zusätzlich HbA1c und die Hämoglobin-Varianten einbeziehen, was für einen Hämoglobin-*Pool* gewollt ist, für den Routineparameter Hämoglobin aber nicht.
 
 {{EXAMPLE_ECL_ROWS}}
+
+### Die gemeinsamen Bausteine
+
+Das klinische Review der ersten Fassung hat zu zwei Bausteinen geführt, die jetzt jeder Routine-Bluttest teilt, damit eine Entscheidung einmal getroffen und überall angewendet wird:
+
+| Baustein | ECL | Entscheidung, die er kodiert |
+|---|---|---|
+| **Blut** (Material) | `<< Blood specimen MINUS (<< Cord blood specimen OR << Fetal blood specimen OR << Dried blood spot specimen)` | Venöses, arterielles, kapilläres und gemischtvenöses Blut, Serum und Plasma sind für einen Laborparameter dasselbe Routinematerial; die Unterschiede bleiben `Observation.specimen` überlassen. Nabelschnurblut ist ein neonataler Wert mit eigenem Referenzbereich und bekommt einen eigenen Test. Fetales Blut und Trockenblut gehören zu Pränatal- und Screening-Programmen, nicht zur Routineversorgung. |
+| **Konzentration** (Property) | `<< Mass concentration OR << Substance concentration OR << Arbitrary concentration` | g/dL-, mmol/L- und U/mL-Codes derselben Messung sind ein Laborparameter; die Einheit ist eine UCUM-Umrechnung, keine Codegrenze. Verhältnisse, Anteile und Raten sind keine Konzentrationen und bleiben draußen. |
+
+Zwei Grenzen der Ontologie zeigen sich an diesen Bausteinen. Observables „in Fetus" tragen in der LOINC Ontology kein Direct site, keine Materialregel kann sie also selektieren oder ausschließen; sie sind schlicht unsichtbar. Und SNOMED CT modelliert Plasma als *azelluläres Blutmaterial* unter Blood specimen, was für die Chemie richtig ist, aber die Plasma-Thrombozytenzählungen der Transfusionsmedizin zulässt; die Thrombozytenregel zieht deshalb `<< Plasma specimen` vom Baustein ab, ein für das klinische Review markierter Punkt.
 
 ### Die drei Teile jedes ValueSets
 
@@ -42,9 +58,9 @@ Teil 1 und 2 sind die Aufzählung von Teil 3 zum genannten Release. Sie sind kei
 ### Expandieren und validieren
 
 * Auf einem Terminologieserver, der das Release der LOINC Ontology hält (etwa Snowstorm mit geladener LOINC-Extension oder der LOINC-Ontology-Browser), expandieren alle drei Teile, und die Expansion entspricht der Aufzählung.
-* Auf einem Server ohne LOINC Ontology, etwa dem HL7-Server des IG-Builds, lassen sich die SNOMED-CT-Includes nicht auflösen. Der QA-Report des Builds zeigt das als Warnung für jedes ECL-Include und als Fehler für jeden aufgezählten SNOMED-CT-Code ohne LOINC-Code (derzeit in fünf ValueSets: die *vollständigen* und *qualitativen* Mengen von Erythrozyten und Hämatokrit sowie die *qualitative* Menge der Leukozyten, je ein Konzept). Die LOINC-Aufzählung expandiert trotzdem, und die Validierung eines `Observation.code` mit LOINC-Code funktioniert wie gewohnt.
+* Auf einem Server ohne LOINC Ontology, etwa dem öffentlichen HL7-Server, lassen sich die SNOMED-CT-Includes nicht auflösen. Der QA-Report des Builds zeigt das als Warnung für jedes ECL-Include und als Fehler für jeden aufgezählten SNOMED-CT-Code ohne LOINC-Code. Die LOINC-Aufzählung expandiert trotzdem, und die Validierung eines `Observation.code` mit LOINC-Code funktioniert wie gewohnt.
 * Ein Validator, der `Observation.code` gegen ein abgeleitetes Profil prüft, braucht nur die LOINC-Aufzählung.
-* **Die CI des Moduls** validiert über einen Proxy gegen den MII-Terminologieserver. In den Läufen vom Oktober 2026 hat dieser Server jeden aufgezählten LOINC- und SNOMED-CT-Code zurückgewiesen, auch auf `master` (die 18 LOINC-Codes des ValueSets Laborbereich werden dort als ungültig gemeldet). Die Branch-Preview zeigt deshalb je aufgezähltem LOINC-Code dieses Vorschlags einen Fehler. Diese Zahlen messen die Terminologie-Konfiguration der CI, nicht die ValueSets; der Build mit dem öffentlichen HL7-Server meldet nur die oben genannten LOINC-Ontology-Fehler.
+* **Die CI des Moduls** validiert über einen Proxy gegen den MII-Terminologieserver (Ontoserver). Seit November 2026 hält dieser Server die LOINC Ontology {{RELEASE}}, und die ECL-Includes dieses Vorschlags expandieren dort. Drei Klassen von QA-Fehlern bleiben, keine davon ein inhaltlicher Fehler: (1) Der Server weist die Batch-Validierungsanfrage des Publishers zurück, deshalb wird jeder aufgezählte LOINC- und SNOMED-CT-Code einmal gemeldet, auch auf `master`; (2) die Observables der LOINC Ontology ohne LOINC-Code werden gegen die internationale Edition gemeldet; (3) der Publisher prüft jedes ECL-Include, indem er den Server ein Ein-Regel-ValueSet *validieren* lässt, und der Server wertet diese ECL in seiner Standard-Edition aus statt in der Edition, die das Include nennt; jede Regel, die ein Konzept des LOINC-Ontology-Moduls selbst nutzt (*Measurement property*, die Fokuskonzepte MCHC und MCV), wird deshalb als „unknown concept" gemeldet, obwohl dasselbe ValueSet korrekt *expandiert*. Die dritte Klasse ist auf dem öffentlichen Server des Herstellers reproduzierbar und gemeldet. Die Zahlen im QA-Report messen also die Terminologie-Konfiguration; der Build mit dem öffentlichen HL7-Server meldet nur die ersten beiden Klassen.
 
 ### Versionen und Neuerzeugung
 

@@ -1,0 +1,6 @@
+LOINC,SCTID,FSN,tier,test
+60678-0,600751010000103,Mass ratio of protein to creatinine in urine in 12 hours (observable entity),specialized,protein-creatinine-ratio-urine
+40486-3,537111010000100,Ratio of protein to creatinine in urine in 24 hours (observable entity),specialized,protein-creatinine-ratio-urine
+34366-5,531411010000103,Ratio of protein to creatinine in urine at point in time (observable entity),specialized,protein-creatinine-ratio-urine
+2890-2,521781010000104,Mass ratio of protein to creatinine in urine at point in time (observable entity),specialized,protein-creatinine-ratio-urine
+13801-6,493951010000108,Mass ratio of protein to creatinine in urine in 24 hours (observable entity),specialized,protein-creatinine-ratio-urine

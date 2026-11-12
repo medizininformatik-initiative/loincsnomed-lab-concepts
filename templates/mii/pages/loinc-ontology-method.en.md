@@ -20,14 +20,30 @@ The rule for the clinical test *Hemoglobin concentration in blood* reads:
 ```
 << 363787002 |Observable entity| :
     246093002 |Component|   = 38082009 |Hemoglobin (substance)|,
- << 704327008 |Direct site| = << 119297000 |Blood specimen|,
- << 370130000 |Property|    = << 118539007 |Mass concentration|,
+ << 704327008 |Direct site| = (<< 119297000 |Blood specimen|
+                               MINUS (<< 122556008 |Cord blood specimen|
+                                      OR << 737357006 |Fetal blood specimen|
+                                      OR << 440500007 |Dried blood spot specimen|)),
+ << 370130000 |Property|    = (<< 118539007 |Mass concentration|
+                               OR << 118556004 |Substance concentration|
+                               OR << 118569000 |Arbitrary concentration|),
  << 370132008 |Scale type|  = << 30766002 |Quantitative value|
 ```
 
-Read it as: any observable entity whose Component is exactly Hemoglobin, whose specimen is Blood or a subtype of Blood (venous, arterial, capillary), whose Property is Mass concentration or a subtype, and whose Scale is Quantitative. `<<` means "this concept and all its descendants", `<` "the descendants only"; without either the value must match exactly. The choice between the two is a clinical decision made visible: `<< 38082009` would additionally pull in HbA1c and the hemoglobin variants, which is wanted for a hemoglobin *pool* but not for the routine hemoglobin test.
+Read it as: any observable entity whose Component is exactly Hemoglobin, whose specimen is Blood or a subtype of Blood (venous, arterial, capillary, serum, plasma) but not cord blood, fetal blood or a dried blood spot, whose Property is one of the three concentration properties or a subtype, and whose Scale is Quantitative. `<<` means "this concept and all its descendants", `<` "the descendants only"; without either the value must match exactly. The choice between the two is a clinical decision made visible: `<< 38082009` would additionally pull in HbA1c and the hemoglobin variants, which is wanted for a hemoglobin *pool* but not for the routine hemoglobin test.
 
 {{EXAMPLE_ECL_ROWS}}
+
+### The shared building blocks
+
+The clinical review of the first version led to two building blocks that every routine blood test now shares, so that a decision is made once and applied everywhere:
+
+| Block | ECL | Decision it encodes |
+|---|---|---|
+| **Blood** (specimen) | `<< Blood specimen MINUS (<< Cord blood specimen OR << Fetal blood specimen OR << Dried blood spot specimen)` | Venous, arterial, capillary and mixed venous blood, serum and plasma are the same routine specimen for a clinical test; the differences are left to `Observation.specimen`. Cord blood is a neonatal value with its own reference range and gets its own test. Fetal blood and dried blood spots belong to prenatal and screening programmes, not to routine care. |
+| **Concentration** (property) | `<< Mass concentration OR << Substance concentration OR << Arbitrary concentration` | g/dL, mmol/L and U/mL codes of the same measurement are one clinical test; the unit is a UCUM conversion, not a code boundary. Ratios, fractions and rates are not concentrations and stay out. |
+
+Two limits of the ontology show up in these blocks. Observables "in Fetus" carry no Direct site in the LOINC Ontology, so no specimen rule can select or exclude them; they are simply invisible. And SNOMED CT models plasma as an *acellular blood specimen* under Blood specimen, which is right for chemistry but admits the plasma platelet counts of transfusion medicine; the platelet rule therefore subtracts `<< Plasma specimen` from the block, a point marked for clinical review.
 
 ### The three parts of every ValueSet
 
@@ -42,9 +58,9 @@ Parts 1 and 2 are the enumeration of part 3 at the stated release. They are not 
 ### Expanding and validating
 
 * On a terminology server that holds the LOINC Ontology release (for example Snowstorm with the LOINC extension loaded, or the LOINC Ontology browser), all three parts expand and the expansion equals the enumeration.
-* On a server without the LOINC Ontology, such as the HL7 server used by the IG build, the SNOMED CT includes cannot be resolved. The build's QA report shows this as a warning for every ECL include and as an error for every enumerated SNOMED CT code without a LOINC code (currently in five ValueSets: the erythrocyte and hematocrit *complete* and *qualitative* sets and the leukocyte *qualitative* set, one concept each). The LOINC enumeration still expands, and validation of an `Observation.code` carrying a LOINC code works as usual.
+* On a server without the LOINC Ontology, such as the public HL7 server, the SNOMED CT includes cannot be resolved. The build's QA report shows this as a warning for every ECL include and as an error for every enumerated SNOMED CT code without a LOINC code. The LOINC enumeration still expands, and validation of an `Observation.code` carrying a LOINC code works as usual.
 * A validator checking `Observation.code` against a derived profile only needs the LOINC enumeration.
-* **The module's own CI** validates against the MII terminology server through a proxy. In the October 2026 runs that server rejected every enumerated LOINC and SNOMED CT code, on `master` as well (the laboratory-area ValueSet's 18 LOINC codes are reported as invalid there). The branch preview therefore shows one error per enumerated LOINC code of this proposal. Those counts measure the CI terminology setup, not the ValueSets; the build with the public HL7 server reports only the LOINC Ontology errors named above.
+* **The module's own CI** validates against the MII terminology server (Ontoserver) through a proxy. Since November 2026 that server holds the LOINC Ontology {{RELEASE}}, and the ECL includes of this proposal expand there. Three classes of QA errors remain, none of them a content error: (1) the server rejects the publisher's batch validation request, so every enumerated LOINC and SNOMED CT code is reported once, on `master` as well; (2) the LOINC Ontology observables without a LOINC code are reported against the international edition; (3) the publisher checks each ECL include by asking the server to *validate* a one-rule ValueSet, and the server evaluates that ECL in its default edition instead of the edition the include names, so every rule that uses a concept of the LOINC Ontology module itself (*Measurement property*, the MCHC and MCV focus concepts) is reported as "unknown concept", although the same ValueSet *expands* correctly. The third class is reproducible on the vendor's public server and has been reported. The counts in the QA report therefore measure the terminology setup; the build with the public HL7 server reports only the first two classes.
 
 ### Versions and regeneration
 

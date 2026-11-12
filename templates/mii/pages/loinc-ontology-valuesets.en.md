@@ -11,7 +11,7 @@ The LOINC Ontology makes the rule itself the artifact. Each LOINC laboratory ter
 | Page | Content | For whom |
 |---|---|---|
 | [How the ValueSets are built](loinc-ontology-method.html) | The LOINC Ontology attribute model, the ECL rule anatomy, the three parts of every ValueSet, expansion and versioning | implementers, terminologists |
-| [ValueSets per clinical test](loinc-ontology-clinical-tests.html) | {{N_TESTS}} ValueSets, one per distinct clinical test, each with a derived Observation profile and the rule decomposed into attribute columns | implementers mapping a local catalogue, validators |
+| [ValueSets per clinical test](loinc-ontology-clinical-tests.html) | {{N_TESTS}} ValueSets, one per distinct clinical test (Laborparameter), each with a derived Observation profile and the rule decomposed into attribute columns | implementers mapping a local catalogue, validators |
 | [Use-case ValueSets per analyte](loinc-ontology-use-cases.html) | {{N_USECASE}} ValueSets over {{N_ANALYTES}} analytes, graded by what a data user may pool: everything, numeric, unit-convertible, qualitative, semiquantitative | researchers, data integration centres |
 
 A worked example instance, [Laboratory result: hemoglobin (LOINC Ontology profile)](Observation-mii-exa-labor-loinc-ontology-hemoglobin.html), shows a result conforming to one of the derived profiles.
@@ -19,12 +19,12 @@ A worked example instance, [Laboratory result: hemoglobin (LOINC Ontology profil
 ### At a glance
 
 * Release used: **LOINC Ontology {{RELEASE}}** (`{{VERSION_URI}}`); LOINC enumerations pinned to **LOINC {{LOINC_VERSION}}**, the LOINC release the LOINC Ontology is built on. The module's own LOINC pin is {{MODULE_LOINC_PIN}}.
-* Every ValueSet carries the LOINC enumeration, the LOINC Ontology observables that have no LOINC code yet, and the rule itself as an intensional SNOMED CT include.
+* Every ValueSet carries the LOINC enumeration, the LOINC Ontology observables that have no LOINC code yet, and the rule itself as an intensional SNOMED CT include. Where the release does not model a LOINC code that belongs to a test (an ontology gap), the code is added by hand, marked as such, and reported to the LOINC Ontology maintainers.
 * All artifacts are `draft` and `experimental`. Their canonical URLs follow the module pattern and would be stable if the module adopted them.
 * Generator, rule set and per-concept review tables: [{{REPO_NAME}}]({{REPO_URL}}).
 
 ### What a reviewer is asked to judge
 
 1. Is a computed, rule-based definition the right way for the module to state which LOINC codes belong to a test?
-2. Are the two layers, clinical test and use case, the right granularity for implementers and for data users?
+2. Are the two layers, clinical test (Laborparameter) and use case, the right granularity for implementers and for data users?
 3. Which of the pool definitions and tier choices on the following pages should the module decide differently? Each choice is visible as a rule and can be changed by editing that rule.

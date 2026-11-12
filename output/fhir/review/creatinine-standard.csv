@@ -1,0 +1,80 @@
+LOINC,SCTID,FSN,tier,test
+103616-9,481621010000109,Substance concentration of creatinine in serum or plasma at point in time by LC/MS/MS (observable entity),standard,creatinine-standard
+39966-7,278031010000102,Mass concentration of creatinine in serum or plasma at point in time 5.5H post XXX challenge (observable entity),standard,creatinine-standard
+2160-0,276361010000105,Mass concentration of creatinine in serum or plasma at point in time (observable entity),standard,creatinine-standard
+14682-9,274271010000103,Substance concentration of creatinine in serum or plasma at point in time (observable entity),standard,creatinine-standard
+21232-4,273291010000100,Mass concentration of creatinine in arterial blood at point in time (observable entity),standard,creatinine-standard
+72271-0,270651010000104,Mass concentration of creatinine in serum or plasma at point in time before contrast (observable entity),standard,creatinine-standard
+39969-1,264521010000106,Mass concentration of creatinine in serum or plasma at point in time 9H post XXX challenge (observable entity),standard,creatinine-standard
+39972-5,263141010000107,Mass concentration of creatinine in serum or plasma at point in time 16H post XXX challenge (observable entity),standard,creatinine-standard
+40124-0,262411010000109,Substance concentration of creatinine in serum or plasma at point in time 16H post XXX challenge (observable entity),standard,creatinine-standard
+39962-6,260621010000101,Mass concentration of creatinine in serum or plasma at point in time 3.75H post XXX challenge (observable entity),standard,creatinine-standard
+62425-4,252831010000106,Substance concentration of creatinine in serum or plasma at point in time post XXX challenge (observable entity),standard,creatinine-standard
+40272-7,252161010000108,Substance concentration of creatinine in serum or plasma at point in time 6H post XXX challenge (observable entity),standard,creatinine-standard
+39957-6,251021010000105,Mass concentration of creatinine in serum or plasma at point in time 1H pre XXX challenge (observable entity),standard,creatinine-standard
+40121-6,249961010000101,Substance concentration of creatinine in serum or plasma at point in time 9H post XXX challenge (observable entity),standard,creatinine-standard
+94008-0,248921010000100,Mass concentration of creatinine in serum or plasma at point in time 2H post dose vasopressin (observable entity),standard,creatinine-standard
+39956-8,245981010000107,Mass concentration of creatinine in serum or plasma at point in time 1.5H pre XXX challenge (observable entity),standard,creatinine-standard
+93999-1,243361010000102,Mass concentration of creatinine in serum or plasma at point in time 1H post dose vasopressin (observable entity),standard,creatinine-standard
+40250-3,232151010000107,Mass concentration of creatinine in serum or plasma at point in time 1H post XXX challenge (observable entity),standard,creatinine-standard
+40266-9,231841010000108,Substance concentration of creatinine in serum or plasma at point in time 1H post XXX challenge (observable entity),standard,creatinine-standard
+39959-2,230911010000107,Mass concentration of creatinine in serum or plasma at point in time 30M pre XXX challenge (observable entity),standard,creatinine-standard
+40112-5,230001010000108,Substance concentration of creatinine in serum or plasma at point in time pre XXX challenge (observable entity),standard,creatinine-standard
+40128-1,229951010000100,Substance concentration of creatinine in serum or plasma at point in time 7D post XXX challenge (observable entity),standard,creatinine-standard
+39965-9,227721010000100,Mass concentration of creatinine in serum or plasma at point in time 5.25H post XXX challenge (observable entity),standard,creatinine-standard
+39975-8,226141010000109,Mass concentration of creatinine in serum or plasma at point in time 4D post XXX challenge (observable entity),standard,creatinine-standard
+40113-3,221931010000106,Substance concentration of creatinine in serum or plasma at point in time 1.5H pre XXX challenge (observable entity),standard,creatinine-standard
+40123-2,221191010000107,Substance concentration of creatinine in serum or plasma at point in time 12H post XXX challenge (observable entity),standard,creatinine-standard
+39968-3,217751010000100,Mass concentration of creatinine in serum or plasma at point in time 8H post XXX challenge (observable entity),standard,creatinine-standard
+40116-6,209751010000106,Substance concentration of creatinine in serum or plasma at point in time 30M pre XXX challenge (observable entity),standard,creatinine-standard
+16188-5,209241010000103,Mass concentration of creatinine in serum or plasma at point in time 2H specimen (observable entity),standard,creatinine-standard
+39955-0,204051010000109,Mass concentration of creatinine in serum or plasma at point in time pre XXX challenge (observable entity),standard,creatinine-standard
+39973-3,197751010000102,Mass concentration of creatinine in serum or plasma at point in time 18H post XXX challenge (observable entity),standard,creatinine-standard
+40268-5,196631010000102,Substance concentration of creatinine in serum or plasma at point in time 2H post XXX challenge (observable entity),standard,creatinine-standard
+40253-7,193331010000103,Mass concentration of creatinine in serum or plasma at point in time 2.25H post XXX challenge (observable entity),standard,creatinine-standard
+40115-8,178561010000104,Substance concentration of creatinine in serum or plasma at point in time 45M pre XXX challenge (observable entity),standard,creatinine-standard
+40114-1,177921010000100,Substance concentration of creatinine in serum or plasma at point in time 1H pre XXX challenge (observable entity),standard,creatinine-standard
+40251-1,167981010000107,Mass concentration of creatinine in serum or plasma at point in time 1.5H post XXX challenge (observable entity),standard,creatinine-standard
+11042-9,166501010000109,Mass concentration of creatinine in serum or plasma at point in time pre-dialysis (observable entity),standard,creatinine-standard
+40265-1,164831010000105,Substance concentration of creatinine in serum or plasma at point in time 30M post XXX challenge (observable entity),standard,creatinine-standard
+11041-1,157811010000103,Mass concentration of creatinine in serum or plasma at point in time post-dialysis (observable entity),standard,creatinine-standard
+40273-5,157251010000101,Substance concentration of creatinine in serum or plasma at point in time 1D post XXX challenge (observable entity),standard,creatinine-standard
+40126-5,155561010000109,Substance concentration of creatinine in serum or plasma at point in time 2D post XXX challenge (observable entity),standard,creatinine-standard
+39976-6,154601010000105,Mass concentration of creatinine in serum or plasma at point in time 7D post XXX challenge (observable entity),standard,creatinine-standard
+59826-8,144751010000103,Substance concentration of creatinine in blood at point in time (observable entity),standard,creatinine-standard
+39958-4,142421010000106,Mass concentration of creatinine in serum or plasma at point in time 45M pre XXX challenge (observable entity),standard,creatinine-standard
+77140-2,136111010000105,Substance concentration of creatinine in plasma or serum or whole blood at point in time (observable entity),standard,creatinine-standard
+51619-5,135241010000109,Substance concentration of creatinine in serum or plasma at point in time pre-dialysis (observable entity),standard,creatinine-standard
+40264-4,131041010000104,Substance concentration of creatinine in serum or plasma at point in time baseline (observable entity),standard,creatinine-standard
+39970-9,118471010000102,Mass concentration of creatinine in serum or plasma at point in time 10H post XXX challenge (observable entity),standard,creatinine-standard
+40119-0,118371010000108,Substance concentration of creatinine in serum or plasma at point in time 4H post XXX challenge (observable entity),standard,creatinine-standard
+40248-7,114271010000106,Mass concentration of creatinine in serum or plasma at point in time baseline (observable entity),standard,creatinine-standard
+40249-5,113521010000105,Mass concentration of creatinine in serum or plasma at point in time 30M post XXX challenge (observable entity),standard,creatinine-standard
+39967-5,106871010000103,Mass concentration of creatinine in serum or plasma at point in time 6.5H post XXX challenge (observable entity),standard,creatinine-standard
+40120-8,105321010000103,Substance concentration of creatinine in serum or plasma at point in time 8H post XXX challenge (observable entity),standard,creatinine-standard
+40271-9,101051010000105,Substance concentration of creatinine in serum or plasma at point in time 5H post XXX challenge (observable entity),standard,creatinine-standard
+16189-3,98201010000103,Mass concentration of creatinine in serum or plasma at point in time four hours specimen (observable entity),standard,creatinine-standard
+40255-2,96221010000105,Mass concentration of creatinine in serum or plasma at point in time 3H post XXX challenge (observable entity),standard,creatinine-standard
+40122-4,95831010000103,Substance concentration of creatinine in serum or plasma at point in time 10H post XXX challenge (observable entity),standard,creatinine-standard
+40127-3,94971010000105,Substance concentration of creatinine in serum or plasma at point in time 4D post XXX challenge (observable entity),standard,creatinine-standard
+40125-7,94101010000103,Substance concentration of creatinine in serum or plasma at point in time 18H post XXX challenge (observable entity),standard,creatinine-standard
+39974-1,93381010000105,Mass concentration of creatinine in serum or plasma at point in time 2D post XXX challenge (observable entity),standard,creatinine-standard
+44784-7,85141010000101,Mass concentration of creatinine in serum or plasma at stdy^max (observable entity),standard,creatinine-standard
+38483-4,83711010000100,Mass concentration of creatinine in blood at point in time (observable entity),standard,creatinine-standard
+40252-9,82981010000100,Mass concentration of creatinine in serum or plasma at point in time 2H post XXX challenge (observable entity),standard,creatinine-standard
+51620-3,82621010000107,Substance concentration of creatinine in serum or plasma at point in time post-dialysis (observable entity),standard,creatinine-standard
+40117-4,80701010000108,Substance concentration of creatinine in serum or plasma at point in time 45M post XXX challenge (observable entity),standard,creatinine-standard
+40270-1,72431010000102,Substance concentration of creatinine in serum or plasma at point in time 3H post XXX challenge (observable entity),standard,creatinine-standard
+40269-3,72341010000104,Substance concentration of creatinine in serum or plasma at point in time 2.5H post XXX challenge (observable entity),standard,creatinine-standard
+39963-4,71911010000108,Mass concentration of creatinine in serum or plasma at point in time 4H post XXX challenge (observable entity),standard,creatinine-standard
+39971-7,69841010000106,Mass concentration of creatinine in serum or plasma at point in time 12H post XXX challenge (observable entity),standard,creatinine-standard
+40254-5,65871010000103,Mass concentration of creatinine in serum or plasma at point in time 2.5H post XXX challenge (observable entity),standard,creatinine-standard
+101475-2,62781010000104,Substance concentration of creatinine in venous blood at point in time (observable entity),standard,creatinine-standard
+40258-6,61381010000107,Mass concentration of creatinine in serum or plasma at point in time 1D post XXX challenge (observable entity),standard,creatinine-standard
+40267-7,54191010000103,Substance concentration of creatinine in serum or plasma at point in time 1.5H post XXX challenge (observable entity),standard,creatinine-standard
+39960-0,52021010000109,Mass concentration of creatinine in serum or plasma at point in time 45M post XXX challenge (observable entity),standard,creatinine-standard
+40257-8,50591010000103,Mass concentration of creatinine in serum or plasma at point in time 6H post XXX challenge (observable entity),standard,creatinine-standard
+40256-0,50231010000100,Mass concentration of creatinine in serum or plasma at point in time 5H post XXX challenge (observable entity),standard,creatinine-standard
+40118-2,49941010000109,Substance concentration of creatinine in serum or plasma at point in time 3.5H post XXX challenge (observable entity),standard,creatinine-standard
+39964-2,44021010000104,Mass concentration of creatinine in serum or plasma at point in time 4.5H post XXX challenge (observable entity),standard,creatinine-standard
+39961-8,41461010000104,Mass concentration of creatinine in serum or plasma at point in time 3.5H post XXX challenge (observable entity),standard,creatinine-standard

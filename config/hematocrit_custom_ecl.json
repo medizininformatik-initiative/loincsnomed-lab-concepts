@@ -1,5 +1,12 @@
 {
   "description": "Custom ECL queries for Hematocrit (LOINC 20570-8)",
+  "component_ecl": "<< 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|",
+  "component_ecl_doc": "The pool is not the bare Component: hematocrit is Erythrocyte with the property volume fraction",
+  "_loinc_survey_doc": "LOINC-side recall survey (Loinc.csv of the pinned LOINC release): regexes on COMPONENT / PROPERTY / SYSTEM that select the LOINC terms a laboratory physician would count as this analyte (CLASSTYPE 1, not DEPRECATED). The generator reports how many of them the LOINC Ontology pool reaches.",
+  "loinc_survey": {
+    "component": "^Erythrocyte/(Blood|Specimen Volume)$",
+    "property": "^VFr"
+  },
   "queries": [
     {
       "id": "refined_query_v2",

@@ -21,24 +21,8 @@
             "display": "Number concentration of platelet in blood at point in time by manual count (observable entity)"
           },
           {
-            "code": "55802-3",
-            "display": "Number concentration of platelet in cord blood at point in time by estimate (observable entity)"
-          },
-          {
             "code": "777-3",
             "display": "Number concentration of platelet in blood at point in time by automated count (observable entity)"
-          },
-          {
-            "code": "47284-5",
-            "display": "Number concentration of platelet in cord blood at point in time (observable entity)"
-          },
-          {
-            "code": "74775-8",
-            "display": "Number concentration of platelet in platelet rich plasma at point in time by automated count (observable entity)"
-          },
-          {
-            "code": "26516-5",
-            "display": "Number concentration of platelet in plasma at point in time (observable entity)"
           },
           {
             "code": "74464-9",
@@ -53,10 +37,6 @@
             "display": "Number concentration of platelet in blood at point in time by estimate (observable entity)"
           },
           {
-            "code": "13056-7",
-            "display": "Number concentration of platelet in plasma at point in time by automated count (observable entity)"
-          },
-          {
             "code": "97995-5",
             "display": "Number concentration of platelet in blood at point in time by automated count.optical (observable entity)"
           }
@@ -69,11 +49,12 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell structure)|, << 704327008 |Direct site (attribute)| = ((<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)) MINUS << 119361006 |Plasma specimen (specimen)|), << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell structure)|, << 704327008 |Direct site (attribute)| = ((<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)) MINUS << 119361006 |Plasma specimen (specimen)|), << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
 }

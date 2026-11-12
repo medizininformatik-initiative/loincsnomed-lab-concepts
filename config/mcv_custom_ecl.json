@@ -1,6 +1,11 @@
 {
   "description": "Custom ECL queries for MCV - Mean Corpuscular Volume (LOINC 787-2 automated, 30428-7 generic)",
   "note": "SPECIAL CASE: MCV uses 'Inheres in' relationship (704319004), NOT Component attribute. Post-coordinated queries (Exp 1-5) will fail. Use Pre-coordinated Descendants (Exp 0) approach only.",
+  "_loinc_survey_doc": "LOINC-side recall survey (Loinc.csv of the pinned LOINC release): regexes on COMPONENT / PROPERTY / SYSTEM that select the LOINC terms a laboratory physician would count as this analyte (CLASSTYPE 1, not DEPRECATED). The generator reports how many of them the LOINC Ontology pool reaches.",
+  "loinc_survey": {
+    "property": "^EntMeanVol$",
+    "system": "^RBC$"
+  },
   "queries": [
     {
       "id": "refined_query_v2",

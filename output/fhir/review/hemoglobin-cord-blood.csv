@@ -1,0 +1,7 @@
+LOINC,SCTID,FSN,tier,test
+103750-6,481881010000107,Substance concentration of hemoglobin in venous cord blood at point in time (observable entity),specialized,hemoglobin-cord-blood
+30353-7,259921010000108,Mass concentration of hemoglobin in venous cord blood at point in time (observable entity),specialized,hemoglobin-cord-blood
+33026-6,252711010000109,Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity),specialized,hemoglobin-cord-blood
+30354-5,240741010000109,Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity),specialized,hemoglobin-cord-blood
+40719-7,185861010000101,Mass concentration of hemoglobin in cord blood at point in time (observable entity),specialized,hemoglobin-cord-blood
+33025-8,108491010000103,Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity),specialized,hemoglobin-cord-blood

@@ -19,6 +19,10 @@
           {
             "code": "28540-3",
             "display": "Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)"
+          },
+          {
+            "code": "59467-1",
+            "display": "MCHC [Entitic Moles/volume] in Red Blood Cells"
           }
         ]
       },
@@ -29,11 +33,19 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": [
+    {
+      "code": "59467-1",
+      "display": "MCHC [Entitic Moles/volume] in Red Blood Cells",
+      "reason_en": "LOINC 59467-1 (MCHC as entitic substance concentration, mmol/L; active since LOINC 2.32) has no observable in the LOINC Ontology 2026-10-21, although every other active MCH/MCHC/MCV term has one. It is added by hand so that SI-unit reporting is covered; a change request has been filed with the LOINC Ontology maintainers.",
+      "reason_de": "LOINC 59467-1 (MCHC als Entitic substance concentration, mmol/L; aktiv seit LOINC 2.32) hat in der LOINC Ontology 2026-10-21 kein Observable, obwohl jeder andere aktive MCH/MCHC/MCV-Term eines hat. Er ist von Hand ergänzt, damit die Berichterstattung in SI-Einheiten abgedeckt ist; ein Change Request an die LOINC-Ontology-Pflege ist gestellt."
+    }
+  ]
 }

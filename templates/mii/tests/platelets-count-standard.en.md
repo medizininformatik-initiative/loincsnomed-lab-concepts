@@ -1,4 +1,4 @@
-* **Plasma and platelet-rich plasma are in.** 26516-5, 13056-7 (plasma) and 74775-8 (platelet-rich plasma) are included because plasma is a subtype of blood specimen in SNOMED CT. They are transfusion-medicine measurements, not the routine count; the proposal is to exclude them (`Direct site != << Plasma specimen`).
-* **Cord blood** (47284-5, 55802-3) is in.
+* **Plasma and platelet-rich plasma are out, and this is the point to review.** 13056-7 and 26516-5 (plasma) and 74775-8 (platelet-rich plasma) are transfusion-medicine measurements of a preparation, not the patient's platelet count. SNOMED CT models plasma as an acellular blood specimen, which the blood block admits for serum/plasma chemistry; this rule therefore adds `MINUS << Plasma specimen` to the block. Whether that exclusion is wanted, or whether the three codes should stay in a 10-code set, is to be decided with the clinical reviewers.
+* **Cord blood** (47284-5, 55802-3) is out via the blood block.
 * **The EDTA-clumping control** (107193-5) and the optical count (97995-5) are method variants of the routine count and stay in.
 * **Fetal blood** (62244-9) has no Direct site in this release.

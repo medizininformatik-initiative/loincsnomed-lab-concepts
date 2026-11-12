@@ -13,6 +13,10 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "105300-8",
+            "display": "Substance concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
+          },
+          {
             "code": "105274-5",
             "display": "Mass concentration of hemoglobin in venous blood at point in time by calculation (observable entity)"
           },
@@ -21,16 +25,12 @@
             "display": "Mass concentration of hemoglobin in mixed venous blood at point in time by calculation (observable entity)"
           },
           {
-            "code": "30353-7",
-            "display": "Mass concentration of hemoglobin in venous cord blood at point in time (observable entity)"
+            "code": "75928-2",
+            "display": "Substance concentration of hemoglobin in arterial blood at point in time (observable entity)"
           },
           {
-            "code": "33026-6",
-            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time by calculation (observable entity)"
-          },
-          {
-            "code": "30354-5",
-            "display": "Mass concentration of hemoglobin in arterial cord blood at point in time (observable entity)"
+            "code": "59260-0",
+            "display": "Substance concentration of hemoglobin in blood at point in time (observable entity)"
           },
           {
             "code": "14775-1",
@@ -45,10 +45,6 @@
             "display": "Mass concentration of hemoglobin in venous blood at point in time (observable entity)"
           },
           {
-            "code": "40719-7",
-            "display": "Mass concentration of hemoglobin in cord blood at point in time (observable entity)"
-          },
-          {
             "code": "718-7",
             "display": "Mass concentration of hemoglobin in blood at point in time (observable entity)"
           },
@@ -61,16 +57,16 @@
             "display": "Mass concentration of hemoglobin in mixed venous blood at point in time (observable entity)"
           },
           {
+            "code": "93846-4",
+            "display": "Substance concentration of hemoglobin in venous blood at point in time (observable entity)"
+          },
+          {
             "code": "30352-9",
             "display": "Mass concentration of hemoglobin in capillary blood at point in time (observable entity)"
           },
           {
             "code": "97556-5",
             "display": "Mass concentration of hemoglobin in capillary blood at point in time by oximetry (observable entity)"
-          },
-          {
-            "code": "33025-8",
-            "display": "Mass concentration of hemoglobin in venous cord blood at point in time by calculation (observable entity)"
           },
           {
             "code": "30313-1",
@@ -97,11 +93,12 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
           }
         ]
       }
     ]
   },
-  "_ecl": "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+  "_ecl": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|",
+  "_extra_loinc": []
 }

@@ -1,0 +1,7 @@
+LOINC,SCTID,FSN,use_case,reason
+20454-5,257051010000105,Threshold presence of protein in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+2887-8,147921010000104,Threshold presence of protein in urine at point in time (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+32209-9,245761010000102,Threshold presence of protein in urine in 24 hours by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+53525-2,194241010000104,Threshold presence of protein in urine at point in time by SSA (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+57735-3,75131010000100,Threshold presence of protein in urine at point in time by automated test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative
+98121-7,245441010000108,Threshold presence of Protein/Creatinine in urine at point in time by test strip (observable entity),qualitative,Ordinal/Nominal scale → qualitative

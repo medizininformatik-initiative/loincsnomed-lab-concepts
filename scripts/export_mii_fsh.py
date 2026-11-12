@@ -109,11 +109,13 @@ def fsh_title(prefix, slug):
 
 
 def split_includes(vs):
-    """-> (loinc concepts, snomed-only concepts, ecl or None, snomed version)."""
+    """-> (loinc concepts the rule selected, snomed-only concepts, ecl or None, snomed version).
+    Hand-added ontology-gap codes (`_extra_loinc`) are left out of the first list; render them separately."""
     loinc, sct, ecl, ver = [], [], None, None
+    extra = {e["code"] for e in vs.get("_extra_loinc", [])}
     for inc in vs["compose"]["include"]:
         if inc["system"] == LOINC_SYSTEM:
-            loinc.extend(inc.get("concept", []))
+            loinc.extend(c for c in inc.get("concept", []) if c["code"] not in extra)
         elif inc["system"] == SCT_SYSTEM:
             ver = inc.get("version", ver)
             if "filter" in inc:
@@ -143,6 +145,31 @@ def loinc_codes_first_released(loinc_csv, codes, version):
     return sorted(hits)
 
 
+def load_loinc_lab_terms(loinc_csv):
+    """Laboratory terms (CLASSTYPE 1, not DEPRECATED) of Loinc.csv, the columns the survey needs."""
+    import csv
+    csv.field_size_limit(10 ** 8)
+    out = []
+    with loinc_csv.open(encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            if row["CLASSTYPE"] == "1" and row["STATUS"] != "DEPRECATED":
+                out.append({"code": row["LOINC_NUM"], "component": row["COMPONENT"], "property": row["PROPERTY"],
+                            "system": row["SYSTEM"], "name": row["LONG_COMMON_NAME"], "status": row["STATUS"]})
+    return out
+
+
+def loinc_survey(terms, spec, pool_codes, test_codes):
+    """Recall of the LOINC Ontology pool against LOINC's own terms of the analyte.
+    spec = {component, property, system}: regexes on the LOINC parts (keys optional)."""
+    def hit(r):
+        return all(re.search(spec[k], r[k]) for k in ("component", "property", "system") if spec.get(k))
+    matched = [r for r in terms if hit(r)]
+    outside = sorted((r for r in matched if r["code"] not in pool_codes), key=lambda r: r["name"])
+    pattern = "; ".join("{} ~ {}".format(k.capitalize(), spec[k]) for k in ("component", "property", "system") if spec.get(k))
+    return {"pattern": pattern, "n_total": len(matched), "n_pool": len(matched) - len(outside),
+            "outside": outside, "n_tests": sum(1 for r in matched if r["code"] in test_codes)}
+
+
 def ecl_short(ecl):
     """Strip the FSN labels for compact table cells."""
     return re.sub(r"\s*\|[^|]*\|", "", ecl)
@@ -155,7 +182,7 @@ def release_label(version_uri):
 
 # ── FSH renderers ────────────────────────────────────────────────────────────
 
-def render_valueset(name, vid, title, description, purpose, loinc, sct, ecl, date, comments):
+def render_valueset(name, vid, title, description, purpose, loinc, sct, ecl, date, comments, extra=()):
     out = ["ValueSet: {}".format(name), "Id: {}".format(vid), "Title: {}".format(fsh_str(title)),
            "Description: {}".format(fsh_str(description))]
     out.append(VS_RULESETS.replace("{date}", date).rstrip("\n"))
@@ -165,6 +192,11 @@ def render_valueset(name, vid, title, description, purpose, loinc, sct, ecl, dat
             comments, len(loinc), LOINC_VERSION))
         for c in loinc:
             out.append("* {}#{}".format(LOINC_ALIAS, c["code"]))
+    if extra:
+        out.append("// Ontology gap: LOINC codes the LOINC Ontology release does not model, so no rule can reach them.")
+        out.append("// Added by hand and documented on the analyte review page; to be removed once the release models them.")
+        for e in extra:
+            out.append("* {}#{} // {}".format(LOINC_ALIAS, e["code"], e["display"]))
     if sct:
         out.append("// Observables of the LOINC Ontology module without a LOINC code ({})".format(len(sct)))
         for c in sct:
@@ -209,18 +241,23 @@ PAGES = ["loinc-ontology-valuesets", "loinc-ontology-method", "loinc-ontology-cl
 ATTR_NAMES = {"246093002": "Component", "704327008": "Direct site", "370130000": "Property",
               "370132008": "Scale type", "246501002": "Technique", "370134009": "Time aspect",
               "704319004": "Inheres in", "704321002": "Characterizes", "704320005": "Towards",
-              "718497002": "Inherent location", "704326004": "Precondition"}
-ATTR_ORDER = ["Component", "Inheres in", "Direct site", "Property", "Scale type", "Technique", "Time aspect"]
+              "718497002": "Inherent location", "704326004": "Precondition",
+              "704324001": "Process output", "704325000": "Relative to", "704323007": "Process duration"}
+ATTR_ORDER = ["Component", "Inheres in", "Process output", "Relative to", "Direct site", "Property", "Scale type",
+              "Technique", "Time aspect"]
 
 
 def _term(label):
-    """'<< 38082009 |Hemoglobin (substance)|' -> '<< Hemoglobin'; handles '<', '<<', OR-groups."""
+    """'<< 38082009 |Hemoglobin (substance)|' -> '<< Hemoglobin'; handles '<', '<<', OR-groups and
+    'A MINUS (B OR C)' groups (the blood block)."""
     label = label.strip()
-    if label.startswith("(") and label.endswith(")"):
-        inner = label[1:-1]
-        if " OR " in inner:
-            return " or ".join(_term(x) for x in inner.split(" OR "))
-        label = inner.strip()
+    while label.startswith("(") and label.endswith(")") and _balanced(label[1:-1]):
+        label = label[1:-1].strip()
+    left, right = split_top_minus(label)
+    if right is not None:
+        return "{} minus ({})".format(_term(left), _term(right))
+    if " OR " in label:
+        return " or ".join(_term(x) for x in _split_top(label, " OR ") if x.strip())
     prefix = "<< " if label.startswith("<<") else ("< " if label.startswith("<") else "")
     m = re.search(r"\|([^|]*)\|", label)
     name = m.group(1).strip() if m else label.lstrip("<").strip()
@@ -233,29 +270,59 @@ def _term(label):
 
 
 def _split_top(text, sep=","):
-    """Split on `sep` outside |labels| and outside parentheses."""
-    parts, buf, inside, depth = [], "", False, 0
+    """Split on `sep` (one or more characters) outside |labels| and outside parentheses."""
+    parts, buf, inside, depth, i = [], "", False, 0, 0
+    while i < len(text):
+        ch = text[i]
+        if ch == "|":
+            inside = not inside
+        elif not inside:
+            depth += {"(": 1, ")": -1}.get(ch, 0)
+        if not inside and depth == 0 and text.startswith(sep, i):
+            parts.append(buf); buf = ""
+            i += len(sep)
+            continue
+        buf += ch
+        i += 1
+    parts.append(buf)
+    return parts
+
+
+def _balanced(text):
+    inside, depth = False, 0
     for ch in text:
         if ch == "|":
             inside = not inside
         elif not inside:
             depth += {"(": 1, ")": -1}.get(ch, 0)
-        if ch == sep and not inside and depth == 0:
-            parts.append(buf); buf = ""
-        else:
-            buf += ch
-    parts.append(buf)
-    return parts
+            if depth < 0:
+                return False
+    return depth == 0
+
+
+def split_top_minus(ecl):
+    """-> (left, right) at a top-level ' MINUS ' (outside |labels| and parentheses), else (ecl, None)."""
+    inside, depth, i = False, 0, 0
+    while i < len(ecl):
+        ch = ecl[i]
+        if ch == "|":
+            inside = not inside
+        elif not inside:
+            depth += {"(": 1, ")": -1}.get(ch, 0)
+            if depth == 0 and ecl.startswith(" MINUS ", i):
+                return ecl[:i], ecl[i + len(" MINUS "):]
+        i += 1
+    return ecl, None
 
 
 def parse_ecl(ecl):
     """-> (focus, [(attribute name, value text)]) for the ECL shapes used in this project:
     'focus : attr = value, ...', focus-only, and 'A MINUS (A, attr = *)' (attribute absent)."""
     ecl = ecl.strip()
-    minus = None
-    if " MINUS " in ecl:
-        ecl, minus = ecl.split(" MINUS ", 1)
-        ecl = ecl.strip().strip("()").strip()
+    ecl, minus = split_top_minus(ecl)
+    ecl = ecl.strip()
+    if minus is not None and ecl.startswith("(") and ecl.endswith(")"):
+        ecl = ecl[1:-1].strip()
     if ":" not in ecl:
         focus, rows = _term(ecl), []
     else:
@@ -273,8 +340,8 @@ def parse_ecl(ecl):
         m = re.search(r"(\d{6,}) \|[^|]*\| = \*", minus)
         if m:
             rows.append((ATTR_NAMES.get(m.group(1), m.group(1)), "(none)"))
-    if "Component" not in dict(rows):
-        rows.insert(0, ("Component", focus + " [observable]"))
+    if "Component" not in dict(rows) and not focus.endswith("Observable entity"):
+        rows.insert(0, ("Component", focus + " [observable]"))  # rule selects a focus concept, not a Component
     return focus, rows
 
 
@@ -288,7 +355,7 @@ def md_cell(s):
     """Table cell text. ECL operators go into a code span: the IG Publisher's markdown
     renderer turns a bare '<<' into a guillemet."""
     s = s.replace("|", "\\|")
-    return "`{}`".format(s) if s.startswith("<") or s.startswith("not <") or " or <" in s or "; <" in s else s
+    return "`{}`".format(s) if "<" in s else s
 
 
 def tests_table(test_rows, lang):
@@ -312,6 +379,16 @@ def tests_table(test_rows, lang):
     return "\n".join(L)
 
 
+def pool_label(ecl):
+    """Compact pool description: the Component, plus any further refinement the pool carries
+    ('Erythrocyte; << Volume fraction'); a pool without Component names its attribute."""
+    focus, rows = parse_ecl(ecl)
+    real = [(a, v) for a, v in rows if not v.endswith(" [observable]")]
+    if not real:
+        return focus
+    return "; ".join(v if a == "Component" else "{} {}".format(a, v) for a, v in real)
+
+
 def usecase_table(analytes, buckets, agg_index, lang):
     names = {"en": {"complete": "Complete", "quantitative": "Quantitative", "quantitative_convertible": "Convertible",
                     "qualitative": "Qualitative", "semiquantitative": "Semi-quantitative"},
@@ -322,8 +399,7 @@ def usecase_table(analytes, buckets, agg_index, lang):
            " | ".join(names[b["id"]] for b in cols) + " |"
     L = [head, "|---|---|" + "|".join("--:" for _ in cols) + "|"]
     for a in analytes:
-        focus, rows = parse_ecl(a["ecl"])
-        pool = dict(rows).get("Component") or focus
+        pool = pool_label(a["ecl"])
         cells = []
         for b in cols:
             e = agg_index.get((a["analyte"], b["id"]))
@@ -350,10 +426,30 @@ def example_ecl_rows(tests, lang):
     return "\n".join(L)
 
 
-def render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index):
+def recall_table(analytes, survey, lang):
+    """Per analyte: LOINC terms matching the analyte's LOINC pattern, how many the pool reaches, how many the
+    per-test ValueSets enumerate."""
+    if not survey:
+        return ("*(LOINC recall table: run the generator with `--loinc-csv` to produce it.)*" if lang == "en" else
+                "*(LOINC-Recall-Tabelle: den Generator mit `--loinc-csv` ausführen, um sie zu erzeugen.)*")
+    head = ("| Analyte | LOINC pattern | LOINC terms | in the pool | not in the pool | in per-test ValueSets |" if lang == "en" else
+            "| Analyt | LOINC-Muster | LOINC-Terme | im Pool | nicht im Pool | in ValueSets je Laborparameter |")
+    L = [head, "|---|---|--:|--:|--:|--:|"]
+    for a in analytes:
+        s = survey.get(a["analyte"])
+        if not s:
+            continue
+        L.append("| [{}]({}.html) | `{}` | {} | {} | {} | {} |".format(
+            a["analyte"].replace("_", " "), analyte_page_id(a["analyte"]), s["pattern"], s["n_total"],
+            s["n_pool"], len(s["outside"]), s["n_tests"]))
+    return "\n".join(L)
+
+
+def render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index, survey=None):
     subst = dict(ctx)
     subst["TESTS_TABLE"] = tests_table(test_rows, lang)
     subst["USECASE_TABLE"] = usecase_table(analytes, buckets, agg_index, lang)
+    subst["RECALL_TABLE"] = recall_table(analytes, survey or {}, lang)
     subst["EXAMPLE_ECL_ROWS"] = example_ecl_rows(tests, lang)
     out = {}
     for page in PAGES:
@@ -372,7 +468,11 @@ def render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index):
 POOL_ATTRS = ROOT / "output" / "fhir" / "aggregation" / "pool_attributes.json"
 SHOW_ATTRS = ["Direct site", "Property", "Scale type", "Technique"]
 L10N = {
-    "en": {"name": "Name", "fails": "Fails", "included": "Included", "excluded": "Excluded from the pool",
+    "en": {"name": "LOINC name", "fails": "Fails", "included": "Included", "excluded": "Excluded from the pool",
+           "gap": "Ontology gap: added by hand", "gap_note": "Codes the rule cannot reach because the LOINC Ontology {release} does not model them. They are part of the ValueSet's LOINC enumeration and are listed here, not in the pool tables.",
+           "survey": "LOINC terms of the analyte outside the pool", "survey_cols": "| LOINC | LOINC name | Property | System |",
+           "survey_note": "Recall check against LOINC {lv} itself: {n_total} laboratory terms match the analyte's LOINC pattern ({pattern}); {n_pool} of them are in the pool, {n_out} are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.",
+           "survey_none": "Recall check against LOINC {lv} itself: all {n_total} laboratory terms that match the analyte's LOINC pattern ({pattern}) are in the pool.",
            "discussion": "Discussion", "pool": "The pool and its use-case buckets", "bucket": "Bucket",
            "reason": "Reason", "rule": "Rule", "attribute": "Attribute", "value": "Value",
            "specimens": "Specimens among the included codes", "techniques": "Techniques among the included codes",
@@ -381,8 +481,8 @@ L10N = {
            "because_neg": "Excluded because the concept has a {} ({})",
            "intro": ("This page is the review material for the analyte **{analyte}** of the "
                      "[LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology "
-                     "{release} defines it, and for every clinical test of the analyte which pool concepts the rule "
-                     "selects, which it leaves out and on which attribute. The method is explained under "
+                     "{release} defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts "
+                     "the rule selects, which it leaves out and on which attribute. The method is explained under "
                      "[How the ValueSets are built](loinc-ontology-method.html)."),
            "pool_intro": "Candidate pool: `{ecl}` ({n} concepts, {n_loinc} with a LOINC code). Use-case ValueSets: {links}.",
            "test_intro": "ValueSet [{vs}](ValueSet-{vs}.html), profile [{pr}](StructureDefinition-{pr}.html). The rule selects {n_inc} of the {n_pool} pool concepts.",
@@ -390,7 +490,11 @@ L10N = {
            "pool_note": "One row per pool concept with the attributes the classification uses; the bucket is the use-case ValueSet the concept lands in.",
            "and": " and ", "comma": ", ",
            "unmodelled": "{} of these have no {} attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: {}."},
-    "de": {"name": "Name", "fails": "Scheitert an", "included": "Enthalten", "excluded": "Aus dem Pool ausgeschlossen",
+    "de": {"name": "LOINC-Name", "fails": "Scheitert an", "included": "Enthalten", "excluded": "Aus dem Pool ausgeschlossen",
+           "gap": "Ontologie-Lücke: von Hand ergänzt", "gap_note": "Codes, die die Regel nicht erreichen kann, weil die LOINC Ontology {release} sie nicht modelliert. Sie gehören zur LOINC-Aufzählung des ValueSets und stehen hier, nicht in den Pool-Tabellen.",
+           "survey": "LOINC-Terme des Analyten außerhalb des Pools", "survey_cols": "| LOINC | LOINC-Name | Property | System |",
+           "survey_note": "Recall-Prüfung gegen LOINC {lv} selbst: {n_total} Laborterme passen auf das LOINC-Muster des Analyten ({pattern}); {n_pool} davon liegen im Pool, {n_out} nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.",
+           "survey_none": "Recall-Prüfung gegen LOINC {lv} selbst: alle {n_total} Laborterme, die auf das LOINC-Muster des Analyten passen ({pattern}), liegen im Pool.",
            "discussion": "Diskussion", "pool": "Der Pool und seine Use-Case-Gruppen", "bucket": "Gruppe",
            "reason": "Begründung", "rule": "Regel", "attribute": "Attribut", "value": "Wert",
            "specimens": "Materialien unter den enthaltenen Codes", "techniques": "Techniken unter den enthaltenen Codes",
@@ -399,7 +503,7 @@ L10N = {
            "because_neg": "Ausgeschlossen, weil das Konzept eine {} hat ({})",
            "intro": ("Diese Seite ist das Review-Material für den Analyten **{analyte}** des "
                      "[LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC "
-                     "Ontology {release} definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die "
+                     "Ontology {release} definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die "
                      "Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter "
                      "[Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt."),
            "pool_intro": "Kandidatenpool: `{ecl}` ({n} Konzepte, {n_loinc} mit LOINC-Code). Use-Case-ValueSets: {links}.",
@@ -445,7 +549,7 @@ def analyte_page_id(analyte):
     return "loinc-ontology-analyte-" + analyte.replace("_", "-")
 
 
-def render_analyte_page(lang, analyte, data, tests, test_rows_by_id, agg_index, buckets, ctx):
+def render_analyte_page(lang, analyte, data, tests, test_rows_by_id, agg_index, buckets, ctx, survey=None):
     t = L10N[lang]
     pool = data["concepts"]
     for cid, c in pool.items():
@@ -496,6 +600,18 @@ def render_analyte_page(lang, analyte, data, tests, test_rows_by_id, agg_index, 
                     tech[v["term"]] = tech.get(v["term"], 0) + 1
             L.append("* **{}**: {}".format(t["specimens"], t["comma"].join("{} ({})".format(k, n) for k, n in sorted(spec.items(), key=lambda x: -x[1])) or t["none"]))
             L.append("* **{}**: {}".format(t["techniques"], t["comma"].join("{} ({})".format(k, n) for k, n in sorted(tech.items(), key=lambda x: -x[1])) or t["none"]))
+            L.append("")
+        # ontology gaps: hand-added LOINC codes
+        extra = test.get("extra_loinc", [])
+        if extra:
+            L.append("#### {} ({})".format(t["gap"], len(extra)))
+            L.append("")
+            L.append(t["gap_note"].format(release=ctx["RELEASE"]))
+            L.append("")
+            L.append("| LOINC | {} | {} |".format(t["name"], t["reason"]))
+            L.append("|---|---|---|")
+            for e in extra:
+                L.append("| {} | {} | {} |".format(e["code"], e["display"], e["reason_" + lang]))
             L.append("")
         # excluded, grouped by failing clause set
         groups = {}
@@ -565,6 +681,20 @@ def render_analyte_page(lang, analyte, data, tests, test_rows_by_id, agg_index, 
         L.append("| {} | {} | {} | {} | {} | {} | {} |".format(
             code_cell(c), name_of(c), attr_text(c, "Property", t), attr_text(c, "Scale type", t),
             attr_text(c, "Direct site", t), BUCKET_LABEL[lang].get(c["use_case"], c["use_case"]), reason))
+    # LOINC-side recall: terms of the analyte the pool does not reach
+    if survey:
+        L.append("")
+        L.append("### {}".format(t["survey"]))
+        L.append("")
+        key = "survey_none" if not survey["outside"] else "survey_note"
+        L.append(t[key].format(lv=ctx["LOINC_VERSION"], n_total=survey["n_total"], n_pool=survey["n_pool"],
+                               n_out=len(survey["outside"]), pattern=survey["pattern"]))
+        if survey["outside"]:
+            L.append("")
+            L.append(t["survey_cols"])
+            L.append("|---|---|---|---|")
+            for r in survey["outside"]:
+                L.append("| {} | {} | {} | {} |".format(r["code"], r["name"], r["property"], r["system"]))
     return "\n".join(L) + "\n"
 
 
@@ -598,6 +728,7 @@ def main():
 
     files = {}  # path -> text
     all_loinc_codes = set()
+    test_codes_by_analyte = {}  # analyte -> LOINC codes enumerated by its per-test ValueSets
 
     files[vs_test_dir / "aliases-loinc-ontology.fsh"] = (
         "// LOINC Ontology (SNOMED CT extension module 11010000107), release {rel}.\n"
@@ -616,22 +747,28 @@ def main():
     for t in tests:
         vs = json.loads((TEST_VS_DIR / "{}.json".format(t["id"])).read_text())
         loinc, sct, ecl, _ = split_includes(vs)
+        extra = vs.get("_extra_loinc", [])
         all_loinc_codes.update(c["code"] for c in loinc)
+        all_loinc_codes.update(e["code"] for e in extra)
+        test_codes_by_analyte.setdefault(t["analyte"], set()).update(c["code"] for c in loinc)
         vs_name = fsh_name("MII_VS_Labor", t["id"])
         vs_id = fsh_id("mii-vs-labor", t["id"])
         desc = ("Proposal: LOINC codes of the clinical test '{}' ({} tier, specimen {}), computed by ECL over the "
                 "LOINC Ontology {}. Parts: LOINC enumeration ({}, LOINC {}), LOINC Ontology observables without LOINC code ({}), "
-                "and the ECL as an intensional include. ECL: `{}`"
-                .format(t["name"], t["tier"], t["specimen"], release, len(loinc), LOINC_VERSION, len(sct), t["ecl"]))
+                "and the ECL as an intensional include.{} ECL: `{}`"
+                .format(t["name"], t["tier"], t["specimen"], release, len(loinc), LOINC_VERSION, len(sct),
+                        " Plus {} hand-added LOINC code(s) the LOINC Ontology release does not model (ontology gap, see the "
+                        "analyte review page): {}.".format(len(extra), ", ".join(e["code"] for e in extra)) if extra else "",
+                        t["ecl"]))
         purpose = ("Guidance for binding Observation.code of the MII laboratory test profile to a computably defined "
                    "LOINC set; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.")
         files[vs_test_dir / "tests" / (vs_name + ".fsh")] = render_valueset(
             vs_name, vs_id, fsh_title("MII VS Labor", t["id"]), desc, purpose, loinc, sct, ecl, args.date,
-            "Clinical test '{}'".format(t["name"]))
+            "Clinical test '{}'".format(t["name"]), extra=extra)
         pr_name, pr_id, pr_text = render_profile(t, vs_name, args.date, release)
         files[pr_dir / (pr_name + ".fsh")] = pr_text
         test_rows.append({"test_id": t["id"], "analyte": t["analyte"], "name": t["name"], "tier": t["tier"], "specimen": t["specimen"],
-                          "n_loinc": len(loinc), "n_sct": len(sct), "vs_id": vs_id, "pr_id": pr_id,
+                          "n_loinc": len(loinc) + len(extra), "n_sct": len(sct), "vs_id": vs_id, "pr_id": pr_id,
                           "attrs": parse_ecl(t["ecl"])[1]})
 
     # Layer 2: aggregation
@@ -671,6 +808,18 @@ def main():
            "MODULE_LOINC_PIN": module_pin or "none", "NEW_LOINC_SENTENCE_EN": "", "NEW_LOINC_SENTENCE_DE": "",
            "REPO_NAME": args.repo_url.rstrip("/").split("/")[-1], "N_TESTS": len(test_rows),
            "N_USECASE": len(agg_index), "N_ANALYTES": len(analytes)}
+    # LOINC-side recall survey per analyte (needs Loinc.csv and the pool tables)
+    survey = {}
+    if args.loinc_csv and POOL_ATTRS.exists():
+        terms = load_loinc_lab_terms(Path(args.loinc_csv))
+        pool_data_for_survey = json.loads(POOL_ATTRS.read_text(encoding="utf-8"))
+        for cf in sorted((ROOT / "config").glob("*_custom_ecl.json")):
+            analyte = cf.name[: -len("_custom_ecl.json")]
+            spec = json.loads(cf.read_text(encoding="utf-8")).get("loinc_survey")
+            if not spec or analyte not in pool_data_for_survey:
+                continue
+            pool_codes = {c["loinc"] for c in pool_data_for_survey[analyte]["concepts"].values() if c["loinc"]}
+            survey[analyte] = loinc_survey(terms, spec, pool_codes, test_codes_by_analyte.get(analyte, set()))
     if args.loinc_csv:
         new_codes = loinc_codes_first_released(Path(args.loinc_csv), all_loinc_codes, LOINC_VERSION)
         if new_codes:
@@ -681,7 +830,7 @@ def main():
                                            "älteren LOINC-Pin unbekannte Codes: {}.".format(len(new_codes), LOINC_VERSION, listing))
     for lang, base in (("en", out / "input" / "pagecontent"),
                        ("de", out / "input" / "translations" / "de" / "pagecontent")):
-        for page, text in render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index).items():
+        for page, text in render_pages(lang, ctx, tests, test_rows, analytes, buckets, agg_index, survey).items():
             files[base / (page + ".md")] = text
     for src in sorted((TEMPLATES / "fsh").glob("*.fsh")):
         files[inst_dir / src.name] = src.read_text(encoding="utf-8")
@@ -694,7 +843,8 @@ def main():
             for lang, base in (("en", out / "input" / "pagecontent"),
                                ("de", out / "input" / "translations" / "de" / "pagecontent")):
                 files[base / (analyte_page_id(analyte) + ".md")] = render_analyte_page(
-                    lang, analyte, pool_data[analyte], tests, test_rows_by_id, agg_index, buckets, ctx)
+                    lang, analyte, pool_data[analyte], tests, test_rows_by_id, agg_index, buckets, ctx,
+                    survey.get(analyte))
     else:
         print("  (no pool_attributes.json: analyte subpages skipped; run scripts/pool_attributes.py)")
 

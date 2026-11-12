@@ -1,1 +1,1 @@
-* **Own observable concept.** MCV has no Component decomposition in the LOINC Ontology; the rule selects the concept and its subtypes. Two codes, nothing excluded. A Technique constraint would be the only possible refinement.
+* **Own observable concept.** MCV has no Component decomposition in the LOINC Ontology; the rule selects the concept and its subtypes. Two codes (787-2 automated, 30428-7), nothing excluded. A Technique constraint would be the only possible refinement.
